@@ -23,11 +23,26 @@ Built "Inference News" - a macOS widget for aggregating LLM inference optimizati
    - Source filter dropdown (250px button, 300px list)
    - Auto-initialize database on first run
    - Draggable, resizable window
+   - Minimize button for window management
+   - Entire article card clickable to open URL
+   - Hover effect on article cards
 
-4. **Technical Solutions**
+4. **Gemini Integration**
+   - ✨ button on each article for AI summarization
+   - Copies prompt to clipboard and opens Gemini web app
+   - Simplified prompt: "Summarize this article: [title] [url]"
+   - Dark tooltips with proper styling via QPalette
+
+5. **Visual Indicators**
+   - 🔥 icon for new articles (not yet viewed)
+   - ✨ icon for Gemini summarization
+   - Dark theme with rgba(28, 28, 30, 0.95) background
+
+6. **Technical Solutions**
    - **Anthropic Date Extraction**: Used sitemap.xml to get accurate publication dates (avoiding JS-rendered page issues)
    - **Relevance Scoring**: Keyword-based filtering for most sources, no filtering for SemiAnalysis, Microsoft AI, vLLM, Together.ai, NVIDIA
    - **Database**: SQLite with auto-cleanup (180 days retention)
+   - **Event Handling**: Proper event propagation for clickable cards with separate Gemini button
 
 ### Architecture
 - **Widget**: PyQt5-based standalone app
@@ -44,6 +59,14 @@ Built "Inference News" - a macOS widget for aggregating LLM inference optimizati
 - Repository: github.com:kailashbuki/inference-news.git
 - Clean git history with descriptive commits
 - .gitignore for Python cache, database, and generated files
+
+### Session 2 Updates (Afternoon)
+- Integrated Gemini summarization with clipboard copy
+- Made entire article cards clickable
+- Added minimize button to window controls
+- Changed new article indicator from ✨ to 🔥
+- Fixed tooltip styling with dark theme
+- Simplified Gemini prompt text
 
 ### Future Enhancements Considered
 - Scheduler for automated collection (scheduler.py exists)
