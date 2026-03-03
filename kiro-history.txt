@@ -1,10 +1,52 @@
 # Kiro History - Daily News Widget Development
 
-This file tracks the development history of the Inference News widget.
+## 2026-03-03 - Initial Development Session
 
-## 2026-03-03
-- Created async collection with progress tracking
-- Fixed Anthropic scraper for proper title and date extraction
-- Added auto-initialization of database
-- Cleaned up project files
-- Prepared macOS app bundle
+### Project Overview
+Built "Inference News" - a macOS widget for aggregating LLM inference optimization news from 12 sources.
+
+### Key Features Implemented
+1. **Async Collection with Progress Tracking**
+   - Non-blocking article collection using QThread
+   - Real-time progress updates showing source name and article count
+   - Progress bar (0-100%) during collection
+   - Final summary: "Done! X new articles"
+
+2. **Data Sources (12 total)**
+   - arXiv (cs.LG, cs.AI, cs.CL categories)
+   - RSS Feeds (9): Hugging Face, PyTorch, vLLM, Google AI, OpenAI, Microsoft AI, SemiAnalysis, Together.ai, NVIDIA Developer
+   - Anthropic (2): Research and Engineering blogs
+
+3. **UI/UX**
+   - Frameless, translucent window with rounded corners
+   - Expand/collapse toggle (⤢/⤡) between 550×850px and 400×500px
+   - Source filter dropdown (250px button, 300px list)
+   - Auto-initialize database on first run
+   - Draggable, resizable window
+
+4. **Technical Solutions**
+   - **Anthropic Date Extraction**: Used sitemap.xml to get accurate publication dates (avoiding JS-rendered page issues)
+   - **Relevance Scoring**: Keyword-based filtering for most sources, no filtering for SemiAnalysis, Microsoft AI, vLLM, Together.ai, NVIDIA
+   - **Database**: SQLite with auto-cleanup (180 days retention)
+
+### Architecture
+- **Widget**: PyQt5-based standalone app
+- **Collectors**: Modular collectors for each source type (arXiv, RSS, web scraping)
+- **Database**: SQLite with Article model (title, url, source, date, summary, relevance_score, tags)
+- **Config**: YAML-based configuration for sources and keywords
+
+### Deployment
+- macOS app bundle with embedded Python environment
+- Installed in /Applications/
+- Launch script activates venv and runs widget.py
+
+### Git Repository
+- Repository: github.com:kailashbuki/inference-news.git
+- Clean git history with descriptive commits
+- .gitignore for Python cache, database, and generated files
+
+### Future Enhancements Considered
+- Scheduler for automated collection (scheduler.py exists)
+- Web dashboard (dashboard_server.py with FastAPI)
+- Additional sources (AWS ML Blog, Modal, Replicate, etc.)
+
