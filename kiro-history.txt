@@ -1,0 +1,10 @@
+# Kiro History - Daily News Widget Development
+
+This file tracks the development history of the Inference News widget.
+
+## 2026-03-03
+- Created async collection with progress tracking
+- Fixed Anthropic scraper for proper title and date extraction
+- Added auto-initialization of database
+- Cleaned up project files
+- Prepared macOS app bundle
