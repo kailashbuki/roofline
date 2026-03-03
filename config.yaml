@@ -41,6 +41,10 @@ sources:
         url: "https://microsoft.ai/news/feed/"
       - name: "vLLM Blog"
         url: "https://blog.vllm.ai/feed"
+      - name: "Together.ai Blog"
+        url: "https://www.together.ai/blog/rss.xml"
+      - name: "NVIDIA Developer Blog"
+        url: "https://developer.nvidia.com/blog/feed/"
 
   reddit:
     enabled: false

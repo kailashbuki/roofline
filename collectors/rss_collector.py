@@ -26,8 +26,8 @@ def collect_rss(session, config):
                 title = entry.get('title', '')
                 summary = entry.get('summary', entry.get('description', ''))[:1000]
                 
-                # SemiAnalysis, Microsoft AI, and vLLM are always relevant
-                if any(name in feed_info['name'] for name in ['SemiAnalysis', 'Microsoft AI', 'vLLM']):
+                # Skip filtering for these sources - everything is relevant
+                if any(name in feed_info['name'] for name in ['SemiAnalysis', 'Microsoft AI', 'vLLM', 'Together.ai', 'NVIDIA Developer']):
                     relevance = 1.0
                 else:
                     relevance = calculate_relevance(title, summary, config['relevance'])

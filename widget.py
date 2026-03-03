@@ -160,6 +160,8 @@ class NewsWidget(QWidget):
         filter_row = QHBoxLayout()
         self.source_filter = QComboBox()
         self.source_filter.setFixedHeight(36)
+        self.source_filter.setMinimumWidth(250)
+        self.source_filter.view().setMinimumWidth(300)
         self.source_filter.setSizeAdjustPolicy(QComboBox.AdjustToContents)
         self.source_filter.view().setStyleSheet("""
             QListView {
