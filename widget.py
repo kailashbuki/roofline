@@ -183,6 +183,24 @@ class NewsWidget(QWidget):
         sync_btn.clicked.connect(self.sync_articles)
         top_row.addWidget(sync_btn)
         
+        minimize_btn = QPushButton("−")
+        minimize_btn.setFixedSize(28, 28)
+        minimize_btn.setStyleSheet("""
+            QPushButton {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 14px;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 18px;
+                border: none;
+            }
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #ffffff;
+            }
+        """)
+        minimize_btn.clicked.connect(self.showMinimized)
+        top_row.addWidget(minimize_btn)
+        
         close_btn = QPushButton("✕")
         close_btn.setFixedSize(28, 28)
         close_btn.setStyleSheet("""
