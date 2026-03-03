@@ -2,9 +2,29 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from database import Article
-import re
 
 def collect_anthropic(session, config):
+    # First, get dates from sitemap
+    url_dates = {}
+    try:
+        sitemap_response = requests.get('https://www.anthropic.com/sitemap.xml', timeout=10)
+        sitemap_soup = BeautifulSoup(sitemap_response.content, 'html.parser')
+        
+        for url_elem in sitemap_soup.find_all('url'):
+            loc = url_elem.find('loc')
+            lastmod = url_elem.find('lastmod')
+            if loc and lastmod:
+                url_text = loc.get_text(strip=True)
+                date_text = lastmod.get_text(strip=True)
+                try:
+                    # Parse ISO format: 2025-12-14T20:27:33.000Z
+                    pub_date = datetime.fromisoformat(date_text.replace('Z', '+00:00'))
+                    url_dates[url_text] = pub_date
+                except:
+                    pass
+    except Exception as e:
+        print(f"Error fetching sitemap: {e}")
+    
     urls = [
         ('https://www.anthropic.com/research', 'anthropic:research'),
         ('https://www.anthropic.com/engineering', 'anthropic:engineering')
@@ -16,33 +36,6 @@ def collect_anthropic(session, config):
             response = requests.get(url, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Build a map of URLs to dates by finding all time elements
-            url_dates = {}
-            for time_elem in soup.find_all('time'):
-                date_str = time_elem.get_text(strip=True)
-                # Find the nearest link
-                parent = time_elem.parent
-                for _ in range(5):  # Search up to 5 levels up
-                    if not parent:
-                        break
-                    link = parent.find('a', href=True)
-                    if link:
-                        href = link.get('href', '')
-                        if href and (source == 'anthropic:research' and ('/research/' in href or '/news/' in href) or
-                                    source == 'anthropic:engineering' and '/engineering/' in href):
-                            try:
-                                pub_date = datetime.strptime(date_str, '%b %d, %Y')
-                                url_dates[href] = pub_date
-                            except:
-                                try:
-                                    pub_date = datetime.strptime(date_str, '%B %d, %Y')
-                                    url_dates[href] = pub_date
-                                except:
-                                    pass
-                            break
-                    parent = parent.parent
-            
-            # Now collect articles
             links = soup.find_all('a', href=True)
             
             for link in links:
@@ -81,8 +74,8 @@ def collect_anthropic(session, config):
                 if not title:
                     continue
                 
-                # Get date from our map
-                pub_date = url_dates.get(link.get('href', ''), datetime.utcnow())
+                # Get date from sitemap
+                pub_date = url_dates.get(href, datetime.utcnow())
                 
                 article = Article(
                     title=title[:255],
