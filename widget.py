@@ -48,6 +48,8 @@ class ArticleCard(QFrame):
     def __init__(self, title, source, date, url, is_new=False):
         super().__init__()
         self.url = url
+        self.title = title
+        self.setCursor(Qt.PointingHandCursor)
         self.setStyleSheet("""
             QFrame {
                 background: transparent;
@@ -57,26 +59,48 @@ class ArticleCard(QFrame):
                 background-color: rgba(255, 255, 255, 0.05);
             }
         """)
-        self.setCursor(Qt.PointingHandCursor)
         
         layout = QVBoxLayout(self)
         layout.setSpacing(3)
         layout.setContentsMargins(16, 12, 16, 12)
         
-        title_text = f"✨ {title}" if is_new else title
+        # Title row with summarize link
+        title_row = QHBoxLayout()
+        title_text = f"🔥 {title}" if is_new else title
         title_label = QLabel(title_text[:90] + "..." if len(title_text) > 90 else title_text)
         title_label.setWordWrap(True)
         title_label.setFont(QFont("SF Pro", 15))
         title_label.setStyleSheet("color: #ffffff; border: none;")
-        layout.addWidget(title_label)
+        title_row.addWidget(title_label, 1)
+        
+        summarize_btn = QLabel("✨")
+        summarize_btn.setFont(QFont("SF Pro", 16))
+        summarize_btn.setStyleSheet("color: rgba(255, 255, 255, 0.5); border: none; padding: 0 4px;")
+        summarize_btn.setCursor(Qt.PointingHandCursor)
+        summarize_btn.setToolTip("Copy prompt & open Gemini (Cmd+V to paste)")
+        summarize_btn.mousePressEvent = lambda e: self.handle_gemini_click(e)
+        title_row.addWidget(summarize_btn)
+        
+        layout.addLayout(title_row)
         
         meta = QLabel(f"{source} · {date}")
         meta.setFont(QFont("SF Pro", 13))
         meta.setStyleSheet("color: rgba(255, 255, 255, 0.5); border: none;")
         layout.addWidget(meta)
-        
+    
+    def handle_gemini_click(self, event):
+        event.accept()
+        self.open_gemini_summary()
+    
     def mousePressEvent(self, event):
         webbrowser.open(self.url)
+    
+    def open_gemini_summary(self):
+        from PyQt5.QtWidgets import QApplication
+        prompt = f"Summarize this article:\n\nTitle: {self.title}\nURL: {self.url}"
+        clipboard = QApplication.clipboard()
+        clipboard.setText(prompt)
+        webbrowser.open("https://gemini.google.com/app")
 
 class NewsWidget(QWidget):
     def __init__(self):
@@ -444,6 +468,13 @@ class NewsWidget(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    
+    # Force dark tooltip colors using palette
+    from PyQt5.QtGui import QPalette, QColor
+    palette = app.palette()
+    palette.setColor(QPalette.ToolTipBase, QColor(28, 28, 30, 242))
+    palette.setColor(QPalette.ToolTipText, QColor(255, 255, 255))
+    app.setPalette(palette)
     
     icon_path = os.path.join(os.path.dirname(__file__), 'icon_rounded.png')
     if os.path.exists(icon_path):
