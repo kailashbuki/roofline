@@ -1,7 +1,7 @@
 import arxiv
 from datetime import datetime, timedelta
 from database import Article
-from relevance_scorer import calculate_relevance, extract_tags
+from bedrock_classifier import classify_article
 
 def collect_arxiv(session, config):
     arxiv_config = config['sources']['arxiv']
@@ -29,16 +29,9 @@ def collect_arxiv(session, config):
             continue
         
         summary = result.summary[:1000]
-        text = f"{result.title} {summary}".lower()
         
-        # Must have both: a performance keyword AND a model keyword
-        has_performance = any(kw in text for kw in performance_keywords)
-        has_model = any(kw in text for kw in model_keywords)
-        
-        if not (has_performance and has_model):
-            continue
-        
-        relevance = calculate_relevance(result.title, summary, config['relevance'])
+        # Use Bedrock to classify
+        relevance, tags = classify_article(result.title, summary)
         
         if relevance < config['relevance']['min_score']:
             continue
@@ -50,7 +43,7 @@ def collect_arxiv(session, config):
             published_date=result.published,
             summary=summary,
             relevance_score=relevance,
-            tags=extract_tags(result.title, summary)
+            tags=tags
         )
         session.add(article)
         count += 1

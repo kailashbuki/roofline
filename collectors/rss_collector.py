@@ -1,7 +1,7 @@
 import feedparser
 from datetime import datetime
 from database import Article
-from relevance_scorer import calculate_relevance, extract_tags
+from bedrock_classifier import classify_article
 import time
 
 def collect_rss(session, config):
@@ -29,8 +29,9 @@ def collect_rss(session, config):
                 # Skip filtering for these sources - everything is relevant
                 if any(name in feed_info['name'] for name in ['SemiAnalysis', 'Microsoft AI', 'vLLM', 'Together.ai', 'NVIDIA Developer']):
                     relevance = 1.0
+                    tags = ""
                 else:
-                    relevance = calculate_relevance(title, summary, config['relevance'])
+                    relevance, tags = classify_article(title, summary)
                     if relevance < config['relevance']['min_score']:
                         continue
                 
@@ -44,7 +45,7 @@ def collect_rss(session, config):
                     published_date=published_date,
                     summary=summary,
                     relevance_score=relevance,
-                    tags=extract_tags(title, summary)
+                    tags=tags
                 )
                 session.add(article)
                 count += 1

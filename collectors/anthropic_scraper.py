@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from database import Article
+from bedrock_classifier import classify_article
 
 def collect_anthropic(session, config):
     # First, get dates from sitemap
@@ -77,14 +78,19 @@ def collect_anthropic(session, config):
                 # Get date from sitemap
                 pub_date = url_dates.get(href, datetime.utcnow())
                 
+                # Classify with Bedrock
+                relevance, tags = classify_article(title, '')
+                if relevance < 0.3:  # Lower threshold for Anthropic
+                    continue
+                
                 article = Article(
                     title=title[:255],
                     url=href,
                     source=source,
                     published_date=pub_date,
                     summary='',
-                    relevance_score=1.0,
-                    tags='anthropic'
+                    relevance_score=relevance,
+                    tags=tags
                 )
                 session.add(article)
                 count += 1

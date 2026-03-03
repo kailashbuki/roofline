@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 from database import Article
-from relevance_scorer import calculate_relevance, extract_tags
+from bedrock_classifier import classify_article
 
 def collect_hackernews(session, config):
     hn_config = config['sources']['hackernews']
@@ -37,7 +37,7 @@ def collect_hackernews(session, config):
             continue
         
         summary = story.get('text', '')[:500] if story.get('text') else ''
-        relevance = calculate_relevance(title, summary, config['relevance'])
+        relevance, tags = classify_article(title, summary)
         
         if relevance < config['relevance']['min_score']:
             continue
@@ -51,7 +51,7 @@ def collect_hackernews(session, config):
             published_date=published_date,
             summary=summary,
             relevance_score=relevance,
-            tags=extract_tags(title, summary)
+            tags=tags
         )
         session.add(article)
         count += 1
