@@ -16,7 +16,33 @@ def collect_anthropic(session, config):
             response = requests.get(url, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Find all article links
+            # Build a map of URLs to dates by finding all time elements
+            url_dates = {}
+            for time_elem in soup.find_all('time'):
+                date_str = time_elem.get_text(strip=True)
+                # Find the nearest link
+                parent = time_elem.parent
+                for _ in range(5):  # Search up to 5 levels up
+                    if not parent:
+                        break
+                    link = parent.find('a', href=True)
+                    if link:
+                        href = link.get('href', '')
+                        if href and (source == 'anthropic:research' and ('/research/' in href or '/news/' in href) or
+                                    source == 'anthropic:engineering' and '/engineering/' in href):
+                            try:
+                                pub_date = datetime.strptime(date_str, '%b %d, %Y')
+                                url_dates[href] = pub_date
+                            except:
+                                try:
+                                    pub_date = datetime.strptime(date_str, '%B %d, %Y')
+                                    url_dates[href] = pub_date
+                                except:
+                                    pass
+                            break
+                    parent = parent.parent
+            
+            # Now collect articles
             links = soup.find_all('a', href=True)
             
             for link in links:
@@ -37,7 +63,7 @@ def collect_anthropic(session, config):
                 if existing:
                     continue
                 
-                # Find title - get the longest text in the link
+                # Find title
                 title = None
                 all_text = []
                 for elem in link.find_all(['h4', 'h6', 'h2', 'h3', 'span']):
@@ -45,7 +71,6 @@ def collect_anthropic(session, config):
                     if text:
                         all_text.append(text)
                 
-                # Skip category tags and get the longest meaningful text
                 skip_words = ['Interpretability', 'Alignment', 'Policy', 'Announcements', 
                              'Societal Impacts', 'Economic Research', 'Product']
                 for text in sorted(all_text, key=len, reverse=True):
@@ -56,18 +81,8 @@ def collect_anthropic(session, config):
                 if not title:
                     continue
                 
-                # Find date
-                pub_date = datetime.utcnow()
-                time_elem = link.find('time')
-                if time_elem:
-                    date_str = time_elem.get_text(strip=True)
-                    try:
-                        pub_date = datetime.strptime(date_str, '%b %d, %Y')
-                    except:
-                        try:
-                            pub_date = datetime.strptime(date_str, '%B %d, %Y')
-                        except:
-                            pass
+                # Get date from our map
+                pub_date = url_dates.get(link.get('href', ''), datetime.utcnow())
                 
                 article = Article(
                     title=title[:255],

@@ -82,8 +82,10 @@ class NewsWidget(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Inference News")
-        self.setGeometry(100, 100, 450, 600)
+        self.setGeometry(100, 100, 550, 850)
         self.setMinimumSize(350, 400)
+        self.setMaximumSize(600, 900)
+        self.is_expanded = True
         self.setMaximumSize(600, 900)
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
@@ -119,6 +121,25 @@ class NewsWidget(QWidget):
         title.setStyleSheet("color: #39FF14;")
         top_row.addWidget(title)
         top_row.addStretch()
+        
+        expand_btn = QPushButton("⤢")
+        expand_btn.setFixedSize(28, 28)
+        expand_btn.setStyleSheet("""
+            QPushButton {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 14px;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 18px;
+                border: none;
+            }
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #ffffff;
+            }
+        """)
+        expand_btn.clicked.connect(self.toggle_size)
+        self.expand_btn = expand_btn
+        top_row.addWidget(expand_btn)
         
         sync_btn = QPushButton("↻")
         sync_btn.setFixedSize(28, 28)
@@ -339,6 +360,18 @@ class NewsWidget(QWidget):
         self.source_filter.clear()
         self.load_sources()
         self.load_articles()
+    
+    def toggle_size(self):
+        if self.is_expanded:
+            # Collapse to compact size
+            self.resize(400, 500)
+            self.expand_btn.setText("⤢")
+            self.is_expanded = False
+        else:
+            # Expand to full size
+            self.resize(550, 850)
+            self.expand_btn.setText("⤡")
+            self.is_expanded = True
         
     def load_articles(self):
         while self.scroll_layout.count():
