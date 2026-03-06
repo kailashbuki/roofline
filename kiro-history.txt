@@ -73,3 +73,18 @@ Built "Inference News" - a macOS widget for aggregating LLM inference optimizati
 - Web dashboard (dashboard_server.py with FastAPI)
 - Additional sources (AWS ML Blog, Modal, Replicate, etc.)
 
+## 2026-03-06 - Added AI Realist News Source
+
+### New Source Integration
+- Added AI Realist (Julien Simon's Substack) at https://www.airealist.ai/
+- Created `collectors/airealist_collector.py` using RSS feed
+- Integrated into `collect_all.py` collection pipeline
+- Tags: ai, llm, inference
+- Focus: Practical AI for builders, operators, and investors
+
+### Technical Implementation
+- RSS-based collector following existing pattern
+- Extracts title, URL, publication date, summary from feed
+- Bundled into Inference News.app
+- Committed and pushed to GitHub (commit 1279f6b)
+
