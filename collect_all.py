@@ -5,6 +5,7 @@ from collectors.rss_collector import collect_rss
 from collectors.reddit_collector import collect_reddit
 from collectors.twitter_collector import collect_twitter
 from collectors.anthropic_scraper import collect_anthropic
+from collectors.airealist_collector import collect_airealist
 from datetime import datetime
 
 def run_collection():
@@ -31,7 +32,10 @@ def run_collection():
     anthropic_count = collect_anthropic(session, config)
     print(f"  Anthropic: {anthropic_count} new articles")
     
-    total = arxiv_count + hn_count + rss_count + twitter_count + reddit_count + anthropic_count
+    airealist_count = collect_airealist(session, config)
+    print(f"  AI Realist: {airealist_count} new articles")
+    
+    total = arxiv_count + hn_count + rss_count + twitter_count + reddit_count + anthropic_count + airealist_count
     print(f"Total: {total} new articles collected\n")
     
     return total
