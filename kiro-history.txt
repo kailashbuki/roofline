@@ -88,3 +88,23 @@ Built "Inference News" - a macOS widget for aggregating LLM inference optimizati
 - Bundled into Inference News.app
 - Committed and pushed to GitHub (commit 1279f6b)
 
+
+## 2026-03-12 - Fixed Widget Crash on Refresh
+
+### Bug
+App crashed every time the refresh (↻) button was pressed.
+
+### Root Causes
+1. **Missing airealist_collector in widget**: `CollectionThread` in `widget.py` was never updated when AI Realist source was added on Mar 6. Only `collect_all.py` was updated.
+2. **boto3 not in venv**: `arxiv_collector` imports `bedrock_classifier` which requires `boto3`. boto3 was installed in system Python (`~/.pyenv/versions/3.8.18`) but not in the project `.venv`. The venv had `include-system-site-packages = true`, masking the issue during development. The app bundle only copies `.venv`, so boto3 was missing at runtime.
+
+### Fixes
+- Added `airealist_collector` import and call to `CollectionThread.run()` (7 collectors now)
+- Updated progress bar denominator from 6 to 7
+- Installed boto3 directly into `.venv/lib/python3.8/site-packages/`
+- Updated `create_app.sh` to include `icon.png`, `icon_rounded.png`, and `bedrock_classifier.py`
+- Rebuilt app bundle and deployed to `/Applications/`
+
+### Commits
+- `88ee191` - Add missing airealist collector to widget
+- `d6010d6` - Install boto3 into venv for bedrock_classifier
