@@ -22,7 +22,8 @@ LAUNCH
 chmod +x "$MACOS/launch"
 
 # Copy resources
-cp -r .venv collectors database.py config.yaml collect_all.py relevance_scorer.py widget.py articles.db "$RESOURCES/"
+cp -r .venv collectors database.py config.yaml collect_all.py relevance_scorer.py bedrock_classifier.py widget.py articles.db "$RESOURCES/"
+cp icon.png icon_rounded.png "$RESOURCES/"
 cp icon_rounded.png "$RESOURCES/icon.icns"
 
 # Create Info.plist

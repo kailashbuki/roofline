@@ -20,6 +20,7 @@ class CollectionThread(QThread):
         from collectors.reddit_collector import collect_reddit
         from collectors.twitter_collector import collect_twitter
         from collectors.anthropic_scraper import collect_anthropic
+        from collectors.airealist_collector import collect_airealist
         
         config = load_config()
         session = init_db(config['database']['path'])
@@ -30,10 +31,12 @@ class CollectionThread(QThread):
             ("RSS", collect_rss),
             ("Twitter", collect_twitter),
             ("Reddit", collect_reddit),
-            ("Anthropic", collect_anthropic)
+            ("Anthropic", collect_anthropic),
+            ("AI Realist", collect_airealist),
         ]
         
         total = 0
+        num_collectors = len(collectors)
         for idx, (name, collector) in enumerate(collectors, 1):
             try:
                 count = collector(session, config)
@@ -388,7 +391,7 @@ class NewsWidget(QWidget):
         self.collection_thread.start()
     
     def update_progress(self, source, count, completed):
-        progress = int((completed / 6) * 100)
+        progress = int((completed / 7) * 100)
         self.progress_bar.setValue(progress)
         self.progress_label.setText(f"{source}: {count} new")
     
