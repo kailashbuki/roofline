@@ -1,31 +1,47 @@
-# Data sources configuration
+# Data sources.
+#
+# Note on filtering: keyword matching is NOT used to decide relevance any more.
+# Sources are retrieval only — cast a wide net here, and let the Gemini
+# classifier judge what belongs (see classifier.py). Keywords below exist purely
+# to constrain what the upstream APIs return.
 sources:
   arxiv:
     enabled: true
-    categories: ["cs.LG", "cs.AI", "cs.CL"]
-    keywords: [
-      "inference optimization", "inference latency", "inference throughput",
-      "model serving", "LLM inference", "serving latency", "serving throughput",
-      "quantization", "model compression", "pruning", "distillation",
-      "KV cache", "speculative decoding", "flash attention", "paged attention",
-      "GPU optimization", "GPU inference", "TPU", "tensor core", "CUDA optimization",
-      "Neuron", "Trainium", "AI accelerator", "inference accelerator",
-      "batch inference", "inference performance", "inference efficiency"
+    categories: ["cs.LG", "cs.AI", "cs.CL", "cs.AR", "cs.DC", "cs.PF"]
+    # Broad retrieval net across the whole stack, not a relevance filter.
+    query_terms: [
+      # architecture and algorithms
+      "transformer architecture", "attention mechanism", "mixture of experts",
+      "state space model", "long context", "sparse attention",
+      # training
+      "pretraining", "optimizer", "scaling law", "distributed training",
+      "parallelism", "gradient", "training efficiency",
+      # post-training
+      "fine-tuning", "reinforcement learning from human feedback",
+      "distillation", "preference optimization", "reasoning model",
+      # inference
+      "LLM inference", "inference optimization", "speculative decoding",
+      "KV cache", "batch inference", "inference latency", "inference throughput",
+      # serving and systems
+      "model serving", "inference engine", "serving system", "scheduling",
+      # quantization and compression
+      "quantization", "model compression", "pruning", "sparsity",
+      # hardware
+      "AI accelerator", "GPU", "TPU", "systolic array", "HBM",
+      "hardware software co-design", "kernel optimization",
     ]
-    max_results: 50
+    max_results: 100
 
   hackernews:
     enabled: true
-    keywords: [
-      "inference", "LLM", "quantization", "model serving",
-      "vLLM", "TensorRT", "GGUF", "Ollama",
-      "GPU", "TPU", "Neuron", "Trainium", "AI accelerator",
-      "vision language", "VLM", "multimodal"
-    ]
+    # Every top story is sent to the classifier; rejections are remembered in
+    # data/rejected.json so each story is judged exactly once.
     max_items: 100
 
   rss_feeds:
     enabled: true
+    # filter: false  => wholly on-topic source, never dropped on score, but
+    #                   still classified so it gets tags.
     feeds:
       - name: "Hugging Face Blog"
         url: "https://huggingface.co/blog/feed.xml"
@@ -37,32 +53,38 @@ sources:
         url: "https://openai.com/blog/rss.xml"
       - name: "SemiAnalysis"
         url: "https://newsletter.semianalysis.com/feed"
+        filter: false
       - name: "Microsoft AI"
         url: "https://microsoft.ai/news/feed/"
       - name: "vLLM Blog"
         url: "https://blog.vllm.ai/feed"
+        filter: false
       - name: "Together.ai Blog"
         url: "https://www.together.ai/blog/rss.xml"
+        filter: false
       - name: "NVIDIA Developer Blog"
         url: "https://developer.nvidia.com/blog/feed/"
 
-# Relevance scoring
+# Relevance. min_score applies to the classifier's score, not keyword matching.
+# The keyword lists are the fallback used only when Gemini is unavailable.
 relevance:
+  min_score: 0.4
   high_value_keywords: [
     "inference", "serving", "latency", "throughput", "performance",
     "quantization", "compression", "optimization", "accelerat",
+    "architecture", "training", "fine-tuning", "distillation",
     "GPU", "TPU", "Neuron", "Trainium", "tensor core", "CUDA",
-    "batch", "efficiency", "speed"
+    "batch", "efficiency", "speed", "parallelism", "kernel"
   ]
   bonus_keywords: [
     "KV cache", "speculative decoding", "flash attention", "paged attention",
-    "int8", "int4", "fp16", "bfloat16", "GPTQ", "AWQ", "GGUF",
-    "vLLM", "TensorRT", "TGI", "text generation inference"
+    "mixture of experts", "scaling law", "state space model",
+    "int8", "int4", "fp16", "fp8", "bfloat16", "GPTQ", "AWQ", "GGUF",
+    "vLLM", "TensorRT", "SGLang", "TGI", "HBM", "NVLink"
   ]
-  min_score: 0.4
 
 # Data store. articles.json is the source of truth and is served to the site
 # as-is; SQLite exists only in memory for the duration of a collection run.
 data:
   path: "data/articles.json"
-
+  rejected_path: "data/rejected.json"

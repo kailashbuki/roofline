@@ -1,12 +1,13 @@
-// Inference News — static reader over data/articles.json.
+// roofline — static reader over data/articles.json.
 // Read state lives in localStorage. Note the origin is shared with the personal
 // homepage on github.io, hence the namespaced keys.
-const READ_KEY = "inference-news:read";
+const READ_KEY = "roofline:read";
 const PAGE_SIZE = 60;
 
 const el = {
   list: document.getElementById("list"),
   source: document.getElementById("source"),
+  tag: document.getElementById("tag"),
   window: document.getElementById("window"),
   sort: document.getElementById("sort"),
   search: document.getElementById("search"),
@@ -52,10 +53,12 @@ function visible() {
   const days = Number(el.window.value);
   const cutoff = days ? Date.now() - days * 86400000 : null;
   const source = el.source.value;
+  const tag = el.tag.value;
   const needle = el.search.value.trim().toLowerCase();
 
   const rows = articles.filter((a) => {
     if (source !== "all" && a.source !== source) return false;
+    if (tag !== "all" && !(a.tags || "").split(",").includes(tag)) return false;
     if (cutoff && a.published_date && new Date(a.published_date + "Z").getTime() < cutoff) return false;
     if (el.unread.checked && read.has(a.url)) return false;
     if (needle && !a.title.toLowerCase().includes(needle)) return false;
@@ -187,13 +190,20 @@ fetch("./data/articles.json")
     el.source.append(new Option("All sources", "all"));
     for (const source of data.sources || []) el.source.append(new Option(source, source));
 
+    el.tag.append(new Option("All tags", "all"));
+    const tags = new Set();
+    for (const article of articles) {
+      for (const t of (article.tags || "").split(",")) if (t) tags.add(t);
+    }
+    for (const t of [...tags].sort()) el.tag.append(new Option(t, t));
+
     render();
   })
   .catch((error) => {
     el.list.innerHTML = `<p class="empty">Could not load articles (${error.message}).</p>`;
   });
 
-for (const control of [el.source, el.window, el.sort, el.unread]) {
+for (const control of [el.source, el.tag, el.window, el.sort, el.unread]) {
   control.addEventListener("change", reset);
 }
 el.search.addEventListener("input", reset);

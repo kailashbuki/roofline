@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inference News</title>
-  <meta name="description" content="Daily aggregation of LLM inference optimization research and engineering writing.">
-  <link rel="icon" href="./favicon.png">
+  <title>roofline — architecture, training, inference, silicon</title>
+  <meta name="description" content="A daily feed on the full AI performance stack: model architecture, training, post-training, inference optimization, serving systems, and AI chips.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
     <div class="title-row">
-      <h1>Inference News</h1>
+      <h1>
+        <svg class="mark" viewBox="0 0 32 22" aria-hidden="true">
+          <polyline points="3,19 14,4 30,4" fill="none" stroke="currentColor"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>roofline</h1>
       <span id="updated" class="updated"></span>
     </div>
+    <p class="tagline">architecture · training · post-training · inference · serving · silicon</p>
 
     <div class="controls">
       <select id="source" aria-label="Filter by source"></select>
+      <select id="tag" aria-label="Filter by tag"></select>
       <select id="window" aria-label="Filter by age">
         <option value="7">Last 7 days</option>
         <option value="30">Last 30 days</option>

@@ -1,52 +1,32 @@
 import arxiv
-from datetime import datetime, timedelta
-from database import Article
-from classifier import classify_article
+
+from collectors import pipeline
+
 
 def collect_arxiv(session, config):
     arxiv_config = config['sources']['arxiv']
     if not arxiv_config['enabled']:
         return 0
-    
-    keywords = ' OR '.join(arxiv_config['keywords'])
+
+    # The arXiv query is retrieval, not relevance: cast a wide net over the
+    # relevant categories and let the classifier judge. Keeping it broad is why
+    # architecture and training papers show up at all.
+    categories = " OR ".join(f"cat:{c}" for c in arxiv_config['categories'])
+    terms = " OR ".join(f'abs:"{k}"' for k in arxiv_config['query_terms'])
     search = arxiv.Search(
-        query=keywords,
+        query=f"({categories}) AND ({terms})",
         max_results=arxiv_config['max_results'],
-        sort_by=arxiv.SortCriterion.SubmittedDate
+        sort_by=arxiv.SortCriterion.SubmittedDate,
     )
-    
-    # Must have at least one of these
-    performance_keywords = ['latency', 'throughput', 'gpu', 'tpu', 'accelerator', 
-                           'serving', 'quantization', 'cuda', 'tensor core', 'optimization']
-    
-    # Must have at least one of these
-    model_keywords = ['llm', 'language model', 'transformer', 'neural network', 'deep learning']
-    
-    count = 0
+
+    rows = []
     for result in search.results():
-        existing = session.query(Article).filter_by(url=result.entry_id).first()
-        if existing:
-            continue
-        
-        summary = result.summary[:1000]
-        
-        # Score and tag via Gemini (keyword fallback if unavailable)
-        relevance, tags = classify_article(result.title, summary)
-        
-        if relevance < config['relevance']['min_score']:
-            continue
-        
-        article = Article(
-            title=result.title,
-            url=result.entry_id,
-            source='arxiv',
-            published_date=result.published,
-            summary=summary,
-            relevance_score=relevance,
-            tags=tags
-        )
-        session.add(article)
-        count += 1
-    
-    session.commit()
-    return count
+        rows.append({
+            "title": result.title,
+            "url": result.entry_id,
+            "source": "arxiv",
+            "published_date": result.published,
+            "summary": result.summary[:1000],
+        })
+
+    return pipeline.commit(session, config, rows)

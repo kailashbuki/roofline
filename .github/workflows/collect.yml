@@ -1,4 +1,4 @@
-name: Collect and publish
+name: Collect and publish roofline
 
 on:
   schedule:

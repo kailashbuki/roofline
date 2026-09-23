@@ -174,3 +174,86 @@ disabled). requirements.txt went from 14 pins to 6.
 - Create the Gemini API key, add it as repository secret GEMINI_API_KEY.
 - Re-add the origin remote, force-push the rewritten history, make the repo
   public, enable Pages with source = GitHub Actions.
+
+## 2026-09-23 (evening) - Rebranded to "roofline", widened scope, batched the classifier
+
+### Why the repo had to be recreated
+Force-pushing the scrubbed history was NOT sufficient. GitHub keeps unreachable
+objects accessible indefinitely: after the push, all four original commits were
+still fetchable by SHA, and the pre-rewrite config.yaml (with the Twitter keys)
+was still readable via
+  gh api "repos/<owner>/<repo>/contents/config.yaml?ref=5a06443"
+Verified 2 secret lines still present on the remote. So a private->public flip
+would have published exactly what the scrub was for. Lesson: scrubbing history
+locally does not scrub what the remote already stored; only a fresh repo (or a
+GitHub Support purge) is deterministic.
+
+### New identity
+Name: roofline, after the roofline model - arithmetic intensity vs peak
+compute/memory bandwidth - the one abstraction spanning the whole scope.
+URL: https://kailashbuki.github.io/roofline/
+Branding: amber #ff6b35 (compute-bound) with blue #4aa3ff (memory-bound) as the
+second accent, wordmark + favicon drawn as the roofline kink (SVG, no bitmap).
+Deleted icon.png / icon_rounded.png (4.3MB of retired-app art) and favicon.png.
+localStorage keys renamed inference-news:* -> roofline:*.
+
+### Scope widened
+From inference-optimization-only to the full stack: model architecture and
+algorithms, training and scaling, post-training, inference optimization, serving
+systems and engines, systems-level work, and AI chips.
+- arXiv categories += cs.AR, cs.DC, cs.PF; query_terms rewritten as a broad
+  40-term retrieval net (retrieval, NOT relevance); max_results 50 -> 100.
+- Tag taxonomy rewritten: architecture, training, post-training, inference,
+  serving, systems, hardware, quantization, attention, compression,
+  optimization, multimodal, benchmarks, llm.
+- Added a tag filter to the UI.
+
+### Keyword filtering removed; Gemini used efficiently instead
+Keyword matching was a bad relevance signal. Every candidate now goes to the
+model. Affordable because of three things:
+1. BATCHING - one request carries 20 articles and returns one verdict each,
+   keyed by an echoed id. ~330 single calls per run becomes ~17. Out-of-order
+   ids, missing entries and wrapped arrays are all handled; gaps fall back
+   per-item rather than discarding the batch.
+2. Dedup before classify - stored URLs are never re-sent.
+3. data/rejected.json - a rejection ledger, so the ~90 off-topic stories in a
+   HackerNews top-100 are judged ONCE, not 3x/day forever.
+   Subtlety: only *model* rejections are recorded. A keyword-scored rejection is
+   a low-confidence guess made while the API was unavailable, so recording it
+   would permanently block a real verdict later. classify_many therefore returns
+   (score, tags, judged_by) and pipeline.commit checks judged_by.
+Feeds that are wholly on-topic set filter: false - still classified for tags,
+never dropped on score.
+Collectors refactored to two-phase (gather candidates -> batch classify ->
+store) via the new collectors/pipeline.py. HackerNews keyword prefilter deleted.
+
+### Gemini API notes (it moved under us)
+- gemini-2.0-flash is RETIRED. Default is now gemini-3.5-flash-lite.
+- generateContent is NOT deprecated ("remains fully supported") and is the
+  default here; it was the only surface that reliably returned 200.
+- The Interactions API works at /v1beta/interactions with gemini-3.6-flash and
+  gemini-3.8-flash. The migration guide's /v1beta2/interactions is WRONG - 404
+  with an empty body on every model.
+- max_output_tokens INCLUDES thought tokens, and Gemini 3 thinks by default
+  (floor is thinking_level minimal/low, never off). A 200-token cap truncated
+  the JSON mid-object; budget is now 2048 + 120/article.
+- responseSchema must be supplied or the model invents key names (it returned
+  is_relevant instead of relevant). generateContent wants UPPER-case type names.
+- The larger models frequently 503 "high demand" on the free tier; flash-lite
+  does not. Transient 5xx now retries 3x with backoff.
+- Free-tier RPM/RPD are no longer published per model; they are per-project in
+  AI Studio. verify_gemini.py probes what a given key actually supports.
+
+### Verified
+- Batching, id mapping, out-of-order and wrapped responses, provenance marking.
+- Sandboxed full run (temp paths, no key): 61 new articles, 0 Gemini requests,
+  0 rejections recorded - correct, since keyword verdicts are not final.
+- Live single-article check with a real key: on-topic 0.95 with sensible tags,
+  off-topic 0.0.
+- Site served under /roofline/: all assets 200, all refs relative.
+
+### Still to do
+- Revoke the Twitter credentials (STILL OUTSTANDING).
+- Create public repo kailashbuki/roofline, push, enable Pages via Actions.
+- Old repo: keep private as an archive, or delete. It still contains the
+  secret-bearing objects.

@@ -1,46 +1,34 @@
-import feedparser
 from datetime import datetime
-from database import Article
+
+import feedparser
+
+from collectors import pipeline
+
+FEED_URL = 'https://www.airealist.ai/feed'
+
 
 def collect_airealist(session, config):
-    """Collect articles from AI Realist (Julien Simon's Substack)"""
-    feed_url = 'https://www.airealist.ai/feed'
-    count = 0
-    
+    """AI Realist (Julien Simon's Substack). Wholly on-topic, so nothing is
+    dropped on score, but entries are still classified to get tags."""
     try:
-        feed = feedparser.parse(feed_url)
-        
-        for entry in feed.entries:
-            url = entry.get('link', '')
-            
-            # Check if already exists
-            existing = session.query(Article).filter_by(url=url).first()
-            if existing:
-                continue
-            
-            title = entry.get('title', 'No title')
-            summary = entry.get('summary', '')
-            
-            # Parse publication date
-            pub_date = datetime.utcnow()
-            if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                pub_date = datetime(*entry.published_parsed[:6])
-            
-            article = Article(
-                title=title[:255],
-                url=url,
-                source='airealist',
-                published_date=pub_date,
-                summary=summary[:500] if summary else '',
-                relevance_score=1.0,
-                tags='ai,llm,inference'
-            )
-            session.add(article)
-            count += 1
-        
-        session.commit()
-        
-    except Exception as e:
-        print(f"Error collecting AI Realist: {e}")
-    
-    return count
+        feed = feedparser.parse(FEED_URL)
+    except Exception as exc:
+        print(f"    Error collecting AI Realist: {exc}")
+        return 0
+
+    rows = []
+    for entry in feed.entries:
+        url = entry.get('link', '')
+        if not url:
+            continue
+
+        published = entry.get('published_parsed')
+        rows.append({
+            "title": entry.get('title', 'No title'),
+            "url": url,
+            "source": "airealist",
+            "published_date": datetime(*published[:6]) if published else datetime.utcnow(),
+            "summary": entry.get('summary', '')[:1000],
+        })
+
+    return pipeline.commit(session, config, rows, always_keep=True)

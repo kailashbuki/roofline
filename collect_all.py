@@ -2,6 +2,7 @@ from datetime import datetime
 
 from database import load_config
 from store import hydrate, dump, DATA_PATH
+from collectors import pipeline
 from collectors.arxiv_collector import collect_arxiv
 from collectors.hackernews_collector import collect_hackernews
 from collectors.rss_collector import collect_rss
@@ -20,6 +21,7 @@ COLLECTORS = [
 def run_collection():
     config = load_config()
     session = hydrate(DATA_PATH)
+    pipeline.load_rejected()
 
     print(f"[{datetime.now()}] Starting collection...")
 
@@ -34,7 +36,9 @@ def run_collection():
             print(f"  {name}: FAILED ({type(exc).__name__}: {exc})")
 
     stored = dump(session, DATA_PATH)
-    print(f"Total: {total} new articles collected ({stored} in store)\n")
+    rejected = pipeline.save_rejected()
+    print(f"Total: {total} new articles ({stored} in store, {rejected} rejected urls remembered)")
+    print(f"Gemini requests this run: {pipeline.classify_calls()}\n")
     return total
 
 
