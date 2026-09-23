@@ -1,0 +1,39 @@
+{
+ "month": "2025-04",
+ "count": 3,
+ "articles": [
+  {
+   "title": "Implement Flash Attention Back End in SGLang – Basics and KV Cache",
+   "url": "https://hebiao064.github.io/fa3-attn-backend-basic",
+   "source": "hackernews",
+   "published_date": "2025-04-29T05:47:04",
+   "summary": "36 points, 5 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-methods",
+   "importance": 0.45,
+   "why": "Details KV cache integration steps for custom attention backends."
+  },
+  {
+   "title": "Blocked Matrix Formulation of Linear Attention Mechanisms",
+   "url": "https://leloykun.github.io/ponder/blockmat-linear-attn",
+   "source": "hackernews",
+   "published_date": "2025-04-16T14:36:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,attention,optimization",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Introduces blocked matrix formulations for linear attention to improve computational efficiency."
+  },
+  {
+   "title": "State Space Model Meets Transformer: A New Paradigm for 3D Object Detection",
+   "url": "https://arxiv.org/abs/2503.14493",
+   "source": "hackernews",
+   "published_date": "2025-04-02T02:41:52",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Combines state space models with attention paradigms to enhance 3D object detection tasks."
+  }
+ ]
+}

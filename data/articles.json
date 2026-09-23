@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-23T20:50:20Z",
+ "generated_at": "2026-09-23T20:51:58Z",
  "hot_days": 120,
  "count": 849,
- "total_collected": 849,
+ "total_collected": 928,
  "sources": [
   "airealist",
   "anthropic:research",
