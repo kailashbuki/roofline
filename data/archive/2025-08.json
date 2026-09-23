@@ -1,0 +1,28 @@
+{
+ "month": "2025-08",
+ "count": 2,
+ "articles": [
+  {
+   "title": "Writing Speed-of-Light Flash Attention for 5090 in CUDA C++",
+   "url": "https://gau-nernst.github.io/fa-5090",
+   "source": "hackernews",
+   "published_date": "2025-08-23T12:29:02",
+   "summary": "159 points, 34 comments on HackerNews",
+   "tags": "attention,optimization,hardware",
+   "area": "inference-methods",
+   "importance": 0.4,
+   "why": "Custom CUDA implementation maximizes tensor core utilization for consumer GPUs on attention workloads."
+  },
+  {
+   "title": "From GPT-2 to gpt-oss: Analyzing the Architectural Advances",
+   "url": "https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-08-09T11:23:07",
+   "summary": "And How They Stack Up Against Qwen3",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Traces architectural divergence between GPT-2 and gpt-oss to quantify generational parameter efficiency gains."
+  }
+ ]
+}
