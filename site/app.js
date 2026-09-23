@@ -1,26 +1,31 @@
-// roofline — static reader over data/articles.json.
-// Read state lives in localStorage. Note the origin is shared with the personal
-// homepage on github.io, hence the namespaced keys.
+// roofline — a briefing, not a feed.
+//
+// The page answers one question: what must I read? Items are grouped by area of
+// interest and ordered by the editorial importance score the classifier assigns,
+// with its one-line justification shown inline so you can skip without opening.
+//
+// Read state lives in localStorage. The origin is shared with the personal
+// homepage on github.io, hence the namespaced key.
 const READ_KEY = "roofline:read";
-const PAGE_SIZE = 60;
+const LEDE_COUNT = 5;
+const PER_AREA = 6;
 
-const el = {
-  list: document.getElementById("list"),
-  source: document.getElementById("source"),
-  tag: document.getElementById("tag"),
-  window: document.getElementById("window"),
-  sort: document.getElementById("sort"),
-  search: document.getElementById("search"),
-  unread: document.getElementById("unread"),
-  stats: document.getElementById("stats"),
-  updated: document.getElementById("updated"),
-  more: document.getElementById("more"),
-  markAll: document.getElementById("mark-all"),
-};
+// Display order and labels. Mirrors classifier.AREAS.
+const AREAS = [
+  ["architecture", "Model architecture"],
+  ["new-models", "New models"],
+  ["inference-methods", "Inference optimization"],
+  ["inference-engines", "Inference engines & serving"],
+  ["silicon", "Silicon"],
+  ["training", "Training & post-training"],
+  ["other", "Everything else"],
+];
+
+const el = (id) => document.getElementById(id);
 
 let articles = [];
-let shown = PAGE_SIZE;
 let read = loadRead();
+const expanded = new Set();
 
 function loadRead() {
   try {
@@ -33,147 +38,177 @@ function loadRead() {
 function saveRead() {
   try {
     localStorage.setItem(READ_KEY, JSON.stringify([...read]));
-  } catch {
-    /* private browsing or quota exceeded — read state is best-effort */
-  }
+  } catch { /* private browsing — read state is best effort */ }
 }
 
 function relativeDate(iso) {
-  if (!iso) return "unknown date";
+  if (!iso) return "";
   const then = new Date(iso + "Z");
   const days = Math.floor((Date.now() - then.getTime()) / 86400000);
-  if (days < 0) return then.toLocaleDateString();
-  if (days === 0) return "today";
+  if (days <= 0) return "today";
   if (days === 1) return "yesterday";
   if (days < 30) return `${days}d ago`;
-  return then.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  return then.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
-function visible() {
-  const days = Number(el.window.value);
+/** Rows passing the filter row, ordered most-important first. */
+function inScope() {
+  const days = Number(el("window").value);
   const cutoff = days ? Date.now() - days * 86400000 : null;
-  const source = el.source.value;
-  const tag = el.tag.value;
-  const needle = el.search.value.trim().toLowerCase();
+  const bar = Number(el("bar").value);
+  const needle = el("search").value.trim().toLowerCase();
 
-  const rows = articles.filter((a) => {
-    if (source !== "all" && a.source !== source) return false;
-    if (tag !== "all" && !(a.tags || "").split(",").includes(tag)) return false;
-    if (cutoff && a.published_date && new Date(a.published_date + "Z").getTime() < cutoff) return false;
-    if (el.unread.checked && read.has(a.url)) return false;
-    if (needle && !a.title.toLowerCase().includes(needle)) return false;
-    return true;
-  });
-
-  if (el.sort.value === "relevance") {
-    rows.sort((a, b) =>
-      (b.relevance_score || 0) - (a.relevance_score || 0) ||
-      (b.published_date || "").localeCompare(a.published_date || "")
-    );
-  }
-  return rows;
+  return articles
+    .filter((a) => {
+      const when = a.published_date ? new Date(a.published_date + "Z").getTime() : null;
+      if (cutoff && (!when || when < cutoff)) return false;
+      if (el("unread").checked && read.has(a.url)) return false;
+      if (needle && !(a.title || "").toLowerCase().includes(needle)) return false;
+      // An unrated row has never been seen by the model. Don't hide it behind a
+      // bar it never had the chance to clear — show it marked unrated instead.
+      if (bar > 0 && typeof a.importance === "number" && a.importance < bar) return false;
+      return true;
+    })
+    .sort((a, b) =>
+      (b.importance ?? 0.5) - (a.importance ?? 0.5) ||
+      (b.published_date || "").localeCompare(a.published_date || ""));
 }
 
 function toast(message) {
   const node = document.createElement("div");
   node.className = "toast";
   node.textContent = message;
-  document.body.appendChild(node);
-  setTimeout(() => node.remove(), 2600);
+  document.body.append(node);
+  setTimeout(() => node.remove(), 2400);
 }
 
 function summarize(article) {
   const prompt = `Summarize this article: ${article.title} ${article.url}`;
   const open = () => window.open("https://gemini.google.com/app", "_blank", "noopener");
   if (navigator.clipboard?.writeText) {
-    navigator.clipboard.writeText(prompt).then(
-      () => { toast("Prompt copied — paste into Gemini"); open(); },
-      open
-    );
+    navigator.clipboard.writeText(prompt).then(() => {
+      toast("Prompt copied — paste into Gemini");
+      open();
+    }, open);
   } else {
     open();
   }
 }
 
-function card(article) {
-  const isRead = read.has(article.url);
+function markRead(article, node) {
+  if (read.has(article.url)) return;
+  read.add(article.url);
+  saveRead();
+  node.classList.add("read");
+  renderCounts();
+}
+
+function span(className, text) {
+  const node = document.createElement("span");
+  if (className) node.className = className;
+  node.textContent = text;
+  return node;
+}
+
+function card(article, { lede = false } = {}) {
   const node = document.createElement("a");
-  node.className = "card" + (isRead ? " read" : "");
+  node.className = `item${read.has(article.url) ? " read" : ""}${lede ? " item-lede" : ""}`;
   node.href = article.url;
   node.target = "_blank";
   node.rel = "noopener";
 
-  const title = document.createElement("h2");
-  title.textContent = (isRead ? "" : "🔥 ") + article.title;
+  const rated = typeof article.importance === "number";
+  const rank = span(`rank${rated ? "" : " unrated"}`, rated ? article.importance.toFixed(2) : "–");
+  rank.title = rated ? "importance" : "not yet rated";
 
-  const meta = document.createElement("div");
-  meta.className = "meta";
-  const source = document.createElement("span");
-  source.className = "source";
-  source.textContent = article.source;
-  const date = document.createElement("span");
-  date.textContent = relativeDate(article.published_date);
-  meta.append(source, date);
+  const body = document.createElement("span");
+  body.className = "item-body";
+  body.append(span("item-title", article.title));
 
-  for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 4)) {
-    const chip = document.createElement("span");
-    chip.className = "tag";
-    chip.textContent = tag;
-    meta.append(chip);
-  }
+  // The justification is the whole point: it lets you skip without opening.
+  if (article.why) body.append(span("item-why", article.why));
 
-  const button = document.createElement("button");
-  button.className = "summarize";
-  button.type = "button";
-  button.title = "Summarize with Gemini";
-  button.textContent = "✨";
-  button.addEventListener("click", (event) => {
+  const meta = document.createElement("span");
+  meta.className = "item-meta";
+  meta.append(span("item-source", article.source));
+  meta.append(span("", relativeDate(article.published_date)));
+  if (!read.has(article.url)) meta.append(span("item-new", "new"));
+  body.append(meta);
+
+  const spark = document.createElement("button");
+  spark.className = "summarize";
+  spark.type = "button";
+  spark.title = "Summarize with Gemini";
+  spark.textContent = "✨";
+  spark.addEventListener("click", (event) => {
     event.preventDefault();
     event.stopPropagation();
     summarize(article);
   });
 
-  node.addEventListener("click", () => {
-    if (!read.has(article.url)) {
-      read.add(article.url);
-      saveRead();
-      node.classList.add("read");
-      title.textContent = article.title;
-      renderStats();
-    }
-  });
-
-  node.append(title, meta, button);
+  node.addEventListener("click", () => markRead(article, node));
+  node.append(rank, body, spark);
   return node;
 }
 
-function renderStats() {
+function renderCounts() {
   const unread = articles.filter((a) => !read.has(a.url)).length;
-  el.stats.textContent = `${articles.length} articles · ${unread} unread`;
+  el("counts").textContent = `${articles.length} collected · ${unread} unread`;
 }
 
 function render() {
-  const rows = visible();
-  el.list.textContent = "";
+  const rows = inScope();
+  const lede = rows.slice(0, LEDE_COUNT);
+  const ledeUrls = new Set(lede.map((a) => a.url));
 
-  if (!rows.length) {
-    el.list.innerHTML = '<p class="empty">Nothing matches those filters.</p>';
-    el.more.hidden = true;
-    return;
+  el("lede-section").hidden = lede.length === 0;
+  const ledeHost = el("lede");
+  ledeHost.textContent = "";
+  for (const article of lede) ledeHost.append(card(article, { lede: true }));
+
+  const host = el("areas");
+  host.textContent = "";
+  let shown = lede.length;
+
+  for (const [area, label] of AREAS) {
+    const all = rows.filter((a) => (a.area || "other") === area && !ledeUrls.has(a.url));
+    if (!all.length) continue;
+
+    const section = document.createElement("section");
+    section.className = "area";
+
+    const head = document.createElement("div");
+    head.className = "area-head";
+    head.append(Object.assign(document.createElement("h2"), { textContent: label }));
+    head.append(span("area-count", all.length));
+    section.append(head);
+
+    const isOpen = expanded.has(area);
+    const visible = isOpen ? all : all.slice(0, PER_AREA);
+    for (const article of visible) section.append(card(article));
+    shown += visible.length;
+
+    if (all.length > PER_AREA) {
+      const more = document.createElement("button");
+      more.className = "link more-in-area";
+      more.textContent = isOpen
+        ? "Show less"
+        : `Show ${all.length - PER_AREA} more`;
+      more.addEventListener("click", () => {
+        if (isOpen) expanded.delete(area); else expanded.add(area);
+        render();
+      });
+      section.append(more);
+    }
+
+    host.append(section);
   }
 
-  const fragment = document.createDocumentFragment();
-  for (const article of rows.slice(0, shown)) fragment.append(card(article));
-  el.list.append(fragment);
+  const empty = el("empty");
+  empty.hidden = shown > 0;
+  empty.textContent = shown > 0 ? "" : "Nothing clears that bar in this range.";
 
-  el.more.hidden = rows.length <= shown;
-  el.more.textContent = `Show more (${rows.length - shown} left)`;
-  renderStats();
-}
-
-function reset() {
-  shown = PAGE_SIZE;
-  render();
+  renderCounts();
 }
 
 fetch("./data/articles.json")
@@ -183,36 +218,22 @@ fetch("./data/articles.json")
   })
   .then((data) => {
     articles = data.articles || [];
-    el.updated.textContent = data.generated_at
+    el("updated").textContent = data.generated_at
       ? `updated ${relativeDate(data.generated_at.replace("Z", ""))}`
       : "";
-
-    el.source.append(new Option("All sources", "all"));
-    for (const source of data.sources || []) el.source.append(new Option(source, source));
-
-    el.tag.append(new Option("All tags", "all"));
-    const tags = new Set();
-    for (const article of articles) {
-      for (const t of (article.tags || "").split(",")) if (t) tags.add(t);
-    }
-    for (const t of [...tags].sort()) el.tag.append(new Option(t, t));
-
     render();
   })
   .catch((error) => {
-    el.list.innerHTML = `<p class="empty">Could not load articles (${error.message}).</p>`;
+    el("empty").hidden = false;
+    el("empty").textContent = `Could not load articles (${error.message}).`;
   });
 
-for (const control of [el.source, el.tag, el.window, el.sort, el.unread]) {
-  control.addEventListener("change", reset);
+for (const id of ["window", "bar", "unread"]) {
+  el(id).addEventListener("change", () => { expanded.clear(); render(); });
 }
-el.search.addEventListener("input", reset);
-el.more.addEventListener("click", () => {
-  shown += PAGE_SIZE;
-  render();
-});
-el.markAll.addEventListener("click", () => {
-  for (const article of visible()) read.add(article.url);
+el("search").addEventListener("input", () => { expanded.clear(); render(); });
+el("mark-all").addEventListener("click", () => {
+  for (const article of inScope()) read.add(article.url);
   saveRead();
   render();
 });

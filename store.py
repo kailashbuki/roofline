@@ -62,6 +62,9 @@ def hydrate(path=DATA_PATH):
             relevance_score=record.get("relevance_score", 0.0),
             read_status=record.get("read_status", False),
             tags=record.get("tags", "") or "",
+            area=record.get("area") or "other",
+            importance=record.get("importance"),
+            why=record.get("why") or "",
         ))
     session.commit()
     return session
@@ -74,7 +77,7 @@ def dump(session, path=DATA_PATH):
     """
     articles = []
     for row in session.query(Article).all():
-        articles.append({
+        record = {
             "title": row.title,
             "url": row.url,
             "source": row.source,
@@ -82,7 +85,15 @@ def dump(session, path=DATA_PATH):
             "summary": row.summary or "",
             "relevance_score": round(row.relevance_score or 0.0, 3),
             "tags": row.tags or "",
-        })
+            "area": row.area or "other",
+        }
+        # Absent when only the keyword fallback has seen it, which the page shows
+        # as "unrated" rather than inventing a number.
+        if row.importance is not None:
+            record["importance"] = round(row.importance, 3)
+        if row.why:
+            record["why"] = row.why
+        articles.append(record)
 
     articles.sort(key=lambda a: (a["published_date"] or "", a["url"]), reverse=True)
 

@@ -134,9 +134,10 @@ def commit(session, config, rows, always_keep=False):
     min_score = config.get("relevance", {}).get("min_score", 0.4)
 
     kept = 0
-    for candidate, (score, tags, judged_by) in zip(candidates, verdicts):
+    keepers = []
+    for candidate, (verdict, judged_by) in zip(candidates, verdicts):
         keep_regardless = candidate.get("always_keep", always_keep)
-        if not keep_regardless and score < min_score:
+        if not keep_regardless and verdict.score < min_score:
             # Only a real model verdict is final. A keyword-scored rejection is
             # a guess made because Gemini was unavailable, so leave the URL
             # unrecorded and let a later run judge it properly.
@@ -144,16 +145,21 @@ def commit(session, config, rows, always_keep=False):
                 _reject(candidate["url"])
             continue
 
-        session.add(Article(
+        keepers.append(Article(
             title=(candidate["title"] or "")[:500],
             url=candidate["url"],
             source=candidate["source"],
             published_date=candidate.get("published_date"),
             summary=(candidate.get("summary") or "")[:1000],
-            relevance_score=score,
-            tags=tags,
+            relevance_score=verdict.score,
+            tags=verdict.tags,
+            area=verdict.area,
+            importance=verdict.importance,
+            why=verdict.why,
         ))
         kept += 1
 
+    for article in keepers:
+        session.add(article)
     session.commit()
     return kept

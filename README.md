@@ -21,7 +21,7 @@ GitHub Actions (cron 3x/day)
        ├─ hydrate in-memory SQLite from data/articles.json
        ├─ run 5 collectors, gathering candidates
        ├─ drop URLs already stored or already rejected
-       ├─ batch-classify the rest via classifier.py (Gemini, keyword fallback)
+       ├─ batch-classify the rest: relevance, area, importance, why, tags
        └─ dump back to data/articles.json
   └─ commit data/articles.json
   └─ deploy site/ + data/ to GitHub Pages
@@ -40,8 +40,7 @@ lets the collectors keep their SQLAlchemy session interface unchanged.
 - `relevance_scorer.py` — keyword scoring, used when Gemini is unavailable
 - `database.py` — the `Article` model and config loader
 - `collectors/` — arXiv, HackerNews, RSS (9 feeds), Anthropic blogs, AI Realist
-- `site/index.html` — the feed
-- `site/pulse.html` — the trend dashboard (hand-rolled inline SVG, no chart library)
+- `site/index.html` — the briefing (plain HTML/CSS/JS, no build step)
 - `.github/workflows/collect.yml` — collect, commit, deploy
 
 ## Local development
@@ -65,6 +64,23 @@ config.
 ## Configuration
 
 `config.yaml` controls sources, feeds, keywords, and the minimum relevance score.
+The areas and the importance rubric live in `classifier.py` (`AREAS`,
+`build_prompt`).
+
+Importance is judged on novelty of problem formulation, creativity of
+methodology, surprisingness of results, potential impact, and departure from
+existing approaches — one call per batch, alongside relevance and area, so the
+editorial judgement costs no extra requests.
+
+### Backfilling
+
+Rows collected before this existed have no area or importance. Fill them in with:
+
+```bash
+export GEMINI_API_KEY='...'
+python reclassify.py --dry-run   # preview
+python reclassify.py             # ~1 request per 20 rows
+```
 
 `classifier.py` reads these from the environment:
 
@@ -98,30 +114,25 @@ key never reaches a visitor's browser, and it is passed to the step via `env:`
 rather than interpolated into a shell command. Never put it in `config.yaml`,
 which is committed.
 
-## The pulse dashboard
+## One page, organised by what to read
 
-`pulse.html` is the "what changed" view, for catching up fast:
+The site is a **briefing**, not a feed and not a dashboard. It answers one
+question — what must I read? — and deliberately shows no volume charts, topic
+momentum, or source counts: those describe the pipeline, not the news.
 
-- **KPI tiles** — new today / 7d / 30d, unread, active sources. Headline numbers
-  are stat tiles, not one-bar charts.
-- **Volume per week** — 26 weeks, single series, crosshair tooltip.
-- **Topic momentum** — the one to read first. Share of the last 7 days minus share
-  of the prior three weeks, in percentage points. Deliberately *not* percent
-  change: that divides by a baseline which is often zero, collapsing "appeared
-  from nothing" and "doubled" into the same +100%. Topics with no prior activity
-  are flagged `new` instead.
-- **Topics over time** — small multiples, one panel per topic. Identity comes from
-  the panel label, so all twelve sparklines share one hue instead of needing
-  twelve colors.
-- **Where it comes from** — source mix, one hue (never a value-ramp over nominal
-  categories).
-- **Highest signal, last 7 days** — top-scored unread items.
+- **Start here** — the five highest-importance items across every area.
+- **Then one section per area of interest**, in fixed order: model architecture,
+  new models, inference optimization, inference engines & serving, silicon,
+  training & post-training, everything else. Six per area, expandable.
+- **Every item carries a one-line justification** of what is actually new and why
+  it matters. That line is the point: it lets you skip without opening.
+- **An importance bar** ("only what matters" / "worth a look" / "everything")
+  rather than a sort order, because the question is what to *read*, not how to
+  rank.
 
-Every chart has a table view, one filter row scopes all of them, and light and
-dark are two separately-chosen palettes rather than an automatic flip. The two
-chart hues were validated against both surfaces with the dataviz validator:
-dark `#1c1c1e` passes all six checks; light `#f2f2f7` passes with a contrast
-warning on orange, relieved by the direct labels and table views.
+Items the model has never seen show `–` instead of a number, and are never hidden
+by the importance bar — an unrated row could not have cleared a bar it was never
+measured against.
 
 ## Why there is no keyword filtering
 

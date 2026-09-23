@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>roofline — architecture, training, inference, silicon</title>
-  <meta name="description" content="A daily feed on the full AI performance stack: model architecture, training, post-training, inference optimization, serving systems, and AI chips.">
+  <title>roofline — what to read in AI performance</title>
+  <meta name="description" content="A daily briefing on the AI performance stack: model architecture, new models, inference optimization, inference engines, silicon, training.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,42 +16,44 @@
           <polyline points="3,19 14,4 30,4" fill="none" stroke="currentColor"
                     stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>roofline</h1>
-      <nav class="views">
-        <span class="here">Feed</span>
-        <a href="./pulse.html">Pulse</a>
-      </nav>
       <span id="updated" class="updated"></span>
     </div>
-    <p class="tagline">architecture · training · post-training · inference · serving · silicon</p>
 
     <div class="controls">
-      <select id="source" aria-label="Filter by source"></select>
-      <select id="tag" aria-label="Filter by tag"></select>
-      <select id="window" aria-label="Filter by age">
-        <option value="7">Last 7 days</option>
+      <select id="window" aria-label="Time range">
+        <option value="2">Last 2 days</option>
+        <option value="7" selected>Last 7 days</option>
         <option value="30">Last 30 days</option>
-        <option value="180" selected>Last 180 days</option>
+        <option value="90">Last 90 days</option>
         <option value="0">All time</option>
       </select>
-      <select id="sort" aria-label="Sort order">
-        <option value="date">Newest first</option>
-        <option value="relevance">Most relevant</option>
+      <select id="bar" aria-label="Importance threshold">
+        <option value="0.6">Only what matters</option>
+        <option value="0.35" selected>Worth a look</option>
+        <option value="0">Everything</option>
       </select>
-      <input id="search" type="search" placeholder="Search titles…" aria-label="Search titles">
+      <input id="search" type="search" placeholder="Search…" aria-label="Search titles">
       <label class="toggle"><input id="unread" type="checkbox"> Unread only</label>
-      <span id="stats" class="stats"></span>
+      <button id="mark-all" class="link">Mark all read</button>
     </div>
   </header>
 
-  <main id="list" aria-live="polite">
-    <p class="empty">Loading…</p>
+  <main>
+    <!-- The lede: the few things worth opening first, across every area. -->
+    <section id="lede-section" class="lede" hidden>
+      <h2 class="lede-head">Start here</h2>
+      <div id="lede"></div>
+    </section>
+
+    <!-- One section per area of interest, in a fixed order. -->
+    <div id="areas"></div>
+
+    <p id="empty" class="empty" hidden></p>
   </main>
 
-  <button id="more" class="more" hidden>Show more</button>
-
   <footer>
+    <span id="counts"></span>
     <span>Read state is stored in this browser only.</span>
-    <button id="mark-all" class="link">Mark all read</button>
   </footer>
 
   <script src="./app.js"></script>

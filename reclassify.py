@@ -25,13 +25,17 @@ LEGACY_TAGS = {"ai", "llm_inference", "accelerator"}
 
 
 def looks_keyword_scored(article):
+    """True when the row has never been seen by the model.
+
+    The briefing needs area, importance and why on every row; their absence is
+    the definitive signal, so it is checked first.
+    """
+    if not isinstance(article.get("importance"), (int, float)):
+        return True
+    if not article.get("area") or article["area"] == "other":
+        return True
     tags = {t for t in (article.get("tags") or "").split(",") if t}
-    if not tags:
-        return True
-    if tags & LEGACY_TAGS:
-        return True
-    # The keyword scorer saturates at exactly 1.0 far more often than the model.
-    if article.get("relevance_score") == 1.0 and article.get("source", "").startswith("arxiv"):
+    if not tags or tags & LEGACY_TAGS:
         return True
     return bool(tags - set(ALLOWED_TAGS))
 
@@ -61,19 +65,20 @@ def main():
 
     changed = 0
     by_model = 0
-    for article, (score, tags, judged_by) in zip(targets, verdicts):
+    for article, (verdict, judged_by) in zip(targets, verdicts):
         if judged_by != "gemini":
             continue
         by_model += 1
-        before = (article.get("relevance_score"), article.get("tags"))
-        after = (round(score, 3), tags)
-        if before != after:
-            changed += 1
-            if args.dry_run:
-                print(f"  {article['title'][:58]}")
-                print(f"      {before[0]} [{before[1]}]  ->  {after[0]} [{after[1]}]")
-            else:
-                article["relevance_score"], article["tags"] = after
+        changed += 1
+        if args.dry_run:
+            print(f"  {verdict.importance:.2f} [{verdict.area}] {article['title'][:52]}")
+            print(f"        {verdict.why}")
+        else:
+            article["relevance_score"] = round(verdict.score, 3)
+            article["tags"] = verdict.tags
+            article["area"] = verdict.area
+            article["importance"] = round(verdict.importance, 3) if verdict.importance is not None else None
+            article["why"] = verdict.why
 
     print(f"\nre-judged by model: {by_model}/{len(targets)}")
     print(f"rows that would change: {changed}" if args.dry_run else f"rows changed: {changed}")

@@ -311,3 +311,50 @@ All local runs used the keyword fallback (no key exported in this session), so
 some stored tags are wrong - an MHD numerical-schemes paper is tagged
 "inference". The first keyed run will classify properly; existing rows are not
 re-scored, since classification only runs on new URLs.
+
+## 2026-09-23 (night) - Dashboard scrapped; rebuilt as a single briefing page
+
+### The critique that caused this
+"What's the point of knowing which keyword hit how many frequencies or momentum
+or volume or source count? I want to know what are the key news I must look
+into." Correct: volume/week, topic momentum, source mix and KPI counts are
+analytics about the PIPELINE, not about the news. They prove the collector is
+alive; they do not tell you what to read. Also: feed and pulse should not be
+separate pages.
+
+### What replaced it
+DELETED site/pulse.html, site/pulse.js, all chart code, the KPI tiles, the viz
+colour tokens and the dataviz palette work. One page now:
+- "Start here": the 5 highest-importance items across all areas.
+- One section per area of interest (fixed order), 6 items each, expandable.
+- Every item shows a one-line justification of what is new and why it matters -
+  that line is the product; it lets you skip without opening.
+- An importance BAR (only-what-matters / worth-a-look / everything) instead of a
+  sort order, because the question is what to read, not how to rank.
+
+### Data model change
+The classifier's single batched call now returns area + importance + why in
+addition to relevance and tags, and returns a Verdict namedtuple rather than a
+tuple. This REPLACED the separate paper-ranking pass added earlier the same
+evening (rank_many, RANK_SCHEMA_*, the innovation/innovation_why columns, the
+--rank backfill): folding the five innovation criteria into the importance
+rubric covers all sources, not just papers, and costs no extra requests.
+- database.py: innovation/innovation_why -> area/importance/why
+- AREAS: architecture, new-models, inference-methods, inference-engines,
+  silicon, training, other. Exactly one per article so sections stay clean.
+- Unrated rows (keyword-fallback only) store no importance at all and are never
+  hidden by the bar - a row cannot fail a test it was never given.
+
+### Two CSS bugs caught by screenshotting again
+1. The regex that stripped the old dashboard styles also ate the closing brace of
+   the light-mode @media block, trapping every briefing rule inside it - so none
+   of them would have applied in dark mode. Brace-balance check added to the
+   verification step.
+2. A stray sparkle icon floated at the top-right of the page: the LEGACY
+   .summarize rule (position: absolute; top: 10px; right: 10px) survived the
+   strip, and with no positioned ancestor all of them stacked at the viewport
+   corner. Looked like one icon; was actually every icon.
+
+### Still to do
+- Backfill: all 1383 existing rows are unrated. `python reclassify.py` with a key
+  (~70 requests). Until then the page shows them as "-".

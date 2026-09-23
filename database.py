@@ -19,6 +19,9 @@ class Article(Base):
     relevance_score = Column(Float, default=0.0)
     read_status = Column(Boolean, default=False)
     tags = Column(String(500))
+    area = Column(String(40))           # exactly one; see classifier.AREAS
+    importance = Column(Float)          # None when only keyword-scored
+    why = Column(Text)                  # one-line editorial justification
     created_at = Column(DateTime, default=datetime.utcnow)
 
 def init_db(db_path="articles.db"):

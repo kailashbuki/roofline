@@ -24,6 +24,7 @@ Select with GEMINI_API. Run verify_gemini.py to see what your key supports.
 import json
 import os
 import time
+from collections import namedtuple
 
 import requests
 
@@ -61,6 +62,28 @@ ALLOWED_TAGS = [
     "optimization", "multimodal", "benchmarks", "llm",
 ]
 
+# Exactly one area per article, so the briefing can be sectioned cleanly.
+# Order is display order on the page.
+AREAS = [
+    "architecture",        # model architecture and algorithmic advances
+    "new-models",          # releases, open weights, capability jumps
+    "inference-methods",   # quantization, KV cache, speculative decoding, kernels
+    "inference-engines",   # vLLM, SGLang, TRT-LLM, serving systems
+    "silicon",             # chips, accelerators, memory, interconnect
+    "training",            # pretraining, post-training, scaling
+    "other",
+]
+
+AREA_LABELS = {
+    "architecture": "Model architecture",
+    "new-models": "New models",
+    "inference-methods": "Inference optimization",
+    "inference-engines": "Inference engines & serving",
+    "silicon": "Silicon",
+    "training": "Training & post-training",
+    "other": "Everything else",
+}
+
 SCOPE = (
     "a feed about the full AI performance stack: model architecture and "
     "algorithmic advances, training methods and scaling, post-training "
@@ -69,20 +92,20 @@ SCOPE = (
     "improvements, and AI chips and accelerators"
 )
 
-_ITEM_PROPS = {
-    "id": {"type": "INTEGER"},
-    "relevant": {"type": "BOOLEAN"},
-    "score": {"type": "NUMBER"},
-    "tags": {"type": "ARRAY", "items": {"type": "STRING", "enum": ALLOWED_TAGS}},
-}
-
 SCHEMA_UPPER = {
     "type": "ARRAY",
     "items": {
         "type": "OBJECT",
-        "properties": _ITEM_PROPS,
-        "required": ["id", "relevant", "score", "tags"],
-        "propertyOrdering": ["id", "relevant", "score", "tags"],
+        "properties": {
+            "id": {"type": "INTEGER"},
+            "relevant": {"type": "BOOLEAN"},
+            "area": {"type": "STRING", "enum": AREAS},
+            "importance": {"type": "NUMBER"},
+            "why": {"type": "STRING"},
+            "tags": {"type": "ARRAY", "items": {"type": "STRING", "enum": ALLOWED_TAGS}},
+        },
+        "required": ["id", "relevant", "area", "importance", "why", "tags"],
+        "propertyOrdering": ["id", "relevant", "area", "importance", "why", "tags"],
     },
 }
 
@@ -93,12 +116,16 @@ SCHEMA_LOWER = {
         "properties": {
             "id": {"type": "integer"},
             "relevant": {"type": "boolean"},
-            "score": {"type": "number"},
+            "area": {"type": "string", "enum": AREAS},
+            "importance": {"type": "number"},
+            "why": {"type": "string"},
             "tags": {"type": "array", "items": {"type": "string", "enum": ALLOWED_TAGS}},
         },
-        "required": ["id", "relevant", "score", "tags"],
+        "required": ["id", "relevant", "area", "importance", "why", "tags"],
     },
 }
+
+Verdict = namedtuple("Verdict", "score tags area importance why")
 
 _state = {"calls": 0, "last_call": 0.0, "disabled": False}
 
@@ -109,7 +136,13 @@ def _fallback_one(title, summary):
         keywords = load_config().get("relevance", {})
     except Exception:
         keywords = {}
-    return calculate_relevance(title, summary, keywords), extract_tags(title, summary)
+    return Verdict(
+        score=calculate_relevance(title, summary, keywords),
+        tags=extract_tags(title, summary),
+        area="other",
+        importance=None,     # no keyword proxy for "is this important"
+        why="",
+    )
 
 
 def _throttle():
@@ -127,12 +160,21 @@ def build_prompt(items):
         listing.append(f"[{index}] TITLE: {title}\n    SUMMARY: {clean}")
 
     return (
-        f"You are triaging articles for {SCOPE}.\n\n"
+        f"You are the editor of {SCOPE}.\n\n"
         f"Return one verdict per article, {len(items)} in total, echoing each "
         "article's id.\n"
-        "- relevant: false if the article is off-topic for that scope.\n"
-        "- score: 0.0-1.0, how central it is to the scope.\n"
-        f"- tags: choose only from {', '.join(ALLOWED_TAGS)}. Use 1-4 tags.\n\n"
+        "- relevant: false if off-topic for that scope.\n"
+        f"- area: the single best fit from {', '.join(AREAS)}.\n"
+        "- importance: 0.0-1.0 — would a practitioner in this field need to know "
+        "this? Judge on novelty of problem formulation or paradigm shift, "
+        "creativity of methodology, surprisingness of results, potential impact "
+        "on the field, and degree of departure from existing approaches. Be "
+        "strict and use the full range: routine engineering, incremental "
+        "benchmark gains, tutorials and marketing belong below 0.3; only a "
+        "genuine shift in what is possible belongs above 0.8.\n"
+        "- why: one sentence, at most 20 words, saying what is actually new here "
+        "and why it matters. No hype, no restating the title.\n"
+        f"- tags: 1-4, only from {', '.join(ALLOWED_TAGS)}.\n\n"
         "Articles:\n" + "\n".join(listing)
     )
 
@@ -212,14 +254,20 @@ def parse_verdicts(text, count):
         if not 0 <= index < count:
             continue
 
-        relevant = entry.get("relevant", entry.get("is_relevant", True))
-        if not relevant:
-            results[index] = (0.0, "")
+        if not entry.get("relevant", entry.get("is_relevant", True)):
+            results[index] = Verdict(0.0, "", "other", None, "")
             continue
 
-        score = max(0.0, min(1.0, float(entry.get("score", 0.5))))
+        importance = max(0.0, min(1.0, float(entry.get("importance", 0.5))))
+        area = entry.get("area") if entry.get("area") in AREAS else "other"
         tags = ",".join(t for t in entry.get("tags", []) if t in ALLOWED_TAGS)
-        results[index] = (score, tags)
+        results[index] = Verdict(
+            score=importance,
+            tags=tags,
+            area=area,
+            importance=importance,
+            why=(entry.get("why") or "").strip()[:300],
+        )
 
     return results
 
@@ -290,19 +338,22 @@ def classify_many(items):
             verdicts = _request_batch(chunk, api_key)
             results[start:start + len(chunk)] = verdicts
 
-    missing = sum(1 for r in results if r is None)
-    if missing:
-        if api_key and not _state["disabled"]:
-            print(f"  ({missing} item(s) unclassified by Gemini, using keyword scoring)")
-        for index, result in enumerate(results):
-            if result is None:
-                score, tags = _fallback_one(*items[index])
-                results[index] = (score, tags, "keyword")
+    out = []
+    missing = 0
+    for index, result in enumerate(results):
+        if result is None:
+            missing += 1
+            out.append((_fallback_one(*items[index]), "keyword"))
+        else:
+            out.append((result, "gemini"))
 
-    return [r if len(r) == 3 else (r[0], r[1], "gemini") for r in results]
+    if missing and api_key and not _state["disabled"]:
+        print(f"  ({missing} item(s) unclassified by Gemini, using keyword scoring)")
+    return out
 
 
 def classify_article(title, summary):
     """Single-item convenience wrapper. Prefer classify_many for whole feeds."""
-    score, tags, _ = classify_many([(title, summary)])[0]
-    return score, tags
+    verdict, _ = classify_many([(title, summary)])[0]
+    return verdict.score, verdict.tags
+
