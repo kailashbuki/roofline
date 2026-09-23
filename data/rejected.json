@@ -1,5 +1,5 @@
 {
- "count": 415,
+ "count": 419,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -415,6 +415,10 @@
   "https://www.lmsys.org/blog/2026-04-25-deepseek-v4",
   "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple",
   "https://blog.skypilot.co/scaling-autoresearch",
-  "https://arxiv.org/abs/2511.03060"
+  "https://arxiv.org/abs/2511.03060",
+  "https://blankline.org/research/hope",
+  "https://github.com/Kim-Ai-gpu/FactorizedAttention",
+  "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap",
+  "https://github.com/drhemanm/evo-attention"
  ]
 }
