@@ -1,0 +1,39 @@
+{
+ "month": "2025-08",
+ "count": 3,
+ "articles": [
+  {
+   "title": "Writing Speed-of-Light Flash Attention for 5090 in CUDA C++",
+   "url": "https://gau-nernst.github.io/fa-5090",
+   "source": "hackernews",
+   "published_date": "2025-08-23T12:29:02",
+   "summary": "159 points, 34 comments on HackerNews",
+   "tags": "attention,hardware,optimization",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Implements hardware-saturating CUDA C++ Flash Attention kernels for RTX 5090."
+  },
+  {
+   "title": "From GPT-2 to gpt-oss: Analyzing the Architectural Advances",
+   "url": "https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-08-09T11:23:07",
+   "summary": "And How They Stack Up Against Qwen3",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Traces architectural divergence from GPT-2 baseline to contemporary open-source designs."
+  },
+  {
+   "title": "Qwen2.5-Coder-3B Fine-Tuned for Triton Kernel Gen",
+   "url": "https://huggingface.co/TEEN-D/Qwen2.5-Coder-3B-KernelBook-Finetuned",
+   "source": "hackernews",
+   "published_date": "2025-08-03T03:13:18",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "training,optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.4,
+   "why": "Fine-tunes a small coder model specifically for generating Triton GPU kernels."
+  }
+ ]
+}

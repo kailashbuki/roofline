@@ -1,5 +1,5 @@
 {
- "count": 387,
+ "count": 394,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -387,6 +387,13 @@
   "https://ieeexplore.ieee.org/document/10754699",
   "https://www.anthropic.com/engineering/advanced-tool-use",
   "https://openai.com/index/airbnb-gpt-6-astra",
-  "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+  "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+  "https://hebiao064.github.io/fa3-attn-backend-basic",
+  "https://arxiv.org/abs/2506.12038",
+  "https://rig.ai/blog/compressing-a-model-to-run-locally",
+  "https://www.nextplatform.com/2025/12/03/with-trainium4-aws-will-crank-up-everything-but-the-clocks",
+  "https://semianalysis.com/2025/09/03/amazons-ai-resurgence-aws-anthropics-multi-gigawatt-trainium-expansion",
+  "https://www.anthropic.com/engineering/claude-think-tool",
+  "https://www.anthropic.com/engineering/contextual-retrieval"
  ]
 }

@@ -1,0 +1,94 @@
+{
+ "month": "2026-03",
+ "count": 8,
+ "articles": [
+  {
+   "title": "Amazon's Trainium lab, the chip that's won over Anthropic, OpenAI, even Apple",
+   "url": "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple",
+   "source": "hackernews",
+   "published_date": "2026-03-23T03:19:10",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Profiles AWS Trainium adoption metrics across major AI labs."
+  },
+  {
+   "title": "A Visual Guide to Attention Variants in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-03-22T11:55:40",
+   "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Compares attention variants from MHA to MLA and hybrid designs, explaining memory footprint trade-offs."
+  },
+  {
+   "title": "Scaling Karpathy's Autoresearch: What Happens When the Agent Gets a GPU Cluster",
+   "url": "https://blog.skypilot.co/scaling-autoresearch",
+   "source": "hackernews",
+   "published_date": "2026-03-19T16:55:45",
+   "summary": "237 points, 94 comments on HackerNews",
+   "tags": "training,systems",
+   "area": "silicon",
+   "importance": 0.6,
+   "why": "Scales autonomous scientific discovery agents to multi-GPU clusters for automated model experimentation."
+  },
+  {
+   "title": "Mamba-3: Improved Sequence Modeling Using State Space Principles",
+   "url": "https://arxiv.org/abs/2603.15569",
+   "source": "hackernews",
+   "published_date": "2026-03-18T08:44:19",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Refines state space equations to improve sequence modeling capacity beyond prior Mamba versions."
+  },
+  {
+   "title": "Tree Search Distillation for Language Models Using PPO",
+   "url": "https://ayushtambde.com/blog/tree-search-distillation-for-language-models-using-ppo",
+   "source": "hackernews",
+   "published_date": "2026-03-15T00:51:55",
+   "summary": "87 points, 10 comments on HackerNews",
+   "tags": "training,post-training,llm",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Combines tree search with PPO for policy distillation in language models."
+  },
+  {
+   "title": "Scalable Training of Mixture-of-Experts Models with Megatron Core",
+   "url": "https://arxiv.org/abs/2603.07685",
+   "source": "hackernews",
+   "published_date": "2026-03-10T21:00:31",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,systems",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Integrates MoE primitives into Megatron Core for distributed training scalability."
+  },
+  {
+   "title": "Forcing Flash Attention onto a TPU and Learning the Hard Way",
+   "url": "https://archerzhang.me/forcing-flash-attention-onto-a-tpu",
+   "source": "hackernews",
+   "published_date": "2026-03-08T03:57:30",
+   "summary": "58 points, 16 comments on HackerNews",
+   "tags": "hardware,attention,systems",
+   "area": "inference-methods",
+   "importance": 0.4,
+   "why": "Documents TPU implementation challenges for Flash Attention primitives."
+  },
+  {
+   "title": "Flash Attention 4, running near matmul speeds [pdf]",
+   "url": "https://github.com/Dao-AILab/flash-attention/blob/main/assets/fa4_paper.pdf",
+   "source": "hackernews",
+   "published_date": "2026-03-05T19:03:48",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "attention,hardware,optimization",
+   "area": "inference-methods",
+   "importance": 0.7,
+   "why": "Achieves matrix-multiplication speeds for attention via custom hardware mapping."
+  }
+ ]
+}

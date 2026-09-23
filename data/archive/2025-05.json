@@ -1,0 +1,50 @@
+{
+ "month": "2025-05",
+ "count": 4,
+ "articles": [
+  {
+   "title": "NVLink Fusion: Embrace, Extend, Extinguish",
+   "url": "https://www.fabricatedknowledge.com/p/nvlink-fusion-embrace-extend-extinguish",
+   "source": "hackernews",
+   "published_date": "2025-05-27T22:07:27",
+   "summary": "14 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Analyzes the competitive lock-in implications of expanding proprietary chip-to-chip interconnect licenses."
+  },
+  {
+   "title": "Nvidia Licenses NVLink Memory Ports to CPU and Accelerator Makers",
+   "url": "https://www.nextplatform.com/2025/05/19/nvidia-licenses-nvlink-memory-ports-to-cpu-and-accelerator-makers",
+   "source": "hackernews",
+   "published_date": "2025-05-20T06:07:46",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.5,
+   "why": "Opens direct memory port licensing to external CPU and accelerator vendors."
+  },
+  {
+   "title": "Nvidia launches NVLink Fusion to connect custom CPUs with Nvidia hardware",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-nvlink-fusion-to-connect-custom-cpus-and-asics-with-nvidia-hardware",
+   "source": "hackernews",
+   "published_date": "2025-05-19T15:52:20",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Provides custom silicon developers direct access to proprietary high-speed cluster networking."
+  },
+  {
+   "title": "Mixture-of-Transformers: Sparse and Scalable Architecture for Multi-Modal Models",
+   "url": "https://arxiv.org/abs/2411.04996",
+   "source": "hackernews",
+   "published_date": "2025-05-10T21:41:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Applies sparsity routing across multi-modal transformer blocks to reduce compute overhead."
+  }
+ ]
+}

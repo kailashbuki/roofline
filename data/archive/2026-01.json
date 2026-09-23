@@ -1,0 +1,28 @@
+{
+ "month": "2026-01",
+ "count": 2,
+ "articles": [
+  {
+   "title": "Categories of Inference-Time Scaling for Improved LLM Reasoning",
+   "url": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-01-24T11:23:18",
+   "summary": "And an Overview of Recent Inference-Scaling Papers",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Classifies inference-time compute scaling strategies for reasoning performance improvement."
+  },
+  {
+   "title": "Writing a performant autograd on tenstorrent wormhole p1",
+   "url": "https://mewtwo.bearblog.dev/wormhole-autograd-p1",
+   "source": "hackernews",
+   "published_date": "2026-01-01T01:07:37",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "training,hardware,optimization",
+   "area": "silicon",
+   "importance": 0.5,
+   "why": "Implements custom hardware-specific automatic differentiation primitives for non-traditional accelerator architectures."
+  }
+ ]
+}
