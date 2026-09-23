@@ -71,8 +71,24 @@ def hydrate(path=DATA_PATH):
     Base.metadata.create_all(engine)
     session = sessionmaker(bind=engine)()
 
+    seen = {}
     for record in read_all(path):
-        session.add(Article(
+        url = record.get("url")
+        if not url:
+            continue
+        # The same url can legitimately appear in two files — an archive left over
+        # from a previous layout, a month file that was not pruned. Inserting it
+        # twice violates the unique constraint and kills the whole run, so dedupe
+        # here and keep whichever copy carries a real verdict.
+        prior = seen.get(url)
+        if prior is not None:
+            if prior.importance is None and record.get("importance") is not None:
+                prior.importance = record["importance"]
+                prior.why = record.get("why") or prior.why
+                prior.area = record.get("area") or prior.area
+                prior.tags = record.get("tags") or prior.tags
+            continue
+        row = Article(
             title=record.get("title", ""),
             url=record["url"],
             source=record.get("source", ""),
@@ -84,7 +100,9 @@ def hydrate(path=DATA_PATH):
             area=record.get("area") or "other",
             importance=record.get("importance"),
             why=record.get("why") or "",
-        ))
+        )
+        seen[url] = row
+        session.add(row)
     session.commit()
     return session
 
@@ -142,6 +160,13 @@ def dump(session, path=DATA_PATH):
     for month, rows in months.items():
         _write_if_changed(os.path.join(ARCHIVE_DIR, f"{month}.json"),
                           {"month": month, "count": len(rows), "articles": rows})
+
+    # Drop month files that no longer hold anything. Without this, rows that move
+    # between months leave a stale copy behind and turn up twice on the next read.
+    for existing in archive_files():
+        month = os.path.basename(existing)[:-len(".json")]
+        if month not in months:
+            os.remove(existing)
 
     return len(articles)
 

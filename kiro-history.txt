@@ -745,3 +745,28 @@ Two fixes:
 
 Lesson: a renamed element id is a breaking change to anyone holding a cached copy
 of the other half. Version the pair, or expect the split-brain window.
+
+## 2026-09-24 - Run failure: UNIQUE constraint failed: articles.url
+
+The commit step crashed inside merge_into_store with a duplicate-url insert.
+Checked the remote: 848 hot rows, ZERO archive files, no duplicates. So the
+duplicate was manufactured DURING the run:
+  1. collect_all.py writes data/articles.json AND data/archive/*.json on the runner
+  2. the remote has no archive files, so those are UNTRACKED there
+  3. `git reset --hard` does not delete untracked files, so the archives survived
+  4. merge_into_store then hydrated the remote's hot file PLUS those leftover
+     archives - the same urls twice - and SQLite refused the second insert
+That is a general hazard of using reset --hard to recover a working tree: it
+restores tracked files and ignores everything else.
+
+Three fixes, deliberately overlapping:
+- `git clean -fdq data/` after the reset, removing the untracked leftovers. This is
+  the direct cause.
+- hydrate() now dedupes by url and keeps whichever copy carries a real verdict.
+  Reading the same article from two files should never be able to kill a run,
+  whatever put it there.
+- dump() prunes month files that no longer hold any cold rows. Previously a row
+  moving between months left a stale copy behind, which would have produced the
+  same duplicate on a later read.
+Reproduced the crash locally with an overlapping archive, then confirmed hydrate
+returns 848 deduped rows instead of raising.

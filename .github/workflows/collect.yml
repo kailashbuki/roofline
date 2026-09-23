@@ -77,6 +77,10 @@ jobs:
 
             git fetch origin "$GITHUB_REF_NAME" --quiet
             git reset --hard "origin/$GITHUB_REF_NAME" --quiet
+            # reset --hard leaves UNTRACKED files. The archives this run just wrote
+            # are untracked when the remote has none, so they survived the reset and
+            # were then read alongside the remote hot file — the same urls twice.
+            git clean -fdq data/
 
             # Re-derive through the store so hot/archive rotation is recomputed;
             # merging only the hot file would drop rows that aged into an archive.
