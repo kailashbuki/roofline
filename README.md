@@ -166,7 +166,11 @@ The site is a **briefing**, not a feed and not a dashboard. It answers one
 question — what must I read? — and deliberately shows no volume charts, topic
 momentum, or source counts: those describe the pipeline, not the news.
 
-- **Start here** — the five highest-importance items across every area.
+- **One from each front** — the single highest-importance item per area. Not a
+  global top-5: measured, "top 5 by importance" was 5 of 5 arXiv papers covering
+  3 of 7 fronts, because whichever source produces the most high scorers wins the
+  whole slot. One per front guarantees the breadth nothing else on the page gives.
+  Suppressed when a single front is selected, where it would just repeat row one.
 - **Then one section per area of interest**, in fixed order: model architecture,
   new models, inference optimization, inference engines & serving, silicon,
   training & post-training, everything else. Six per area, expandable.

@@ -16,7 +16,10 @@ const MUST_READ_PERCENTILE = 0.9;
 const VISIT_KEY = "roofline:last-visit";
 // Only the first few per area. A briefing that needs scrolling is a list.
 const PER_AREA = 3;
-const LEDE_COUNT = 5;
+// The lede is one item per front, not the global top N. "Top 5 by importance"
+// collapses to whichever source produces the most high scorers — measured, it was
+// 5 of 5 arXiv covering 3 of 7 fronts, which is the opposite of cross-front
+// triage. One per front guarantees breadth, which nothing else on the page gives.
 
 // Display order and labels. Mirrors classifier.AREAS.
 // [key, section heading, pill label]. The pill label is short on purpose: the
@@ -184,6 +187,8 @@ function span(className, text) {
   return node;
 }
 
+const AREA_LABEL = new Map(AREAS.map(([key, label]) => [key, label]));
+
 function card(article, { lede = false } = {}) {
   const node = document.createElement("a");
   node.className = `item${read.has(article.url) ? " read" : ""}${lede ? " item-lede" : ""}`;
@@ -200,7 +205,11 @@ function card(article, { lede = false } = {}) {
 
   const meta = document.createElement("span");
   meta.className = "item-meta";
-  // Redundant in the lede, which is by definition the must-reads.
+  // In the lede the rows are from different fronts, so each must say which.
+  if (lede) {
+    const badge = span("front", AREA_LABEL.get(article.area) || article.area || "other");
+    meta.append(badge);
+  }
   if (!lede && typeof article.importance === "number" && article.importance >= mustReadCut) {
     const flag = span("must-read", "must read");
     flag.title = `importance ${article.importance.toFixed(2)}`;
@@ -314,17 +323,26 @@ function render() {
   mustReadCut = scores.length
     ? scores[Math.floor(scores.length * MUST_READ_PERCENTILE)]
     : Infinity;
-  // With few results the lede would swallow the whole page and the area grouping
-  // would vanish, so it only earns its place when there is a tail to lead.
-  // "other" is where unclassified and off-beat items land — it must never be
-  // allowed to supply the lede, or the headline slot fills with noise.
   renderPills(rows);
   renderDigest();
 
   if (activeArea !== "all") rows = rows.filter((a) => (a.area || "other") === activeArea);
 
-  const ledePool = rows.filter((a) => (a.area || "other") !== "other");
-  const lede = ledePool.length > LEDE_COUNT * 2 ? ledePool.slice(0, LEDE_COUNT) : [];
+  // One item per front, best first — not the global top N. Measured, "top 5 by
+  // importance" was 5 of 5 arXiv covering 3 of 7 fronts, which is the opposite of
+  // cross-front triage. One per front guarantees the breadth nothing else on the
+  // page provides. "other" never supplies a row: it is the unclassified bucket.
+  // Suppressed entirely for a single front, where it would just repeat row one.
+  const lede = [];
+  if (activeArea === "all") {
+    const taken = new Set();
+    for (const article of rows) {
+      const area = article.area || "other";
+      if (area === "other" || taken.has(area)) continue;
+      taken.add(area);
+      lede.push(article);
+    }
+  }
   const ledeUrls = new Set(lede.map((a) => a.url));
 
   el("lede-section").hidden = lede.length === 0;

@@ -246,6 +246,16 @@ footer {
 
 .item-source { color: var(--accent-2); }
 
+/* Which front a lede row came from. */
+.front {
+  color: var(--text);
+  opacity: 0.85;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .item-new {
   color: var(--accent);
   border: 1px solid currentColor;

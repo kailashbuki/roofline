@@ -660,3 +660,34 @@ Fixes:
 
 Lesson: a step that writes a file is worthless if a later step resets the tree.
 Anything produced mid-job has to survive the same way the inputs do.
+
+## 2026-09-23 (postscript 6) - "What is the goal of Start here?" - it had none it met
+
+Asked what the section was for. Stated intent: if you have thirty seconds, read
+these five. Measured whether it delivered:
+  window 7d:  5 of 5 arXiv, covering 3 of 7 fronts
+  window 30d: 3 of 5 arXiv, covering 4 of 7 fronts
+It was an arXiv-paper leaderboard, not cross-front triage - because "top N by
+importance globally" is won by whichever source produces the most high scorers. It
+was also redundant: every area section is already importance-sorted, so the lede
+was the first N of the same sort lifted out of their sections, and it stole each
+area's top row.
+
+Redefined as ONE ITEM PER FRONT, best first, renamed "One from each front". Now
+covers 7 of 7. Each row carries its front's name, since the rows are mixed.
+Suppressed entirely in single-front mode, where it only repeated row one - which
+also removes the old double-heading oddity.
+
+### A near-miss worth recording
+The string replacement that was supposed to install this silently did not match,
+which left `LEDE_COUNT` referenced after its declaration had been deleted. That is
+a ReferenceError inside render(), so the ENTIRE page rendered blank - not just the
+lede. The dump-dom check caught it (0 lede rows, 0 cards); a screenshot alone might
+have been dismissed as an empty filter result. Grepping for dangling references
+after an edit is now part of the check.
+
+### Known issue, not fixed
+All seven lede rows are still arXiv, because the model scores papers above blog
+posts and analysis across every area. Front coverage is fixed; SOURCE diversity is
+not. This looks like importance-rubric bias toward academic framing rather than a
+layout problem, and it needs a few days of real output to judge before tuning.
