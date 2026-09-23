@@ -180,9 +180,12 @@ momentum, or source counts: those describe the pipeline, not the news.
 - **A counted segmented control** — `All 672 · Notable 481 · Key 185` — rather
   than a sort order or a labelled dropdown. The count is what makes it legible:
   "worth a look" described a feeling, `Notable 481` describes what will happen.
-- **"Since last visit" as the default range**, which is the axis a daily briefing
-  needs; a fixed day count is only a proxy for it. The visit mark advances after
-  render, so the current visit's new items stay visible while you read them.
+- **"Since last visit" as the default range** — *your* last visit, from
+  `localStorage`, not the last data update. The axis a daily briefing needs; a
+  fixed day count is only a proxy. The mark advances only when a load starts a new
+  **session** (30+ minutes since the previous one), so reloading does not wipe the
+  set you were reading. The footer states the exact timestamp it is measured
+  against, since "since last visit" otherwise has two plausible readings.
 - **"Everything else" is collapsed and never supplies the lede.** It is where
   unclassified and off-beat items land, so letting it into the headline slot would
   fill it with noise.

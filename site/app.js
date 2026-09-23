@@ -13,7 +13,12 @@ const THEME_KEY = "roofline:theme";
 // sections SELECT for top rows, so any cut over the range fires on nearly every
 // visible one. Rank is carried by the ordering, the cut by the band, and the worth
 // by the why line.
-const VISIT_KEY = "roofline:last-visit";
+const VISIT_KEY = "roofline:visit";
+// A reload is not a new visit. Storing only "now" on every load meant refreshing
+// five minutes later emptied the entire "new" set, which is the one view the page
+// exists for. The mark therefore advances only when this load starts a new
+// session — a gap of at least this long since the previous one.
+const SESSION_GAP_MS = 30 * 60 * 1000;
 // Only the first few per area. A briefing that needs scrolling is a list.
 const PER_AREA = 3;
 // The lede is one item per front, not the global top N. "Top 5 by importance"
@@ -101,14 +106,36 @@ function relativeDate(iso) {
   return then.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
-/** Rows passing the filter row, ordered most-important first. */
-function lastVisit() {
+function readVisit() {
   try {
-    const stored = Number(localStorage.getItem(VISIT_KEY));
-    return Number.isFinite(stored) && stored > 0 ? stored : null;
+    const raw = localStorage.getItem(VISIT_KEY);
+    if (!raw) return { mark: null, seen: null };
+    // A bare number is the old format: one timestamp, written on every load.
+    const asNumber = Number(raw);
+    if (Number.isFinite(asNumber) && asNumber > 0) return { mark: null, seen: asNumber };
+    const parsed = JSON.parse(raw);
+    return { mark: parsed.mark ?? null, seen: parsed.seen ?? null };
   } catch {
-    return null;
+    return { mark: null, seen: null };
   }
+}
+
+/** Open a session: returns the timestamp "new" is measured against. */
+function openSession() {
+  const { mark, seen } = readVisit();
+  const now = Date.now();
+
+  let nextMark = mark;
+  if (seen === null) {
+    nextMark = null;                       // never been here; nothing to compare to
+  } else if (now - seen > SESSION_GAP_MS) {
+    nextMark = seen;                       // new session: last session's load time
+  }
+
+  try {
+    localStorage.setItem(VISIT_KEY, JSON.stringify({ mark: nextMark, seen: now }));
+  } catch { /* best effort */ }
+  return nextMark;
 }
 
 /** Everything passing time/search/unread, ignoring the importance band. */
@@ -151,7 +178,7 @@ function inScope() {
   let cutoff = null;
   if (range === "new") {
     // First visit has nothing to compare against, so fall back to a week.
-    cutoff = lastVisit() ?? Date.now() - 7 * 86400000;
+    cutoff = visitMark ?? Date.now() - 7 * 86400000;
   } else if (Number(range)) {
     cutoff = Date.now() - Number(range) * 86400000;
   }
@@ -485,7 +512,7 @@ function syncUrl() {
 initTheme();
 applyUrlParams();
 
-visitMark = lastVisit();
+visitMark = openSession();
 
 Promise.all([
   // no-cache forces revalidation. Without it the browser happily serves an
@@ -511,14 +538,16 @@ Promise.all([
         hour: "2-digit", minute: "2-digit",
       })}`;
       el("updated").title = data.generated_at;
+      const since = visitMark
+        ? `new = published since your last visit, ${new Date(visitMark).toLocaleString(undefined, {
+            month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`
+        : "new = everything, since this is your first visit here";
       el("stamp").textContent =
-        `showing the last ${data.hot_days ?? 120} days` +
-        (data.total_collected ? ` of ${data.total_collected.toLocaleString()} collected` : "");
+        `${data.hot_days ?? 120}-day window` +
+        (data.total_collected ? ` of ${data.total_collected.toLocaleString()} collected` : "") +
+        ` · ${since}`;
     }
     render();
-    // Stamped after rendering, so this visit's "new" set stays visible while you
-    // read it and only the next visit advances the mark.
-    try { localStorage.setItem(VISIT_KEY, String(Date.now())); } catch { /* ignore */ }
   })
   .catch(reportFailure);
 

@@ -770,3 +770,27 @@ Three fixes, deliberately overlapping:
   same duplicate on a later read.
 Reproduced the crash locally with an overlapping archive, then confirmed hydrate
 returns 848 deduped rows instead of raising.
+
+## 2026-09-24 - '"since last visit" is since last update?' - no, and it was broken
+
+The question is fair: the label has two plausible readings. It means since YOUR
+last visit, from localStorage, per browser - not since the last data update.
+Clarified in the UI rather than by renaming: the footer now prints the exact mark,
+e.g. "new = published since your last visit, 21 Sept, 00:18", and the option
+carries a title attribute saying it is not the data update.
+
+Checking it surfaced a worse defect. The mark was written as Date.now() on EVERY
+load, so reloading five minutes later set it to five minutes ago and the entire
+"new" set emptied. A refresh destroyed the one view the page exists for.
+
+Now session-based: the stored value is {mark, seen}. A load only advances the mark
+when it starts a new session - at least 30 minutes since the previous load - and
+otherwise holds it. So reloads are free, and returning tomorrow marks everything
+since yesterday's session. The old bare-number format is migrated by treating it as
+"seen". Also unified the range filter and the NEW badges on the same variable; the
+filter had been reading storage directly, so after the write the two could disagree
+about what counted as new.
+
+Verified with a table of cases: first visit (everything new), reload at +5 and +20
+min (mark held), return at +4.5h (mark becomes the previous session's load), reload
++1 min after that (held), next session (advances), legacy format (migrated).
