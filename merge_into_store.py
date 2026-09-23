@@ -17,6 +17,31 @@ from database import Article
 from store import hydrate, dump, DATA_PATH, _from_iso
 
 
+def _enrich(row, record):
+    """Fill any field the store is missing from the incoming record."""
+    changed = False
+
+    if row.importance is None and record.get("importance") is not None:
+        row.importance = record["importance"]
+        row.why = record.get("why") or row.why
+        changed = True
+
+    for field in ("area", "tags", "why", "summary"):
+        incoming = record.get(field)
+        current = getattr(row, field, None)
+        # "other" is a placeholder area, not a real value, so it loses to anything.
+        placeholder = not current or (field == "area" and current == "other")
+        if incoming and placeholder and incoming != current:
+            setattr(row, field, incoming)
+            changed = True
+
+    if row.first_seen is None and record.get("first_seen"):
+        row.first_seen = _from_iso(record["first_seen"])
+        changed = True
+
+    return changed
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit("usage: merge_into_store.py <saved-articles.json>")
@@ -37,16 +62,14 @@ def main():
 
                 row = rows_by_url.get(url)
                 if row is not None:
-                    # Adding missing URLs is not enough. A backfill re-rates rows
-                    # the store already holds, so on a push race those ratings
-                    # would be silently discarded — the whole run's work lost.
-                    if row.importance is None and record.get("importance") is not None:
-                        row.importance = record["importance"]
-                        row.why = record.get("why") or ""
-                        if record.get("area"):
-                            row.area = record["area"]
-                        if record.get("tags"):
-                            row.tags = record["tags"]
+                    # Adding missing URLs is not enough. A backfill improves rows the
+                    # store already holds, and on a push race those improvements
+                    # would be silently discarded — the run's whole work lost.
+                    #
+                    # Enriching field-by-field rather than naming a fixed list: the
+                    # first version only carried importance across, which is exactly
+                    # how a first_seen backfill got thrown away.
+                    if _enrich(row, record):
                         enriched += 1
                     continue
 
