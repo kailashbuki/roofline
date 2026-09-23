@@ -1,5 +1,5 @@
 {
- "count": 385,
+ "count": 387,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -385,6 +385,8 @@
   "https://arxiv.org/abs/2601.03290",
   "https://www.mdpi.com/1999-4893/18/10/645",
   "https://ieeexplore.ieee.org/document/10754699",
-  "https://www.anthropic.com/engineering/advanced-tool-use"
+  "https://www.anthropic.com/engineering/advanced-tool-use",
+  "https://openai.com/index/airbnb-gpt-6-astra",
+  "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
  ]
 }

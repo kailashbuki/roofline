@@ -1,0 +1,39 @@
+{
+ "month": "2026-01",
+ "count": 3,
+ "articles": [
+  {
+   "title": "Categories of Inference-Time Scaling for Improved LLM Reasoning",
+   "url": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-01-24T11:23:18",
+   "summary": "And an Overview of Recent Inference-Scaling Papers",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Categorizes inference-time compute scaling methods used to boost reasoning performance."
+  },
+  {
+   "title": "Introducing Contextual Retrieval",
+   "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+   "source": "anthropic:engineering",
+   "published_date": "2026-01-07T15:00:44",
+   "summary": "",
+   "tags": "optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Combines BM25 and embeddings to drastically lower retrieval failures in RAG pipelines."
+  },
+  {
+   "title": "Writing a performant autograd on tenstorrent wormhole p1",
+   "url": "https://mewtwo.bearblog.dev/wormhole-autograd-p1",
+   "source": "hackernews",
+   "published_date": "2026-01-01T01:07:37",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "hardware,training",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Low-level autograd implementation details enable performant training on non-traditional hardware architectures."
+  }
+ ]
+}
