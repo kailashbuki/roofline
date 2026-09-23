@@ -23,18 +23,34 @@ def main():
     saved_path = sys.argv[1]
 
     session = hydrate()  # remote hot file + every remote archive
-    existing = {url for (url,) in session.query(Article.url).all()}
-    before = len(existing)
+    rows_by_url = {row.url: row for row in session.query(Article).all()}
+    before = len(rows_by_url)
 
     added = 0
+    enriched = 0
     if os.path.exists(saved_path):
         with open(saved_path, encoding="utf-8") as handle:
             for record in json.load(handle).get("articles", []):
                 url = record.get("url")
-                if not url or url in existing:
+                if not url:
                     continue
-                existing.add(url)
-                session.add(Article(
+
+                row = rows_by_url.get(url)
+                if row is not None:
+                    # Adding missing URLs is not enough. A backfill re-rates rows
+                    # the store already holds, so on a push race those ratings
+                    # would be silently discarded — the whole run's work lost.
+                    if row.importance is None and record.get("importance") is not None:
+                        row.importance = record["importance"]
+                        row.why = record.get("why") or ""
+                        if record.get("area"):
+                            row.area = record["area"]
+                        if record.get("tags"):
+                            row.tags = record["tags"]
+                        enriched += 1
+                    continue
+
+                row = Article(
                     title=record.get("title", ""),
                     url=url,
                     source=record.get("source", ""),
@@ -45,12 +61,15 @@ def main():
                     area=record.get("area") or "other",
                     importance=record.get("importance"),
                     why=record.get("why") or "",
-                ))
+                )
+                rows_by_url[url] = row
+                session.add(row)
                 added += 1
         session.commit()
 
     total = dump(session, DATA_PATH)
-    print(f"merge_into_store: {before} on remote + {added} from this run = {total} total")
+    print(f"merge_into_store: {before} in store + {added} new + {enriched} enriched "
+          f"= {total} total")
 
 
 if __name__ == "__main__":
