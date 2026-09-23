@@ -1,5 +1,5 @@
 {
- "count": 294,
+ "count": 303,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -294,6 +294,15 @@
   "https://zenodo.org/records/21541601",
   "https://www.youtube.com/watch?v=-W2JdSl1v48",
   "https://news.ycombinator.com/item?id=48916631",
-  "https://github.com/R6410418/Jackrong-llm-finetuning-guide"
+  "https://github.com/R6410418/Jackrong-llm-finetuning-guide",
+  "https://github.com/inferless/triton-co-pilot",
+  "https://inria.hal.science/hal-04689673/document",
+  "https://yourmemoryai.vercel.app/",
+  "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1",
+  "https://www.trendforce.com/presscenter/news/20260529-13068.html",
+  "https://github.com/takara-ai/go-attention",
+  "https://arxiv.org/abs/2007.14902",
+  "https://huggingface.co/tsfrm/vacuum-16t",
+  "https://arxiv.org/abs/2403.10704"
  ]
 }
