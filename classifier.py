@@ -71,6 +71,7 @@ AREAS = [
     "inference-engines",   # vLLM, SGLang, TRT-LLM, serving systems
     "silicon",             # chips, accelerators, memory, interconnect
     "training",            # pretraining, post-training, scaling
+    "economics",           # cost per token, pricing, capacity and supply
     "other",
 ]
 
@@ -81,6 +82,7 @@ AREA_LABELS = {
     "inference-engines": "Inference engines & serving",
     "silicon": "Silicon",
     "training": "Training & post-training",
+    "economics": "Cost & economics",
     "other": "Everything else",
 }
 
@@ -89,7 +91,15 @@ SCOPE = (
     "algorithmic advances, training methods and scaling, post-training "
     "(fine-tuning, RLHF, distillation, quantization), inference optimization, "
     "serving systems and inference engines, distributed and systems-level "
-    "improvements, and AI chips and accelerators"
+    "improvements, AI chips and accelerators, and the ECONOMICS AND PHYSICAL "
+    "CONSTRAINTS of all of it — cost per token, inference pricing, hardware and "
+    "memory supply, fab and accelerator availability, and datacenter capacity, "
+    "power and grid interconnect. Falling cost per token is a headline outcome of "
+    "this stack, not a business-news sideshow, and power and capacity are the "
+    "binding constraint on what anyone can actually run: treat both as in scope. "
+    "What is NOT in scope: AI discourse, hype and opinion with no technical, cost "
+    "or capacity content; product launches with no performance or price detail; "
+    "AI safety and regulation debate; and applications built on top of models"
 )
 
 SCHEMA_UPPER = {

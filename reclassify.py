@@ -43,6 +43,8 @@ def looks_keyword_scored(article):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true", help="re-judge every article")
+    parser.add_argument("--rejected", action="store_true",
+                        help="re-judge rows scored 0.0, e.g. after widening the scope")
     parser.add_argument("--dry-run", action="store_true", help="report only")
     parser.add_argument("--limit", type=int, default=0, help="cap how many to re-judge")
     args = parser.parse_args()
@@ -53,7 +55,10 @@ def main():
     payload = json.load(open(DATA_PATH, encoding="utf-8"))
     articles = payload["articles"]
 
-    targets = [a for a in articles if args.all or looks_keyword_scored(a)]
+    if args.rejected:
+        targets = [a for a in articles if a.get("importance") == 0.0 or looks_keyword_scored(a)]
+    else:
+        targets = [a for a in articles if args.all or looks_keyword_scored(a)]
     if args.limit:
         targets = targets[:args.limit]
 

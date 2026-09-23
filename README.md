@@ -212,6 +212,22 @@ Sending every candidate to a model is affordable because of three things:
 Feeds where everything is on topic set `filter: false` in `config.yaml`: they are
 still classified, to get tags, but are never dropped on score.
 
+### Scope includes cost and capacity
+
+Cost per token, inference pricing, hardware and memory supply, and datacenter
+capacity/power are **in scope**, under `economics`. Falling cost per token is a
+headline outcome of this stack rather than business news, and power and capacity
+are the binding constraint on what anyone can actually run — a feed that drops
+them misses why the numbers move.
+
+`SCOPE` in `classifier.py` also states what is *out*: discourse and hype with no
+technical, cost or capacity content; launches with no performance or price detail;
+safety and regulation debate; applications built on top of models. Naming the
+exclusions is what stops a widened scope becoming general AI news.
+
+After changing the scope, recover previously rejected rows with
+`python reclassify.py --rejected`.
+
 ### How the area is decided
 
 For **papers** the title and abstract are the only inputs — the abstract is

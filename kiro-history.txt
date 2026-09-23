@@ -565,3 +565,41 @@ Whether off-topic rows should be stored at 0.0 at all, or deleted and added to t
 rejection ledger. Deleting is cleaner for the always_keep=false sources but
 contradicts filter: false for the others. Left stored and filtered for now, since
 the importance bar already hides them.
+
+## 2026-09-23 (postscript 3) - I was wrong: the scope had a hole, not the articles
+
+Pushback: '"The Price of Intelligence Is Falling Rapidly" is not off-topic.'
+Correct, and I had compounded the error by citing that rejection as EVIDENCE the
+classifier was working. Checked whether it was systematic rather than a one-off,
+and it plainly was - all of these had been rejected:
+  The Price of Intelligence Is Falling Rapidly
+  Tokens Too Cheap to Meter
+  The Economics of Open-Weight Inference
+  Claude Opus 5.5 Intelligence, Performance and Price Analysis
+  The current balance of power in open models
+  What is So Hard About Behind-The-Meter Power For Datacenters
+  Korea's Trillion-Dollar Sovereign AI Investment: Nvidia Wins, Hynix Loses
+22 SemiAnalysis and 11 Interconnects items were being dropped, which should have
+been the tell much earlier: those sources were chosen deliberately and one of them
+is MOSTLY economics.
+
+Root cause: SCOPE listed architecture, training, inference, serving and chips -
+and said nothing about cost. The model applied a too-narrow scope faithfully. I
+had even raised "economics/capex: signal or noise?" as an open question earlier in
+the session and then never resolved it, so this was a known gap left to rot.
+
+Fixes:
+- SCOPE now covers cost per token, inference pricing, hardware/memory supply, fab
+  and accelerator availability, and datacenter capacity/power/grid interconnect,
+  with explicit reasoning that falling cost per token is a headline OUTCOME of the
+  stack and that power is the binding constraint on what can be run.
+- SCOPE now also states what is OUT explicitly (discourse and hype with no
+  technical/cost/capacity content, launches with no performance or price detail,
+  safety and regulation debate, applications on top of models). Naming the
+  exclusions is what keeps the widening from turning the feed into general AI news.
+- New area: economics, "Cost & economics", between training and other. Keys 0-7.
+- reclassify.py --rejected re-judges rows previously scored 0.0, which is the
+  mechanism for recovering from a scope change like this one.
+
+Lesson: when the classifier rejects content from a source that was deliberately
+chosen for that content, suspect the scope before crediting the model.

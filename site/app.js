@@ -26,6 +26,7 @@ const AREAS = [
   ["inference-engines", "Inference engines & serving"],
   ["silicon", "Silicon"],
   ["training", "Training & post-training"],
+  ["economics", "Cost & economics"],
   ["other", "Everything else"],
 ];
 
@@ -436,11 +437,11 @@ for (const id of ["window", "bar", "unread"]) {
   el(id).addEventListener("change", () => { expanded.clear(); syncUrl(); render(); });
 }
 el("search").addEventListener("input", () => { expanded.clear(); syncUrl(); render(); });
-// 0 = all fronts, 1-6 = each area. Faster than reaching for the pills.
+// 0 = all fronts, 1-7 = each area. Faster than reaching for the pills.
 addEventListener("keydown", (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
   if (/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)) return;
-  const index = "0123456".indexOf(event.key);
+  const index = "01234567".indexOf(event.key);
   if (index < 0) return;
   const target = index === 0 ? "all" : (AREAS[index - 1] || [])[0];
   if (!target) return;
