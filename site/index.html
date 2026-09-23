@@ -22,8 +22,9 @@
 
     <div class="controls">
       <select id="window" aria-label="Time range">
+        <option value="new" selected>Since last visit</option>
         <option value="2">Last 2 days</option>
-        <option value="7" selected>Last 7 days</option>
+        <option value="7">Last 7 days</option>
         <option value="30">Last 30 days</option>
         <option value="90">Last 90 days</option>
       </select>
@@ -37,6 +38,8 @@
       <button id="mark-all" class="link">Mark all read</button>
     </div>
   </header>
+
+  <p id="notice" class="notice" hidden></p>
 
   <main>
     <!-- The lede: the few things worth opening first, across every area. -->

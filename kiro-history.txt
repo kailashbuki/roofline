@@ -425,3 +425,41 @@ also matched item-body, item-title, item-why, item-meta, item-source. Counting
 only `<a class="item` showed the truth: card count is pinned at 47 by design
 (5 lede + 7 areas x 6) while the "Show N more" counts move correctly with the
 filters - bar=0.6 collapses each area, window=90 expands it.
+
+## 2026-09-23 (later) - Dashboard critique round 2: it was unpopulated, not wrong
+
+### The report
+"We have 'start here', silicon, and everything else. Is this really a good
+dashboard?" Measured the live data before answering:
+  other              803  94.7%
+  training            15
+  new-models          11
+  architecture         6
+  inference-methods    6
+  silicon              5
+  inference-engines    2
+Only 45 of 848 rows had ever been seen by the current classifier, so 95% had no
+area and defaulted to "other". The sections were empty because the BACKFILL has
+not been run, not because the grouping is wrong. training/silicon showed up at
+all only because those arrived from area-pinned sources.
+
+### But three real flaws existed independently, now fixed
+1. NO GRACEFUL DEGRADATION. With 95% unclassified the page silently collapsed to
+   "Everything else" and gave no hint why - it just looked broken. There is now a
+   notice naming the number unclassified and what to run. A page must never look
+   broken without saying why.
+2. "other" WAS A DUMPING GROUND that could supply the lede, so the headline slot
+   could fill with unclassified noise. It is now excluded from the lede pool and
+   collapsed by default (cap 0, expandable) - it is a holding pen, not a section.
+3. 47 ITEMS WAS TOO MANY for "what must I read" (7 areas x 6 + 5). PER_AREA is
+   now 3, giving ~23.
+Also: the default range is now "since last visit" (localStorage timestamp,
+stamped AFTER render so the current visit's new set stays visible while reading),
+which is the axis a daily briefing actually needs. A fixed day-count was a proxy
+for it.
+
+### And a wiring bug caught by screenshotting
+renderNotice() was defined but never called - the string replacement that was
+supposed to insert the call into render() silently did not match, so the notice
+never appeared. Verified after fixing: shows on the real 803-unrated data, absent
+on a fully-rated copy.

@@ -11,8 +11,10 @@ const THEME_KEY = "roofline:theme";
 // Only the top tier earns a marker. A number on every row is decoration: it
 // cannot be acted on, and the ordering already encodes it.
 const MUST_READ = 0.75;
+const VISIT_KEY = "roofline:last-visit";
+// Only the first few per area. A briefing that needs scrolling is a list.
+const PER_AREA = 3;
 const LEDE_COUNT = 5;
-const PER_AREA = 6;
 
 // Display order and labels. Mirrors classifier.AREAS.
 const AREAS = [
@@ -56,9 +58,24 @@ function relativeDate(iso) {
 }
 
 /** Rows passing the filter row, ordered most-important first. */
+function lastVisit() {
+  try {
+    const stored = Number(localStorage.getItem(VISIT_KEY));
+    return Number.isFinite(stored) && stored > 0 ? stored : null;
+  } catch {
+    return null;
+  }
+}
+
 function inScope() {
-  const days = Number(el("window").value);
-  const cutoff = days ? Date.now() - days * 86400000 : null;
+  const range = el("window").value;
+  let cutoff = null;
+  if (range === "new") {
+    // First visit has nothing to compare against, so fall back to a week.
+    cutoff = lastVisit() ?? Date.now() - 7 * 86400000;
+  } else if (Number(range)) {
+    cutoff = Date.now() - Number(range) * 86400000;
+  }
   const bar = Number(el("bar").value);
   const needle = el("search").value.trim().toLowerCase();
 
@@ -162,6 +179,23 @@ function card(article, { lede = false } = {}) {
   return node;
 }
 
+function renderNotice() {
+  const rated = articles.filter((a) => typeof a.importance === "number").length;
+  const unrated = articles.length - rated;
+  const notice = el("notice");
+
+  // Never let the page look broken without saying why.
+  if (unrated > articles.length * 0.2) {
+    notice.hidden = false;
+    notice.textContent =
+      `${unrated.toLocaleString()} of ${articles.length.toLocaleString()} items ` +
+      `are not classified yet, so they have no area or importance and collect ` +
+      `under "Everything else". Run reclassify.py to fill them in.`;
+  } else {
+    notice.hidden = true;
+  }
+}
+
 function renderCounts() {
   const unread = articles.filter((a) => !read.has(a.url)).length;
   el("counts").textContent = `${articles.length} collected · ${unread} unread`;
@@ -171,7 +205,10 @@ function render() {
   const rows = inScope();
   // With few results the lede would swallow the whole page and the area grouping
   // would vanish, so it only earns its place when there is a tail to lead.
-  const lede = rows.length > LEDE_COUNT * 2 ? rows.slice(0, LEDE_COUNT) : [];
+  // "other" is where unclassified and off-beat items land — it must never be
+  // allowed to supply the lede, or the headline slot fills with noise.
+  const ledePool = rows.filter((a) => (a.area || "other") !== "other");
+  const lede = ledePool.length > LEDE_COUNT * 2 ? ledePool.slice(0, LEDE_COUNT) : [];
   const ledeUrls = new Set(lede.map((a) => a.url));
 
   el("lede-section").hidden = lede.length === 0;
@@ -197,16 +234,18 @@ function render() {
     section.append(head);
 
     const isOpen = expanded.has(area);
-    const visible = isOpen ? all : all.slice(0, PER_AREA);
+    // "Everything else" starts collapsed: it is a holding pen, not a section.
+    const cap = area === "other" ? 0 : PER_AREA;
+    const visible = isOpen ? all : all.slice(0, cap);
     for (const article of visible) section.append(card(article));
     shown += visible.length;
 
-    if (all.length > PER_AREA) {
+    if (all.length > cap) {
       const more = document.createElement("button");
       more.className = "link more-in-area";
       more.textContent = isOpen
         ? "Show less"
-        : `Show ${all.length - PER_AREA} more`;
+        : `Show ${all.length - cap} more`;
       more.addEventListener("click", () => {
         if (isOpen) expanded.delete(area); else expanded.add(area);
         render();
@@ -222,6 +261,7 @@ function render() {
   empty.textContent = shown > 0 ? "" : "Nothing clears that bar in this range.";
 
   renderCounts();
+  renderNotice();
 }
 
 const THEMES = ["auto", "light", "dark"];
@@ -304,6 +344,9 @@ fetch("./data/articles.json")
         (data.total_collected ? ` of ${data.total_collected.toLocaleString()} collected` : "");
     }
     render();
+    // Stamped after rendering, so this visit's "new" set stays visible while you
+    // read it and only the next visit advances the mark.
+    try { localStorage.setItem(VISIT_KEY, String(Date.now())); } catch { /* ignore */ }
   })
   .catch((error) => {
     el("empty").hidden = false;

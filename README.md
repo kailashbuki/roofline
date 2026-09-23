@@ -157,6 +157,15 @@ momentum, or source counts: those describe the pipeline, not the news.
 - **An importance bar** ("only what matters" / "worth a look" / "everything")
   rather than a sort order, because the question is what to *read*, not how to
   rank.
+- **"Since last visit" as the default range**, which is the axis a daily briefing
+  needs; a fixed day count is only a proxy for it. The visit mark advances after
+  render, so the current visit's new items stay visible while you read them.
+- **"Everything else" is collapsed and never supplies the lede.** It is where
+  unclassified and off-beat items land, so letting it into the headline slot would
+  fill it with noise.
+- **A notice when a large share of rows are unclassified**, naming the count and
+  what to run. Without area and importance the page degrades to a flat list, and
+  it should say so rather than look broken.
 
 Items the model has never seen show `–` instead of a number, and are never hidden
 by the importance bar — an unrated row could not have cleared a bar it was never

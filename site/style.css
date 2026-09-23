@@ -304,3 +304,14 @@ footer {
 }
 
 .theme:hover { color: var(--text); background: var(--card); }
+
+.notice {
+  margin: 14px 0 0;
+  padding: 9px 12px;
+  border-left: 2px solid var(--accent);
+  background: var(--card);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
