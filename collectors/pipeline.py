@@ -17,6 +17,7 @@ on score.
 import json
 import os
 import re
+from datetime import datetime, timezone
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 import classifier
@@ -172,6 +173,7 @@ def commit(session, config, rows, always_keep=False):
             area=pick_area(candidate, verdict),
             importance=verdict.importance,
             why=verdict.why,
+            first_seen=datetime.now(timezone.utc).replace(tzinfo=None),
         ))
         kept += 1
 

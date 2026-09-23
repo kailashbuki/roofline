@@ -22,6 +22,7 @@ class Article(Base):
     area = Column(String(40))           # exactly one; see classifier.AREAS
     importance = Column(Float)          # None when only keyword-scored
     why = Column(Text)                  # one-line editorial justification
+    first_seen = Column(DateTime)       # when WE first stored it, not when published
     created_at = Column(DateTime, default=datetime.utcnow)
 
 def init_db(db_path="articles.db"):

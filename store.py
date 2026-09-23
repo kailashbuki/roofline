@@ -100,6 +100,7 @@ def hydrate(path=DATA_PATH):
             area=record.get("area") or "other",
             importance=record.get("importance"),
             why=record.get("why") or "",
+            first_seen=_from_iso(record.get("first_seen")),
         )
         seen[url] = row
         session.add(row)
@@ -123,6 +124,10 @@ def dump(session, path=DATA_PATH):
             "tags": row.tags or "",
             "area": row.area or "other",
         }
+        # When we first stored it. "New" must key off this, not published_date: a
+        # paper published three days ago and collected today has never been seen.
+        if row.first_seen is not None:
+            record["first_seen"] = _to_iso(row.first_seen)
         # Absent when only the keyword fallback has seen it, which the page shows
         # as "unrated" rather than inventing a number.
         if row.importance is not None:
@@ -143,8 +148,19 @@ def dump(session, path=DATA_PATH):
     hot = [a for a in articles if (a["published_date"] or "") >= cutoff]
     cold = [a for a in articles if (a["published_date"] or "") < cutoff]
 
+    # Carry the outgoing build's stamp forward, so the page can say "arrived in the
+    # latest run" without needing per-run bookkeeping anywhere else.
+    previous = ""
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as handle:
+                previous = json.load(handle).get("generated_at", "")
+        except (json.JSONDecodeError, OSError):
+            previous = ""
+
     _write(path, {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "previous_generated_at": previous,
         "hot_days": HOT_DAYS,
         "count": len(hot),
         "total_collected": len(articles),

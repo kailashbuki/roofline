@@ -47,6 +47,13 @@ const BANDS = [
   { value: 0.6, label: "Key", hint: "Only the consequential" },
 ];
 
+/** When we first stored it — the only correct basis for "new".
+ *  published_date is when the world published it, which can be days earlier. */
+function seenAt(article) {
+  const iso = article.first_seen || article.published_date;
+  return iso ? new Date(iso + "Z").getTime() : 0;
+}
+
 const el = (id) => document.getElementById(id);
 
 /** A missing node means the cached HTML predates this script. Say so. */
@@ -76,6 +83,7 @@ function reportFailure(error) {
 
 let articles = [];
 let digest = {};
+let lastUpdate = null;          // start of the most recent collection run
 let read = loadRead();
 let visitMark = null;           // "new" means newer than this, not merely unread
 let activeArea = "all";
@@ -176,9 +184,16 @@ function renderBands(rangeRows) {
 function inScope() {
   const range = el("window").value;
   let cutoff = null;
+  let byArrival = false;
   if (range === "new") {
     // First visit has nothing to compare against, so fall back to a week.
     cutoff = visitMark ?? Date.now() - 7 * 86400000;
+    byArrival = true;
+  } else if (range === "update") {
+    // Everything the latest run brought in. Deterministic and identical for
+    // everyone, but narrower: it cannot cover runs you were not here for.
+    cutoff = lastUpdate ?? Date.now() - 86400000;
+    byArrival = true;
   } else if (Number(range)) {
     cutoff = Date.now() - Number(range) * 86400000;
   }
@@ -186,7 +201,10 @@ function inScope() {
 
   return articles
     .filter((a) => {
-      const when = a.published_date ? new Date(a.published_date + "Z").getTime() : null;
+      // Arrival ranges ask "did I see this yet"; day ranges ask "how old is it".
+      const when = byArrival
+        ? seenAt(a)
+        : (a.published_date ? new Date(a.published_date + "Z").getTime() : null);
       if (cutoff && (!when || when < cutoff)) return false;
       if (el("unread").checked && read.has(a.url)) return false;
       if (needle && !(a.title || "").toLowerCase().includes(needle)) return false;
@@ -263,8 +281,7 @@ function card(article, { lede = false } = {}) {
   }
   meta.append(span("item-source", article.source));
   meta.append(span("", relativeDate(article.published_date)));
-  const when = article.published_date ? new Date(article.published_date + "Z").getTime() : 0;
-  if (visitMark && when > visitMark) meta.append(span("item-new", "new"));
+  if (visitMark && seenAt(article) > visitMark) meta.append(span("item-new", "new"));
   // Sub-topic chips. The section header already carries the area, so these are
   // the finer grain that helps scanning within a section.
   for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 4)) {
@@ -312,8 +329,7 @@ function renderTabs(rows) {
   for (const a of rows) {
     const area = a.area || "other";
     counts.set(area, (counts.get(area) || 0) + 1);
-    const when = a.published_date ? new Date(a.published_date + "Z").getTime() : 0;
-    if (visitMark && when > visitMark) fresh.set(area, (fresh.get(area) || 0) + 1);
+    if (visitMark && seenAt(a) > visitMark) fresh.set(area, (fresh.get(area) || 0) + 1);
   }
 
   const host = need("tabs");
@@ -442,7 +458,17 @@ function render() {
 
   const empty = el("empty");
   empty.hidden = shown > 0;
-  empty.textContent = shown > 0 ? "" : "Nothing clears that bar in this range.";
+  if (!shown) {
+    // An empty result means different things per range; saying the wrong one reads
+    // as a broken page.
+    const range = el("window").value;
+    empty.textContent =
+      range === "update"
+        ? "The latest run collected nothing new. Try 'since last visit' or a day range."
+        : range === "new"
+          ? "Nothing new since your last visit."
+          : "Nothing clears that bar in this range.";
+  }
 
   renderCounts();
   renderNotice();
@@ -531,6 +557,9 @@ Promise.all([
     // Any DOM mismatch surfaces here rather than as a misleading data error.
     digest = digestData?.areas || {};
     articles = data.articles || [];
+    lastUpdate = data.previous_generated_at
+      ? new Date(data.previous_generated_at).getTime()
+      : null;
     if (data.generated_at) {
       const when = new Date(data.generated_at);
       el("updated").textContent = `updated ${when.toLocaleString(undefined, {
@@ -538,9 +567,10 @@ Promise.all([
         hour: "2-digit", minute: "2-digit",
       })}`;
       el("updated").title = data.generated_at;
+      const fmt = (ms) => new Date(ms).toLocaleString(undefined, {
+        month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
       const since = visitMark
-        ? `new = published since your last visit, ${new Date(visitMark).toLocaleString(undefined, {
-            month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`
+        ? `new = collected since your last visit, ${fmt(visitMark)}`
         : "new = everything, since this is your first visit here";
       el("stamp").textContent =
         `${data.hot_days ?? 120}-day window` +

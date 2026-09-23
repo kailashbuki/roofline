@@ -22,7 +22,8 @@
 
     <div class="controls">
       <select id="window" aria-label="Time range">
-        <option value="new" selected title="Published since your previous visit — not since the last data update">Since last visit</option>
+        <option value="new" selected title="Collected since your previous visit. Spans every run you missed.">Since last visit</option>
+        <option value="update" title="Collected in the most recent run only. The job runs three times a day, so this is narrower than 'since last visit'.">Since last update</option>
         <option value="2">Last 2 days</option>
         <option value="7">Last 7 days</option>
         <option value="30">Last 30 days</option>

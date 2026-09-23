@@ -42,6 +42,7 @@ the stored record is kept to what the page renders:
 | `area` | always | one of `classifier.AREAS`; the section the item appears under |
 | `importance`, `why` | once rated | absent means never seen by the model |
 | `tags` | always | sub-topic chips |
+| `first_seen` | always | when *we* stored it. Newness must key off this, not `published_date`: a paper published three days ago and collected today has never been seen. |
 | `summary` | **only while unrated** | it is an input to classification, never rendered — and it was 55% of the file |
 | `relevance_score` | no | superseded by `importance` |
 
@@ -180,8 +181,10 @@ momentum, or source counts: those describe the pipeline, not the news.
 - **A counted segmented control** — `All 672 · Notable 481 · Key 185` — rather
   than a sort order or a labelled dropdown. The count is what makes it legible:
   "worth a look" described a feeling, `Notable 481` describes what will happen.
-- **"Since last visit" as the default range** — *your* last visit, from
-  `localStorage`, not the last data update. The axis a daily briefing needs; a
+- **Two arrival ranges.** "Since last visit" is *your* last visit, from
+  `localStorage`, and spans every run you missed. "Since last update" is what the
+  most recent run collected — deterministic and the same for everyone, but narrower:
+  the job runs three times a day, so it cannot cover runs you were not present for. The axis a daily briefing needs; a
   fixed day count is only a proxy. The mark advances only when a load starts a new
   **session** (30+ minutes since the previous one), so reloading does not wipe the
   set you were reading. The footer states the exact timestamp it is measured

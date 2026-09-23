@@ -794,3 +794,34 @@ about what counted as new.
 Verified with a table of cases: first visit (everything new), reload at +5 and +20
 min (mark held), return at +4.5h (mark becomes the previous session's load), reload
 +1 min after that (held), next session (advances), legacy format (migrated).
+
+## 2026-09-24 - "better to have since last update?" - both, and it exposed a bug
+
+Proposal: measure newness from the last data update rather than the last visit, and
+store the update time server-side.
+
+The trap in "since last update" ALONE: the job runs three times a day, so that view
+is only the newest batch. Visit once a day and you silently miss two runs' items. It
+is a "what just landed" view, not a catch-up view - the opposite of what a briefing
+needs.
+
+But the proposal exposed a real bug. Newness was comparing PUBLISHED_DATE to the
+mark, so an arXiv paper published three days ago and collected today was never
+marked new - despite never having been seen. published_date is when the world
+published it; what matters is when WE stored it.
+
+So: added `first_seen`, stamped once in pipeline.commit when a row is first stored,
+persisted in the store, and preserved through merge_into_store so a push race cannot
+lose it. Newness, the NEW badges and the per-tab +N counts all key off it now
+(falling back to published_date for legacy rows). Backfilled 847 existing rows from
+published_date as an honest proxy.
+
+Also added `previous_generated_at` to the payload - dump() reads the outgoing file's
+stamp before overwriting it - which gives the page "since last update" with no extra
+bookkeeping. Both ranges are now offered, default still "since last visit" because
+it is the one that covers everything you missed.
+
+Day ranges still filter on published_date (how old is this?) while arrival ranges
+filter on first_seen (have I seen this?). Those are genuinely different questions.
+Empty states are now range-specific: "The latest run collected nothing new" reads
+very differently from "Nothing clears that bar".

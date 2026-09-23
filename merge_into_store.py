@@ -61,6 +61,7 @@ def main():
                     area=record.get("area") or "other",
                     importance=record.get("importance"),
                     why=record.get("why") or "",
+                    first_seen=_from_iso(record.get("first_seen")),
                 )
                 rows_by_url[url] = row
                 session.add(row)
