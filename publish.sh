@@ -91,6 +91,17 @@ bold "6/7  Create the PUBLIC repo and push"
 
 if gh repo view "$SLUG" >/dev/null 2>&1; then
   ok "$SLUG already exists"
+  # Do NOT skip the push here: the repo existing does not mean the current
+  # commits are on it. Skipping this is how the pulse dashboard and the HF
+  # Papers collector sat unpushed while the site served older code.
+  git remote get-url origin >/dev/null 2>&1 || git remote add origin "git@github.com:$SLUG.git"
+  git fetch origin --quiet
+  if [ -n "$(git log --oneline origin/main..HEAD 2>/dev/null)" ]; then
+    git pull --no-rebase --no-edit origin main || die "merge with origin/main failed — resolve and re-run"
+    git push origin main && ok "pushed $(git rev-parse --short HEAD)"
+  else
+    ok "remote already has this commit"
+  fi
 else
   cat <<EOF
 
