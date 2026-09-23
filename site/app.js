@@ -192,12 +192,12 @@ function renderNotice() {
   const notice = el("notice");
 
   // Never let the page look broken without saying why.
-  if (unrated > articles.length * 0.2) {
+  if (unrated > articles.length * 0.05) {
     notice.hidden = false;
     notice.textContent =
       `${unrated.toLocaleString()} of ${articles.length.toLocaleString()} items ` +
-      `are not classified yet, so they have no area or importance and collect ` +
-      `under "Everything else". Run reclassify.py to fill them in.`;
+      `have not been classified yet, so they have no area or importance and ` +
+      `collect under "Everything else". Run ./sync.sh to fill them in.`;
   } else {
     notice.hidden = true;
   }

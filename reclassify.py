@@ -77,7 +77,8 @@ def main():
             article["relevance_score"] = round(verdict.score, 3)
             article["tags"] = verdict.tags
             article["area"] = verdict.area
-            article["importance"] = round(verdict.importance, 3) if verdict.importance is not None else None
+            # 0.0 is a verdict; None would mean "ask again next time".
+            article["importance"] = round(verdict.importance, 3) if verdict.importance is not None else 0.0
             article["why"] = verdict.why
 
     print(f"\nre-judged by model: {by_model}/{len(targets)}")

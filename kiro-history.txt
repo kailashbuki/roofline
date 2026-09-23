@@ -528,3 +528,40 @@ Note to self: I had been running merge/push cycles in the same working tree the
 user was operating in, which manufactured some of these collisions. sync.sh exists
 so the operation is one atomic, repeatable thing rather than a sequence I
 improvise each time.
+
+## 2026-09-23 (postscript 2) - "194 items not classified" was a THIRD state I forgot
+
+### The bug
+The notice kept reporting ~194 unclassified rows after repeated backfills.
+Inspected them: every single one had tags='' and area='other', which is the
+signature of the model having judged them and returned relevant: false. Samples
+confirmed it - "Fully Discrete Multi-Entropy Stability of High-Order Schemes for
+Compressible MHD", "The Price of Intelligence Is Falling Rapidly" - correctly
+off-topic.
+
+parse_verdicts set importance=None for an irrelevant item, which made
+"judged and rejected" INDISTINGUISHABLE FROM "never judged". Three consequences,
+all bad:
+1. The page reported them as unclassified forever.
+2. reclassify.py re-targeted all of them on every run - quota burned re-deciding
+   the same rejections, indefinitely.
+3. They accumulated in "Everything else" instead of being filtered out.
+
+Fix: an irrelevant verdict now records importance 0.0. Zero is a judgement; None
+means "ask again". reclassify writes 0.0 rather than None for the same reason, and
+the notice threshold dropped from 20% to 5% now that it counts only genuinely
+unjudged rows.
+
+### Why they were stored at all
+Two legitimate paths: rows collected before Gemini was wired up (keyword scoring
+let them past min_score), and always_keep sources - SemiAnalysis, airealist,
+Interconnects, Chips and Cheese are filter: false, so they are never dropped on
+score by design. That accounts for 59 of the 194. Going forward, off-topic items
+from filtered sources are rejected at collection time and never stored, so this
+is one-time legacy cleanup, not a recurring condition.
+
+### Still open
+Whether off-topic rows should be stored at 0.0 at all, or deleted and added to the
+rejection ledger. Deleting is cleaner for the always_keep=false sources but
+contradicts filter: false for the others. Left stored and filtered for now, since
+the importance bar already hides them.

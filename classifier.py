@@ -258,7 +258,11 @@ def parse_verdicts(text, count):
             continue
 
         if not entry.get("relevant", entry.get("is_relevant", True)):
-            results[index] = Verdict(0.0, "", "other", None, "")
+            # importance 0.0, NOT None. "Judged and rejected" must be
+            # distinguishable from "never judged", or the row is re-sent to the
+            # API on every backfill and the page reports it as unclassified
+            # forever.
+            results[index] = Verdict(0.0, "", "other", 0.0, "")
             continue
 
         importance = max(0.0, min(1.0, float(entry.get("importance", 0.5))))
