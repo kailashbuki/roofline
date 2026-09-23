@@ -133,6 +133,11 @@ function card(article, { lede = false } = {}) {
   meta.append(span("item-source", article.source));
   meta.append(span("", relativeDate(article.published_date)));
   if (!read.has(article.url)) meta.append(span("item-new", "new"));
+  // Sub-topic chips. The section header already carries the area, so these are
+  // the finer grain that helps scanning within a section.
+  for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 4)) {
+    meta.append(span("chip", tag));
+  }
   body.append(meta);
 
   const spark = document.createElement("button");
@@ -158,7 +163,9 @@ function renderCounts() {
 
 function render() {
   const rows = inScope();
-  const lede = rows.slice(0, LEDE_COUNT);
+  // With few results the lede would swallow the whole page and the area grouping
+  // would vanish, so it only earns its place when there is a tail to lead.
+  const lede = rows.length > LEDE_COUNT * 2 ? rows.slice(0, LEDE_COUNT) : [];
   const ledeUrls = new Set(lede.map((a) => a.url));
 
   el("lede-section").hidden = lede.length === 0;
@@ -211,6 +218,30 @@ function render() {
   renderCounts();
 }
 
+/** Filters live in the URL: shareable, bookmarkable, and testable. */
+function applyUrlParams() {
+  const params = new URLSearchParams(location.search);
+  for (const id of ["window", "bar"]) {
+    const value = params.get(id);
+    if (value === null) continue;
+    const control = el(id);
+    if ([...control.options].some((o) => o.value === value)) control.value = value;
+  }
+  if (params.get("q")) el("search").value = params.get("q");
+  if (params.get("unread") === "1") el("unread").checked = true;
+}
+
+function syncUrl() {
+  const params = new URLSearchParams();
+  params.set("window", el("window").value);
+  params.set("bar", el("bar").value);
+  if (el("search").value.trim()) params.set("q", el("search").value.trim());
+  if (el("unread").checked) params.set("unread", "1");
+  history.replaceState(null, "", `?${params}`);
+}
+
+applyUrlParams();
+
 fetch("./data/articles.json")
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -218,9 +249,17 @@ fetch("./data/articles.json")
   })
   .then((data) => {
     articles = data.articles || [];
-    el("updated").textContent = data.generated_at
-      ? `updated ${relativeDate(data.generated_at.replace("Z", ""))}`
-      : "";
+    if (data.generated_at) {
+      const when = new Date(data.generated_at);
+      el("updated").textContent = `updated ${when.toLocaleString(undefined, {
+        year: "numeric", month: "short", day: "numeric",
+        hour: "2-digit", minute: "2-digit",
+      })}`;
+      el("updated").title = data.generated_at;
+      el("stamp").textContent =
+        `showing the last ${data.hot_days ?? 120} days` +
+        (data.total_collected ? ` of ${data.total_collected.toLocaleString()} collected` : "");
+    }
     render();
   })
   .catch((error) => {
@@ -229,9 +268,9 @@ fetch("./data/articles.json")
   });
 
 for (const id of ["window", "bar", "unread"]) {
-  el(id).addEventListener("change", () => { expanded.clear(); render(); });
+  el(id).addEventListener("change", () => { expanded.clear(); syncUrl(); render(); });
 }
-el("search").addEventListener("input", () => { expanded.clear(); render(); });
+el("search").addEventListener("input", () => { expanded.clear(); syncUrl(); render(); });
 el("mark-all").addEventListener("click", () => {
   for (const article of inScope()) read.add(article.url);
   saveRead();

@@ -1,0 +1,1383 @@
+{
+ "month": "2026-04",
+ "count": 153,
+ "articles": [
+  {
+   "title": "SMG: The Case for Disaggregating CPU from GPU in LLM Serving",
+   "url": "https://pytorch.org/blog/lightseek-smg",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-04-30T18:56:36",
+   "summary": "How It Started: Hitting the GIL Wall at Scale We&#8217;ve been running production model serving for many years. When we first started building Shepherd Model Gateway, the goal was modest:...",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Generalizable Sparse-View 3D Reconstruction from Unconstrained Images",
+   "url": "https://arxiv.org/abs/2604.28193",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:59:55",
+   "summary": "Reconstructing 3D scenes from sparse, unposed images remains challenging under real-world conditions with varying illumination and transient occlusions. Existing methods rely on scene-specific optimization using appearance embeddings or dynamic masks, which requires extensive per-scene training and fails under sparse views. Moreover, evaluations on limited scenes raise questions about generalization. We present GenWildSplat, a feed-forward framework for sparse-view outdoor reconstruction that requires no per-scene optimization. Given unposed internet images, GenWildSplat predicts depth, camera",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "LaST-R1: Reinforcing Action via Adaptive Physical Latent Reasoning for VLA Models",
+   "url": "https://arxiv.org/abs/2604.28192",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:59:52",
+   "summary": "Vision-Language-Action (VLA) models have increasingly incorporated reasoning mechanisms for complex robotic manipulation. However, existing approaches share a critical limitation: whether employing explicit linguistic reasoning that suffers from latency and discretization, or utilizing more expressive continuous latent reasoning, they are predominantly confined to static imitation learning that limits adaptability and generalization. While online reinforcement learning (RL) has been introduced to VLAs to enable trial-and-error exploration, current methods exclusively optimize the vanilla actio",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Strait: Perceiving Priority and Interference in ML Inference Serving",
+   "url": "https://arxiv.org/abs/2604.28175",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:55:28",
+   "summary": "Machine learning (ML) inference serving systems host deep neural network (DNN) models and schedule incoming inference requests across deployed GPUs. However, limited support for task prioritization and insufficient latency estimation under concurrent execution may restrict their applicability in on-premises scenarios. We present \\emph{Strait}, a serving system designed to enhance deadline satisfaction for dual-priority inference traffic under high GPU utilization. To improve latency estimation, Strait models potential contention during data transfer and accounts for kernel execution interferen",
+   "tags": "inference,optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+   "url": "https://arxiv.org/abs/2604.28169",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:53:03",
+   "summary": "Modern video diffusion models excel at appearance synthesis but still struggle with physical consistency: objects drift, collisions lack realistic rebound, and material responses seldom match their underlying properties. We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation. Our approach integrates three key components: (i) a large-scale dataset of over 100K photorealistic simulation videos where friction, restitution, deformation, and force are systematically varied across diverse scenarios; (ii) physics-supervised fine-",
+   "tags": "optimization,hardware,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Sequential Inference for Gaussian Processes: A Signal Processing Perspective",
+   "url": "https://arxiv.org/abs/2604.28163",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:48:09",
+   "summary": "The proliferation of capable and efficient machine learning (ML) models marks one of the strongest methodological shifts in signal processing (SP) in its nearly 100-year history. ML models support the development of SP systems that represent complex, nonlinear relationships with high predictive accuracy. Adapting these models often requires sequential inference, which differs both theoretically and methodologically from the usual paradigm of ML, where data are often assumed independent and identically distributed. Gaussian processes (GPs) are a flexible yet principled framework for modeling ra",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Continuous-tone Simple Points: An $\\ell_0$-Norm of Cyclic Gradient for Topology-Preserving Data-Driven Image Segmentation",
+   "url": "https://arxiv.org/abs/2604.28159",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:45:50",
+   "summary": "Topological features play an essential role in ensuring geometric plausibility and structural consistency in image analysis tasks such as segmentation and skeletonization. However, integrating topology-preserving learning based on simple points into deep learning tasks remains challenging, as existing simple point detection methods are confined to binary images and are non-differentiable, rendering them incompatible with gradient-based optimization in modern deep learning. Moreover, morphological and purely data-driven approaches often fail to guaranty topological consistency. To address these",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+   "url": "https://arxiv.org/abs/2604.28157",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:43:24",
+   "summary": "Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants. However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corruption. To quantify the security risks faced by LLMs under these threats, the research community has developed heuristic-based and optimization-based red-teaming methods. Optimization-based methods generally produce stronger attacks than heuristic att",
+   "tags": "inference,optimization,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Optimal Transmitter Placement in Realistic Urban Environments",
+   "url": "https://arxiv.org/abs/2604.28153",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:40:22",
+   "summary": "In a wireless network, the spatial location of the transmitters has a large impact on the achievable rate at each user location. The optimal placement of -- for example -- cellular base stations is a difficult non-convex problem, and is usually addressed with simplified propagation models and simplified heuristics that may account for specifics such as the site topology, building locations, and user density. We propose a mathematically rigorous framework for optimal transmitter placement that explicitly integrates detailed site-specific maps, spatial material properties, and realistic signal a",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Global Optimality for Constrained Exploration via Penalty Regularization",
+   "url": "https://arxiv.org/abs/2604.28144",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:31:46",
+   "summary": "Efficient exploration is a central problem in reinforcement learning and is often formalized as maximizing the entropy of the state-action occupancy measure. While unconstrained maximum-entropy exploration is relatively well understood, real-world exploration is often constrained by safety, resource, or imitation requirements. This constrained setting is particularly challenging because entropy maximization lacks additive structure, rendering Bellman-equation-based methods inapplicable. Moreover, scalable approaches require policy parameterization, inducing non-convexity in both the objective ",
+   "tags": "hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Index-Assisted Stratified Sampling for Online Aggregation",
+   "url": "https://arxiv.org/abs/2604.28141",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:25:50",
+   "summary": "Ad-hoc queries over frequently updated data in a flat schema are common in real-time data analysis applications and often require very low latency. Online aggregation can achieve so by providing approximate aggregation answers with confidence bound guarantees. It relies on the ability to draw samples online in a linear time to sample size rather than database size, which can be supported by index-assisted Sampling-based Approximate Query Processing (S-AQP) systems. However, the query latencies of approximate queries in these systems can still suffer from excessive sampling cost required to ach",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "The DAMSA Experiment",
+   "url": "https://arxiv.org/abs/2604.28133",
+   "source": "arxiv",
+   "published_date": "2026-04-30T17:17:55",
+   "summary": "DAMSA (DArk Messenger Searches at an Accelerator) is a novel short-baseline accelerator/beam dump experiment aimed at probing short-lived physics processes, including searches for evidence of a dark sector of particle physics and well-motivated rare Standard Model signals. Motivated by open questions in neutrino physics and the absence of conclusive evidence for conventional weakly interacting massive particles, DAMSA targets MeV-to-sub-GeV dark-sector messengers with feeble couplings that can be produced in abundance at a beam dump/target. By employing an ultra-short baseline, DAMSA is unique",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Speed Up Unreal Engine NNE Inference with NVIDIA TensorRT for RTX Runtime",
+   "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-30T17:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/05/TensorRT-RTX-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"TensorRT-RTX\" width=\"768\" />Neural network techniques are increasingly used in computer graphics to boost image quality, improve performance, and streamline content creation. Approaches...",
+   "tags": "inference,optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Build AI-Powered Games with NVIDIA DLSS 4.5, RTX, and Unreal Engine 5",
+   "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-30T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/image4-6-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Today, game developers can begin integrating NVIDIA DLSS 4.5 with Dynamic Multi Frame Generation, Multi Frame Generation 6X, and the second-generation...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "How to Build, Run, and Scale High-Quality Creator Workflows in ComfyUI",
+   "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-30T16:16:04",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/workstation-tech-blog-600x338-1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"workstation-tech-blog-600x338\" width=\"600\" />Creative and visualization teams today produce more assets, in more formats, with leaner teams. Generative AI can accelerate that work – compressing tasks...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Automating GPU Kernel Translation with AI Agents: cuTile Python to cuTile.jl",
+   "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-30T15:54:38",
+   "summary": "<img alt=\"A person working on code on their computer.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Automate-Agent-Workflow-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Automate-Agent-Workflow\" width=\"768\" />NVIDIA CUDA Tile (cuTile) is a tile-based programming model that enables developers to write GPU kernels in terms of tile-level operations—loads, stores, and...",
+   "tags": "hardware,optimization,systems",
+   "area": "other"
+  },
+  {
+   "title": "Simplify Up, Enforce Down",
+   "url": "https://www.airealist.ai/p/simplify-up-enforce-down",
+   "source": "airealist",
+   "published_date": "2026-04-30T14:41:56",
+   "summary": "The EU spent five months simplifying the AI Act for the companies it can reach. Last night, after twelve hours, those negotiations failed.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "From 732 bytes to nowhere: shutting down Copy Fail in production",
+   "url": "https://www.together.ai/blog/shutting-down-copy-fail-in-production",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-30T00:00:00",
+   "summary": "",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Announcing Together AI and Adaption Partnership",
+   "url": "https://www.together.ai/blog/announcing-together-ai-and-adaption-partnership",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-30T00:00:00",
+   "summary": "Together AI and Adaption partner to bring Together Fine-Tuning natively into Adaptive Data, helping teams optimize datasets, run fine-tuning, evaluate results, and deploy stronger open models.",
+   "tags": "post-training,training,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+   "url": "https://arxiv.org/abs/2604.26951",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:59:01",
+   "summary": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength acros",
+   "tags": "inference,attention,compression,llm",
+   "area": "other"
+  },
+  {
+   "title": "Designing Solutions to Geophysical Inverse Problems by Changing Variables",
+   "url": "https://arxiv.org/abs/2604.26937",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:50:16",
+   "summary": "Geoscientists often solve inverse problems to estimate values of parameters of interest given relevant data sets. Bayesian inference solves these problems by combining probability distributions that describe uncertainties in both observations and unknown parameters, and we require that the solution provides unbiased uncertainty estimates in order to inform risk-based decisions. It has been known for over a century that employing different, but equivalent parametrisations of the same information can yield conditional probabilities that are mathematically inconsistent, a property referred to as ",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+   "url": "https://arxiv.org/abs/2604.26934",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:48:01",
+   "summary": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time. However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead. In this work, we propose World2VLM, a training framework that distills spatial im",
+   "tags": "inference,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Data-driven discovery of polynomial ODEs with provably bounded solutions",
+   "url": "https://arxiv.org/abs/2604.26933",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:47:19",
+   "summary": "We introduce SILAS, a data-driven framework for discovering polynomial ordinary differential equations (ODEs) with provably bounded trajectories. Boundedness is certified by compact absorbing sets defined via polynomial Lyapunov functions. We jointly identify the ODE vector field and the Lyapunov function using a well-posed nonconvex optimization problem built using polynomial optimization tools. We solve this problem using an alternating block-coordinate optimization scheme with convex subproblems, whose feasibility is ensured by a novel model-agnostic initialization that identifies a candida",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Learning Over-Relaxation Policies for ADMM with Convergence Guarantees",
+   "url": "https://arxiv.org/abs/2604.26932",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:45:52",
+   "summary": "The Alternating Direction Method of Multipliers (ADMM) is a widely used method for structured convex optimization, and its practical performance depends strongly on the choice of penalty and relaxation parameters. Motivated by settings such as Model Predictive Control (MPC), where one repeatedly solves related optimization problems with fixed structure and changing parameter values, we propose learning online updates of the relaxation parameter to improve performance on problem classes of interest. This choice is computationally attractive in OSQP-like architectures, since adapting relaxation ",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Digital Simulation of Non-Hermitian Knotted Bands on Quantum Hardware",
+   "url": "https://arxiv.org/abs/2604.26914",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:26:34",
+   "summary": "Knots and links represent a fundamental motif of non-local connectivity that permeates the physical sciences from string theory to protein folds. While spectral braiding has been explored in two-band non-Hermitian models across various platforms, its direct simulation and characterization on programmable quantum hardware, particularly beyond two strands, remains a formidable challenge due to the limitations of variational optimization in these systems. Here, we introduce a family of non-Hermitian multi-band twister models and implement a non-variational protocol to characterize their complex b",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Generalization of Zeroth-Order Method for Quotients of Quadratic Functions",
+   "url": "https://arxiv.org/abs/2604.26913",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:23:40",
+   "summary": "Optimization of quadratic functions and the quotient of those are relevant in subspace and iterative optimization methods. In this paper, the calculation of the generalized operator norm and extremal generalized Rayleigh quotient is considered. In contrast to recent works an unconstrained sampling approach on the entire sphere for the random search direction in each iteration is proposed. Furthermore, the link to zeroth-order methods for Riemannian first- and second-order optimization methods is provided in the sense that the Riemannian gradient and Hessian are estimated by the specific surrog",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Bi-Level Optimization for Contact and Motion Planning in Rope-Assisted Legged Robots",
+   "url": "https://arxiv.org/abs/2604.26910",
+   "source": "arxiv",
+   "published_date": "2026-04-29T17:18:29",
+   "summary": "This paper presents a planning pipeline framework for locomotion in rope-assisted robots climbing vertical surfaces. The proposed framework is formulated as a bi-level optimization scheme that addresses a mixed-integer problem: selecting feasible terrain regions for landing while simultaneously optimizing the control inputs, namely rope tensions and leg forces, and landing location. The outer level of the optimization is solved using the Cross-Entropy Method, while the inner level relies on gradient-based nonlinear optimization to compute dynamically feasible motions. The approach is validated",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Powering AI Factories with NVIDIA Enterprise Reference Architectures",
+   "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-29T16:41:57",
+   "summary": "<img alt=\"A person working on a data center rack.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/AI-Factory-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Factory\" width=\"768\" />The next wave of enterprise productivity is being built on AI factories. As organizations deploy agentic AI systems capable of reasoning, automation, and...",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "More Sovereign, Different Stack: The Builder Tax",
+   "url": "https://www.airealist.ai/p/more-sovereign-different-stack-the",
+   "source": "airealist",
+   "published_date": "2026-04-29T06:36:04",
+   "summary": "Sovereignty forces a different stack. The Commission's framework prices neither the cost nor the exit it delivers.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "DeepSeek-V4 Pro now available on Together AI",
+   "url": "https://www.together.ai/blog/deepseek-v4-pro-now-available-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-29T00:00:00",
+   "summary": "DeepSeek-V4 Pro is now available on Together AI with 512K context, controllable reasoning modes, and cached-input pricing for long-context reasoning workloads like code agents, document intelligence, and research synthesis.",
+   "tags": "llm,inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+   "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-04-29T00:00:00",
+   "summary": "",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Scaling Biomolecular Modeling Using Context Parallelism in NVIDIA BioNeMo",
+   "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-28T19:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/biomolecule-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"biomolecule\" width=\"768\" />For decades, computational biology has operated under a reductionist compromise. To fit complex biological systems into the limited memory of a single GPU,...",
+   "tags": "systems,optimization,training",
+   "area": "other"
+  },
+  {
+   "title": "NVIDIA Nemotron 3 Nano Omni Powers Multimodal Agent Reasoning in a Single Efficient Open Model",
+   "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-28T16:01:12",
+   "summary": "<img alt=\"Decoratove image showing mult-modal processing.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Nemotron-3-Nano-Omni-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Nano-Omni\" width=\"768\" />Agentic systems often reason across screens, documents, audio, video, and text within a single perception‑to‑action loop. However, they still rely on...",
+   "tags": "multimodal,architecture,llm",
+   "area": "other"
+  },
+  {
+   "title": "24/7 Simulation Loops: How Agentic AI Keeps Subsurface Engineering Moving",
+   "url": "https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-28T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2024/12/geological-cross-section-1-768x432.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"geological-cross-section\" width=\"768\" />The subsurface industry is at a critical point in its digital evolution. For decades, unlocking reservoir potential has relied on experts performing essential...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Together AI Brings NVIDIA Nemotron 3 Nano Omni to Developers on Day 0",
+   "url": "https://www.together.ai/blog/together-ai-brings-nvidia-nemotron-3-nano-omni-to-developers-on-day-0",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-28T00:00:00",
+   "summary": "NVIDIA Nemotron 3 Nano Omni is now on Together AI: a single open model that reasons across video, images, audio, and text, built for agentic workloads at scale.",
+   "tags": "multimodal,llm,serving",
+   "area": "other"
+  },
+  {
+   "title": "Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation",
+   "url": "https://arxiv.org/abs/2604.24763",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:59:56",
+   "summary": "Unified multimodal models typically rely on pretrained vision encoders and use separate visual representations for understanding and generation, creating misalignment between the two tasks and preventing fully end-to-end optimization from raw pixels. We introduce Tuna-2, a native unified multimodal model that performs visual understanding and generation directly based on pixel embeddings. Tuna-2 drastically simplifies the model architecture by employing simple patch embedding layers to encode visual input, completely discarding the modular vision encoder designs such as the VAE or the represen",
+   "tags": "optimization,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Contracting Tensor Networks with Generalized Belief Propagation",
+   "url": "https://arxiv.org/abs/2604.24760",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:59:03",
+   "summary": "Recent years have seen a growing interest in the use of belief propagation - an algorithm originally introduced for performing statistical inference on graphical models - for approximate, but highly efficient, tensor network contraction. Here, we detail how to apply generalized belief propagation (GBP) - where messages are passed within a hierarchy of overlapping regions of the tensor network - to approximately contract tensor networks and obtain accurate results. The original belief propagation algorithm is a corner case of this approach, corresponding to a particularly simple choice of regio",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Conflict-Aware Harmonized Rotational Gradient for Multiscale Kinetic Regimes",
+   "url": "https://arxiv.org/abs/2604.24745",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:47:42",
+   "summary": "In this paper, we propose a harmonized rotational gradient method, termed HRGrad, for simultaneously tackling multiscale time-dependent kinetic problems with varying small parameters.\n  These parameters exhibit asymptotic transitions from microscopic to macroscopic physics, making it a challenging multi-task problem to solve over all ranges simultaneously.\n  Solving tasks in different asymptotic regions often encounter gradient conflicts, which can lead to the failure of multi-task learning.\n  To address this challenge, we explicitly encode a hidden representation of these parameters, ensuring",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Parametric Statistical Inference in the Zone of Moderate Deviation Probabilities",
+   "url": "https://arxiv.org/abs/2604.24736",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:42:35",
+   "summary": "A parametric theory of statistical inference is developed for the moderate deviation probability zone. The new approach to the proofs is based on the Taylor series expansion of the logarithm of the likelihood ratio based on the Hellinger distance. The Large Deviation Principle in the moderate deviation probability zone is proven for Bayesian estimators and maximum likelihood estimators. A uniform approximation of the logarithm of the likelihood ratio and Theorem on concentration of the posterior Bayesian measure are also established for the zone of moderate deviation probabilities.",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Data-Driven Privacy-Preserving Modeling and Frequency Regulation with Aggregated Electric Vehicles via Bilinear Hidden Markov Model",
+   "url": "https://arxiv.org/abs/2604.24724",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:34:41",
+   "summary": "Vehicle-to-Grid (V2G) technology allows bidirectional power flow for real-time grid support, making electric vehicles (EVs) well-suited for ancillary services such as frequency regulation. However, existing methods for flexibility estimation and coordinating aggregated EVs often rely on individual EV traveling information (e.g., arrival/departure time) and/or characteristic parameters (e.g., charging efficiency, battery capacity) as well as real-time state-of-charge (SOC), which raises privacy concerns and faces data quality issues. To address these challenges, this paper proposes a data-drive",
+   "tags": "inference,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Efficient Multivariate Kelly Optimization Reveals Sigmoidal Scaling Laws",
+   "url": "https://arxiv.org/abs/2604.24723",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:32:57",
+   "summary": "For a sequence of binary bets, the Kelly criterion provides a closed-form solution that maximizes the expected growth rate of wealth. In contrast, when multiple bets are placed simultaneously (e.g., in portfolio allocation or prediction markets), the optimal Kelly strategy generally requires numerical optimization over a joint outcome space. A naive formulation scales exponentially in the number of bets, requiring $O(2^N)$ time and memory for $N$ simultaneous wagers, which restricts existing methods to small problem sizes.\n  We present two complementary methods that dramatically extend the sca",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling",
+   "url": "https://arxiv.org/abs/2604.24715",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:23:37",
+   "summary": "Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Transformer checkpoints. We study upcycling as a practical path to convert pretrained Transformer LLMs into hybrid architectures while preserving short-context quality and improving long-context capability. We call our solution \\emph{HyLo} (HYbrid LOng-context): a long-context upcycling recipe that combines architectural adaptation with efficient Transformer blo",
+   "tags": "inference,optimization,attention,compression,llm",
+   "area": "other"
+  },
+  {
+   "title": "Case-Specific Rubrics for Clinical AI Evaluation: Methodology, Validation, and LLM-Clinician Agreement Across 823 Encounters",
+   "url": "https://arxiv.org/abs/2604.24710",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:17:56",
+   "summary": "Objective. Clinical AI documentation systems require evaluation methodologies that are clinically valid, economically viable, and sensitive to iterative changes. Methods requiring expert review per scoring instance are too slow and expensive for safe, iterative deployment. We present a case-specific, clinician-authored rubric methodology for clinical AI evaluation and examine whether LLM-generated rubrics can approximate clinician agreement.\n  Materials and Methods. Twenty clinicians authored 1,646 rubrics for 823 clinical cases (736 real-world, 87 synthetic) across primary care, psychiatry, o",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Exploiting Differential Flatness for Efficient Learning-based Model Predictive Control of Constrained Multi-Input Control Affine Systems",
+   "url": "https://arxiv.org/abs/2604.24706",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:14:17",
+   "summary": "Learning-based control techniques use data from past trajectories to control systems with uncertain dynamics. However, learning-based controllers are often computationally inefficient, limiting their practicality. To address this limitation, we propose a learning-based controller that exploits differential flatness, a property of many robotic systems. Recent research on using flatness for learning-based control either is limited in that it (i) ignores input constraints, (ii) applies only to single-input systems, or (iii) is tailored to specific platforms. In contrast, our approach uses a syste",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Green Shielding: A User-Centric Approach Towards Trustworthy AI",
+   "url": "https://arxiv.org/abs/2604.24700",
+   "source": "arxiv",
+   "published_date": "2026-04-27T17:04:17",
+   "summary": "Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green Shielding, a user-centric agenda for building evidence-backed deployment guidance by characterizing how benign input variation shifts model behavior. We operationalize this agenda through the CUE criteria: benchmarks with authentic Context, reference standards and metrics that capture true Utility, and perturbations that reflect realistic variations in the E",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: Utilyze – an open source GPU monitoring tool more accurate than nvtop",
+   "url": "https://www.systalyze.com/utilyze",
+   "source": "hackernews",
+   "published_date": "2026-04-27T15:55:43",
+   "summary": "The standard GPU utilization metric reported by nvidia-smi, nvtop, Weights &amp; Biases, Amazon CloudWatch, Google Cloud Monitoring, and Azure Monitor is highly misleading. It reports the fraction of time that any kernel is running on the GPU, which means a GPU can report 100% utilization even if only a small portion of its compute capacity is actually being used. In practice, we&#x27;ve seen workloads with ~1–10% real compute throughput while dashboards show 100%.<p>This becomes a problem when ",
+   "tags": "optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "DeepSeek-V4 on Day 0: From Fast Inference to Verified RL with SGLang and Miles",
+   "url": "https://www.lmsys.org/blog/2026-04-25-deepseek-v4",
+   "source": "hackernews",
+   "published_date": "2026-04-25T23:44:05",
+   "summary": "80 points, 10 comments on HackerNews",
+   "tags": "inference,serving,training",
+   "area": "other"
+  },
+  {
+   "title": "Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints",
+   "url": "https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-24T23:29:56",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/ai-model-representation-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-model-representation-2\" width=\"768\" />DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro and DeepSeek-V4-Flash, both targeted at enabling highly efficient...",
+   "tags": "hardware,inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "The Coding Assistant Breakdown: More Tokens Please",
+   "url": "https://newsletter.semianalysis.com/p/the-coding-assistant-breakdown-more",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-04-24T22:15:46",
+   "summary": "Hands On With GPT 5.5, Opus 4.7, DeepSeek V4, Why Benchmarks Are Bad, and Who&#8217;s Going To Win",
+   "tags": "llm,benchmarks",
+   "area": "other"
+  },
+  {
+   "title": "70x faster cold(ish) starts for SGLang",
+   "url": "https://fergusfinn.com/blog/fast-sglang-starts",
+   "source": "hackernews",
+   "published_date": "2026-04-24T15:02:19",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE",
+   "url": "https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-24T15:00:00",
+   "summary": "<img alt=\"Connected healthcare facilities graphic\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2023/06/connected-healthcare-facilities-graphic.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"connected-healthcare-facilities-graphic\" width=\"600\" />Federated learning (FL) is no longer a research curiosity—it’s a practical response to a hard constraint: the most valuable data is often the least movable....",
+   "tags": "training,systems",
+   "area": "other"
+  },
+  {
+   "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+   "url": "https://www.anthropic.com/engineering/managed-agents",
+   "source": "anthropic:engineering",
+   "published_date": "2026-04-24T14:19:43",
+   "summary": "",
+   "tags": "llm,systems,inference",
+   "area": "other"
+  },
+  {
+   "title": "Accelerate RL rollouts by up to 50% with distribution-aware speculative decoding",
+   "url": "https://www.together.ai/blog/distribution-aware-speculative-decoding",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-24T00:00:00",
+   "summary": "Rollout is the silent bottleneck in RL post-training. DAS fixes it with adaptive speculative decoding — up to 50% faster, zero degradation in reward quality.",
+   "tags": "post-training,inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Winning a Kaggle Competition with Generative AI–Assisted Coding",
+   "url": "https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-23T20:15:02",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/agentic-ai-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai\" width=\"768\" />In March 2026, three LLM agents generated over 600,000 lines of code, ran 850 experiments, and helped secure a first-place finish in a Kaggle playground...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Fine-Tuning Regimes Define Distinct Continual Learning Problems",
+   "url": "https://arxiv.org/abs/2604.21927",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:59:34",
+   "summary": "Continual learning (CL) studies how models acquire tasks sequentially while retaining previously learned knowledge. Despite substantial progress in benchmarking CL methods, comparative evaluations typically keep the fine-tuning regime fixed. In this paper, we argue that the fine-tuning regime, defined by the trainable parameter subspace, is itself a key evaluation variable. We formalize adaptation regimes as projected optimization over fixed trainable subspaces, showing that changing the trainable depth alters the effective update signal through which both current task fitting and knowledge pr",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+   "url": "https://arxiv.org/abs/2604.21915",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:57:28",
+   "summary": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segment",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs",
+   "url": "https://arxiv.org/abs/2604.21911",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:54:36",
+   "summary": "Despite impressive progress in capabilities of large vision-language models (LVLMs), these systems remain vulnerable to hallucinations, i.e., outputs that are not grounded in the visual input. Prior work has attributed hallucinations in LVLMs to factors such as limitations of the vision backbone or the dominance of the language component, yet the relative importance of these factors remains unclear. To resolve this ambiguity, We propose HalluScope, a benchmark to better understand the extent to which different factors induce hallucinations. Our analysis indicates that hallucinations largely st",
+   "tags": "optimization,hardware,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "From Research Question to Scientific Workflow: Leveraging Agentic AI for Science Automation",
+   "url": "https://arxiv.org/abs/2604.21910",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:52:52",
+   "summary": "Scientific workflow systems automate execution -- scheduling, fault tolerance, resource management -- but not the semantic translation that precedes it. Scientists still manually convert research questions into workflow specifications, a task requiring both domain knowledge and infrastructure expertise. We propose an agentic architecture that closes this gap through three layers: an LLM interprets natural language into structured intents (semantic layer); validated generators produce reproducible workflow DAGs (deterministic layer); and domain experts author ``Skills'': markdown documents enco",
+   "tags": "optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Efficient Classical Simulation of Heuristic Peaked Quantum Circuits",
+   "url": "https://arxiv.org/abs/2604.21908",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:51:50",
+   "summary": "Peaked quantum circuits, whose output distribution is sharply concentrated on a single bitstring, have emerged as a promising candidate for verifiable quantum advantage, as the correctness of the quantum output can be checked by simply comparing against the known peak. Recent work by Gharibyan et al. arXiv:2510.25838 claimed heuristic quantum advantage using peaked circuits executed on Quantinuum's 56-qubit H2 processor. These peaked circuits concentrate their output on a single hidden bitstring by training a shallow simulable circuit variationally and inserting an obfuscated permutation to in",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Low-Rank Adaptation Redux for Large Models",
+   "url": "https://arxiv.org/abs/2604.21905",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:50:23",
+   "summary": "Low-rank adaptation (LoRA) has emerged as the de facto standard for parameter-efficient fine-tuning (PEFT) of foundation models, enabling the adaptation of billion-parameter networks with minimal computational and memory overhead. Despite its empirical success and rapid proliferation of variants, it remains elusive which architectural choices, optimization techniques, and deployment constraints should guide practical method selection. This overview revisits LoRA through the lens of signal processing (SP), bridging modern adapter designs with classical low-rank modeling tools and inverse proble",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
+   "url": "https://arxiv.org/abs/2604.21894",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:44:52",
+   "summary": "Designing multi-agent robotic systems requires reasoning across tightly coupled decisions spanning heterogeneous domains, including robot design, fleet composition, and planning. Much effort has been devoted to isolated improvements in these domains, whereas system-level co-design considering trade-offs and task requirements remains underexplored. In this work, we present a formal and compositional framework for the task-driven co-design of heterogeneous multi-robot systems. Building on a monotone co-design theory, we introduce general abstractions of robots, fleets, planners, executors, and e",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Enhancing Coherence of Spin Centers in p-n Diodes via Optimization Algorithms",
+   "url": "https://arxiv.org/abs/2604.21874",
+   "source": "arxiv",
+   "published_date": "2026-04-23T17:17:36",
+   "summary": "Solid-state spin defects hold great promise as building blocks for various quantum technologies. Embedding spin centers in $p$-$n$ diodes under reverse bias has proved to be a powerful strategy to narrow the optical linewidth and increase spin coherence, while also enabling control of the photoluminescence wavelength via Stark shift. Given the multitude of parameters influencing spin centers in diodes (e.g., doping densities and profiles, temperature, bias voltage, spin center position), a question that has not yet been answered is: which set of these design parameters maximizes spin center co",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Simplify Sparse Deep Learning with Universal Sparse Tensor in nvmath-python",
+   "url": "https://developer.nvidia.com/blog/simplify-sparse-deep-learning-with-universal-sparse-tensor-in-nvmath-python",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-22T23:50:10",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Sparse-Deep-Learning-e1774302337562-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Sparse-Deep-Learning\" width=\"768\" />In a previous post, we introduced the Universal Sparse Tensor (UST), enabling developers to decouple a tensor’s sparsity from its memory layout for greater...",
+   "tags": "hardware,optimization,systems",
+   "area": "other"
+  },
+  {
+   "title": "Scaling the AI-Ready Data Center with NVIDIA RTX PRO 4500 Blackwell Server Edition and NVIDIA vGPU 20",
+   "url": "https://developer.nvidia.com/blog/scaling-the-ai-ready-data-center-with-nvidia-rtx-pro-4500-blackwell-server-edition-and-nvidia-vgpu-20",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-22T20:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/nvidia-blackwell-gpu-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-blackwell-gpu\" width=\"768\" />AI integration is redefining mainstream enterprise applications, from productivity software like Microsoft Office to more complex design and engineering tools....",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Advancing Emerging Optimizers for Accelerated LLM Training with NVIDIA Megatron",
+   "url": "https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-22T20:01:03",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2024/07/stacked-geometric-shapes-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"stacked-geometric-shapes.\" width=\"768\" />Higher-order optimization algorithms such as Shampoo have been effectively applied in neural network training for at least a decade. These methods have achieved...",
+   "tags": "training,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control",
+   "url": "https://arxiv.org/abs/2604.20816",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:44:56",
+   "summary": "Reinforcement Learning (RL) post-training has become the standard for aligning generative models with human preferences, yet most methods rely on a single scalar reward. When multiple criteria matter, the prevailing practice of ``early scalarization'' collapses rewards into a fixed weighted sum. This commits the model to a single trade-off point at training time, providing no inference-time control over inherently conflicting goals -- such as prompt adherence versus source fidelity in image editing. We introduce ParetoSlider, a multi-objective RL (MORL) framework that trains a single diffusion",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Adapting TrOCR for Printed Tigrinya Text Recognition: Word-Aware Loss Weighting for Cross-Script Transfer Learning",
+   "url": "https://arxiv.org/abs/2604.20813",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:43:50",
+   "summary": "Transformer-based OCR models have shown strong performance on Latin and CJK scripts, but their application to African syllabic writing systems remains limited. We present the first adaptation of TrOCR for printed Tigrinya using the Ge'ez script. Starting from a pre-trained model, we extend the byte-level BPE tokenizer to cover 230 Ge'ez characters and introduce Word-Aware Loss Weighting to resolve systematic word-boundary failures that arise when applying Latin-centric BPE conventions to a new script. The unmodified model produces no usable output on Ge'ez text. After adaptation, the TrOCR-Pri",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Quantum hardware noise learning via differentiable Kraus representation on tensor networks",
+   "url": "https://arxiv.org/abs/2604.20804",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:35:01",
+   "summary": "We present a method for learning quantum hardware noise from a measurement distribution of a single device experiment. Each noise channel is represented by automatically differentiable Kraus operators obtained from a Stinespring-based parameterization that is completely positive and trace preserving by construction, and circuits are simulated with a matrix product density operator forward model. Independent channels are attached to each native gate type, to each nearest-neighbor crosstalk interaction, and to state preparation and measurement, and all channels are optimized end-to-end against a",
+   "tags": "inference,hardware",
+   "area": "other"
+  },
+  {
+   "title": "A Hough transform approach to safety-aware scalar field mapping using Gaussian Processes",
+   "url": "https://arxiv.org/abs/2604.20799",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:27:08",
+   "summary": "This paper presents a framework for mapping unknown scalar fields using a sensor-equipped autonomous robot operating in unsafe environments. The unsafe regions are defined as regions of high-intensity, where the field value exceeds a predefined safety threshold. For safe and efficient mapping of the scalar field, the sensor-equipped robot must avoid high-intensity regions during the measurement process. In this paper, the scalar field is modeled as a sample from a Gaussian process (GP), which enables Bayesian inference and provides closed-form expressions for both the predictive mean and the u",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+   "url": "https://arxiv.org/abs/2604.20796",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:20:42",
+   "summary": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware op",
+   "tags": "inference,optimization,compression,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+   "url": "https://arxiv.org/abs/2604.20795",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:19:43",
+   "summary": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning.\n  The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs. The system performs entit",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "Fresh Masking Makes NTT Pipelines Composable: Machine-Checked Proofs for Arithmetic Masking in PQC Hardware",
+   "url": "https://arxiv.org/abs/2604.20793",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:19:22",
+   "summary": "Post-quantum cryptographic (PQC) accelerators for ML-KEM (FIPS 203) and ML-DSA (FIPS 204) rely on pipelined Number Theoretic Transform (NTT) stages over $\\mathbb{Z}_q$. Our prior work established structural dependency analysis at scale [1] and quantified the security margin of partial NTT masking [2]. Whether per-stage arithmetic masking guarantees pipeline-level security had no prior machine-checked answer for the r-bearing case: composition frameworks (ISW, t-SNI, PINI, DOM) were formalized exclusively for Boolean masking over $\\mathrm{GF}(2)$; no proof assistant artifact addresses the NTT b",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "GeoRect4D: Geometry-Compatible Generative Rectification for Dynamic Sparse-View 3D Reconstruction",
+   "url": "https://arxiv.org/abs/2604.20784",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:12:02",
+   "summary": "Reconstructing dynamic 3D scenes from sparse multi-view videos is highly ill-posed, often leading to geometric collapse, trajectory drift, and floating artifacts. Recent attempts introduce generative priors to hallucinate missing content, yet naive integration frequently causes structural drift and temporal inconsistency due to the mismatch between stochastic 2D generation and deterministic 3D geometry. In this paper, we propose GeoRect4D, a novel unified framework for sparse-view dynamic reconstruction that couples explicit 3D consistency with generative refinement via a closed-loop optimizat",
+   "tags": "inference,optimization,attention",
+   "area": "other"
+  },
+  {
+   "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+   "url": "https://arxiv.org/abs/2604.20779",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:08:19",
+   "summary": "AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions collected from open-source developers in the wild. The dataset currently contains 6,000 sessions, comprising more than 63,000 user prompts and 355,000 agent tool calls. SWE-chat is a living dataset; our collection pipeline automatically and continually discovers and processes sessions from public repositories. Leveraging SWE-chat, we provide an initial empi",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Efficient Multi-Cohort Inference for Long-Term Effects and Lifetime Value in A/B Testing with User Learning",
+   "url": "https://arxiv.org/abs/2604.20777",
+   "source": "arxiv",
+   "published_date": "2026-04-22T17:05:11",
+   "summary": "In streaming platforms churn is extremely costly, yet A/B tests are typically evaluated using outcomes observed within a limited experimental horizon. Even when both short- and predicted long-term engagement metrics are considered, they may fail to capture how a treatment affects users' retention. Consequently, an intervention may appear beneficial in the short term and neutral in the long term while still generating lower total value than the control due to users churn.\n  To address this limitation, we introduce a method that estimates long-term treatment effects (LTE) and residual lifetime v",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "TurboOCR: CUDA and TensorRT OCR Server at 270 img/s",
+   "url": "https://github.com/aiptimizer/TurboOCR",
+   "source": "hackernews",
+   "published_date": "2026-04-22T14:09:07",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Ten Percent Sovereign",
+   "url": "https://www.airealist.ai/p/ten-percent-sovereign",
+   "source": "airealist",
+   "published_date": "2026-04-22T08:37:37",
+   "summary": "The European Commission awarded &#8364;180 million under a framework that scores legal sovereignty at ten percent &#8212; and didn&#8217;t see what an Ontario court had just done.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Tenstorrent's Large Compute Cluster, Generates Video Faster Than Real Time",
+   "url": "https://www.eetimes.com/tenstorrent-previews-large-compute-cluster-generates-video-faster-than-real-time",
+   "source": "hackernews",
+   "published_date": "2026-04-21T21:45:37",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Generalization at the Edge of Stability",
+   "url": "https://arxiv.org/abs/2604.19740",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:59:02",
+   "summary": "Training modern neural networks often relies on large learning rates, operating at the edge of stability, where the optimization dynamics exhibit oscillatory and chaotic behavior. Empirically, this regime often yields improved generalization performance, yet the underlying mechanism remains poorly understood. In this work, we represent stochastic optimizers as random dynamical systems, which often converge to a fractal attractor set (rather than a point) with a smaller intrinsic dimension. Building on this connection and inspired by Lyapunov dimension theory, we introduce a novel notion of dim",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Generative Drifting for Conditional Medical Image Generation",
+   "url": "https://arxiv.org/abs/2604.19736",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:58:26",
+   "summary": "Conditional medical image generation plays an important role in many clinically relevant imaging tasks. However, existing methods still face a fundamental challenge in balancing inference efficiency, patient-specific fidelity, and distribution-level plausibility, particularly in high-dimensional 3D medical imaging. In this work, we propose GDM, a generative drifting framework that reformulates deterministic medical image prediction as a multi-objective learning problem to jointly promote distribution-level plausibility and patient-specific fidelity while retaining one-step inference. GDM exten",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "FB-NLL: A Feature-Based Approach to Tackle Noisy Labels in Personalized Federated Learning",
+   "url": "https://arxiv.org/abs/2604.19729",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:51:58",
+   "summary": "Personalized Federated Learning (PFL) aims to learn multiple task-specific models rather than a single global model across heterogeneous data distributions. Existing PFL approaches typically rely on iterative optimization-such as model update trajectories-to cluster users that need to accomplish the same tasks together. However, these learning-dynamics-based methods are inherently vulnerable to low-quality data and noisy labels, as corrupted updates distort clustering decisions and degrade personalization performance. To tackle this, we propose FB-NLL, a feature-centric framework that decouple",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Coherent Direct Multipath SLAM",
+   "url": "https://arxiv.org/abs/2604.19723",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:48:45",
+   "summary": "Challenging indoor and urban environments with severe multipath propagation and obstructed LoS (OLoS) degrade classical radio frequency (RF) positioning. Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising remedy, building and exploiting a map of the propagation environment to enhance the robustness. Emerging distributed multiple-input multiple-output (D-MIMO)/extremely large-scale MIMO (XL-MIMO) infrastructures, with single XL antenna arrays or distributed subarrays, offer large spatial apertures and enable high-resolution sensing, in particular when phase coherence",
+   "tags": "inference,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Direct RNA sequence design under codon constraints using expressive tensor-based secondary structure models",
+   "url": "https://arxiv.org/abs/2604.19718",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:45:37",
+   "summary": "Nucleic acid sequence design via codon optimization is a fundamental task with applications across synthetic biology, mRNA therapeutics, and vaccine design. Given a target protein, it is a major open challenge to navigate the combinatorially large design space of codon sequences mapping to its amino acid sequence. Computational approaches generally seek to optimize simple objectives based on the codon sequence, possibly together with more complicated contributions based on secondary structure analysis. In this work, we demonstrate a direct and efficient algorithm to sample sequences from a sui",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model",
+   "url": "https://arxiv.org/abs/2604.19710",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:34:19",
+   "summary": "Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latency in action generation using an autoregressive generation framework and exhibit limited robustness. In this paper, we propose SpanVLA, a novel end-to-end autonomous driving framework, integrating an autoregressive reasoning and a flow-matching action expert. First, SpanVLA introduces an efficient bridge to leverage the vision and reasoning guidance of VLM to",
+   "tags": "inference,optimization,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Recent Advances in Causal Analysis of the Stochastic Frontier Model",
+   "url": "https://arxiv.org/abs/2604.19693",
+   "source": "arxiv",
+   "published_date": "2026-04-21T17:16:50",
+   "summary": "Causal inference methods (instrumental variables, difference-in-differences, regression discontinuity, etc.) are primary tools used across many social science milieus. One area where their application has lagged however, is in the study of productivity and efficiency. A main reason for this is that the nature of the stochastic frontier model does not immediately lend itself to a causal framework when interest hinges on an error component of the model. This paper reviews the nascent literature on attempts to merge the stochastic frontier literature with causal inference methods. We discuss mode",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "The Price of “Primary”",
+   "url": "https://www.airealist.ai/p/the-price-of-primary",
+   "source": "airealist",
+   "published_date": "2026-04-21T11:37:10",
+   "summary": "Jensen Huang said the quiet part out loud on April 15. Amazon just priced it.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Capacity without conflict: A guide to multi-tenant GPU cluster design for AI-native teams",
+   "url": "https://www.together.ai/blog/multi-tenant-gpu-cluster-design-for-ai-native-teams",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-21T00:00:00",
+   "summary": "Learn how AI-native companies design multi-tenant GPU clusters that pool capacity without sacrificing team isolation — and how Together AI makes it work in practice.",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Maximizing Memory Efficiency to Run Bigger Models on NVIDIA Jetson",
+   "url": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-20T23:01:04",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Robotics-Jetson-OSS-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Robotics-Jetson-OSS\" width=\"768\" />The boom in open source generative AI models is pushing beyond data centers into machines operating in the physical world. Developers are eager to deploy these...",
+   "tags": "inference,optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Run High-Throughput Reinforcement Learning Training with End-to-End FP8 Precision",
+   "url": "https://developer.nvidia.com/blog/run-high-throughput-reinforcement-learning-training-with-end-to-end-fp8-precision",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-20T22:52:15",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/RL-FP8-e1776716106922-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"RL-FP8\" width=\"768\" />As LLMs transition from simple text generation to complex reasoning, reinforcement learning (RL) plays a central role. Algorithms like Group Relative Policy...",
+   "tags": "training,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Kimi vendor verifier – verify accuracy of inference providers",
+   "url": "https://www.kimi.com/blog/kimi-vendor-verifier",
+   "source": "hackernews",
+   "published_date": "2026-04-20T20:39:53",
+   "summary": "",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "MUA: Mobile Ultra-detailed Animatable Avatars",
+   "url": "https://arxiv.org/abs/2604.18583",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:59:43",
+   "summary": "Building photorealistic, animatable full-body digital humans remains a longstanding challenge in computer graphics and vision. Recent advances in animatable avatar modeling have largely progressed along two directions: improving the fidelity of dynamic geometry and appearance, or reducing computational complexity to enable deployment on resource-constrained platforms, e.g., VR headsets. However, existing approaches fail to achieve both goals simultaneously: Ultra-high-fidelity avatars typically require substantial computation on server-class GPUs, whereas lightweight avatars often suffer from ",
+   "tags": "inference,compression,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Bounded Ratio Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2604.18578",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:59:01",
+   "summary": "Proximal Policy Optimization (PPO) has become the predominant algorithm for on-policy reinforcement learning due to its scalability and empirical robustness across domains. However, there is a significant disconnect between the underlying foundations of trust region methods and the heuristic clipped objective used in PPO. In this paper, we bridge this gap by introducing the Bounded Ratio Reinforcement Learning (BRRL) framework. We formulate a novel regularized and constrained policy optimization problem and derive its analytical optimal solution. We prove that this solution ensures monotonic p",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "ReCap: Lightweight Referential Grounding for Coherent Story Visualization",
+   "url": "https://arxiv.org/abs/2604.18575",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:57:50",
+   "summary": "Story Visualization aims to generate a sequence of images that faithfully depicts a textual narrative that preserve character identity, spatial configuration, and stylistic coherence as the narratives unfold. Maintaining such cross-frame consistency has traditionally relied on explicit memory banks, architectural expansion, or auxiliary language models, resulting in substantial parameter growth and inference overhead. We introduce ReCap, a lightweight consistency framework that improves character stability and visual fidelity without modifying the base diffusion backbone. ReCap's CORE (COnditi",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "Latent Phase-Shift Rollback: Inference-Time Error Correction via Residual Stream Monitoring and KV-Cache Steering",
+   "url": "https://arxiv.org/abs/2604.18567",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:53:33",
+   "summary": "Large language models frequently commit unrecoverable reasoning errors mid-generation: once a wrong step is taken, subsequent tokens compound the mistake rather than correct it. We introduce $\\textbf{Latent Phase-Shift Rollback}$ (LPSR): at each generation step, we monitor the residual stream at a critical layer lcrit, detect abrupt directional reversals (phase shifts) via a cosine-similarity $+$ entropy dual gate, and respond by rolling back the KV-cache and injecting a pre-computed steering vector. No fine-tuning, gradient computation, or additional forward passes are required. LPSR achieves",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "ConforNets: Latents-Based Conformational Control in OpenFold3",
+   "url": "https://arxiv.org/abs/2604.18559",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:47:31",
+   "summary": "Models from the AlphaFold (AF) family reliably predict one dominant conformation for most well-ordered proteins but struggle to capture biologically relevant alternate states. Several efforts have focused on eliciting greater conformational variability through ad hoc inference-time perturbations of AF models or their inputs. Despite their progress, these approaches remain inefficient and fail to consistently recover major conformational modes. Here, we investigate both the optimal location and manner-of-operation for perturbing latent representations in the AF3 architecture. We distill our fin",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling",
+   "url": "https://arxiv.org/abs/2604.18556",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:45:47",
+   "summary": "Weight quantization has become a standard tool for efficient LLM deployment, especially for local inference, where models are now routinely served at 2-3 bits per parameter. The state of the art is currently split into two sets of methods: simple scalar quantization techniques, such as GPTQ or AWQ, which are widely deployed but plateau in accuracy at 3-4 bits per parameter (bpp), and \"second-generation\" vector- or trellis-quantized methods, such as QTIP, GPTVQ and AQLM, which push the accuracy frontier at low bit-widths but are notoriously hard to implement and to scale, and have gained relati",
+   "tags": "quantization,inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "FUSE: Ensembling Verifiers with Zero Labeled Data",
+   "url": "https://arxiv.org/abs/2604.18547",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:40:33",
+   "summary": "Verification of model outputs is rapidly emerging as a key primitive for both training and real-world deployment of large language models (LLMs). In practice, this often involves using imperfect LLM judges and reward models since ground truth acquisition can be time-consuming and expensive. We introduce Fully Unsupervised Score Ensembling (FUSE), a method for improving verification quality by ensembling verifiers without access to ground truth correctness labels. The key idea behind FUSE is to control conditional dependencies between verifiers in a manner that improves the unsupervised perform",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "A differentiable software suite for accelerated simulation of turbulent flows",
+   "url": "https://arxiv.org/abs/2604.18536",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:31:44",
+   "summary": "We present IncompressibleNavierStokes.jl, an open-source Julia package for solving the incompressible Navier--Stokes equations on staggered Cartesian grids. The package features matrix-free, hardware-agnostic kernels that are compiled from a single source for multi-threaded CPU or GPU execution, and hand-written adjoint kernels for all discrete operators, enabling efficient reverse-mode automatic differentiation through the entire solver. This differentiability allows neural network closure models to be trained a-posteriori while embedded in a large-eddy simulation. Memory optimizations permit",
+   "tags": "optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "HybridGen: Efficient LLM Generative Inference via CPU-GPU Hybrid Computing",
+   "url": "https://arxiv.org/abs/2604.18529",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:25:44",
+   "summary": "As modern LLMs support thousands to millions of tokens, KV caches grow to hundreds of gigabytes, stressing memory capacity and bandwidth. Existing solutions, such as KV cache pruning and offloading, alleviate these but underutilize hardware by relying solely on either GPU or CPU for attention computing, and considering yet limited CPU local memory for KV cache storage. We propose HybridGen, an efficient hybrid attention framework for long-context LLM inference. HybridGen enables CPU-GPU collaborative attention on systems with expanded tiered memory (e.g., CXL memory), addressing three key chal",
+   "tags": "inference,attention,compression,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "BBP transition and the leading eigenvector of the spiked Wigner model with inhomogeneous noise",
+   "url": "https://arxiv.org/abs/2604.18523",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:21:14",
+   "summary": "The spiked Wigner ensemble is a prototypical model for high-dimensional inference. We study the spectral properties of an inhomogeneous rank-one spiked Wigner model in which the variance of each entry of the noise matrix is itself a random variable. In the high-dimensional limit, we derive exact equations for the spectral edges, the outlier eigenvalue, and the distribution of the components of the outlier eigenvector. These equations determine the BBP transition line that separates the gapped phase, where the signal is detectable, from the gapless phase. In the gapped regime, the distribution ",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Joint Scheduling of Multi-Band Radar Sensing and DNN Inference for Cross-Stage Parallelism",
+   "url": "https://arxiv.org/abs/2604.18520",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:18:12",
+   "summary": "This paper studies end-to-end latency minimization for a multi-band radar sensing and deep neural network (DNN) inference pipeline. Unlike conventional stage-wise designs that treat radar sensing and DNN inference as two sequential stages, the proposed framework exploits cross-stage parallelism by allowing the inference branch associated with a sensed band to start as soon as that band completes sensing, without waiting for all bands to finish. To characterize this interaction, we formulate a joint scheduling problem that couples sensing-time allocation, branch release timing, and non-preempti",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "LLM Safety From Within: Detecting Harmful Content with Internal Representations",
+   "url": "https://arxiv.org/abs/2604.18519",
+   "source": "arxiv",
+   "published_date": "2026-04-20T17:17:07",
+   "summary": "Guard models are widely used to detect harmful content in user prompts and LLM responses. However, state-of-the-art guard models rely solely on terminal-layer representations and overlook the rich safety-relevant features distributed across internal layers. We present SIREN, a lightweight guard model that harnesses these internal features. By identifying safety neurons via linear probing and combining them through an adaptive layer-weighted strategy, SIREN builds a harmfulness detector from LLM internals without modifying the underlying model. Our comprehensive evaluation shows that SIREN subs",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments",
+   "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-20T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/agentic-ai-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai\" width=\"768\" />AI tools are significantly accelerating software development and changing how developers work with code. These tools serve as real-time copilots, automating...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "How Much Do GPU Clusters Really Cost?",
+   "url": "https://newsletter.semianalysis.com/p/how-much-do-gpu-clusters-really-cost",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-04-20T14:21:59",
+   "summary": "Calculating Cluster TCO, The Real Impact of Downtime, The Grand Unifying Theory Of Goodput, and a ClusterMAX 2.1 Update",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Anthropic Is Not a Trend",
+   "url": "https://www.airealist.ai/p/anthropic-is-not-a-trend",
+   "source": "airealist",
+   "published_date": "2026-04-20T05:31:33",
+   "summary": "Jensen Huang said the quiet part out loud. The market is misreading what he said.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "TensorRT LLM",
+   "url": "https://github.com/NVIDIA/TensorRT-LLM",
+   "source": "hackernews",
+   "published_date": "2026-04-19T01:58:00",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,llm",
+   "area": "other"
+  },
+  {
+   "title": "My Workflow for Understanding LLM Architectures",
+   "url": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-04-18T11:24:36",
+   "summary": "A learning-oriented workflow for understanding new open-weight model releases",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo",
+   "url": "https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-17T22:52:47",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/inference-press-dynamo-gtc26-4960950-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"inference-press-dynamo-gtc26-4960950-1920x1080\" width=\"768\" />Coding agents are starting to write production code at scale. Stripe’s agents generate 1,300+ PRs per week. Ramp attributes 30% of merged PRs to agents....",
+   "tags": "inference,serving,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw",
+   "url": "https://developer.nvidia.com/blog/build-a-secure-always-on-local-ai-agent-with-nvidia-nemoclaw-and-openclaw",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-17T18:59:12",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Claw-DGX-Spark-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Claw-DGX-Spark\" width=\"768\" />Agents are evolving from question-and-answer systems into long-running autonomous assistants that read files, call APIs, and drive multi-step workflows....",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Accelerate Clean, Modular, Nuclear Reactor Design with AI Physics",
+   "url": "https://developer.nvidia.com/blog/accelerate-clean-modular-nuclear-reactor-design-with-ai-physics",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-17T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/image8.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image8\" width=\"600\" />The development of socially acceptable nuclear reactors requires that they are safe, clean, efficient, economical, and sustainable. Meeting these requirements...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "How to Build Vision AI Pipelines Using NVIDIA DeepStream Coding Agents",
+   "url": "https://developer.nvidia.com/blog/how-to-build-vision-ai-pipelines-using-deepstream-coding-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-16T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/robotics-key-visual-metropolis-deepstream-gtc26-abstract-code-r2_1920x1080-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"robotics-key-visual-metropolis-deepstream-gtc26-abstract-code-r2_1920x1080\" width=\"768\" />Developing real-time vision AI applications presents a significant challenge for developers, often demanding intricate data pipelines, countless lines of code,...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "ISSCC 2026: NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI, Logic-Based SRAM, UCIe-S and More",
+   "url": "https://newsletter.semianalysis.com/p/isscc-2026-nvidia-and-broadcom-cpo",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-04-15T17:55:22",
+   "summary": "ISSCC 2026 Round-Up",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "A 164-parameter architecture beats a 6.5M transformer on SCAN by 94 points",
+   "url": "https://github.com/Elgoghel/hwta-circuits",
+   "source": "hackernews",
+   "published_date": "2026-04-15T15:08:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "The HAI Numbers Moved — What It Means",
+   "url": "https://www.airealist.ai/p/the-hai-numbers-moved-what-it-means",
+   "source": "airealist",
+   "published_date": "2026-04-15T08:51:30",
+   "summary": "Five shifts in Stanford&#8217;s 2026 AI Index. Here are the forces behind them.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Parcae: Doing more with fewer parameters using stable looped models",
+   "url": "https://www.together.ai/blog/parcae",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-15T00:00:00",
+   "summary": "Parcae is a stable looped language model that matches the quality of a Transformer twice its size — a 770M model reaching 1.3B-level performance. We introduce the first scaling laws for looping and show that increasing recurrence, not just data, is a compute-efficient path to bet",
+   "tags": "architecture,training,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Building Custom Atomistic Simulation Workflows for Chemistry and Materials Science with NVIDIA ALCHEMI Toolkit",
+   "url": "https://developer.nvidia.com/blog/building-custom-atomistic-simulation-workflows-for-chemistry-and-materials-science-with-nvidia-alchemi-toolkit",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-14T16:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/materials-science-chemistry-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"materials-science-chemistry\" width=\"768\" />For decades, computational chemistry has faced a tug-of-war between accuracy and speed. Ab initio methods like density functional theory (DFT) provide high...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "NVIDIA NVbandwidth: Your Essential Tool for Measuring GPU Interconnect and Memory Performance",
+   "url": "https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-14T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/image1-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />When you’re writing CUDA applications, one of the most important things you need to focus on to write great code is data transfer performance. This applies to...",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "NVIDIA Ising Introduces AI-Powered Workflows to Build Fault-Tolerant Quantum Systems",
+   "url": "https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-14T14:15:56",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Ising-Quantum-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Ising-Quantum\" width=\"768\" />NVIDIA Ising is the world's first family of open AI models for building quantum processors, launching with two model domains: Ising Calibration and Ising...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "The Quiet Tax on Parallel AI Coding Work — and Why I Built Canopy",
+   "url": "https://www.airealist.ai/p/the-quiet-tax-on-parallel-ai-coding",
+   "source": "airealist",
+   "published_date": "2026-04-14T06:24:46",
+   "summary": "Claude Code wants you to do one thing at a time. Real engineering doesn't work that way.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "EinsteinArena: Harnessing the collective intelligence of agents in the wild to advance science",
+   "url": "https://www.together.ai/blog/einsteinarena",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-13T00:00:00",
+   "summary": "EinsteinArena is a platform where AI agents collaborate and compete on open math problems. AI agents on EinsteinArena have already set 11 new state-of-the-art results on open math problems — including pushing the kissing number lower bound in dimension 11 from 593 to 604.",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "MiniMax M2.7 Advances Scalable Agentic Workflows on NVIDIA Platforms for Complex AI Applications",
+   "url": "https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-12T01:02:44",
+   "summary": "<img alt=\"Decorative object.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/MM-Release-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"MM-Release\" width=\"768\" />The release of&nbsp;MiniMax M2.7&nbsp;adds enhancements to the popular&nbsp;MiniMax&nbsp;M2.5 model,&nbsp;built for agentic harnesses,...",
+   "tags": "llm,serving",
+   "area": "other"
+  },
+  {
+   "title": "The Verification Tax",
+   "url": "https://www.airealist.ai/p/the-verification-tax",
+   "source": "airealist",
+   "published_date": "2026-04-10T15:13:31",
+   "summary": "The GPU ate the AI narrative. The CPU kept doing the work.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Warp Decode vs. vLLM's Triton kernel: where each wins (crossover analysis)",
+   "url": "https://ai.rundatarun.io/AI%20Systems%20%26%20Architecture/reproducing-warp-decode-blackwell",
+   "source": "hackernews",
+   "published_date": "2026-04-10T09:48:15",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Running Large-Scale GPU Workloads on Kubernetes with Slurm",
+   "url": "https://developer.nvidia.com/blog/running-large-scale-gpu-workloads-on-kubernetes-with-slurm",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-09T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/compute-stack-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"compute-stack\" width=\"768\" />Slurm is an open source cluster management and job scheduling system for Linux. It manages job scheduling for over 65% of TOP500 systems. Most organizations...",
+   "tags": "systems,training",
+   "area": "other"
+  },
+  {
+   "title": "Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP",
+   "url": "https://developer.nvidia.com/blog/cut-checkpoint-costs-with-about-30-lines-of-python-and-nvidia-nvcomp",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-09T16:48:38",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Checkpoint-Costs-e1775685819565-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Checkpoint-Costs\" width=\"768\" />Training LLMs requires periodic checkpoints. These full snapshots of model weights, optimizer states, and gradients are saved to storage so training can resume...",
+   "tags": "training,systems,optimization",
+   "area": "other"
+  },
+  {
+   "title": "How to Accelerate Protein Structure Prediction at Proteome-Scale",
+   "url": "https://developer.nvidia.com/blog/how-to-accelerate-protein-structure-prediction-at-proteome-scale",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-09T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/image1-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />Proteins rarely function in isolation as individual monomers. Most biological processes are governed by proteins interacting with other proteins, forming...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Open From Both Sides",
+   "url": "https://www.airealist.ai/p/open-from-both-sides",
+   "source": "airealist",
+   "published_date": "2026-04-09T07:18:42",
+   "summary": "Chinese proliferation, trivial alignment removal, and the week the safety moat didn't hold.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Integrate Physical AI Capabilities into Existing Apps with NVIDIA Omniverse Libraries",
+   "url": "https://developer.nvidia.com/blog/integrate-physical-ai-capabilities-into-existing-apps-with-nvidia-omniverse-libraries",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-08T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/ov-libraries-tech-blog-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ov-libraries-tech-blog-1920x1080\" width=\"768\" />Physical AI—AI systems that perceive, reason, and act in physically grounded simulated environments—is changing how teams design and validate robots and...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Running AI Workloads on Rack-Scale Supercomputers: From Hardware to Topology-Aware Scheduling",
+   "url": "https://developer.nvidia.com/blog/running-ai-workloads-on-rack-scale-supercomputers-from-hardware-to-topology-aware-scheduling",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-07T18:51:01",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/gtc25-tech-blog-dgx-gb300-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"dgx-gb300\" width=\"768\" />The NVIDIA GB200 NVL72 and NVIDIA GB300 NVL72 systems, featuring NVIDIA Blackwell architecture, are rack-scale supercomputers. They’re designed with 18...",
+   "tags": "hardware,systems,inference",
+   "area": "other"
+  },
+  {
+   "title": "Train, Deploy, Write Down",
+   "url": "https://www.airealist.ai/p/train-deploy-write-down",
+   "source": "airealist",
+   "published_date": "2026-04-07T16:50:06",
+   "summary": "The AI industry&#8217;s most expensive assets depreciate faster than anything in corporate history. The accounting rules haven&#8217;t noticed.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "What is an AI Native Cloud?",
+   "url": "https://www.together.ai/blog/what-is-an-ai-native-cloud",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-07T00:00:00",
+   "summary": "AI-native companies need infrastructure built for models, not legacy workloads. Learn what defines an AI Native Cloud and why it matters for the next platform shift.",
+   "tags": "systems,serving",
+   "area": "other"
+  },
+  {
+   "title": "Dump Weights from TensorRT",
+   "url": "https://github.com/refortif-ai/trt-weight-extractor",
+   "source": "hackernews",
+   "published_date": "2026-04-06T00:00:43",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: Runfra – Decentralized GPU cluster designed for bulk generation",
+   "url": "https://runfra.com/playground",
+   "source": "hackernews",
+   "published_date": "2026-04-05T22:14:00",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Improving LLM Inference with Continuous Batching: Orca Through Tinyorca",
+   "url": "https://www.junupark.xyz/blog/posts/improving-llm-inference-with-continuous-batching-orca-through-tinyorca",
+   "source": "hackernews",
+   "published_date": "2026-04-04T15:03:52",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,llm",
+   "area": "other"
+  },
+  {
+   "title": "Components of A Coding Agent",
+   "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-04-04T11:45:37",
+   "summary": "How coding agents use tools, memory, and repo context to make LLMs work better in practice",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "What to Buy for Local LLMs (April 2026)",
+   "url": "https://www.airealist.ai/p/what-to-buy-for-local-llms-april",
+   "source": "airealist",
+   "published_date": "2026-04-03T15:55:00",
+   "summary": "A practitioner&#8217;s guide to inference and training, why they&#8217;re not the same machine, and why you may still need cloud",
+   "tags": "inference,training,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Your Parents Paid",
+   "url": "https://www.airealist.ai/p/your-parents-paid",
+   "source": "airealist",
+   "published_date": "2026-04-03T15:54:33",
+   "summary": "NVIDIA built the world&#8217;s most profitable hardware company by treating its consumer GPUs as a recruitment pipeline. Now many recruits are buying Macs.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Wan 2.7 now available on Together AI",
+   "url": "https://www.together.ai/blog/wan-2-7-now-available-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-03T00:00:00",
+   "summary": "A four-model video suite for generation, continuation, reference-driven workflows, and editing, rolling out on Together AI starting with text-to-video.",
+   "tags": "multimodal,serving",
+   "area": "other"
+  },
+  {
+   "title": "AI for Systems: Using LLMs to Optimize Database Query Execution",
+   "url": "https://www.together.ai/blog/using-llms-to-optimize-database-query-execution",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-03T00:00:00",
+   "summary": "New research shows LLMs can optimize database query execution plans—achieving up to 4.78x speedups by correcting the cardinality estimation errors that statistical heuristics miss.",
+   "tags": "optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Accelerating Vision AI Pipelines with Batch Mode VC-6 and NVIDIA Nsight",
+   "url": "https://developer.nvidia.com/blog/accelerating-vision-ai-pipelines-with-batch-mode-vc-6-and-nvidia-nsight",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-02T20:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/blue-square-field-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"blue-square-field\" width=\"768\" />In vision AI systems, model throughput continues to improve. The surrounding pipeline stages must keep pace, including decode, preprocessing, and GPU...",
+   "tags": "inference,optimization,systems",
+   "area": "other"
+  },
+  {
+   "title": "Open Source Won, But Changed Owners",
+   "url": "https://www.airealist.ai/p/open-source-won-but-changed-owners",
+   "source": "airealist",
+   "published_date": "2026-04-02T17:25:21",
+   "summary": "Smaller, cheaper, open &#8212; and the base layer is up for grabs.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Bringing AI Closer to the Edge and On-Device with Gemma 4",
+   "url": "https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-02T16:27:46",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Gemma-4-TechBlog-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Gemma 4 TechBlog featured\" width=\"768\" />The Gemmaverse expands with the launch of the latest Gemma 4 multimodal and multilingual models, designed to scale across the full spectrum of deployments, from...",
+   "tags": "architecture,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Achieving Single-Digit Microsecond Latency Inference for Capital Markets",
+   "url": "https://developer.nvidia.com/blog/achieving-single-digit-microsecond-latency-inference-for-capital-markets",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-02T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/finance-trading-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"finance-trading\" width=\"768\" />In algorithmic trading, reducing response times to market events is crucial. To keep pace with high-speed electronic markets, latency-sensitive firms often use...",
+   "tags": "inference,optimization,serving",
+   "area": "other"
+  },
+  {
+   "title": "The Great GPU Shortage – Rental Capacity – Launching our H100 1 Year Rental Price Index",
+   "url": "https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-04-02T04:25:57",
+   "summary": "GPU Rental Pricing Dashboard Launch",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "CougarLLM: A Global Inference Server",
+   "url": "https://www.tigrisdata.com/blog/cougarllm",
+   "source": "hackernews",
+   "published_date": "2026-04-02T00:13:40",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "other"
+  },
+  {
+   "title": "Deepgram speech-to-text and voice models now available natively on Together AI",
+   "url": "https://www.together.ai/blog/deepgram-speech-to-text-and-voice-models-now-available-natively-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-02T00:00:00",
+   "summary": "Production STT and TTS from Deepgram, available on Together AI Dedicated Model Inference for real-time voice agents.",
+   "tags": "inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "What China Shipped While the West Was Banning Chips",
+   "url": "https://www.airealist.ai/p/what-china-shipped-while-the-west",
+   "source": "airealist",
+   "published_date": "2026-04-01T21:06:37",
+   "summary": "Six domains where China&#8217;s deployment record contradicts the restriction narrative.",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: A new model architecture because transformers are not enough",
+   "url": "https://interfaze.ai/",
+   "source": "hackernews",
+   "published_date": "2026-04-01T17:00:07",
+   "summary": "3 points, 2 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "CUDA Tile Programming Now Available for BASIC!",
+   "url": "https://developer.nvidia.com/blog/cuda-tile-programming-now-available-for-basic",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-01T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/0331-1-768x432.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDA Tile BASIC\" width=\"768\" />Note: CUDA Tile Programming in BASIC is an April Fools’ joke, but it's also real and actually works,  demonstrating the flexibility of CUDA. CUDA 13.1...",
+   "tags": "hardware,optimization",
+   "area": "other"
+  },
+  {
+   "title": "NVIDIA Extreme Co-Design Delivers New MLPerf Inference Records",
+   "url": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-01T15:00:48",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/NVL72-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVL72\" width=\"768\" />Co-designed hardware, software, and models are key to delivering the highest AI factory throughput and lowest token cost. Measuring this goes far beyond peak...",
+   "tags": "inference,hardware,benchmarks",
+   "area": "other"
+  },
+  {
+   "title": "Accelerate Token Production in AI Factories Using Unified Services and Real-Time AI",
+   "url": "https://developer.nvidia.com/blog/accelerate-token-production-in-ai-factories-using-unified-services-and-real-time-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-04-01T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/image3-9-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />In today’s AI factory environment, performance is not theoretical. It is economic, competitive, and existential. A 1% drop in usable GPU time can mean...",
+   "tags": "inference,serving,systems",
+   "area": "other"
+  },
+  {
+   "title": "Nvidia AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
+   "source": "hackernews",
+   "published_date": "2026-04-01T00:56:03",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Inside the Together AI kernels team",
+   "url": "https://www.together.ai/blog/inside-the-together-ai-kernels-team",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-04-01T00:00:00",
+   "summary": "The team behind FlashAttention and ThunderKittens — how Together AI's kernel researchers close the gap between GPU hardware and production AI.",
+   "tags": "optimization,attention,hardware",
+   "area": "other"
+  }
+ ]
+}

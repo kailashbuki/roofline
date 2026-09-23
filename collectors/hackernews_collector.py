@@ -24,7 +24,9 @@ def collect_hackernews(session, config):
 
     rows = []
     seen = set()
-    for query in hn_config['queries']:
+    # queries is {area: [query, ...]} — the query group supplies the area hint.
+    pairs = [(area, q) for area, queries in hn_config['queries'].items() for q in queries]
+    for area, query in pairs:
         try:
             response = requests.get(
                 SEARCH,
@@ -63,6 +65,7 @@ def collect_hackernews(session, config):
                 "title": hit.get('title') or '',
                 "url": hit.get('url') or f"https://news.ycombinator.com/item?id={object_id}",
                 "source": "hackernews",
+                "area_hint": area,
                 "published_date": published,
                 "summary": f"{hit.get('points', 0)} points, "
                            f"{hit.get('num_comments', 0)} comments on HackerNews",

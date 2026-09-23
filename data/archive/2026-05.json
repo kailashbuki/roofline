@@ -1,0 +1,663 @@
+{
+ "month": "2026-05",
+ "count": 73,
+ "articles": [
+  {
+   "title": "Run Key Genomics and Protein Folding Workloads Faster with NVIDIA RTX PRO 4500 Blackwell",
+   "url": "https://developer.nvidia.com/blog/run-key-genomics-and-protein-folding-workloads-faster-with-nvidia-rtx-pro-4500-blackwell",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-26T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image2-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />Precision medicine depends on two fundamental capabilities: understanding disease at the genomic level and identifying treatments at the molecular level.&nbsp;...",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Inside the 800VDC Revolution – Part 1",
+   "url": "https://newsletter.semianalysis.com/p/inside-the-800vdc-revolution-part",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-26T05:37:01",
+   "summary": "Four-Phase 800VDC Transition, Power Rack Economics, SST, Equipment Content/MW Build, Supplier Implications",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Huawei Can’t Buy EUV. It Says It Doesn’t Need To.",
+   "url": "https://www.airealist.ai/p/huawei-cant-buy-euv-it-says-it-doesnt",
+   "source": "airealist",
+   "published_date": "2026-05-25T11:16:25",
+   "summary": "A new &#8220;scaling law&#8221; reframes the chip race from space to time. The export-control wall was built to deny the first. It has no answer for the second.",
+   "tags": "hardware,training",
+   "area": "other"
+  },
+  {
+   "title": "Matrix Multiplications on GPUs Run Faster When Given “Predictable” Data (2024)",
+   "url": "https://www.thonking.ai/p/strangely-matrix-multiplications",
+   "source": "hackernews",
+   "published_date": "2026-05-23T14:11:47",
+   "summary": "",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Synthesize Realistic 3D Medical Images at Scale to Ship Pre‑Trained Models",
+   "url": "https://developer.nvidia.com/blog/synthesize-realistic-3d-medical-images-at-scale-to-ship-pre-trained-models",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-22T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/combined_grid1-ezgif.com-optimize-1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"combined_grid1-ezgif.com-optimize (1)\" width=\"600\" />High‑quality 3D medical imaging data is the foundation of modern radiology AI, but access to it is often constrained by data scarcity, privacy restrictions,...",
+   "tags": "training,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Lobby, Levy, Legislate",
+   "url": "https://www.airealist.ai/p/lobby-levy-legislate",
+   "source": "airealist",
+   "published_date": "2026-05-22T06:51:24",
+   "summary": "How Mistral is trying to convert a perishable contact list into permanent law.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "EDA Market Primer - Market Dynamics, Cadence, Synopsys, Siemens, China EDA Rise",
+   "url": "https://newsletter.semianalysis.com/p/eda-market-primer",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-21T20:53:55",
+   "summary": "EDA Market size, Share, Business Models, Drivers, Changing Customer Base, Competitive Dynamics Across Synopsys, Cadence, and Siemens, China EDA, IP, Hardware, CoT, Lock-In Economics, Disruptive Forces",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Automating and Optimizing Financial Signal Discovery with Multi-Agent Systems",
+   "url": "https://developer.nvidia.com/blog/automating-and-optimizing-financial-signal-discovery-with-multi-agent-systems",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-21T18:31:56",
+   "summary": "<img alt=\"An illustration of a woman working in finance across multiple computer screens.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/Quantitative_Agent-e1778800484153-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Quantitative_Agent\" width=\"768\" />In quantitative finance, researchers build algorithms to trade assets, derivatives, and other financial instruments. A key part of that work is finding signals:...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Get Real-Time Visibility into GPU Usage Across Kubernetes Clusters",
+   "url": "https://developer.nvidia.com/blog/get-real-time-visibility-into-gpu-usage-across-kubernetes-clusters",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-21T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/image3-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />Maximizing the value of AI infrastructure demands deep visibility into GPU utilization. Yet many platform teams running AI workloads on Kubernetes operate with...",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Unlock Exascale Performance on NVIDIA GB200 NVL72 with Slurm Topology-Aware Job Scheduling",
+   "url": "https://developer.nvidia.com/blog/unlock-exascale-performance-on-nvidia-gb200-nvl72-with-slurm-topology-aware-job-scheduling",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-21T17:32:56",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/gtc25-tech-blog-dgx-gb300-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"dgx-gb300\" width=\"768\" />As AI models grow in scale and complexity, realizing the full performance of modern accelerated infrastructure depends as much on how workloads are placed as on...",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Building Token‑Metered AI Services on Telco AI Factories",
+   "url": "https://developer.nvidia.com/blog/building-token-metered-ai-services-on-telco-ai-factories",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-21T15:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/llm-blog-data-curator-2847806-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-blog-data-curator-2847806-1920x1080\" width=\"768\" />Telcos around the world are building sovereign AI factories based on the NVIDIA Cloud Partner (NCP) reference architecture, giving governments, enterprises, and...",
+   "tags": "serving,inference",
+   "area": "other"
+  },
+  {
+   "title": "Mastering Agentic Techniques: AI Agent Customization",
+   "url": "https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-customization",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-20T20:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/ai-agents-models-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-agents-models\" width=\"768\" />Autonomous AI agents are taking on all types of work for businesses: routing logistics fleets, triaging support tickets, generating code, and orchestrating...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "KV Cache and Flash Attention with interactive diagrams",
+   "url": "https://kvcache.cobanov.dev/",
+   "source": "hackernews",
+   "published_date": "2026-05-20T19:08:55",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "attention,inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Add a Specialized Deep Research Skill to Agent Harnesses",
+   "url": "https://developer.nvidia.com/blog/add-a-specialized-deep-research-skill-to-agent-harnesses",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-20T16:00:00",
+   "summary": "<img alt=\"The image depicts various digital screens showing concepts related to a &quot;Skills Repository,&quot; &quot;Software Architecture,&quot; &quot;Big Data Schema,&quot; and &quot;Training New Sub-Agent,&quot; suggesting a theme of self-evolving artificial intelligence capabilities.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/Agentic-AI-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-AI\" width=\"768\" />Agent harnesses like Claude Code, Codex, and LangChain Deep Agents ar",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "NVIDIA-Verified Agent Skills Provide Capability Governance for AI Agents",
+   "url": "https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-19T23:40:45",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/agentic-ai-use-cases-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-use-cases\" width=\"768\" />Autonomous AI agents are becoming more capable. Open models, Model Context Protocol (MCP)-connected tools, and portable skills are also making agents easier to...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Mastering Agentic Techniques: AI Agent Evaluation",
+   "url": "https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-evaluation",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-19T20:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/evaluate-agents.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"evaluate-agents\" width=\"600\" />Evaluating an AI model and evaluating an AI agent are related—but they answer fundamentally different questions. A model benchmark tests the capability of a...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Unlocking Asynchronicity in Continuous Batching",
+   "url": "https://huggingface.co/blog/continuous_async",
+   "source": "hackernews",
+   "published_date": "2026-05-19T19:09:39",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Zero for Three",
+   "url": "https://www.airealist.ai/p/zero-for-three",
+   "source": "airealist",
+   "published_date": "2026-05-19T17:35:04",
+   "summary": "Strikeout. Three rare earth tests for Beijing. The summit answered no to each. November 10 is on the calendar.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Benchmarking inference at scale: coding agents",
+   "url": "https://www.together.ai/blog/coding-agent-benchmarks",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-19T00:00:00",
+   "summary": "Real-world inference benchmarks for coding agents: 31% more TPS than TensorRT-LLM, 2× better TTFT at saturation, and 76% lower cost than Claude Opus 4.6.",
+   "tags": "inference,serving,benchmarks,llm",
+   "area": "other"
+  },
+  {
+   "title": "Running PyTorch Models on Apple Silicon GPUs with the ExecuTorch MLX Delegate",
+   "url": "https://pytorch.org/blog/running-pytorch-models-on-apple-silicon-gpus-with-the-executorch-mlx-delegate",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-05-18T15:30:50",
+   "summary": "TL;DR: Introducing the ExecuTorch MLX Delegate The new MLX delegate enables optimized, GPU-accelerated inference for PyTorch models on Apple Silicon Macs, using Apple&#8217;s MLX framework.  The delegate seamlessly integrates with...",
+   "tags": "inference,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: Brokkr - Scalable cluster management for GPU/HPC workloads",
+   "url": "https://github.com/jackthepunished/brokkr",
+   "source": "hackernews",
+   "published_date": "2026-05-17T03:47:05",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+   "url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-05-16T11:33:51",
+   "summary": "From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs",
+   "tags": "attention,llm",
+   "area": "other"
+  },
+  {
+   "title": "Where the HALEU bet actually pays",
+   "url": "https://www.airealist.ai/p/where-the-haleu-bet-actually-pays",
+   "source": "airealist",
+   "published_date": "2026-05-16T01:05:28",
+   "summary": "Capacity Factor &#8212; Post 2 of 6 in a series on US nuclear fuel cycle equities.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Cerebras risked dinner plate-sized AI accelerators. Today it's worth $66B",
+   "url": "https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821",
+   "source": "hackernews",
+   "published_date": "2026-05-15T07:04:57",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Together AI and Pearl Research Labs Team Up to Reduce the Cost of AI Inference",
+   "url": "https://www.together.ai/blog/together-ai-partners-with-pearl-research-labs",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-15T00:00:00",
+   "summary": "Together AI partners with Pearl Research Labs to launch a discounted Pearl-powered inference endpoint for Gemma-4-31B-it-pearl, using Proof of Useful Work to turn AI workloads into crypto emissions.",
+   "tags": "inference,serving,llm",
+   "area": "other"
+  },
+  {
+   "title": "How the NVIDIA Vera Rubin Platform is Solving Agentic AI’s Scale-Up Problem",
+   "url": "https://developer.nvidia.com/blog/how-the-nvidia-vera-rubin-platform-is-solving-agentic-ais-scale-up-problem",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-14T19:24:35",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-vera-rubin-pod\" width=\"768\" />Agentic inference has fundamentally changed the runtime dynamics of inference workloads by introducing non-deterministic trajectories—actions, observations,...",
+   "tags": "hardware,inference,systems",
+   "area": "other"
+  },
+  {
+   "title": "Violin: An open-source video translation skill that breaks language barriers",
+   "url": "https://www.together.ai/blog/violin-open-source-translation-skill",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-14T00:00:00",
+   "summary": "Violin is an open-source AI video translation tool that combines speech recognition, LLM translation, and text-to-speech to make video content accessible across languages.",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Cerebras — Faster Tokens Please",
+   "url": "https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-13T18:18:17",
+   "summary": "// OpenAI and AWS Partnerships, Tokenomics Explainer, Architecture Deep Dive, Datacenter Ramp, Technical Roadmap",
+   "tags": "hardware,architecture,inference",
+   "area": "other"
+  },
+  {
+   "title": "Transform Video Into Instantly Searchable, Actionable Intelligence with AI Agents and Skills",
+   "url": "https://developer.nvidia.com/blog/transform-video-into-instantly-searchable-actionable-intelligence-with-ai-agents-and-skills",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-13T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/robotics-social-nurec-devpage-kv-li-1600x900-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"robotics-social-nurec-devpage-kv-li-1600x900\" width=\"768\" />In today’s data-driven world, organizations increasingly rely on video to capture critical information, yet extracting meaningful, real-time insights from...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Accelerated X-Ray Analysis for Nanoscale Imaging (XANI) of Novel Materials",
+   "url": "https://developer.nvidia.com/blog/accelerated-x-ray-analysis-for-nanoscale-imaging-xani-of-novel-materials",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-13T16:39:20",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/hpc-accelerated-x-ray-analysis-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hpc-accelerated-x-ray-analysis\" width=\"768\" />A massive-scale X-ray free-electron laser (XFEL) enables tracking structural and electron dynamics in novel systems, including fusion materials, semiconductors,...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "AMD Crafts Custom EPYC CPU with 128GB HBM3 (EPYC 9V64H) (2024)",
+   "url": "https://www.tomshardware.com/pc-components/cpus/amd-crafts-custom-epyc-cpu-for-microsoft-azure-with-hbm3-memory-cpu-with-88-zen-4-cores-and-450gb-of-hbm3-may-be-repurposed-mi300c-four-chips-hit-7-tb-s",
+   "source": "hackernews",
+   "published_date": "2026-05-13T04:26:29",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "How to Eliminate Pipeline Friction in AI Model Serving",
+   "url": "https://developer.nvidia.com/blog/how-to-eliminate-pipeline-friction-in-ai-model-serving",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-12T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/tensorrt-optimized-industries-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"tensorrt-optimized-industries\" width=\"768\" />The path from a trained AI model to production should be smooth, but rarely is. Many teams invest weeks fine-tuning models, only to discover that exporting to a...",
+   "tags": "serving,inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Efficient Edge AI on Arm CPUs and NPUs: Understanding ExecuTorch through Practical Labs",
+   "url": "https://pytorch.org/blog/efficient-edge-ai-on-arm-cpus-and-npus",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-05-12T15:50:53",
+   "summary": "TL;DR: ExecuTorch extends the PyTorch ecosystem to deliver local AI inference on constrained edge devices. To provide a practical entry point, Arm has created a set of Jupyter Labs that...",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "HDMI 2.1 Display Stream Compression (DSC) Ready for Amdgpu Linux Driver",
+   "url": "https://www.phoronix.com/news/HDMI-2.1-DSC-AMDGPU-FRL",
+   "source": "hackernews",
+   "published_date": "2026-05-12T14:46:32",
+   "summary": "",
+   "tags": "compression,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Below the Silicon",
+   "url": "https://www.airealist.ai/p/below-the-silicon",
+   "source": "airealist",
+   "published_date": "2026-05-12T04:55:02",
+   "summary": "Trump flies to Beijing on Wednesday. Here&#8217;s the recipe his hosts control, element by element.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "The EDA Primer: From RTL to Silicon",
+   "url": "https://newsletter.semianalysis.com/p/the-eda-primer-from-rtl-to-silicon",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-12T02:32:14",
+   "summary": "Laying the Groundwork of the Current Chip Design Paradigm",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Introducing voice finder — a new tool to quickly find the right voice for your app from over 600+ voices",
+   "url": "https://www.together.ai/blog/introducing-voice-finder-a-new-tool-to-quickly-find-the-right-voice-for-your-app-from-over-600-voices",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-12T00:00:00",
+   "summary": "Voice finder helps developers search, match, filter, and audition 600+ voices across Together AI TTS models using natural-language prompts or uploaded audio samples.",
+   "tags": "inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+   "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-05-11T23:18:26",
+   "summary": "",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+   "url": "https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-11T19:44:27",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/data-center-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"data-center (2)\" width=\"768\" />The compute capability of large GPU fleets presents unprecedented opportunities to innovate and provide value to customers in record time. Yet these...",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "EMO: Pretraining mixture of experts for emergent modularity",
+   "url": "https://allenai.org/blog/emo",
+   "source": "hackernews",
+   "published_date": "2026-05-11T18:08:57",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,training,llm",
+   "area": "other"
+  },
+  {
+   "title": "Power Reinforcement Post-Training of Text-to-Image Models with Super-Linear Advantage Shaping",
+   "url": "https://arxiv.org/abs/2605.10937",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:59:25",
+   "summary": "Recently, post-training methods based on reinforcement learning, with a particular focus on Group Relative Policy Optimization (GRPO), have emerged as the robust paradigm for further advancement of text-to-image (T2I) models. However, these methods are often prone to reward hacking, wherein models exploit biases in imperfect reward functions rather than yielding genuine performance gains. In this work, we identify that normalization could lead to miscalibration and directly removing the prompt-level standard deviation term yields an optimal policy ascent direction that is linear in the advanta",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Personal Visual Context Learning in Large Multimodal Models",
+   "url": "https://arxiv.org/abs/2605.10936",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:59:17",
+   "summary": "As wearable devices like smart glasses integrate Large Multimodal Models (LMMs) into the continuous first-person visual streams of individual users, the evolution of these models into true personal assistants hinges on visual personalization: the ability to reason over visual information unique to the wearer. We formalize this capability as Personal Visual Context Learning (Personal VCL), the prompt-time capability of using user-specific visual context to resolve personalized queries. To systematically evaluate this, we present Personal-VCL-Bench, a comprehensive benchmark capturing the person",
+   "tags": "inference,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Demonstrating the Use of the Spherical Fourier Bessel Basis for Large Scale Clustering Systematics Discovery and Mitigation with eBOSS",
+   "url": "https://arxiv.org/abs/2605.10935",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:58:50",
+   "summary": "The Spherical Fourier-Bessel (SFB) basis, in separating the angular and radial modes of the power spectrum, permits a targeted identification and mitigation of systematics in clustering surveys while retaining more cosmological signal than traditional bases. We demonstrate this principle on the eBOSS DR16 LRG and QSO samples, identifying modes which may be contaminated by systematics. Our initial inference on the LRG sample yields an fNL value consistent with zero, while the QSO value is in slight tension with zero. Using the SFB basis, we vary the selection of angular and radial modes to sear",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Variational Inference for Lévy Process-Driven SDEs via Neural Tilting",
+   "url": "https://arxiv.org/abs/2605.10934",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:58:45",
+   "summary": "Modelling extreme events and heavy-tailed phenomena is central to building reliable predictive systems in domains such as finance, climate science, and safety-critical AI. While Lévy processes provide a natural mathematical framework for capturing jumps and heavy tails, Bayesian inference for Lévy-driven stochastic differential equations (SDEs) remains intractable with existing methods: Monte Carlo approaches are rigorous but lack scalability, whereas neural variational inference methods are efficient but rely on Gaussian assumptions that fail to capture discontinuities. We address this tensio",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Quantifying Concentration Phenomena of Mean-Field Transformers in the Low-Temperature Regime",
+   "url": "https://arxiv.org/abs/2605.10931",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:58:14",
+   "summary": "Transformers with self-attention modules as their core components have become an integral architecture in modern large language and foundation models. In this paper, we study the evolution of tokens in deep encoder-only transformers at inference time which is described in the large-token limit by a mean-field continuity equation. Leveraging ideas from the convergence analysis of interacting multi-particle systems, with particles corresponding to tokens, we prove that the token distribution rapidly concentrates onto the push-forward of the initial distribution under a projection map induced by ",
+   "tags": "inference,attention",
+   "area": "other"
+  },
+  {
+   "title": "Efficient Admissible Set Projection in Optimization-based Invariant-Domain-Preserving Limiters for Ideal MHD",
+   "url": "https://arxiv.org/abs/2605.10929",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:57:58",
+   "summary": "Preserving the admissible set of the ideal magnetohydrodynamics (MHD) equations is important not only for producing physically meaningful numerical solutions, but more importantly for achieving robust computations. In this paper, we develop an optimization-based limiter to enforce admissibility while preserving global conservation and accuracy. For an easy and efficient projection, we decompose the admissible set into slices parameterized by the magnetic energy, so that the MHD projection reduces to a one-dimensional minimization, which can be solved efficiently by the Brent method. The splitt",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Dynamic Skill Lifecycle Management for Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2605.10923",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:55:13",
+   "summary": "Large language model agents increasingly rely on external skills to solve complex tasks, where skills act as modular units that extend their capabilities beyond what parametric memory alone supports. Existing methods assume external skills either accumulate as persistent guidance or internalized into the policy, eventually leading to zero-skill inference. We argue this assumption is overly restrictive, since with limited parametric capacity and uneven marginal contribution across skills, the optimal active skill set is non-monotonic, task- and stage-dependent. In this work, we propose SLIM, a ",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "gemlib.mcmc: composable kernels for Metropolis-within-Gibbs sampling schemes",
+   "url": "https://arxiv.org/abs/2605.10914",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:51:06",
+   "summary": "State-transition models are essential across epidemiology and ecology, but statistical inference remains challenging owing to high-dimensional latent state spaces, temporal dependence, and intractable likelihood functions. Bayesian inference via Markov Chain Monte Carlo (MCMC) enables joint estimation of model parameters and missing event times through data augmentation, but Metropolis-within-Gibbs (MWG) schemes that combine multiple specialised kernels are notoriously difficult to implement. Current probabilistic programming frameworks face a trade-off: automation sacrifices extensibility, wh",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Shepherd: A Runtime Substrate Empowering Meta-Agents with a Formalized Execution Trace",
+   "url": "https://arxiv.org/abs/2605.10913",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:50:51",
+   "summary": "We introduce Shepherd, a functional programming model that formalizes meta-agent operations on target agents as functions, with core operations mechanized in Lean. Shepherd records every agent-environment interaction as a typed event in a Git-like execution trace, enabling any past state to be forked and replayed. The system forks the agent process and its filesystem $5\\times$ faster than Docker, achieving $>95\\%$ prompt-cache reuse on replay. We demonstrate the model through three applications. First, in runtime intervention, a live supervisor increases pair coding pass rates from 28.8% to 54",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "TLX: Hardware-Native, Evolvable MIMW GPU Compiler for Large-scale Production Environments",
+   "url": "https://arxiv.org/abs/2605.10905",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:46:01",
+   "summary": "Modern GPUs increasingly rely on specialized hardware units and asynchronous coordination mechanisms, so performance depends on orchestrating data movement, tensor-core computation, and synchronization rather than exposing more thread-level parallelism. This creates a programming-model tension: if too much execution structure is hidden, the compiler must catch up to new hardware mechanisms; if too much is exposed, the burden of orchestration falls back onto the programmer. We present TLX (Triton Low-level Language Extensions), built around MIMW (Multi-Instruction, Multi-Warp), which expresses ",
+   "tags": "inference,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Grounded or Guessing? LVLM Confidence Estimation via Blind-Image Contrastive Ranking",
+   "url": "https://arxiv.org/abs/2605.10893",
+   "source": "arxiv",
+   "published_date": "2026-05-11T17:35:10",
+   "summary": "Large vision-language models suffer from visual ungroundedness: they can produce a fluent, confident, and even correct response driven entirely by language priors, with the image contributing nothing to the prediction. Existing confidence estimation methods cannot detect this, as they observe model behavior under normal inference with no mechanism to determine whether a prediction was shaped by the image or by text alone. We introduce BICR (Blind-Image Contrastive Ranking), a model-agnostic confidence estimation framework that makes this contrast explicit during training by extracting hidden s",
+   "tags": "inference,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Serving DeepSeek-V4: why million-token context is an inference systems problem",
+   "url": "https://www.together.ai/blog/serving-deepseek-v4-why-million-token-context-is-an-inference-systems-problem",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-11T00:00:00",
+   "summary": "DeepSeek-V4 makes million-token context a serving-systems problem. Together AI explores the inference work behind V4 on NVIDIA HGX B200, including compressed KV layouts, prefix caching, kernel maturity, and endpoint profiles for long-context workloads.",
+   "tags": "inference,serving,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Where the Uranium bottlenecks actually are",
+   "url": "https://www.airealist.ai/p/where-the-uranium-bottlenecks-actually",
+   "source": "airealist",
+   "published_date": "2026-05-09T23:28:27",
+   "summary": "Capacity Factor &#8212; Post 1 of 6 in a series on US nuclear fuel cycle equities.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
+   "url": "https://arxiv.org/abs/2605.06665",
+   "source": "hackernews",
+   "published_date": "2026-05-09T11:19:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,systems,llm",
+   "area": "other"
+  },
+  {
+   "title": "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+   "url": "https://developer.nvidia.com/blog/improving-bash-generation-in-small-language-models-with-grammar-constrained-decoding",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-08T17:13:33",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/person-desk-three-computers-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"person-desk-three-computers\" width=\"768\" />Bash is one of the most flexible and powerful interfaces exposed to AI agents. In the right system, a model that emits grep, curl, tar, or a shell pipeline is...",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Hope: A post-transformer architecture for general intelligence at low compute",
+   "url": "https://blankline.org/research/hope",
+   "source": "hackernews",
+   "published_date": "2026-05-08T16:27:32",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "Streaming Tokens and Tools: Multi-Turn Agentic Harness Support in NVIDIA Dynamo",
+   "url": "https://developer.nvidia.com/blog/streaming-tokens-and-tools-multi-turn-agentic-harness-support-in-nvidia-dynamo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-08T15:59:16",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/MoE-nvidia-technical-blog-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"MoE nvidia technical blog\" width=\"768\" />An agentic exchange must preserve a structured interaction: assistant turns interleave reasoning with one or more tool calls, and subsequent user turns return...",
+   "tags": "inference,serving,systems",
+   "area": "other"
+  },
+  {
+   "title": "Deploy and inference any model from HuggingFace",
+   "url": "https://www.together.ai/blog/deploy-and-inference-any-model-from-huggingface",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-08T00:00:00",
+   "summary": "Learn how to deploy any Hugging Face model in one session using Goose and Together's Dedicated Container Inference. Skip the setup complexity — one prompt gets your model running in a production-grade GPU environment on release day.",
+   "tags": "serving,inference",
+   "area": "other"
+  },
+  {
+   "title": "Achieving Peak System and Workload Efficiency on NVIDIA GB200 NVL72 with Slurm Block Scheduling",
+   "url": "https://developer.nvidia.com/blog/achieving-peak-system-and-workload-efficiency-on-nvidia-gb200-nvl72-with-slurm-block-scheduling",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-07T21:20:14",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/nvidia-gb200-nvl72-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-gb200-nvl72\" width=\"768\" />NVIDIA GB200 NVL72 introduces a fundamentally new way to build GPU clusters by extending NVIDIA NVLink coherence across an entire rack. This design enables...",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Model Quantization: Post-Training Quantization Using NVIDIA Model Optimizer",
+   "url": "https://developer.nvidia.com/blog/model-quantization-post-training-quantization-using-nvidia-model-optimizer",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-07T21:18:06",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/cube-column-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cube-column\" width=\"768\" />Model quantization is an effective method to reduce VRAM usage and improve inference performance on consumer devices such as NVIDIA GeForce RTX GPUs. By...",
+   "tags": "quantization,post-training,optimization,inference",
+   "area": "other"
+  },
+  {
+   "title": "Real-Time Performance Monitoring and Faster Debugging with NCCL Inspector and Prometheus",
+   "url": "https://developer.nvidia.com/blog/real-time-performance-monitoring-and-faster-debugging-with-nccl-inspector-and-prometheus",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-07T16:02:58",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring\" width=\"768\" />Distributed deep learning depends on fast, reliable GPU-to-GPU communication using the NVIDIA Collective Communication Library (NCCL). When training slows down,...",
+   "tags": "systems,training",
+   "area": "other"
+  },
+  {
+   "title": "Google to sell TPU chips to select customers",
+   "url": "https://finance.yahoo.com/markets/stocks/article/google-to-sell-tpu-chips-to-select-customers-in-latest-shot-at-nvidia-214900221.html",
+   "source": "hackernews",
+   "published_date": "2026-05-06T19:34:54",
+   "summary": "28 points, 7 comments on HackerNews",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "The $500 Billion Umbrella",
+   "url": "https://www.airealist.ai/p/the-500-billion-umbrella",
+   "source": "airealist",
+   "published_date": "2026-05-06T15:39:44",
+   "summary": "OpenAI called it the largest infrastructure project in history. Now they call it an umbrella.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "In-Kernel Broadcast Optimization: Co-Designing Kernels for RecSys Inference",
+   "url": "https://pytorch.org/blog/in-kernel-broadcast-optimization-co-designing-kernels-for-recsys-inference",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-05-05T16:56:32",
+   "summary": "TL;DR: Traditional RecSys inference explicitly replicates shared user embeddings/sequences for every candidate. In-Kernel Broadcast Optimization (IKBO) eliminates this overhead via a kernel-model-system co-design that fuses broadcast logic directly into user-candidate...",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "How to Build In-Vehicle AI Agents with NVIDIA: From Cloud to Car",
+   "url": "https://developer.nvidia.com/blog/how-to-build-in-vehicle-ai-agents-with-nvidia-from-cloud-to-car",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-05T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/FeatureImage-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"FeatureImage\" width=\"768\" />The automotive cockpit is undergoing a fundamental shift from rule-based interfaces to agentic, multimodal AI systems capable of reasoning, planning, and...",
+   "tags": "multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Building for the Rising Complexity of Agentic Systems with Extreme Co-Design",
+   "url": "https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-05T15:52:15",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image3-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />Generative AI’s explosive first chapter was defined by humans sending requests and models responding. The agentic chapter is different.&nbsp; Agents don't...",
+   "tags": "architecture,systems",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: Smile-Serve – Inference Server for ML, ONNX, and LLM",
+   "url": "https://github.com/haifengl/smile/tree/master/serve",
+   "source": "hackernews",
+   "published_date": "2026-05-04T22:02:55",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "Optimize Supply Chain Decision Systems Using NVIDIA cuOpt Agent Skills",
+   "url": "https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-04T20:55:05",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/Agentic-AI-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-AI\" width=\"768\" />Modern supply chains operate under the constant pressures of fluctuating demand, volatile costs, constrained capacity, and interdependent decision-making....",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "The Round Trip",
+   "url": "https://www.airealist.ai/p/the-round-trip",
+   "source": "airealist",
+   "published_date": "2026-05-04T09:28:44",
+   "summary": "Four hyperscalers reported $700 billion in combined AI infrastructure spending. The number that matters is how much of their reported AI revenue is their own investment coming home.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Foundational research powering efficient inference at scale",
+   "url": "https://www.together.ai/blog/foundational-research-powering-efficient-inference-at-scale",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-04T00:00:00",
+   "summary": "As AI moves from research to production, the challenge for AI-native teams shifts from building models to running them — efficiently, reliably, and at scale.",
+   "tags": "inference,optimization,serving",
+   "area": "other"
+  },
+  {
+   "title": "New v2 UALink specification aims to catch up to NVLink",
+   "url": "https://www.networkworld.com/article/4155357/new-v2-ualink-specification-aims-to-catch-up-to-nvlink.html",
+   "source": "hackernews",
+   "published_date": "2026-05-01T23:24:08",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "AI Value Capture - The Shift To Model Labs",
+   "url": "https://newsletter.semianalysis.com/p/ai-value-capture-the-shift-to-model",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-01T02:30:43",
+   "summary": "A day in AI now feels like a year in any other industry. TSMC, Vera Rubin VR NVL72: V for Value",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Utilyze measures how efficiently your GPU is doing useful work",
+   "url": "https://github.com/systalyze/utilyze",
+   "source": "hackernews",
+   "published_date": "2026-05-01T00:34:20",
+   "summary": "",
+   "tags": "hardware",
+   "area": "other"
+  }
+ ]
+}

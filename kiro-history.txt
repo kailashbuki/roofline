@@ -358,3 +358,70 @@ rubric covers all sources, not just papers, and costs no extra requests.
 ### Still to do
 - Backfill: all 1383 existing rows are unrated. `python reclassify.py` with a key
   (~70 requests). Until then the page shows them as "-".
+
+## 2026-09-23 (late night) - Storage diet, area pinning, page review
+
+### Storage: the repo WOULD have blown up
+Measured before changing anything. data/articles.json was 933 KB for 1383 rows
+(691 B each), and the field breakdown was damning:
+  summary          514 KB  55.1%   <- never rendered by the page
+  title            101 KB  10.8%
+  url               94 KB  10.1%
+  published_date    49 KB   5.2%
+  tags              33 KB   3.6%
+  source            30 KB   3.2%
+  relevance_score   26 KB   2.8%   <- superseded by importance
+Rewritten 3x/day, that trends to ~15 MB as a single file within a year.
+Fixes:
+1. summary is now stored ONLY while a row is unrated (it is an input to
+   classification, not output; reclassify.py still needs it until the row is
+   judged). relevance_score dropped entirely. 691 -> 443 B per row.
+2. Rolling hot window + monthly archives. data/articles.json keeps only the last
+   ROOFLINE_HOT_DAYS (120) days - all the page can show - and older rows move to
+   data/archive/YYYY-MM.json, written only when that month changes. The file the
+   job rewrites 3x/day is therefore BOUNDED (~3 MB steady state) instead of
+   growing forever, and archives are near-static in git. Only the hot file is
+   published to Pages.
+   store.hydrate() reads hot + all archives, so dedup still sees everything.
+
+### Area assignment without asking the model blind
+- Papers: title + abstract only, abstract truncated to 400 chars. Already the
+  case; now documented.
+- Feeds with a single beat: pinned in config.yaml (SemiAnalysis, Chips and Cheese
+  -> silicon; vLLM Blog -> inference-engines; Interconnects -> training). The pin
+  only fills in when the model says "other", so an off-beat post still lands
+  right.
+- HackerNews, the tricky one: a bare title with no abstract. The QUERY that
+  surfaced the story is the evidence. Queries are now grouped by area in
+  config.yaml (43 queries across 6 areas) and a hit inherits its group's area,
+  overriding the model there. See pipeline.pick_area().
+
+### Workflow correctness under the new layout
+The race handler used to `git reset --hard` then merge only the hot file - which
+would have DROPPED any row that aged into an archive during the losing run. Now
+it re-derives through the store (merge_into_store.py): hydrate remote hot +
+remote archives, add this run's rows, re-dump. Simulated a race with a stale
+remote missing 40 rows and zero archives: 763 + 40 = 803 recovered, nothing
+invented.
+
+### Page review, prompted by "dashboard does not show tags for areas anymore"
+Correct catch, and it was an oversight rather than a decision. Tag chips are back
+on every item - the section header carries the area, so the chips are the finer
+grain that helps scanning WITHIN a section. Also:
+- Last updated now shows an absolute date and time ("updated 23 Sept 2026,
+  22:17"), plus a footer line naming the window and total collected. It used to
+  say "updated today", which is useless for spotting a stalled job.
+- Dropped the "All time" range option: with a 120-day hot file it would have been
+  a lie.
+- Filters are now URL-addressable (?window=7&bar=0.6&q=vllm&unread=1), which makes
+  views shareable and, more importantly, testable.
+- The lede is suppressed when there are few results, since it would otherwise
+  swallow the whole page and hide the area grouping.
+
+### Verifying the dropdowns (they do work)
+First measurement said they did not: identical item counts across every filter
+state. That was the MEASUREMENT being wrong - the selector class="item[^"]*"
+also matched item-body, item-title, item-why, item-meta, item-source. Counting
+only `<a class="item` showed the truth: card count is pinned at 47 by design
+(5 lede + 7 areas x 6) while the "Show N more" counts move correctly with the
+filters - bar=0.6 collapses each area, window=90 expands it.

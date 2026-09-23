@@ -1,0 +1,15 @@
+{
+ "month": "2025-06",
+ "count": 1,
+ "articles": [
+  {
+   "title": "JavelinGuard: Low-Cost Transformer Architectures for LLM Security",
+   "url": "https://arxiv.org/abs/2506.07330",
+   "source": "hackernews",
+   "published_date": "2025-06-10T15:59:42",
+   "summary": "29 points, 2 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "other"
+  }
+ ]
+}

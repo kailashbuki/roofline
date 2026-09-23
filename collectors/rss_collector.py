@@ -31,6 +31,7 @@ def collect_rss(session, config):
                     "title": entry.get('title', ''),
                     "url": url,
                     "source": f"rss:{feed_info['name']}",
+                    "area_hint": feed_info.get('area'),
                     "published_date": datetime(*published[:6]) if published else datetime.utcnow(),
                     "summary": entry.get('summary', entry.get('description', ''))[:1000],
                 })

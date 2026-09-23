@@ -31,6 +31,34 @@ GitHub Actions (cron 3x/day)
 page as-is. SQLite exists only in memory for the duration of a run, which is what
 lets the collectors keep their SQLAlchemy session interface unchanged.
 
+### What is actually stored, and why the repo does not blow up
+
+A job that rewrites one growing file three times a day is a repo-size problem, so
+the stored record is kept to what the page renders:
+
+| Field | Stored | Note |
+|---|---|---|
+| `title`, `url`, `source`, `published_date` | always | |
+| `area` | always | one of `classifier.AREAS`; the section the item appears under |
+| `importance`, `why` | once rated | absent means never seen by the model |
+| `tags` | always | sub-topic chips |
+| `summary` | **only while unrated** | it is an input to classification, never rendered — and it was 55% of the file |
+| `relevance_score` | no | superseded by `importance` |
+
+Two mechanisms keep it flat rather than growing:
+
+1. **Summaries are dropped once a row is rated.** 691 → 443 bytes per row.
+2. **A rolling hot window plus monthly archives.** `data/articles.json` holds only
+   the last `ROOFLINE_HOT_DAYS` (120) days — that is all the page can display —
+   and older rows move to `data/archive/YYYY-MM.json`, rewritten only when that
+   month's contents change. So the file the job rewrites three times a day is
+   bounded at roughly 3 MB in steady state no matter how many years accumulate,
+   and the archives are near-static in git. Only the hot file is published to
+   Pages, so the page load stays small too.
+
+`store.hydrate()` reads the hot file *and* every archive, so dedup and the
+rejection ledger still see the entire history.
+
 ## Components
 
 - `collect_all.py` — runs every collector, hydrates and dumps the store
@@ -156,6 +184,25 @@ Sending every candidate to a model is affordable because of three things:
 
 Feeds where everything is on topic set `filter: false` in `config.yaml`: they are
 still classified, to get tags, but are never dropped on score.
+
+### How the area is decided
+
+For **papers** the title and abstract are the only inputs — the abstract is
+truncated to `GEMINI_SUMMARY_CHARS` (400) before sending, since more text costs
+tokens without improving the judgement.
+
+For **feeds whose beat is unambiguous**, `config.yaml` pins the area outright
+(`area: silicon` on SemiAnalysis and Chips and Cheese, `inference-engines` on the
+vLLM blog, `training` on Interconnects). A pin only fills in when the model
+declines to commit, so a pinned feed publishing off its usual beat still lands
+correctly.
+
+**HackerNews** is the tricky case: a bare title, no abstract. The trick is that
+the *query which surfaced the story* is itself strong evidence — so queries are
+grouped by area in `config.yaml`, and a hit inherits its group's area. A story
+found by searching `hbm` or `nvlink` is silicon; one found by `vllm` or `sglang`
+is an inference engine. There the hint overrides the model rather than deferring
+to it.
 
 ## Read state
 

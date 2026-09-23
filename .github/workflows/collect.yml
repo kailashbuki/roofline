@@ -65,7 +65,9 @@ jobs:
             git fetch origin "$GITHUB_REF_NAME" --quiet
             git reset --hard "origin/$GITHUB_REF_NAME" --quiet
 
-            python merge_data.py /tmp/ours-articles.json data/articles.json data/articles.json
+            # Re-derive through the store so hot/archive rotation is recomputed;
+            # merging only the hot file would drop rows that aged into an archive.
+            python merge_into_store.py /tmp/ours-articles.json
             if [ -f /tmp/ours-rejected.json ]; then
               python merge_data.py --rejected /tmp/ours-rejected.json data/rejected.json data/rejected.json
             fi

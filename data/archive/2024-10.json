@@ -1,0 +1,42 @@
+{
+ "month": "2024-10",
+ "count": 4,
+ "articles": [
+  {
+   "title": "Show HN: LLGTRT: TensorRT-LLM+Rust server w/ OpenAI-compat and Structured Output",
+   "url": "https://github.com/guidance-ai/llgtrt",
+   "source": "hackernews",
+   "published_date": "2024-10-30T17:36:49",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "inference,serving,llm",
+   "area": "other"
+  },
+  {
+   "title": "State-space models can learn in-context by gradient descent",
+   "url": "https://arxiv.org/abs/2410.11687",
+   "source": "hackernews",
+   "published_date": "2024-10-26T06:37:27",
+   "summary": "86 points, 58 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "other"
+  },
+  {
+   "title": "A Visual Guide to Mamba and State Space Models",
+   "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state",
+   "source": "hackernews",
+   "published_date": "2024-10-17T12:27:25",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "Show HN: Bag of Tricks to 8x Faster Inference with ONNX+TensorRT",
+   "url": "https://dicksonneoh.com/portfolio/supercharge_your_pytorch_image_models",
+   "source": "hackernews",
+   "published_date": "2024-10-01T03:06:05",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "other"
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "month": "2025-12",
+ "count": 21,
+ "articles": [
+  {
+   "title": "How AI Labs Are Solving the Power Crisis: The Onsite Gas Deep Dive",
+   "url": "https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-12-30T21:02:35",
+   "summary": "Bring Your Own Generation, Sayonara Electric Grid, Turbines vs. Recips. vs. Fuel Cells, Why Not Build More CCGTs?, Onsite Power TCO",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "The State Of LLMs 2025: Progress, Problems, and Predictions",
+   "url": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-30T12:22:26",
+   "summary": "A 2025 review of large language models, from DeepSeek R1 and RLVR to inference-time scaling, benchmarks, architectures, and predictions for 2026.",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "LLM Research Papers: The 2025 List (July to December)",
+   "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-part2",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-30T12:15:39",
+   "summary": "In June, I shared a bonus article with my curated and bookmarked research paper lists to the paid subscribers who make this Substack possible.",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "MiniMax Speech 2.6 Turbo now available natively on Together AI",
+   "url": "https://www.together.ai/blog/minimax-speech-2-6",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2025-12-23T00:00:00",
+   "summary": "MiniMax Speech 2.6 Turbo: State-of-the-art multilingual TTS with human-level emotional awareness, sub-250ms latency, and 40+ languages—now on Together AI.",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Project Vend: Phase two",
+   "url": "https://www.anthropic.com/research/project-vend-2",
+   "source": "anthropic:research",
+   "published_date": "2025-12-18T16:17:58",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Rime voice models now available on Together AI",
+   "url": "https://www.together.ai/blog/rime-voice-models-now-available-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2025-12-18T00:00:00",
+   "summary": "Two enterprise-grade Rime TTS models now available on Together AI. Co-locate with LLM and STT on dedicated infrastructure. Proven at billions of calls.",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "Research POV: Yes, AGI Can Happen – A Computational Perspective",
+   "url": "https://www.together.ai/blog/research-pov-yes-agi-can-happen",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2025-12-17T00:00:00",
+   "summary": "Dan Fu, our VP of Kernels, has published a new post challenging the idea that AI is hitting a hardware wall. He argues that we are vastly underutilizing current chips and that better software-hardware co-design will unlock the next order of magnitude in performance.",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Maybe consider putting cutlass in your CUDA/Triton kernels",
+   "url": "https://maknee.github.io/blog/2025/Maybe-Consider-Putting-Cutlass-In-Your-CUDA-Kernels",
+   "source": "hackernews",
+   "published_date": "2025-12-16T16:03:19",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations",
+   "url": "https://www.anthropic.com/engineering/claude-think-tool",
+   "source": "anthropic:engineering",
+   "published_date": "2025-12-15T18:02:25",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Announcing native availability of NVIDIA Nemotron 3 Nano, NVIDIA’s latest reasoning model",
+   "url": "https://www.together.ai/blog/nemotron-3-nano-now-available-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2025-12-15T00:00:00",
+   "summary": "Nemotron 3 Nano, NVIDIA’s newest reasoning model, is now available on Together AI, the AI Native Cloud",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "A postmortem of three recent issues",
+   "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
+   "source": "anthropic:engineering",
+   "published_date": "2025-12-14T20:27:33",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Transformer Architecture Visualizer",
+   "url": "https://weavers.neocities.org/architecture-encyclopedia",
+   "source": "hackernews",
+   "published_date": "2025-12-13T11:04:48",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "Nvidia NVLink Fusion Tapped for Future AWS Trainium4 Deployments",
+   "url": "https://www.servethehome.com/nvidia-nvlink-fusion-tapped-for-future-aws-trainium4-deployments",
+   "source": "hackernews",
+   "published_date": "2025-12-12T10:24:16",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "With Trainium4, AWS Will Crank Up Everything but the Clocks",
+   "url": "https://www.nextplatform.com/2025/12/03/with-trainium4-aws-will-crank-up-everything-but-the-clocks",
+   "source": "hackernews",
+   "published_date": "2025-12-08T16:01:48",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "The Anatomy of a Triton Attention Kernel",
+   "url": "https://arxiv.org/abs/2511.11581",
+   "source": "hackernews",
+   "published_date": "2025-12-05T21:10:28",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "attention,optimization",
+   "area": "other"
+  },
+  {
+   "title": "AWS Trainium3 Deep Dive | A Potential Challenger Approaching",
+   "url": "https://newsletter.semianalysis.com/p/aws-trainium3-deep-dive-a-potential",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-12-04T19:06:20",
+   "summary": "NL72x2/NL32x2 Scale Up Rack Architecture, Step-Function Software & System Improvements, Optimized Perf per TCO, &#8220;Amazon Basics&#8221; GB200 NVL36x2, Astera Labs, Trainium4",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "AWS partners with Nvidia to use NVLink in AI chips",
+   "url": "https://techoreon.com/amazon-aws-nvidia-ai-factories-trainium-chips",
+   "source": "hackernews",
+   "published_date": "2025-12-04T07:50:38",
+   "summary": "15 points, 1 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "From DeepSeek V3 to V3.2: Architecture, Sparse Attention, and RL Updates",
+   "url": "https://magazine.sebastianraschka.com/p/technical-deepseek",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-03T12:03:33",
+   "summary": "Understanding How DeepSeek's Flagship Open-Weight Models Evolved",
+   "tags": "attention",
+   "area": "other"
+  },
+  {
+   "title": "Amazon Trainium3 UltraServers",
+   "url": "https://www.aboutamazon.com/news/aws/trainium-3-ultraserver-faster-ai-training-lower-cost",
+   "source": "hackernews",
+   "published_date": "2025-12-02T19:11:17",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Amazon launches Trainium3",
+   "url": "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap",
+   "source": "hackernews",
+   "published_date": "2025-12-02T19:04:31",
+   "summary": "204 points, 70 comments on HackerNews",
+   "tags": "hardware,training,inference",
+   "area": "other"
+  },
+  {
+   "title": "TSMC Overseas Fabs – A Success?",
+   "url": "https://newsletter.semianalysis.com/p/tsmc-overseas-fabs-a-success",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-12-01T01:48:09",
+   "summary": "Why Morris Chang Said U.S. Fabs Will Fail, Wafer Cost and Economics of Taiwan vs. U.S. Fabs, TSMC Supply Chain Details",
+   "tags": "",
+   "area": "other"
+  }
+ ]
+}

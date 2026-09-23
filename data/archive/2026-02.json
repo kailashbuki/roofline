@@ -1,0 +1,699 @@
+{
+ "month": "2026-02",
+ "count": 77,
+ "articles": [
+  {
+   "title": "Develop Native Multimodal Agents with Qwen3.5 VLM Using NVIDIA GPU-Accelerated Endpoints",
+   "url": "https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-27T17:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/qwen3-5-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"qwen3-5\" width=\"768\" />Alibaba has introduced the new open source Qwen3.5 series built for native multimodal agents. The first model in this series is a ~400B parameter native...",
+   "tags": "hardware,multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Maximizing GPU Utilization with NVIDIA Run:ai and NVIDIA NIM",
+   "url": "https://developer.nvidia.com/blog/maximizing-gpu-utilization-with-nvidia-runai-and-nvidia-nim",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-27T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/genai-visual-mixture-of-experts-3105423-e1772062206929-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-visual-mixture-of-experts-3105423\" width=\"768\" />Organizations deploying LLMs are challenged by inference workloads with different resource requirements. A small embedding model might use only a few gigabytes...",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Compute Equals Commitments",
+   "url": "https://www.airealist.ai/p/compute-equals-commitments",
+   "source": "airealist",
+   "published_date": "2026-02-27T09:40:14",
+   "summary": "NVIDIA and CoreWeave both beat revenue. Both fell. The 10-Ks confirmed what the series predicted: the risk was never demand. It was the commitments.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Beyond Porting: How vLLM Orchestrates High-Performance Inference on AMD ROCm",
+   "url": "https://blog.vllm.ai/2026/02/27/rocm-attention-backend.html",
+   "source": "rss:vLLM Blog",
+   "published_date": "2026-02-27T00:00:00",
+   "summary": "Introduction",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "Two Sovereign Clouds, One Legal Wall",
+   "url": "https://www.airealist.ai/p/two-sovereign-clouds-one-legal-wall",
+   "source": "airealist",
+   "published_date": "2026-02-26T08:31:59",
+   "summary": "They chose opposite architectures. They arrived at the same legal endpoint.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Efficiently serve dozens of fine-tuned models with vLLM on Amazon SageMaker AI and Amazon Bedrock",
+   "url": "https://blog.vllm.ai/2026/02/26/multi-lora.html",
+   "source": "rss:vLLM Blog",
+   "published_date": "2026-02-26T00:00:00",
+   "summary": "Organizations and individuals running multiple custom AI models, especially recent Mixture of Experts (MoE) model families, can face the challenge of paying for idle GPU capacity when the individual models don’t receive enough traffic to saturate a dedicated compute endpoint. To solve this problem, we have partnered with the vLLM community and developed an efficient solution for Multi-Low-Rank Adaptation (Multi-LoRA) serving of popular open-source MoE models like GPT-OSS or Qwen. Multi-LoRA is a popular approach to fine-tune models. Instead of retraining entire model weights, multi-LoRA keeps ",
+   "tags": "inference,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "An update on our model deprecation commitments for Claude Opus 3",
+   "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
+   "source": "anthropic:research",
+   "published_date": "2026-02-25T20:58:11",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Vera Rubin – Extreme Co-Design: An Evolution from Grace Blackwell Oberon",
+   "url": "https://newsletter.semianalysis.com/p/vera-rubin-extreme-co-design-an-evolution",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-02-25T18:40:00",
+   "summary": "Vera, Rubin, NVLink 6 Switch, ConnectX-9, BlueField-4, Spectrum-6, Seamless Cableless Compute Tray Design, Power Rack, VR NVL72 TCO and BoM",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "Making Softmax More Efficient with NVIDIA Blackwell Ultra",
+   "url": "https://developer.nvidia.com/blog/making-softmax-more-efficient-with-nvidia-blackwell-ultra",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-25T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/image2-4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />LLM context lengths are exploding, and architectures are moving toward complex attention schemes like Multi-Head Latent Attention (MLA) and Grouped Query...",
+   "tags": "attention,llm",
+   "area": "other"
+  },
+  {
+   "title": "A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026",
+   "url": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-02-25T13:26:56",
+   "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "Pipeline Parallelism in SGLang: Scaling to Million-Token Contexts",
+   "url": "https://lmsys.org/blog/2026-01-15-chunked-pipeline",
+   "source": "hackernews",
+   "published_date": "2026-02-25T06:26:34",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "serving,systems,inference",
+   "area": "other"
+  },
+  {
+   "title": "Enhancing Multimodal Training and Memory Efficiency with DeepSpeed",
+   "url": "https://pytorch.org/blog/enhancing-multimodal-training-and-memory-efficiency-with-deepspeed",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-02-25T00:45:25",
+   "summary": "Overview This blog walks through two crucial DeepSpeed updates: (1) a PyTorch-identical backward API that enables efficient training of multimodal, multi-component models (including non-scalar backward calls), and (2) low-precision model...",
+   "tags": "multimodal",
+   "area": "other"
+  },
+  {
+   "title": "CoderForge-Preview: SOTA open dataset for training efficient coding agents",
+   "url": "https://www.together.ai/blog/coderforge-preview",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-25T00:00:00",
+   "summary": "",
+   "tags": "training,llm",
+   "area": "other"
+  },
+  {
+   "title": "Accelerating Autotuning in Helion with Bayesian Optimization",
+   "url": "https://pytorch.org/blog/accelerating-autotuning-in-helion",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-02-24T17:55:18",
+   "summary": "Introduction As introduced in a previous blog post, Helion is a high-level DSL that empowers developers to write high-performance ML kernels using a familiar PyTorch-like syntax, delegating the complex task...",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Anthropic Named Names. The Timing Wasn’t Accidental.",
+   "url": "https://www.airealist.ai/p/anthropic-named-names-the-timing",
+   "source": "airealist",
+   "published_date": "2026-02-24T16:39:34",
+   "summary": "A distillation disclosure, a Pentagon standoff, and a copyright dispute &#8212; all on the same morning.",
+   "tags": "post-training",
+   "area": "other"
+  },
+  {
+   "title": "A biologically inspired cognitive architecture without Transformers",
+   "url": "https://github.com/sss777999/Brain",
+   "source": "hackernews",
+   "published_date": "2026-02-24T10:44:21",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "Japan Built the Bullet Train. Why Can’t It Build an LLM?",
+   "url": "https://www.airealist.ai/p/japan-built-the-bullet-train-why",
+   "source": "airealist",
+   "published_date": "2026-02-24T06:31:27",
+   "summary": "$65 billion in government commitment. $41 billion from SoftBank. Zero frontier models.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Anthropic Education Report: The AI Fluency Index",
+   "url": "https://www.anthropic.com/research/AI-fluency-index",
+   "source": "anthropic:research",
+   "published_date": "2026-02-23T22:24:23",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "The persona selection model",
+   "url": "https://www.anthropic.com/research/persona-selection-model",
+   "source": "anthropic:research",
+   "published_date": "2026-02-23T22:17:12",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Using NVFP4 Low-Precision Model Training for Higher Throughput Without Losing Accuracy",
+   "url": "https://developer.nvidia.com/blog/using-nvfp4-low-precision-model-training-for-higher-throughput-without-losing-accuracy",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-23T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/best-models-trained-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"best-models-trained\" width=\"768\" />As the sizes of AI models and datasets continue to increase, relying only on higher-precision BF16 training is no longer sufficient. Key challenges such as...",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "How speech models fail where it matters the most and what to do about it",
+   "url": "https://www.together.ai/blog/how-speech-models-fail",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-23T00:00:00",
+   "summary": "State-of-the-art speech models like Whisper and Deepgram score near-human on benchmarks — then fail 39% of the time on street names. New research from Together AI exposes the gap and a fix.",
+   "tags": "multimodal,benchmarks",
+   "area": "other"
+  },
+  {
+   "title": "Indians Rule Big Tech. Why Can’t India Build?",
+   "url": "https://www.airealist.ai/p/indians-rule-big-tech-why-cant-india",
+   "source": "airealist",
+   "published_date": "2026-02-22T11:09:28",
+   "summary": "The UAE shipped six generations of frontier AI models in three years. India, with 140x the population, just shipped its first.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Two Markets, One Asset: The GPU Debt Market Is Building the Architecture of Its Own Crisis",
+   "url": "https://www.airealist.ai/p/two-markets-one-asset-the-gpu-debt",
+   "source": "airealist",
+   "published_date": "2026-02-20T15:04:22",
+   "summary": "Moody's rates data center debt AAA. The CDS market prices the same sector at coin-flip odds of default. Four generations of GPU depreciation data show why the CDS market may be right.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Measuring AI agent autonomy in practice",
+   "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+   "source": "anthropic:research",
+   "published_date": "2026-02-19T22:38:09",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization",
+   "url": "https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-19T17:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/multicolored-bulging-cube-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"multicolored-bulging-cube\" width=\"768\" />NVIDIA flagship data center GPUs in the NVIDIA Ampere, NVIDIA Hopper, and NVIDIA Blackwell families all feature non-uniform memory access (NUMA) behaviors, but...",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "The EU Parliament just disabled AI on its own devices.",
+   "url": "https://www.airealist.ai/p/the-eu-parliament-just-disabled-ai",
+   "source": "airealist",
+   "published_date": "2026-02-19T13:14:48",
+   "summary": "You can&#8217;t make this up.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "New inference engine faster than vLLM, SGLang, TRT-LLM",
+   "url": "https://layerscale.ai/",
+   "source": "hackernews",
+   "published_date": "2026-02-19T10:49:41",
+   "summary": "2 points, 3 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Consistency diffusion language models: Up to 14x faster inference without sacrificing quality",
+   "url": "https://www.together.ai/blog/consistency-diffusion-language-models",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-19T00:00:00",
+   "summary": "Standard diffusion language models can't use KV caching and need too many refinement steps to be practical. CDLM fixes both with a post-training recipe that enables exact block-wise KV caching and trajectory-consistent step reduction — delivering up to 14.5x latency improvements",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "Unlock Massive Token Throughput with GPU Fractioning in NVIDIA Run:ai",
+   "url": "https://developer.nvidia.com/blog/unlock-massive-token-throughput-with-gpu-fractioning-in-nvidia-runai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-18T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/06/run-ai-featured-768x432-png.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"run ai featured\" width=\"768\" />As AI workloads scale, achieving high throughput, efficient resource usage, and predictable latency becomes essential. NVIDIA Run:ai addresses these challenges...",
+   "tags": "optimization,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Topping the GPU MODE Kernel Leaderboard with NVIDIA cuda.compute",
+   "url": "https://developer.nvidia.com/blog/topping-the-gpu-mode-kernel-leaderboard-with-nvidia-cuda-compute",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-18T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/cuda-compute-gpu-mode-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cuda compute gpu mode\" width=\"768\" />Python dominates machine learning for its ergonomics, but writing truly fast GPU code has historically meant dropping into C++ to write custom kernels and to...",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "How NVIDIA Extreme Hardware-Software Co-Design Delivered a Large Inference Boost for Sarvam AI’s Sovereign Models",
+   "url": "https://developer.nvidia.com/blog/how-nvidia-extreme-hardware-software-co-design-delivered-a-large-inference-boost-for-sarvam-ais-sovereign-models",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-18T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/ov-dgx-cloud-ari-blog-1920x1080-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ov-dgx-cloud-ari-blog-1920x1080\" width=\"768\" />As global AI adoption accelerates, developers face a growing challenge: delivering large language model (LLM) performance that meets real-world latency and cost...",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "What a GPU Debt Crisis Would Look Like",
+   "url": "https://www.airealist.ai/p/what-a-gpu-debt-crisis-would-look",
+   "source": "airealist",
+   "published_date": "2026-02-18T07:57:41",
+   "summary": "Inside the $20 billion web of GPU-collateralized debt, pension capital, and hedge fund derivatives that connects an AI infrastructure company to your retirement account.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "India Country Brief: The Anthropic Economic Index",
+   "url": "https://www.anthropic.com/research/india-brief-economic-index",
+   "source": "anthropic:research",
+   "published_date": "2026-02-17T19:36:33",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities",
+   "url": "https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-17T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/retrieval-augmented-generation-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"retrieval-augmented-generation\" width=\"768\" />Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms,...",
+   "tags": "multimodal",
+   "area": "other"
+  },
+  {
+   "title": "OpenAI Is Betting on a Security Nightmare. Anthropic Is Building the Enterprise Alternative.",
+   "url": "https://www.airealist.ai/p/openai-is-betting-on-a-security-nightmare",
+   "source": "airealist",
+   "published_date": "2026-02-17T11:32:35",
+   "summary": "Why the OpenClaw talent grab tells you everything about where enterprise trust is actually flowing.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper - Formerly InferenceMAX",
+   "url": "https://newsletter.semianalysis.com/p/inferencex-v2-nvidia-blackwell-vs",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-02-16T17:13:11",
+   "summary": "The Artist Known as InferenceMAX. GB300 NVL72, MI355X, B200, H100, Disaggregated Serving, Wide Expert Parallelism, Large Mixture of Experts, SGLang, vLLM, TRTLLM",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "Continuous batching (2025)",
+   "url": "https://huggingface.co/blog/continuous_batching",
+   "source": "hackernews",
+   "published_date": "2026-02-15T22:47:26",
+   "summary": "39 points, 6 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "other"
+  },
+  {
+   "title": "OMLX – Ollama for MLX (LLM Inference Server for Apple Silicon)",
+   "url": "https://github.com/jundot/omlx",
+   "source": "hackernews",
+   "published_date": "2026-02-15T15:33:25",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,llm",
+   "area": "other"
+  },
+  {
+   "title": "Jensen’s COMECON: How Nvidia Built an Empire of Captive Clouds",
+   "url": "https://www.airealist.ai/p/jensens-comecon-how-nvidia-built",
+   "source": "airealist",
+   "published_date": "2026-02-14T10:46:33",
+   "summary": "The GPU maker built a ring of financially dependent satellite companies and the playbook has a Cold War precedent.",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "DeepSeek-V3.2 on GB300: Performance Breakthrough",
+   "url": "https://blog.vllm.ai/2026/02/13/gb300-deepseek.html",
+   "source": "rss:vLLM Blog",
+   "published_date": "2026-02-13T00:00:00",
+   "summary": "Summary",
+   "tags": "architecture,inference,hardware,optimization",
+   "area": "other"
+  },
+  {
+   "title": "The $3 trillion bet: who wins when everyone builds the pipes?",
+   "url": "https://www.airealist.ai/p/the-3-trillion-bet-who-wins-when",
+   "source": "airealist",
+   "published_date": "2026-02-12T06:21:47",
+   "summary": "Railroads, telecom, electricity: every great infrastructure buildout made fortunes, just never for the builders. A $3 trillion AI bet is about to test that pattern against the most powerful companies.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Introducing Dedicated Container Inference:  Delivering 2.6x faster inference for custom AI models",
+   "url": "https://www.together.ai/blog/dedicated-container-inference",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-12T00:00:00",
+   "summary": "Together AI launches production-grade orchestration for custom AI models with 1.4x–2.6x faster inference.",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "Scheduling in a changing world: Maximizing throughput with time-varying capacity",
+   "url": "https://research.google/blog/scheduling-in-a-changing-world-maximizing-throughput-with-time-varying-capacity",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-02-11T10:34:00",
+   "summary": "Algorithms & Theory",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Cache-aware prefill–decode disaggregation (CPD) for up to 40% faster long-context LLM serving",
+   "url": "https://www.together.ai/blog/cache-aware-disaggregated-inference",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-11T00:00:00",
+   "summary": "Serving long prompts doesn't have to mean slow responses. Learn how Together AI's CPD architecture separates warm and cold inference workloads to deliver 40% higher throughput and dramatically lower time-to-first-token for long-context LLM serving.",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab",
+   "url": "https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-10T18:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/multimodal-robotics-1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"multimodal-robotics\" width=\"600\" />Building robust, intelligent robots requires testing them in complex environments. However, gathering data in the physical world is expensive, slow, and often...",
+   "tags": "multimodal",
+   "area": "other"
+  },
+  {
+   "title": "Using Accelerated Computing to Live-Steer Scientific Experiments at Massive Research Facilities",
+   "url": "https://developer.nvidia.com/blog/using-accelerated-computing-to-live-steer-scientific-experiments-at-massive-research-facilities",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-10T17:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/12/star-gif.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"star-gif\" width=\"600\" />Scientists and engineers who design and build unique scientific research facilities face similar challenges. These include managing massive data rates that...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Alphabet’s 100-Year Bond: A Bet on Immortality",
+   "url": "https://www.airealist.ai/p/alphabets-100-year-bond",
+   "source": "airealist",
+   "published_date": "2026-02-10T14:24:00",
+   "summary": "That&#8217;s not a financial instrument. That&#8217;s a statement of faith.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Automating Inference Optimizations with NVIDIA TensorRT LLM AutoDeploy",
+   "url": "https://developer.nvidia.com/blog/automating-inference-optimizations-with-nvidia-tensorrt-llm-autodeploy",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-09T18:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/llm-optimize-deploy-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-optimize-deploy\" width=\"768\" />NVIDIA TensorRT LLM enables developers to build high-performance inference engines for large language models (LLMs), but deploying a new architecture...",
+   "tags": "inference,optimization,llm",
+   "area": "other"
+  },
+  {
+   "title": "CPUs are Back: The Datacenter CPU Landscape in 2026",
+   "url": "https://newsletter.semianalysis.com/p/cpus-are-back-the-datacenter-cpu",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-02-09T18:18:04",
+   "summary": "RL and Agent Usage, Context Memory Storage, DRAM Pricing Impacts, CPU Interconnect Evolution, AMD Venice, Verano, Florence, Intel Diamond Rapids, Coral Rapids, Arm Phoenix + Venom, Graviton 5, Axion",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "AI Regulation or AI Requiem? Part 4",
+   "url": "https://www.airealist.ai/p/ai-regulation-or-ai-requiem-part-120",
+   "source": "airealist",
+   "published_date": "2026-02-09T15:24:53",
+   "summary": "The EU is fighting itself. The rest of the world is shipping.",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Coding Classic Arcade Games with Claude",
+   "url": "https://www.airealist.ai/p/coding-classic-arcade-games-with",
+   "source": "airealist",
+   "published_date": "2026-02-08T15:49:24",
+   "summary": "Sometimes the best use of cutting-edge AI is making a 1979 spaceship go pew pew",
+   "tags": "ai,llm,inference",
+   "area": "other"
+  },
+  {
+   "title": "Accelerating Mamba2 with Kernel Fusion",
+   "url": "https://pytorch.org/blog/accelerating-mamba2-with-kernel-fusion",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-02-06T22:48:54",
+   "summary": "Summary In this post, we discuss how we optimized the Mamba-2 State-Space Dual (SSD) module with a fused Triton kernel that yields speedups of 1.50x-2.51x on NVIDIA A100 and H100...",
+   "tags": "optimization",
+   "area": "other"
+  },
+  {
+   "title": "Some Matrix Multiplication Engines Are Not As Accurate As We Thought",
+   "url": "https://pytorch.org/blog/some-matrix-multiplication-engines-are-not-as-accurate-as-we-thought",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-02-06T22:15:55",
+   "summary": "What is an accumulator in an accelerator&#8217;s GEMM engine and why does it matter? GPUs and custom accelerators include specialized compute engines for matrix multiplication (also known as matmul or...",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Memory Boom",
+   "url": "https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-02-06T16:10:46",
+   "summary": "Pricing doubles again, Supercycle is bigger, and could last longer than you think",
+   "tags": "hardware,systems",
+   "area": "other"
+  },
+  {
+   "title": "3 Ways NVFP4 Accelerates AI Training and Inference",
+   "url": "https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-06T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/image1-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />The latest AI models continue to grow in size and complexity, demanding increasing amounts of compute performance for training and inference—far beyond what...",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "What do LLMs think when you don't tell them what to think about?",
+   "url": "https://www.together.ai/blog/what-llms-think",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-06T00:00:00",
+   "summary": "What do language models generate when you don't tell them what to generate? New research reveals that LLM families have distinct 'knowledge priors'—GPT models default to code and math, Llama favors narratives, DeepSeek generates religious content, and Qwen outputs exam questions.",
+   "tags": "hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Building a C compiler with a team of parallel Claudes",
+   "url": "https://www.anthropic.com/engineering/building-c-compiler",
+   "source": "anthropic:engineering",
+   "published_date": "2026-02-05T19:38:29",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Claude Code is the Inflection Point",
+   "url": "https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-02-05T18:56:39",
+   "summary": "What It Is, How We Use It, Industry Repercussions, Microsoft's Dilemma, Why Anthropic Is Winning",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Building Highly Efficient Inference System for Recommenders Using PyTorch",
+   "url": "https://pytorch.org/blog/building-highly-efficient-inference-system-for-recommenders-using-pytorch",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-02-05T18:00:59",
+   "summary": "Why Choose PyTorch for Recommendation System PyTorch has emerged as the de facto framework in the AI community, with the majority of cutting-edge research, especially in areas like recommendation systems,...",
+   "tags": "inference",
+   "area": "other"
+  },
+  {
+   "title": "How to Build License-Compliant Synthetic Data Pipelines for AI Model Distillation",
+   "url": "https://developer.nvidia.com/blog/how-to-build-license-compliant-synthetic-data-pipelines-for-ai-model-distillation",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-05T18:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/ai-model-building-png.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-model-building\" width=\"600\" />Specialized AI models are built to perform specific tasks or solve particular problems. But if you’ve ever tried to fine-tune or distill a domain-specific...",
+   "tags": "compression",
+   "area": "other"
+  },
+  {
+   "title": "Quantifying infrastructure noise in agentic coding evals",
+   "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+   "source": "anthropic:engineering",
+   "published_date": "2026-02-05T17:42:29",
+   "summary": "",
+   "tags": "benchmarks,systems",
+   "area": "other"
+  },
+  {
+   "title": "How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale",
+   "url": "https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-05T14:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/Painkiller-RTX-Featured-image-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Painkiller RTX Featured image\" width=\"768\" />Painkiller RTX sets a new standard for how small teams can balance massive visual ambition with limited resources by integrating generative AI. By upscaling...",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "We built a serverless GPU inference platform with predictable latency",
+   "url": "https://news.ycombinator.com/item?id=46896013",
+   "source": "hackernews",
+   "published_date": "2026-02-05T05:29:02",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "other"
+  },
+  {
+   "title": "Tenstorrent Cuts 20 Cores from Already-Shipping \"Blackhole\" P150 Cards",
+   "url": "https://www.techpowerup.com/345977/tenstorrent-cuts-20-cores-from-already-shipping-blackhole-p150-cards",
+   "source": "hackernews",
+   "published_date": "2026-02-05T03:48:02",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "hardware",
+   "area": "other"
+  },
+  {
+   "title": "How AI assistance impacts the formation of coding skills",
+   "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+   "source": "anthropic:research",
+   "published_date": "2026-02-05T00:34:35",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints",
+   "url": "https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-04T19:46:33",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/vlm-retrieval-system-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"vlm-retrieval-system\" width=\"768\" />Kimi K2.5 is the newest open vision language model (VLM) from the Kimi family of models. Kimi K2.5 is a general-purpose multimodal model that excels in current...",
+   "tags": "hardware,multimodal,llm",
+   "area": "other"
+  },
+  {
+   "title": "Demystifying evals for AI agents",
+   "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "source": "anthropic:engineering",
+   "published_date": "2026-02-04T18:45:28",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "How to Build a Document Processing Pipeline for RAG with Nemotron",
+   "url": "https://developer.nvidia.com/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-04T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/image1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />What if your AI agent could instantly parse complex PDFs, extract nested tables, and \"see\" data within charts as easily as reading a text file? With NVIDIA...",
+   "tags": "inference,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Rime Arcana V3 Turbo and Rime Arcana V3 now available on Together AI",
+   "url": "https://www.together.ai/blog/rime-arcana-v3-turbo-and-rime-arcana-v3-now-available-on-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-04T00:00:00",
+   "summary": "",
+   "tags": "serving,inference",
+   "area": "other"
+  },
+  {
+   "title": "Scaling GPU-to-CPU Migration for Efficient Distributed Execution on CPU Clusters",
+   "url": "https://dl.acm.org/doi/10.1145/3774934.3786435",
+   "source": "hackernews",
+   "published_date": "2026-02-03T21:15:30",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Accelerating Long-Context Model Training in JAX and XLA",
+   "url": "https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-02-03T17:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/llm-cloud-icons-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-cloud-icons\" width=\"768\" />Large language models (LLMs) are rapidly expanding their context windows, with recent models supporting sequences of 128K tokens, 256K tokens, and beyond....",
+   "tags": "llm",
+   "area": "other"
+  },
+  {
+   "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+   "url": "https://www.anthropic.com/research/economic-index-primitives",
+   "source": "anthropic:research",
+   "published_date": "2026-02-03T15:57:16",
+   "summary": "",
+   "tags": "anthropic",
+   "area": "other"
+  },
+  {
+   "title": "Together AI welcomes Alon Gavrielov as VP of Infrastructure Strategy",
+   "url": "https://www.together.ai/blog/alon-gavrielov-as-vp-of-infrastructure-strategy",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-03T00:00:00",
+   "summary": "Hiring Alon Gavrielov further deepens Together AI’s commitment to building AI factories that deliver the most reliable, efficient, and scalable infrastructure for AI-native teams.",
+   "tags": "serving,systems,hardware",
+   "area": "other"
+  },
+  {
+   "title": "Driving vLLM WideEP and Large-Scale Serving Toward Maturity on Blackwell (Part I)",
+   "url": "https://blog.vllm.ai/2026/02/03/dsr1-gb200-part1.html",
+   "source": "rss:vLLM Blog",
+   "published_date": "2026-02-03T00:00:00",
+   "summary": "Introduction",
+   "tags": "inference,llm",
+   "area": "other"
+  },
+  {
+   "title": "Together Evaluations now supports comparing top commercial APIs vs. open source models",
+   "url": "https://www.together.ai/blog/together-evaluations-v2",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-02T00:00:00",
+   "summary": "Together Evaluations now supports OpenAI, Anthropic, and Google models for cross-provider benchmarking. Compare open-source, fine-tuned, and proprietary models side-by-side to make data-driven decisions on quality, cost, and performance—all in one platform.",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Fine-tuning open LLM judges to outperform GPT-5.2",
+   "url": "https://www.together.ai/blog/fine-tuning-open-llm-judges-to-outperform-gpt-5-2",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-02-02T00:00:00",
+   "summary": "Fine-tuned open-source LLM judges can outperform GPT-5.2 at evaluating model outputs. Using Direct Preference Optimization on just 5,400 preference pairs, we trained GPT-OSS 120B to beat GPT-5.2 on human preference alignment—at 15x lower cost and 14x faster inference speeds.",
+   "tags": "inference,optimization,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "GPT-OSS Performance Optimizations on NVIDIA Blackwell: Pushing the Pareto Frontier",
+   "url": "https://blog.vllm.ai/2026/02/01/gpt-oss-optimizations.html",
+   "source": "rss:vLLM Blog",
+   "published_date": "2026-02-01T00:00:00",
+   "summary": "TL;DR: In collaboration with the open-source community, vLLM + NVIDIA has achieved significant performance milestones on the gpt-oss-120b model running on NVIDIA’s Blackwell GPUs. Through deep integration with FlashInfer, novel kernel fusions via torch.compile, and various inference runtime features, we have set a new record for the model’s performance Pareto frontier —simultaneously optimizing for maximum throughput (+38%) and best interactivity (+13%).",
+   "tags": "inference,optimization,hardware,llm",
+   "area": "other"
+  }
+ ]
+}

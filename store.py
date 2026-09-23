@@ -7,7 +7,7 @@ the SQLAlchemy session interface unchanged.
 """
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -15,6 +15,10 @@ from sqlalchemy.orm import sessionmaker
 from database import Article, Base
 
 DATA_PATH = os.path.join("data", "articles.json")
+ARCHIVE_DIR = os.path.join("data", "archive")
+# The hot file holds only what the page can show. Older rows move to monthly
+# archives, which stops a 3x/day job from rewriting years of history every run.
+HOT_DAYS = int(os.environ.get("ROOFLINE_HOT_DAYS", "120"))
 
 
 def _to_iso(value):
@@ -46,13 +50,28 @@ def read_json(path=DATA_PATH):
     return payload.get("articles", [])
 
 
+def archive_files():
+    if not os.path.isdir(ARCHIVE_DIR):
+        return []
+    return sorted(os.path.join(ARCHIVE_DIR, f)
+                  for f in os.listdir(ARCHIVE_DIR) if f.endswith(".json"))
+
+
+def read_all(path=DATA_PATH):
+    """Hot file plus every archive — dedup must see the whole history."""
+    rows = list(read_json(path))
+    for archive in archive_files():
+        rows.extend(read_json(archive))
+    return rows
+
+
 def hydrate(path=DATA_PATH):
     """Build an in-memory SQLite session preloaded from the JSON store."""
     engine = create_engine("sqlite:///:memory:")
     Base.metadata.create_all(engine)
     session = sessionmaker(bind=engine)()
 
-    for record in read_json(path):
+    for record in read_all(path):
         session.add(Article(
             title=record.get("title", ""),
             url=record["url"],
@@ -83,7 +102,6 @@ def dump(session, path=DATA_PATH):
             "source": row.source,
             "published_date": _to_iso(row.published_date),
             "summary": row.summary or "",
-            "relevance_score": round(row.relevance_score or 0.0, 3),
             "tags": row.tags or "",
             "area": row.area or "other",
         }
@@ -93,20 +111,54 @@ def dump(session, path=DATA_PATH):
             record["importance"] = round(row.importance, 3)
         if row.why:
             record["why"] = row.why
+        # The summary is an input to classification, not output, and the page
+        # never renders it — it was 55% of the file. Keep it only while a row is
+        # still unrated, so reclassify.py has something to judge.
+        if row.importance is None and row.summary:
+            record["summary"] = row.summary[:600]
         articles.append(record)
 
     articles.sort(key=lambda a: (a["published_date"] or "", a["url"]), reverse=True)
 
-    payload = {
-        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
-        "count": len(articles),
-        "sources": sorted({a["source"] for a in articles}),
-        "articles": articles,
-    }
+    cutoff = (datetime.utcnow() - timedelta(days=HOT_DAYS)).isoformat(timespec="seconds")
+    hot = [a for a in articles if (a["published_date"] or "") >= cutoff]
+    cold = [a for a in articles if (a["published_date"] or "") < cutoff]
 
+    _write(path, {
+        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "hot_days": HOT_DAYS,
+        "count": len(hot),
+        "total_collected": len(articles),
+        "sources": sorted({a["source"] for a in hot}),
+        "articles": hot,
+    })
+
+    # One file per month, rewritten only when that month's contents change, so
+    # the archive is near-static in git.
+    months = {}
+    for article in cold:
+        months.setdefault((article["published_date"] or "")[:7], []).append(article)
+    for month, rows in months.items():
+        _write_if_changed(os.path.join(ARCHIVE_DIR, f"{month}.json"),
+                          {"month": month, "count": len(rows), "articles": rows})
+
+    return len(articles)
+
+
+def _write(path, payload):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=1, ensure_ascii=False)
         handle.write("\n")
 
-    return len(articles)
+
+def _write_if_changed(path, payload):
+    body = json.dumps(payload, indent=1, ensure_ascii=False) + "\n"
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as handle:
+            if handle.read() == body:
+                return False
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(body)
+    return True

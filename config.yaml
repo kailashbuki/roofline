@@ -45,20 +45,34 @@ sources:
     # are remembered in data/rejected.json so each story is judged only once.
     per_query: 20
     min_points: 2
-    queries: [
-      # engines and serving
-      "vllm", "sglang", "tensorrt", "llama.cpp", "inference engine",
-      "inference server", "kv cache", "speculative decoding",
-      # optimization
-      "quantization", "flash attention", "cuda kernel", "triton kernel",
-      "model inference", "llm serving", "batching",
-      # silicon
-      "hbm", "tpu", "trainium", "ai accelerator", "gpu cluster",
-      "nvlink", "blackwell", "tenstorrent", "cerebras", "groq",
-      # architecture and models
-      "mixture of experts", "state space model", "transformer architecture",
-      "open weights model", "scaling law",
-    ]
+    # HackerNews has no inherent area, but the QUERY that surfaced a story does.
+    # Grouping queries by area gives each hit a strong prior for free, which the
+    # classifier would otherwise have to infer from a bare title.
+    queries:
+      inference-engines: [
+        "vllm", "sglang", "tensorrt", "llama.cpp", "inference engine",
+        "inference server", "llm serving", "ollama", "triton inference",
+      ]
+      inference-methods: [
+        "kv cache", "speculative decoding", "quantization", "flash attention",
+        "cuda kernel", "triton kernel", "model inference", "batching",
+        "model distillation", "pruning",
+      ]
+      silicon: [
+        "hbm", "tpu", "trainium", "ai accelerator", "gpu cluster", "nvlink",
+        "blackwell", "tenstorrent", "cerebras", "groq", "wafer", "interconnect",
+      ]
+      architecture: [
+        "mixture of experts", "state space model", "transformer architecture",
+        "attention mechanism", "long context",
+      ]
+      new-models: [
+        "open weights model", "open source llm", "model release",
+      ]
+      training: [
+        "scaling law", "pretraining", "reinforcement learning from human feedback",
+        "fine-tuning",
+      ]
 
   rss_feeds:
     enabled: true
@@ -74,11 +88,13 @@ sources:
       - name: "OpenAI Blog"
         url: "https://openai.com/blog/rss.xml"
       - name: "SemiAnalysis"
+        area: silicon
         url: "https://newsletter.semianalysis.com/feed"
         filter: false
       - name: "Microsoft AI"
         url: "https://microsoft.ai/news/feed/"
       - name: "vLLM Blog"
+        area: inference-engines
         url: "https://blog.vllm.ai/feed"
         filter: false
       - name: "Together.ai Blog"
@@ -88,11 +104,13 @@ sources:
         url: "https://developer.nvidia.com/blog/feed/"
       # Silicon microarchitecture deep dives.
       - name: "Chips and Cheese"
+        area: silicon
         url: "https://chipsandcheese.com/feed/"
         filter: false
       # Human-curated digests. These are link roundups: one entry points at many
       # articles, so they surface as single cards rather than decomposing.
       - name: "Interconnects"
+        area: training
         url: "https://www.interconnects.ai/feed"
         filter: false
       - name: "Ahead of AI"

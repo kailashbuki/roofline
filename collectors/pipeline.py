@@ -124,6 +124,22 @@ def new_candidates(session, rows):
     return fresh
 
 
+def pick_area(candidate, verdict):
+    """Reconcile a source-derived area hint with the model's choice.
+
+    The hint wins for HackerNews, where the search query that surfaced a story is
+    better evidence than a bare title with no abstract. Elsewhere the hint only
+    fills in when the model declined to commit, so a pinned feed that publishes
+    something off its usual beat still lands in the right section.
+    """
+    hint = candidate.get("area_hint")
+    if not hint:
+        return verdict.area
+    if candidate.get("source", "").startswith("hackernews"):
+        return hint
+    return hint if verdict.area == "other" else verdict.area
+
+
 def commit(session, config, rows, always_keep=False):
     """Classify new candidates and store the ones that pass. Returns count kept."""
     candidates = new_candidates(session, rows)
@@ -153,7 +169,7 @@ def commit(session, config, rows, always_keep=False):
             summary=(candidate.get("summary") or "")[:1000],
             relevance_score=verdict.score,
             tags=verdict.tags,
-            area=verdict.area,
+            area=pick_area(candidate, verdict),
             importance=verdict.importance,
             why=verdict.why,
         ))

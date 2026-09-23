@@ -1,0 +1,96 @@
+{
+ "month": "2025-10",
+ "count": 10,
+ "articles": [
+  {
+   "title": "A Minimalist Transformer Architecture for Univariate Time Series Forecasting",
+   "url": "https://www.mdpi.com/1999-4893/18/10/645",
+   "source": "hackernews",
+   "published_date": "2025-10-31T16:17:29",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "other"
+  },
+  {
+   "title": "An underqualified reading list about the transformer architecture",
+   "url": "https://fvictorio.github.io/posts/underqualified-transformer-reading-list",
+   "source": "hackernews",
+   "published_date": "2025-10-30T16:26:35",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,attention",
+   "area": "other"
+  },
+  {
+   "title": "How to Kill 2 Monopolies with 1 Tool",
+   "url": "https://newsletter.semianalysis.com/p/how-to-kill-2-monopolies-with-1-tool",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-10-29T20:59:28",
+   "summary": "Substrate X-Ray Lithography, a New American Foundry, $10k Logic Wafers",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Nanoimprint Lithography: Stop Saying It Will Replace EUV",
+   "url": "https://newsletter.semianalysis.com/p/nanoimprint-lithography-stop-saying",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-10-26T16:35:28",
+   "summary": "NIL basics, why it won&#8217;t replace EUV, details of Canon&#8217;s tool, possible applications",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Quadruped State of The Market - Unitree, Boston Dynamics, ANYbotics, DEEP Robotics, and The Rising Application Ecosystem",
+   "url": "https://newsletter.semianalysis.com/p/quadruped-state-of-the-market-unitree",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-10-20T10:12:06",
+   "summary": "Quadrupeds Superior Scalability, Unitree's Incredible Production, Third Party Providers Introduce New Dynamics, Novel Applications And Opportunities, Unitree's Impossible BoMs, Quadruped TAMs",
+   "tags": "",
+   "area": "other"
+  },
+  {
+   "title": "Reap: One-Shot Pruning for Trillion-Parameter Mixture-of-Experts Models",
+   "url": "https://www.cerebras.ai/blog/reap",
+   "source": "hackernews",
+   "published_date": "2025-10-18T05:33:24",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "compression,architecture",
+   "area": "other"
+  },
+  {
+   "title": "Mamba-3: Improved Sequence Modeling Using State Space Principles",
+   "url": "https://openreview.net/forum?id=HwCvaJOiCj",
+   "source": "hackernews",
+   "published_date": "2025-10-14T08:38:50",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture",
+   "area": "other"
+  },
+  {
+   "title": "InferenceMAX™: Open Source Inference Benchmarking",
+   "url": "https://newsletter.semianalysis.com/p/inferencemax-open-source-inference",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2025-10-09T22:58:23",
+   "summary": "NVIDIA GB200 NVL72, AMD MI355X, Throughput Token per GPU, Latency Tok/s/user, Perf per Dollar, Tokens per Provisioned Megawatt, DeepSeek R1 670B, GPTOSS 120B, Llama3 70B",
+   "tags": "inference,optimization,hardware,llm",
+   "area": "other"
+  },
+  {
+   "title": "Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention",
+   "url": "https://arxiv.org/abs/2510.04212",
+   "source": "hackernews",
+   "published_date": "2025-10-09T07:30:24",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "attention,training,optimization",
+   "area": "other"
+  },
+  {
+   "title": "Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)",
+   "url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-10-05T11:12:32",
+   "summary": "Multiple-Choice Benchmarks, Verifiers, Leaderboards, and LLM Judges with Code Examples",
+   "tags": "llm",
+   "area": "other"
+  }
+ ]
+}
