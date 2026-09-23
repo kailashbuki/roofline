@@ -1,13 +1,14 @@
 """Probe which Gemini model + API surface works for your key.
 
-The Gemini API is mid-migration and free-tier model availability varies by
-project, so rather than guessing, run this once:
+The Gemini API moves: model ids retire and surfaces migrate, and free-tier model
+availability varies by project. Rather than guessing, run this once:
 
     export GEMINI_API_KEY='...'
     python verify_gemini.py
 
-It sends the exact request classifier.py sends, for each candidate model on
-each API surface, and prints what to put in the workflow.
+It sends the exact BATCHED request the collectors send, then checks that every
+article in the batch came back and that ids mapped correctly — a batch that
+silently drops or misorders items is worse than one that fails outright.
 """
 import json
 import os
@@ -24,17 +25,24 @@ CANDIDATES = [
     "gemini-3.5-flash",
 ]
 
-SAMPLE = (
-    "FlashAttention-3: Fast and Accurate Attention with Low-Precision GPU Kernels",
-    "We present a method that speeds up attention on modern accelerators by "
-    "improving memory access patterns and using FP8 arithmetic.",
-)
+# Deliberately mixed: two clearly in scope, one clearly not. A working setup must
+# return three verdicts and score the third well below the others.
+SAMPLE = [
+    ("FlashAttention-3: Fast and Accurate Attention with Low-Precision GPU Kernels",
+     "Speeds up attention on modern accelerators via better memory access "
+     "patterns and FP8 arithmetic."),
+    ("Blackwell Ultra: 288GB of HBM3e per package",
+     "NVIDIA's latest accelerator raises memory capacity and bandwidth for "
+     "large-model inference."),
+    ("Best sourdough starter routine",
+     "Feeding schedules and hydration ratios for a rye starter."),
+]
 
 
 def probe(model, api_style):
     classifier.MODEL = model
     classifier.API_STYLE = api_style
-    url, body = classifier.build_request(classifier.build_prompt(*SAMPLE))
+    url, body = classifier.build_request(SAMPLE)
 
     try:
         response = requests.post(
@@ -44,44 +52,51 @@ def probe(model, api_style):
                 "Content-Type": "application/json",
             },
             json=body,
-            timeout=45,
+            timeout=90,
         )
     except Exception as exc:
         return False, f"{type(exc).__name__}: {exc}"
 
     if response.status_code != 200:
         detail = response.text.replace("\n", " ").strip() or "(empty body)"
-        return False, f"HTTP {response.status_code}: {detail[:160]}"
+        return False, f"HTTP {response.status_code}: {detail[:150]}"
 
     try:
         text = classifier.extract_text(response.json())
     except Exception as exc:
-        return False, f"unexpected response shape ({exc}): {str(response.json())[:160]}"
+        return False, f"bad response shape ({exc}): {str(response.json())[:150]}"
 
     try:
-        parsed = json.loads(text)
+        verdicts = classifier.parse_verdicts(text, len(SAMPLE))
     except json.JSONDecodeError:
-        return False, f"not valid JSON (structured output ignored?): {text[:160]}"
+        return False, f"not valid JSON (structured output ignored?): {text[:150]}"
 
-    missing = [k for k in ("relevant", "score", "tags") if k not in parsed]
+    missing = [i + 1 for i, v in enumerate(verdicts) if v is None]
     if missing:
-        # Schema was ignored rather than enforced; usable but worth flagging.
-        return True, f"WARN schema not enforced (missing {missing}): {parsed}"
+        return False, f"batch incomplete — no verdict for id(s) {missing}"
 
-    return True, f"relevant={parsed['relevant']} score={parsed['score']} tags={parsed['tags']}"
+    scores = [round(v[0], 2) for v in verdicts]
+    # The third sample is off-topic. If it outscores the other two, either the
+    # ids are misaligned or the prompt is being ignored.
+    if scores[2] >= max(scores[0], scores[1]):
+        return True, f"WARN ids may be misaligned (off-topic scored {scores[2]}): {scores}"
+
+    return True, f"scores {scores}, tags [{verdicts[0][1] or '-'}]"
 
 
 def main():
     if not os.environ.get("GEMINI_API_KEY"):
         sys.exit("Set GEMINI_API_KEY first: export GEMINI_API_KEY='...'")
 
+    defaults = (classifier.API_STYLE, classifier.MODEL)
     working = []
+
     for api_style in ("generatecontent", "interactions"):
         print(f"\n=== {api_style} ===")
         for model in CANDIDATES:
             ok, detail = probe(model, api_style)
             print(f"  {'OK  ' if ok else 'FAIL'}  {model:24} {detail}")
-            if ok:
+            if ok and not detail.startswith("WARN"):
                 working.append((api_style, model))
 
     print()
@@ -92,11 +107,17 @@ def main():
             "Generative Language API is enabled for the project."
         )
 
+    print("Working combination(s):")
+    for style, model in working:
+        print(f"  {style} + {model}")
+
     api_style, model = working[0]
-    print(f"Use these. In .github/workflows/collect.yml add to the collect step's env:")
+    print("\n.github/workflows/collect.yml should set:")
     print(f"    GEMINI_MODEL: {model}")
     print(f"    GEMINI_API: {api_style}")
-    print(f"\n({len(working)} working combination(s); the first is preferred.)")
+    print(f"\ncompiled-in defaults: {defaults[0]} + {defaults[1]}")
+    if (api_style, model) != defaults:
+        print("NOTE: the preferred combination differs from the defaults above.")
 
 
 if __name__ == "__main__":

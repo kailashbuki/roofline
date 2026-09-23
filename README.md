@@ -40,7 +40,8 @@ lets the collectors keep their SQLAlchemy session interface unchanged.
 - `relevance_scorer.py` — keyword scoring, used when Gemini is unavailable
 - `database.py` — the `Article` model and config loader
 - `collectors/` — arXiv, HackerNews, RSS (9 feeds), Anthropic blogs, AI Realist
-- `site/` — the static page (plain HTML/CSS/JS, no build step)
+- `site/index.html` — the feed
+- `site/pulse.html` — the trend dashboard (hand-rolled inline SVG, no chart library)
 - `.github/workflows/collect.yml` — collect, commit, deploy
 
 ## Local development
@@ -96,6 +97,31 @@ exists in the runner's environment. Classification happens at build time, so the
 key never reaches a visitor's browser, and it is passed to the step via `env:`
 rather than interpolated into a shell command. Never put it in `config.yaml`,
 which is committed.
+
+## The pulse dashboard
+
+`pulse.html` is the "what changed" view, for catching up fast:
+
+- **KPI tiles** — new today / 7d / 30d, unread, active sources. Headline numbers
+  are stat tiles, not one-bar charts.
+- **Volume per week** — 26 weeks, single series, crosshair tooltip.
+- **Topic momentum** — the one to read first. Share of the last 7 days minus share
+  of the prior three weeks, in percentage points. Deliberately *not* percent
+  change: that divides by a baseline which is often zero, collapsing "appeared
+  from nothing" and "doubled" into the same +100%. Topics with no prior activity
+  are flagged `new` instead.
+- **Topics over time** — small multiples, one panel per topic. Identity comes from
+  the panel label, so all twelve sparklines share one hue instead of needing
+  twelve colors.
+- **Where it comes from** — source mix, one hue (never a value-ramp over nominal
+  categories).
+- **Highest signal, last 7 days** — top-scored unread items.
+
+Every chart has a table view, one filter row scopes all of them, and light and
+dark are two separately-chosen palettes rather than an automatic flip. The two
+chart hues were validated against both surfaces with the dataviz validator:
+dark `#1c1c1e` passes all six checks; light `#f2f2f7` passes with a contrast
+warning on orange, relieved by the direct labels and table views.
 
 ## Why there is no keyword filtering
 

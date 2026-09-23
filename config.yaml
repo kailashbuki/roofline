@@ -32,11 +32,33 @@ sources:
     ]
     max_results: 100
 
+  # Community-curated paper aggregator. Upvotes act as a free pre-filter, so
+  # most noise is gone before any classifier call.
+  hf_papers:
+    enabled: true
+    limit: 100
+    min_upvotes: 3
+
   hackernews:
     enabled: true
-    # Every top story is sent to the classifier; rejections are remembered in
-    # data/rejected.json so each story is judged exactly once.
-    max_items: 100
+    # Targeted title searches via the Algolia API, not a top-100 scan. Rejections
+    # are remembered in data/rejected.json so each story is judged only once.
+    per_query: 20
+    min_points: 2
+    queries: [
+      # engines and serving
+      "vllm", "sglang", "tensorrt", "llama.cpp", "inference engine",
+      "inference server", "kv cache", "speculative decoding",
+      # optimization
+      "quantization", "flash attention", "cuda kernel", "triton kernel",
+      "model inference", "llm serving", "batching",
+      # silicon
+      "hbm", "tpu", "trainium", "ai accelerator", "gpu cluster",
+      "nvlink", "blackwell", "tenstorrent", "cerebras", "groq",
+      # architecture and models
+      "mixture of experts", "state space model", "transformer architecture",
+      "open weights model", "scaling law",
+    ]
 
   rss_feeds:
     enabled: true
@@ -64,6 +86,20 @@ sources:
         filter: false
       - name: "NVIDIA Developer Blog"
         url: "https://developer.nvidia.com/blog/feed/"
+      # Silicon microarchitecture deep dives.
+      - name: "Chips and Cheese"
+        url: "https://chipsandcheese.com/feed/"
+        filter: false
+      # Human-curated digests. These are link roundups: one entry points at many
+      # articles, so they surface as single cards rather than decomposing.
+      - name: "Interconnects"
+        url: "https://www.interconnects.ai/feed"
+        filter: false
+      - name: "Ahead of AI"
+        url: "https://magazine.sebastianraschka.com/feed"
+        filter: false
+      - name: "Latent Space"
+        url: "https://www.latent.space/feed"
 
 # Relevance. min_score applies to the classifier's score, not keyword matching.
 # The keyword lists are the fallback used only when Gemini is unavailable.

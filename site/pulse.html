@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>roofline · pulse</title>
+  <meta name="description" content="Trends across the AI performance stack: volume, topic momentum, and source mix.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="viz-root">
+  <header>
+    <div class="title-row">
+      <h1>
+        <svg class="mark" viewBox="0 0 32 22" aria-hidden="true">
+          <polyline points="3,19 14,4 30,4" fill="none" stroke="currentColor"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>roofline</h1>
+      <nav class="views">
+        <a href="./index.html">Feed</a>
+        <span class="here">Pulse</span>
+      </nav>
+      <span id="updated" class="updated"></span>
+    </div>
+
+    <!-- One filter row, scoping every chart below. -->
+    <div class="controls">
+      <select id="window" aria-label="Time range">
+        <option value="90">Last 90 days</option>
+        <option value="180" selected>Last 180 days</option>
+        <option value="365">Last year</option>
+        <option value="0">All time</option>
+      </select>
+      <select id="source" aria-label="Filter by source"></select>
+      <span id="scope" class="stats"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Headline numbers are stat tiles, not charts -->
+    <section class="kpis" id="kpis" aria-label="Headline numbers"></section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Volume per week</h2>
+        <button class="link table-toggle" data-for="volume">Table</button>
+      </div>
+      <p class="card-note">How much is being published across your sources.</p>
+      <div id="volume" class="plot"></div>
+      <div id="volume-table" class="table-view" hidden></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Topic momentum</h2>
+        <button class="link table-toggle" data-for="momentum">Table</button>
+      </div>
+      <p class="card-note">
+        Share of the last 7 days versus share of the prior three weeks, in
+        percentage points. Look here first: it says what is taking up more of the
+        field this week, not merely what is large.
+      </p>
+      <div class="legend" id="momentum-legend"></div>
+      <div id="momentum" class="plot"></div>
+      <div id="momentum-table" class="table-view" hidden></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Topics over time</h2>
+        <button class="link table-toggle" data-for="topics">Table</button>
+      </div>
+      <p class="card-note">One panel per topic — shape is comparable, scale is not.</p>
+      <div id="topics" class="sparks"></div>
+      <div id="topics-table" class="table-view" hidden></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Where it comes from</h2>
+        <button class="link table-toggle" data-for="sources">Table</button>
+      </div>
+      <div id="sources" class="plot"></div>
+      <div id="sources-table" class="table-view" hidden></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>Highest signal, last 7 days</h2></div>
+      <p class="card-note">Top-scored items you have not opened yet.</p>
+      <div id="top" class="toplist"></div>
+    </section>
+  </main>
+
+  <div id="tip" class="tip" hidden></div>
+
+  <script src="./pulse.js"></script>
+</body>
+</html>

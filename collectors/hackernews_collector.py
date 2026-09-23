@@ -1,11 +1,17 @@
-import requests
+"""HackerNews via the Algolia search API, one targeted query at a time.
 
+This replaces scanning the top-100, which was mostly off-topic and missed
+anything that never reached the front page. Searching by title with typo
+tolerance off gives high precision — "sglang" returns SGLang threads, not
+articles that merely rhyme with it — and reaches the long tail.
+"""
 from datetime import datetime
+
+import requests
 
 from collectors import pipeline
 
-TOP_STORIES = "https://hacker-news.firebaseio.com/v0/topstories.json"
-ITEM = "https://hacker-news.firebaseio.com/v0/item/{id}.json"
+SEARCH = "https://hn.algolia.com/api/v1/search_by_date"
 
 
 def collect_hackernews(session, config):
@@ -13,36 +19,53 @@ def collect_hackernews(session, config):
     if not hn_config['enabled']:
         return 0
 
-    story_ids = requests.get(TOP_STORIES, timeout=30).json()[:hn_config['max_items']]
-
-    # No keyword pre-filter: every story goes to the classifier, and anything it
-    # rejects is remembered so we never pay to judge it twice.
-    already_judged = pipeline.already_judged(session)
+    per_query = hn_config.get('per_query', 20)
+    min_points = hn_config.get('min_points', 0)
 
     rows = []
-    for story_id in story_ids:
-        fallback_url = f"https://news.ycombinator.com/item?id={story_id}"
-        if fallback_url in already_judged:
-            continue
-
+    seen = set()
+    for query in hn_config['queries']:
         try:
-            story = requests.get(ITEM.format(id=story_id), timeout=15).json()
-        except Exception:
+            response = requests.get(
+                SEARCH,
+                params={
+                    "query": query,
+                    "tags": "story",
+                    # Title-only, no typo tolerance: precision over recall.
+                    "restrictSearchableAttributes": "title",
+                    "typoTolerance": "false",
+                    "hitsPerPage": per_query,
+                },
+                timeout=30,
+            )
+            response.raise_for_status()
+            hits = response.json().get('hits', [])
+        except Exception as exc:
+            print(f"    Error searching HN for {query!r}: {exc}")
             continue
 
-        if not story or story.get('type') != 'story':
-            continue
+        for hit in hits:
+            object_id = hit.get('objectID')
+            if not object_id or object_id in seen:
+                continue
+            if (hit.get('points') or 0) < min_points:
+                continue
+            seen.add(object_id)
 
-        url = story.get('url') or fallback_url
-        if url in already_judged:
-            continue
+            try:
+                published = datetime.fromisoformat(
+                    hit['created_at'].replace('Z', '+00:00')
+                ).replace(tzinfo=None)
+            except (KeyError, ValueError):
+                published = datetime.utcnow()
 
-        rows.append({
-            "title": story.get('title', ''),
-            "url": url,
-            "source": "hackernews",
-            "published_date": datetime.fromtimestamp(story.get('time', 0)),
-            "summary": (story.get('text') or '')[:500],
-        })
+            rows.append({
+                "title": hit.get('title') or '',
+                "url": hit.get('url') or f"https://news.ycombinator.com/item?id={object_id}",
+                "source": "hackernews",
+                "published_date": published,
+                "summary": f"{hit.get('points', 0)} points, "
+                           f"{hit.get('num_comments', 0)} comments on HackerNews",
+            })
 
     return pipeline.commit(session, config, rows)

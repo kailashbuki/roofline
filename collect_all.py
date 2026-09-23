@@ -4,6 +4,7 @@ from database import load_config
 from store import hydrate, dump, DATA_PATH
 from collectors import pipeline
 from collectors.arxiv_collector import collect_arxiv
+from collectors.hf_papers_collector import collect_hf_papers
 from collectors.hackernews_collector import collect_hackernews
 from collectors.rss_collector import collect_rss
 from collectors.anthropic_scraper import collect_anthropic
@@ -11,6 +12,7 @@ from collectors.airealist_collector import collect_airealist
 
 COLLECTORS = [
     ("arXiv", collect_arxiv),
+    ("HF Daily Papers", collect_hf_papers),
     ("HackerNews", collect_hackernews),
     ("RSS Feeds", collect_rss),
     ("Anthropic", collect_anthropic),

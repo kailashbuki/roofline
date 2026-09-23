@@ -1,0 +1,93 @@
+"""Re-score and re-tag articles already in the store.
+
+Classification normally runs only on new URLs, so rows scored during a run where
+Gemini was unavailable keep their keyword-era tags forever. This re-judges them.
+
+    export GEMINI_API_KEY='...'
+    python reclassify.py              # only rows that look keyword-scored
+    python reclassify.py --all        # every row
+    python reclassify.py --dry-run    # show what would change, write nothing
+
+Batched like the collectors, so the whole back catalogue costs roughly
+len(articles)/GEMINI_BATCH_SIZE requests.
+"""
+import argparse
+import os
+import sys
+
+from classifier import classify_many, ALLOWED_TAGS
+from store import read_json, DATA_PATH
+import json
+
+# Tags from the pre-rebrand taxonomy: their presence means the row predates the
+# current classifier, or was scored by the keyword fallback.
+LEGACY_TAGS = {"ai", "llm_inference", "accelerator"}
+
+
+def looks_keyword_scored(article):
+    tags = {t for t in (article.get("tags") or "").split(",") if t}
+    if not tags:
+        return True
+    if tags & LEGACY_TAGS:
+        return True
+    # The keyword scorer saturates at exactly 1.0 far more often than the model.
+    if article.get("relevance_score") == 1.0 and article.get("source", "").startswith("arxiv"):
+        return True
+    return bool(tags - set(ALLOWED_TAGS))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--all", action="store_true", help="re-judge every article")
+    parser.add_argument("--dry-run", action="store_true", help="report only")
+    parser.add_argument("--limit", type=int, default=0, help="cap how many to re-judge")
+    args = parser.parse_args()
+
+    if not os.environ.get("GEMINI_API_KEY"):
+        sys.exit("GEMINI_API_KEY is not set — this would just rewrite keyword scores.")
+
+    payload = json.load(open(DATA_PATH, encoding="utf-8"))
+    articles = payload["articles"]
+
+    targets = [a for a in articles if args.all or looks_keyword_scored(a)]
+    if args.limit:
+        targets = targets[:args.limit]
+
+    print(f"{len(articles)} articles in store, {len(targets)} to re-judge")
+    if not targets:
+        return
+
+    verdicts = classify_many([(a["title"], a.get("summary", "")) for a in targets])
+
+    changed = 0
+    by_model = 0
+    for article, (score, tags, judged_by) in zip(targets, verdicts):
+        if judged_by != "gemini":
+            continue
+        by_model += 1
+        before = (article.get("relevance_score"), article.get("tags"))
+        after = (round(score, 3), tags)
+        if before != after:
+            changed += 1
+            if args.dry_run:
+                print(f"  {article['title'][:58]}")
+                print(f"      {before[0]} [{before[1]}]  ->  {after[0]} [{after[1]}]")
+            else:
+                article["relevance_score"], article["tags"] = after
+
+    print(f"\nre-judged by model: {by_model}/{len(targets)}")
+    print(f"rows that would change: {changed}" if args.dry_run else f"rows changed: {changed}")
+
+    if args.dry_run or not changed:
+        return
+
+    payload["count"] = len(articles)
+    payload["sources"] = sorted({a["source"] for a in articles})
+    with open(DATA_PATH, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=1, ensure_ascii=False)
+        handle.write("\n")
+    print(f"wrote {DATA_PATH}")
+
+
+if __name__ == "__main__":
+    main()

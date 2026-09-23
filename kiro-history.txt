@@ -257,3 +257,57 @@ store) via the new collectors/pipeline.py. HackerNews keyword prefilter deleted.
 - Create public repo kailashbuki/roofline, push, enable Pages via Actions.
 - Old repo: keep private as an archive, or delete. It still contains the
   secret-bearing objects.
+
+## 2026-09-23 (late) - Aggregator sources + the pulse dashboard
+
+### Sources: aggregators instead of primary-source sprawl
+Verified ~50 candidate feeds by fetching them; ~20 of the obvious primary sources
+publish no working RSS at all (Meta AI, Baseten, Modal, Fireworks, Groq,
+Cerebras, Tenstorrent; LMSYS/SGLang blog feed 404s). Went aggregator-first:
+- NEW collectors/hf_papers_collector.py - Hugging Face Daily Papers API.
+  Community upvotes are a FREE pre-filter (min_upvotes: 3) applied before any
+  classifier call. Contributed 62 articles on the first run.
+- REWROTE collectors/hackernews_collector.py - Algolia search_by_date with
+  restrictSearchableAttributes=title and typoTolerance=false, over 30 targeted
+  queries, replacing the top-100 scan. Precision is dramatically better AND it
+  reaches the long tail: 2 new articles before, 183 after.
+- Added Chips and Cheese (silicon) + three human-curated digests (Interconnects,
+  Ahead of AI, Latent Space). Digests are link roundups, so they surface as one
+  card each rather than decomposing into their constituent links.
+
+### URL canonicalisation (collectors/pipeline.py)
+The same paper arrives as arxiv.org/abs/ID, arxiv.org/pdf/IDvN.pdf, the arXiv
+API's versioned entry_id, and huggingface.co/papers/ID. canonical_url() collapses
+all four onto https://arxiv.org/abs/ID, and also strips utm_*/ref junk. Migrated
+the existing store: 470 of 779 URLs rewritten, 0 pre-existing duplicates, and
+HF/arXiv overlap now dedups instead of double-storing.
+
+### Pulse dashboard (site/pulse.html, site/pulse.js)
+Hand-rolled inline SVG - no chart library, no build step. Followed the dataviz
+procedure: form first, color last, validator run before shipping.
+- Validated the chart palette with the dataviz validator. First attempt FAILED:
+  the brand amber #ff6b35 and blue #4aa3ff both sit at L~0.705, outside the dark
+  lightness band. Fixed by using mode-specific steps - dark #d95926/#3987e5,
+  light #eb6834/#2a78d6 - both PASS. Brand amber is now chrome only (wordmark,
+  favicon), never a data encoding.
+- TWO BUGS CAUGHT ONLY BY SCREENSHOTTING THE PAGE (the "render it and look at
+  it" step earns its place):
+  1. chart.append(svg("title")).textContent = ... - Node.append() returns
+     undefined, so this threw and killed the entire render. The page showed only
+     an error string.
+  2. Momentum bars overflowed the right edge with clipped labels, and 8 of 9
+     bars read exactly "+100%" - because percent change divides by a baseline
+     that is usually zero. Replaced the metric with SHARE SHIFT in percentage
+     points (share of last 7d minus share of prior 3w): bounded, defined at zero
+     baseline, and it answers the real question. Bars now scale to the data max
+     with label space reserved on both arms, and zero-baseline topics are
+     flagged "new" rather than "+100%".
+- Small multiples (one panel per topic) sidestep the >8-categorical-hue problem
+  entirely: identity comes from the panel label, so all twelve sparklines share
+  one hue.
+
+### Note on current data quality
+All local runs used the keyword fallback (no key exported in this session), so
+some stored tags are wrong - an MHD numerical-schemes paper is tagged
+"inference". The first keyed run will classify properly; existing rows are not
+re-scored, since classification only runs on new URLs.

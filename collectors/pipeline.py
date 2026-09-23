@@ -16,6 +16,8 @@ on score.
 """
 import json
 import os
+import re
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 import classifier
 from classifier import classify_many
@@ -27,6 +29,41 @@ REJECTED_CAP = 8000
 
 _rejected = set()
 _order = []
+
+# 2509.12345 / 2509.12345v3 / math.GT/0309136 style arXiv ids
+_ARXIV_ABS = re.compile(r"arxiv\.org/(?:abs|pdf)/(?P<id>[^?#]+?)(?:v\d+)?(?:\.pdf)?/?$", re.I)
+_HF_PAPER = re.compile(r"huggingface\.co/papers/(?P<id>[^?#/]+)", re.I)
+
+
+def canonical_url(url):
+    """Collapse the many spellings of one article into a single key.
+
+    The same paper arrives as an arXiv abs link, an arXiv pdf link, a versioned
+    entry_id from the arXiv API, and a huggingface.co/papers link. Without this
+    they would all be stored as separate articles.
+    """
+    if not url:
+        return url
+
+    for pattern in (_ARXIV_ABS, _HF_PAPER):
+        match = pattern.search(url)
+        if match:
+            return f"https://arxiv.org/abs/{match.group('id')}"
+
+    try:
+        parts = urlsplit(url.strip())
+    except ValueError:
+        return url
+    if not parts.scheme:
+        return url
+
+    # Drop campaign junk so the same link shared twice is one article.
+    query = urlencode([
+        (k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+        if not k.lower().startswith(("utm_", "ref_")) and k.lower() not in {"ref", "source"}
+    ])
+    path = parts.path.rstrip("/") or "/"
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, query, ""))
 
 
 def load_rejected(path=REJECTED_PATH):
@@ -77,9 +114,10 @@ def new_candidates(session, rows):
     fresh, seen_here = [], set()
 
     for row in rows:
-        url = row.get("url")
+        url = canonical_url(row.get("url"))
         if not url or url in stored or url in _rejected or url in seen_here:
             continue
+        row["url"] = url
         seen_here.add(url)
         fresh.append(row)
 
