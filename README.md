@@ -155,9 +155,10 @@ which is committed.
 
 ## One page, organised by what to read
 
-**Area pills** across the top switch fronts in one click (keys `0`-`6`), each
-showing its item count and how many arrived since your last visit — so "where did
-things happen?" is answerable without scrolling. Selecting a single front shows
+**Front tabs** in the sticky header switch fronts in one click (keys `0`-`7`).
+Each shows its count in large type with the label above and a `+N` of items newer
+than your last visit — the count answers "where did things happen?", so it gets the
+emphasis, not the label. Selecting a single front shows
 its **digest**: one or two sentences on the state of play there, synthesised by
 `build_digest.py` from that area's highest-importance items (~6 requests per run,
 written to `data/digest.json`, treated as optional by the page).

@@ -9,10 +9,11 @@
 const READ_KEY = "roofline:read";
 const THEME_KEY = "roofline:theme";
 // Only the top tier earns a marker. A number on every row is decoration: it
-// cannot be acted on, and the ordering already encodes it.
-// Relative, not absolute: an absolute cut over-fires whenever the model's scores
-// cluster, which they do. The top decile of what is on screen is always "the few".
-const MUST_READ_PERCENTILE = 0.9;
+// No per-row importance marker at all. Tried a printed score, then a "must read"
+// badge at two thresholds: each marked most of what was on screen, because the
+// sections SELECT for top rows, so any cut over the range fires on nearly every
+// visible one. Rank is carried by the ordering, the cut by the band, and the worth
+// by the why line.
 const VISIT_KEY = "roofline:last-visit";
 // Only the first few per area. A briefing that needs scrolling is a list.
 const PER_AREA = 3;
@@ -48,7 +49,6 @@ let articles = [];
 let digest = {};
 let read = loadRead();
 let visitMark = null;           // "new" means newer than this, not merely unread
-let mustReadCut = Infinity;
 let activeArea = "all";
 let activeBand = 0.35;
 const expanded = new Set();
@@ -210,11 +210,6 @@ function card(article, { lede = false } = {}) {
     const badge = span("front", AREA_LABEL.get(article.area) || article.area || "other");
     meta.append(badge);
   }
-  if (!lede && typeof article.importance === "number" && article.importance >= mustReadCut) {
-    const flag = span("must-read", "must read");
-    flag.title = `importance ${article.importance.toFixed(2)}`;
-    meta.append(flag);
-  }
   meta.append(span("item-source", article.source));
   meta.append(span("", relativeDate(article.published_date)));
   const when = article.published_date ? new Date(article.published_date + "Z").getTime() : 0;
@@ -259,8 +254,8 @@ function renderNotice() {
   }
 }
 
-/** Per-area pills with counts, and how many are new since the last visit. */
-function renderPills(rows) {
+/** Fronts as tabs: label over count, plus how many are new since the last visit. */
+function renderTabs(rows) {
   const counts = new Map();
   const fresh = new Map();
   for (const a of rows) {
@@ -270,7 +265,7 @@ function renderPills(rows) {
     if (visitMark && when > visitMark) fresh.set(area, (fresh.get(area) || 0) + 1);
   }
 
-  const host = el("pills");
+  const host = el("tabs");
   host.textContent = "";
   const entries = [["all", "All fronts", "All"], ...AREAS];
 
@@ -278,27 +273,34 @@ function renderPills(rows) {
     const n = area === "all" ? rows.length : counts.get(area) || 0;
     if (area !== "all" && !n) return;
 
-    const pill = document.createElement("button");
-    pill.type = "button";
-    pill.className = `pill${activeArea === area ? " on" : ""}`;
-    pill.append(span("", short || label));
-    pill.append(span("pill-n", n));
     const newCount = area === "all"
-      ? [...fresh.values()].reduce((t, v) => t + v, 0)
+      ? [...fresh.values()].reduce((total, v) => total + v, 0)
       : fresh.get(area) || 0;
-    if (newCount) pill.append(span("pill-new", `+${newCount}`));
-    // The area's digest as the tooltip: survey every front without clicking.
+
+    const tab = document.createElement("button");
+    tab.type = "button";
+    tab.role = "tab";
+    tab.ariaSelected = String(activeArea === area);
+    tab.className = `tab${activeArea === area ? " on" : ""}`;
+    tab.append(span("tab-label", short || label));
+
+    const figure = span("tab-n", String(n));
+    if (newCount) figure.append(span("tab-new", `+${newCount}`));
+    tab.append(figure);
+
+    // The area's digest as the tooltip: survey every front without clicking one.
     const brief = digest[area]?.text;
-    pill.title = `${label}: ${n} items` +
+    tab.title = `${label}: ${n} items` +
       (newCount ? `, ${newCount} new since your last visit` : "") +
       (brief ? `\n\n${brief}` : "");
-    pill.addEventListener("click", () => {
+
+    tab.addEventListener("click", () => {
       activeArea = area;
       expanded.clear();
       syncUrl();
       render();
     });
-    host.append(pill);
+    host.append(tab);
   });
 }
 
@@ -316,14 +318,11 @@ function renderCounts() {
 }
 
 function render() {
-  renderBands(inRange());
+  const rangeRows = inRange();
+  renderBands(rangeRows);
+
   let rows = inScope();
-  // Recomputed per view: the bar is relative to what is actually on screen.
-  const scores = rows.map((a) => a.importance).filter((v) => typeof v === "number").sort((x, y) => x - y);
-  mustReadCut = scores.length
-    ? scores[Math.floor(scores.length * MUST_READ_PERCENTILE)]
-    : Infinity;
-  renderPills(rows);
+  renderTabs(rows);
   renderDigest();
 
   if (activeArea !== "all") rows = rows.filter((a) => (a.area || "other") === activeArea);

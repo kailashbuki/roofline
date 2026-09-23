@@ -691,3 +691,35 @@ All seven lede rows are still arXiv, because the model scores papers above blog
 posts and analysis across every area. Front coverage is fixed; SOURCE diversity is
 not. This looks like importance-rubric bias toward academic framing rather than a
 layout problem, and it needs a few days of real output to judge before tuning.
+
+## 2026-09-24 - Fronts as tabs; heading formatting; the marker finally deleted
+
+### Fronts are tabs now, not pills
+Requested shape: label over count, stacked. Implemented as a tab strip inside the
+STICKY header, so navigation stays reachable while scrolling, with the count in
+17px/600 and the label in 11px uppercase muted above it - the count answers "where
+did things happen?", so it gets the larger type, not the label. Active tab carries
+an amber underline. Horizontally scrollable on narrow screens with the scrollbar
+hidden. Each tab still carries its digest as a tooltip and a +N of items newer than
+the last visit.
+
+### Heading FORMATTING (the actual request; I first answered about wording)
+Before: 11px uppercase, letter-spacing .07em, muted grey, with a bottom hairline
+rule. That reads as a form label or a table header, not a section - and all eight
+headings were identical weight, so the breadth pass had no hierarchy over the seven
+fronts below it.
+After: sentence case, 15px/600, PRIMARY ink, no rules - separation by whitespace
+(area margin 18->24px). Counts stay quiet at 11.5px muted so they never compete
+with the name. The lede heading goes to 16px and gains a 3px amber left bar, which
+is what gives it rank over the section headings.
+
+### The importance marker is gone for good
+Third attempt and final: a printed 0.50 was decoration, a "must read" badge at the
+90th percentile fired on 3 of 3 rows in a section, and moving it to the 95th
+percentile of the whole in-range set still fired on 16 of 28 cards. The reason is
+structural, not a tuning problem: sections show only each area's TOP rows, so any
+threshold computed over the range marks nearly everything visible. Deleted entirely.
+Rank is carried by the ordering, the cut by the band, the worth by the why line.
+
+Lesson recorded: when a badge fires on more than half of what is on screen, the
+threshold is not the bug - the badge is.
