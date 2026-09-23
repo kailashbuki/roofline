@@ -1,0 +1,48 @@
+{
+ "month": "2026-04",
+ "count": 4,
+ "articles": [
+  {
+   "title": "My Workflow for Understanding LLM Architectures",
+   "url": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-04-18T11:24:36",
+   "summary": "A learning-oriented workflow for understanding new open-weight model releases",
+   "tags": "",
+   "area": "other",
+   "importance": 0.0
+  },
+  {
+   "title": "A 164-parameter architecture beats a 6.5M transformer on SCAN by 94 points",
+   "url": "https://github.com/Elgoghel/hwta-circuits",
+   "source": "hackernews",
+   "published_date": "2026-04-15T15:08:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Demonstrates extreme parameter efficiency on compositional generalization benchmarks via specialized routing."
+  },
+  {
+   "title": "Warp Decode vs. vLLM's Triton kernel: where each wins (crossover analysis)",
+   "url": "https://ai.rundatarun.io/AI%20Systems%20%26%20Architecture/reproducing-warp-decode-blackwell",
+   "source": "hackernews",
+   "published_date": "2026-04-10T09:48:15",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Maps exact performance crossover boundaries between Warp Decode and vLLM Triton attention kernels."
+  },
+  {
+   "title": "Components of A Coding Agent",
+   "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-04-04T11:45:37",
+   "summary": "How coding agents use tools, memory, and repo context to make LLMs work better in practice",
+   "tags": "",
+   "area": "other",
+   "importance": 0.0
+  }
+ ]
+}

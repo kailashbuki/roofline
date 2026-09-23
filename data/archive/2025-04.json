@@ -1,0 +1,28 @@
+{
+ "month": "2025-04",
+ "count": 2,
+ "articles": [
+  {
+   "title": "Blocked Matrix Formulation of Linear Attention Mechanisms",
+   "url": "https://leloykun.github.io/ponder/blockmat-linear-attn",
+   "source": "hackernews",
+   "published_date": "2025-04-16T14:36:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,attention,systems",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Reorganizes kernel execution into blocked matrix formats to optimize linear attention memory access patterns."
+  },
+  {
+   "title": "State Space Model Meets Transformer: A New Paradigm for 3D Object Detection",
+   "url": "https://arxiv.org/abs/2503.14493",
+   "source": "hackernews",
+   "published_date": "2025-04-02T02:41:52",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Combines SSMs with transformer layers specifically for spatial perception pipelines."
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "month": "2025-09",
+ "count": 4,
+ "articles": [
+  {
+   "title": "We reverse-engineered Flash Attention 4",
+   "url": "https://modal.com/blog/reverse-engineer-flash-attention-4",
+   "source": "hackernews",
+   "published_date": "2025-09-27T21:50:30",
+   "summary": "134 points, 48 comments on HackerNews",
+   "tags": "attention,hardware,optimization",
+   "area": "inference-methods",
+   "importance": 0.7,
+   "why": "Uncovers undisclosed hardware-specific optimizations by reverse-engineering unreleased attention kernel implementations."
+  },
+  {
+   "title": "Analog in-memory computing attention mechanism for fast energy-efficient LLMs",
+   "url": "https://www.nature.com/articles/s43588-025-00854-1",
+   "source": "hackernews",
+   "published_date": "2025-09-27T19:11:08",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,attention,inference",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Implements attention matrix operations directly in analog crossbar arrays to slash energy per token."
+  },
+  {
+   "title": "Analog In-Memory Computing Attention Mechanism for Fast LLMs",
+   "url": "https://arxiv.org/abs/2409.19315",
+   "source": "hackernews",
+   "published_date": "2025-09-12T14:09:56",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,attention,inference",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Leverages analog memory cells for parallelized dot-product acceleration during sequence generation."
+  },
+  {
+   "title": "Understanding and Implementing Qwen3 From Scratch",
+   "url": "https://magazine.sebastianraschka.com/p/qwen3-from-scratch",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-09-06T11:10:21",
+   "summary": "A Detailed Look at One of the Leading Open-Source LLMs",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Breaks down Qwen3 implementation details to expose open-weight structural patterns."
+  }
+ ]
+}
