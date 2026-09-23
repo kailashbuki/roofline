@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-23T19:44:03Z",
- "count": 1343,
+ "generated_at": "2026-09-23T19:50:33Z",
+ "count": 1379,
  "sources": [
   "airealist",
   "anthropic:engineering",
@@ -13,6 +13,7 @@
   "rss:Google AI Blog",
   "rss:Hugging Face Blog",
   "rss:Interconnects",
+  "rss:Latent Space",
   "rss:NVIDIA Developer Blog",
   "rss:OpenAI Blog",
   "rss:PyTorch Blog",
@@ -21,6 +22,15 @@
   "rss:vLLM Blog"
  ],
  "articles": [
+  {
+   "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+   "url": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-09-23T19:45:19",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/12/cybersecurity.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cybersecurity\" width=\"600\" />A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training...",
+   "relevance_score": 0.85,
+   "tags": "hardware,systems"
+  },
   {
    "title": "How we made claude.ai 3x faster in two weeks",
    "url": "https://claude.dev/blog/how-we-made-claude-ai-faster",
@@ -92,6 +102,15 @@
    "summary": "",
    "relevance_score": 0.7,
    "tags": "inference,optimization,llm"
+  },
+  {
+   "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+   "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-23T06:41:41",
+   "summary": "overshadowing more efficient GPT6 models from OpenAI",
+   "relevance_score": 0.6,
+   "tags": "llm,inference"
   },
   {
    "title": "Transformers now runs llama.cpp quants",
@@ -1129,6 +1148,15 @@
    "tags": "architecture,optimization,llm"
   },
   {
+   "title": "[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M",
+   "url": "https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-22T06:30:56",
+   "summary": "crowning a new Chinese frontier lab",
+   "relevance_score": 0.8,
+   "tags": "training,llm,architecture"
+  },
+  {
    "title": "OmniFysics-Nano-V2 Technical Report: Understanding the Physical World Across Modalities",
    "url": "https://arxiv.org/abs/2609.25738",
    "source": "arxiv",
@@ -1298,6 +1326,15 @@
    "summary": "Mapping MoE models onto inference hardware: structure, flow, and efficient serving",
    "relevance_score": 0.95,
    "tags": "architecture,inference,serving,hardware"
+  },
+  {
+   "title": "Tinfield 1 is an open weight coding model from Nigeria that beats Opus 4.8",
+   "url": "https://twitter.com/Badtheorylabs/status/2102046067990692093",
+   "source": "hackernews",
+   "published_date": "2026-09-21T17:24:51",
+   "summary": "14 points, 2 comments on HackerNews",
+   "relevance_score": 0.4,
+   "tags": "llm"
   },
   {
    "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
@@ -1867,6 +1904,24 @@
    "tags": "hardware,optimization"
   },
   {
+   "title": "Deriving neural scaling laws from the statistics of natural language",
+   "url": "https://arxiv.org/abs/2602.07488",
+   "source": "hackernews",
+   "published_date": "2026-09-17T09:08:19",
+   "summary": "3 points, 0 comments on HackerNews",
+   "relevance_score": 0.9,
+   "tags": "training,llm"
+  },
+  {
+   "title": "[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost)",
+   "url": "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-17T07:28:25",
+   "summary": "A dash of cold water keeps the foomers away.",
+   "relevance_score": 0.7,
+   "tags": "inference,serving"
+  },
+  {
    "title": "Designing a TPU and optimizing transformer inference on a $100 FPGA",
    "url": "https://im-afan.github.io/transformer-tpu",
    "source": "hackernews",
@@ -1984,6 +2039,15 @@
    "tags": "hardware,optimization,systems"
   },
   {
+   "title": "[AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs",
+   "url": "https://www.latent.space/p/ainews-jev-a-system-one-model-that",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-16T11:09:53",
+   "summary": "congrats to TypeSafe!",
+   "relevance_score": 0.85,
+   "tags": "inference,optimization,llm"
+  },
+  {
    "title": "Andrew Feldman on Building Cerebras and the Future of Chips [video]",
    "url": "https://www.youtube.com/watch?v=HFOhG1jH2tk",
    "source": "hackernews",
@@ -2036,6 +2100,15 @@
    "summary": "20GW sits inside a restricted local boundary, 1,525MW actually slips, 2.3GW nationwide including New York",
    "relevance_score": 0.0,
    "tags": ""
+  },
+  {
+   "title": "Can Skills Learned in Games Transfer to Real-World Work?",
+   "url": "https://www.latent.space/p/good-start-labs",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-15T20:11:54",
+   "summary": "Good Start Labs trained an AI on a railroad game &#8212; and one version improved at financial research. The difference was the training design.",
+   "relevance_score": 0.4,
+   "tags": "training"
   },
   {
    "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
@@ -2218,6 +2291,15 @@
    "tags": "hardware,inference,optimization"
   },
   {
+   "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+   "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
+   "source": "hackernews",
+   "published_date": "2026-09-13T15:44:38",
+   "summary": "417 points, 240 comments on HackerNews",
+   "relevance_score": 0.75,
+   "tags": "post-training,compression,llm"
+  },
+  {
    "title": "Per-tensor layout maps for GGUF quantization",
    "url": "https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization",
    "source": "hackernews",
@@ -2234,6 +2316,15 @@
    "summary": "2 points, 0 comments on HackerNews",
    "relevance_score": 0.8,
    "tags": "hardware,architecture"
+  },
+  {
+   "title": "[AINews] DeepSeek v4.1-Flash: 763B-P8B-D16B novel causal Encoder–Decoder architecture with vision marks the Return of the Whale",
+   "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-12T05:56:05",
+   "summary": "We agree with Sebastian: this should have been DeepSeek v5",
+   "relevance_score": 0.95,
+   "tags": "architecture,multimodal,llm"
   },
   {
    "title": "SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops",
@@ -2261,6 +2352,15 @@
    "summary": "2 points, 0 comments on HackerNews",
    "relevance_score": 0.85,
    "tags": "inference,llm,systems"
+  },
+  {
+   "title": "Open-weights world models' parameter size doubles every ~6 months",
+   "url": "https://twitter.com/kaarelkaarelson/status/2098472992821199358",
+   "source": "hackernews",
+   "published_date": "2026-09-11T18:09:18",
+   "summary": "16 points, 9 comments on HackerNews",
+   "relevance_score": 0.7,
+   "tags": "architecture,llm"
   },
   {
    "title": "Helion x 🤗 HF Kernels: Building and Shipping Out-of-the-box Performant Kernels",
@@ -2425,6 +2525,15 @@
    "tags": "inference,compression,llm"
   },
   {
+   "title": "PyTorch Conference China 2026: Advancing the Open Source AI Stack",
+   "url": "https://pytorch.org/blog/pytorch-conference-china-2026-advancing-the-open-source-ai-stack",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-10T00:01:29",
+   "summary": "PyTorch Conference China 2026 brought the PyTorch community together in Shanghai on September 8–9 alongside KubeCon + CloudNativeCon and OpenInfra Summit, following sponsor-hosted co-located events on September 7. Technical discussions...",
+   "relevance_score": 0.7,
+   "tags": "systems,optimization"
+  },
+  {
    "title": "To Infinity and Beyond: ThunderKittens Now on NVIDIA Vera Rubin NVL72!",
    "url": "https://www.together.ai/blog/to-infinity-and-beyond-thunderkittens-now-on-nvidia-vera-rubin-nvl72",
    "source": "rss:Together.ai Blog",
@@ -2515,6 +2624,15 @@
    "tags": ""
   },
   {
+   "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
+   "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-09T05:04:51",
+   "summary": "Overshadowing Cognition's $48B Series E, Mistral's $24B Series D, Meta's Muse agent, and GPT Image 2.5. The most jam packed, feel the AGI day in the history of AI.",
+   "relevance_score": 0.6,
+   "tags": "training,llm"
+  },
+  {
    "title": "Zero-Copy KV-Cache Migration Protocol (81.6ms Latency)",
    "url": "https://github.com/DOMINICALI1/kv-cache-migrator",
    "source": "hackernews",
@@ -2576,6 +2694,24 @@
    "summary": "Editor&#8217;s Note (9/8/2026): Arm has reached out to clarify that the maximum IPC increase of the C2-Ultra core over the C1-Ultra core using the parameters shown in the endnotes is 7% along with the memory bandwidth improvement not factoring into the IPC improvement.",
    "relevance_score": 0.0,
    "tags": ""
+  },
+  {
+   "title": "Alibaba Cloud, Ant Group, Cambricon and Huawei Come Together in Shanghai to Advance the Open Source AI Stack at PyTorch Conference China",
+   "url": "https://pytorch.org/blog/alibaba-cloud-ant-group-cambricon-and-huawei-come-together-in-shanghai-to-advance-the-open-source-ai-stack-at-pytorch-conference-china",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-08T01:00:02",
+   "summary": "China&#8217;s leading AI technology companies Alibaba Cloud, Cambricon and Ant Group join the PyTorch Foundation as members Summary Alibaba Cloud and Cambricon joined the PyTorch Foundation as Platinum members, and...",
+   "relevance_score": 0.8,
+   "tags": "hardware,systems"
+  },
+  {
+   "title": "Cambricon Joins the PyTorch Foundation as a Platinum Member",
+   "url": "https://pytorch.org/blog/cambricon-joins-the-pytorch-foundation-as-a-platinum-member",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-08T00:59:13",
+   "summary": "The PyTorch Foundation, a community-driven hub for open source AI under the Linux Foundation, is announcing today that Cambricon has joined as a Platinum member. Founded in 2016, Cambricon is...",
+   "relevance_score": 0.75,
+   "tags": "hardware,systems"
   },
   {
    "title": "TPU Inference Externalization Full Steam Ahead - InferenceX",
@@ -2684,6 +2820,24 @@
    "summary": "SkillSpec uses specification reasoning over a unified skill graph to detect semantic defects in autonomous agent skills by balancing contextual views and sandbox validation.\n\nKeywords: SkillSpec, Hoare-style framework, specification reasoning, ExpectSpec, FactSpec, intent mask, skill graph, sandbox validation",
    "relevance_score": 0.65,
    "tags": "llm,architecture"
+  },
+  {
+   "title": "End-to-end infrastructure for training and inferencing open weight models",
+   "url": "https://docs.appliedcompute.com/",
+   "source": "hackernews",
+   "published_date": "2026-09-04T21:25:49",
+   "summary": "78 points, 13 comments on HackerNews",
+   "relevance_score": 0.95,
+   "tags": "training,inference,serving,systems"
+  },
+  {
+   "title": "Show HN: Run open-weight OCR, VLM and vision models behind one API",
+   "url": "https://www.vlmrun.com/gateway",
+   "source": "hackernews",
+   "published_date": "2026-09-04T18:31:25",
+   "summary": "5 points, 0 comments on HackerNews",
+   "relevance_score": 0.8,
+   "tags": "multimodal,inference,serving"
   },
   {
    "title": "Building a Memory-Driven Agent with NVIDIA NemoClaw",
@@ -3109,6 +3263,15 @@
    "tags": "hardware,inference,optimization"
   },
   {
+   "title": "Dyna-2: A 1M-Hour Scaling Law for World-Action Models",
+   "url": "https://www.dyna.co/dyna-2",
+   "source": "hackernews",
+   "published_date": "2026-08-27T16:16:20",
+   "summary": "12 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,multimodal"
+  },
+  {
    "title": "Patterns and problems in emerging multiagent systems",
    "url": "https://www.anthropic.com/research/multiagent-systems",
    "source": "anthropic:research",
@@ -3316,6 +3479,15 @@
    "tags": "hardware"
   },
   {
+   "title": "Scaling Laws, Honestly",
+   "url": "https://www.completeskeptic.com/p/scaling-laws-honestly",
+   "source": "hackernews",
+   "published_date": "2026-08-24T16:09:17",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
+  },
+  {
    "title": "Show HN: Free Inference Engineer and Model Training Roadmap",
    "url": "https://inferquest.org/",
    "source": "hackernews",
@@ -3377,6 +3549,15 @@
    "summary": "Machine learning workloads have an insatiable appetite for DRAM capacity. Flash memory is cheaper per gigabyte of capacity than DRAM. Could it offer a way out?",
    "relevance_score": 0.85,
    "tags": "hardware,systems,training"
+  },
+  {
+   "title": "Fintex on X: \"The Math of Why Bigger AI Keeps Getting Smarter (Scaling Laws)",
+   "url": "https://twitter.com/_yusufknl/status/2090429393139097948",
+   "source": "hackernews",
+   "published_date": "2026-08-22T16:18:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
   },
   {
    "title": "A Year in LLM Serving: Workload Evolution, Caching and Load-Balancing",
@@ -3577,6 +3758,24 @@
    "tags": "inference,hardware,serving"
   },
   {
+   "title": "Thoughts about Scaling Law (from Z.ai Cofounder)",
+   "url": "https://xcancel.com/jietang/status/2089941544581403107",
+   "source": "hackernews",
+   "published_date": "2026-08-19T08:24:19",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
+  },
+  {
+   "title": "Thoughts About Scaling Law",
+   "url": "https://twitter.com/jietang/status/2089941544581403107",
+   "source": "hackernews",
+   "published_date": "2026-08-19T05:52:03",
+   "summary": "7 points, 3 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
+  },
+  {
    "title": "Cerebras's Next Generation CS-4: Fast Just Got Faster",
    "url": "https://newsletter.semianalysis.com/p/cerebrass-next-generation-cs-4-fast",
    "source": "rss:SemiAnalysis",
@@ -3710,6 +3909,15 @@
    "summary": "2 points, 1 comments on HackerNews",
    "relevance_score": 0.85,
    "tags": "inference,optimization,hardware"
+  },
+  {
+   "title": "The End of Cheap Data: Rethinking the Scaling Laws",
+   "url": "https://nikolaosvasiloglou.substack.com/p/the-end-of-cheap-data-rethinking",
+   "source": "hackernews",
+   "published_date": "2026-08-16T15:12:57",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.9,
+   "tags": "training,llm"
   },
   {
    "title": "Privibe - LLM Cli Local first+privacy focus+llama.cpp cache branch + Qwen3.x",
@@ -3899,6 +4107,15 @@
    "summary": "Can TileRT software on NVIDIA GPU compete with Cerebras, Groq LPU, SambaNova? Batch Size 1, Disaggregated engine, high throughput engine Prefill, high interactivity engine decode",
    "relevance_score": 0.95,
    "tags": "inference,serving,hardware,optimization"
+  },
+  {
+   "title": "Neural Scaling Law",
+   "url": "https://en.wikipedia.org/wiki/Neural_scaling_law",
+   "source": "hackernews",
+   "published_date": "2026-08-09T22:10:36",
+   "summary": "3 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
   },
   {
    "title": "TPU: Tensor-Processing-Unit – Open-Source Verilog TPU",
@@ -4214,6 +4431,15 @@
    "summary": "27 points, 1 comments on HackerNews",
    "relevance_score": 0.8,
    "tags": "hardware,optimization"
+  },
+  {
+   "title": "Scaling Laws: The Law Behind Every LLM",
+   "url": "https://aidoses.substack.com/p/scaling-laws-the-law-behind-every",
+   "source": "hackernews",
+   "published_date": "2026-07-30T15:32:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "training,llm"
   },
   {
    "title": "The Wild Wild West Of LEGO Datacenters",
@@ -4756,6 +4982,15 @@
    "tags": ""
   },
   {
+   "title": "Towards demystifying the creativity of diffusion models",
+   "url": "https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-07-15T18:06:00",
+   "summary": "Algorithms & Theory",
+   "relevance_score": 0.4,
+   "tags": "architecture"
+  },
+  {
    "title": "Building Faster Cryptography with Carryless Multiplication in NVIDIA CUDA 13.3",
    "url": "https://developer.nvidia.com/blog/building-faster-cryptography-with-carryless-multiplication-in-nvidia-cuda-13-3",
    "source": "rss:NVIDIA Developer Blog",
@@ -5197,6 +5432,24 @@
    "tags": "ai,llm,inference"
   },
   {
+   "title": "EdgeBench: Unveiling scaling laws of (AI) learning from real-world environments",
+   "url": "https://github.com/ByteDance-Seed/EdgeBench",
+   "source": "hackernews",
+   "published_date": "2026-07-06T06:31:39",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.8,
+   "tags": "training,benchmarks"
+  },
+  {
+   "title": "China's ByteDance discovers new scaling law that could sustain AI boom",
+   "url": "https://www.scmp.com/tech/big-tech/article/3359373/chinas-bytedance-discovers-new-scaling-law-could-sustain-ai-boom",
+   "source": "hackernews",
+   "published_date": "2026-07-06T06:03:45",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.9,
+   "tags": "training,llm"
+  },
+  {
    "title": "AKM-CLR – pre-inference governance for vLLM-style LLM serving",
    "url": "https://github.com/irenee28/akm-clr-governance-layer",
    "source": "hackernews",
@@ -5222,6 +5475,15 @@
    "summary": "Nvidia is handing back tens of billions to shareholders. Now it&#8217;s offering to finance the customers who can&#8217;t afford its chips.",
    "relevance_score": 0.0,
    "tags": "ai,llm,inference"
+  },
+  {
+   "title": "EdgeBench: Unveiling Scaling Laws of Learning from Real-World Environments [pdf]",
+   "url": "https://edge-bench.org/paper.pdf",
+   "source": "hackernews",
+   "published_date": "2026-07-04T01:02:57",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.8,
+   "tags": "training,benchmarks"
   },
   {
    "title": "Show HN: Mlx-serve – LLM inference server for Apple Silicon, written in Zig",
@@ -11659,6 +11921,15 @@
    "tags": "hardware"
   },
   {
+   "title": "The Curved Spacetime of Transformer Architectures",
+   "url": "https://arxiv.org/abs/2511.03060",
+   "source": "hackernews",
+   "published_date": "2025-11-06T14:34:16",
+   "summary": "2 points, 1 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "architecture,attention"
+  },
+  {
    "title": "Code execution with MCP: Building more efficient agents",
    "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
    "source": "anthropic:engineering",
@@ -11693,6 +11964,24 @@
    "summary": "3 points, 0 comments on HackerNews",
    "relevance_score": 0.9,
    "tags": "hardware"
+  },
+  {
+   "title": "A Minimalist Transformer Architecture for Univariate Time Series Forecasting",
+   "url": "https://www.mdpi.com/1999-4893/18/10/645",
+   "source": "hackernews",
+   "published_date": "2025-10-31T16:17:29",
+   "summary": "3 points, 0 comments on HackerNews",
+   "relevance_score": 0.8,
+   "tags": "architecture,llm"
+  },
+  {
+   "title": "An underqualified reading list about the transformer architecture",
+   "url": "https://fvictorio.github.io/posts/underqualified-transformer-reading-list",
+   "source": "hackernews",
+   "published_date": "2025-10-30T16:26:35",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "architecture,attention"
   },
   {
    "title": "How to Kill 2 Monopolies with 1 Tool",
@@ -11884,6 +12173,24 @@
    "tags": "hardware,systems"
   },
   {
+   "title": "We reimagined Transformer architectures inspired by nature's hidden structures",
+   "url": "https://ieeexplore.ieee.org/document/10754699",
+   "source": "hackernews",
+   "published_date": "2025-07-03T06:15:09",
+   "summary": "10 points, 9 comments on HackerNews",
+   "relevance_score": 0.9,
+   "tags": "architecture"
+  },
+  {
+   "title": "JavelinGuard: Low-Cost Transformer Architectures for LLM Security",
+   "url": "https://arxiv.org/abs/2506.07330",
+   "source": "hackernews",
+   "published_date": "2025-06-10T15:59:42",
+   "summary": "29 points, 2 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "architecture,llm"
+  },
+  {
    "title": "NVLink Fusion: Embrace, Extend, Extinguish",
    "url": "https://www.fabricatedknowledge.com/p/nvlink-fusion-embrace-extend-extinguish",
    "source": "hackernews",
@@ -11918,6 +12225,15 @@
    "summary": "2 points, 0 comments on HackerNews",
    "relevance_score": 0.75,
    "tags": "hardware,inference"
+  },
+  {
+   "title": "Mixture-of-Transformers: Sparse and Scalable Architecture for Multi-Modal Models",
+   "url": "https://arxiv.org/abs/2411.04996",
+   "source": "hackernews",
+   "published_date": "2025-05-10T21:41:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "relevance_score": 0.9,
+   "tags": "architecture,multimodal"
   },
   {
    "title": "Implement Flash Attention Back End in SGLang – Basics and KV Cache",
@@ -11981,6 +12297,15 @@
    "summary": "4 points, 1 comments on HackerNews",
    "relevance_score": 0.95,
    "tags": "inference,serving,llm"
+  },
+  {
+   "title": "Ask HN: Any truly multi-modal transformer architectures?",
+   "url": "https://news.ycombinator.com/item?id=43248582",
+   "source": "hackernews",
+   "published_date": "2025-03-04T00:25:20",
+   "summary": "3 points, 4 comments on HackerNews",
+   "relevance_score": 0.85,
+   "tags": "architecture,multimodal"
   },
   {
    "title": "2024 in Post-Transformer Architectures: State Space Models, RWKV NeurIPS 2024 [video]",
