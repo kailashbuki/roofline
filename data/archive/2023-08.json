@@ -1,0 +1,17 @@
+{
+ "month": "2023-08",
+ "count": 1,
+ "articles": [
+  {
+   "title": "How to Build a Distributed Inference Cache with Nvidia Triton and Redis",
+   "url": "https://developer.nvidia.com/blog/how-to-build-a-distributed-inference-cache-with-nvidia-triton-and-redis",
+   "source": "hackernews",
+   "published_date": "2023-08-30T21:55:04",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "importance": 0.4,
+   "why": "Demonstrates distributed caching integration for Triton and Redis, improving LLM serving throughput."
+  }
+ ]
+}

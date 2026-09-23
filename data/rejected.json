@@ -1,5 +1,5 @@
 {
- "count": 377,
+ "count": 385,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -377,6 +377,14 @@
   "https://www.anthropic.com/engineering/multi-agent-research-system",
   "https://www.anthropic.com/engineering/claude-code-best-practices",
   "https://www.anthropic.com/engineering/swe-bench-sonnet",
-  "https://www.anthropic.com/engineering/building-effective-agents"
+  "https://www.anthropic.com/engineering/building-effective-agents",
+  "https://twitter.com/moritzthuening/status/2026025614734430608",
+  "https://www.jasondavies.com/2025/tenstorrent-multiply-int32",
+  "https://github.com/moritztng/tt-boltz",
+  "https://interfaze.ai/",
+  "https://arxiv.org/abs/2601.03290",
+  "https://www.mdpi.com/1999-4893/18/10/645",
+  "https://ieeexplore.ieee.org/document/10754699",
+  "https://www.anthropic.com/engineering/advanced-tool-use"
  ]
 }
