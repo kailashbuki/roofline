@@ -73,7 +73,10 @@
    "published_date": "2026-09-23T15:14:22",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
@@ -93,7 +96,10 @@
    "published_date": "2026-09-23T13:08:59",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Llama.cpp Under the Hood",
@@ -124,7 +130,10 @@
    "published_date": "2026-09-23T09:21:17",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
@@ -133,7 +142,10 @@
    "published_date": "2026-09-23T06:41:41",
    "summary": "overshadowing more efficient GPT6 models from OpenAI",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Transformers now runs llama.cpp quants",
@@ -164,7 +176,10 @@
    "published_date": "2026-09-22T18:00:00",
    "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
@@ -195,7 +210,10 @@
    "published_date": "2026-09-22T17:59:24",
    "summary": "We establish a fully discrete weak-to-strong (W2S) multi-entropy stability theory for arbitrarily high-order finite-volume and discontinuous Galerkin (DG) approximations of the ideal compressible magnetohydrodynamics (MHD) equations on general polytopal meshes, whereby a single numerical update simultaneously satisfies discrete entropy inequalities for any prescribed finite family of convex Harten entropy pairs. Because physical entropies are defined only for positive density and pressure, the central analytical difficulty lies in reconciling discrete entropy stability with positivity preserva",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
@@ -237,7 +255,10 @@
    "published_date": "2026-09-22T17:54:58",
    "summary": "Birnbaum's theorem states that the sufficiency and conditionality principles jointly imply, and are implied by, the likelihood principle. To enable formal certification of the results in Lean, we make the conditionality relation explicit through a finite-sample formulation based on \\cite{Evans2013}. We reformulate the theorem as a statement about classes of statistical procedures that preserve statistical relations, and show that the proof reduces to the propagation of evidential equality along chains of conditionality-related inference bases (experiment--observation pairs). The main results a",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "StableVQ: Practical Guidelines for Stable Vector-Quantized Tokenizer Training",
@@ -257,7 +278,10 @@
    "published_date": "2026-09-22T17:49:30",
    "summary": "This paper investigates the ambiguity of noisy short-arc angles-only orbit determination for a Molniya-orbit case study. Conventional Gauss Initial Orbit Determination followed by Gaussian Least-Squares Differential Correction is first shown to be unreliable under high-noise short-arc conditions, frequently failing to converge or converging to hyperbolic local solutions. To explore the candidate solution space, a Lambert-based initialization procedure is used over a grid of assumed ranges and angular-observation pairs, and the resulting states are refined using nonlinear least-squares optimiza",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
@@ -266,7 +290,10 @@
    "published_date": "2026-09-22T17:46:31",
    "summary": "Thermal Visual Place Recognition (Thermal VPR) maps camera observations to metric poses within a mapped environment, serving as a prerequisite for autonomous navigation. However, thermal VPR suffers from severe environmental dependence, heavy online retraining overheads, and an inability to model dynamic non-linear shifts, causing existing frameworks to fail during online deployment. To achieve robust domain-invariant place recognition, we bridge Analytic Class-Incremental Learning (ACIL) with domain-invariant VPR for the first time, revealing that its gradient-free matrix updates construct a ",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "SARA: SLO-Aware Resource Allocation for Disaggregated Agentic LLM Services",
@@ -330,7 +357,10 @@
    "published_date": "2026-09-22T17:31:06",
    "summary": "We analyze an inexact, proximal trust-region algorithm for minimizing the sum of a smooth nonconvex function and a nonsmooth convex function. Our algorithm leverages the proximal gradient as a benchmark to guarantee global convergence. However, evaluating the proximal gradient involves solving a nonsmooth convex optimization problem that in many applications cannot be performed exactly. As such, we develop a framework that permits inexact evaluations of the proximity operator and we show the proposed inexactness conditions yield descent properties analogous to the exact proximal gradient. We f",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Explicit channels with unbounded gains in classical communication using entangled inputs",
@@ -339,7 +369,10 @@
    "published_date": "2026-09-22T17:27:50",
    "summary": "We construct an explicit family of finite-dimensional quantum channels for which the optimal classical communication rate achievable with product-state codewords and collective decoding tends to zero, while rates achievable using entanglement only within pairs of channel inputs grow without bound.\n  Our construction combines deterministic qudit Clifford unitaries with a binary measurement and classical feedforward, providing a derandomization to Hastings' probabilistic construction. The key ingredient is a careful design of measurement and feedforward process that yields the required one-copy ",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
@@ -392,7 +425,10 @@
    "published_date": "2026-09-22T17:13:21",
    "summary": "Incentive design aims to guide the performance of a system towards a human's intention or preference. We study this problem in a multi-agent system with one leader and multiple followers. Each follower independently solves a mdp to maximize its own expected total return with the same state space and action space. However, the leader's objective depends on the collective best-response policies of all followers. To influence these policies of followers, the leader provides side payments as incentives to individual followers at a cost, aiming to align the collective behaviors of followers with it",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "The Sirens' Song: When Proximal Background Context Overshadows Distant Evidence",
@@ -445,7 +481,10 @@
    "published_date": "2026-09-22T16:51:31",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Claude Opus 5.5",
@@ -454,7 +493,10 @@
    "published_date": "2026-09-22T16:29:05",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "MAGIC: Mixed-Granularity Agent Graphs via Incremental Construction with Dense-Reward Reinforcement Learning",
@@ -474,7 +516,10 @@
    "published_date": "2026-09-22T16:22:54",
    "summary": "Integrating heterogeneous datasets within data lakes is a critical challenge, particularly for semantically related tables that lack the explicit attributes needed to be joined. We study Discovery-Driven Integration, where the relevant sources and their missing relational structure must be discovered before integration. In this setting, unstructured text provides the evidence that connects otherwise disjoint tables. The fundamental challenge is to discover the relationships at a fine-grained level that connect individual rows from different tables through specific sentences. We formalize this ",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Dynamic Slack-Aware Clocking for Near-Threshold Tensor Processing Units (TPUs)",
@@ -516,7 +561,10 @@
    "published_date": "2026-09-22T16:06:22",
    "summary": "Accurate ground-based cloud classification is important for atmospheric monitoring, solar-energy forecasting, aviation weather assessment, and climate observation systems. However, reliable sky-image annotation is time-consuming, especially when cloud types are visually similar or mixed. We study the label efficiency of deep learning for ground-based cloud classification using the Ground-based Cloud Dataset (GCD). Rather than proposing a new architecture, we benchmark three practical strategies under limited annotation budgets: supervised transfer learning, uncertainty-based active learning, a",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "MMAP: Multimodal Missing-Aware Pretraining for Longitudinal Alzheimer's Prediction",
@@ -547,7 +595,10 @@
    "published_date": "2026-09-22T15:45:32",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Foundation model embeddings capture pre-diagnostic changes on screening mammograms",
@@ -610,10 +661,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T15:10:49",
    "summary": "In wireless communication networks, many resource optimization problems are nondeterministic polynomial-time hard (NP-hard) due to their combinatorial nature and high computational complexity. Recently, neutral-atom-based quantum computing has emerged as a promising platform for efficiently solving such problems by leveraging quantum superposition and entanglement. However, its application to wireless communication optimization problems remains largely unexplored. In this paper, we investigate the use of neutral-atom quantum platforms to solve the maximum access problem (MAP), formulated as a ",
-   "tags": "hardware,optimization",
+   "tags": "",
    "area": "other",
-   "importance": 0.5,
-   "why": "Applies neutral-atom quantum optimization to solve NP-hard resource allocation problems in wireless networks."
+   "importance": null,
+   "why": "",
+   "relevance_score": 0.0
   },
   {
    "title": "Toki: Profiling HBM Performance on FPGA Systems with RISC-V Soft Cores and PCIe Host DMA Traffic",
@@ -666,7 +718,10 @@
    "published_date": "2026-09-22T14:42:59",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Not Quite My Tempo: Voice Activity-aware Speech Synthesis for Lip-Synchronous Dubbing",
@@ -675,7 +730,10 @@
    "published_date": "2026-09-22T14:24:10",
    "summary": "Automatic lip-synchronous dubbing requires a speech synthesis model to generate alternating voice and silence patterns in the target language that match the timing of the source clip precisely to ensure an optimal viewing experience. Prior works address this problem by conditioning the speech synthesis process on lip movements extracted from the video signal. In this work, we condition the speech generation on a binary voice-activity signal, which has a lightweight representation and can be produced in multiple ways. We show that the model follows the voice-activity signal with high accuracy w",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Don't let your Memory defy you: Fragmentation-Aware Serverless Allocation with Elastic Memory Locality",
@@ -694,8 +752,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T14:19:16",
    "summary": "Scattered light is common in biomedical images, yet its removal remains challenging. The difficulty arises from three aspects: first, aligned scattered-light-free biomedical ground truth is often unavailable; second, scattering is coupled with weak illumination and sensor-induced noise; and third, many learning-based restoration models are computationally expensive for embedded devices in Internet of Medical Things (IoMT) scenarios. To address these issues, this paper proposes PP-Net, a hybrid physical-prior neural network for biomedical scattered light removal. The proposed method consists of",
-   "tags": "",
-   "area": "other"
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "relevance_score": 0.35,
+   "importance": 0.35,
+   "why": "Introduces a hybrid physical-prior neural network removing scattered light on resource-constrained embedded devices without ground truth."
   },
   {
    "title": "Recursive self-improvement of AI research agents",
@@ -726,7 +787,10 @@
    "published_date": "2026-09-22T13:52:15",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "DeepFEAv2: Deep Learning for Transient Finite Element Analysis Beyond Structured Meshes",
@@ -734,8 +798,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T13:51:17",
    "summary": "Finite Element Analysis (FEA) is widely used for transient mechanical simulations, but its high computational cost limits real-time and high-resolution applications. Deep learning surrogate models can reduce this cost; however, many existing approaches are restricted to steady-state prediction or cannot jointly predict Node- and Element-based Outputs (NEO) over time. The state-of-the-art DeepFEA framework has addressed these issues but remains limited to structured finite element (FE) meshes. To overcome this limitation, this study proposes DeepFEAv2, a deep learning surrogate framework that e",
-   "tags": "",
-   "area": "other"
+   "tags": "architecture",
+   "area": "new-models",
+   "relevance_score": 0.45,
+   "importance": 0.45,
+   "why": "Replaces structured meshes with deep learning surrogate models for joint node and element transient finite element analysis."
   },
   {
    "title": "QuantWM: Temporally Consistent 2-Bit KV Cache Quantization for World Models and Video Generation",
@@ -766,7 +833,10 @@
    "published_date": "2026-09-22T13:37:45",
    "summary": "Podcast #19",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "OMatG-flash: An All-Atom Flow Map with Reinforce Adjoint Matching for Scalable Materials Discovery",
@@ -807,8 +877,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T13:24:30",
    "summary": "Transforming scholarly PDFs into machine-readable fulltext remains a bottleneck for large-scale information systems. Recent vision-based parsers improve accuracy, but need GPUs and may introduce noise into the extracted text. GROBID, a modular font-stream parser running on CPU, is the de-facto standard for structuring scientific articles and underpins several of the largest open scholarly corpora. We pair it with a lightweight CPU detector localising figure, table, and paratext (header, footer, page number) regions, encoded as typed-area masks whose tokens are routed to GROBID's specialised mo",
-   "tags": "",
-   "area": "other"
+   "tags": "inference",
+   "area": "inference-methods",
+   "relevance_score": 0.3,
+   "importance": 0.3,
+   "why": "Applies layout-guided masking to GROBID parser, improving structural PDF ingestion efficiency on CPU."
   },
   {
    "title": "FairMean: Promoting Fairness in Distributed Learning under Label Poisoning Attacks",
@@ -861,7 +934,10 @@
    "published_date": "2026-09-22T13:00:49",
    "summary": "Hey HN! We’re Vincent and Jochen from Sitefire (<a href=\"https:&#x2F;&#x2F;sitefire.ai\">https:&#x2F;&#x2F;sitefire.ai</a>). We have been working together for years, with backgrounds in RL&#x2F;optimization at Stanford and software engineering from Technical University Munich (TUM).<p>With Sitefire (YC W26), we help marketing teams get recommended by AI Search (ChatGPT, Google AI Overviews, AI Mode, Claude, etc.). Our software monitors prompts, sees which web pages get cited, and uses these insig",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
@@ -902,8 +978,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:55:25",
    "summary": "Concept drift, driven by the rapid evolution of Android malware, severely degrades the performance of machine learning detectors. Current adaptation strategies are often reactive, responding only after performance has dropped and imposing a significant manual annotation burden, or they are proactive but rely on unstable adversarial training and incomplete, single-level graph representations. To overcome these limitations, we propose HYDRA (Hybrid Drift Adaptation), a proactive adaptation framework that learns drift-invariant representations from hierarchically structured data. HYDRA first mode",
-   "tags": "",
-   "area": "other"
+   "tags": "architecture",
+   "area": "architecture",
+   "relevance_score": 0.4,
+   "importance": 0.4,
+   "why": "Uses hierarchical graph contrastive learning for proactive concept drift adaptation in Android malware detection."
   },
   {
    "title": "TransBERT: A Framework for Synthetic Translation in Domain-Specific Language Modeling",
@@ -944,8 +1023,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:16:23",
    "summary": "Graph neural networks have achieved strong performance in node classification by aggregating information from graph neighborhoods. However, a single aggregation mechanism may be insufficient to capture diverse structural patterns across graph datasets. Moreover, independently training multiple structural branches can introduce substantial overhead without necessarily producing stable node representations. To address these issues, this paper proposes PreGS, a parameter-transfer-based multi-expert graph neural network framework. PreGS first pretrains a multi-head graph attention network (GAT) an",
-   "tags": "",
-   "area": "other"
+   "tags": "architecture",
+   "area": "architecture",
+   "relevance_score": 0.35,
+   "importance": 0.35,
+   "why": "Employs parameter-transfer across multi-expert graph neural networks to stabilize node classification representations."
   },
   {
    "title": "CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference",
@@ -965,7 +1047,10 @@
    "published_date": "2026-09-22T12:09:08",
    "summary": "The mobility sector is undergoing a paradigm shift driven by advances in Generative Artificial Intelligence. With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide. As Large Language Models (LLMs) are increasingly adopted in mobility, concerns about cybersecurity, privacy, and reliability emerge. Accordingly, this paper surveys current applications and assesses these challenges. Since the European AI Act classifies transportation AI as high risk",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Learning to Fluctuate: Statistical Foundations for Causal Tabular Pretraining",
@@ -984,8 +1069,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:00:07",
    "summary": "Large Language Models (LLMs) have been used in various industries. However, ensuring their compliance with complex laws and regulatory frameworks remains a great challenge. Existing evaluation paradigms mainly rely on static benchmarks that suffer from three severe limitations: First, the compliance rules being used do not comply with the requirements of Artificial Intelligence (AI) laws and regulations; Second, they only handle apparent, explicit compliance risks, leaving implicit and covert compliance risks undetected; Third, they fail to track the systematic propagation of risks along logic",
-   "tags": "",
-   "area": "other"
+   "tags": "benchmarks,llm",
+   "area": "other",
+   "relevance_score": 0.3,
+   "importance": 0.3,
+   "why": "Proposes a dynamic compliance evaluation framework tailored specifically to legal requirements of AI laws."
   },
   {
    "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
@@ -993,8 +1081,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-09-22T12:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/robot-arm-ros-2-node-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"robot-arm-ros-2-node\" width=\"768\" />GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,systems",
+   "area": "inference-engines",
+   "relevance_score": 0.35,
+   "importance": 0.35,
+   "why": "Combines AI agents with NVIDIA Isaac ROS to automate GPU kernel integration in robotics workloads."
   },
   {
    "title": "Domain-Adaptive Pretraining Enhances Water Treatment Semantic Representation for Large-Scale Structured Literature Mining",
@@ -1025,9 +1116,10 @@
    "published_date": "2026-09-22T11:24:04",
    "summary": "Dynamic black-box optimization presents significant challenges for Bayesian Optimization (BO), as the objective function evolves over time, causing optimal locations to shift continuously. Existing dynamic BO (DBO) methods using standard acquisition functions such as Upper Confidence Bound (UCB) fail to explicitly account for temporal variations, leading to suboptimal sample allocation and poor tracking of moving optima. Here, we propose BOBA (Bayesian Optimization through Bayesian Active Inference), a novel acquisition function inspired by free energy principles from active inference that exp",
    "tags": "optimization",
-   "area": "other",
+   "area": "inference-methods",
    "importance": 0.4,
-   "why": "Combines Bayesian active inference with optimization to address temporal shifts in dynamic black-box settings."
+   "why": "Integrates Bayesian active inference into dynamic black-box optimization to handle continuously shifting optima.",
+   "relevance_score": 0.4
   },
   {
    "title": "GeoPair: Geometry-Preserving Cross-Layer Factorization for Training-Free Transformer Compression",
@@ -1090,8 +1182,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T09:24:21",
    "summary": "DAG-based consensus protocols can achieve great throughput and the optimal three-message-delay limit for n = 3f+1 consensus. While two-delay protocols exist, they pay with reduced resilience (requiring 5f+1-style committees) or rely on fallbacks that sacrifice the DAG's high throughput. This paper introduces Hydrozoan, the first DAG protocol with a dual commit path under a hybrid fault model of f Byzantine and c crashed validators, on n = 3f+c+2p+1 validators. Leaders commit in two message delays whenever at most p validators are faulty, and in three otherwise, with no extra messages, no view ",
-   "tags": "",
-   "area": "other"
+   "tags": "systems",
+   "area": "inference-engines",
+   "relevance_score": 0.5,
+   "importance": 0.5,
+   "why": "Implements a dual commit path in DAG consensus to achieve latency-adaptive throughput under hybrid fault models."
   },
   {
    "title": "Beyond Scalar Sensitivity: Activation-Aware Mixed-Precision LLM Quantization with Cross-Layer Refinement",
@@ -1132,8 +1227,11 @@
    "source": "arxiv",
    "published_date": "2026-09-22T08:55:09",
    "summary": "AI-based autonomous agents, typically hosted at data centers, must acquire state information from robots or edge devices in order to issue informed control decisions. Managing uncertainty about the state is particularly consequential in safety-critical settings, in which average-case guarantees are insufficient. In this context, we study a sequential decision maker process that jointly decides which actions to take and when to probe given access to an arbitrary state prediction model. We propose online conformal state probing (OCSP), an action and probing policy that certifies worst-case relia",
-   "tags": "",
-   "area": "other"
+   "tags": "optimization",
+   "area": "inference-methods",
+   "relevance_score": 0.4,
+   "importance": 0.4,
+   "why": "Applies online conformal prediction for risk-aware state probing in safety-critical autonomous agent control."
   },
   {
    "title": "AgenticSizing: A Large Language Model-based Multi-Agent Framework for Analog Circuit Sizing",
@@ -1384,7 +1482,10 @@
    "published_date": "2026-09-22T06:08:39",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Self-Supervised Combinatorial Optimization with Constraints via Frank-Wolfe",
@@ -1437,7 +1538,10 @@
    "published_date": "2026-09-22T04:24:07",
    "summary": "4 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "MiMo-v2.6-Pro: Intelligence, Performance and Price Analysis",
@@ -1468,7 +1572,10 @@
    "published_date": "2026-09-22T00:00:00",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
@@ -1532,7 +1639,10 @@
    "published_date": "2026-09-21T20:12:12",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Transformers Explained Visually",
@@ -1541,7 +1651,10 @@
    "published_date": "2026-09-21T19:43:49",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Computation and Data Movement for Inference",
@@ -1572,7 +1685,10 @@
    "published_date": "2026-09-21T15:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Attention is all you have",
@@ -1581,7 +1697,10 @@
    "published_date": "2026-09-21T14:26:56",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
@@ -1601,7 +1720,10 @@
    "published_date": "2026-09-21T11:56:56",
    "summary": "The expanded form of a testimony I prepared for Congress.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Chasing Speed of Light on TPU v6e",
@@ -1863,7 +1985,10 @@
    "published_date": "2026-09-20T10:40:49",
    "summary": "Almost every model on Bedrock gets six months' notice before it can be pulled. The one Washington just accused gets 45 days, and no stated reason.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "VoltGrid AI: Mitigating GPU cluster dI/dt power surges in software",
@@ -1916,7 +2041,10 @@
    "published_date": "2026-09-19T23:46:42",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Qualcomm’s Adreno X2 GPU",
@@ -1936,7 +2064,10 @@
    "published_date": "2026-09-19T15:42:20",
    "summary": "An &#8220;AI moderate&#8217;s&#8221; view on recent events and the trajectory of frontier models.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "OmniEdu: Open Foundation Models for Learning and Teaching",
@@ -2011,7 +2142,10 @@
    "published_date": "2026-09-18T17:57:08",
    "summary": "Quadrupedal robots are increasingly deployed in environments where locomotion must remain robust to disturbances and constrained terrain. Gait type, such as walking or trotting, is commonly used to characterize quadrupedal locomotion. However, gait type does not uniquely define locomotion, as parameters such as duty factor, speed, and stance width can vary within a single gait type. In this work, we investigate the relationship between these gait parameters using three distinct quadrupedal locomotion control approaches. First, using whole body trajectory optimization with LQR feedback, we show",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Gripper-Aware Automatic Dense Packing of Irregular Objects",
@@ -2020,7 +2154,10 @@
    "published_date": "2026-09-18T17:53:16",
    "summary": "Automatic dense packing is widely desired in warehouse operations but remains a fundamental challenge in robotic manipulation. Existing work on irregular-object packing largely targets simulation with idealized contact, treating the object as an isolated rigid body. The gripper often enters as a discrete, post-hoc feasibility check, if considered at all, and the perception and contact drift accumulated during execution are not addressed. We present a closed-loop pipeline that integrates perception, gripper-aware placement optimization, and force-guided execution on a real manipulator. The opti",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Traffic Sign Recognition for Autonomous Driving Using Branched YOLOv2 and Geometric Features",
@@ -2029,7 +2166,10 @@
    "published_date": "2026-09-18T17:52:00",
    "summary": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are invest",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
@@ -2049,7 +2189,10 @@
    "published_date": "2026-09-18T17:36:00",
    "summary": "In this work, we study asymmetric $(1\\to2)$ quantum cloning for pure states belonging to orbits generated by the orthogonal group. For every dimension $(d\\geq3)$, we determine the full region of achievable pairs of average single-copy fidelities. Using orthogonal covariance and the Brauer algebra, we reduce the optimization over all CPTP maps to a finite-dimensional spectral problem and construct explicit optimal cloning channels. We then apply the general results to four-mode fermionic states in the even-parity sector. Using triality, we identify the fixed-concurrence fermionic families with ",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models",
@@ -2289,7 +2432,10 @@
    "published_date": "2026-09-17T07:28:25",
    "summary": "A dash of cold water keeps the foomers away.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Designing a TPU and optimizing transformer inference on a $100 FPGA",
@@ -2386,7 +2532,10 @@
    "published_date": "2026-09-16T23:20:33",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/classroom-ovrtx-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"classroom-ovrtx\" width=\"768\" />Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
@@ -2505,7 +2654,10 @@
    "published_date": "2026-09-15T20:54:41",
    "summary": "20GW sits inside a restricted local boundary, 1,525MW actually slips, 2.3GW nationwide including New York",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Can Skills Learned in Games Transfer to Real-World Work?",
@@ -2514,7 +2666,10 @@
    "published_date": "2026-09-15T20:11:54",
    "summary": "Good Start Labs trained an AI on a railroad game &#8212; and one version improved at financial research. The difference was the training design.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
@@ -2765,7 +2920,10 @@
    "published_date": "2026-09-13T15:44:38",
    "summary": "417 points, 240 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": ">10x More Efficient Pretraining",
@@ -2873,7 +3031,10 @@
    "published_date": "2026-09-11T17:04:52",
    "summary": "The $11T AI Buildout, Nvidia&#8217;s Backstop Economics, and the Limits of Nvidia&#8217;s Balance Sheet",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Selective Availability",
@@ -2882,7 +3043,10 @@
    "published_date": "2026-09-11T14:58:23",
    "summary": "Three agencies advised American AI providers to degrade answers for accounts they suspect of malicious distillation, subtly enough to &#8220;avoid triggering obvious alerts&#8221;.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Open-Source AI & Open Models Reading List",
@@ -2891,7 +3055,10 @@
    "published_date": "2026-09-11T12:36:25",
    "summary": "How to get up to speed on open models and their implications.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin",
@@ -2966,7 +3133,10 @@
    "published_date": "2026-09-10T15:28:52",
    "summary": "Some quick notes on a truly weird week.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "High-Throughput Structure Prediction with BioNeMo Inference Runtime",
@@ -2986,7 +3156,10 @@
    "published_date": "2026-09-10T14:28:20",
    "summary": "Dumb Science Experiments vs. Money Printing Machines",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Glq a port trellis quantization of large language models as a vLLM plugin",
@@ -3017,7 +3190,10 @@
    "published_date": "2026-09-10T09:46:18",
    "summary": "The PC market is one of the toughest areas for a CPU designer to compete in.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
@@ -3059,7 +3235,10 @@
    "published_date": "2026-09-10T00:01:29",
    "summary": "PyTorch Conference China 2026 brought the PyTorch community together in Shanghai on September 8–9 alongside KubeCon + CloudNativeCon and OpenInfra Summit, following sponsor-hosted co-located events on September 7. Technical discussions...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "To Infinity and Beyond: ThunderKittens Now on NVIDIA Vera Rubin NVL72!",
@@ -3167,7 +3346,10 @@
    "published_date": "2026-09-09T11:01:23",
    "summary": "We&#8217;re <5 years into a compounding revolution which could take a century, and how the AI industry should manage this.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
@@ -3286,7 +3468,10 @@
    "published_date": "2026-09-08T01:00:02",
    "summary": "China&#8217;s leading AI technology companies Alibaba Cloud, Cambricon and Ant Group join the PyTorch Foundation as members Summary Alibaba Cloud and Cambricon joined the PyTorch Foundation as Platinum members, and...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Cambricon Joins the PyTorch Foundation as a Platinum Member",
@@ -3295,7 +3480,10 @@
    "published_date": "2026-09-08T00:59:13",
    "summary": "The PyTorch Foundation, a community-driven hub for open source AI under the Linux Foundation, is announcing today that Cambricon has joined as a Platinum member. Founded in 2016, Cambricon is...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "TPU Inference Externalization Full Steam Ahead - InferenceX",
@@ -3326,7 +3514,10 @@
    "published_date": "2026-09-07T13:05:37",
    "summary": "TL;DR More than 170 students, engineers, researchers, and open-source contributors gathered in Bengaluru for a technical evening hosted by Red Hat and Hugging Face around PyTorch, large-scale inference, reinforcement learning...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Speculative Decoding in vLLM on AMD GPUs",
@@ -3467,7 +3658,10 @@
    "published_date": "2026-09-04T17:12:22",
    "summary": "76 points, 28 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
@@ -3531,7 +3725,10 @@
    "published_date": "2026-09-03T22:36:02",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/kai-scheduler-representation-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"kai-scheduler-representation\" width=\"768\" />Modern AI platforms are no longer a single application behind one login screen. A user may start in a central portal, open a governed dataset, launch a notebook...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Three-LLM: Three.js-based WebGPU LLM inference engine",
@@ -3672,7 +3869,10 @@
    "published_date": "2026-09-02T01:47:13",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles",
@@ -3702,10 +3902,11 @@
    "source": "rss:Hugging Face Blog",
    "published_date": "2026-09-01T21:39:07",
    "summary": "",
-   "tags": "benchmarks,llm",
+   "tags": "",
    "area": "other",
-   "importance": 0.3,
-   "why": "Evaluates the validity and actual constructs measured by current large language model benchmarks."
+   "importance": null,
+   "why": "",
+   "relevance_score": 0.0
   },
   {
    "title": "Korea’s Trillion-Dollar Sovereign AI Investment: Nvidia Wins, Hynix Loses",
@@ -3714,7 +3915,10 @@
    "published_date": "2026-09-01T20:14:32",
    "summary": "Korea hosts a Squid Games, National AI Tournament, the best non-Chinese open source model gets eliminated, why Nvidia needs open source, implications for Hynix and Samsung",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Faiss vs. Turbovec vs. Infino: Comparing 4-bit vector quantization",
@@ -3811,7 +4015,10 @@
    "published_date": "2026-08-31T14:36:33",
    "summary": "Nobody could pay to keep Hugging Face neutral. Nvidia is paying to own it.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "You Don't Need Blackwells for Realtime Video Generation",
@@ -3864,7 +4071,10 @@
    "published_date": "2026-08-30T15:46:22",
    "summary": "OpenAI vs HuggingFace, Container Escapes, Kernel Bypass, Network Policies, Security Keys, Multi-tenant Grafana, and a ClusterMAX 3.0 Preview",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Hot Chips 2026: XCENA and Samsung’s Near-Memory Compute CXL Device",
@@ -4016,7 +4226,10 @@
    "published_date": "2026-08-26T18:57:02",
    "summary": "4 points, 1 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Ultrafast Frontier Inference – Cerebras Hot Chips 2026",
@@ -4168,7 +4381,10 @@
    "published_date": "2026-08-25T10:13:46",
    "summary": "AI data centers are the foreign bases of the US&#8211;China tech rivalry, except that the host now pays the rent.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Hot Chips 2026: Intel’s Diamond Rapids",
@@ -4287,7 +4503,10 @@
    "published_date": "2026-08-24T15:02:01",
    "summary": "16 points, 8 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Hot Chips 2026: Samsung and HBM Base Die Opportunities",
@@ -4428,7 +4647,10 @@
    "published_date": "2026-08-21T10:54:00",
    "summary": "Algorithms & Theory",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Pretraining a Mini Kimi K3",
@@ -4470,7 +4692,10 @@
    "published_date": "2026-08-21T00:00:00",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Measuring benchmark optimization in speech recognition",
@@ -4479,7 +4704,10 @@
    "published_date": "2026-08-21T00:00:00",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "We replaced our 223-node agent graph with a single open-source LLM",
@@ -4532,7 +4760,10 @@
    "published_date": "2026-08-20T17:27:43",
    "summary": "DeepSeek gave the agent harness away. OpenAI is taxing itself to watch its own. SpaceX paid $60 billion for one. All three just told you where the value went.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
@@ -4761,7 +4992,10 @@
    "published_date": "2026-08-17T15:07:49",
    "summary": "Nvidia wants you building your own model, not buying from Anthropic/OpenAI.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Groq Valued at $3.5B in Funding Round After Nvidia Deal",
@@ -4770,7 +5004,10 @@
    "published_date": "2026-08-17T15:07:07",
    "summary": "3 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
@@ -4823,7 +5060,10 @@
    "published_date": "2026-08-16T22:27:59",
    "summary": "American Grid design needs an overhaul, Why it is good to be full of cold air.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Cutting GPU Inference Energy Use Without Touching the Model",
@@ -4920,7 +5160,10 @@
    "published_date": "2026-08-13T17:08:01",
    "summary": "3 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Spec Sheets Are Not Kernels: INT8 Availability on Nvidia Blackwell Ultra",
@@ -4973,7 +5216,10 @@
    "published_date": "2026-08-12T13:01:16",
    "summary": "Reflections on AI's writing ability and how AI models get more capable.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Empty shelves or lost keys? Recall is the bottleneck for parametric factuality",
@@ -5025,8 +5271,11 @@
    "source": "rss:Google AI Blog",
    "published_date": "2026-08-11T17:04:00",
    "summary": "Health & Bioscience",
-   "tags": "",
-   "area": "other"
+   "tags": "multimodal,llm",
+   "area": "new-models",
+   "relevance_score": 0.5,
+   "importance": 0.5,
+   "why": "Extends AMIE diagnostics to multi-modal audio-visual inputs for clinical consultation tasks."
   },
   {
    "title": "Talking with Synopsys about the Physics of Chip Design at DAC 2026",
@@ -5035,7 +5284,10 @@
    "published_date": "2026-08-11T16:52:16",
    "summary": "Hello you fine Internet folks,",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
@@ -5176,7 +5428,10 @@
    "published_date": "2026-08-08T15:36:09",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "KV Cache vs. Prompt Cache: What's the Difference, and How Are They Related?",
@@ -5218,7 +5473,10 @@
    "published_date": "2026-08-07T02:32:44",
    "summary": "or why DeepMind's long term failure is GCP's short term gain",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "With software alone, one B200 beats the LPU and gets close to Cerebras",
@@ -5249,7 +5507,10 @@
    "published_date": "2026-08-06T08:17:57",
    "summary": "14 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "",
@@ -5280,7 +5541,10 @@
    "published_date": "2026-08-05T19:19:22",
    "summary": "Hello you fine Internet folks,",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "From Google Brain to Google Drain",
@@ -5289,7 +5553,10 @@
    "published_date": "2026-08-05T18:22:33",
    "summary": "What six weeks of exits say about the model Google hasn&#8217;t shipped.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "New 16T parameter model with a 4B token context window released",
@@ -5342,7 +5609,10 @@
    "published_date": "2026-08-04T17:44:12",
    "summary": "OVH told Canada how to get the data it refused to hand over. On August 18, the European Union stops making the argument OVH is making in court.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "I built an LLM debugger for fine-tuning failures",
@@ -5384,7 +5654,10 @@
    "published_date": "2026-08-03T14:03:08",
    "summary": "Scaling our curation and measurement of the open ecosystem.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Run MiniMax-H3 Locally with SGLang Diffusion on 2× RTX 5090s or 1× RTX Pro 6000",
@@ -5536,7 +5809,10 @@
    "published_date": "2026-07-31T01:39:23",
    "summary": "Hello you fine Internet folks,",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "",
@@ -5578,7 +5854,10 @@
    "published_date": "2026-07-29T22:09:56",
    "summary": "The Labor Problem and Modularization to the Rescue",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "China's Moonshot AI reportedly used Nvidia Blackwell chips for training Kimi K3",
@@ -5609,7 +5888,10 @@
    "published_date": "2026-07-29T12:01:08",
    "summary": "On 30 June, AWS published two announcements pointing in opposite directions. In July, it closed its AGI Lab. All three were the same decision.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Show HN: I run 30B 22tok/s, 109tok/s not novel,6GB/16GB RAM overcoming llama.cpp",
@@ -5805,7 +6087,10 @@
    "published_date": "2026-07-24T17:15:27",
    "summary": "6 points, 10 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Scaling Video Pretraining with Imagination Models",
@@ -5880,7 +6165,10 @@
    "published_date": "2026-07-23T11:06:52",
    "summary": "Washington spent last week letting it be known it might ban Chinese AI models, so this week, everyone is an open-models expert.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Vera Rubin NVL72 vs GB200 NVL72? Inference TCO & Architecture Analysis",
@@ -5910,8 +6198,11 @@
    "source": "rss:Google AI Blog",
    "published_date": "2026-07-22T21:32:00",
    "summary": "General Science",
-   "tags": "",
-   "area": "other"
+   "tags": "llm,multimodal",
+   "area": "new-models",
+   "relevance_score": 0.4,
+   "importance": 0.4,
+   "why": "Proposes a conversational agent framework tailored specifically for everyday medical symptom assessment."
   },
   {
    "title": "Make Long-Running NVIDIA TensorRT Engine Builds Observable and Cancelable in Python or C++",
@@ -5975,7 +6266,10 @@
    "published_date": "2026-07-22T02:41:34",
    "summary": "Meta Infrastructure has become bloated, with middle managers expending resources on over-engineered technology solutions that lose sight of broader organizational needs.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Google just bet its inference future on a chip built for one model",
@@ -6072,7 +6366,10 @@
    "published_date": "2026-07-20T15:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-omniverse-rtx-sensor-ximulation.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-omniverse-rtx-sensor-ximulation\" width=\"600\" />Developers building 3D, design, simulation, robotics, and industrial digital twin applications need ways to bring physical AI capabilities into the tools and...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Show HN: A fast, free AI text humanizer powered by Groq Llama 3.3",
@@ -6081,7 +6378,10 @@
    "published_date": "2026-07-20T05:05:26",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
@@ -6101,7 +6401,10 @@
    "published_date": "2026-07-20T00:00:00",
    "summary": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Petals: Collaborative Inference and Fine-Tuning of Large Models",
@@ -6176,7 +6479,10 @@
    "published_date": "2026-07-16T22:59:09",
    "summary": "<img alt=\"Path-Tracing\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"600\" />Capcom's RE ENGINE team set out to bring path tracing into two shipping titles at once, Resident Evil Requiem and PRAGMATA, each with a different visual...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Roboflow Serverless Inference: A Thousand Models on a Shared GPU Fleet",
@@ -6195,8 +6501,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-07-16T16:03:35",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-metropolis-nemoclaw-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-metropolis-nemoclaw\" width=\"768\" />A video analytics AI agent that can perceive, reason, and act based on massive amounts of video footage must be integrated with existing workflows and...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,serving,multimodal",
+   "area": "inference-engines",
+   "relevance_score": 0.2,
+   "importance": 0.2,
+   "why": "Explains integration patterns for streaming multimodal video AI pipelines into enterprise architectures using specialized frameworks."
   },
   {
    "title": "Scaling Agentic AI Factories Through Extreme Co-Design with NVIDIA BlueField",
@@ -6248,8 +6557,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-07-15T23:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/deepstream-featured.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"deepstream-featured\" width=\"600\" />Developers building video analytics applications across large spaces must track the same object as it moves between camera views. Single-camera 2D tracking...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,systems",
+   "area": "inference-engines",
+   "relevance_score": 0.2,
+   "importance": 0.2,
+   "why": "Details multi-camera object tracking algorithms using DeepStream pipelines for real-time edge computer vision systems."
   },
   {
    "title": "Develop Lightweight USD Runtimes Faster with AI Agents",
@@ -6258,7 +6570,10 @@
    "published_date": "2026-07-15T21:57:23",
    "summary": "<img alt=\"A Gif in a warehouse.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nanousd.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nanousd\" width=\"600\" />OpenUSD is an open, extensible framework that provides a common scene description language for physical AI. It enables teams to bring CAD data, simulation...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "What If the Harness Comes Before Pretraining? A Data Flywheel Perspective",
@@ -6322,7 +6637,10 @@
    "published_date": "2026-07-15T06:50:49",
    "summary": "279 points, 264 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Together AI brings Thinking Machines Lab’s new model Inkling on day 0",
@@ -6463,7 +6781,10 @@
    "published_date": "2026-07-13T17:15:27",
    "summary": "In multi-objective combinatorial optimization, unsupported non-dominated points typically outnumber supported points and are often significantly more challenging to compute. Recent studies show that extreme supported non-dominated points provide high-quality representations of the non-dominated set for certain binary problems. We demonstrate that this observation does not generalize to capacitated network optimization problems: representation quality decreases with increasing arc capacities, whereas supported non-dominated points consistently provide high-quality representations with respect t",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Optimizing MiniMax M3 Sparse Attention on Nvidia Blackwell",
@@ -6549,9 +6870,10 @@
    "published_date": "2026-07-12T01:08:17",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/robot_grid_2k_3x_16s_600x338.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"robot_grid_2k_3x_16s_600x338\" width=\"600\" />Robotics foundation models have made remarkable progress. Today's best systems can follow natural language instructions to pick, place, sort, and manipulate a...",
    "tags": "benchmarks,multimodal",
-   "area": "other",
-   "importance": 0.4,
-   "why": "Establishes evaluation methodologies for general-purpose robotic policies in deployment."
+   "area": "training",
+   "importance": 0.3,
+   "why": "Proposes evaluation benchmarks and methodologies for testing general-purpose robotic foundation models in physical environments.",
+   "relevance_score": 0.3
   },
   {
    "title": "Show HN: Reame – a CPU inference server that gets faster as it runs",
@@ -6714,7 +7036,10 @@
    "published_date": "2026-07-08T06:04:28",
    "summary": "Anthropic&#8217;s Opportunity is Theirs to Lose",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Open, convenient and predictable: Introducing Provisioned Throughput",
@@ -6745,7 +7070,10 @@
    "published_date": "2026-07-07T17:00:00",
    "summary": "<img alt=\"An image of a 6G network.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/telco-tech-blog-header-ai-native-ran-blog-3840x2160-5427300-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"telco-tech-blog-header-ai-native-ran-blog-3840x2160-5427300\" width=\"768\" />Spectrum is one of the most valuable assets in wireless communications. Over the last 30 years, telecom operators in the US have spent more than $240B to...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Building an Analysis AI Agent for Industrial Alarm Management with NVIDIA Nemotron",
@@ -6753,8 +7081,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-07-07T17:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/networked-system-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"networked-system\" width=\"768\" />Industrial machinery generates more alarms than technicians can triage. For each important alarm requiring follow-up, the technician pulls historical context,...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,llm",
+   "area": "inference-engines",
+   "relevance_score": 0.2,
+   "importance": 0.2,
+   "why": "Presents an operational pipeline for deploying domain-specific large language models for industrial event triage."
   },
   {
    "title": "NVIDIA Vera CPU Boosts AI Factory Throughput to Accelerate Agentic Workloads",
@@ -6785,7 +7116,10 @@
    "published_date": "2026-07-06T21:53:44",
    "summary": "Over 7T AI debt by 2029, There can be no Neoclouds without the Trinity. Nvidia's Backstop Economics Explained. AI Debt Needs Quantified. Nvidia's Objective is to Broaden Compute Access, Develop AI Financing, Grow Neoclouds.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
@@ -6816,7 +7150,10 @@
    "published_date": "2026-07-06T13:15:20",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "The Backstop Has a Name Now - part 2",
@@ -6825,7 +7162,10 @@
    "published_date": "2026-07-06T09:05:17",
    "summary": "How Nvidia finances a cloud tells you what it thinks the cloud is worth. CoreWeave and Nebius got equity. Sharon AI got a revenue-share.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "EdgeBench: Unveiling scaling laws of (AI) learning from real-world environments",
@@ -6845,7 +7185,10 @@
    "published_date": "2026-07-06T06:03:45",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "AKM-CLR – pre-inference governance for vLLM-style LLM serving",
@@ -6865,7 +7208,10 @@
    "published_date": "2026-07-05T15:29:00",
    "summary": "28 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "AMD pivots from HBM to LPDDR5X for new Versal Gen 2 memory on package chips",
@@ -6885,7 +7231,10 @@
    "published_date": "2026-07-04T06:09:31",
    "summary": "Nvidia is handing back tens of billions to shareholders. Now it&#8217;s offering to finance the customers who can&#8217;t afford its chips.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "EdgeBench: Unveiling Scaling Laws of Learning from Real-World Environments [pdf]",
@@ -6916,7 +7265,10 @@
    "published_date": "2026-07-02T22:18:08",
    "summary": "Zuck Takes Plan B? SpaceX 2.0, Bedrock 2.0, MSL Isn't Giving Up, Scaling RecSys by 10x... ClusterMAX ranking coming soon?",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Hardware-Rooted AI Security That Won’t Slow You Down",
@@ -6925,7 +7277,10 @@
    "published_date": "2026-07-02T21:25:42",
    "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/02/cybersecurity-ai-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cybersecurity-ai-featured\" width=\"768\" />AI has transformed how organizations operate, driving unprecedented levels of productivity and innovation. However, AI adoption can be impeded by concerns...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More",
@@ -6967,7 +7322,10 @@
    "published_date": "2026-07-01T00:00:00",
    "summary": "We raised $800M to accelerate the shift to open-source AI. Here's why the economics of closed models don't scale, and what we're building next.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "TokenBudgeting: Our Conversations with Enterprises on Token Spend",
@@ -6976,7 +7334,10 @@
    "published_date": "2026-06-30T18:32:39",
    "summary": "Was Widespread TokenMaxxing Ever Really Here?",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Designing GPU-Accelerated Query Engines with NVIDIA GQE",
@@ -7040,7 +7401,10 @@
    "published_date": "2026-06-29T15:50:13",
    "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Factory-Secure-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Factory-Secure\" width=\"768\" />AI agents are quickly moving beyond chat. They inspect code, run tests, read documents, search knowledge bases, query internal systems, and operate for hours on...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "What happens when you run a CUDA kernel?",
@@ -7093,7 +7457,10 @@
    "published_date": "2026-06-28T17:03:07",
    "summary": "An assessment of the open ecosystem and the motivations behind releasing models",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Too Dangerous for You, Free for Everyone",
@@ -7102,7 +7469,10 @@
    "published_date": "2026-06-28T14:56:19",
    "summary": "America locked up its best models. Europe regulates a frontier it can&#8217;t build. China gives its best to the world and is winning.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Using Local Coding Agents",
@@ -7111,7 +7481,10 @@
    "published_date": "2026-06-27T11:21:58",
    "summary": "Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
@@ -7131,7 +7504,10 @@
    "published_date": "2026-06-26T19:00:45",
    "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/genai-press-project-aiq-3503101-1920x1080-1-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-press-project-aiq-3503101-1920x1080\" width=\"768\" />AI agents have changed a lot in the last two years. The first could only answer one question at a time. Then came multi-turn chat, where the model could keep...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Creating the NVIDIA Nemotron 3 Ultra NVFP4 Checkpoint with NVIDIA Model Optimizer",
@@ -7151,7 +7527,10 @@
    "published_date": "2026-06-25T22:25:51",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/descriptor-heap-cube.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"descriptor-heap-cube\" width=\"600\" />Shaders are GPU programs that process visual data—such as rays, pixels, geometry, and textures—to produce specific rendering effects. Shaders find necessary...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "US Grid Constraints: Towards 40GW+ of Behind-The-Meter Datacenter by 2028?",
@@ -7193,7 +7572,10 @@
    "published_date": "2026-06-25T16:38:18",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-14-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />AI companions in games have long been constrained by fixed dialogue. PUBG Ally is a different kind of system. Built by KRAFTON for PUBG: BATTLEGROUNDS, this AI...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "TokenSpeed-Kernel: Portable APIs and High-Performance Kernels for Multi-Silicon LLM Inference",
@@ -7224,7 +7606,10 @@
    "published_date": "2026-06-24T18:49:30",
    "summary": "13 points, 1 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Co-Packaged Optics (CPO) – Scaling with Light for the Next Wave of Interconnect",
@@ -7310,7 +7695,10 @@
    "published_date": "2026-06-23T13:30:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/hc-bonemo-agent-toolkit-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hc-bonemo-agent-toolkit-1920x1080\" width=\"768\" />AI scientists are emerging as a new interface for scientific computing. These agents can read papers, write code, generate hypotheses, call APIs, inspect files,...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Man who built Groq handed its tech to Nvidia, now his old company raised $650M",
@@ -7319,7 +7707,10 @@
    "published_date": "2026-06-23T12:01:01",
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "How Telcos Build Autonomous Networks with Agentic AI",
@@ -7328,7 +7719,10 @@
    "published_date": "2026-06-23T06:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/telco-tech-blog-tm-forum-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"telco-tech-blog-tm-forum-1920x1080\" width=\"768\" />Telecom operators are adopting AI across network operations, customer care, and back-office workflows, but most are still early in the journey to autonomy. In...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "ParallelKernelBench: Frontier LLMs can't write fast multi-GPU kernels (yet)",
@@ -7381,7 +7775,10 @@
    "published_date": "2026-06-22T15:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />When AlphaFold2 revolutionized drug discovery in 2020, its success relied entirely on the roughly 170,000 protein structures collected by scientists since 1971...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "GLM-5.2 is the step change for open agents",
@@ -7423,7 +7820,10 @@
    "published_date": "2026-06-22T07:23:56",
    "summary": "Europe moved twice on cloud sovereignty this month. One proposal makes the American duopoly easier to move within. The other grades everything about a cloud except the chip it runs on.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Softmax-free ~354M: tile-skip kernels for long-context VRAM savings (sparse)",
@@ -7465,7 +7865,10 @@
    "published_date": "2026-06-19T13:02:47",
    "summary": "This post was originally an op-ed co-authored with Kevin Xu of Interconnected for a general, non-technical audience.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "From Minutes to Seconds: LLM-Guided Autotuning for Helion Kernels",
@@ -7496,7 +7899,10 @@
    "published_date": "2026-06-18T11:01:42",
    "summary": "Europe built the most ambitious AI enforcer in the world. It still has to ask the labs how to grade them.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Qwen and Fable: An open-weights agentic coding model. 35B Mixture-of-Experts",
@@ -7527,7 +7933,10 @@
    "published_date": "2026-06-16T22:30:00",
    "summary": "<img alt=\"An image of a scientist using XR glasses.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AR-Glasses-e1781633499339-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AR-Glasses\" width=\"768\" />Developers building for AR glasses and wearable devices face an infrastructure gap. The hardware is ready, but creating AI experiences requires integrating live...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Build Your Own Transaction Foundation Model for Financial Intelligence",
@@ -7536,7 +7945,10 @@
    "published_date": "2026-06-16T20:30:08",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Every swipe, transfer, and payment on a modern financial network encodes a pattern of human behavior. Transaction data is one of the richest signals an...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
@@ -7567,7 +7979,10 @@
    "published_date": "2026-06-16T17:56:08",
    "summary": "A fluid system is 'globally stable' if all initial conditions eventually converge to the same state. Since Reynolds (1895) and Orr (1907), the standard way to show global stability has been the energy method, which uses the fluctuation energy as a Lyapunov function. However, the energy method fails whenever transient energy growth is possible, so it often yields overly strict stability criteria. The first broadly applicable alternative has recently been introduced (Goulart & Chernyshenko 2012; Fuentes et al. 2022), using polynomial optimization to construct non-quadratic Lyapunov functions. Un",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Adaptive Volumetric Mechanical Property Fields Invariant to Resolution",
@@ -7587,7 +8002,10 @@
    "published_date": "2026-06-16T17:53:06",
    "summary": "We elucidate the sources of information gain in weakly non-Gaussian cosmological fields at the field- vs. summary-statistic-level in a controlled setting. Specifically, we compare field-level inference (FLI) with the standard power spectrum plus bispectrum (P${+}$B), and a family of composite-operator correlators (OCs) built from auto- and cross-spectra of local powers of the galaxy density field. The forward model is a linear density field with a single local quadratic coupling $λ$ and Gaussian noise; this minimal nonlinear setup interpolates between a purely Gaussian dataset ($λ=0$) and a no",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
@@ -7617,8 +8035,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-06-16T17:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-game-character.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-game-character.\" width=\"600\" />NVIDIA RTX technologies are deeply integrated into Unreal Engine 5 through the NVIDIA RTX Branch of Unreal Engine and the NVIDIA DLSS Unreal Engine plugin. This...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "relevance_score": 0.4,
+   "importance": 0.4,
+   "why": "Integrates RTX technology with game engines for on-device AI agent deployment."
   },
   {
    "title": "How to Optimize Transformer-Based Models for Low-Precision Training",
@@ -7715,7 +8136,10 @@
    "published_date": "2026-06-15T12:20:10",
    "summary": "A US export order pulled Anthropic&#8217;s best model from every customer on earth in one evening. The thousands of models built to refuse nothing stayed online.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
@@ -7812,7 +8236,10 @@
    "published_date": "2026-06-12T17:50:49",
    "summary": "Lehner (1999) derived elegant formulas for the operator norm $\\|\\mathfrak{X}\\|$ of operators of the form $\\mathfrak{X} = \\mathbf{A}_0 \\otimes \\mathfrak{1} + \\sum_{i = 1}^n \\mathbf{A}_i \\otimes \\mathfrak{m}_i$, also easily generalized to the spectral edge $λ_{\\max}(\\mathfrak{X})$, in terms of nonlinear optimization problems over positive definite matrices. Here the $\\mathbf{A}_i$ are finite-dimensional Hermitian matrices, the $\\mathfrak{m}_i$ are either free semicircular or free Rademacher families of operators, and $\\mathfrak{1}$ is the identity operator. We first show that both of Lehner's no",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Impact of 21-cm foreground mitigation strategies on reionization power spectrum constraints",
@@ -7821,7 +8248,10 @@
    "published_date": "2026-06-12T17:47:06",
    "summary": "The 21-cm signal probes the intergalactic medium during the Epoch of Reionization (EoR) but is overwhelmed by astrophysical foregrounds orders of magnitude stronger than the cosmological signal. We evaluate two mitigation strategies: (i) Foreground Avoidance, restricting analysis to the EoR window in Fourier space, and (ii) Foreground Removal via Gaussian Process Regression, which exploits spectral smoothness to statistically separate contaminants and reclaim modes within the contaminated wedge. Both introduce systematic biases of up to $\\approx$1$σ$ in astrophysical parameters such as the min",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Optimal Hidden-Target Learning for Online Inventory Optimization on General Convex Sets",
@@ -7830,7 +8260,10 @@
    "published_date": "2026-06-12T17:45:29",
    "summary": "Online inventory optimization (OIO) is online convex optimization with physical memory: inventory carryover makes the feasible action set depend on the past. A natural principle, used in stochastic inventory learning and recently in OIO under a single linear capacity constraint, is to maintain a hidden target chosen by an online learner and implement its projection onto the currently feasible order-up-to set. We prove that this simple principle is optimal for OIO on arbitrary bounded convex capacity sets. With online gradient descent as the base learner, the method improves the best known regr",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Primal Bootstrap for Pion Scattering at Large-N",
@@ -7839,7 +8272,10 @@
    "published_date": "2026-06-12T17:42:05",
    "summary": "We introduce a basis for tree-level meromorphic scattering amplitudes suitable for describing pion scattering in the large-N limit. The basis is constructed as linear combinations of Lovelace-Shapiro-like amplitudes with varying Regge slopes and intercepts. The resulting amplitudes satisfy by construction the fundamental requirements of analyticity, crossing symmetry, and Regge behavior. We analyze their behavior in specific kinematical regimes, including the high-energy fixed-angle limit. We also show that finite linear combinations of our basis elements need not violate unitarity. Nonetheles",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "When to Write and When to Suppress: Route-Specialized Dual Adapters for Memory-Assisted Knowledge Editing",
@@ -7880,8 +8316,11 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:10:58",
    "summary": "Robust machine learning and optimization rely on the uncertainty model choice. We investigate which uncertainty directions a model must cover when defined by a finite dictionary and a budget constraint. Selecting a subset forms an atomic uncertainty set with a closed form support function, yielding tractable robust programs for affine objectives. We propose a data driven selection rule based on a coverage objective over evaluation directions, including gradients, adversarial perturbations, or shifts observed on held out data. We prove this objective is monotone and submodular, supporting a gre",
-   "tags": "",
-   "area": "other"
+   "tags": "optimization",
+   "area": "training",
+   "relevance_score": 0.4,
+   "importance": 0.4,
+   "why": "Proposes a data-driven sparse design rule for affine robust optimization uncertainty sets."
   },
   {
    "title": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
@@ -7901,7 +8340,10 @@
    "published_date": "2026-06-12T07:09:24",
    "summary": "Three borrowers, three answers, seventy-two hours. The AI debt boom did not slow down last week. It got priced.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Mixture-of-Experts (Moe), Explained: Why \"Active Parameters\" Decide What Runs",
@@ -7932,7 +8374,10 @@
    "published_date": "2026-06-11T14:50:55",
    "summary": "Intel's woes are behind them. The heavy spending is ahead of them. Why an equity issuance in a hot equity market could make Intel so much better sooner.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Nvidia Won the Cloud. Now It Wants the Laptop.",
@@ -8007,7 +8452,10 @@
    "published_date": "2026-06-10T00:00:00",
    "summary": "Together AI has earned ISO 27001:2022 certification, validating our commitment to enterprise-grade security for production AI workloads.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "AutoMegaKernel: Compiling a LLM into a single CUDA kernel",
@@ -8148,7 +8596,10 @@
    "published_date": "2026-06-09T17:36:06",
    "summary": "Assistive mobility and manipulation platforms have received increasing attention as a means of restoring independence to individuals with disabilities. While effective for many basic activities of daily living (ADLs), a significant percentage of everyday tasks such as opening a jar, pouring a liquid, lifting a tray, or basic meal preparation, is fundamentally bimanual and remains out of reach for any single-arm system. Adding a second arm to a wheelchair is impractical, due to the additional power draw, cost, and the loss of space required for transfers and mobility. We instead propose a heter",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Efficiently Learning Drifting Halfspaces with Massart Noise",
@@ -8157,7 +8608,10 @@
    "published_date": "2026-06-09T17:35:18",
    "summary": "We study the problem of learning a drifting concept in the presence of Massart noise. In this framework, an online learner has access to a history of independent samples whose labels are noisy versions of a target concept that may change from round to round. The goal is to output, in each round, a hypothesis with small prediction error. We study the complexity of this learning problem for the fundamental class of margin-separable linear classifiers (halfspaces). On the positive side, we give a computationally efficient learner achieving error $η+ \\tilde O(Δ^{1/3}/γ)$, where $η$ upper bounds th",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
@@ -8177,7 +8631,10 @@
    "published_date": "2026-06-09T17:25:38",
    "summary": "While fuzzing effectively catches crashes, its shallow oracles often miss semantic drifts and optimization-related errors in data-intensive scalable computing (DISC) frameworks. Property-based testing (PBT) addresses this limitation by checking general semantic invariants across diverse workloads and inputs, rather than relying on specific expected outputs. However, systematically operationalizing PBT for DISC systems remains difficult because it requires both reusable property definitions and effective instantiation into valid workloads and data.\n  We present DiscPBT, a property-based testing",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Robust Regression of General ReLUs with Queries",
@@ -8186,7 +8643,10 @@
    "published_date": "2026-06-09T17:24:47",
    "summary": "We study the task of agnostically learning general (as opposed to homogeneous) ReLUs under the Gaussian distribution with respect to the squared loss. In the passive learning setting, recent work gave a computationally efficient algorithm that uses $poly(d,1/ε)$ labeled examples and outputs a hypothesis with error $O(opt)+ε$, where $opt$ is the squared loss of the best fit ReLU. Here we focus on the interactive setting, where the learner has some form of query access to the labels of unlabeled examples. Our main result is the first computationally efficient learner that uses $d polylog(1/ε)+\\t",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Can LLMs Beat Classical Hyperparameter Optimization Algorithms?",
@@ -8228,7 +8688,10 @@
    "published_date": "2026-06-09T13:49:34",
    "summary": "The &#8364;93 billion headline is mostly one company's pledge. The pledge is mostly a ceiling. The balance sheet beneath it is the most concentrated in AI.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "DeepSeekV4 1.6T Day 0 to Day 43 Performance Over Time - Huawei, GB300 NVL72, MI355X, B200",
@@ -8259,7 +8722,10 @@
    "published_date": "2026-06-08T16:35:36",
    "summary": "The Fastest Iteration Cycle In Next-Gen Robotics Should See Unprecedented Acceleration",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "ESMFold 2 has the highest throughput on Tenstorrent AI processors",
@@ -8345,7 +8811,10 @@
    "published_date": "2026-06-03T06:38:57",
    "summary": "A deputy in the president's own party admitted who wrote his amendments. The moat just confessed.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "With Nvidia Groq 3, the Era of AI Inference Is (Probably) Here (⌛ March 2026)",
@@ -8376,7 +8845,10 @@
    "published_date": "2026-06-02T17:59:59",
    "summary": "Imaging a quantum many-body system requires probes that resolve the coordinates of its constituents in sufficiently large event samples, allowing measurements of correlation functions [1-4]. High-energy nuclear collisions provide this opportunity on the nuclear scale [5], enabling features of colliding ions, such as their deformation, to be probed through particle correlation observables [6, 7]. However, a quantitative extraction of the correlation properties of nuclei from these measurements is still lacking. Here we show that this is possible for the nucleus $^{129}$Xe using Bayesian inferen",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "PixVOD: Pixel-Distributed Direct Visual Odometry and Depth Estimation",
@@ -8384,8 +8856,11 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:59:22",
    "summary": "Images composed of 2D pixel arrays are the standard input to computer vision algorithms, yet many underlying computations can be distributed across pixels. Transmitting raw, redundant, and noisy pixel data off the sensor remains inefficient, motivating a shift toward focal-plane sensor-processors that perform a significant part of the computation directly within each pixel. We envision pixels synthesizing higher-level signals locally, reducing downstream load, and providing richer inputs for higher-level vision tasks.\n  We propose a fully parallelizable form of visual odometry and depth estima",
-   "tags": "",
-   "area": "other"
+   "tags": "hardware,architecture",
+   "area": "silicon",
+   "relevance_score": 0.65,
+   "importance": 0.65,
+   "why": "It replaces off-sensor data transmission with in-pixel processing architectures for visual odometry."
   },
   {
    "title": "Video-Mirai: Autoregressive Video Diffusion Models Need Foresight",
@@ -8438,7 +8913,10 @@
    "published_date": "2026-06-02T17:49:58",
    "summary": "Aggregated relational data (ARD) consists of survey responses to questions of the form ``how many people do you know who~$X$?'' and is widely used in survey statistics for indirect inference about populations and social networks. The dominant ARD inference target is hidden-population size estimation via the Network Scale-Up Method (NSUM), but ARD is also used for personal-network-size estimation, mixing-pattern recovery, and inference about latent network structure. Bayesian inference for ARD almost universally assumes that, conditional on a respondent's degree, the counts reported for differe",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Introduction to stochastic gradient methods",
@@ -8447,7 +8925,10 @@
    "published_date": "2026-06-02T17:40:46",
    "summary": "These lecture notes provide an introduction to first-order optimization methods with a particular emphasis on stochastic gradient methods. We begin with deterministic gradient based methods for unconstrained optimization and study their convergence under standard assumptions such as smoothness, convexity, strong convexity, and the Polyak-Lojasiewicz condition. We then turn to stochastic approximation and stochastic gradient descent, motivated by empirical and expected risk minimization in machine learning. The main focus is on convergence theory: we discuss almost sure convergence and converge",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "q0: Primitives for Hyper-Epoch Pretraining",
@@ -8478,7 +8959,10 @@
    "published_date": "2026-06-02T17:25:53",
    "summary": "In the coming years, the number of discovered active galactic nuclei (AGN) is expected to increase significantly due to upcoming spectroscopic surveys. This growth will challenge current analysis and modeling techniques, requiring scalable methods for large, heterogeneous datasets with diverse signal-to-noise ratios, spectral resolutions, and host-galaxy contamination. We present SHEAP (Spectral Handling and Estimation of AGN Parameters), a spectral-fitting framework designed to analyze large AGN samples efficiently while preserving physical interpretability, reproducibility, and robust uncert",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Value-Aware Stochastic KV Cache Eviction for Reasoning Models",
@@ -8509,7 +8993,10 @@
    "published_date": "2026-06-02T16:00:00",
    "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" />AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Show HN: Piqc – GPU waste scanner for LLM inference clusters",
@@ -8562,7 +9049,10 @@
    "published_date": "2026-06-02T01:05:29",
    "summary": "156 points, 69 comments on HackerNews",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Serving MiniMax-M3 for efficient inference: Unlocking 1M-Token Context and Multimodality Without Regrets",
@@ -8604,7 +9094,10 @@
    "published_date": "2026-06-01T11:51:41",
    "summary": "Meta is the only hyperscaler without a cloud business. It just told shareholders it might need one &#8212; and that is the most revealing thing it has said about a buildout it can no longer obviously fill.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "How to Post-Train Autonomous Vehicle Models in Closed-Loop with NVIDIA Alpamayo",
@@ -8690,7 +9183,10 @@
    "published_date": "2026-05-29T20:02:50",
    "summary": "Why AI's increasing output is going to be one of the hardest economic measurement problems in history. AI \"Dark Output\" could end up being the majority of economic activity, but a challenge to measure",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "How the Community Trained Gemma to \"Think\" with Tunix and TPUs",
@@ -8710,7 +9206,10 @@
    "published_date": "2026-05-29T16:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image3-8-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />As AI models grow in complexity and regulatory scrutiny intensifies under frameworks including&nbsp; California’s AB-2013 and the EU AI Act, software teams...",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Run Step 3.7 Flash on NVIDIA GPUs with Enterprise-Ready Multimodal AI",
@@ -8752,7 +9251,10 @@
    "published_date": "2026-05-28T00:22:41",
    "summary": "Or: You don&#8217;t need access to Claude Mythos to spend $10,000 in an afternoon.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
@@ -8794,7 +9296,10 @@
    "published_date": "2026-05-27T18:26:31",
    "summary": "",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
@@ -8858,7 +9363,10 @@
    "published_date": "2026-05-27T17:53:50",
    "summary": "Ferroelectric materials can be used for the development of multiple device concepts combining non-volatility, small dimensions, low-power actuation, and electrical tunability. Such development demands efficient and precise design of simulation tools describing the polarization texture. However, most existing ferroelectric solvers are CPU-based and rely on simplified electrostatic treatments and reduced-dimensional representations of the polarization field. These approximations limit their ability to capture finite-size and boundary effects and restrict the range of domain structures and domain",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "CaMBRAIN: Real-time, Continuous EEG Inference with Causal State Space Models",
@@ -8878,7 +9386,10 @@
    "published_date": "2026-05-27T17:46:28",
    "summary": "We study nonlinear concentration problems for time-frequency distributions in the Cohen class. Using recent techniques from quantum harmonic analysis (QHA) we provide both positive and negative results, such as sufficient conditions for the existence of optimizers in terms of the ``window operator'' and explicit examples where the supremum is never attained. We also study the structural properties of window operators, in particular operators that yield weakly continuous concentration functionals and operators for which the nonlinear concentration problem admits an optimizer. We then consider g",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Beyond Exchangeability: Distribution-Shift-Aware Integration of External Control Data in Randomized Trials",
@@ -8887,7 +9398,10 @@
    "published_date": "2026-05-27T17:44:53",
    "summary": "Randomized controlled trials (RCTs) are the gold standard for evaluating causal effects but are often costly and difficult to scale; consequently, they are frequently augmented with auxiliary external controls in many applications. Prior approaches for borrowing such data typically rely on exchangeability, under which the external controls are readily usable for inference in the trial population. In practice, however, differences in eligibility criteria, standard of care, and data collection procedures may induce distribution shifts between the RCT and the external controls, rendering exchange",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
@@ -8950,8 +9464,11 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-05-27T16:59:58",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/dining-room-nvrtx-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"dining-room-nvrtx\" width=\"768\" />NVIDIA RTX provides game developers with direct paths to AI-driven characters, frame generation, and ray-traced rendering. This post walks through a meaningful...",
-   "tags": "",
-   "area": "other"
+   "tags": "inference,multimodal",
+   "area": "inference-methods",
+   "relevance_score": 0.5,
+   "importance": 0.5,
+   "why": "It introduces DLSS 4.5 featuring real-time neural frame generation and on-device multilingual character AI."
   },
   {
    "title": "Anthropic Growth and Bedrock Mix Drive AWS Margins Higher While Peers Lag",
@@ -8960,7 +9477,10 @@
    "published_date": "2026-05-27T16:25:34",
    "summary": "Amazon&#8217;s Bedrock Mix and Anthropic Deal Terms Combine to Show Greater Operating Leverage",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Up to 580tps! New Speed Record of Qwen3.5-397B-A17B on GPU for Agentic Workloads with TokenSpeed",
@@ -8980,7 +9500,10 @@
    "published_date": "2026-05-27T09:14:34",
    "summary": "Two hyperscalers bet on custom AI silicon a decade ago. One built a chip that its own models run on. The other is buying the demand, renting the hardware, and booking the difference as profit.",
    "tags": "",
-   "area": "other"
+   "area": "other",
+   "relevance_score": 0.0,
+   "importance": null,
+   "why": ""
   },
   {
    "title": "Extract More Kernel Performance with NVIDIA CompileIQ Auto-Tuning",
