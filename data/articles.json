@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-23T20:23:16Z",
+ "generated_at": "2026-09-23T20:24:51Z",
  "hot_days": 120,
- "count": 803,
- "total_collected": 1383,
+ "count": 845,
+ "total_collected": 1429,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -1580,6 +1580,17 @@
    "area": "other"
   },
   {
+   "title": "Supercomputer interconnects: Why the network is the machine [video]",
+   "url": "https://www.youtube.com/watch?v=ydrDWrbsprI",
+   "source": "hackernews",
+   "published_date": "2026-09-20T17:17:11",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "silicon",
+   "importance": 0.5,
+   "why": "Explains how high-performance supercomputer interconnects function as a unified machine."
+  },
+  {
    "title": "At Least 45 Days",
    "url": "https://www.airealist.ai/p/at-least-45-days",
    "source": "airealist",
@@ -1769,6 +1780,17 @@
    "area": "other"
   },
   {
+   "title": "Wafer-Scale Superconducting Transistors Cut Cryo Cables",
+   "url": "https://spectrum.ieee.org/superconducting-transistors",
+   "source": "hackernews",
+   "published_date": "2026-09-18T15:35:10",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.5,
+   "why": "Wafer-scale superconducting transistors eliminate cryogenic cabling for advanced computing systems."
+  },
+  {
    "title": "Engrams Embedding Entendre: Codesign for Efficient DRAM/SSD Offloading",
    "url": "https://newsletter.semianalysis.com/p/engrams-embedding-entendre-codesign",
    "source": "rss:SemiAnalysis",
@@ -1776,6 +1798,17 @@
    "summary": "New Model Architecture Implications for TAM of DRAM/NVMe, DeepSeek V4.1 Flash, AgentX, InferenceX, NVMe experiments",
    "tags": "architecture,hardware,systems,optimization",
    "area": "other"
+  },
+  {
+   "title": "What Is LPO, NPO, CPO? Knowledge of Optical Interconnect Technologies",
+   "url": "https://www.fiber-mart.com/news/what-is-lpo-npo-cpo-knowledge-of-optical-interconnect-technologies-a-6706.html",
+   "source": "hackernews",
+   "published_date": "2026-09-18T01:35:56",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "silicon",
+   "importance": 0.45,
+   "why": "Provides technical overview of optical interconnect technologies crucial for scaling AI clusters."
   },
   {
    "title": "How a global fintech scaled coding agent traffic with Dedicated Model Inference",
@@ -2291,6 +2324,17 @@
    "area": "other"
   },
   {
+   "title": "MOBA: Mixture of Block Attention for Long-Context LLMs",
+   "url": "https://arxiv.org/abs/2502.13189",
+   "source": "hackernews",
+   "published_date": "2026-09-13T19:12:21",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Mixture of block attention scales long-context LLMs efficiently."
+  },
+  {
    "title": "Long Live the Short King: Why 4-hi HBM Wins",
    "url": "https://newsletter.semianalysis.com/p/long-live-the-short-king-why-4-hi",
    "source": "rss:SemiAnalysis",
@@ -2307,6 +2351,17 @@
    "summary": "417 points, 240 comments on HackerNews",
    "tags": "post-training,compression,llm",
    "area": "other"
+  },
+  {
+   "title": ">10x More Efficient Pretraining",
+   "url": "https://magic.dev/blog/pretraining",
+   "source": "hackernews",
+   "published_date": "2026-09-13T01:59:43",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,optimization",
+   "area": "training",
+   "importance": 0.7,
+   "why": "Substantial pretraining efficiency gains significantly reduce compute requirements for foundation model generation."
   },
   {
    "title": "Per-tensor layout maps for GGUF quantization",
@@ -2442,6 +2497,17 @@
    "summary": "Machine Intelligence",
    "tags": "training,llm",
    "area": "other"
+  },
+  {
+   "title": "Read in Parallel, Reason in Depth for Long-Context LLM Agents",
+   "url": "https://academy.dair.ai/papers/parser-read-in-parallel-reason-in-depth-for-long-context-llm-agents-2609.06702",
+   "source": "hackernews",
+   "published_date": "2026-09-10T20:09:02",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Parallel reading and deep reasoning strategy for long-context LLM agents."
   },
   {
    "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
@@ -2660,6 +2726,17 @@
    "area": "other"
   },
   {
+   "title": "Pretraining progress is mostly coming from data",
+   "url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+   "source": "hackernews",
+   "published_date": "2026-09-08T19:09:43",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training",
+   "area": "training",
+   "importance": 0.5,
+   "why": "Analyzes the relative contribution of data curation versus scale in driving pretraining progress."
+  },
+  {
    "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
    "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
    "source": "hackernews",
@@ -2685,6 +2762,17 @@
    "summary": "Routing a job to a cheaper model looks like free money. Whether it is depends on how the frontier bills the handover.",
    "tags": "inference,serving",
    "area": "other"
+  },
+  {
+   "title": "Intel surpasses one million High-NA EUV wafers processed",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1",
+   "source": "hackernews",
+   "published_date": "2026-09-08T12:59:57",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Intel reaches milestone processing one million High-NA EUV wafers for advanced node production."
   },
   {
    "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
@@ -3119,6 +3207,17 @@
    "area": "other"
   },
   {
+   "title": "Perceptron AI releases Isaac 0.5: 36B, open weight, embodied foundation model",
+   "url": "https://twitter.com/perceptroninc/status/2092678357775442103",
+   "source": "hackernews",
+   "published_date": "2026-08-31T19:18:49",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "multimodal",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "Embodied foundation model weights released for robotics research."
+  },
+  {
    "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
    "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting",
    "source": "rss:Google AI Blog",
@@ -3326,6 +3425,28 @@
    "area": "other"
   },
   {
+   "title": "An API proxy that trims redundant LLM tokens using AST pruning",
+   "url": "https://driftwatchproxy.com/",
+   "source": "hackernews",
+   "published_date": "2026-08-26T14:51:04",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization,compression",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Uses AST parsing via an API proxy to reduce redundant tokens before LLM ingestion."
+  },
+  {
+   "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
+   "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+   "source": "hackernews",
+   "published_date": "2026-08-26T10:04:55",
+   "summary": "435 points, 146 comments on HackerNews",
+   "tags": "llm",
+   "area": "new-models",
+   "importance": 0.5,
+   "why": "New GLM-series model weights release expands open-weight LLM landscape."
+  },
+  {
    "title": "Hot Chips 2026: Fujitsu’s Monaka CPU",
    "url": "https://chipsandcheese.com/p/hot-chips-2026-fujitsus-monaka-cpu",
    "source": "rss:Chips and Cheese",
@@ -3362,6 +3483,17 @@
    "area": "other"
   },
   {
+   "title": "Yeschef: Claude Code dispatches work to Ollama on my LAN (627 tok/s on 3 NUCs)",
+   "url": "https://github.com/labscommunity/yeschef",
+   "source": "hackernews",
+   "published_date": "2026-08-25T14:37:32",
+   "summary": "3 points, 2 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "importance": 0.6,
+   "why": "Demonstrates distributed LAN inference routing across low-end nodes to drastically scale throughput."
+  },
+  {
    "title": "Release v0.2.0 · ggml-org/llama.cpp",
    "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.2.0",
    "source": "hackernews",
@@ -3378,6 +3510,17 @@
    "summary": "OpenAI&#8217;s self-designed ASIC compared with Rubin, Jalape&#241;o&#8217;s TCO, throughput per MW, and spicy deets",
    "tags": "hardware,systems",
    "area": "other"
+  },
+  {
+   "title": "Show HN: Open-source AMDGCN kernels for optimizing LLM inference",
+   "url": "https://github.com/NetraRuntime/netra-kernel",
+   "source": "hackernews",
+   "published_date": "2026-08-25T13:54:01",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "inference,hardware,optimization",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "Custom AMDGCN kernels improve hardware performance for LLM inference."
   },
   {
    "title": "Hot Chips 2026: Micron warns HBM wafer penalty is widening with every generation",
@@ -3542,6 +3685,17 @@
    "area": "other"
   },
   {
+   "title": "Your Open Source Model Could Have a Hidden Time-Release Backdoor",
+   "url": "https://morgin.ai/articles/your-open-source-model-could-have-a-hidden-time-release-backdoor.html",
+   "source": "hackernews",
+   "published_date": "2026-08-24T06:25:42",
+   "summary": "62 points, 79 comments on HackerNews",
+   "tags": "training,llm",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "Analyzes security vulnerabilities via hidden backdoors introduced during model training."
+  },
+  {
    "title": "AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic Inferencing?",
    "url": "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
    "source": "rss:SemiAnalysis",
@@ -3614,6 +3768,17 @@
    "area": "other"
   },
   {
+   "title": "Pretraining a Mini Kimi K3",
+   "url": "https://books.vizuara.ai/book/pretraining-a-mini-k3",
+   "source": "hackernews",
+   "published_date": "2026-08-21T06:44:22",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "training,llm",
+   "area": "training",
+   "importance": 0.4,
+   "why": "Case study on pretraining a miniature long-context style model for research accessibility."
+  },
+  {
    "title": "GLM-5.3 vs. GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing",
    "url": "https://www.together.ai/blog/glm-5-3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
    "source": "rss:Together.ai Blog",
@@ -3648,6 +3813,17 @@
    "summary": "",
    "tags": "optimization",
    "area": "other"
+  },
+  {
+   "title": "Teaching a local LLM to reason about a new domain through continued pretraining",
+   "url": "https://www.teachmecoolstuff.com/viewarticle/teaching-a-local-llm-a-new-domain",
+   "source": "hackernews",
+   "published_date": "2026-08-20T20:52:00",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "training,llm",
+   "area": "training",
+   "importance": 0.4,
+   "why": "Practical evaluation of domain adaptation via continued pretraining for localized reasoners."
   },
   {
    "title": "Benchmarking Speculative Decoding on DGX Spark: 11.5 → 29.5 tok/s",
@@ -3875,6 +4051,17 @@
    "area": "other"
   },
   {
+   "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+   "url": "https://blog.roboflow.com/openai-gpt-5-6",
+   "source": "hackernews",
+   "published_date": "2026-08-17T12:09:42",
+   "summary": "369 points, 171 comments on HackerNews",
+   "tags": "multimodal,llm",
+   "area": "new-models",
+   "importance": 0.5,
+   "why": "New frontier multimodal model release advances vision capabilities."
+  },
+  {
    "title": "DeepSeek V4 Pro at 207 tok/s with the full 1M context, no quantization",
    "url": "https://runinfra.ai/inference-api/deepseek-v4-pro",
    "source": "hackernews",
@@ -4001,6 +4188,17 @@
    "area": "other"
   },
   {
+   "title": "Information Abundance Paradox: Long-Context Training Undermines Parametric",
+   "url": "https://arxiv.org/abs/2608.12218",
+   "source": "hackernews",
+   "published_date": "2026-08-13T11:07:06",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Analyzes how extensive long-context training negatively impacts parametric knowledge retrieval."
+  },
+  {
    "title": "Nvidia doubles RTX PRO 6000 Blackwell's MSRP to a staggering $16,000",
    "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-doubles-rtx-pro-6000-blackwells-msrp-to-a-staggering-usd16-000-96gb-card-started-pre-orders-below-usd8-000-last-year",
    "source": "hackernews",
@@ -4118,6 +4316,28 @@
    "area": "other"
   },
   {
+   "title": "Meta releases a 30B agent model that fits in ~17GB",
+   "url": "https://huggingface.co/meta-models",
+   "source": "hackernews",
+   "published_date": "2026-08-10T10:28:56",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "llm,optimization",
+   "area": "new-models",
+   "importance": 0.5,
+   "why": "A 30B agent model optimized to fit within 17GB highlights efficient memory design for edge deployment."
+  },
+  {
+   "title": "Meta releases Muse Glimmer, 30B parameter open-weight edge model",
+   "url": "https://twitter.com/finkd/status/2086755195535413696",
+   "source": "hackernews",
+   "published_date": "2026-08-10T10:20:42",
+   "summary": "18 points, 1 comments on HackerNews",
+   "tags": "llm",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "Open-weight 30B edge model expands availability of capable mid-sized models for local deployment."
+  },
+  {
    "title": "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX",
    "url": "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia",
    "source": "rss:SemiAnalysis",
@@ -4161,6 +4381,17 @@
    "summary": "Musings on model alignment, what determines safety, and where we go from here.",
    "tags": "post-training,llm",
    "area": "other"
+  },
+  {
+   "title": "ByteDance Pretraining 10T Parameter Model",
+   "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic",
+   "source": "hackernews",
+   "published_date": "2026-08-09T08:15:12",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "training,systems,llm",
+   "area": "training",
+   "importance": 0.6,
+   "why": "Training infrastructure and scaling dynamics for 10T parameter models provide valuable large-scale distributed insights."
   },
   {
    "title": "The Waste Inference Engine",
@@ -4271,6 +4502,17 @@
    "area": "other"
   },
   {
+   "title": "New 16T parameter model with a 4B token context window released",
+   "url": "https://huggingface.co/tsfrm/vacuum-16t",
+   "source": "hackernews",
+   "published_date": "2026-08-05T17:07:54",
+   "summary": "8 points, 4 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "importance": 0.6,
+   "why": "Extremely large context window handling for massive parameter scales presents novel architectural scaling challenges."
+  },
+  {
    "title": "Show HN: ExANS – Lossless KV cache compression at 622 GB/s on H100",
    "url": "https://www.theopenlake.com/blog/exans-lossless-gpu-compression-for-bf16-kv-cache",
    "source": "hackernews",
@@ -4305,6 +4547,17 @@
    "summary": "OVH told Canada how to get the data it refused to hand over. On August 18, the European Union stops making the argument OVH is making in court.",
    "tags": "ai,llm,inference",
    "area": "other"
+  },
+  {
+   "title": "I built an LLM debugger for fine-tuning failures",
+   "url": "https://github.com/gradian-ai/gradian",
+   "source": "hackernews",
+   "published_date": "2026-08-04T13:27:56",
+   "summary": "3 points, 3 comments on HackerNews",
+   "tags": "post-training,optimization",
+   "area": "training",
+   "importance": 0.4,
+   "why": "Diagnostic tooling addressing failure modes in model weight adaptation."
   },
   {
    "title": "Static vs. Dynamic vs. Continuous Batching in LLM Inference",
@@ -4361,6 +4614,17 @@
    "area": "other"
   },
   {
+   "title": "Show HN: Symbio self fine-tuning AI loop",
+   "url": "https://github.com/huyedits/Symbio",
+   "source": "hackernews",
+   "published_date": "2026-08-01T23:06:26",
+   "summary": "10 points, 6 comments on HackerNews",
+   "tags": "post-training,training",
+   "area": "training",
+   "importance": 0.4,
+   "why": "Explores recursive self-adaptation loops for autonomous improvement."
+  },
+  {
    "title": "Speculative Decoding, Visualized",
    "url": "https://www.adaptive-ml.com/post/speculative-decoding-visualized",
    "source": "hackernews",
@@ -4404,6 +4668,28 @@
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "inference,optimization,llm",
    "area": "other"
+  },
+  {
+   "title": "Explorative Modeling: Unlocking a Third Pretraining Axis and E2E Generation",
+   "url": "https://explorative-modeling.github.io/",
+   "source": "hackernews",
+   "published_date": "2026-07-31T17:01:27",
+   "summary": "7 points, 2 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "training",
+   "importance": 0.7,
+   "why": "Introduces a novel pretraining axis and end-to-end generation paradigm departing from standard next-token prediction."
+  },
+  {
+   "title": "China's MiniMax releases H3 video model",
+   "url": "https://www.reuters.com/world/china/chinas-minimax-releases-h3-video-model-2026-07-31",
+   "source": "hackernews",
+   "published_date": "2026-07-31T13:54:31",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "multimodal",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "New video generation model release expands architectural options in multimodal video synthesis."
   },
   {
    "title": "HexCore: Low-Latency Paged KV Cache Allocator in C++20 and CUDA",
@@ -4476,6 +4762,17 @@
    "summary": "3 points, 0 comments on HackerNews",
    "tags": "hardware,training,llm",
    "area": "other"
+  },
+  {
+   "title": "AntGroup releases Ling 3.0 Flash MoE model",
+   "url": "https://twitter.com/AntLingAGI/status/2080351022028095681",
+   "source": "hackernews",
+   "published_date": "2026-07-29T18:30:42",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "importance": 0.4,
+   "why": "New MoE model release offers architectural insights into efficient routing for Flash variants."
   },
   {
    "title": "Amazon Priced the Frontier and Declined It",
@@ -4647,6 +4944,17 @@
    "summary": "6 points, 10 comments on HackerNews",
    "tags": "inference,serving",
    "area": "other"
+  },
+  {
+   "title": "Scaling Video Pretraining with Imagination Models",
+   "url": "https://www.inductionlabs.com/news/scaling-video-pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-24T15:14:12",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "training,multimodal",
+   "area": "training",
+   "importance": 0.6,
+   "why": "Combines imagination models with video pretraining to improve sample efficiency in dynamic environments."
   },
   {
    "title": "Leaky Language Models: Stealing Architecture and Inference Optimizations",
@@ -4874,6 +5182,17 @@
    "area": "other"
   },
   {
+   "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
+   "url": "https://github.com/Saivineeth147/lora-speedrun",
+   "source": "hackernews",
+   "published_date": "2026-07-20T04:24:48",
+   "summary": "145 points, 29 comments on HackerNews",
+   "tags": "post-training,benchmarks,optimization",
+   "area": "training",
+   "importance": 0.5,
+   "why": "Provides standardized performance benchmarks for various parameter-efficient fine-tuning speedups."
+  },
+  {
    "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
    "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
    "source": "rss:Together.ai Blog",
@@ -4881,6 +5200,17 @@
    "summary": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs.",
    "tags": "hardware,systems",
    "area": "other"
+  },
+  {
+   "title": "Petals: Collaborative Inference and Fine-Tuning of Large Models",
+   "url": "https://arxiv.org/abs/2209.01188",
+   "source": "hackernews",
+   "published_date": "2026-07-19T15:37:21",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "training",
+   "importance": 0.6,
+   "why": "Enables distributed execution of massive models across consumer-grade heterogeneous hardware."
   },
   {
    "title": "Qwen 3.8: Soon Is Not a Date",
@@ -5007,6 +5337,17 @@
    "summary": "<img alt=\"A Gif in a warehouse.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nanousd.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nanousd\" width=\"600\" />OpenUSD is an open, extensible framework that provides a common scene description language for physical AI. It enables teams to bring CAD data, simulation...",
    "tags": "",
    "area": "other"
+  },
+  {
+   "title": "What If the Harness Comes Before Pretraining? A Data Flywheel Perspective",
+   "url": "https://hanchenli.github.io/blog/posts/harness_pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-15T18:18:02",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,benchmarks",
+   "area": "training",
+   "importance": 0.5,
+   "why": "Examines data flywheel mechanics where evaluation harnesses precede foundational pretraining phases."
   },
   {
    "title": "Towards demystifying the creativity of diffusion models",
@@ -5297,6 +5638,17 @@
    "area": "other"
   },
   {
+   "title": "Modular Pretraining Enables Access Control",
+   "url": "https://alignment.anthropic.com/2026/modular-pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-09T19:46:09",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "training",
+   "importance": 0.6,
+   "why": "Modular pretraining structure enables granular access control over model capabilities and components."
+  },
+  {
    "title": "Synthetic Data Generation for Financial AI Research with NVIDIA NeMo",
    "url": "https://developer.nvidia.com/blog/synthetic-data-generation-for-financial-ai-research-with-nvidia-nemo",
    "source": "rss:NVIDIA Developer Blog",
@@ -5441,6 +5793,17 @@
    "area": "other"
   },
   {
+   "title": "Pruning RAG context down to what the answer actually needs",
+   "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+   "source": "hackernews",
+   "published_date": "2026-07-06T19:28:24",
+   "summary": "146 points, 40 comments on HackerNews",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Improves RAG efficiency by dynamically pruning irrelevant context prior to LLM generation."
+  },
+  {
    "title": "Huawei's next smartphone chip taps new scaling law for performance boost: paper",
    "url": "https://www.scmp.com/tech/article/3359592/huaweis-next-smartphone-chip-taps-new-scaling-law-performance-boost-paper",
    "source": "hackernews",
@@ -5567,6 +5930,17 @@
    "area": "other"
   },
   {
+   "title": "1M Context: Making Long-Horizon Tasks Stable and Practical",
+   "url": "https://docs.z.ai/guides/llm/glm-5.2",
+   "source": "hackernews",
+   "published_date": "2026-07-01T03:32:30",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Techniques for stabilizing long-horizon tasks at 1M context lengths."
+  },
+  {
    "title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
    "url": "https://www.together.ai/blog/announcing-our-series-c",
    "source": "rss:Together.ai Blog",
@@ -5648,6 +6022,17 @@
    "area": "other"
   },
   {
+   "title": "Breaking the Tokenizer Barrier: On-Policy Distillation Across Model Families",
+   "url": "https://arxiv.org/abs/2606.09456",
+   "source": "hackernews",
+   "published_date": "2026-06-29T03:37:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "post-training,llm",
+   "area": "inference-methods",
+   "importance": 0.7,
+   "why": "Enables on-policy distillation across different model families, bypassing tokenizer mismatch barriers."
+  },
+  {
    "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
    "url": "https://www.phantafield.com/whitepaper",
    "source": "hackernews",
@@ -5655,6 +6040,17 @@
    "summary": "32 points, 36 comments on HackerNews",
    "tags": "hardware,architecture",
    "area": "other"
+  },
+  {
+   "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
+   "url": "https://arxiv.org/abs/2401.07013",
+   "source": "hackernews",
+   "published_date": "2026-06-28T22:32:04",
+   "summary": "123 points, 23 comments on HackerNews",
+   "tags": "post-training,llm",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Comprehensive overview of techniques for transferring knowledge from black-box LLMs."
   },
   {
    "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
@@ -5729,6 +6125,17 @@
    "area": "other"
   },
   {
+   "title": "HRM-Text: Efficient Pretraining Beyond Scaling",
+   "url": "https://arxiv.org/abs/2605.20613",
+   "source": "hackernews",
+   "published_date": "2026-06-25T17:47:14",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "training",
+   "importance": 0.6,
+   "why": "Proposes alternative pretraining formulations that bypass standard compute-scaling limits."
+  },
+  {
    "title": "Scaling AI Inference Across Multiple GPUs Using NVIDIA TensorRT with Multi-Device Inference Support",
    "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support",
    "source": "rss:NVIDIA Developer Blog",
@@ -5754,6 +6161,17 @@
    "summary": "TL;DR The TokenSpeed-kernel is a standalone, open-source subsystem designed to solve backend complexity in LLM inference. It introduces a clean, layered API and registry system that decouples the high-level runtime...",
    "tags": "inference,llm",
    "area": "other"
+  },
+  {
+   "title": "FPGA-based CNN acceleration using pattern-aware pruning [pdf]",
+   "url": "https://inria.hal.science/hal-04689673/document",
+   "source": "hackernews",
+   "published_date": "2026-06-25T00:16:29",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,compression",
+   "area": "inference-methods",
+   "importance": 0.4,
+   "why": "Applies pattern-aware pruning to improve CNN hardware acceleration efficiency on FPGAs."
   },
   {
    "title": "France national supercomputer shuts down GPU/CPU clusters due to heatwave",
@@ -5925,6 +6343,17 @@
    "summary": "Europe moved twice on cloud sovereignty this month. One proposal makes the American duopoly easier to move within. The other grades everything about a cloud except the chip it runs on.",
    "tags": "ai,llm,inference",
    "area": "other"
+  },
+  {
+   "title": "Softmax-free ~354M: tile-skip kernels for long-context VRAM savings (sparse)",
+   "url": "https://huggingface.co/Tripstoph/RRT-Foundation",
+   "source": "hackernews",
+   "published_date": "2026-06-21T10:06:48",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Softmax-free sparse tile-skip kernels achieve significant VRAM savings for long-context."
   },
   {
    "title": "The next generation of speculative decoding: DFlash and Spec V2",
@@ -6638,6 +7067,17 @@
    "area": "other"
   },
   {
+   "title": "Show HN: YourMemory, agentic memory is a pruning problem, not a hoarding problem",
+   "url": "https://yourmemoryai.vercel.app/",
+   "source": "hackernews",
+   "published_date": "2026-06-07T09:49:42",
+   "summary": "19 points, 3 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "inference-methods",
+   "importance": 0.45,
+   "why": "Frames agentic memory management as a strategic pruning problem rather than passive storage."
+  },
+  {
    "title": "LLM Research Papers: The 2026 List (January to May)",
    "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
    "source": "rss:Ahead of AI",
@@ -6845,6 +7285,17 @@
    "area": "other"
   },
   {
+   "title": "Show HN: We built an LLM inference engine in pure Python – no PyTorch, no Triton",
+   "url": "https://github.com/Zyora-Dev/zse/releases/tag/v2.0.0",
+   "source": "hackernews",
+   "published_date": "2026-06-02T14:34:48",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "importance": 0.6,
+   "why": "Pure Python inference engine implementation bypassing heavy C++ frameworks for lightweight execution."
+  },
+  {
    "title": "Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
    "source": "hackernews",
@@ -6951,6 +7402,17 @@
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/featured_image_16x9_1488x837_under2MB-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"featured_image_16x9_1488x837_under2MB\" width=\"768\" />AI is now essential infrastructure, powered by AI factories that generate intelligence in the form of tokens. As demand grows, these factories must scale...",
    "tags": "serving,systems,hardware",
    "area": "other"
+  },
+  {
+   "title": "AI demand absorbs wafer capacity, crushing budget PC segment",
+   "url": "https://www.trendforce.com/presscenter/news/20260529-13068.html",
+   "source": "hackernews",
+   "published_date": "2026-05-30T13:29:14",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Examines how massive AI chip demand strains semiconductor wafer foundry capacity."
   },
   {
    "title": "DynoSim: Simulating the Pareto Frontier",
