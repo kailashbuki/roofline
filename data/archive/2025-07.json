@@ -1,0 +1,50 @@
+{
+ "month": "2025-07",
+ "count": 4,
+ "articles": [
+  {
+   "title": "The Big LLM Architecture Comparison",
+   "url": "https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-07-19T11:11:10",
+   "summary": "From DeepSeek-V3 to Kimi K2: A Look At Modern LLM Architecture Design",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Systematic architectural comparison across recent frontier open-weight models."
+  },
+  {
+   "title": "Sizing Up AWS \"Blackwell\" GPU Systems Against Prior GPUs and Trainiums",
+   "url": "https://www.nextplatform.com/2025/07/10/sizing-up-aws-blackwell-gpu-systems-against-prior-gpus-and-trainiums",
+   "source": "hackernews",
+   "published_date": "2025-07-12T10:54:07",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,benchmarks",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Benchmarks upcoming NVIDIA GPU architectures against previous generations and Trainium."
+  },
+  {
+   "title": "Extreme Low-Bit Clustering for Large Language Models via Knowledge Distillation",
+   "url": "https://arxiv.org/abs/2506.12038",
+   "source": "hackernews",
+   "published_date": "2025-07-11T00:53:47",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "post-training,quantization,compression",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Applies clustering-based extreme low-bit quantization guided by knowledge distillation."
+  },
+  {
+   "title": "We reimagined Transformer architectures inspired by nature's hidden structures",
+   "url": "https://ieeexplore.ieee.org/document/10754699",
+   "source": "hackernews",
+   "published_date": "2025-07-03T06:15:09",
+   "summary": "10 points, 9 comments on HackerNews",
+   "tags": "architecture",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Proposes a novel transformer variant inspired by natural biological patterns."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "month": "2025-11",
+ "count": 5,
+ "articles": [
+  {
+   "title": "Show HN: Pulse-Field – O(N) AI Architecture (12x faster than Transformers)",
+   "url": "https://github.com/makimilan/pulse-field-core",
+   "source": "hackernews",
+   "published_date": "2025-11-24T13:43:07",
+   "summary": "6 points, 8 comments on HackerNews",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Implements an O(N) linear complexity architecture claiming speedups over standard transformers."
+  },
+  {
+   "title": "32-Bit Integer Multiplication on Tenstorrent",
+   "url": "https://www.jasondavies.com/2025/tenstorrent-multiply-int32",
+   "source": "hackernews",
+   "published_date": "2025-11-20T16:50:34",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,optimization",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Optimizes fundamental integer multiplication primitives for Tenstorrent accelerators."
+  },
+  {
+   "title": "Triton-Augment: GPU Kernel Fusion for 5-73x Faster Image/Video Augmentation",
+   "url": "https://github.com/yuhezhang-ai/triton-augment",
+   "source": "hackernews",
+   "published_date": "2025-11-18T16:28:47",
+   "summary": "3 points, 2 comments on HackerNews",
+   "tags": "training,optimization,multimodal",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Uses Triton kernel fusion to drastically accelerate image and video data augmentation pipelines."
+  },
+  {
+   "title": "The Curved Spacetime of Transformer Architectures",
+   "url": "https://arxiv.org/abs/2511.03060",
+   "source": "hackernews",
+   "published_date": "2025-11-06T14:34:16",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "architecture",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Theoretical geometric analysis of representations within transformer architectures."
+  },
+  {
+   "title": "Beyond Standard LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/beyond-standard-llms",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-11-04T13:06:07",
+   "summary": "Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Explores non-transformer architectural directions including linear attention, text diffusion, and recursive models."
+  }
+ ]
+}

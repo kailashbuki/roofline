@@ -1,0 +1,92 @@
+{
+ "month": "2025-10",
+ "count": 8,
+ "articles": [
+  {
+   "title": "A Minimalist Transformer Architecture for Univariate Time Series Forecasting",
+   "url": "https://www.mdpi.com/1999-4893/18/10/645",
+   "source": "hackernews",
+   "published_date": "2025-10-31T16:17:29",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Applies a stripped-down transformer specifically for univariate time series forecasting."
+  },
+  {
+   "title": "Unlocking On-Policy Distillation for Any Model Family",
+   "url": "https://huggingface.co/spaces/HuggingFaceH4/on-policy-distillation",
+   "source": "hackernews",
+   "published_date": "2025-10-29T17:58:32",
+   "summary": "6 points, 1 comments on HackerNews",
+   "tags": "training,post-training,llm",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Generalizes on-policy distillation techniques across heterogeneous model architectures."
+  },
+  {
+   "title": "Making GPT-2 better at math reasoning with a new attention mechanism",
+   "url": "https://github.com/Kim-Ai-gpu/FactorizedAttention",
+   "source": "hackernews",
+   "published_date": "2025-10-27T14:23:30",
+   "summary": "3 points, 3 comments on HackerNews",
+   "tags": "architecture,attention",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Applies a novel attention mechanism to legacy models to improve reasoning."
+  },
+  {
+   "title": "Building an Evolutionary Search for Attention Mechanisms",
+   "url": "https://github.com/drhemanm/evo-attention",
+   "source": "hackernews",
+   "published_date": "2025-10-23T07:05:15",
+   "summary": "3 points, 1 comments on HackerNews",
+   "tags": "architecture,attention,optimization",
+   "area": "architecture",
+   "importance": 0.45,
+   "why": "Uses evolutionary search to discover more efficient attention sub-components."
+  },
+  {
+   "title": "Reap: One-Shot Pruning for Trillion-Parameter Mixture-of-Experts Models",
+   "url": "https://www.cerebras.ai/blog/reap",
+   "source": "hackernews",
+   "published_date": "2025-10-18T05:33:24",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "compression,quantization,llm",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Presents one-shot pruning algorithms tailored for compressing trillion-parameter mixture-of-experts models."
+  },
+  {
+   "title": "Mamba-3: Improved Sequence Modeling Using State Space Principles",
+   "url": "https://openreview.net/forum?id=HwCvaJOiCj",
+   "source": "hackernews",
+   "published_date": "2025-10-14T08:38:50",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.8,
+   "why": "Refines state space principles for next-generation efficient sequence modeling architectures."
+  },
+  {
+   "title": "Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention",
+   "url": "https://arxiv.org/abs/2510.04212",
+   "source": "hackernews",
+   "published_date": "2025-10-09T07:30:24",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "training,attention,quantization",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Analyzes numerical stability failures during low-precision transformer training involving Flash Attention."
+  },
+  {
+   "title": "Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)",
+   "url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-10-05T11:12:32",
+   "summary": "Multiple-Choice Benchmarks, Verifiers, Leaderboards, and LLM Judges with Code Examples",
+   "tags": "",
+   "area": "other"
+  }
+ ]
+}
