@@ -52,24 +52,35 @@ jobs:
 
       - name: Commit updated data
         run: |
-          # Gate on the whole data dir: a run can add rejected urls without
-          # adding any article, and that ledger is worth keeping.
-          if git diff --quiet -- data/ && [ -z "$(git ls-files -o --exclude-standard data/)" ]; then
-            echo "No data changes; nothing to commit."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "Update articles [skip ci]"
-          # Another push (a second run, or a human) can land between checkout and
-          # here, which rejects this one. Rebase onto whatever arrived and retry.
+
+          # A run rewrites data/*.json wholesale, so a rebase always conflicts on
+          # the whole file. Union our fresh data with the remote tip instead, then
+          # commit on top of it. Retried because another run can land mid-flight.
           for attempt in 1 2 3; do
+            cp data/articles.json /tmp/ours-articles.json
+            cp data/rejected.json /tmp/ours-rejected.json 2>/dev/null || true
+
+            git fetch origin "$GITHUB_REF_NAME" --quiet
+            git reset --hard "origin/$GITHUB_REF_NAME" --quiet
+
+            python merge_data.py /tmp/ours-articles.json data/articles.json data/articles.json
+            if [ -f /tmp/ours-rejected.json ]; then
+              python merge_data.py --rejected /tmp/ours-rejected.json data/rejected.json data/rejected.json
+            fi
+
+            if git diff --quiet -- data/ && [ -z "$(git ls-files -o --exclude-standard data/)" ]; then
+              echo "No data changes after merge; nothing to commit."
+              exit 0
+            fi
+
+            git add data/
+            git commit -m "Update articles [skip ci]"
             if git push; then
               exit 0
             fi
-            echo "push rejected, rebasing onto origin/main (attempt $attempt)"
-            git pull --rebase --autostash origin main || exit 1
+            echo "push rejected; re-merging against the new tip (attempt $attempt)"
           done
           echo "could not push after 3 attempts"
           exit 1
