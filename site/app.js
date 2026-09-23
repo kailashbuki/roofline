@@ -7,6 +7,10 @@
 // Read state lives in localStorage. The origin is shared with the personal
 // homepage on github.io, hence the namespaced key.
 const READ_KEY = "roofline:read";
+const THEME_KEY = "roofline:theme";
+// Only the top tier earns a marker. A number on every row is decoration: it
+// cannot be acted on, and the ordering already encodes it.
+const MUST_READ = 0.75;
 const LEDE_COUNT = 5;
 const PER_AREA = 6;
 
@@ -117,10 +121,6 @@ function card(article, { lede = false } = {}) {
   node.target = "_blank";
   node.rel = "noopener";
 
-  const rated = typeof article.importance === "number";
-  const rank = span(`rank${rated ? "" : " unrated"}`, rated ? article.importance.toFixed(2) : "–");
-  rank.title = rated ? "importance" : "not yet rated";
-
   const body = document.createElement("span");
   body.className = "item-body";
   body.append(span("item-title", article.title));
@@ -130,6 +130,12 @@ function card(article, { lede = false } = {}) {
 
   const meta = document.createElement("span");
   meta.className = "item-meta";
+  // Redundant in the lede, which is by definition the must-reads.
+  if (!lede && typeof article.importance === "number" && article.importance >= MUST_READ) {
+    const flag = span("must-read", "must read");
+    flag.title = `importance ${article.importance.toFixed(2)}`;
+    meta.append(flag);
+  }
   meta.append(span("item-source", article.source));
   meta.append(span("", relativeDate(article.published_date)));
   if (!read.has(article.url)) meta.append(span("item-new", "new"));
@@ -152,7 +158,7 @@ function card(article, { lede = false } = {}) {
   });
 
   node.addEventListener("click", () => markRead(article, node));
-  node.append(rank, body, spark);
+  node.append(body, spark);
   return node;
 }
 
@@ -218,6 +224,42 @@ function render() {
   renderCounts();
 }
 
+const THEMES = ["auto", "light", "dark"];
+const THEME_ICON = { auto: "◐", light: "☀", dark: "☾" };
+
+function applyTheme(theme) {
+  if (theme === "auto") {
+    delete document.documentElement.dataset.theme;
+  } else {
+    document.documentElement.dataset.theme = theme;
+  }
+  const button = el("theme");
+  if (button) {
+    button.textContent = THEME_ICON[theme];
+    button.title = `Theme: ${theme} (click to change)`;
+    button.setAttribute("aria-label", `Theme: ${theme}`);
+  }
+}
+
+function initTheme() {
+  let theme = "auto";
+  try {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (THEMES.includes(stored)) theme = stored;
+  } catch { /* ignore */ }
+  applyTheme(theme);
+
+  el("theme").addEventListener("click", () => {
+    const next = THEMES[(THEMES.indexOf(currentTheme()) + 1) % THEMES.length];
+    try { localStorage.setItem(THEME_KEY, next); } catch { /* ignore */ }
+    applyTheme(next);
+  });
+}
+
+function currentTheme() {
+  return document.documentElement.dataset.theme || "auto";
+}
+
 /** Filters live in the URL: shareable, bookmarkable, and testable. */
 function applyUrlParams() {
   const params = new URLSearchParams(location.search);
@@ -240,6 +282,7 @@ function syncUrl() {
   history.replaceState(null, "", `?${params}`);
 }
 
+initTheme();
 applyUrlParams();
 
 fetch("./data/articles.json")
