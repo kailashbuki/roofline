@@ -396,12 +396,17 @@ applyUrlParams();
 visitMark = lastVisit();
 
 Promise.all([
-  fetch("./data/articles.json").then((r) => {
+  // no-cache forces revalidation. Without it the browser happily serves an
+  // hours-old articles.json and the page silently shows stale state — which
+  // looked exactly like the backfill having been lost.
+  fetch("./data/articles.json", { cache: "no-cache" }).then((r) => {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     return r.json();
   }),
   // Optional: absent until build_digest.py has run with a key.
-  fetch("./data/digest.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
+  fetch("./data/digest.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null),
 ])
   .then(([data, digestData]) => {
     digest = digestData?.areas || {};

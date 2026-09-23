@@ -500,3 +500,31 @@ Known remaining weaknesses (named, not fixed):
   tightening, which is a prompt change rather than a layout one.
 - Read state is per-browser localStorage, so it does not follow you across
   devices. Fixing that needs a backend, which the whole design exists to avoid.
+
+## 2026-09-23 (postscript) - Two operational bugs, both mine
+
+### "803 of 849 items are not classified yet" - a STALE CACHE, not lost data
+Reported after a backfill. Checked all four copies:
+  local working tree  849 rows, 655 rated
+  local HEAD          849 rows, 655 rated
+  origin/main         849 rows, 653 rated
+  live site           849 rows, 653 rated
+Nothing was lost. The browser was serving a cached data/articles.json from before
+the backfill. The page fetched it with default caching, so a file that changes
+3x/day could be served hours stale - and the failure mode looked exactly like the
+backfill having been discarded, which is the worst kind of bug. Both fetches now
+pass {cache: "no-cache"} to force revalidation.
+
+### Repeated push rejections - now handled by ./sync.sh
+The scheduled job commits to main three times a day, so a manual push after a
+local backfill races it. Worse, the obvious resolutions are both wrong: taking
+the remote's copy discards the ratings, and taking ours discards newly collected
+rows. sync.sh runs reclassify (optionally build_digest), then merges by
+re-deriving through merge_into_store.py - which adds the rows only the remote has
+AND enriches the rows whose ratings only we have - and retries the push up to
+three times. The manual loop is now one command instead of a git puzzle.
+
+Note to self: I had been running merge/push cycles in the same working tree the
+user was operating in, which manufactured some of these collisions. sync.sh exists
+so the operation is one atomic, repeatable thing rather than a sequence I
+improvise each time.

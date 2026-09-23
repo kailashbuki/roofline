@@ -100,15 +100,26 @@ methodology, surprisingness of results, potential impact, and departure from
 existing approaches — one call per batch, alongside relevance and area, so the
 editorial judgement costs no extra requests.
 
-### Backfilling
+### Backfilling and pushing: use ./sync.sh
 
-Rows collected before this existed have no area or importance. Fill them in with:
+The scheduled workflow commits to `main` three times a day, so a plain
+`git push` after a local backfill loses the race whenever the timing is unlucky —
+and a naive resolution silently discards one side's work. `./sync.sh` does the
+whole loop safely:
 
 ```bash
 export GEMINI_API_KEY='...'
-python reclassify.py --dry-run   # preview
-python reclassify.py             # ~1 request per 20 rows
+./sync.sh              # classify unrated rows, then merge + push
+./sync.sh --digest     # also rebuild the per-area digest
+./sync.sh --push-only  # just merge + push
 ```
+
+It merges by re-deriving through the store (`merge_into_store.py`), which both
+*adds* rows only the remote has and *enriches* rows whose ratings only you have.
+That second half matters: a merge that only appends URLs would throw away every
+rating a backfill just produced.
+
+To preview without writing anything: `python reclassify.py --dry-run`.
 
 `classifier.py` reads these from the environment:
 
