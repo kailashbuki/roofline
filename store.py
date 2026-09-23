@@ -7,7 +7,7 @@ the SQLAlchemy session interface unchanged.
 """
 import json
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -120,12 +120,13 @@ def dump(session, path=DATA_PATH):
 
     articles.sort(key=lambda a: (a["published_date"] or "", a["url"]), reverse=True)
 
-    cutoff = (datetime.utcnow() - timedelta(days=HOT_DAYS)).isoformat(timespec="seconds")
+    cutoff = (datetime.now(timezone.utc).replace(tzinfo=None)
+               - timedelta(days=HOT_DAYS)).isoformat(timespec="seconds")
     hot = [a for a in articles if (a["published_date"] or "") >= cutoff]
     cold = [a for a in articles if (a["published_date"] or "") < cutoff]
 
     _write(path, {
-        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "hot_days": HOT_DAYS,
         "count": len(hot),
         "total_collected": len(articles),

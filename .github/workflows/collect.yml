@@ -71,6 +71,9 @@ jobs:
           for attempt in 1 2 3; do
             cp data/articles.json /tmp/ours-articles.json
             cp data/rejected.json /tmp/ours-rejected.json 2>/dev/null || true
+            # The digest is built in the previous step; the reset below would
+            # delete it, so it has to survive the same way the data does.
+            cp data/digest.json /tmp/ours-digest.json 2>/dev/null || true
 
             git fetch origin "$GITHUB_REF_NAME" --quiet
             git reset --hard "origin/$GITHUB_REF_NAME" --quiet
@@ -80,6 +83,10 @@ jobs:
             python merge_into_store.py /tmp/ours-articles.json
             if [ -f /tmp/ours-rejected.json ]; then
               python merge_data.py --rejected /tmp/ours-rejected.json data/rejected.json data/rejected.json
+            fi
+            # Newest digest wins outright: it is derived, not accumulated.
+            if [ -f /tmp/ours-digest.json ]; then
+              cp /tmp/ours-digest.json data/digest.json
             fi
 
             if git diff --quiet -- data/ && [ -z "$(git ls-files -o --exclude-standard data/)" ]; then

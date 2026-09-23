@@ -634,3 +634,29 @@ An empty digest rendered as a stray thin bar. `hidden` works through the UA
 stylesheet's `display: none`, and .digest's explicit `display: -webkit-box` beat
 it. Added a global `[hidden] { display: none !important; }`. Any rule that sets
 display will silently defeat the hidden attribute.
+
+## 2026-09-23 (postscript 5) - The digest was built and then deleted every run
+
+Symptom: digest text never changed after the prompt was tightened, and 'training'
+still opened with "Recent work centers on" - the exact phrase the new prompt bans.
+The remote definitely had the new prompt, and the run log proved build_digest.py
+executed and produced the new shorter text, including a brand new 'economics'
+entry. Yet live digest.json still carried generated_at 21:11:37 from hours before.
+
+Cause: the "Commit updated data" step does `git reset --hard origin/main` to
+handle push races. That reset DELETED data/digest.json seconds after the previous
+step wrote it - only articles.json and rejected.json were being stashed to /tmp
+first. The digest was being built and thrown away on every single run.
+
+Fixes:
+- digest.json is now stashed and restored across the reset, like the other data.
+  Newest wins outright rather than being merged: it is derived from the articles,
+  not accumulated across runs.
+- Banned markdown in the digest prompt and strip ** / __ defensively: the page
+  sets textContent, so the model's bold markup was rendering as literal asterisks
+  ("**group relative policy optimization (GRPO)**").
+- Replaced datetime.utcnow() in build_digest.py and store.py - it is deprecated
+  and scheduled for removal, and was emitting warnings into every run log.
+
+Lesson: a step that writes a file is worthless if a later step resets the tree.
+Anything produced mid-job has to survive the same way the inputs do.

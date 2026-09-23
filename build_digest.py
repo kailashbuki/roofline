@@ -13,7 +13,7 @@ import argparse
 import json
 import os
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import classifier
 from classifier import AREAS, AREA_LABELS
@@ -37,7 +37,8 @@ def synthesise(label, items):
         "techniques that recur — those are the only things worth the space. Never "
         "write 'several papers', 'researchers are exploring', 'recent work centers "
         "on', or any other filler opening: start with the substance. If the items "
-        "share no theme, name the single most consequential one instead."
+        "share no theme, name the single most consequential one instead. "
+        "Plain prose only — no markdown, no asterisks, no bold."
     )
 
     url, body = classifier.build_request([("", "")])  # reuse the configured surface
@@ -66,7 +67,11 @@ def synthesise(label, items):
         if response.status_code != 200:
             print(f"  {label}: HTTP {response.status_code}")
             return None
-        return " ".join(classifier.extract_text(response.json()).split()) or None
+        text = " ".join(classifier.extract_text(response.json()).split())
+        # Belt and braces: the page renders this as text, so stray markdown from
+        # the model would show up as literal asterisks.
+        text = text.replace("**", "").replace("__", "").strip()
+        return text or None
     except Exception as exc:
         print(f"  {label}: {type(exc).__name__}: {exc}")
         return None
@@ -81,7 +86,8 @@ def main():
         return
     articles = json.load(open(DATA_PATH, encoding="utf-8"))["articles"]
 
-    cutoff = (datetime.utcnow() - timedelta(days=args.days)).isoformat(timespec="seconds")
+    cutoff = (datetime.now(timezone.utc).replace(tzinfo=None)
+              - timedelta(days=args.days)).isoformat(timespec="seconds")
     by_area = defaultdict(list)
     for a in articles:
         if (a.get("published_date") or "") < cutoff:
@@ -109,7 +115,7 @@ def main():
     os.makedirs(os.path.dirname(DIGEST_PATH) or ".", exist_ok=True)
     with open(DIGEST_PATH, "w", encoding="utf-8") as handle:
         json.dump({
-            "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "days": args.days,
             "areas": digest,
         }, handle, indent=1, ensure_ascii=False)
