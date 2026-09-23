@@ -1,0 +1,61 @@
+{
+ "month": "2025-09",
+ "count": 5,
+ "articles": [
+  {
+   "title": "We reverse-engineered Flash Attention 4",
+   "url": "https://modal.com/blog/reverse-engineer-flash-attention-4",
+   "source": "hackernews",
+   "published_date": "2025-09-27T21:50:30",
+   "summary": "134 points, 48 comments on HackerNews",
+   "tags": "attention,optimization",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Reverse-engineers proprietary Flash Attention 4 kernel optimizations."
+  },
+  {
+   "title": "Analog in-memory computing attention mechanism for fast energy-efficient LLMs",
+   "url": "https://www.nature.com/articles/s43588-025-00854-1",
+   "source": "hackernews",
+   "published_date": "2025-09-27T19:11:08",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,attention,inference",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Executes attention matrix multiplications natively on analog crossbar arrays to slash energy use."
+  },
+  {
+   "title": "Intel Gets $5B Investment from Nvidia, Commits to Adopting NVLink",
+   "url": "https://www.hpcwire.com/2025/09/18/intel-gets-5b-investment-from-nvidia-commits-to-adopting-nvlink-to-co-develop-future-cpu-gpu-superchips",
+   "source": "hackernews",
+   "published_date": "2025-09-20T18:43:45",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.6,
+   "why": "Major competitor adopts proprietary interconnect fabric, consolidating multi-vendor hardware around a single standard."
+  },
+  {
+   "title": "Analog In-Memory Computing Attention Mechanism for Fast LLMs",
+   "url": "https://arxiv.org/abs/2409.19315",
+   "source": "hackernews",
+   "published_date": "2025-09-12T14:09:56",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,attention,inference",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Executes attention matrix multiplications natively on analog crossbar arrays to slash energy use."
+  },
+  {
+   "title": "Understanding and Implementing Qwen3 From Scratch",
+   "url": "https://magazine.sebastianraschka.com/p/qwen3-from-scratch",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-09-06T11:10:21",
+   "summary": "A Detailed Look at One of the Leading Open-Source LLMs",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Implements Qwen3 blocks from scratch to expose exact tensor shapes and operator configurations."
+  }
+ ]
+}
