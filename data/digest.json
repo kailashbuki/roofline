@@ -1,34 +1,14 @@
 {
- "generated_at": "2026-09-23T22:20:20Z",
+ "generated_at": "2026-09-23T22:24:25Z",
  "days": 7,
  "areas": {
-  "architecture": {
-   "text": "Long-context attention inefficiencies and world model consistency are being resolved through hyperbolic geometry, GTR gated token recurrence, HySparse2 two-level KV sharing, and WorldCrafter implicit 3D-aware memory.",
-   "items": 38
-  },
-  "new-models": {
-   "text": "New open-weights models like Xiaomi MiMo-V2.6-Pro and architectures such as MintAct, OmniVChat, and flow-based generative models are driving advances in audio-visual dialogue, vision agents, and materials discovery.",
-   "items": 18
-  },
   "inference-methods": {
-   "text": "Practitioners are scaling test-time compute through search policies, applying on-policy distillation to sub-3-bit models, disaggregating prefill-decode quantization, and compressing context via CompKV and state management.",
+   "text": "Engineers are deploying on-policy distillation, Disaggregated Quantization, CompKV, and just-in-time state management to slash memory overhead and scale test-time reasoning on resource-constrained hardware.",
    "items": 38
-  },
-  "inference-engines": {
-   "text": "Recent work optimizes large scale AI serving and training using Flux, SARA, NVIDIA Topograph, DHSched, and vLLM to manage memory tiering, topology awareness, and agentic inference.",
-   "items": 33
   },
   "silicon": {
-   "text": "Engineers are optimizing TPU v6e and FPGA hardware, managing GPU cluster power surges, and scaling AI via DRAM/SSD offloading, optical interconnects, and dynamic clocking.",
+   "text": "Practitioners are optimizing TPU v6e and low-cost FPGA hardware, mitigating GPU cluster power surges via software, and scaling AI with DRAM/SSD offloading and optical interconnects.",
    "items": 14
-  },
-  "training": {
-   "text": "RL alignment and reward hacking dominate training, featuring group relative policy optimization, instance-aware rubric rewards, and agentic reinforcement learning for video and code generation.",
-   "items": 43
-  },
-  "economics": {
-   "text": "Self-hosted open-weight inference economics and structural token cost reductions are driving broad-market price cuts of forty to fifty percent across AI systems.",
-   "items": 4
   }
  }
 }

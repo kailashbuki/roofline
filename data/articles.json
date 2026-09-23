@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-23T22:23:18Z",
- "previous_generated_at": "2026-09-23T22:20:21Z",
+ "generated_at": "2026-09-23T22:24:25Z",
+ "previous_generated_at": "2026-09-23T22:23:18Z",
  "hot_days": 120,
- "count": 847,
- "total_collected": 847,
+ "count": 848,
+ "total_collected": 848,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -176,6 +176,17 @@
    "importance": 0.3,
    "why": "Integrates optimized local quantization loaders directly into standard framework runtimes.",
    "first_seen": "2026-09-23T06:18:18"
+  },
+  {
+   "title": "How to train your own Jev for $17",
+   "url": "https://www.together.ai/blog/how-to-train-your-own-jev",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-09-23T00:00:00",
+   "summary": "We just launched our own Jev-like classifier, together/Tev1-4B-experimental, on top of Qwen3.5 4B on Together’s serverless platform. In this blog post we’ll show you how to fine-tune your own version!",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-09-23T22:24:02",
+   "importance": 0.0
   },
   {
    "title": "Better prompt caching for GPT-6",
