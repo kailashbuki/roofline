@@ -1,0 +1,71 @@
+{
+ "month": "2025-12",
+ "count": 6,
+ "articles": [
+  {
+   "title": "The State Of LLMs 2025: Progress, Problems, and Predictions",
+   "url": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-30T12:22:26",
+   "summary": "A 2025 review of large language models, from DeepSeek R1 and RLVR to inference-time scaling, benchmarks, architectures, and predictions for 2026.",
+   "tags": "training,llm",
+   "area": "new-models",
+   "importance": 0.3,
+   "why": "Broad retrospective on 2025 LLM progress spanning RLVR, scaling, and architectural shifts."
+  },
+  {
+   "title": "LLM Research Papers: The 2025 List (July to December)",
+   "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-part2",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-30T12:15:39",
+   "summary": "In June, I shared a bonus article with my curated and bookmarked research paper lists to the paid subscribers who make this Substack possible.",
+   "tags": "",
+   "area": "other",
+   "importance": 0.0
+  },
+  {
+   "title": "Nvidia NVLink Fusion Tapped for Future AWS Trainium4 Deployments",
+   "url": "https://www.servethehome.com/nvidia-nvlink-fusion-tapped-for-future-aws-trainium4-deployments",
+   "source": "hackernews",
+   "published_date": "2025-12-12T10:24:16",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.6,
+   "why": "Integrates high-speed interconnect technology into custom cloud accelerator deployments."
+  },
+  {
+   "title": "AWS Trainium3 Deep Dive – A Potential Challenger Approaching",
+   "url": "https://newsletter.semianalysis.com/p/aws-trainium3-deep-dive-a-potential",
+   "source": "hackernews",
+   "published_date": "2025-12-04T19:19:05",
+   "summary": "71 points, 24 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.7,
+   "why": "Details architectural specs and performance projections of upcoming custom accelerators."
+  },
+  {
+   "title": "From DeepSeek V3 to V3.2: Architecture, Sparse Attention, and RL Updates",
+   "url": "https://magazine.sebastianraschka.com/p/technical-deepseek",
+   "source": "rss:Ahead of AI",
+   "published_date": "2025-12-03T12:03:33",
+   "summary": "Understanding How DeepSeek's Flagship Open-Weight Models Evolved",
+   "tags": "architecture,training,llm",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Details sparse attention and RL updates driving DeepSeek V3.2 efficiency gains."
+  },
+  {
+   "title": "Amazon launches Trainium3",
+   "url": "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap",
+   "source": "hackernews",
+   "published_date": "2025-12-02T19:04:31",
+   "summary": "204 points, 70 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.8,
+   "why": "Introduces new custom accelerator silicon targeting large-scale training and inference workloads."
+  }
+ ]
+}

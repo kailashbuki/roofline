@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-23T21:22:39Z",
+ "generated_at": "2026-09-23T21:24:46Z",
  "hot_days": 120,
- "count": 849,
- "total_collected": 849,
+ "count": 850,
+ "total_collected": 902,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -22,6 +22,16 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+   "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-09-23T21:20:29",
+   "summary": "In gory detail: reliability, performance, support, pricing&#8212;and, of course, security&#8212;in our most thorough analysis of GPU cloud providers globally.",
+   "tags": "",
+   "area": "silicon",
+   "importance": 0.0
+  },
   {
    "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
    "url": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land",
