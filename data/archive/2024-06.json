@@ -1,0 +1,28 @@
+{
+ "month": "2024-06",
+ "count": 2,
+ "articles": [
+  {
+   "title": "Samba: Simple Hybrid State Space Models",
+   "url": "https://arxiv.org/abs/2406.07522",
+   "source": "hackernews",
+   "published_date": "2024-06-12T13:56:25",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,systems",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Merges state space models with sliding window attention and MLPs into a single hardware-efficient layer."
+  },
+  {
+   "title": "The illusion of state in state-space models",
+   "url": "https://arxiv.org/abs/2404.08819",
+   "source": "hackernews",
+   "published_date": "2024-06-07T11:53:27",
+   "summary": "60 points, 59 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Analyzes hidden state capacity limitations in linear RNNs, defining exact boundaries for retrieval tasks."
+  }
+ ]
+}

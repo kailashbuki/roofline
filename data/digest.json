@@ -1,30 +1,34 @@
 {
- "generated_at": "2026-09-23T21:11:37Z",
+ "generated_at": "2026-09-23T21:36:59Z",
  "days": 7,
  "areas": {
   "architecture": {
-   "text": "Recent architectures prioritize long-context efficiency and agentic reliability by addressing attention bottlenecks and memory constraints. Recurring themes focus on optimizing KV caching, hyperbolic representations, and structured state-space models to eliminate quadratic scaling limits in dense prediction and world generation tasks.",
+   "text": "Researchers are tackling long-context attention limits, vector-quantized tokenization stability, and 3D-consistent world generation using recurrent attention, hyperbolic geometry, and two-level KV sharing.",
    "items": 38
   },
   "new-models": {
-   "text": "Generative modeling and multimodal architectures dominate current machine learning. Systems like MintAct, OmniVChat, and OmniFysics advance cross-modal reasoning for physical and digital environments, while high-efficiency open-weights releases like Xiaomi MiMo-V2.6-Pro democratize frontier-scale performance.",
+   "text": "Xiaomi MiMo-V2.6-Pro and MintAct lead recent releases, while flow-based generative models, foundation model embeddings, and mixture-of-experts frameworks dominate material discovery, medical prediction, and physical security.",
    "items": 18
   },
   "inference-methods": {
-   "text": "The field is aggressively scaling test-time compute and long-context efficiency. Dominant themes include specialized quantization for disaggregated phases, KV cache compression, and hardware-constrained serving optimization like just-in-time state management.",
-   "items": 37
+   "text": "Practitioners are deploying on-policy distillation, Disaggregated Quantization, CompKV, and just-in-time state management to scale 200K-token contexts, sub-3-bit reasoning, and hardware-constrained inference.",
+   "items": 38
   },
   "inference-engines": {
-   "text": "The AI serving landscape is aggressively tackling agentic multi-turn workflows, memory bottlenecks, and hardware topology. Systems like vLLM and NVIDIA Topograph lead this push to optimize complex, long-context inference and multi-tier memory management under strict latency constraints.",
+   "text": "Engineers are optimizing large language model and agentic serving using vLLM prefix caching, HBM flash memory tiering, and NVIDIA Topograph topology-aware scheduling to reduce latency.",
    "items": 33
   },
   "silicon": {
-   "text": "AI cluster scaling and energy efficiency dominate hardware design. Practitioners are tackling TPU and GPU power delivery, transformer inference optimization on low-cost FPGAs, and advanced optical and high-bandwidth memory interconnects.",
-   "items": 13
+   "text": "Engineers are scaling AI hardware by optimizing TPUs like v6e, managing GPU cluster power surges, and integrating HBM, optical interconnects, and low-cost FPGAs.",
+   "items": 14
   },
   "training": {
-   "text": "Recent work centers on mastering reinforcement learning alignment and mitigating reward hacking across modalities like text, code, and SVG generation. Concurrently, practitioners are establishing theoretical foundations for neural scaling laws and addressing evaluation failures in automated vulnerability repair.",
+   "text": "Practitioners are tackling reward hacking and credit assignment across RL and diffusion pipelines using rubric rewards, group relative policy optimization, and agentic reinforcement learning.",
    "items": 43
+  },
+  "economics": {
+   "text": "Inference costs are collapsing industry-wide by 40 to 50 percent, driving a macroeconomic shift toward tokens too cheap to meter and forcing a re-evaluation of self-hosted open-weight unit economics.",
+   "items": 4
   }
  }
 }
