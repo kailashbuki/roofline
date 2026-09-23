@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T20:56:45Z",
+ "generated_at": "2026-09-23T21:00:32Z",
  "hot_days": 120,
  "count": 849,
  "total_collected": 849,
@@ -72,7 +72,7 @@
    "source": "hackernews",
    "published_date": "2026-09-23T15:14:22",
    "summary": "",
-   "tags": "llm,multimodal",
+   "tags": "",
    "area": "other"
   },
   {
@@ -92,7 +92,7 @@
    "source": "hackernews",
    "published_date": "2026-09-23T13:08:59",
    "summary": "",
-   "tags": "llm,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -123,7 +123,7 @@
    "source": "hackernews",
    "published_date": "2026-09-23T09:21:17",
    "summary": "",
-   "tags": "inference,optimization,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -132,7 +132,7 @@
    "source": "rss:Latent Space",
    "published_date": "2026-09-23T06:41:41",
    "summary": "overshadowing more efficient GPT6 models from OpenAI",
-   "tags": "llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -163,7 +163,7 @@
    "source": "rss:OpenAI Blog",
    "published_date": "2026-09-22T18:00:00",
    "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-   "tags": "llm,architecture",
+   "tags": "",
    "area": "other"
   },
   {
@@ -194,7 +194,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:59:24",
    "summary": "We establish a fully discrete weak-to-strong (W2S) multi-entropy stability theory for arbitrarily high-order finite-volume and discontinuous Galerkin (DG) approximations of the ideal compressible magnetohydrodynamics (MHD) equations on general polytopal meshes, whereby a single numerical update simultaneously satisfies discrete entropy inequalities for any prescribed finite family of convex Harten entropy pairs. Because physical entropies are defined only for positive density and pressure, the central analytical difficulty lies in reconciling discrete entropy stability with positivity preserva",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -236,7 +236,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:54:58",
    "summary": "Birnbaum's theorem states that the sufficiency and conditionality principles jointly imply, and are implied by, the likelihood principle. To enable formal certification of the results in Lean, we make the conditionality relation explicit through a finite-sample formulation based on \\cite{Evans2013}. We reformulate the theorem as a statement about classes of statistical procedures that preserve statistical relations, and show that the proof reduces to the propagation of evidential equality along chains of conditionality-related inference bases (experiment--observation pairs). The main results a",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -256,7 +256,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:49:30",
    "summary": "This paper investigates the ambiguity of noisy short-arc angles-only orbit determination for a Molniya-orbit case study. Conventional Gauss Initial Orbit Determination followed by Gaussian Least-Squares Differential Correction is first shown to be unreliable under high-noise short-arc conditions, frequently failing to converge or converging to hyperbolic local solutions. To explore the candidate solution space, a Lambert-based initialization procedure is used over a grid of assumed ranges and angular-observation pairs, and the resulting states are refined using nonlinear least-squares optimiza",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -265,7 +265,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:46:31",
    "summary": "Thermal Visual Place Recognition (Thermal VPR) maps camera observations to metric poses within a mapped environment, serving as a prerequisite for autonomous navigation. However, thermal VPR suffers from severe environmental dependence, heavy online retraining overheads, and an inability to model dynamic non-linear shifts, causing existing frameworks to fail during online deployment. To achieve robust domain-invariant place recognition, we bridge Analytic Class-Incremental Learning (ACIL) with domain-invariant VPR for the first time, revealing that its gradient-free matrix updates construct a ",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -319,9 +319,9 @@
    "published_date": "2026-09-22T17:32:05",
    "summary": "Large language models (LLMs) are increasingly applied to the automated repair of C/C++ security vulnerabilities, and compile rate is a commonly reported proxy for progress: whether the generated patch compiles. We argue that compile rate is a scientifically unreliable metric for single-function vulnerability repair, and we support this with five controlled experiments over 203 vulnerable functions from Big-Vul, three open-source code LLMs (350M to 6.7B parameters), and three prompting strategies. Compile rate (i) barely responds to an intervention that substantially improves the generated code",
    "tags": "benchmarks,llm",
-   "area": "other",
-   "importance": 0.5,
-   "why": "Demonstrates empirically that compile rate is an unreliable metric for evaluating LLM-based code vulnerability repair."
+   "area": "training",
+   "importance": 0.6,
+   "why": "Analyzes why raw compile rates are misleading metrics for LLM code vulnerability repair."
   },
   {
    "title": "Convergence Analysis of an Inexact Proximal Trust-Region Method",
@@ -329,7 +329,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:31:06",
    "summary": "We analyze an inexact, proximal trust-region algorithm for minimizing the sum of a smooth nonconvex function and a nonsmooth convex function. Our algorithm leverages the proximal gradient as a benchmark to guarantee global convergence. However, evaluating the proximal gradient involves solving a nonsmooth convex optimization problem that in many applications cannot be performed exactly. As such, we develop a framework that permits inexact evaluations of the proximity operator and we show the proposed inexactness conditions yield descent properties analogous to the exact proximal gradient. We f",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -338,7 +338,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:27:50",
    "summary": "We construct an explicit family of finite-dimensional quantum channels for which the optimal classical communication rate achievable with product-state codewords and collective decoding tends to zero, while rates achievable using entanglement only within pairs of channel inputs grow without bound.\n  Our construction combines deterministic qudit Clifford unitaries with a binary measurement and classical feedforward, providing a derandomization to Hastings' probabilistic construction. The key ingredient is a careful design of measurement and feedforward process that yields the required one-copy ",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -391,7 +391,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T17:13:21",
    "summary": "Incentive design aims to guide the performance of a system towards a human's intention or preference. We study this problem in a multi-agent system with one leader and multiple followers. Each follower independently solves a mdp to maximize its own expected total return with the same state space and action space. However, the leader's objective depends on the collective best-response policies of all followers. To influence these policies of followers, the leader provides side payments as incentives to individual followers at a cost, aiming to align the collective behaviors of followers with it",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -444,7 +444,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T16:51:31",
    "summary": "",
-   "tags": "llm,inference,benchmarks",
+   "tags": "",
    "area": "other"
   },
   {
@@ -453,7 +453,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T16:29:05",
    "summary": "",
-   "tags": "architecture,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -473,7 +473,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T16:22:54",
    "summary": "Integrating heterogeneous datasets within data lakes is a critical challenge, particularly for semantically related tables that lack the explicit attributes needed to be joined. We study Discovery-Driven Integration, where the relevant sources and their missing relational structure must be discovered before integration. In this setting, unstructured text provides the evidence that connects otherwise disjoint tables. The fundamental challenge is to discover the relationships at a fine-grained level that connect individual rows from different tables through specific sentences. We formalize this ",
-   "tags": "optimization,attention",
+   "tags": "",
    "area": "other"
   },
   {
@@ -546,7 +546,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T15:45:32",
    "summary": "",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -566,7 +566,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T15:38:24",
    "summary": "",
-   "tags": "optimization,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -663,7 +663,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T14:42:59",
    "summary": "",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -672,7 +672,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T14:24:10",
    "summary": "Automatic lip-synchronous dubbing requires a speech synthesis model to generate alternating voice and silence patterns in the target language that match the timing of the source clip precisely to ensure an optimal viewing experience. Prior works address this problem by conditioning the speech synthesis process on lip movements extracted from the video signal. In this work, we condition the speech generation on a binary voice-activity signal, which has a lightweight representation and can be produced in multiple ways. We show that the model follows the voice-activity signal with high accuracy w",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -692,7 +692,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T14:19:16",
    "summary": "Scattered light is common in biomedical images, yet its removal remains challenging. The difficulty arises from three aspects: first, aligned scattered-light-free biomedical ground truth is often unavailable; second, scattering is coupled with weak illumination and sensor-induced noise; and third, many learning-based restoration models are computationally expensive for embedded devices in Internet of Medical Things (IoMT) scenarios. To address these issues, this paper proposes PP-Net, a hybrid physical-prior neural network for biomedical scattered light removal. The proposed method consists of",
-   "tags": "hardware,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -723,7 +723,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T13:52:15",
    "summary": "",
-   "tags": "llm,architecture",
+   "tags": "",
    "area": "other"
   },
   {
@@ -732,7 +732,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T13:51:17",
    "summary": "Finite Element Analysis (FEA) is widely used for transient mechanical simulations, but its high computational cost limits real-time and high-resolution applications. Deep learning surrogate models can reduce this cost; however, many existing approaches are restricted to steady-state prediction or cannot jointly predict Node- and Element-based Outputs (NEO) over time. The state-of-the-art DeepFEA framework has addressed these issues but remains limited to structured finite element (FE) meshes. To overcome this limitation, this study proposes DeepFEAv2, a deep learning surrogate framework that e",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -805,7 +805,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T13:24:30",
    "summary": "Transforming scholarly PDFs into machine-readable fulltext remains a bottleneck for large-scale information systems. Recent vision-based parsers improve accuracy, but need GPUs and may introduce noise into the extracted text. GROBID, a modular font-stream parser running on CPU, is the de-facto standard for structuring scientific articles and underpins several of the largest open scholarly corpora. We pair it with a lightweight CPU detector localising figure, table, and paratext (header, footer, page number) regions, encoded as typed-area masks whose tokens are routed to GROBID's specialised mo",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -858,7 +858,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T13:00:49",
    "summary": "Hey HN! We’re Vincent and Jochen from Sitefire (<a href=\"https:&#x2F;&#x2F;sitefire.ai\">https:&#x2F;&#x2F;sitefire.ai</a>). We have been working together for years, with backgrounds in RL&#x2F;optimization at Stanford and software engineering from Technical University Munich (TUM).<p>With Sitefire (YC W26), we help marketing teams get recommended by AI Search (ChatGPT, Google AI Overviews, AI Mode, Claude, etc.). Our software monitors prompts, sees which web pages get cited, and uses these insig",
-   "tags": "optimization,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -942,7 +942,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:16:23",
    "summary": "Graph neural networks have achieved strong performance in node classification by aggregating information from graph neighborhoods. However, a single aggregation mechanism may be insufficient to capture diverse structural patterns across graph datasets. Moreover, independently training multiple structural branches can introduce substantial overhead without necessarily producing stable node representations. To address these issues, this paper proposes PreGS, a parameter-transfer-based multi-expert graph neural network framework. PreGS first pretrains a multi-head graph attention network (GAT) an",
-   "tags": "attention,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -962,7 +962,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:09:08",
    "summary": "The mobility sector is undergoing a paradigm shift driven by advances in Generative Artificial Intelligence. With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide. As Large Language Models (LLMs) are increasingly adopted in mobility, concerns about cybersecurity, privacy, and reliability emerge. Accordingly, this paper surveys current applications and assesses these challenges. Since the European AI Act classifies transportation AI as high risk",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -982,7 +982,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T12:00:07",
    "summary": "Large Language Models (LLMs) have been used in various industries. However, ensuring their compliance with complex laws and regulatory frameworks remains a great challenge. Existing evaluation paradigms mainly rely on static benchmarks that suffer from three severe limitations: First, the compliance rules being used do not comply with the requirements of Artificial Intelligence (AI) laws and regulations; Second, they only handle apparent, explicit compliance risks, leaving implicit and covert compliance risks undetected; Third, they fail to track the systematic propagation of risks along logic",
-   "tags": "llm,benchmarks",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1088,7 +1088,7 @@
    "source": "arxiv",
    "published_date": "2026-09-22T09:24:21",
    "summary": "DAG-based consensus protocols can achieve great throughput and the optimal three-message-delay limit for n = 3f+1 consensus. While two-delay protocols exist, they pay with reduced resilience (requiring 5f+1-style committees) or rely on fallbacks that sacrifice the DAG's high throughput. This paper introduces Hydrozoan, the first DAG protocol with a dual commit path under a hybrid fault model of f Byzantine and c crashed validators, on n = 3f+c+2p+1 validators. Leaders commit in two message delays whenever at most p validators are faulty, and in three otherwise, with no extra messages, no view ",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1316,9 +1316,9 @@
    "published_date": "2026-09-22T06:55:46",
    "summary": "Using large language models (LLMs) to simulate diverse human populations has the potential to transform many aspects of computational social science, yet many evaluations score the average response rather than the spread of opinion within real groups. Here, we develop a diagnostic framework that measures point accuracy alongside dispersion retention, the ratio of predicted to human standard deviation ($\\dr$), on 10{,}000 respondent--question pairs from the World Values Survey (WVS) spanning twelve countries and six continents. We evaluate eleven zero-shot language models and five variants fine",
    "tags": "post-training,llm",
-   "area": "other",
+   "area": "training",
    "importance": 0.4,
-   "why": "Evaluates how post-training methods reduce behavioral and opinion dispersion in simulated LLM societies."
+   "why": "Examines how post-training and survey fine-tuning inadvertently erase cross-cultural variance in LLM simulations."
   },
   {
    "title": "Syndrome, Synergy, and Safety: Structured Reasoning and Knowledge-Driven Alignment for TCM Prescription Generation",
@@ -1381,7 +1381,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T06:08:39",
    "summary": "",
-   "tags": "llm,architecture",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1434,7 +1434,7 @@
    "source": "hackernews",
    "published_date": "2026-09-22T04:24:07",
    "summary": "4 points, 0 comments on HackerNews",
-   "tags": "attention,inference,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1465,7 +1465,7 @@
    "source": "rss:Hugging Face Blog",
    "published_date": "2026-09-22T00:00:00",
    "summary": "",
-   "tags": "inference,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1529,7 +1529,7 @@
    "source": "hackernews",
    "published_date": "2026-09-21T20:12:12",
    "summary": "",
-   "tags": "llm,architecture",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1538,7 +1538,7 @@
    "source": "hackernews",
    "published_date": "2026-09-21T19:43:49",
    "summary": "",
-   "tags": "architecture,attention,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1578,7 +1578,7 @@
    "source": "hackernews",
    "published_date": "2026-09-21T14:26:56",
    "summary": "",
-   "tags": "attention,architecture,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1598,7 +1598,7 @@
    "source": "rss:Interconnects",
    "published_date": "2026-09-21T11:56:56",
    "summary": "The expanded form of a testimony I prepared for Congress.",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1860,7 +1860,7 @@
    "source": "airealist",
    "published_date": "2026-09-20T10:40:49",
    "summary": "Almost every model on Bedrock gets six months' notice before it can be pulled. The one Washington just accused gets 45 days, and no stated reason.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1913,7 +1913,7 @@
    "source": "hackernews",
    "published_date": "2026-09-19T23:46:42",
    "summary": "",
-   "tags": "post-training,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -1922,7 +1922,7 @@
    "source": "rss:Chips and Cheese",
    "published_date": "2026-09-19T18:03:20",
    "summary": "Integrated GPUs have become a crucial component in recent laptop chips, thanks to a push for better graphics performance in ultraportable devices.",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2006,7 +2006,7 @@
    "source": "arxiv",
    "published_date": "2026-09-18T17:57:08",
    "summary": "Quadrupedal robots are increasingly deployed in environments where locomotion must remain robust to disturbances and constrained terrain. Gait type, such as walking or trotting, is commonly used to characterize quadrupedal locomotion. However, gait type does not uniquely define locomotion, as parameters such as duty factor, speed, and stance width can vary within a single gait type. In this work, we investigate the relationship between these gait parameters using three distinct quadrupedal locomotion control approaches. First, using whole body trajectory optimization with LQR feedback, we show",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2015,7 +2015,7 @@
    "source": "arxiv",
    "published_date": "2026-09-18T17:53:16",
    "summary": "Automatic dense packing is widely desired in warehouse operations but remains a fundamental challenge in robotic manipulation. Existing work on irregular-object packing largely targets simulation with idealized contact, treating the object as an isolated rigid body. The gripper often enters as a discrete, post-hoc feasibility check, if considered at all, and the perception and contact drift accumulated during execution are not addressed. We present a closed-loop pipeline that integrates perception, gripper-aware placement optimization, and force-guided execution on a real manipulator. The opti",
-   "tags": "optimization,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2024,7 +2024,7 @@
    "source": "arxiv",
    "published_date": "2026-09-18T17:52:00",
    "summary": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are invest",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2044,7 +2044,7 @@
    "source": "arxiv",
    "published_date": "2026-09-18T17:36:00",
    "summary": "In this work, we study asymmetric $(1\\to2)$ quantum cloning for pure states belonging to orbits generated by the orthogonal group. For every dimension $(d\\geq3)$, we determine the full region of achievable pairs of average single-copy fidelities. Using orthogonal covariance and the Brauer algebra, we reduce the optimization over all CPTP maps to a finite-dimensional spectral problem and construct explicit optimal cloning channels. We then apply the general results to four-mode fermionic states in the even-parity sector. Using triality, we identify the fixed-concurrence fermionic families with ",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2284,7 +2284,7 @@
    "source": "rss:Latent Space",
    "published_date": "2026-09-17T07:28:25",
    "summary": "A dash of cold water keeps the foomers away.",
-   "tags": "inference,serving",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2509,7 +2509,7 @@
    "source": "rss:Latent Space",
    "published_date": "2026-09-15T20:11:54",
    "summary": "Good Start Labs trained an AI on a railroad game &#8212; and one version improved at financial research. The difference was the training design.",
-   "tags": "training",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2760,7 +2760,7 @@
    "source": "hackernews",
    "published_date": "2026-09-13T15:44:38",
    "summary": "417 points, 240 comments on HackerNews",
-   "tags": "post-training,compression,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2877,7 +2877,7 @@
    "source": "airealist",
    "published_date": "2026-09-11T14:58:23",
    "summary": "Three agencies advised American AI providers to degrade answers for accounts they suspect of malicious distillation, subtly enough to &#8220;avoid triggering obvious alerts&#8221;.",
-   "tags": "compression,post-training",
+   "tags": "",
    "area": "other"
   },
   {
@@ -2886,7 +2886,7 @@
    "source": "rss:Interconnects",
    "published_date": "2026-09-11T12:36:25",
    "summary": "How to get up to speed on open models and their implications.",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3054,7 +3054,7 @@
    "source": "rss:PyTorch Blog",
    "published_date": "2026-09-10T00:01:29",
    "summary": "PyTorch Conference China 2026 brought the PyTorch community together in Shanghai on September 8–9 alongside KubeCon + CloudNativeCon and OpenInfra Summit, following sponsor-hosted co-located events on September 7. Technical discussions...",
-   "tags": "systems,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3281,7 +3281,7 @@
    "source": "rss:PyTorch Blog",
    "published_date": "2026-09-08T01:00:02",
    "summary": "China&#8217;s leading AI technology companies Alibaba Cloud, Cambricon and Ant Group join the PyTorch Foundation as members Summary Alibaba Cloud and Cambricon joined the PyTorch Foundation as Platinum members, and...",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3290,7 +3290,7 @@
    "source": "rss:PyTorch Blog",
    "published_date": "2026-09-08T00:59:13",
    "summary": "The PyTorch Foundation, a community-driven hub for open source AI under the Linux Foundation, is announcing today that Cambricon has joined as a Platinum member. Founded in 2016, Cambricon is...",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3321,7 +3321,7 @@
    "source": "rss:PyTorch Blog",
    "published_date": "2026-09-07T13:05:37",
    "summary": "TL;DR More than 170 students, engineers, researchers, and open-source contributors gathered in Bengaluru for a technical evening hosted by Red Hat and Hugging Face around PyTorch, large-scale inference, reinforcement learning...",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3363,7 +3363,7 @@
    "source": "hackernews",
    "published_date": "2026-09-06T21:08:54",
    "summary": "3 points, 2 comments on HackerNews",
-   "tags": "hardware,training,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3383,7 +3383,7 @@
    "source": "hackernews",
    "published_date": "2026-09-05T19:24:17",
    "summary": "2 points, 3 comments on HackerNews",
-   "tags": "inference,serving,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3414,10 +3414,10 @@
    "source": "hf:papers",
    "published_date": "2026-09-05T00:00:00",
    "summary": "SkillSpec uses specification reasoning over a unified skill graph to detect semantic defects in autonomous agent skills by balancing contextual views and sandbox validation.\n\nKeywords: SkillSpec, Hoare-style framework, specification reasoning, ExpectSpec, FactSpec, intent mask, skill graph, sandbox validation",
-   "tags": "optimization,systems",
-   "area": "other",
-   "importance": 0.5,
-   "why": "Uses specification reasoning over a unified skill graph to validate autonomous agent correctness."
+   "tags": "systems,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Introduces specification reasoning over unified skill graphs to improve agent correctness via sandbox validation."
   },
   {
    "title": "End-to-end infrastructure for training and inferencing open weight models",
@@ -3458,7 +3458,7 @@
    "source": "hackernews",
    "published_date": "2026-09-04T17:12:22",
    "summary": "76 points, 28 comments on HackerNews",
-   "tags": "inference,quantization,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3500,7 +3500,7 @@
    "source": "hackernews",
    "published_date": "2026-09-04T05:47:53",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3520,7 +3520,7 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-09-03T22:36:02",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/kai-scheduler-representation-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"kai-scheduler-representation\" width=\"768\" />Modern AI platforms are no longer a single application behind one login screen. A user may start in a central portal, open a governed dataset, launch a notebook...",
-   "tags": "systems,serving",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3661,7 +3661,7 @@
    "source": "hackernews",
    "published_date": "2026-09-02T01:47:13",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware,inference,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3692,10 +3692,10 @@
    "source": "rss:Hugging Face Blog",
    "published_date": "2026-09-01T21:39:07",
    "summary": "",
-   "tags": "benchmarks",
+   "tags": "benchmarks,llm",
    "area": "other",
-   "importance": 0.5,
-   "why": "Critiques evaluation methodologies and capability measurement practices across modern language model benchmarks."
+   "importance": 0.3,
+   "why": "Evaluates the validity and actual constructs measured by current large language model benchmarks."
   },
   {
    "title": "Korea’s Trillion-Dollar Sovereign AI Investment: Nvidia Wins, Hynix Loses",
@@ -3800,7 +3800,7 @@
    "source": "airealist",
    "published_date": "2026-08-31T14:36:33",
    "summary": "Nobody could pay to keep Hugging Face neutral. Nvidia is paying to own it.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3831,7 +3831,7 @@
    "source": "hackernews",
    "published_date": "2026-08-30T18:15:08",
    "summary": "2 points, 1 comments on HackerNews",
-   "tags": "inference,systems,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -3948,7 +3948,7 @@
    "source": "hackernews",
    "published_date": "2026-08-27T23:27:04",
    "summary": "6 points, 0 comments on HackerNews",
-   "tags": "hardware,inference,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4001,7 +4001,7 @@
    "source": "hackernews",
    "published_date": "2026-08-26T18:57:02",
    "summary": "4 points, 1 comments on HackerNews",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4153,7 +4153,7 @@
    "source": "airealist",
    "published_date": "2026-08-25T10:13:46",
    "summary": "AI data centers are the foreign bases of the US&#8211;China tech rivalry, except that the host now pays the rent.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4272,7 +4272,7 @@
    "source": "hackernews",
    "published_date": "2026-08-24T15:02:01",
    "summary": "16 points, 8 comments on HackerNews",
-   "tags": "inference,training,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4413,7 +4413,7 @@
    "source": "rss:Google AI Blog",
    "published_date": "2026-08-21T10:54:00",
    "summary": "Algorithms & Theory",
-   "tags": "architecture,llm,multimodal",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4455,7 +4455,7 @@
    "source": "rss:Hugging Face Blog",
    "published_date": "2026-08-21T00:00:00",
    "summary": "",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4464,7 +4464,7 @@
    "source": "rss:Hugging Face Blog",
    "published_date": "2026-08-21T00:00:00",
    "summary": "",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4517,7 +4517,7 @@
    "source": "airealist",
    "published_date": "2026-08-20T17:27:43",
    "summary": "DeepSeek gave the agent harness away. OpenAI is taxing itself to watch its own. SpaceX paid $60 billion for one. All three just told you where the value went.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4755,7 +4755,7 @@
    "source": "hackernews",
    "published_date": "2026-08-17T15:07:07",
    "summary": "3 points, 0 comments on HackerNews",
-   "tags": "hardware,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -4905,7 +4905,7 @@
    "source": "hackernews",
    "published_date": "2026-08-13T17:08:01",
    "summary": "3 points, 0 comments on HackerNews",
-   "tags": "serving,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5011,7 +5011,7 @@
    "source": "rss:Google AI Blog",
    "published_date": "2026-08-11T17:04:00",
    "summary": "Health & Bioscience",
-   "tags": "multimodal,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5020,7 +5020,7 @@
    "source": "rss:Chips and Cheese",
    "published_date": "2026-08-11T16:52:16",
    "summary": "Hello you fine Internet folks,",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5161,7 +5161,7 @@
    "source": "hackernews",
    "published_date": "2026-08-08T15:36:09",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5234,7 +5234,7 @@
    "source": "hackernews",
    "published_date": "2026-08-06T08:17:57",
    "summary": "14 points, 0 comments on HackerNews",
-   "tags": "hardware,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5265,7 +5265,7 @@
    "source": "rss:Chips and Cheese",
    "published_date": "2026-08-05T19:19:22",
    "summary": "Hello you fine Internet folks,",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5274,7 +5274,7 @@
    "source": "airealist",
    "published_date": "2026-08-05T18:22:33",
    "summary": "What six weeks of exits say about the model Google hasn&#8217;t shipped.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5327,7 +5327,7 @@
    "source": "airealist",
    "published_date": "2026-08-04T17:44:12",
    "summary": "OVH told Canada how to get the data it refused to hand over. On August 18, the European Union stops making the argument OVH is making in court.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5389,7 +5389,7 @@
    "source": "rss:Chips and Cheese",
    "published_date": "2026-08-02T22:02:44",
    "summary": "Arm&#8217;s 5-series cores are meant for tasks where performance barely matters, but power and area efficiency are top priorities.",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5519,7 +5519,7 @@
    "source": "rss:Chips and Cheese",
    "published_date": "2026-07-31T01:39:23",
    "summary": "Hello you fine Internet folks,",
-   "tags": "hardware,architecture",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5592,7 +5592,7 @@
    "source": "airealist",
    "published_date": "2026-07-29T12:01:08",
    "summary": "On 30 June, AWS published two announcements pointing in opposite directions. In July, it closed its AGI Lab. All three were the same decision.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5788,7 +5788,7 @@
    "source": "hackernews",
    "published_date": "2026-07-24T17:15:27",
    "summary": "6 points, 10 comments on HackerNews",
-   "tags": "inference,serving",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5863,7 +5863,7 @@
    "source": "airealist",
    "published_date": "2026-07-23T11:06:52",
    "summary": "Washington spent last week letting it be known it might ban Chinese AI models, so this week, everyone is an open-models expert.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -5894,7 +5894,7 @@
    "source": "rss:Google AI Blog",
    "published_date": "2026-07-22T21:32:00",
    "summary": "General Science",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6064,7 +6064,7 @@
    "source": "hackernews",
    "published_date": "2026-07-20T05:05:26",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6084,7 +6084,7 @@
    "source": "rss:Together.ai Blog",
    "published_date": "2026-07-20T00:00:00",
    "summary": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs.",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6305,7 +6305,7 @@
    "source": "hackernews",
    "published_date": "2026-07-15T06:50:49",
    "summary": "279 points, 264 comments on HackerNews",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6391,10 +6391,10 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-07-13T19:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />Useful quantum computers will require fault tolerant logical operations. Researchers are actively exploring many different quantum error correction (QEC) codes...",
-   "tags": "optimization,hardware",
-   "area": "other",
-   "importance": 0.5,
-   "why": "Applies classical optimization to quantum error correction, significantly reducing logical error rates."
+   "tags": "hardware,optimization",
+   "area": "silicon",
+   "importance": 0.7,
+   "why": "Applies Ising decoding via hardware acceleration to dramatically cut quantum error correction error rates."
   },
   {
    "title": "Optimal Parameter-Free First-Order Methods for Convex Optimization with Unknown Growth and Smoothness",
@@ -6446,7 +6446,7 @@
    "source": "arxiv",
    "published_date": "2026-07-13T17:15:27",
    "summary": "In multi-objective combinatorial optimization, unsupported non-dominated points typically outnumber supported points and are often significantly more challenging to compute. Recent studies show that extreme supported non-dominated points provide high-quality representations of the non-dominated set for certain binary problems. We demonstrate that this observation does not generalize to capacitated network optimization problems: representation quality decreases with increasing arc capacities, whereas supported non-dominated points consistently provide high-quality representations with respect t",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6598,10 +6598,10 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-07-10T13:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/hc-social-openfold-3-blog-1920x1080-5405363-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hc-social-openfold-3-blog-1920x1080-5405363\" width=\"768\" />Biomolecular structure prediction and co-folding with models like OpenFold3 are now mainstream, large-scale workloads powering drug discovery and protein...",
-   "tags": "multimodal,optimization",
-   "area": "other",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
    "importance": 0.3,
-   "why": "Toolkit acceleration enhances end-to-end biomolecular co-folding performance."
+   "why": "Accelerates structural biology models using specialized software toolkits."
   },
   {
    "title": "Modular Pretraining Enables Access Control",
@@ -6631,7 +6631,7 @@
    "source": "rss:SemiAnalysis",
    "published_date": "2026-07-09T19:16:14",
    "summary": "A top tier RL environment startup spawns out of thin air, the most aggressive compute ramp we've ever seen, 2000km+ scale-across, and some advice for Google DeepMind",
-   "tags": "training,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6793,7 +6793,7 @@
    "source": "hackernews",
    "published_date": "2026-07-06T13:15:20",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware,training",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6802,7 +6802,7 @@
    "source": "airealist",
    "published_date": "2026-07-06T09:05:17",
    "summary": "How Nvidia finances a cloud tells you what it thinks the cloud is worth. CoreWeave and Nebius got equity. Sharon AI got a revenue-share.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6811,7 +6811,7 @@
    "source": "hackernews",
    "published_date": "2026-07-06T06:31:39",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "training,benchmarks",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6820,7 +6820,7 @@
    "source": "hackernews",
    "published_date": "2026-07-06T06:03:45",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "training,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6840,7 +6840,7 @@
    "source": "hackernews",
    "published_date": "2026-07-05T15:29:00",
    "summary": "28 points, 0 comments on HackerNews",
-   "tags": "training,optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6860,7 +6860,7 @@
    "source": "airealist",
    "published_date": "2026-07-04T06:09:31",
    "summary": "Nvidia is handing back tens of billions to shareholders. Now it&#8217;s offering to finance the customers who can&#8217;t afford its chips.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -6869,7 +6869,7 @@
    "source": "hackernews",
    "published_date": "2026-07-04T01:02:57",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "training,benchmarks",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7075,7 +7075,7 @@
    "source": "airealist",
    "published_date": "2026-06-28T14:56:19",
    "summary": "America locked up its best models. Europe regulates a frontier it can&#8217;t build. China gives its best to the world and is winning.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7195,7 +7195,7 @@
    "source": "hackernews",
    "published_date": "2026-06-24T18:49:30",
    "summary": "13 points, 1 comments on HackerNews",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7290,7 +7290,7 @@
    "source": "hackernews",
    "published_date": "2026-06-23T12:01:01",
    "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7372,7 +7372,7 @@
    "source": "hackernews",
    "published_date": "2026-06-22T14:43:39",
    "summary": "17 points, 6 comments on HackerNews",
-   "tags": "hardware,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7392,7 +7392,7 @@
    "source": "airealist",
    "published_date": "2026-06-22T07:23:56",
    "summary": "Europe moved twice on cloud sovereignty this month. One proposal makes the American duopoly easier to move within. The other grades everything about a cloud except the chip it runs on.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7454,7 +7454,7 @@
    "source": "rss:SemiAnalysis",
    "published_date": "2026-06-18T15:54:24",
    "summary": "Don't Believe The Vibecoded Estimates, Go Through Every Individual Filing Instead",
-   "tags": "systems,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7463,7 +7463,7 @@
    "source": "airealist",
    "published_date": "2026-06-18T11:01:42",
    "summary": "Europe built the most ambitious AI enforcer in the world. It still has to ask the labs how to grade them.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7503,7 +7503,7 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-06-16T20:30:08",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Every swipe, transfer, and payment on a modern financial network encodes a pattern of human behavior. Transaction data is one of the richest signals an...",
-   "tags": "architecture,llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7534,7 +7534,7 @@
    "source": "arxiv",
    "published_date": "2026-06-16T17:56:08",
    "summary": "A fluid system is 'globally stable' if all initial conditions eventually converge to the same state. Since Reynolds (1895) and Orr (1907), the standard way to show global stability has been the energy method, which uses the fluctuation energy as a Lyapunov function. However, the energy method fails whenever transient energy growth is possible, so it often yields overly strict stability criteria. The first broadly applicable alternative has recently been introduced (Goulart & Chernyshenko 2012; Fuentes et al. 2022), using polynomial optimization to construct non-quadratic Lyapunov functions. Un",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7554,7 +7554,7 @@
    "source": "arxiv",
    "published_date": "2026-06-16T17:53:06",
    "summary": "We elucidate the sources of information gain in weakly non-Gaussian cosmological fields at the field- vs. summary-statistic-level in a controlled setting. Specifically, we compare field-level inference (FLI) with the standard power spectrum plus bispectrum (P${+}$B), and a family of composite-operator correlators (OCs) built from auto- and cross-spectra of local powers of the galaxy density field. The forward model is a linear density field with a single local quadratic coupling $λ$ and Gaussian noise; this minimal nonlinear setup interpolates between a purely Gaussian dataset ($λ=0$) and a no",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7682,7 +7682,7 @@
    "source": "airealist",
    "published_date": "2026-06-15T12:20:10",
    "summary": "A US export order pulled Anthropic&#8217;s best model from every customer on earth in one evening. The thousands of models built to refuse nothing stayed online.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7724,10 +7724,10 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-06-12T21:12:40",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-agent-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-agent\" width=\"768\" />AI agents have fundamentally changed the complexity of inference workloads. Until now, the industry has struggled to define a standard for measuring how...",
-   "tags": "benchmarks,llm",
-   "area": "other",
-   "importance": 0.4,
-   "why": "Introduces benchmarking metrics and evaluation standards for complex agentic workloads."
+   "tags": "inference,benchmarks,llm",
+   "area": "inference-methods",
+   "importance": 0.3,
+   "why": "Benchmarking agentic coding performance highlights emerging evaluation methodologies for complex multi-turn LLM inference."
   },
   {
    "title": "RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space",
@@ -7779,7 +7779,7 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:50:49",
    "summary": "Lehner (1999) derived elegant formulas for the operator norm $\\|\\mathfrak{X}\\|$ of operators of the form $\\mathfrak{X} = \\mathbf{A}_0 \\otimes \\mathfrak{1} + \\sum_{i = 1}^n \\mathbf{A}_i \\otimes \\mathfrak{m}_i$, also easily generalized to the spectral edge $λ_{\\max}(\\mathfrak{X})$, in terms of nonlinear optimization problems over positive definite matrices. Here the $\\mathbf{A}_i$ are finite-dimensional Hermitian matrices, the $\\mathfrak{m}_i$ are either free semicircular or free Rademacher families of operators, and $\\mathfrak{1}$ is the identity operator. We first show that both of Lehner's no",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7788,7 +7788,7 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:47:06",
    "summary": "The 21-cm signal probes the intergalactic medium during the Epoch of Reionization (EoR) but is overwhelmed by astrophysical foregrounds orders of magnitude stronger than the cosmological signal. We evaluate two mitigation strategies: (i) Foreground Avoidance, restricting analysis to the EoR window in Fourier space, and (ii) Foreground Removal via Gaussian Process Regression, which exploits spectral smoothness to statistically separate contaminants and reclaim modes within the contaminated wedge. Both introduce systematic biases of up to $\\approx$1$σ$ in astrophysical parameters such as the min",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7797,7 +7797,7 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:45:29",
    "summary": "Online inventory optimization (OIO) is online convex optimization with physical memory: inventory carryover makes the feasible action set depend on the past. A natural principle, used in stochastic inventory learning and recently in OIO under a single linear capacity constraint, is to maintain a hidden target chosen by an online learner and implement its projection onto the currently feasible order-up-to set. We prove that this simple principle is optimal for OIO on arbitrary bounded convex capacity sets. With online gradient descent as the base learner, the method improves the best known regr",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7806,7 +7806,7 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:42:05",
    "summary": "We introduce a basis for tree-level meromorphic scattering amplitudes suitable for describing pion scattering in the large-N limit. The basis is constructed as linear combinations of Lovelace-Shapiro-like amplitudes with varying Regge slopes and intercepts. The resulting amplitudes satisfy by construction the fundamental requirements of analyticity, crossing symmetry, and Regge behavior. We analyze their behavior in specific kinematical regimes, including the high-energy fixed-angle limit. We also show that finite linear combinations of our basis elements need not violate unitarity. Nonetheles",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7848,7 +7848,7 @@
    "source": "arxiv",
    "published_date": "2026-06-12T17:10:58",
    "summary": "Robust machine learning and optimization rely on the uncertainty model choice. We investigate which uncertainty directions a model must cover when defined by a finite dictionary and a budget constraint. Selecting a subset forms an atomic uncertainty set with a closed form support function, yielding tractable robust programs for affine objectives. We propose a data driven selection rule based on a coverage objective over evaluation directions, including gradients, adversarial perturbations, or shifts observed on held out data. We prove this objective is monotone and submodular, supporting a gre",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7868,7 +7868,7 @@
    "source": "airealist",
    "published_date": "2026-06-12T07:09:24",
    "summary": "Three borrowers, three answers, seventy-two hours. The AI debt boom did not slow down last week. It got priced.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7963,7 +7963,7 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-06-10T15:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image2-6-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI factories are changing what data-center infrastructure must do. Unlike traditional data centers, AI factories are built to manufacture intelligence at scale....",
-   "tags": "systems,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -7992,7 +7992,7 @@
    "source": "rss:NVIDIA Developer Blog",
    "published_date": "2026-06-09T19:00:00",
    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/nvidia-dgx-spark-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-dgx-spark\" width=\"768\" />As AI infrastructure scales, enterprise expectations for operational maturity are increasing. Organizations expect these systems to be provisionable,...",
-   "tags": "systems,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8067,7 +8067,7 @@
    "source": "arxiv",
    "published_date": "2026-06-09T17:44:12",
    "summary": "As data center energy demand approaches grid-level constraints, optimizing conventional server infrastructure is essential for sustainable growth. The long-standing assumption that \"cooler is better\", i.e., lower CPU temperatures reduce power, does not fully hold for modern low-voltage CPUs, where inverse temperature dependence (ITD) drives higher supply voltages at lower temperatures. This creates a non-monotonic performance-per-watt curve where efficiency peaks at an intermediate thermal point. In this paper, for the first time, we empirically characterize ITD on production Intel Xeon CPUs a",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8109,7 +8109,7 @@
    "source": "arxiv",
    "published_date": "2026-06-09T17:36:06",
    "summary": "Assistive mobility and manipulation platforms have received increasing attention as a means of restoring independence to individuals with disabilities. While effective for many basic activities of daily living (ADLs), a significant percentage of everyday tasks such as opening a jar, pouring a liquid, lifting a tray, or basic meal preparation, is fundamentally bimanual and remains out of reach for any single-arm system. Adding a second arm to a wheelchair is impractical, due to the additional power draw, cost, and the loss of space required for transfers and mobility. We instead propose a heter",
-   "tags": "inference,attention",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8118,7 +8118,7 @@
    "source": "arxiv",
    "published_date": "2026-06-09T17:35:18",
    "summary": "We study the problem of learning a drifting concept in the presence of Massart noise. In this framework, an online learner has access to a history of independent samples whose labels are noisy versions of a target concept that may change from round to round. The goal is to output, in each round, a hypothesis with small prediction error. We study the complexity of this learning problem for the fundamental class of margin-separable linear classifiers (halfspaces). On the positive side, we give a computationally efficient learner achieving error $η+ \\tilde O(Δ^{1/3}/γ)$, where $η$ upper bounds th",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8138,7 +8138,7 @@
    "source": "arxiv",
    "published_date": "2026-06-09T17:25:38",
    "summary": "While fuzzing effectively catches crashes, its shallow oracles often miss semantic drifts and optimization-related errors in data-intensive scalable computing (DISC) frameworks. Property-based testing (PBT) addresses this limitation by checking general semantic invariants across diverse workloads and inputs, rather than relying on specific expected outputs. However, systematically operationalizing PBT for DISC systems remains difficult because it requires both reusable property definitions and effective instantiation into valid workloads and data.\n  We present DiscPBT, a property-based testing",
-   "tags": "optimization,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8147,7 +8147,7 @@
    "source": "arxiv",
    "published_date": "2026-06-09T17:24:47",
    "summary": "We study the task of agnostically learning general (as opposed to homogeneous) ReLUs under the Gaussian distribution with respect to the squared loss. In the passive learning setting, recent work gave a computationally efficient algorithm that uses $poly(d,1/ε)$ labeled examples and outputs a hypothesis with error $O(opt)+ε$, where $opt$ is the squared loss of the best fit ReLU. Here we focus on the interactive setting, where the learner has some form of query access to the labels of unlabeled examples. Our main result is the first computationally efficient learner that uses $d polylog(1/ε)+\\t",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8189,7 +8189,7 @@
    "source": "airealist",
    "published_date": "2026-06-09T13:49:34",
    "summary": "The &#8364;93 billion headline is mostly one company's pledge. The pledge is mostly a ceiling. The balance sheet beneath it is the most concentrated in AI.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8251,7 +8251,7 @@
    "source": "rss:Ahead of AI",
    "published_date": "2026-06-06T11:16:22",
    "summary": "A curated roundup of notable LLM research papers that came out this year",
-   "tags": "llm",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8302,7 +8302,7 @@
    "source": "airealist",
    "published_date": "2026-06-03T06:38:57",
    "summary": "A deputy in the president's own party admitted who wrote his amendments. The moat just confessed.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8333,7 +8333,7 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:59:59",
    "summary": "Imaging a quantum many-body system requires probes that resolve the coordinates of its constituents in sufficiently large event samples, allowing measurements of correlation functions [1-4]. High-energy nuclear collisions provide this opportunity on the nuclear scale [5], enabling features of colliding ions, such as their deformation, to be probed through particle correlation observables [6, 7]. However, a quantitative extraction of the correlation properties of nuclei from these measurements is still lacking. Here we show that this is possible for the nucleus $^{129}$Xe using Bayesian inferen",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8342,7 +8342,7 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:59:22",
    "summary": "Images composed of 2D pixel arrays are the standard input to computer vision algorithms, yet many underlying computations can be distributed across pixels. Transmitting raw, redundant, and noisy pixel data off the sensor remains inefficient, motivating a shift toward focal-plane sensor-processors that perform a significant part of the computation directly within each pixel. We envision pixels synthesizing higher-level signals locally, reducing downstream load, and providing richer inputs for higher-level vision tasks.\n  We propose a fully parallelizable form of visual odometry and depth estima",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8395,7 +8395,7 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:49:58",
    "summary": "Aggregated relational data (ARD) consists of survey responses to questions of the form ``how many people do you know who~$X$?'' and is widely used in survey statistics for indirect inference about populations and social networks. The dominant ARD inference target is hidden-population size estimation via the Network Scale-Up Method (NSUM), but ARD is also used for personal-network-size estimation, mixing-pattern recovery, and inference about latent network structure. Bayesian inference for ARD almost universally assumes that, conditional on a respondent's degree, the counts reported for differe",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8404,7 +8404,7 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:40:46",
    "summary": "These lecture notes provide an introduction to first-order optimization methods with a particular emphasis on stochastic gradient methods. We begin with deterministic gradient based methods for unconstrained optimization and study their convergence under standard assumptions such as smoothness, convexity, strong convexity, and the Polyak-Lojasiewicz condition. We then turn to stochastic approximation and stochastic gradient descent, motivated by empirical and expected risk minimization in machine learning. The main focus is on convergence theory: we discuss almost sure convergence and converge",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8435,7 +8435,7 @@
    "source": "arxiv",
    "published_date": "2026-06-02T17:25:53",
    "summary": "In the coming years, the number of discovered active galactic nuclei (AGN) is expected to increase significantly due to upcoming spectroscopic surveys. This growth will challenge current analysis and modeling techniques, requiring scalable methods for large, heterogeneous datasets with diverse signal-to-noise ratios, spectral resolutions, and host-galaxy contamination. We present SHEAP (Spectral Handling and Estimation of AGN Parameters), a spectral-fitting framework designed to analyze large AGN samples efficiently while preserving physical interpretability, reproducibility, and robust uncert",
-   "tags": "inference,optimization,hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8519,7 +8519,7 @@
    "source": "hackernews",
    "published_date": "2026-06-02T01:05:29",
    "summary": "156 points, 69 comments on HackerNews",
-   "tags": "hardware,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8561,7 +8561,7 @@
    "source": "airealist",
    "published_date": "2026-06-01T11:51:41",
    "summary": "Meta is the only hyperscaler without a cloud business. It just told shareholders it might need one &#8212; and that is the most revealing thing it has said about a buildout it can no longer obviously fill.",
-   "tags": "ai,llm,inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8751,7 +8751,7 @@
    "source": "hackernews",
    "published_date": "2026-05-27T18:26:31",
    "summary": "",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8815,7 +8815,7 @@
    "source": "arxiv",
    "published_date": "2026-05-27T17:53:50",
    "summary": "Ferroelectric materials can be used for the development of multiple device concepts combining non-volatility, small dimensions, low-power actuation, and electrical tunability. Such development demands efficient and precise design of simulation tools describing the polarization texture. However, most existing ferroelectric solvers are CPU-based and rely on simplified electrostatic treatments and reduced-dimensional representations of the polarization field. These approximations limit their ability to capture finite-size and boundary effects and restrict the range of domain structures and domain",
-   "tags": "hardware",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8835,7 +8835,7 @@
    "source": "arxiv",
    "published_date": "2026-05-27T17:46:28",
    "summary": "We study nonlinear concentration problems for time-frequency distributions in the Cohen class. Using recent techniques from quantum harmonic analysis (QHA) we provide both positive and negative results, such as sufficient conditions for the existence of optimizers in terms of the ``window operator'' and explicit examples where the supremum is never attained. We also study the structural properties of window operators, in particular operators that yield weakly continuous concentration functionals and operators for which the nonlinear concentration problem admits an optimizer. We then consider g",
-   "tags": "optimization",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8844,7 +8844,7 @@
    "source": "arxiv",
    "published_date": "2026-05-27T17:44:53",
    "summary": "Randomized controlled trials (RCTs) are the gold standard for evaluating causal effects but are often costly and difficult to scale; consequently, they are frequently augmented with auxiliary external controls in many applications. Prior approaches for borrowing such data typically rely on exchangeability, under which the external controls are readily usable for inference in the trial population. In practice, however, differences in eligibility criteria, standard of care, and data collection procedures may induce distribution shifts between the RCT and the external controls, rendering exchange",
-   "tags": "inference",
+   "tags": "",
    "area": "other"
   },
   {
@@ -8937,7 +8937,7 @@
    "source": "airealist",
    "published_date": "2026-05-27T09:14:34",
    "summary": "Two hyperscalers bet on custom AI silicon a decade ago. One built a chip that its own models run on. The other is buying the demand, renting the hardware, and booking the difference as profit.",
-   "tags": "hardware,systems",
+   "tags": "",
    "area": "other"
   },
   {
