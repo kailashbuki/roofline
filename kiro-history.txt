@@ -723,3 +723,25 @@ Rank is carried by the ordering, the cut by the band, the worth by the why line.
 
 Lesson recorded: when a badge fires on more than half of what is on screen, the
 threshold is not the bug - the badge is.
+
+## 2026-09-24 - "Cannot set properties of null" - stale HTML paired with fresh JS
+
+Reported on the live site. The server's files agreed (both new), so the browser had
+a CACHED index.html with the old #pills markup paired against the fresh app.js that
+expects #tabs. GitHub Pages sends cache-control: max-age=600, so for ten minutes
+after every deploy a mismatched HTML/JS pair is possible. The earlier no-cache fix
+covered the DATA fetches only; the assets themselves were still cacheable.
+
+Two fixes:
+1. The Assemble step now stamps the commit SHA into the asset URLs
+   (./app.js?v=<sha8>, ./style.css?v=<sha8>). A cached index.html requests the
+   asset version it was BUILT against, so the pair stays consistent - stale but
+   coherent - rather than fresh-but-mismatched. New HTML asks for a new query and
+   misses cache, so updates still land immediately.
+2. The error message no longer lies. It said "Could not load articles", but the
+   articles had loaded fine - the DOM did not match. There is now a
+   StaleMarkupError raised by need(id), reported as "This page was loaded from a
+   stale cache. Reload to get the current version."
+
+Lesson: a renamed element id is a breaking change to anyone holding a cached copy
+of the other half. Version the pair, or expect the split-brain window.

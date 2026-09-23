@@ -8,7 +8,6 @@
 // homepage on github.io, hence the namespaced key.
 const READ_KEY = "roofline:read";
 const THEME_KEY = "roofline:theme";
-// Only the top tier earns a marker. A number on every row is decoration: it
 // No per-row importance marker at all. Tried a printed score, then a "must read"
 // badge at two thresholds: each marked most of what was on screen, because the
 // sections SELECT for top rows, so any cut over the range fires on nearly every
@@ -22,9 +21,9 @@ const PER_AREA = 3;
 // 5 of 5 arXiv covering 3 of 7 fronts, which is the opposite of cross-front
 // triage. One per front guarantees breadth, which nothing else on the page gives.
 
-// Display order and labels. Mirrors classifier.AREAS.
-// [key, section heading, pill label]. The pill label is short on purpose: the
-// row has to fit one line, or it costs more space than the content it filters.
+// [key, section heading, tab label]. Mirrors classifier.AREAS. The tab label is
+// short on purpose: the strip has to fit one line, or it costs more space than the
+// content it filters.
 const AREAS = [
   ["architecture", "Model architecture", "Arch"],
   ["new-models", "New models", "Models"],
@@ -44,6 +43,31 @@ const BANDS = [
 ];
 
 const el = (id) => document.getElementById(id);
+
+/** A missing node means the cached HTML predates this script. Say so. */
+class StaleMarkupError extends Error {}
+
+function need(id) {
+  const node = el(id);
+  if (!node) {
+    throw new StaleMarkupError(
+      `#${id} is missing: this page's HTML is older than its script.`
+    );
+  }
+  return node;
+}
+
+function reportFailure(error) {
+  const target = el("empty") || document.body;
+  target.hidden = false;
+  if (error instanceof StaleMarkupError) {
+    target.textContent =
+      "This page was loaded from a stale cache. Reload to get the current version " +
+      "(hold Shift while reloading if it persists).";
+  } else {
+    target.textContent = `Could not load articles (${error.message}).`;
+  }
+}
 
 let articles = [];
 let digest = {};
@@ -99,7 +123,7 @@ function inRange() {
 }
 
 function renderBands(rangeRows) {
-  const host = el("bar");
+  const host = need("bar");
   host.textContent = "";
   for (const band of BANDS) {
     const n = rangeRows.filter(
@@ -265,7 +289,7 @@ function renderTabs(rows) {
     if (visitMark && when > visitMark) fresh.set(area, (fresh.get(area) || 0) + 1);
   }
 
-  const host = el("tabs");
+  const host = need("tabs");
   host.textContent = "";
   const entries = [["all", "All fronts", "All"], ...AREAS];
 
@@ -477,6 +501,7 @@ Promise.all([
     .catch(() => null),
 ])
   .then(([data, digestData]) => {
+    // Any DOM mismatch surfaces here rather than as a misleading data error.
     digest = digestData?.areas || {};
     articles = data.articles || [];
     if (data.generated_at) {
@@ -495,10 +520,7 @@ Promise.all([
     // read it and only the next visit advances the mark.
     try { localStorage.setItem(VISIT_KEY, String(Date.now())); } catch { /* ignore */ }
   })
-  .catch((error) => {
-    el("empty").hidden = false;
-    el("empty").textContent = `Could not load articles (${error.message}).`;
-  });
+  .catch(reportFailure);
 
 for (const id of ["window", "unread"]) {
   el(id).addEventListener("change", () => { expanded.clear(); syncUrl(); render(); });

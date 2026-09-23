@@ -108,6 +108,13 @@ jobs:
         run: |
           mkdir -p _site
           cp -r site/. _site/
+          # Pages serves HTML with max-age=600, so for ten minutes after a deploy a
+          # browser can pair a cached index.html with a fresh app.js. Stamping the
+          # commit into the asset URLs means a cached HTML asks for the asset
+          # version it was built against, keeping the pair consistent.
+          VERSION="${GITHUB_SHA:0:8}"
+          sed -i "s|\./app\.js|./app.js?v=$VERSION|; s|\./style\.css|./style.css?v=$VERSION|" _site/index.html
+          echo "stamped assets with $VERSION"
           mkdir -p _site/data
           cp data/articles.json _site/data/
           cp data/digest.json _site/data/ 2>/dev/null || true
