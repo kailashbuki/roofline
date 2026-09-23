@@ -1,0 +1,72 @@
+{
+ "month": "2026-03",
+ "count": 6,
+ "articles": [
+  {
+   "title": "A Visual Guide to Attention Variants in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-03-22T11:55:40",
+   "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
+   "tags": "architecture,attention,inference,llm",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Surveys memory footprint and throughput tradeoffs across attention variants."
+  },
+  {
+   "title": "Mamba-3: Improved Sequence Modeling Using State Space Principles",
+   "url": "https://arxiv.org/abs/2603.15569",
+   "source": "hackernews",
+   "published_date": "2026-03-18T08:44:19",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "architecture,llm,optimization",
+   "area": "architecture",
+   "importance": 0.8,
+   "why": "Replaces attention layers with refined state space recurrence principles to scale sub-quadratic sequence modeling."
+  },
+  {
+   "title": "Tree Search Distillation for Language Models Using PPO",
+   "url": "https://ayushtambde.com/blog/tree-search-distillation-for-language-models-using-ppo",
+   "source": "hackernews",
+   "published_date": "2026-03-15T00:51:55",
+   "summary": "87 points, 10 comments on HackerNews",
+   "tags": "training,post-training,llm",
+   "area": "inference-methods",
+   "importance": 0.75,
+   "why": "Combines tree search trajectories with PPO objectives to distill reasoning policies into student models."
+  },
+  {
+   "title": "Scalable Training of Mixture-of-Experts Models with Megatron Core",
+   "url": "https://arxiv.org/abs/2603.07685",
+   "source": "hackernews",
+   "published_date": "2026-03-10T21:00:31",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,systems,llm",
+   "area": "architecture",
+   "importance": 0.6,
+   "why": "Scales communication primitives in Megatron Core to handle expert-parallel distributed training runs."
+  },
+  {
+   "title": "Forcing Flash Attention onto a TPU and Learning the Hard Way",
+   "url": "https://archerzhang.me/forcing-flash-attention-onto-a-tpu",
+   "source": "hackernews",
+   "published_date": "2026-03-08T03:57:30",
+   "summary": "58 points, 16 comments on HackerNews",
+   "tags": "hardware,attention,systems",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Details empirical hurdles of implementing Flash Attention primitives on TPU memory layouts."
+  },
+  {
+   "title": "Flash Attention 4, running near matmul speeds [pdf]",
+   "url": "https://github.com/Dao-AILab/flash-attention/blob/main/assets/fa4_paper.pdf",
+   "source": "hackernews",
+   "published_date": "2026-03-05T19:03:48",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,attention,optimization",
+   "area": "inference-methods",
+   "importance": 0.85,
+   "why": "Achieves matrix-multiplication-level throughput for attention computations by optimizing tensor core utilization."
+  }
+ ]
+}

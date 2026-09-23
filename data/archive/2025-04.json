@@ -1,0 +1,17 @@
+{
+ "month": "2025-04",
+ "count": 1,
+ "articles": [
+  {
+   "title": "Blocked Matrix Formulation of Linear Attention Mechanisms",
+   "url": "https://leloykun.github.io/ponder/blockmat-linear-attn",
+   "source": "hackernews",
+   "published_date": "2025-04-16T14:36:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,attention",
+   "area": "architecture",
+   "importance": 0.55,
+   "why": "Reformulates recurrent linear attention into blocked matrix operations for hardware parallelization."
+  }
+ ]
+}
