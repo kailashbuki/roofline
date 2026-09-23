@@ -1,0 +1,17 @@
+{
+ "month": "2025-05",
+ "count": 1,
+ "articles": [
+  {
+   "title": "Mixture-of-Transformers: Sparse and Scalable Architecture for Multi-Modal Models",
+   "url": "https://arxiv.org/abs/2411.04996",
+   "source": "hackernews",
+   "published_date": "2025-05-10T21:41:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,multimodal,llm",
+   "area": "architecture",
+   "importance": 0.5,
+   "why": "Applies sparse routing mechanisms across distinct transformer modalities to scale parameter counts."
+  }
+ ]
+}

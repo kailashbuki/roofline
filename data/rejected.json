@@ -1,5 +1,5 @@
 {
- "count": 411,
+ "count": 415,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -411,6 +411,10 @@
   "https://mewtwo.bearblog.dev/wormhole-autograd-p1",
   "https://wafer.substack.com/p/breaking-down-the-cerebras-wafer",
   "https://github.com/sss777999/Brain",
-  "https://openai.com/index/sam-altman-un-security-council-remarks"
+  "https://openai.com/index/sam-altman-un-security-council-remarks",
+  "https://www.lmsys.org/blog/2026-04-25-deepseek-v4",
+  "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple",
+  "https://blog.skypilot.co/scaling-autoresearch",
+  "https://arxiv.org/abs/2511.03060"
  ]
 }
