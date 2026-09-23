@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 from database import Article
-from bedrock_classifier import classify_article
+from classifier import classify_article
 
 def collect_hackernews(session, config):
     hn_config = config['sources']['hackernews']

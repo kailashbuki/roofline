@@ -1,0 +1,88 @@
+name: Collect and publish
+
+on:
+  schedule:
+    # 05:00 / 11:00 / 17:00 UTC. Cron is UTC-only, so these land on
+    # 07:00 / 13:00 / 19:00 Berlin in summer and 06:00 / 12:00 / 18:00 in winter.
+    - cron: "0 5,11,17 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/collect.yml"
+
+# Least privilege: contents:write only so the data commit can land.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never let two runs race on the same data file.
+concurrency:
+  group: collect-and-publish
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect articles
+        # Passed as env, not interpolated into the shell, so the value cannot
+        # be injected into the command line or leak via `set -x`.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Verified 2026-09-23 with verify_gemini.py. flash-lite on
+          # generateContent enforces the response schema and, unlike the larger
+          # models, was not returning 503 "high demand".
+          # Also working: GEMINI_API=interactions with gemini-3.6-flash or
+          # gemini-3.8-flash (/v1beta/interactions; v1beta2 404s).
+          GEMINI_MODEL: gemini-3.5-flash-lite
+          GEMINI_API: generatecontent
+        run: python collect_all.py
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet -- data/articles.json; then
+            echo "No new articles; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          git commit -m "Update articles [skip ci]"
+          git push
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -r site/. _site/
+          mkdir -p _site/data
+          cp data/articles.json _site/data/
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

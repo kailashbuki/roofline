@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference News</title>
+  <meta name="description" content="Daily aggregation of LLM inference optimization research and engineering writing.">
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="title-row">
+      <h1>Inference News</h1>
+      <span id="updated" class="updated"></span>
+    </div>
+
+    <div class="controls">
+      <select id="source" aria-label="Filter by source"></select>
+      <select id="window" aria-label="Filter by age">
+        <option value="7">Last 7 days</option>
+        <option value="30">Last 30 days</option>
+        <option value="180" selected>Last 180 days</option>
+        <option value="0">All time</option>
+      </select>
+      <select id="sort" aria-label="Sort order">
+        <option value="date">Newest first</option>
+        <option value="relevance">Most relevant</option>
+      </select>
+      <input id="search" type="search" placeholder="Search titles…" aria-label="Search titles">
+      <label class="toggle"><input id="unread" type="checkbox"> Unread only</label>
+      <span id="stats" class="stats"></span>
+    </div>
+  </header>
+
+  <main id="list" aria-live="polite">
+    <p class="empty">Loading…</p>
+  </main>
+
+  <button id="more" class="more" hidden>Show more</button>
+
+  <footer>
+    <span>Read state is stored in this browser only.</span>
+    <button id="mark-all" class="link">Mark all read</button>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

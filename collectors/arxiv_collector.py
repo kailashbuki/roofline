@@ -1,7 +1,7 @@
 import arxiv
 from datetime import datetime, timedelta
 from database import Article
-from bedrock_classifier import classify_article
+from classifier import classify_article
 
 def collect_arxiv(session, config):
     arxiv_config = config['sources']['arxiv']
@@ -30,7 +30,7 @@ def collect_arxiv(session, config):
         
         summary = result.summary[:1000]
         
-        # Use Bedrock to classify
+        # Score and tag via Gemini (keyword fallback if unavailable)
         relevance, tags = classify_article(result.title, summary)
         
         if relevance < config['relevance']['min_score']:

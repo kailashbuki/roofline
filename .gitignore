@@ -10,11 +10,11 @@ __pycache__/
 venv/
 ENV/
 
-# Database
+# Legacy SQLite stores (data/articles.json is the source of truth now)
 *.db
+
+# Assembled Pages artifact
+_site/
 
 # macOS
 .DS_Store
-
-# App bundle (generated)
-*.app/

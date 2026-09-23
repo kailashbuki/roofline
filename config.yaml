@@ -46,23 +46,6 @@ sources:
       - name: "NVIDIA Developer Blog"
         url: "https://developer.nvidia.com/blog/feed/"
 
-  reddit:
-    enabled: false
-    subreddits: ["MachineLearning", "LocalLLaMA"]
-    keywords: ["inference", "optimization", "quantization"]
-    limit: 50
-
-  twitter:
-    enabled: false  # Free tier doesn't support timeline access
-    # Get credentials from https://developer.twitter.com/en/portal/dashboard
-    # Go to your app -> Keys and tokens -> Generate Access Token and Secret
-    api_key: "REDACTED_REVOKED_TWITTER_API_KEY"
-    api_secret: "REDACTED_REVOKED_TWITTER_API_SECRET"
-    access_token: "REDACTED_REVOKED_TWITTER_ACCESS_TOKEN"
-    access_token_secret: "REDACTED_REVOKED_TWITTER_TOKEN_SECRET"
-    max_tweets: 100
-    keywords: ["inference", "optimization", "quantization", "LLM", "model serving"]
-
 # Relevance scoring
 relevance:
   high_value_keywords: [
@@ -78,17 +61,8 @@ relevance:
   ]
   min_score: 0.4
 
-# Database
-database:
-  path: "articles.db"
+# Data store. articles.json is the source of truth and is served to the site
+# as-is; SQLite exists only in memory for the duration of a collection run.
+data:
+  path: "data/articles.json"
 
-# Dashboard
-dashboard:
-  host: "0.0.0.0"
-  port: 8001
-  items_per_page: 20
-
-# Scheduler
-scheduler:
-  collection_times: ["06:00", "12:00", "18:00"]
-  timezone: "Europe/Berlin"

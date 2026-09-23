@@ -108,3 +108,69 @@ App crashed every time the refresh (↻) button was pressed.
 ### Commits
 - `88ee191` - Add missing airealist collector to widget
 - `d6010d6` - Install boto3 into venv for bedrock_classifier
+
+## 2026-09-23 - Migrated from macOS widget to a static web app
+
+### Goal
+Move everything online. Target: GitHub Pages project page at
+https://kailashbuki.github.io/inference-news/ (the kailashbuki.github.io root is
+occupied by the Jekyll homepage, and its Rakefile force-pushes a generated _site
+over master, so nesting the dashboard in that repo would have been clobbered by
+the next blog rebuild).
+
+### Privacy scrub (prerequisite for going public)
+Audited the working tree and every blob in all 14 commits.
+- Four live Twitter credentials sat in config.yaml from the very first commit
+  (5a06443), so every commit carried them. Purged with git filter-repo
+  --replace-text; verified 0 occurrences remain. THE KEYS MUST STILL BE REVOKED
+  at developer.twitter.com - treat them as compromised.
+- Purged both tracked articles.db blobs and the whole "Inference News.app"
+  bundle from history.
+- Clean: no AWS account ids, ARNs, /Users paths, emails, or internal hostnames.
+- filter-repo dropped the origin remote, so nothing can be pushed by accident.
+- Backup of pre-rewrite state: ~/Workplace/inference-news-backup-20260923/
+  (verified full-history bundle, all three DBs, original config).
+- Rewriting history changed every commit SHA, so the hashes cited in the
+  Mar 6 / Mar 12 entries above no longer resolve.
+
+### Architecture change
+No server. GitHub Actions runs the collectors on cron, commits JSON, deploys Pages.
+- data/articles.json is now the source of truth: diffable in git, served as-is.
+- store.py hydrates an in-memory SQLite DB from that JSON and dumps back after,
+  so all five collectors keep their SQLAlchemy session interface UNCHANGED.
+- Verified hydrate -> dump is lossless over all 744 seed articles.
+
+### Data recovery
+Three databases had diverged and none was a superset:
+  articles.db (repo root)                 133 rows, newest 2026-03-06
+  Inference News.app/.../articles.db      274 rows, newest 2026-09-21
+  /Applications/.../articles.db           598 rows, newest 2026-07-14
+Merged all three by URL -> 744 unique articles spanning 2025-10-09..2026-09-21.
+The widget's 180-day cleanup used to delete old rows; retention is now a display
+filter instead, so nothing is thrown away.
+
+### Bedrock -> Gemini
+bedrock_classifier.py authenticated through a local AWS profile backed by a
+privileged work account. That credential cannot and must not be exported to
+GitHub Actions, and the profile name is not recorded here. Replaced with
+classifier.py calling the Gemini REST API, reading GEMINI_API_KEY from the env
+only (never config.yaml), with responseSchema for structured output, a 4.5s
+throttle for the free tier's 15 rpm, a per-run call cap, and automatic fallback
+to relevance_scorer.py on missing key / 429 / any error. Dropped boto3.
+
+### Retired
+widget.py, create_app.sh, launch_widget.sh, dashboard_server.py, scheduler.py,
+bedrock_classifier.py, twitter_collector.py, reddit_collector.py (both were
+disabled). requirements.txt went from 14 pins to 6.
+
+### Verified locally
+- Full collection run: 35 new articles in 61s (keyword fallback path, no key set).
+- Site assembled as the workflow does and served under /inference-news/: all
+  assets 200, all refs relative, so no base-URL config is needed.
+- node --check on app.js, yaml parse on the workflow.
+
+### Still to do
+- Revoke the Twitter credentials.
+- Create the Gemini API key, add it as repository secret GEMINI_API_KEY.
+- Re-add the origin remote, force-push the rewritten history, make the repo
+  public, enable Pages with source = GitHub Actions.

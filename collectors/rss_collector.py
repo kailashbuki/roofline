@@ -1,7 +1,7 @@
 import feedparser
 from datetime import datetime
 from database import Article
-from bedrock_classifier import classify_article
+from classifier import classify_article
 import time
 
 def collect_rss(session, config):
