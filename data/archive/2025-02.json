@@ -1,0 +1,17 @@
+{
+ "month": "2025-02",
+ "count": 1,
+ "articles": [
+  {
+   "title": "New deepseek paper: Natively Trainable Sparse Attention mechanism",
+   "url": "https://twitter.com/deepseek_ai/status/1891745487071609327",
+   "source": "hackernews",
+   "published_date": "2025-02-18T09:18:39",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Introduces end-to-end gradient routing through sparse attention masks, removing heuristic gating functions."
+  }
+ ]
+}

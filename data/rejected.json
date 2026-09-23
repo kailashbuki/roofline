@@ -1,5 +1,5 @@
 {
- "count": 419,
+ "count": 420,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -419,6 +419,7 @@
   "https://blankline.org/research/hope",
   "https://github.com/Kim-Ai-gpu/FactorizedAttention",
   "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap",
-  "https://github.com/drhemanm/evo-attention"
+  "https://github.com/drhemanm/evo-attention",
+  "https://arxiv.org/abs/2503.14493"
  ]
 }

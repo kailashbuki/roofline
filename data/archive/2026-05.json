@@ -1,0 +1,61 @@
+{
+ "month": "2026-05",
+ "count": 5,
+ "articles": [
+  {
+   "title": "Unlocking Asynchronicity in Continuous Batching",
+   "url": "https://huggingface.co/blog/continuous_async",
+   "source": "hackernews",
+   "published_date": "2026-05-19T19:09:39",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-methods",
+   "importance": 0.65,
+   "why": "Removes synchronization barriers in continuous batching loops to overlap scheduling with GPU execution."
+  },
+  {
+   "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+   "url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-05-16T11:33:51",
+   "summary": "From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs",
+   "tags": "architecture,attention,inference",
+   "area": "architecture",
+   "importance": 0.65,
+   "why": "Analyses KV sharing and mHC mechanisms to cut long-context memory overhead."
+  },
+  {
+   "title": "EMO: Pretraining mixture of experts for emergent modularity",
+   "url": "https://allenai.org/blog/emo",
+   "source": "hackernews",
+   "published_date": "2026-05-11T18:08:57",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,training,llm",
+   "area": "architecture",
+   "importance": 0.75,
+   "why": "Modifies pretraining loss formulations to enforce functional modularity inside mixture-of-experts layers."
+  },
+  {
+   "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
+   "url": "https://arxiv.org/abs/2605.06665",
+   "source": "hackernews",
+   "published_date": "2026-05-09T11:19:10",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,optimization,llm",
+   "area": "architecture",
+   "importance": 0.7,
+   "why": "Replaces routed expert isolation with a unified global memory pool to eliminate load imbalance overhead."
+  },
+  {
+   "title": "Google to sell TPU chips to select customers",
+   "url": "https://finance.yahoo.com/markets/stocks/article/google-to-sell-tpu-chips-to-select-customers-in-latest-shot-at-nvidia-214900221.html",
+   "source": "hackernews",
+   "published_date": "2026-05-06T19:34:54",
+   "summary": "28 points, 7 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "importance": 0.6,
+   "why": "Shifts hyperscaler hardware distribution models by making proprietary AI accelerators commercially purchasable."
+  }
+ ]
+}
