@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-23T19:50:33Z",
- "count": 1379,
+ "generated_at": "2026-09-23T19:52:39Z",
+ "count": 1383,
  "sources": [
   "airealist",
   "anthropic:engineering",
@@ -66,6 +66,15 @@
    "summary": "",
    "relevance_score": 0.8,
    "tags": "llm,multimodal"
+  },
+  {
+   "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
+   "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+   "source": "rss:Latent Space",
+   "published_date": "2026-09-23T13:27:18",
+   "summary": "Radical Numerics is using biological chain-of-thought and multimodal perception to keep up with the bio-defense arms race, design new genomes and gain insights into biology itself.",
+   "relevance_score": 0.45,
+   "tags": "architecture,multimodal"
   },
   {
    "title": "The Price of Intelligence Is Falling Rapidly",
@@ -4055,6 +4064,15 @@
    "tags": "serving,systems,llm"
   },
   {
+   "title": "Advancing AMIE towards expert-level audio-visual clinical consultations",
+   "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-08-11T17:04:00",
+   "summary": "Health & Bioscience",
+   "relevance_score": 0.4,
+   "tags": "multimodal,llm"
+  },
+  {
    "title": "Talking with Synopsys about the Physics of Chip Design at DAC 2026",
    "url": "https://chipsandcheese.com/p/talking-with-synopsys-about-the-physics",
    "source": "rss:Chips and Cheese",
@@ -4701,6 +4719,15 @@
    "summary": "4 points, 0 comments on HackerNews",
    "relevance_score": 0.9,
    "tags": "inference,serving,hardware"
+  },
+  {
+   "title": "SymptomAI: Towards a conversational AI agent for everyday symptom assessment",
+   "url": "https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-07-22T21:32:00",
+   "summary": "General Science",
+   "relevance_score": 0.4,
+   "tags": "llm"
   },
   {
    "title": "Make Long-Running NVIDIA TensorRT Engine Builds Observable and Cancelable in Python or C++",
@@ -5457,6 +5484,15 @@
    "summary": "2 points, 0 comments on HackerNews",
    "relevance_score": 0.9,
    "tags": "inference,serving,systems,llm"
+  },
+  {
+   "title": "Lean Software Scaling Laws",
+   "url": "https://gwern.net/lean-scaling",
+   "source": "hackernews",
+   "published_date": "2026-07-05T15:29:00",
+   "summary": "28 points, 0 comments on HackerNews",
+   "relevance_score": 0.8,
+   "tags": "training,optimization"
   },
   {
    "title": "AMD pivots from HBM to LPDDR5X for new Versal Gen 2 memory on package chips",
