@@ -1,0 +1,17 @@
+{
+ "month": "2026-05",
+ "count": 1,
+ "articles": [
+  {
+   "title": "Extract More Kernel Performance with NVIDIA CompileIQ Auto-Tuning",
+   "url": "https://developer.nvidia.com/blog/extract-more-kernel-performance-with-nvidia-compileiq-auto-tuning",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-26T22:08:56",
+   "summary": "<img alt=\"Image of two men working at a computer.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/CompileIQ-e1779833147720-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Website design. Developing programming and coding technologies.\" width=\"768\" />NVIDIA CompileIQ tackles one of the hardest problems in performance engineering: finding the compiler options that unlock the best performance for a specific...",
+   "tags": "hardware,optimization,inference",
+   "area": "inference-engines",
+   "importance": 0.4,
+   "why": "Auto-tuning CUDA kernels improves hardware efficiency, directly benefiting performance of deployed AI models."
+  }
+ ]
+}
