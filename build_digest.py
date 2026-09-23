@@ -32,11 +32,12 @@ def synthesise(label, items):
     prompt = (
         f"These are the most notable {label} items published recently:\n\n"
         f"{listing}\n\n"
-        "Write 1-2 sentences (maximum 45 words) telling a busy practitioner what "
-        "is going on in this area right now. Name the specific themes or systems "
-        "that recur. Do not list the items, do not say 'several papers' or "
-        "'researchers are exploring', and do not hedge. If the items share no "
-        "theme, say what the one or two most consequential ones are instead."
+        "Write ONE sentence, maximum 28 words, telling a busy practitioner what is "
+        "going on in this area right now. Name the specific systems, numbers or "
+        "techniques that recur — those are the only things worth the space. Never "
+        "write 'several papers', 'researchers are exploring', 'recent work centers "
+        "on', or any other filler opening: start with the substance. If the items "
+        "share no theme, name the single most consequential one instead."
     )
 
     url, body = classifier.build_request([("", "")])  # reuse the configured surface

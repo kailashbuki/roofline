@@ -19,15 +19,24 @@ const PER_AREA = 3;
 const LEDE_COUNT = 5;
 
 // Display order and labels. Mirrors classifier.AREAS.
+// [key, section heading, pill label]. The pill label is short on purpose: the
+// row has to fit one line, or it costs more space than the content it filters.
 const AREAS = [
-  ["architecture", "Model architecture"],
-  ["new-models", "New models"],
-  ["inference-methods", "Inference optimization"],
-  ["inference-engines", "Inference engines & serving"],
-  ["silicon", "Silicon"],
-  ["training", "Training & post-training"],
-  ["economics", "Cost & economics"],
-  ["other", "Everything else"],
+  ["architecture", "Model architecture", "Arch"],
+  ["new-models", "New models", "Models"],
+  ["inference-methods", "Inference optimization", "Inference"],
+  ["inference-engines", "Inference engines & serving", "Engines"],
+  ["silicon", "Silicon", "Silicon"],
+  ["training", "Training & post-training", "Training"],
+  ["economics", "Cost & economics", "Cost"],
+  ["other", "Everything else", "Other"],
+];
+
+// Short labels, because the count carries the meaning.
+const BANDS = [
+  { value: 0, label: "All", hint: "Everything in range" },
+  { value: 0.35, label: "Notable", hint: "Skip the routine" },
+  { value: 0.6, label: "Key", hint: "Only the consequential" },
 ];
 
 const el = (id) => document.getElementById(id);
@@ -38,6 +47,7 @@ let read = loadRead();
 let visitMark = null;           // "new" means newer than this, not merely unread
 let mustReadCut = Infinity;
 let activeArea = "all";
+let activeBand = 0.35;
 const expanded = new Set();
 
 function loadRead() {
@@ -74,6 +84,41 @@ function lastVisit() {
   }
 }
 
+/** Everything passing time/search/unread, ignoring the importance band. */
+function inRange() {
+  const saved = activeBand;
+  activeBand = 0;
+  try {
+    return inScope();
+  } finally {
+    activeBand = saved;
+  }
+}
+
+function renderBands(rangeRows) {
+  const host = el("bar");
+  host.textContent = "";
+  for (const band of BANDS) {
+    const n = rangeRows.filter(
+      (a) => !(band.value > 0 && typeof a.importance === "number" && a.importance < band.value)
+    ).length;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `seg-btn${activeBand === band.value ? " on" : ""}`;
+    button.append(span("", band.label));
+    button.append(span("seg-n", n));
+    button.title = `${band.hint} — ${n} items`;
+    button.addEventListener("click", () => {
+      activeBand = band.value;
+      expanded.clear();
+      syncUrl();
+      render();
+    });
+    host.append(button);
+  }
+}
+
 function inScope() {
   const range = el("window").value;
   let cutoff = null;
@@ -83,7 +128,6 @@ function inScope() {
   } else if (Number(range)) {
     cutoff = Date.now() - Number(range) * 86400000;
   }
-  const bar = Number(el("bar").value);
   const needle = el("search").value.trim().toLowerCase();
 
   return articles
@@ -94,7 +138,9 @@ function inScope() {
       if (needle && !(a.title || "").toLowerCase().includes(needle)) return false;
       // An unrated row has never been seen by the model. Don't hide it behind a
       // bar it never had the chance to clear — show it marked unrated instead.
-      if (bar > 0 && typeof a.importance === "number" && a.importance < bar) return false;
+      if (activeBand > 0 && typeof a.importance === "number" && a.importance < activeBand) {
+        return false;
+      }
       return true;
     })
     .sort((a, b) =>
@@ -217,22 +263,26 @@ function renderPills(rows) {
 
   const host = el("pills");
   host.textContent = "";
-  const entries = [["all", "All fronts"], ...AREAS];
+  const entries = [["all", "All fronts", "All"], ...AREAS];
 
-  entries.forEach(([area, label], index) => {
+  entries.forEach(([area, label, short]) => {
     const n = area === "all" ? rows.length : counts.get(area) || 0;
     if (area !== "all" && !n) return;
 
     const pill = document.createElement("button");
     pill.type = "button";
     pill.className = `pill${activeArea === area ? " on" : ""}`;
-    pill.append(span("", label));
+    pill.append(span("", short || label));
     pill.append(span("pill-n", n));
     const newCount = area === "all"
       ? [...fresh.values()].reduce((t, v) => t + v, 0)
       : fresh.get(area) || 0;
     if (newCount) pill.append(span("pill-new", `+${newCount}`));
-    pill.title = `${label}: ${n} items${newCount ? `, ${newCount} new since your last visit` : ""}`;
+    // The area's digest as the tooltip: survey every front without clicking.
+    const brief = digest[area]?.text;
+    pill.title = `${label}: ${n} items` +
+      (newCount ? `, ${newCount} new since your last visit` : "") +
+      (brief ? `\n\n${brief}` : "");
     pill.addEventListener("click", () => {
       activeArea = area;
       expanded.clear();
@@ -247,6 +297,7 @@ function renderDigest() {
   const node = el("digest");
   const entry = activeArea !== "all" ? digest[activeArea] : null;
   node.hidden = !entry;
+  node.classList.remove("open");
   node.textContent = entry ? entry.text : "";
 }
 
@@ -256,6 +307,7 @@ function renderCounts() {
 }
 
 function render() {
+  renderBands(inRange());
   let rows = inScope();
   // Recomputed per view: the bar is relative to what is actually on screen.
   const scores = rows.map((a) => a.importance).filter((v) => typeof v === "number").sort((x, y) => x - y);
@@ -309,9 +361,7 @@ function render() {
     if (all.length > cap) {
       const more = document.createElement("button");
       more.className = "link more-in-area";
-      more.textContent = isOpen
-        ? "Show less"
-        : `Show ${all.length - cap} more`;
+      more.textContent = isOpen ? "Show less" : `${all.length - cap} more`;
       more.addEventListener("click", () => {
         if (isOpen) expanded.delete(area); else expanded.add(area);
         render();
@@ -369,22 +419,22 @@ function currentTheme() {
 /** Filters live in the URL: shareable, bookmarkable, and testable. */
 function applyUrlParams() {
   const params = new URLSearchParams(location.search);
-  for (const id of ["window", "bar"]) {
-    const value = params.get(id);
-    if (value === null) continue;
-    const control = el(id);
-    if ([...control.options].some((o) => o.value === value)) control.value = value;
+  const windowValue = params.get("window");
+  if (windowValue !== null && [...el("window").options].some((o) => o.value === windowValue)) {
+    el("window").value = windowValue;
   }
+  const band = Number(params.get("bar"));
+  if (BANDS.some((b) => b.value === band)) activeBand = band;
   if (params.get("q")) el("search").value = params.get("q");
   const area = params.get("area");
-  if (area && (area === "all" || AREAS.some(([a]) => a === area))) activeArea = area;
+  if (area && (area === "all" || AREAS.some(([key]) => key === area))) activeArea = area;
   if (params.get("unread") === "1") el("unread").checked = true;
 }
 
 function syncUrl() {
   const params = new URLSearchParams();
   params.set("window", el("window").value);
-  params.set("bar", el("bar").value);
+  params.set("bar", String(activeBand));
   if (el("search").value.trim()) params.set("q", el("search").value.trim());
   if (el("unread").checked) params.set("unread", "1");
   if (activeArea !== "all") params.set("area", activeArea);
@@ -433,7 +483,7 @@ Promise.all([
     el("empty").textContent = `Could not load articles (${error.message}).`;
   });
 
-for (const id of ["window", "bar", "unread"]) {
+for (const id of ["window", "unread"]) {
   el(id).addEventListener("change", () => { expanded.clear(); syncUrl(); render(); });
 }
 el("search").addEventListener("input", () => { expanded.clear(); syncUrl(); render(); });
@@ -450,6 +500,8 @@ addEventListener("keydown", (event) => {
   syncUrl();
   render();
 });
+
+el("digest").addEventListener("click", () => el("digest").classList.toggle("open"));
 
 el("mark-all").addEventListener("click", () => {
   for (const article of inScope()) read.add(article.url);

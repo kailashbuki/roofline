@@ -172,9 +172,9 @@ momentum, or source counts: those describe the pipeline, not the news.
   training & post-training, everything else. Six per area, expandable.
 - **Every item carries a one-line justification** of what is actually new and why
   it matters. That line is the point: it lets you skip without opening.
-- **An importance bar** ("only what matters" / "worth a look" / "everything")
-  rather than a sort order, because the question is what to *read*, not how to
-  rank.
+- **A counted segmented control** — `All 672 · Notable 481 · Key 185` — rather
+  than a sort order or a labelled dropdown. The count is what makes it legible:
+  "worth a look" described a feeling, `Notable 481` describes what will happen.
 - **"Since last visit" as the default range**, which is the axis a daily briefing
   needs; a fixed day count is only a proxy for it. The visit mark advances after
   render, so the current visit's new items stay visible while you read them.

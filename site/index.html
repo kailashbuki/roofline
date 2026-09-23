@@ -28,11 +28,8 @@
         <option value="30">Last 30 days</option>
         <option value="90">Last 90 days</option>
       </select>
-      <select id="bar" aria-label="Importance threshold">
-        <option value="0.6">Only what matters</option>
-        <option value="0.35" selected>Worth a look</option>
-        <option value="0">Everything</option>
-      </select>
+      <!-- Counts make the filter self-describing; a label alone cannot. -->
+      <div id="bar" class="seg" role="group" aria-label="How much to show"></div>
       <input id="search" type="search" placeholder="Search…" aria-label="Search titles">
       <label class="toggle"><input id="unread" type="checkbox"> Unread only</label>
       <button id="mark-all" class="link">Mark all read</button>
@@ -45,7 +42,7 @@
   <p id="notice" class="notice" hidden></p>
 
   <main>
-    <p id="digest" class="digest" hidden></p>
+    <p id="digest" class="digest" hidden title="Click to expand"></p>
     <!-- The lede: the few things worth opening first, across every area. -->
     <section id="lede-section" class="lede" hidden>
       <h2 class="lede-head">Start here</h2>

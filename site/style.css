@@ -40,6 +40,10 @@
 
 * { box-sizing: border-box; }
 
+/* An explicit `display` in a rule beats the UA stylesheet's [hidden] rule, so
+   .digest's display:-webkit-box was rendering an empty box when hidden. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   padding: 0 16px 48px;
@@ -172,7 +176,7 @@ footer {
 
 .link:hover { color: var(--text); }
 
-.lede { margin: 18px 0 8px; }
+.lede { margin: 14px 0 6px; }
 
 .lede-head, .area-head h2 {
   font-size: 11px;
@@ -183,7 +187,7 @@ footer {
   margin: 0;
 }
 
-.area { margin-top: 26px; }
+.area { margin-top: 18px; }
 
 .area-head {
   display: flex;
@@ -199,11 +203,11 @@ footer {
 /* One row per item: score, then title + why + meta, then the Gemini button. */
 .item {
   display: grid;
-  grid-template-columns: 1fr 24px;
-  gap: 10px;
+  grid-template-columns: 1fr 22px;
+  gap: 8px;
   align-items: start;
-  padding: 11px 4px 11px 6px;
-  border-radius: 8px;
+  padding: 7px 4px 7px 6px;
+  border-radius: 6px;
   text-decoration: none;
   color: inherit;
 }
@@ -211,13 +215,23 @@ footer {
 .item:hover { background: var(--card); }
 .item.read { opacity: 0.45; }
 
-.item-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.item-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 
 .item-title { font-size: 14px; font-weight: 500; line-height: 1.4; }
 .item-lede .item-title { font-size: 16px; font-weight: 600; letter-spacing: -0.2px; }
 
-/* The justification — the reason this page exists. */
-.item-why { font-size: 12.5px; line-height: 1.45; color: var(--text); opacity: 0.72; }
+/* The justification — the reason this page exists. Two lines maximum: past that
+   it stops being a reason to skip and becomes something else to read. */
+.item-why {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text);
+  opacity: 0.72;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .item-lede .item-why { font-size: 13.5px; opacity: 0.82; }
 
 .item-meta {
@@ -320,22 +334,23 @@ footer {
 .pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin: 14px 0 2px;
+  gap: 4px;
+  margin: 10px 0 0;
 }
 
 .pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   background: var(--card);
   color: var(--muted);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 5px 11px;
+  padding: 4px 9px;
   font: inherit;
-  font-size: 12.5px;
+  font-size: 12px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .pill:hover { color: var(--text); }
@@ -357,13 +372,54 @@ footer {
 
 .pill.on .pill-new { color: var(--bg); opacity: 0.8; }
 
-/* The per-area state of play, shown when a single front is selected. */
+/* The per-area state of play. Clamped to two lines: it is orientation, not
+   reading material, and at full height it pushed the actual items off screen.
+   Click to expand. */
 .digest {
-  margin: 16px 0 4px;
-  padding: 12px 14px;
+  margin: 12px 0 2px;
+  padding: 9px 12px;
   background: var(--card);
-  border-radius: 8px;
+  border-radius: 6px;
   border-left: 2px solid var(--accent-2);
-  font-size: 13.5px;
-  line-height: 1.55;
+  font-size: 12.5px;
+  line-height: 1.5;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+.digest.open {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* A counted segmented control, replacing an opaque "worth a look" dropdown. */
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--card);
+  color: var(--muted);
+  border: 0;
+  border-right: 1px solid var(--border);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.seg-btn:last-child { border-right: 0; }
+.seg-btn:hover { color: var(--text); }
+.seg-btn.on { background: var(--text); color: var(--bg); }
+.seg-n { font-size: 11px; opacity: 0.6; font-variant-numeric: tabular-nums; }
+.seg-btn.on .seg-n { opacity: 0.75; }

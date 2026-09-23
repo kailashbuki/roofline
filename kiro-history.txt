@@ -603,3 +603,34 @@ Fixes:
 
 Lesson: when the classifier rejects content from a source that was deliberately
 chosen for that content, suspect the scope before crediting the model.
+
+## 2026-09-23 (postscript 4) - Space and legibility
+
+### "Worth a look"/"Only what matters" were opaque - correct
+Those labels described a FEELING, not an effect. Replaced the dropdown with a
+counted segmented control: All 672 | Notable 481 | Key 185. The count is the
+affordance - it says exactly what will happen, which no adjective can. Counts are
+recomputed per view against the current time/search/unread slice, so they stay
+truthful as other filters move.
+
+### Space reclaimed
+The digest paragraph cost ~60px for something read once, and the pill row wrapped
+to two lines.
+- Digest clamped to 2 lines with click-to-expand, and its PROMPT tightened from
+  "1-2 sentences, 45 words" to "ONE sentence, max 28 words", with the filler
+  openings banned explicitly ("Recent work centers on", "several papers",
+  "researchers are exploring"). Shorter text is the real fix; clamping is the
+  backstop.
+- The digest is now also each pill's tooltip, so all eight fronts can be surveyed
+  without clicking any of them.
+- Pill labels shortened for the row (Arch/Models/Inference/Engines/Silicon/
+  Training/Cost/Other) while section headings keep the full names. AREAS entries
+  are now [key, heading, pill label].
+- Item rows tightened (padding 11->7, gap 10->8) and .item-why clamped to 2 lines.
+  Every row pays this, so it is the biggest single win.
+
+### A CSS bug worth remembering
+An empty digest rendered as a stray thin bar. `hidden` works through the UA
+stylesheet's `display: none`, and .digest's explicit `display: -webkit-box` beat
+it. Added a global `[hidden] { display: none !important; }`. Any rule that sets
+display will silently defeat the hidden attribute.
