@@ -1,5 +1,5 @@
 {
- "count": 195,
+ "count": 197,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -195,6 +195,8 @@
   "https://www.anthropic.com/engineering/claude-code-auto-mode",
   "https://www.anthropic.com/engineering/harness-design-long-running-apps",
   "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
-  "https://www.anthropic.com/engineering/desktop-extensions"
+  "https://www.anthropic.com/engineering/desktop-extensions",
+  "https://openai.com/index/introducing-mentalhealthbench",
+  "https://pytorch.org/blog/from-research-project-to-open-source-ecosystem-bring-your-academic-pytorch-project-to-pytorchcon-na"
  ]
 }
