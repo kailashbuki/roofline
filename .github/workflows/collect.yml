@@ -50,6 +50,16 @@ jobs:
           GEMINI_API: generatecontent
         run: python collect_all.py
 
+      - name: Build per-area digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
+          GEMINI_API: generatecontent
+        # ~6 requests. A failure here must not fail the run: the page treats the
+        # digest as optional and simply omits it.
+        continue-on-error: true
+        run: python build_digest.py --days 7
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
@@ -93,6 +103,7 @@ jobs:
           cp -r site/. _site/
           mkdir -p _site/data
           cp data/articles.json _site/data/
+          cp data/digest.json _site/data/ 2>/dev/null || true
           touch _site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

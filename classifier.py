@@ -172,8 +172,11 @@ def build_prompt(items):
         "strict and use the full range: routine engineering, incremental "
         "benchmark gains, tutorials and marketing belong below 0.3; only a "
         "genuine shift in what is possible belongs above 0.8.\n"
-        "- why: one sentence, at most 20 words, saying what is actually new here "
-        "and why it matters. No hype, no restating the title.\n"
+        "- why: one sentence, at most 20 words. State what is NEW RELATIVE TO "
+        "PRIOR WORK and what it enables. Never paraphrase or restate the title — "
+        "if your sentence would still make sense as a subtitle, it is wrong. "
+        "Prefer the concrete delta (a number, a mechanism, a constraint removed) "
+        "over adjectives. No hype.\n"
         f"- tags: 1-4, only from {', '.join(ALLOWED_TAGS)}.\n\n"
         "Articles:\n" + "\n".join(listing)
     )

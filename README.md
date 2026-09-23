@@ -144,6 +144,13 @@ which is committed.
 
 ## One page, organised by what to read
 
+**Area pills** across the top switch fronts in one click (keys `0`-`6`), each
+showing its item count and how many arrived since your last visit — so "where did
+things happen?" is answerable without scrolling. Selecting a single front shows
+its **digest**: one or two sentences on the state of play there, synthesised by
+`build_digest.py` from that area's highest-importance items (~6 requests per run,
+written to `data/digest.json`, treated as optional by the page).
+
 The site is a **briefing**, not a feed and not a dashboard. It answers one
 question — what must I read? — and deliberately shows no volume charts, topic
 momentum, or source counts: those describe the pipeline, not the news.

@@ -315,3 +315,55 @@ footer {
   line-height: 1.5;
   color: var(--muted);
 }
+
+/* Area switching: pills, not a dropdown. One click per front, keys 0-6. */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 2px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 11px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.pill:hover { color: var(--text); }
+
+.pill.on {
+  color: var(--bg);
+  background: var(--text);
+  border-color: var(--text);
+}
+
+.pill-n { font-size: 11px; opacity: 0.65; font-variant-numeric: tabular-nums; }
+
+.pill-new {
+  color: var(--accent);
+  font-size: 10.5px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.pill.on .pill-new { color: var(--bg); opacity: 0.8; }
+
+/* The per-area state of play, shown when a single front is selected. */
+.digest {
+  margin: 16px 0 4px;
+  padding: 12px 14px;
+  background: var(--card);
+  border-radius: 8px;
+  border-left: 2px solid var(--accent-2);
+  font-size: 13.5px;
+  line-height: 1.55;
+}

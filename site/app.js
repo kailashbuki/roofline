@@ -10,7 +10,9 @@ const READ_KEY = "roofline:read";
 const THEME_KEY = "roofline:theme";
 // Only the top tier earns a marker. A number on every row is decoration: it
 // cannot be acted on, and the ordering already encodes it.
-const MUST_READ = 0.75;
+// Relative, not absolute: an absolute cut over-fires whenever the model's scores
+// cluster, which they do. The top decile of what is on screen is always "the few".
+const MUST_READ_PERCENTILE = 0.9;
 const VISIT_KEY = "roofline:last-visit";
 // Only the first few per area. A briefing that needs scrolling is a list.
 const PER_AREA = 3;
@@ -30,7 +32,11 @@ const AREAS = [
 const el = (id) => document.getElementById(id);
 
 let articles = [];
+let digest = {};
 let read = loadRead();
+let visitMark = null;           // "new" means newer than this, not merely unread
+let mustReadCut = Infinity;
+let activeArea = "all";
 const expanded = new Set();
 
 function loadRead() {
@@ -148,14 +154,15 @@ function card(article, { lede = false } = {}) {
   const meta = document.createElement("span");
   meta.className = "item-meta";
   // Redundant in the lede, which is by definition the must-reads.
-  if (!lede && typeof article.importance === "number" && article.importance >= MUST_READ) {
+  if (!lede && typeof article.importance === "number" && article.importance >= mustReadCut) {
     const flag = span("must-read", "must read");
     flag.title = `importance ${article.importance.toFixed(2)}`;
     meta.append(flag);
   }
   meta.append(span("item-source", article.source));
   meta.append(span("", relativeDate(article.published_date)));
-  if (!read.has(article.url)) meta.append(span("item-new", "new"));
+  const when = article.published_date ? new Date(article.published_date + "Z").getTime() : 0;
+  if (visitMark && when > visitMark) meta.append(span("item-new", "new"));
   // Sub-topic chips. The section header already carries the area, so these are
   // the finer grain that helps scanning within a section.
   for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 4)) {
@@ -196,17 +203,73 @@ function renderNotice() {
   }
 }
 
+/** Per-area pills with counts, and how many are new since the last visit. */
+function renderPills(rows) {
+  const counts = new Map();
+  const fresh = new Map();
+  for (const a of rows) {
+    const area = a.area || "other";
+    counts.set(area, (counts.get(area) || 0) + 1);
+    const when = a.published_date ? new Date(a.published_date + "Z").getTime() : 0;
+    if (visitMark && when > visitMark) fresh.set(area, (fresh.get(area) || 0) + 1);
+  }
+
+  const host = el("pills");
+  host.textContent = "";
+  const entries = [["all", "All fronts"], ...AREAS];
+
+  entries.forEach(([area, label], index) => {
+    const n = area === "all" ? rows.length : counts.get(area) || 0;
+    if (area !== "all" && !n) return;
+
+    const pill = document.createElement("button");
+    pill.type = "button";
+    pill.className = `pill${activeArea === area ? " on" : ""}`;
+    pill.append(span("", label));
+    pill.append(span("pill-n", n));
+    const newCount = area === "all"
+      ? [...fresh.values()].reduce((t, v) => t + v, 0)
+      : fresh.get(area) || 0;
+    if (newCount) pill.append(span("pill-new", `+${newCount}`));
+    pill.title = `${label}: ${n} items${newCount ? `, ${newCount} new since your last visit` : ""}`;
+    pill.addEventListener("click", () => {
+      activeArea = area;
+      expanded.clear();
+      syncUrl();
+      render();
+    });
+    host.append(pill);
+  });
+}
+
+function renderDigest() {
+  const node = el("digest");
+  const entry = activeArea !== "all" ? digest[activeArea] : null;
+  node.hidden = !entry;
+  node.textContent = entry ? entry.text : "";
+}
+
 function renderCounts() {
   const unread = articles.filter((a) => !read.has(a.url)).length;
   el("counts").textContent = `${articles.length} collected · ${unread} unread`;
 }
 
 function render() {
-  const rows = inScope();
+  let rows = inScope();
+  // Recomputed per view: the bar is relative to what is actually on screen.
+  const scores = rows.map((a) => a.importance).filter((v) => typeof v === "number").sort((x, y) => x - y);
+  mustReadCut = scores.length
+    ? scores[Math.floor(scores.length * MUST_READ_PERCENTILE)]
+    : Infinity;
   // With few results the lede would swallow the whole page and the area grouping
   // would vanish, so it only earns its place when there is a tail to lead.
   // "other" is where unclassified and off-beat items land — it must never be
   // allowed to supply the lede, or the headline slot fills with noise.
+  renderPills(rows);
+  renderDigest();
+
+  if (activeArea !== "all") rows = rows.filter((a) => (a.area || "other") === activeArea);
+
   const ledePool = rows.filter((a) => (a.area || "other") !== "other");
   const lede = ledePool.length > LEDE_COUNT * 2 ? ledePool.slice(0, LEDE_COUNT) : [];
   const ledeUrls = new Set(lede.map((a) => a.url));
@@ -235,7 +298,9 @@ function render() {
 
     const isOpen = expanded.has(area);
     // "Everything else" starts collapsed: it is a holding pen, not a section.
-    const cap = area === "other" ? 0 : PER_AREA;
+    const cap = area === "other" && activeArea !== "other" ? 0
+      : activeArea !== "all" ? Infinity
+      : PER_AREA;
     const visible = isOpen ? all : all.slice(0, cap);
     for (const article of visible) section.append(card(article));
     shown += visible.length;
@@ -310,6 +375,8 @@ function applyUrlParams() {
     if ([...control.options].some((o) => o.value === value)) control.value = value;
   }
   if (params.get("q")) el("search").value = params.get("q");
+  const area = params.get("area");
+  if (area && (area === "all" || AREAS.some(([a]) => a === area))) activeArea = area;
   if (params.get("unread") === "1") el("unread").checked = true;
 }
 
@@ -319,18 +386,25 @@ function syncUrl() {
   params.set("bar", el("bar").value);
   if (el("search").value.trim()) params.set("q", el("search").value.trim());
   if (el("unread").checked) params.set("unread", "1");
+  if (activeArea !== "all") params.set("area", activeArea);
   history.replaceState(null, "", `?${params}`);
 }
 
 initTheme();
 applyUrlParams();
 
-fetch("./data/articles.json")
-  .then((response) => {
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return response.json();
-  })
-  .then((data) => {
+visitMark = lastVisit();
+
+Promise.all([
+  fetch("./data/articles.json").then((r) => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  }),
+  // Optional: absent until build_digest.py has run with a key.
+  fetch("./data/digest.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
+])
+  .then(([data, digestData]) => {
+    digest = digestData?.areas || {};
     articles = data.articles || [];
     if (data.generated_at) {
       const when = new Date(data.generated_at);
@@ -357,6 +431,20 @@ for (const id of ["window", "bar", "unread"]) {
   el(id).addEventListener("change", () => { expanded.clear(); syncUrl(); render(); });
 }
 el("search").addEventListener("input", () => { expanded.clear(); syncUrl(); render(); });
+// 0 = all fronts, 1-6 = each area. Faster than reaching for the pills.
+addEventListener("keydown", (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)) return;
+  const index = "0123456".indexOf(event.key);
+  if (index < 0) return;
+  const target = index === 0 ? "all" : (AREAS[index - 1] || [])[0];
+  if (!target) return;
+  activeArea = target;
+  expanded.clear();
+  syncUrl();
+  render();
+});
+
 el("mark-all").addEventListener("click", () => {
   for (const article of inScope()) read.add(article.url);
   saveRead();

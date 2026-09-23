@@ -463,3 +463,40 @@ renderNotice() was defined but never called - the string replacement that was
 supposed to insert the call into render() silently did not match, so the notice
 never appeared. Verified after fixing: shows on the real 803-unrated data, absent
 on a fully-rated copy.
+
+## 2026-09-23 (last) - Self-review of the populated briefing
+
+Reviewed the live page now that 601 of 849 rows are rated, and MEASURED the
+weaknesses rather than guessing at them:
+
+1. Could not see WHERE things happened without scrolling. Fixed with area pills
+   (not a dropdown, as asked): one click per front, keys 0-6, each pill carrying
+   its count and a "+N" of items newer than the last visit. That +N is the actual
+   catch-up signal - it answers "which fronts moved" at a glance.
+2. "NEW" was on 100% of rows because it meant "unread", which carries no
+   information on a page you have never marked. It now means "published since your
+   last visit" (localStorage timestamp).
+3. MEASURED: 31% of why-lines restated the title (title/why similarity >0.5 in
+   187 of 601). e.g. "Topology-Stratified Materials Discovery with A Flow-Based
+   Generative Model" -> "Uses topology-stratified flow-based generative models to
+   improve crystal structure discovery." Zero added information. The prompt now
+   forbids paraphrase explicitly ("if your sentence would still make sense as a
+   subtitle, it is wrong") and demands the concrete delta versus prior work.
+4. No synthesis: catching up on a front still meant reading three headlines and
+   assembling the picture yourself. Added build_digest.py - one or two sentences
+   per area per run, shown when a single front is selected. This is the highest-
+   value feature for multi-front catch-up and costs ~6 requests.
+5. MUST READ over-fired (3 of 3 in architecture) because scores cluster. The
+   threshold is now the top decile OF WHAT IS ON SCREEN, recomputed per view,
+   rather than an absolute 0.75.
+
+MEASURED and dropped: duplicate-story clustering. Only 2 near-duplicate title
+groups across 849 rows, so the same-story-from-three-sources problem I expected
+does not exist at this volume. Not worth building.
+
+Known remaining weaknesses (named, not fixed):
+- Area errors are visible: agent-tooling papers land in "architecture", and a
+  materials-science paper was rated in-scope at all. The areas/rubric need
+  tightening, which is a prompt change rather than a layout one.
+- Read state is per-browser localStorage, so it does not follow you across
+  devices. Fixing that needs a backend, which the whole design exists to avoid.
