@@ -162,10 +162,7 @@ which is committed.
 **Front tabs** in the sticky header switch fronts in one click (keys `0`-`7`).
 Each shows its count in large type with the label above and a `+N` of items newer
 than your last visit — the count answers "where did things happen?", so it gets the
-emphasis, not the label. Selecting a single front shows
-its **digest**: one or two sentences on the state of play there, synthesised by
-`build_digest.py` from that area's highest-importance items (~6 requests per run,
-written to `data/digest.json`, treated as optional by the page).
+emphasis, not the label.
 
 The site is a **briefing**, not a feed and not a dashboard. It answers one
 question — what must I read? — and deliberately shows no volume charts, topic

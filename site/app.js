@@ -82,7 +82,6 @@ function reportFailure(error) {
 }
 
 let articles = [];
-let digest = {};
 let lastUpdate = null;          // start of the most recent collection run
 let read = loadRead();
 let visitMark = null;           // "new" means newer than this, not merely unread
@@ -355,11 +354,8 @@ function renderTabs(rows) {
     if (newCount) figure.append(span("tab-new", `+${newCount}`));
     tab.append(figure);
 
-    // The area's digest as the tooltip: survey every front without clicking one.
-    const brief = digest[area]?.text;
     tab.title = `${label}: ${n} items` +
-      (newCount ? `, ${newCount} new since your last visit` : "") +
-      (brief ? `\n\n${brief}` : "");
+      (newCount ? `, ${newCount} new since your last visit` : "");
 
     tab.addEventListener("click", () => {
       activeArea = area;
@@ -369,14 +365,6 @@ function renderTabs(rows) {
     });
     host.append(tab);
   });
-}
-
-function renderDigest() {
-  const node = el("digest");
-  const entry = activeArea !== "all" ? digest[activeArea] : null;
-  node.hidden = !entry;
-  node.classList.remove("open");
-  node.textContent = entry ? entry.text : "";
 }
 
 function renderCounts() {
@@ -390,7 +378,6 @@ function render() {
 
   let rows = inScope();
   renderTabs(rows);
-  renderDigest();
 
   if (activeArea !== "all") rows = rows.filter((a) => (a.area || "other") === activeArea);
 
@@ -540,22 +527,16 @@ applyUrlParams();
 
 visitMark = openSession();
 
-Promise.all([
-  // no-cache forces revalidation. Without it the browser happily serves an
-  // hours-old articles.json and the page silently shows stale state — which
-  // looked exactly like the backfill having been lost.
-  fetch("./data/articles.json", { cache: "no-cache" }).then((r) => {
+// no-cache forces revalidation. Without it the browser happily serves an
+// hours-old articles.json and the page silently shows stale state — which looked
+// exactly like the backfill having been lost.
+fetch("./data/articles.json", { cache: "no-cache" })
+  .then((r) => {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     return r.json();
-  }),
-  // Optional: absent until build_digest.py has run with a key.
-  fetch("./data/digest.json", { cache: "no-cache" })
-    .then((r) => (r.ok ? r.json() : null))
-    .catch(() => null),
-])
-  .then(([data, digestData]) => {
+  })
+  .then((data) => {
     // Any DOM mismatch surfaces here rather than as a misleading data error.
-    digest = digestData?.areas || {};
     articles = data.articles || [];
     lastUpdate = data.previous_generated_at
       ? new Date(data.previous_generated_at).getTime()
@@ -598,8 +579,6 @@ addEventListener("keydown", (event) => {
   syncUrl();
   render();
 });
-
-el("digest").addEventListener("click", () => el("digest").classList.toggle("open"));
 
 el("mark-all").addEventListener("click", () => {
   for (const article of inScope()) read.add(article.url);

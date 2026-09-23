@@ -50,16 +50,6 @@ jobs:
           GEMINI_API: generatecontent
         run: python collect_all.py
 
-      - name: Build per-area digest
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.5-flash-lite
-          GEMINI_API: generatecontent
-        # ~6 requests. A failure here must not fail the run: the page treats the
-        # digest as optional and simply omits it.
-        continue-on-error: true
-        run: python build_digest.py --days 7
-
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
@@ -71,9 +61,6 @@ jobs:
           for attempt in 1 2 3; do
             cp data/articles.json /tmp/ours-articles.json
             cp data/rejected.json /tmp/ours-rejected.json 2>/dev/null || true
-            # The digest is built in the previous step; the reset below would
-            # delete it, so it has to survive the same way the data does.
-            cp data/digest.json /tmp/ours-digest.json 2>/dev/null || true
 
             git fetch origin "$GITHUB_REF_NAME" --quiet
             git reset --hard "origin/$GITHUB_REF_NAME" --quiet
@@ -87,10 +74,6 @@ jobs:
             python merge_into_store.py /tmp/ours-articles.json
             if [ -f /tmp/ours-rejected.json ]; then
               python merge_data.py --rejected /tmp/ours-rejected.json data/rejected.json data/rejected.json
-            fi
-            # Newest digest wins outright: it is derived, not accumulated.
-            if [ -f /tmp/ours-digest.json ]; then
-              cp /tmp/ours-digest.json data/digest.json
             fi
 
             if git diff --quiet -- data/ && [ -z "$(git ls-files -o --exclude-standard data/)" ]; then
@@ -121,7 +104,6 @@ jobs:
           echo "stamped assets with $VERSION"
           mkdir -p _site/data
           cp data/articles.json _site/data/
-          cp data/digest.json _site/data/ 2>/dev/null || true
           touch _site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

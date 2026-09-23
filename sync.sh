@@ -4,7 +4,6 @@
 #
 #   export GEMINI_API_KEY='...'
 #   ./sync.sh              # backfill unrated rows, then merge + push
-#   ./sync.sh --digest     # also rebuild the per-area digest
 #   ./sync.sh --push-only  # skip classification, just merge + push
 #
 # The scheduled workflow commits to the same branch three times a day, so a plain
@@ -18,11 +17,9 @@ ok() { printf "  \033[32m✓\033[0m %s\n" "$*"; }
 bold() { printf "\n\033[1m%s\033[0m\n" "$*"; }
 
 PUSH_ONLY=0
-DIGEST=0
 for arg in "$@"; do
   case "$arg" in
     --push-only) PUSH_ONLY=1 ;;
-    --digest) DIGEST=1 ;;
     *) echo "unknown option: $arg" >&2; exit 2 ;;
   esac
 done
@@ -31,10 +28,6 @@ if [ "$PUSH_ONLY" -eq 0 ]; then
   [ -n "${GEMINI_API_KEY:-}" ] || { echo "GEMINI_API_KEY is not exported" >&2; exit 1; }
   bold "Classifying unrated rows"
   python3 reclassify.py
-  if [ "$DIGEST" -eq 1 ]; then
-    bold "Rebuilding the per-area digest"
-    python3 build_digest.py --days 7
-  fi
 fi
 
 bold "Merging with origin/main"

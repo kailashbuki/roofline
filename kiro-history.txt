@@ -860,3 +860,23 @@ Two causes, one of them the real one:
    render-blocking stylesheet on a page whose whole point is being static.
    Pulled the latin block specifically - Google's CSS lists seven subsets and the
    convenient last URL is not always the one you want.
+
+## 2026-09-24 - Per-area digest removed entirely
+
+"since i am the reader, i don't need an explanation or summary like that - remove
+such summaries from our workflow altogether."
+
+Fair, and it was my idea rather than a request. The digest answered "what is going on
+in this area" for someone who does NOT already know the field. For a practitioner the
+one-line why per item already carries the delta, and a paragraph restating the same
+items in aggregate is pure overhead - it cost vertical space, a clamp, an expand
+interaction, and ~21 requests a day.
+
+Removed: build_digest.py, data/digest.json, the workflow step, the stash/restore
+around the race reset, the publish copy, the page element, its fetch, renderDigest,
+the tab-tooltip text, the CSS block, and the --digest flag in sync.sh. Grepped for
+dangling references afterwards - the LEDE_COUNT incident taught me that a missed
+reference here is a blank page, not a missing feature.
+
+Side effect worth noting: the collect job is now 5 steps instead of 6, and per-run
+Gemini cost drops from ~10 requests to ~3.
