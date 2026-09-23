@@ -1,0 +1,61 @@
+{
+ "month": "2026-01",
+ "count": 5,
+ "articles": [
+  {
+   "title": "Lightweight Transformer Architectures for Edge Devices in Real-Time Applications",
+   "url": "https://arxiv.org/abs/2601.03290",
+   "source": "hackernews",
+   "published_date": "2026-01-27T23:18:09",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,hardware,optimization",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Designs lightweight transformer variants specifically optimized for edge hardware."
+  },
+  {
+   "title": "Categories of Inference-Time Scaling for Improved LLM Reasoning",
+   "url": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-01-24T11:23:18",
+   "summary": "And an Overview of Recent Inference-Scaling Papers",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "importance": 0.6,
+   "why": "Categorizes and reviews emerging inference-time scaling paradigms for enhanced reasoning."
+  },
+  {
+   "title": "Introducing Contextual Retrieval",
+   "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+   "source": "anthropic:engineering",
+   "published_date": "2026-01-07T15:00:44",
+   "summary": "",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "importance": 0.5,
+   "why": "Combines BM25 lexical search with vector embeddings to improve chunk retrieval accuracy."
+  },
+  {
+   "title": "Effective context engineering for AI agents",
+   "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+   "source": "anthropic:engineering",
+   "published_date": "2026-01-06T15:31:12",
+   "summary": "",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "importance": 0.4,
+   "why": "Explores token budget management strategies for context windows during runtime."
+  },
+  {
+   "title": "Writing a performant autograd on tenstorrent wormhole p1",
+   "url": "https://mewtwo.bearblog.dev/wormhole-autograd-p1",
+   "source": "hackernews",
+   "published_date": "2026-01-01T01:07:37",
+   "summary": "4 points, 1 comments on HackerNews",
+   "tags": "hardware,training",
+   "area": "silicon",
+   "importance": 0.4,
+   "why": "Implements low-level autograd operations tailored to Tenstorrent Wormhole architecture."
+  }
+ ]
+}

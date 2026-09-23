@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-23T20:39:41Z",
+ "generated_at": "2026-09-23T20:42:54Z",
  "hot_days": 120,
- "count": 848,
- "total_collected": 848,
+ "count": 849,
+ "total_collected": 938,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -8117,6 +8117,17 @@
    "relevance_score": 0.0,
    "importance": null,
    "why": ""
+  },
+  {
+   "title": "Co-Packaged Optics (CPO) – Scaling with Light for the Next Wave of Interconnect",
+   "url": "https://newsletter.semianalysis.com/p/co-packaged-optics-cpo-book-scaling",
+   "source": "hackernews",
+   "published_date": "2026-06-24T18:00:44",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "importance": 0.6,
+   "why": "Examines optical interconnect scaling solutions to alleviate AI cluster bandwidth bottlenecks."
   },
   {
    "title": "Accelerating BEV Pooling on NVIDIA GPUs for Physical AI Applications",
