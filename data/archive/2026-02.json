@@ -1,0 +1,28 @@
+{
+ "month": "2026-02",
+ "count": 2,
+ "articles": [
+  {
+   "title": "A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026",
+   "url": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-02-25T13:26:56",
+   "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "importance": 0.4,
+   "why": "Compares ten open-weight model architectures to identify emerging structural trends."
+  },
+  {
+   "title": "Pipeline Parallelism in SGLang: Scaling to Million-Token Contexts",
+   "url": "https://lmsys.org/blog/2026-01-15-chunked-pipeline",
+   "source": "hackernews",
+   "published_date": "2026-02-25T06:26:34",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "importance": 0.65,
+   "why": "Introduces pipeline parallelism into SGLang, enabling distributed execution across million-token contexts."
+  }
+ ]
+}

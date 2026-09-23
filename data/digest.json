@@ -1,33 +1,33 @@
 {
- "generated_at": "2026-09-23T21:38:43Z",
+ "generated_at": "2026-09-23T21:45:12Z",
  "days": 7,
  "areas": {
   "architecture": {
-   "text": "Recent work optimizes long-context efficiency, agentic execution, and 3D-consistent world generation using hyperbolic geometry, gated linear attention, and hybrid sparse attention frameworks like HySparse2.",
+   "text": "Researchers are optimizing long-context architectures, agentic workflows, and 3D generation through techniques like HySparse2, Gated Token Recurrence, hyperbolic residual quantization, and block-level MoE conditioning.",
    "items": 38
   },
   "new-models": {
-   "text": "Recent releases feature frontier open-weights systems like Xiaomi MiMo-V2.6-Pro alongside domain-specific breakthroughs in medical foundation embeddings, multi-modal video reasoning, and flow-based generative materials discovery.",
+   "text": "Frontier releases like Xiaomi MiMo-V2.6-Pro 1T-A42B and specialized architectures such as MintAct, OmniVChat, and MMAP are driving cost-efficient open-weights training, native audio-visual dialogue, and multimodal medical prediction.",
    "items": 18
   },
   "inference-methods": {
-   "text": "Practitioners are scaling test-time compute through search policies, applying on-policy distillation to sub-3-bit models, disaggregating prefill-decode quantization, and utilizing KV selection and speculative decoding.",
+   "text": "Practitioners are deploying on-policy distillation, Disaggregated Quantization, and CompKV to optimize sub-3-bit reasoning, prefill-decode memory bandwidth, and 200K-token long-context inference on consumer hardware.",
    "items": 38
   },
   "inference-engines": {
-   "text": "Recent inference and serving developments focus on optimization techniques like SARA, DHSched, and Hot-Cold memory tiering to improve latency and resource efficiency in agentic LLM and avatar systems.",
+   "text": "Practitioners are actively deploying Flux, SARA, NVIDIA Topograph, and Hot-Cold HBM-Flash tiering to optimize cluster scheduling, memory tiering, and latency for agentic LLM workloads.",
    "items": 33
   },
   "silicon": {
-   "text": "Engineers are scaling AI hardware by optimizing TPUs like v6e, mitigating GPU cluster power surges, and refining DRAM, HBM, and optical interconnects.",
+   "text": "Engineers are optimizing TPU v6e and low-cost FPGAs, improving HBM profiling with RISC-V, and mitigating GPU cluster power surges to scale AI hardware performance.",
    "items": 14
   },
   "training": {
-   "text": "Recent research targets RL alignment and reward hacking through techniques like PACT credit assignment, RULER rubric rewards, and group relative policy optimization for speech translation.",
+   "text": "Practitioners are deploying group relative policy optimization, instance-aware rubric rewards, and agentic reinforcement learning to systematically mitigate reward hacking and align critics in LLMs.",
    "items": 43
   },
   "economics": {
-   "text": "Inference costs are collapsing industry-wide by forty to fifty percent, driving self-hosted open-weight unit economics toward token prices that are effectively too cheap to meter.",
+   "text": "Inference costs and model prices are collapsing industry-wide by 40 to 50 percent, driving a structural shift toward self-hosted open-weight unit economics and near-zero token costs.",
    "items": 4
   }
  }
