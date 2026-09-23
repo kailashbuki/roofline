@@ -880,3 +880,30 @@ reference here is a blank page, not a missing feature.
 
 Side effect worth noting: the collect job is now 5 steps instead of 6, and per-run
 Gemini cost drops from ~10 requests to ~3.
+
+## 2026-09-24 - Type scale, and everything a step larger
+
+The old sizes were UI-chrome sizing applied to a page you actually READ: 15px base
+with 14.5px titles and a 13px why-line. Raised across the board and, more usefully,
+moved into tokens at the top of style.css so the scale can be tuned in one place
+rather than hunted through 500 lines:
+
+  --fs-lede-title  18.5px   (was 16.5)
+  --fs-title       16px     (was 14.5)
+  --fs-why         14px     (was 13)
+  --fs-meta        11.5px   (was 10.5)
+  --fs-chip        10.5px   (was 10)
+  --fs-lede-head   17.5px   (was 16)
+  --fs-head        16.5px   (was 15)
+  --fs-count       12px
+  --fs-control     13.5px   (was 13)
+  --fs-tab-count   19px     (was 17)
+  base             16px/1.55 (was 15px/1.5)
+
+23 rules now read from the scale. Four literals remain on purpose: the wordmark
+(23px), the theme glyph (15px), the sparkle glyph (14px) and the NEW badge (10px) -
+the middle two size ICONS rather than text, so putting them on a type scale would be
+wrong. Measure widened 860 -> 880px, because 16px text in an 860px column runs long.
+
+Related spacing: item padding and the meta gap grew with the type, and the row
+hairline stayed - larger text without more air just makes a denser wall.

@@ -26,6 +26,22 @@
   /* A third ink level. Two levels plus an opacity trick left the why-line and the
      meta-line within 1.6:1 of each other, so nothing led the eye. */
   --text-2: #c9c9ce;
+
+  /* Type scale, in one place. Reading-tool sizes: the old base was 15px with
+     14.5px titles, which is UI-chrome sizing applied to a page you actually read.
+     Each step is far enough from the next to be unambiguous at a glance. */
+  --fs-lede-title: 18.5px;
+  --fs-title: 16px;
+  --fs-why: 14px;
+  --fs-meta: 11.5px;
+  --fs-chip: 10.5px;
+  --fs-lede-head: 17.5px;
+  --fs-head: 16.5px;
+  --fs-count: 12px;
+  --fs-control: 13.5px;
+  --fs-tab-label: 11px;
+  --fs-tab-count: 19px;
+  --fs-footer: 12.5px;
 }
 
 /* Light tokens apply from the OS setting, unless an explicit dark stamp wins,
@@ -68,9 +84,9 @@ body {
   padding: 0 16px 48px;
   background: var(--bg);
   color: var(--text);
-  font: 15px/1.5 "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font: 16px/1.55 "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI",
     system-ui, sans-serif;
-  max-width: 860px;
+  max-width: 880px;
   margin-inline: auto;
   /* THE fix for "the text looks thick": without this, macOS renders light-on-dark
      text with subpixel antialiasing, which fattens every stroke. */
@@ -97,8 +113,8 @@ header {
 h1 {
   display: flex;
   align-items: center;
-  gap: 7px;
-  font-size: 22px;
+  gap: 8px;
+  font-size: 23px;
   font-weight: 600;
   margin: 0;
   letter-spacing: -0.4px;
@@ -113,12 +129,12 @@ h1 {
 
 .tagline {
   margin: 5px 0 0;
-  font-size: 12px;
+  font-size: var(--fs-footer);
   color: var(--muted);
   letter-spacing: 0.1px;
 }
 
-.updated, .stats { color: var(--muted); font-size: 12px; }
+.updated, .stats { color: var(--muted); font-size: var(--fs-footer); }
 
 .controls {
   display: flex;
@@ -133,8 +149,8 @@ select, input[type="search"] {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 7px 10px;
-  font-size: 13px;
+  padding: 8px 11px;
+  font-size: var(--fs-control);
   font-family: inherit;
 }
 
@@ -148,7 +164,7 @@ select:focus-visible, input:focus-visible, button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 13px;
+  font-size: var(--fs-control);
   color: var(--muted);
   cursor: pointer;
 }
@@ -169,7 +185,7 @@ footer {
   padding-top: 14px;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-footer);
 }
 
 .toast {
@@ -181,7 +197,7 @@ footer {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 9px 15px;
-  font-size: 13px;
+  font-size: var(--fs-control);
   z-index: 5;
 }
 
@@ -193,7 +209,7 @@ footer {
   border: 0;
   color: var(--muted);
   font: inherit;
-  font-size: 13px;
+  font-size: var(--fs-control);
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
@@ -207,7 +223,7 @@ footer {
    uppercase muted treatment read as a form label or a table header. Hierarchy
    comes from weight and whitespace rather than rules. */
 .lede-head, .area-head h2 {
-  font-size: 15px;
+  font-size: var(--fs-head);
   font-weight: 600;
   letter-spacing: -0.2px;
   text-transform: none;
@@ -220,7 +236,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: var(--fs-lede-head);
 }
 
 .lede-head::before {
@@ -243,7 +259,7 @@ footer {
 
 /* The count is context, not content: quiet, and it never competes with the name. */
 .area-count {
-  font-size: 11.5px;
+  font-size: var(--fs-count);
   color: var(--muted);
   font-variant-numeric: tabular-nums;
   font-weight: 400;
@@ -268,19 +284,19 @@ footer {
 .item-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 
 .item-title {
-  font-size: 14.5px;
+  font-size: var(--fs-title);
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.15px;
   color: var(--text);
 }
 
-.item-lede .item-title { font-size: 16.5px; letter-spacing: -0.3px; }
+.item-lede .item-title { font-size: var(--fs-lede-title); letter-spacing: -0.4px; }
 
 /* The justification — the reason this page exists. Two lines maximum: past that
    it stops being a reason to skip and becomes something else to read. */
 .item-why {
-  font-size: 13px;
+  font-size: var(--fs-why);
   line-height: 1.5;
   font-weight: 400;
   /* A real token rather than primary ink at 72%: the blend made this and the meta
@@ -291,17 +307,17 @@ footer {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.item-lede .item-why { font-size: 13.5px; }
+.item-lede .item-why { font-size: calc(var(--fs-why) + 0.5px); }
 
 .item-meta {
   display: flex;
   gap: 7px;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 10.5px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   color: var(--muted);
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .item-source { color: var(--accent-2); }
@@ -310,7 +326,7 @@ footer {
 .front {
   color: var(--text);
   opacity: 0.85;
-  font-size: 10px;
+  font-size: var(--fs-chip);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 600;
@@ -320,8 +336,8 @@ footer {
   color: var(--accent);
   border: 1px solid currentColor;
   border-radius: 3px;
-  padding: 0 3px;
-  font-size: 9.5px;
+  padding: 0 4px;
+  font-size: 10px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -340,7 +356,7 @@ footer {
 .item:hover .summarize { opacity: 0.75; }
 .summarize:hover { opacity: 1; background: rgba(255, 255, 255, 0.08); }
 
-.more-in-area { margin: 8px 0 0 6px; font-size: 12px; }
+.more-in-area { margin: 10px 0 0 6px; font-size: var(--fs-control); }
 
 @media (prefers-color-scheme: light) {
   :root:where(:not([data-theme="dark"])) .summarize:hover { background: rgba(0, 0, 0, 0.06); }
@@ -351,8 +367,8 @@ footer {
 .chip {
   background: rgba(255, 255, 255, 0.07);
   border-radius: 3px;
-  padding: 0 4px;
-  font-size: 10px;
+  padding: 1px 5px;
+  font-size: var(--fs-chip);
   color: var(--muted);
 }
 
@@ -364,6 +380,7 @@ footer {
 
 :root[data-theme="light"] .chip { background: rgba(0, 0, 0, 0.06); }
 
+/* Icon size, not a text size: deliberately not on the type scale. */
 .theme {
   background: none;
   border: 0;
@@ -384,7 +401,7 @@ footer {
   border-left: 2px solid var(--accent);
   background: var(--card);
   border-radius: 0 6px 6px 0;
-  font-size: 12px;
+  font-size: var(--fs-control);
   line-height: 1.5;
   color: var(--muted);
 }
@@ -406,9 +423,9 @@ footer {
   color: var(--muted);
   border: 0;
   border-right: 1px solid var(--border);
-  padding: 7px 10px;
+  padding: 8px 11px;
   font: inherit;
-  font-size: 12.5px;
+  font-size: var(--fs-control);
   cursor: pointer;
   white-space: nowrap;
 }
@@ -416,7 +433,7 @@ footer {
 .seg-btn:last-child { border-right: 0; }
 .seg-btn:hover { color: var(--text); }
 .seg-btn.on { background: var(--text); color: var(--bg); }
-.seg-n { font-size: 11px; opacity: 0.6; font-variant-numeric: tabular-nums; }
+.seg-n { font-size: var(--fs-count); opacity: 0.6; font-variant-numeric: tabular-nums; }
 .seg-btn.on .seg-n { opacity: 0.75; }
 
 /* Fronts as tabs. Label over count, because the count is what answers "where did
@@ -457,14 +474,14 @@ footer {
 }
 
 .tab-label {
-  font-size: 11px;
+  font-size: var(--fs-tab-label);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .tab-n {
-  font-size: 17px;
+  font-size: var(--fs-tab-count);
   font-weight: 600;
   letter-spacing: -0.3px;
   line-height: 1.1;
@@ -475,7 +492,7 @@ footer {
 
 .tab-new {
   color: var(--accent);
-  font-size: 10.5px;
+  font-size: var(--fs-chip);
   font-weight: 600;
   letter-spacing: 0;
 }

@@ -93,6 +93,10 @@ cp data/articles.json /tmp/pagesroot/roofline/data/
 Asset paths are relative, so the page works from any subpath without a base-URL
 config.
 
+The type scale lives in CSS custom properties at the top of `site/style.css`
+(`--fs-title`, `--fs-why`, `--fs-meta`, …), so sizes can be tuned in one place.
+Icon sizes are deliberately left off that scale.
+
 ## Configuration
 
 `config.yaml` controls sources, feeds, keywords, and the minimum relevance score.
