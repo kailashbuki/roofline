@@ -825,3 +825,38 @@ Day ranges still filter on published_date (how old is this?) while arrival range
 filter on first_seen (have I seen this?). Those are genuinely different questions.
 Empty states are now range-specific: "The latest run collected nothing new" reads
 very differently from "Nothing clears that bar".
+
+## 2026-09-24 - Typography: contrast layers and a font that is not thick
+
+### "contrast of texts is very poor - page looks super texty"
+Measured the layers before touching anything (dark surface #1c1c1e):
+  title            #f2f2f7  15.25:1  14px/500
+  why (text @.72)  #b6b6ba   8.42:1  12.5px
+  meta / muted     #8e8e93   5.22:1  11px
+  chip             #8e8e93   5.22:1  10px
+  tab label        #8e8e93   5.22:1  11px
+The diagnosis is not "low contrast against the background" - every layer passes
+WCAG. It is that the layers are not differentiated FROM EACH OTHER: three of five
+sat at exactly the same value, and title-to-why was only 1.8:1 apart with nearly
+the same size and weight. Nothing led the eye, so everything read as one mass.
+Fixes:
+- A third ink token, --text-2 (#c9c9ce dark / #4a4a4f light), replacing the
+  "primary ink at 72% opacity" trick. The blend was landing the why-line right next
+  to the meta-line in value.
+- Layers now differ on THREE axes at once, not one: title 14.5px/600 primary,
+  why 13px/400 secondary, meta 10.5px/500 muted.
+- Rows got air (padding 7->10px) and a hairline between them, because three-line
+  blocks with 7px padding merge visually. Chips capped at 3.
+
+### "current font seems very thick"
+Two causes, one of them the real one:
+1. The system stack rendered light-on-dark text with macOS SUBPIXEL antialiasing,
+   which fattens every stroke. `-webkit-font-smoothing: antialiased` plus
+   `-moz-osx-font-smoothing: grayscale` is the actual fix and costs nothing. This is
+   most of the perceived thickness.
+2. Switched to Inter (taller x-height, designed for screens at small sizes),
+   self-hosted as a 48 KB latin-subset variable woff2 with font-display: swap.
+   Self-hosted deliberately: a font CDN means a third-party request and a
+   render-blocking stylesheet on a page whose whole point is being static.
+   Pulled the latin block specifically - Google's CSS lists seven subsets and the
+   convenient last URL is not always the one you want.

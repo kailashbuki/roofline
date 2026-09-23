@@ -70,6 +70,9 @@ rejection ledger still see the entire history.
 - `database.py` — the `Article` model and config loader
 - `collectors/` — arXiv, HackerNews, RSS (9 feeds), Anthropic blogs, AI Realist
 - `site/index.html` — the briefing (plain HTML/CSS/JS, no build step)
+- `site/inter-latin-var.woff2` — self-hosted Inter, latin subset, variable 400–700
+  (48 KB). Self-hosted rather than loaded from a font CDN: no third-party request
+  and no render-blocking stylesheet.
 - `.github/workflows/collect.yml` — collect, commit, deploy
 
 ## Local development

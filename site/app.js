@@ -284,7 +284,7 @@ function card(article, { lede = false } = {}) {
   if (visitMark && seenAt(article) > visitMark) meta.append(span("item-new", "new"));
   // Sub-topic chips. The section header already carries the area, so these are
   // the finer grain that helps scanning within a section.
-  for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 4)) {
+  for (const tag of (article.tags || "").split(",").filter(Boolean).slice(0, 3)) {
     meta.append(span("chip", tag));
   }
   body.append(meta);
