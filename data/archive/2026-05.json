@@ -1,0 +1,18 @@
+{
+ "month": "2026-05",
+ "count": 1,
+ "articles": [
+  {
+   "title": "Two Chips, One Decade, One Winner",
+   "url": "https://www.airealist.ai/p/two-chips-one-decade-one-winner",
+   "source": "airealist",
+   "published_date": "2026-05-27T09:14:34",
+   "summary": "Two hyperscalers bet on custom AI silicon a decade ago. One built a chip that its own models run on. The other is buying the demand, renting the hardware, and booking the difference as profit.",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-05-27T09:14:34",
+   "importance": 0.6,
+   "why": "Compares custom ASIC strategies versus merchant silicon profitability across hyperscalers."
+  }
+ ]
+}

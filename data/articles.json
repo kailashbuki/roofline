@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-24T06:29:19Z",
- "previous_generated_at": "2026-09-24T06:28:19Z",
+ "generated_at": "2026-09-24T09:45:08Z",
+ "previous_generated_at": "2026-09-24T06:29:19Z",
  "hot_days": 120,
- "count": 922,
- "total_collected": 922,
+ "count": 930,
+ "total_collected": 931,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -24,6 +24,18 @@
  ],
  "articles": [
   {
+   "title": "Inferact's Kimi K3 Megakernel hits 700 tok/s on TPU, Beating GPU",
+   "url": "https://inferact.ai/blog/tpu-megakernels",
+   "source": "hackernews",
+   "published_date": "2026-09-24T06:32:40",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "inference,hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-09-24T09:43:29",
+   "importance": 0.8,
+   "why": "Executes monolithic TPU mega-kernels to bypass framework overhead, achieving 700 tokens per second generation speeds."
+  },
+  {
    "title": "Runtime Dynamic Compression of Mixture of Experts [pdf]",
    "url": "https://timdettmers.com/papers/runtime-dynamic-compression.pdf",
    "source": "hackernews",
@@ -31,7 +43,9 @@
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "compression",
    "area": "architecture",
-   "first_seen": "2026-09-24T06:21:49"
+   "first_seen": "2026-09-24T06:21:49",
+   "importance": 0.4,
+   "why": "Introduces runtime dynamic compression for MoE models, reducing active parameter footprint during execution."
   },
   {
    "title": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
@@ -385,9 +399,11 @@
    "source": "arxiv",
    "published_date": "2026-09-23T13:07:05",
    "summary": "Mixture-of-Experts (MoE) training requires global load balance to prevent expert under-utilization and local balance for efficient expert-parallel execution. Existing distributed Quantile Balancing (QB) uses shard-dependent or approximate global quantiles, while token-independent expert biases cannot ensure microbatch-level balance. We introduce Exact Quantile Balancing (EQB), which computes exact global-batch BF16 quantiles with negligible communication, and Load-Error Injection (LEI), which injects local load errors directly into router-score gradients. On 7.5B-parameter MoEs trained for up ",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "tags": "training,optimization,llm",
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Replaces approximate quantile methods with Exact Quantile Balancing to eliminate expert under-utilization during parallel training."
   },
   {
    "title": "Tensor Decomposition of Transformer Key-Value Caches: Spectral Structure and Format Comparison",
@@ -396,8 +412,10 @@
    "published_date": "2026-09-23T12:53:52",
    "summary": "The key-value (KV) cache of autoregressive transformers can be viewed as a fourth-order tensor spanning attention heads, tokens, features, and grouped layers. We measure the singular-value spectra of all four mode unfoldings on Mistral-7B-v0.3 and LLaMA-2-13B and compare four standard tensor decompositions: Tucker, CP, tensor train, and t-SVD, at matched storage. The spectra partition the four axes into two classes. The token and feature modes carry low-rank structure, particularly for keys. The head and layer modes are nearly full-rank and resist compression at any practical error level. Amon",
    "tags": "attention,compression,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Compares four tensor decompositions on KV cache singular-value spectra to guide memory compression strategies."
   },
   {
    "title": "Evaluating Open-Weight LLMs for Turkish Domain Documents Under Retrieval and Hardware Constraints",
@@ -407,7 +425,20 @@
    "summary": "Most Turkish-capable large language models (LLMs) are evaluated using general-purpose benchmarks rather than long, structurally complex domain documents. This paper evaluates five open-weight 7B-8B models for Turkish document question answering under a resource-constrained local deployment setting. The primary benchmark contains 100 systematically validated questions derived from a 109-page industrial R&D report, and the evaluation protocol is replicated using a second 112-page public-sector report and an independently constructed 100-question set. All models are evaluated locally on an NVIDIA",
    "tags": "inference,hardware,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
+  },
+  {
+   "title": "Shared Global KV with Layer-Specific Local History",
+   "url": "https://arxiv.org/abs/2609.28006",
+   "source": "arxiv",
+   "published_date": "2026-09-23T12:33:40",
+   "summary": "Decoder-only Transformer language models cache keys and values (KV) to reuse past computation during generation. Sharing KV across layers saves storage but reduces the diversity of representations available across depth. We study what local memory should retain alongside shared global KV, separating historical content from the input source used to form it. At 126M parameters and 2K context, an eight-seed study finds about 1.4% lower held-out test perplexity with local history than with a current-token local branch. Capacity, entry-count and training-compute controls support the value of historical content. In a two-seed comparison, this value persists when adjacent layers share local inputs while retaining independent projections; source sharing also shortens exact cache-construction dependencies. Against GQA and adjacent-layer KV sharing, equal bounded learning-rate searches and new-seed confirmation yield better same-source likelihood with larger caches and higher long-request latenc",
+   "tags": "architecture,attention,inference,llm",
+   "area": "architecture",
+   "first_seen": "2026-09-24T09:43:09",
+   "importance": 0.5,
+   "why": "Replaces standard layer-wise KV caching with shared global memory plus local history to reduce memory storage."
   },
   {
    "title": "Learning from Failures: Heterogeneous Graph Memory for Small Language Model Tool-Using Agents",
@@ -417,7 +448,8 @@
    "summary": "Small and medium-sized language models offer cost-effective executors for tool-using agents, making them attractive for local and large-scale deployment. However, in long-horizon and stateful environments, they often make structural errors such as missing required observations, performing premature writes, repeating failed calls, and violating action preconditions. These errors can lead to incorrect state updates, policy violations, and costly or irreversible consequences, making reliable tool execution a critical deployment challenge. Existing fine-tuning approaches require substantial data a",
    "tags": "inference,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Task-Induced Riemannian Metrics for Vision Transformer Feature Spaces",
@@ -426,8 +458,10 @@
    "published_date": "2026-09-23T12:17:02",
    "summary": "Methods operating on Vision Transformer (ViT) feature spaces typically rely on Euclidean distance or cosine similarity. This assumes that every direction is equally meaningful, but there is no reason to believe the true task geometry has this property. The task-sensitive geometry of the feature space is given by the pullback metric $g(F) = J(F)^\\top J(F)$, where $J$ is the Jacobian of the decoder's output fed to a task-specific distance, with respect to the features. Storing the full $g$ is infeasible at modern scales, and for dense outputs such as depth maps even forming $J$ is impractical. W",
    "tags": "hardware",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Replaces Euclidean distance with pullback metrics derived from decoder Jacobians to capture non-flat task geometry."
   },
   {
    "title": "PCQC: Privileged Counterfactual Question Credit for Multi-Turn Medical Dialogue",
@@ -437,7 +471,8 @@
    "summary": "Large language models (LLMs) have made substantial progress on medical question-answering, yet effective medical dialogue also requires learning to ask questions that uncover relevant patient information. To train such dialogue policies, a common pipeline combines supervised fine-tuning with reinforcement learning (RL) based on final diagnostic correctness. However, this outcome-based supervision does not directly distinguish the contributions of individual questions and provides no question-level feedback for unexecuted alternatives. To address this gap, we introduce PCQC (Privileged Counterf",
    "tags": "llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Relative Discharge Stage (RDS) Classification: A Practical Indicator of Battery Discharge Progress",
@@ -447,7 +482,8 @@
    "summary": "Accurate remaining discharge time (RDT) prediction is challenging in real-world battery applications because future load profiles are unknown and highly dynamic. To address the uncertainty of continuous RDT regression, this paper introduces Relative Discharge Stage (RDS), a battery-management indicator that represents the remaining discharge condition using five interpretable classes: Normal, Good, Moderate, Low, and Recharge Required. Unlike state of charge (SOC), which reflects the current charge level, RDS characterizes the remaining discharge process without requiring future-current inform",
    "tags": "inference",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices",
@@ -456,8 +492,10 @@
    "published_date": "2026-09-23T12:07:18",
    "summary": "In this paper, we are concerned with matrices formed by block-diagonal factors interleaved with fixed permutations -- a flexible family of structured matrices. This class has recently drawn interest in deep learning architectures for its balanced expressivity-efficiency trade-off, yet efficient computational strategies for working with it remain to be found. We approach this problem through Riemannian geometry and examine under what conditions this class admits a smooth manifold structure. For the practically important case of orthogonal two-factor matrices, we derive the essential Riemannian ",
    "tags": "optimization,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Develops Riemannian optimization strategies for block-diagonal orthogonal matrices, balancing expressivity and efficiency in deep models."
   },
   {
    "title": "Risk-Controlled KV-Cache Eviction: From Memory Budgets to Risk Targets",
@@ -466,8 +504,10 @@
    "published_date": "2026-09-23T12:05:27",
    "summary": "KV-cache eviction is typically evaluated through average quality-memory trade-offs, yet a small average loss can hide requests whose utility degrades materially. We reformulate eviction as a deployment risk-control problem: a material degradation occurs when eviction lowers task utility by more than a deployment-specified tolerance relative to full-KV inference on the same request, and deployment risk is the population frequency of such events. Given a reliability contract specifying a target risk level and confidence requirement, we use a compressor-agnostic post-hoc certification procedure t",
    "tags": "inference,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Reformulates KV-cache eviction as a risk-control problem bounded by deployment-specified task utility tolerances."
   },
   {
    "title": "Six Layers Less: Encoder Pruning for Whisper with Label-Free Recovery",
@@ -476,8 +516,10 @@
    "published_date": "2026-09-23T12:05:22",
    "summary": "Pruning large pre-trained transformer-based ASR models such as OpenAI's Whisper has seen great adoption, as pruning the decoder led to significant end-to-end transcription speedups. For instance, the {\\tt whisper-large-v3-turbo} variant reduced the decoder from 32 to 4 layers, while Distill-Whisper similarly reduced the decoder to only 2 layers. Although some attention has been put towards reducing the size of the encoder, no approach has seen wide adoption. This could be due to the need for custom inference implementations to take advantage of the compressed model. We present an approach that",
    "tags": "inference,optimization,attention,compression",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Applies label-free recovery to prune six encoder layers from Whisper, accelerating end-to-end ASR execution."
   },
   {
    "title": "The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems",
@@ -486,8 +528,10 @@
    "published_date": "2026-09-23T11:59:45",
    "summary": "Prefix caching is critical for efficient large language model (LLM) serving, particularly for agentic workloads that repeatedly invoke the model with a growing conversation and tool-use history. By reusing the key-value (KV) states of previously processed prefixes, prefix caching avoids redundant prefill computation. Its effectiveness, however, depends on retaining a sufficiently large set of KV cache states. Provisioning enough cache to preserve all historical KV states is prohibitively expensive and often unnecessary, whereas insufficient capacity can substantially degrade the cache hit rate",
    "tags": "inference,attention,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-engines",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.7,
+   "why": "Analyzes the KV cache working set to enable online capacity planning and improve prefix caching in agentic serving."
   },
   {
    "title": "Limiting-Kernel Q($λ$): Bridging Short and Long Horizons",
@@ -497,7 +541,8 @@
    "summary": "In value-based reinforcement learning, improving the accuracy of policy evaluation has been shown to improve downstream policy optimization performance. The widely adopted family of approximations relying on $n$-step truncation yields computationally efficient value estimators but is inherently limited to a short evaluation horizon. In contrast, methods that exploit the global structure of the transition dynamics can accelerate policy evaluation, but their memory and computational requirements often limit scalability to large or continuous state spaces. To reconcile these limitations, we intro",
    "tags": "optimization",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "NS-ATTENTION: Newton-Schulz Transformations of Attention Outputs in Vision Transformers",
@@ -506,8 +551,10 @@
    "published_date": "2026-09-23T11:48:22",
    "summary": "Newton-Schulz (NS) iteration has recently been used in the Muon optimizer to transform update matrices during the training of large language models. Motivated by its spectral effect, we investigate applying NS directly to Transformer attention representations. We introduce Newton-Schulz Attention (NS-Attn.), a parameter-free transformation applied to the output of each attention head. Each head output is arranged as a feature-by-token matrix and normalized by its Frobenius norm. We then apply a finite NS polynomial step and restore the original norm. The objective is to reduce spectral concent",
    "tags": "attention,hardware,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Applies Newton-Schulz iterations as a parameter-free spectral transformation directly to Vision Transformer attention outputs."
   },
   {
    "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
@@ -517,7 +564,8 @@
    "summary": "Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a framework that transforms these skills into executable, verifiable training environments for large language model agents. Its skill-to-task pipeline instantiates concrete tasks, verifies outcomes with code-based checkers, and assesses empirical skill dependence through contrastive executions. We construct and release 2,756 environments across 12 categories and co",
    "tags": "inference,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "FFM-CP: Cross-Backbone Fusion of Vision-Language Foundation Models for Few-Shot Computational Pathology",
@@ -527,7 +575,8 @@
    "summary": "Pathology vision-language foundation models vary in performance across diseases and tasks, with no single model consistently performing best. The high cost of expert pathology annotation can also limit the labeled data available for task-specific adaptation. Combining complementary pretrained representations is a potential approach to these limitations, yet learning an effective fusion from few labeled examples remains challenging. We introduce Few-shot Fusion Foundation Models of Computational Pathology (FFM-CP), which is a framework that combines multiple pathology vision-language models in ",
    "tags": "llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "MVP: A Motion-Predictive Speculative Vision Pipeline with Non-Blocking Drift Correction",
@@ -536,8 +585,10 @@
    "published_date": "2026-09-23T11:24:24",
    "summary": "Continuous Vision (CV) systems underpin real-time applications such as autonomous driving and augmented reality, where latency, throughput, and energy are tightly constrained on mobile platforms. Modern CV SoC pipelines, however, still serialize image capture and processing, leading to high end-to-end latency. Prior work reduces this latency by predicting future frames and running pixel-domain backend inference speculatively, but incorrect predictions force re-execution on real frames, increasing energy and complexity.\n  We present MVP, a motion-predictive speculative vision pipeline that oper",
    "tags": "inference,optimization",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Combines motion prediction with non-blocking drift correction to eliminate serialization bottlenecks in continuous vision SoCs."
   },
   {
    "title": "Llama.cpp Under the Hood",
@@ -559,7 +610,8 @@
    "summary": "Reinforcement learning (RL) achieves strong performance in sequential decision-making but remains brittle under dynamic uncertainty and distributional shifts. Robust Adversarial Reinforcement Learning (RARL) improves robustness via worst-case perturbations, but existing approaches frequently suffer from unstable optimization and degraded value estimation. In particular, overly aggressive adversaries can drive the agent toward uninformative failure states, while adversarial perturbations amplify disagreement between double critics and introduce biased value targets. We propose a unified framewo",
    "tags": "inference,optimization",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Private Decentralized Optimization with Noise Reduction and Bias Correction",
@@ -568,8 +620,10 @@
    "published_date": "2026-09-23T10:27:17",
    "summary": "Private decentralized learning is affected by sampling noise, privacy noise, and decentralized bias under heterogeneous data. We propose Private Recursive Decentralized Optimization (PRDO). PRDO uses recursive estimation with same-batch gradient differences to reduce estimation errors caused by sampling and privacy noise, while its Exact Diffusion component corrects decentralized bias arising from data heterogeneity. Our analysis establishes a nonconvex convergence bound without assuming uniformly bounded data heterogeneity across nodes. It further gives a sufficient condition under which recu",
    "tags": "optimization",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Combines recursive gradient differences with Exact Diffusion to cancel noise and bias in private decentralized learning."
   },
   {
    "title": "Pheno-GS: Phenoscape-scale Geodesic Sinkhorn",
@@ -579,7 +633,8 @@
    "summary": "High-throughput single-cell data is now collected across large patient cohorts. Understanding patient-level heterogeneity from cellular-level data motivates phenoscaping: embedding each single-cell distribution as a \"datapoint,\" with distances given by optimal transport (OT). Computing geometry-aware OT at this scale, between all pairs of patient datasets, remains an open challenge, since existing methods either rely on Euclidean ground metrics that distort manifold structure or fail under sparse, unevenly sampled, or large-scale data. We present \\textbf{Pheno-GS} (Phenoscape-scale Geodesic Si",
    "tags": "optimization",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Trained KV cache bank turns any LLM into Jev like Model",
@@ -612,8 +667,22 @@
    "published_date": "2026-09-23T09:21:14",
    "summary": "In-Context Learning (ICL) has become a cornerstone of modern LLM deployment. However, existing ICL post-training methods have a critical blind spot: they excel at extracting patterns from demonstrations while often neglecting context authority, the ability to determine whether contextual information should govern the final answer. To benchmark this capability, we introduce FakeContextBench, which contains pseudoscientific claims across seven domains. Our evaluation of commercial and open-source models shows that large-scale pre-training alone is insufficient for reliable context-authority disc",
    "tags": "inference,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "new-models",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "FakeContextBench evaluates whether models obey contextual constraints versus parametric priors during in-context learning."
+  },
+  {
+   "title": "Hidden not Deleted: How Networks Suppress Entangled Features",
+   "url": "https://arxiv.org/abs/2609.27593",
+   "source": "arxiv",
+   "published_date": "2026-09-23T09:10:12",
+   "summary": "Concept erasure methods that operate via linear projection assume that features occupy separable subspaces. We show this assumption fails under dense superposition: when two features are forced into an antipodal pair sharing a single subspace, state-of-the-art linear erasure destroys both, not just the target. Networks trained with gradient descent instead solve this problem non-linearly, but not uniformly: they converge to one of two distinct circuit-level solutions depending on initialization, which we call mirror and shadow solutions. We map this bifurcation as a function of feature entanglement, show it reflects a stable attractor structure rather than an artifact of our setup, and use targeted causal interventions to demonstrate that both solutions leave a substantial, measurable trace of the erased feature's representation intact, recoverable through a single scalar patch rather than requiring any further training. This mirrors a failure mode recently observed empirically in LLM ",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-09-24T09:43:09",
+   "importance": 0.4,
+   "why": "Demonstrates that linear concept erasure fails under dense superposition, forcing non-linear representation suppression."
   },
   {
    "title": "The Capability Manifold and ML Scaling Laws",
@@ -621,9 +690,11 @@
    "source": "arxiv",
    "published_date": "2026-09-23T09:08:34",
    "summary": "Existing machine learning (ML) scaling laws relate predictive loss to compute, model parameters, and data. However, as models are increasingly deployed through agentic harnesses, loss alone is insufficient to characterize downstream performance: models with similar loss can exhibit different capabilities in reasoning, retrieval, planning, and adaptation. Yet, no unified framework connects such capabilities to the coupled resources available across the ML lifecycle. We bridge this gap by introducing a capability manifold, a multidimensional framework mapping downstream capabilities to pre-train",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "tags": "training,llm,benchmarks",
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Proposes a manifold framework to connect predictive loss to downstream agentic capabilities like reasoning and planning."
   },
   {
    "title": "Does Step Law Transfer to Small-Scale Language Models? An Empirical Recalibration Below 59M Parameters",
@@ -632,8 +703,10 @@
    "published_date": "2026-09-23T09:00:36",
    "summary": "Step Law gives power-law formulas for the optimal peak learning rate eta* and batch size B* when pre-training language models. It was calibrated on models between 59M and 1B parameters; the small-model regime N < 59M was never tested empirically by its authors. This regime matters for single-GPU training, interpretability research, educational experiments, and settings where larger models are infeasible on memory or cost grounds.\n  We test whether Step Law transfers to small language models. We consider three outcomes: H1, the original coefficients work directly; H2, the power-law form holds b",
    "tags": "hardware,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Recalibrates pre-training scaling laws for learning rates and batch sizes in the sub-59M parameter regime."
   },
   {
    "title": "VCMM: Variance-Calibrated Momentum for Multimodal Learning",
@@ -642,8 +715,10 @@
    "published_date": "2026-09-23T08:57:08",
    "summary": "Multimodal joint training often suffers from modality imbalance, where a dominant modality suppresses the optimization of others. Existing methods mainly balance modality learning by modulating gradient magnitudes or directions, modifying optimization objectives, or adjusting training strategies, with most interventions focusing on the current update. However, when combined with widely used momentum-based optimizers, the update also incorporates accumulated information from previous gradients, which is not explicitly addressed by current-step modulation alone. To address this issue, we propose",
    "tags": "optimization,multimodal",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Introduces variance-calibrated momentum to mitigate modality imbalance in joint multimodal training."
   },
   {
    "title": "DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment",
@@ -652,8 +727,10 @@
    "published_date": "2026-09-23T08:52:35",
    "summary": "Reinforcement learning (RL) has emerged as a key paradigm for improving the reasoning capabilities of large language models (LLMs). However, existing reward systems, such as rule-based and reward-model-based, often exhibit issues such as unstable optimization and reward hacking. In this work, we revisit the general reasoning of LLMs from a geometric perspective, conceptualizing it as a coupled manifold composed of three interdependent sub-manifolds: logical deduction, evaluation, and representation. Based on this perspective, response generation in RL can be interpreted as a decoupling process",
    "tags": "optimization,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Couples policy and reward manifolds geometrically to stabilize reinforcement learning for LLM reasoning."
   },
   {
    "title": "EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management",
@@ -662,8 +739,22 @@
    "published_date": "2026-09-23T08:36:21",
    "summary": "Embodied reinforcement learning (RL) improves model capabilities with a pipeline of environment simulation, action generation, and model updates. These stages show heterogeneous CPU and GPU demands, making efficient resource utilization difficult. Recent systems overlap rollout (simulation and generation) with training for efficiency, but exclusive GPU allocation and synchronized barrier in rollout still leave substantial hardware resource waste. In this paper, we present EBRL, an asynchronous embodied RL training system with two core techniques. The asynchronous pipelined scheduler overlaps r",
    "tags": "hardware",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-engines",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Manages heterogeneous CPU-GPU resources asynchronously to overlap rollout and training in embodied RL pipelines."
+  },
+  {
+   "title": "NV-Reason-CT: 3D Visual Language Model for CT Analysis",
+   "url": "https://arxiv.org/abs/2609.27511",
+   "source": "arxiv",
+   "published_date": "2026-09-23T08:09:54",
+   "summary": "We present NV-Reason-CT, a generative vision--language model for chest and abdominal CT combining native 3D visual encoding with radiologist-guided reasoning. The model couples a native 3D vision transformer with a language model, passing all visual tokens and their explicit 3D coordinates into language decoding without further spatial token merging. This retains volumetric spatial information within the vision encoder and through the language model's positional encoding during joint processing with text.\n  We train on a curated corpus of approximately 550,000 multimodal instruction examples from 70,111 unique CT image inputs, combining standardized reports, abnormality-focused and anatomy-specific questions, multi-turn interactions, and radiologist-authored reasoning from recorded and transcribed expert CT interpretations. Expert annotations provide direct supervision and guide additional report-grounded synthetic reasoning. End-to-end supervised fine-tuning (SFT) is followed by Group",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-09-24T09:43:09",
+   "importance": 0.5,
+   "why": "Passes native 3D volumetric coordinates directly into language decoding without spatial token merging."
   },
   {
    "title": "Uncheatable Eval: Dynamic Compression-Based Evaluation of Language Models",
@@ -672,8 +763,10 @@
    "published_date": "2026-09-23T08:09:38",
    "summary": "Modern large language models are pretrained on massive datasets, making it difficult to prevent benchmark data from entering their training sets and undermining the reliability of evaluation results. Reliable evaluation is particularly challenging for base models, whose limited instruction-following ability complicates task-based assessment. We introduce Uncheatable Eval, a dynamic benchmark that regularly collects newly published text to evaluate base language models and reduce the risk of data contamination. Drawing on the relationship between a model's predictive ability and its ability to ",
    "tags": "compression,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "new-models",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Uses dynamic compression to prevent dataset contamination during base model evaluation."
   },
   {
    "title": "CerebroSim: Scalable Whole-Brain Simulator at 100-Trillion-Synapse Scale on the LineShine Supercomputer",
@@ -682,8 +775,10 @@
    "published_date": "2026-09-23T07:44:38",
    "summary": "Building executable brain models is essential for moving neuroscience from description to mechanism and prediction. Human-brain-scale spiking simulation is constrained by highly irregular communication, multithreaded spike delivery, and the memory cost of sparse connectivity. We present CerebroSim, a scalable framework for whole-brain simulation. CerebroSim combines Delay-aware Spike Broadcast (DSB) for aggregated delay-aware communication, Race-free Synaptic Dynamics Computation (RSDC) for lock/atomic-free multithreaded delivery with HBM-aware optimization, and Sparse Synapse Storage Compress",
    "tags": "optimization,compression,hardware",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Employs delay-aware spike broadcasting to simulate 100-trillion-synapse brain models under sparse connectivity."
   },
   {
    "title": "DeltaS: Reading the Gated Linear Attention State for KV Cache Eviction in Streaming Video",
@@ -692,8 +787,10 @@
    "published_date": "2026-09-23T07:35:52",
    "summary": "Recent video-language models increasingly adopt hybrid architectures that interleave linear and full attention layers for efficient long-context processing. While the recurrent state of linear attention remains fixed in size, the KV cache of full attention continues to grow with the video stream, making eviction necessary under a bounded memory budget. The key challenge in streaming is that eviction must occur before the question arrives, so what to retain has to be decided without the question. Existing eviction methods derive token scores from the KV cache itself, using position, attention, ",
    "tags": "attention,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Reads gated linear attention states to guide KV cache eviction under bounded memory in streaming video models."
   },
   {
    "title": "Implementation and Evaluation of BitNet Inference on a CGLA by Signed-Int4 Instructions",
@@ -702,8 +799,22 @@
    "published_date": "2026-09-23T07:19:39",
    "summary": "Large language model (LLM) inference transfers model weights and activations for every generated token, making memory traffic and its energy cost part of the decode path. BitNet b1.58 represents its low-bit weights by ternary values and uses integer activations. However, this arithmetic does not match conventional int8 or floating-point general matrix multiplication, and existing BitNet accelerators implement it in specialized datapaths. We instead map this operation to a CPU-Grounded Linear Array (CGLA), a programmable ASIC with explicit direct memory access, local memories, and reusable comp",
    "tags": "quantization,inference,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "silicon",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Maps ternary BitNet weights and integer activations to signed-int4 instructions on a CGLA to reduce memory traffic."
+  },
+  {
+   "title": "BEE: Intervention-Adaptive Real-World Reinforcement Learning with Vision-Language-Action Models",
+   "url": "https://arxiv.org/abs/2609.27450",
+   "source": "arxiv",
+   "published_date": "2026-09-23T07:14:20",
+   "summary": "Vision-language-action (VLA) models handle long-horizon manipulation, yet success hinges on a few precision-critical phases where millimeter-scale errors undo all prior progress. Online reinforcement learning (RL) can optimize exactly these actions, but free exploration is far too costly on real robots, which makes human corrections indispensable. However, existing online RL methods for VLAs either cannot incorporate such corrections or fold them into undifferentiated supervision. Yet human corrections are not uniformly noisy but reliable along some action dimensions and variable along others. Building on this, we introduce BEE, an intervention-adaptive framework for real-world RL on a frozen VLA that lets the policy go BEyond Expert imitation. We formulate human corrections not as actions to reproduce but as evidence about a constraint: a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This pred",
+   "tags": "training,post-training,multimodal",
+   "area": "training",
+   "first_seen": "2026-09-24T09:43:09",
+   "importance": 0.6,
+   "why": "Combines human correction inputs with online RL to optimize precision-critical vision-language-action manipulation phases."
   },
   {
    "title": "Mamba-Family State-Space Model Kernels on a Programmable CGLA",
@@ -712,8 +823,10 @@
    "published_date": "2026-09-23T06:58:32",
    "summary": "Edge and embedded inference is constrained by power and data movement. Mamba-family state-space models replace attention with sequence-linear recurrence, but their inference path combines dense projections, short-reduction SSD kernels, and recurrent-state updates. This paper maps these kernel groups onto IMAX, a programmable CPU-Grounded Linear Array (CGLA), and measures them from kernel execution to token-level integration. Projection kernels match the long-reduction IMAX pipeline, whereas SSD Step-1 is limited by short reductions and kernel-boundary overheads. Mamba-130M token-level integrat",
    "tags": "inference,attention",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "silicon",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Maps Mamba-family short-reduction SSD kernels and recurrent updates onto a programmable CPU-Grounded Linear Array."
   },
   {
    "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
@@ -728,14 +841,28 @@
    "why": "Documents a 40-50 percent broad-market price cut following model releases."
   },
   {
+   "title": "Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following",
+   "url": "https://arxiv.org/abs/2609.27421",
+   "source": "arxiv",
+   "published_date": "2026-09-23T06:37:41",
+   "summary": "Multi-constraint instruction following requires a model to respond to a query under many simultaneously active constraints. Even strong instruction-tuned models still routinely violate some of them. Existing approaches either augment supervision with sequence- or token-level RL rewards from external verifiers or learned graders, or use on-policy distillation (OPD) against a single full-context teacher whose probability mass becomes diluted as more constraints become simultaneously active. We propose CC-OPD (Counterfactual Constraint-Conditioned On-Policy Distillation), which inverts the standard supervision-generation direction in distillation. Rather than enriching the teacher with information beyond what the student sees, CC-OPD ablates each constraint from the teacher's conditioning in turn, and constructs the per-constraint signal from the resulting per-token probability differentials. The resulting per-token leave-one-out log-likelihood shifts are summed, clipped, and added to the",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-09-24T09:43:09",
+   "importance": 0.6,
+   "why": "Uses counterfactual constraint-conditioned on-policy distillation to resolve multi-constraint instruction following failures."
+  },
+  {
    "title": "When Labels Are Scarce: An Oscillatory State Space Model for Vibration Diagnosis",
    "url": "https://arxiv.org/abs/2609.27411",
    "source": "arxiv",
    "published_date": "2026-09-23T06:24:55",
    "summary": "Machine fault diagnosis from vibration requires learning from scarce labelled fault recordings while meeting the computational constraints of edge devices for local inference. We introduce DualRes, a compact oscillatory state-space model that combines two complementary spectral views of vibration, capturing rapid changes and fine frequency structure. Time-aligned views are processed by selective oscillatory memory, which learns how long to retain temporal patterns. The encoder contains 39,528 parameters. We evaluate supervised learning across six bearing datasets and a gearbox benchmark, with ",
    "tags": "inference",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Combines two spectral vibration views in an oscillatory state-space model for low-resource edge fault diagnosis."
   },
   {
    "title": "What Looks Like a Capability Limit in Vision-Language Models Is a Readout Limit",
@@ -744,8 +871,10 @@
    "published_date": "2026-09-23T06:21:46",
    "summary": "Benchmarks for vision-language models offer their answer choices in some convention: a letter, a color name, a pixel coordinate. That convention is treated as neutral. We find it is not, and that the limits a benchmark reports can belong to the readout rather than to the model.\n  On 200 COCO photographs, Qwen3-VL-4B picks the correct one of nine locations for a named object 68.5% of the time when the locations are given in English and 20.0% when the same locations are given as pixel coordinates. Chance is 11.1%. The cost arises when the answer options are coordinates; giving the model a coordi",
    "tags": "quantization,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "new-models",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.5,
+   "why": "Demonstrates that VLM failure modes stem from response format conventions rather than visual representation limits."
   },
   {
    "title": "Transformers now runs llama.cpp quants",
@@ -766,8 +895,10 @@
    "published_date": "2026-09-23T06:00:38",
    "summary": "Recent zero-shot text-to-speech (ZS-TTS) systems can reproduce a speaker's voice with high fidelity from only a few seconds of reference speech, raising concerns over unauthorized voice cloning and impersonation. Speaker identity unlearning has recently emerged as an approach to selectively suppress this capability for speakers who opt out while preserving synthesis capability for other speakers. Although existing approaches reduce speaker similarity, preventing re-identification often faces severe degradation of speech quality. Motivated by this observation, we propose GUARD, a lightweight sp",
    "tags": "inference,optimization,hardware",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "silicon",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.4,
+   "why": "Applies speaker identity unlearning to zero-shot text-to-speech to prevent unauthorized voice cloning without degrading synthesis."
   },
   {
    "title": "When Parallel Drafter Meets Parallel Speculative Decoding",
@@ -775,9 +906,11 @@
    "source": "arxiv",
    "published_date": "2026-09-23T05:53:48",
    "summary": "DSpark-style parallel drafters have made speculative decoding highly effective, yet their draft phase remains serialized on the critical path of every round. Parallel speculative decoding (PSD) overlaps drafting with verification, yet existing methods must guess the accepted prefix and bonus token in advance: a wrong guess reverts the whole batch to serial drafting. We present DPara, a PSD framework that reuses effective parallel drafters yet guarantees backbone--verification overlap in every round, thereby eliminating this probabilistic fallback altogether. While the target verifies, DPara's ",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Overlaps draft generation with verification in parallel speculative decoding without reverting the whole batch on wrong guesses."
   },
   {
    "title": "Psychoacoustically Aligned Latent Smoothing for Adversarial Robustness of Full-Duplex Speech-to-Speech Dialogue Models",
@@ -787,7 +920,8 @@
    "summary": "End-to-end speech-to-speech dialogue models listen and speak simultaneously, so a continuously open acoustic channel is exposed to adversarial manipulation. We formalize imperceptible attacks on full-duplex agents as optimization over additive perturbations confined beneath the psychoacoustic masking threshold of the carrier speech, under three goals: targeted semantic hijacking, response suppression, and policy jailbreaking. Against an undefended Moshi-style agent, white-box attacks succeed in up to 91.7% of trials. We then introduce psychoacoustically aligned latent smoothing (PALS), which i",
    "tags": "inference,optimization",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Planned Test-Time Scaling with Coordinated Reasoning Paths",
@@ -796,8 +930,10 @@
    "published_date": "2026-09-23T05:25:10",
    "summary": "Test-time scaling with parallel branches is widely adopted to improve performance on challenging reasoning tasks. The predominant approach, repeated sampling, draws branches independently from a single policy, which can produce redundant attempts and thereby limit the gains from additional inference compute. To address this limitation, we propose Planned Test-Time Scaling (PTTS), which replaces independent sampling with a coordinated joint policy: a planner generates a solution outline for each branch, steering the branches toward distinct reasoning paths, and an executor produces a full solut",
    "tags": "inference",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Coordinates reasoning paths across parallel inference branches to eliminate redundant search and improve test-time scaling."
   },
   {
    "title": "Attention Routing Stabilizes Early: Working-Set Inference for Recurrent Language Models",
@@ -806,8 +942,10 @@
    "published_date": "2026-09-23T05:21:10",
    "summary": "Recurrent language models repeatedly apply shared network blocks to refine latent representations, but standard inference recomputes global attention at every recurrent step. We study attention dynamics across recurrent depth and find that attention support and distributions stabilize substantially earlier than hidden states and attention outputs. This suggests a two-stage structure: early steps discover a sparse working set of relevant context, while later steps refine representations over largely the same routing support. Motivated by this structure, we introduce WISE (Working-set Inference ",
    "tags": "inference,attention,hardware,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Caches early-stabilized attention support in recurrent language models to avoid global attention recomputation per step."
   },
   {
    "title": "Anomaly-Free Self-Optimization via AUC Bounds",
@@ -817,7 +955,8 @@
    "summary": "Anomalies are rare, and anomalous data are often unavailable during development, making it difficult to determine which anomaly detection models and configurations will generalize to unseen anomalies. Recent approaches address this challenge by generating pseudo-anomalies and using bounds on the achievable area under the ROC curve (AUC) to select the optimal configuration from a finite set of candidates. Instead, we use the AUC bound as a differentiable, anomaly-free objective for directly optimizing continuous parameters of anomaly detection systems. We demonstrate this framework by optimizin",
    "tags": "optimization",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Quantization-Robust Unlearning through the Lens of Retain-Forget Loss Landscapes Interaction",
@@ -826,8 +965,10 @@
    "published_date": "2026-09-23T04:55:09",
    "summary": "Unlearning ensures LLM compliance by removing the influence of private or copyrighted training data. However, since LLM models typically undergo post-training compression, like quantization, in practical deployment, it has been observed that the unlearning effect can be substantially weakened, with the forgetting behavior degrading more severely than that of model utility. This paper proposes a quantization-robust unlearning framework that makes forgetting robust to quantization while maintaining overall model utility. We analyze this gap through the lens of loss landscape. Specifically, our a",
    "tags": "quantization,inference,compression,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.6,
+   "why": "Models the interaction between retain-forget loss landscapes to prevent unlearning degradation during model quantization."
   },
   {
    "title": "MolDesignBench: Evaluating LLM-based Agent for Scenario-grounded Molecular Design",
@@ -837,7 +978,8 @@
    "summary": "Real-world molecular design remains challenging for large language model (LLM)-based agents. It requires them to interpret design contexts, satisfy multiple constraints, identify infeasible specifications, and reason over multi-step tool outputs. Existing benchmarks do not capture this complexity, focusing instead on explicit and narrow constraints, only feasible problems, and single-path solutions. To address this gap, we propose MolDesignBench, a scenario-grounded benchmark that more closely reflects real-world molecular design for evaluating tool-augmented LLM agents. MolDesignBench compris",
    "tags": "optimization,hardware,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Evolving Inspectable O-RAN Slicing xApps with LLMs",
@@ -847,7 +989,8 @@
    "summary": "Open RAN (O-RAN) slicing xApps must adapt resource allocations to changing channel conditions and traffic demands while meeting service-level agreements (SLAs). Deep reinforcement learning can produce adaptive policies, but their allocation rules remain encoded in neural-network parameters. Our goal is to retain this adaptability while making the controller's decision logic directly inspectable and editable by operators. We use a large language model (LLM) to evolve slicing controllers as compact Python programs whose decision logic remains readable and editable after optimization. The LLM pro",
    "tags": "optimization,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.0
   },
   {
    "title": "Alignment Inertia: Auditing the Durability of Training Data Influence Through Policy Override Resistance",
@@ -856,8 +999,10 @@
    "published_date": "2026-09-23T04:12:29",
    "summary": "Platform operators increasingly rely on system prompts and fine-tuning to govern model behavior, yet it remains unclear how reliably these interventions override behavior inherited from prior training. We propose Override Success Rate (OSR) and alignment inertia to measure when operator interventions succeed or fail to change prior behavior. We evaluate zero-shot prompting and LoRA fine-tuning across Llama and Mistral in medical misinformation and hate speech. Alignment inertia persists across both models but varies by model, domain, and policy direction. Notably, in Mistral's restrictive hate",
    "tags": "llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.65,
+   "why": "Introduces Override Success Rate to quantify how system prompts and LoRA fail to override prior training behavior."
   },
   {
    "title": "Stable Geometry with Divergent Task Evidence for Efficient Long-Horizon Agent Compression",
@@ -866,8 +1011,10 @@
    "published_date": "2026-09-23T04:09:19",
    "summary": "Long horizon agents accumulate growing interaction histories that increase context and inference costs. We find that geometric redundancy alone is an insufficient criterion for safe compression. Although agent histories exhibit strong low dimensional structure, similar global geometry can preserve very different amounts of task evidence. At identical retained block counts, evidence aware selection raises next action Top 3 retention from 0.31 to 0.69, while centroid similarity remains 0.98. Controlled replacement further shows that action related information can be substantially altered while g",
    "tags": "inference,compression",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:35"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:35",
+   "importance": 0.7,
+   "why": "Replaces geometric redundancy with task-evidence retention metrics to safely compress long-horizon agent context windows."
   },
   {
    "title": "How to train your own Jev for $17",
@@ -887,8 +1034,22 @@
    "published_date": "2026-09-23T00:00:00",
    "summary": "Advances in generative models have improved video fidelity, enabling long-horizon generation, interactive world modeling, and evolving visual environments. Autoregressive (AR) video generation extends visual sequences through causal rollouts. However, a fundamental bottleneck emerges: as the generated sequence expands, practical models must operate under strictly bounded context windows, storage, and computational limits. Consequently, critical historical information, e.g., entity identities, dynamic states, and intervention-induced causal changes, often leaves the active context long before i",
    "tags": "optimization",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.72,
+   "why": "Integrates an explicit memory architecture into causal rollouts to bypass fixed context window limits during video generation."
+  },
+  {
+   "title": "All modalities are equal, but video is more equal: Closing the Cross-Attention Gap in Joint Video Generation",
+   "url": "https://arxiv.org/abs/2609.27901",
+   "source": "hf:papers",
+   "published_date": "2026-09-23T00:00:00",
+   "summary": "Video is a rich representation of a physical event, capturing appearance, geometry, motion, and temporal evolution. Other modalities, such as 3D body motion or audio, encode narrower aspects of the same event. We find that joint multimodal diffusion transformers exhibit a corresponding asymmetry in cross-modal correspondence: companion modalities develop strong correspondences to video, but the reciprocal correspondences through which they constrain video remain substantially weaker. We express both directions as comparable correspondence distributions over video tokens and define their disagreement as the reciprocal correspondence gap. We introduce RecCAR, standing for Reciprocal Cross-modal Attention Regularization, a KL regularizer that uses the well-established video-to-modality correspondence as a fixed reference and aligns the weaker modality-to-video correspondence toward it. Across joint video-motion and video-audio generation, RecCAR improves the Human Anatomy score from 0.69 ",
+   "tags": "architecture,multimodal,attention",
+   "area": "architecture",
+   "first_seen": "2026-09-24T09:43:12",
+   "importance": 0.5,
+   "why": "Introduces symmetric cross-attention mechanisms in multimodal diffusion to balance cross-modal correspondence across video and audio."
   },
   {
    "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
@@ -896,9 +1057,11 @@
    "source": "hf:papers",
    "published_date": "2026-09-23T00:00:00",
    "summary": "Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert prov",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "tags": "architecture,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.75,
+   "why": "Combines asynchronous multi-frequency processing with omnimodal interfaces for real-time physical world modeling."
   },
   {
    "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
@@ -908,7 +1071,8 @@
    "summary": "AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, ",
    "tags": "inference",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.0
   },
   {
    "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
@@ -917,8 +1081,22 @@
    "published_date": "2026-09-23T00:00:00",
    "summary": "Agentic memory systems reuse past experience to improve future performance, yet most existing designs curate memory at write time: once a task is completed, its trajectory is distilled into a fixed artifact, such as a reflection, workflow, skill, or reasoning strategy, that is later retrieved by similarity. This forces the system to decide what is worth remembering before the future query is known, irreversibly discarding information and producing a query-independent summary that must serve many possible downstream tasks. Learning such a write-time curator is also difficult because the value o",
    "tags": "llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "inference-methods",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.73,
+   "why": "Defers memory curation until query time instead of write time, adapting retrieved agent history to the specific prompt."
+  },
+  {
+   "title": "Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms",
+   "url": "https://arxiv.org/abs/2609.27321",
+   "source": "hf:papers",
+   "published_date": "2026-09-23T00:00:00",
+   "summary": "Language-model agents increasingly face long-horizon tasks with evolving state, interdependent decisions, and delayed outcomes. Scaling their training requires diverse agentic environments, dependable outcome signals, and low extension cost. Existing generation pipelines commonly construct an environment before defining its outcome rule or annotating its trajectories, leaving dynamics and evaluation to be aligned post hoc. VHD-Play reverses this dependency by sampling and solving a mathematical model before a corpus-grounded setter renders its decision process as stateful tools. The executable dynamics and trajectory-scoring reference are inherited from the same solved model. The pipeline produces 3,300 diverse agentic environments at a cost of a few cents each. Training Qwen3.6-35B-A3B on three families raises its mean agentic score from 0.204 to 0.815 in a five-family diagnostic. Gains also appear on held-out instances from all three training families and eight unseen mechanism famil",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-09-24T09:43:12",
+   "importance": 0.5,
+   "why": "Generates agentic RL environments by deriving dynamics from solved mechanisms to scale verifiable outcome signals."
   },
   {
    "title": "Hunyuan-A13B Technical Report",
@@ -927,8 +1105,10 @@
    "published_date": "2026-09-23T00:00:00",
    "summary": "We present Hunyuan-A13B, an open-source large language model based on a Mixture-of-Experts architecture. It contains 80 billion total parameters but activates only 13 billion during inference, balancing model capability, computational efficiency, and deployment cost. The model is pretrained on a rigorously filtered 20T-token corpus with enhanced STEM data curation, improving factual reliability and reasoning ability. High-quality supervised fine-tuning and large-scale reinforcement learning further enhance its overall performance. Hunyuan-A13B also introduces a dual-mode Chain-of-Thought frame",
    "tags": "inference,optimization,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "new-models",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.75,
+   "why": "Deploys an 80B parameter Mixture-of-Experts architecture activating only 13B parameters on a filtered 20T-token corpus."
   },
   {
    "title": "Better prompt caching for GPT-6",
@@ -2422,6 +2602,18 @@
    "importance": 0.0
   },
   {
+   "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+   "url": "https://arxiv.org/abs/2609.26780",
+   "source": "hf:papers",
+   "published_date": "2026-09-22T00:00:00",
+   "summary": "Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term conversations: it must distinguish who said what, whom each statement concerns, how individuals perceive one another, what information is shared by the group, and how states change over time. Recent studies on multi-party dialogue benchmarks show that existing general-purpose LLM memory systems tend to lose person and group relations or struggle to integrate clues distributed across members, groups, and time. Together, these issues reveal two core bottlenecks: message attribution and relational understanding in multi-party dialogue, and state reconstruction from interleaved histories. To address both, we propose SpeakerMem-R1: its dual-track memory stores speaker-labeled verbatim messages and derived states organized into person-level and group-level views, then combines evidence from both tracks by entity, event, and time at query time. To reduce attribution and update",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-09-24T09:43:12",
+   "importance": 0.4,
+   "why": "Proposes a dual-track memory architecture resolving speaker-attribution failures in multi-party dialogue generation."
+  },
+  {
    "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
    "url": "https://arxiv.org/abs/2609.26550",
    "source": "hf:papers",
@@ -2960,8 +3152,10 @@
    "published_date": "2026-09-19T00:00:00",
    "summary": "Spatial reasoning is essential for vision-language models (VLMs) to understand and act in the physical world. Reasoning in dynamic environments requires VLMs to perceive local state transitions caused by object motion and viewpoint changes and integrate them over long trajectories to maintain an updated spatial state, yet existing VLMs remain limited in both capabilities. Current spatial training primarily focuses on static questions about object attributes and spatial relations, providing limited direct supervision for state transitions; in contrast, interaction trajectories naturally connect",
    "tags": "compression,multimodal,llm",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.68,
+   "why": "Integrates local spatial state transitions from dynamic visual environments over long trajectories into vision-language models."
   },
   {
    "title": "Transferring the Intelligence of VLMs to Robotic Control",
@@ -2982,8 +3176,10 @@
    "published_date": "2026-09-19T00:00:00",
    "summary": "Reinforcement learning (RL) is vital for optimizing video generation models, with a robust reward model (RM) serving as the cornerstone. However, existing video reward models often produce unstable scalar scores because they directly map complex, subjective video quality into a single score without explicit evaluation criteria. This leads to scalar drift, where the scoring scale collapses or shifts across different prompts, making the reward unreliable for RL. Drawing inspiration from professional human annotation engineering, we address this problem with RewardVerse, a rubric-based video rewa",
    "tags": "inference,optimization",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "training",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.67,
+   "why": "Replaces scalar video reward scoring with rubric-guided evaluation criteria to mitigate score collapse during reinforcement learning."
   },
   {
    "title": "Towards Full Pipeline FP8 Reinforcement Learning for LLMs",
@@ -3550,8 +3746,10 @@
    "published_date": "2026-09-16T00:00:00",
    "summary": "Few-shot learning research is predominantly evaluated on accuracy alone, with limited attention to the parameter and training-sample budgets required to reach that accuracy - a real constraint for practitioners without large-scale compute. We present an ultra-lightweight (22,249-34,917 parameter) spatial-relational architecture for few-shot image classification that combines fixed Gabor edge-energy guidance with a windowed, content-adaptive patch locator. Under a strictly matched, iso-episode-budget protocol (250 meta-training episodes, 5 canonical seeds, 600 evaluation episodes per seed), our",
    "tags": "inference,attention",
-   "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "area": "architecture",
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.69,
+   "why": "Combines Gabor edge-energization with fixed spatial-relational layers to achieve few-shot classification under 35k parameters."
   },
   {
    "title": "Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling",
@@ -5797,7 +5995,8 @@
    "summary": "Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for training. Consequently, strong performance may reflect memorization of canonical repository cues rather than robust repository reasoning. We propose SchrodingerRepo (Schrödinger's Repository), an evaluation framework for testing coding agents under dynamically instantiated repository representations. Instead of repeatedly using a static representation of the test repository, Schrod",
    "tags": "inference,llm",
    "area": "other",
-   "first_seen": "2026-09-24T06:21:36"
+   "first_seen": "2026-09-24T06:21:36",
+   "importance": 0.0
   },
   {
    "title": "We replaced our 223-node agent graph with a single open-source LLM",
@@ -10847,18 +11046,6 @@
    "first_seen": "2026-05-27T15:39:42",
    "importance": 0.6,
    "why": "Eliminates memory copies to achieve high token throughput on large Mixture-of-Experts models during agentic workloads."
-  },
-  {
-   "title": "Two Chips, One Decade, One Winner",
-   "url": "https://www.airealist.ai/p/two-chips-one-decade-one-winner",
-   "source": "airealist",
-   "published_date": "2026-05-27T09:14:34",
-   "summary": "Two hyperscalers bet on custom AI silicon a decade ago. One built a chip that its own models run on. The other is buying the demand, renting the hardware, and booking the difference as profit.",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-05-27T09:14:34",
-   "importance": 0.6,
-   "why": "Compares custom ASIC strategies versus merchant silicon profitability across hyperscalers."
   }
  ]
 }
