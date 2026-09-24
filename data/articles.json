@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-24T09:45:08Z",
- "previous_generated_at": "2026-09-24T06:29:19Z",
+ "generated_at": "2026-09-24T15:56:10Z",
+ "previous_generated_at": "2026-09-24T09:45:08Z",
  "hot_days": 120,
- "count": 930,
- "total_collected": 931,
+ "count": 931,
+ "total_collected": 933,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,29 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Efficient MoE Training for Biological Foundation Models",
+   "url": "https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-09-24T15:00:00",
+   "summary": "<img alt=\"DNA.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/DNA-Helix-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"DNA-Helix\" width=\"768\" />As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding...",
+   "tags": "training,architecture,llm",
+   "area": "training",
+   "first_seen": "2026-09-24T15:49:58",
+   "importance": 0.6,
+   "why": "Applies mixture-of-experts routing to reduce compute cost when scaling biological sequence foundation models."
+  },
+  {
+   "title": "Vent Mauvais",
+   "url": "https://www.airealist.ai/p/vent-mauvais",
+   "source": "airealist",
+   "published_date": "2026-09-24T10:35:14",
+   "summary": "Verlaine&#8217;s ill wind carries the leaf where it will. States bought Mistral without a tender; where free choice can be measured, it goes elsewhere.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-09-24T15:54:51",
+   "importance": 0.0
+  },
   {
    "title": "Inferact's Kimi K3 Megakernel hits 700 tok/s on TPU, Beating GPU",
    "url": "https://inferact.ai/blog/tpu-megakernels",
@@ -11034,18 +11057,6 @@
    "area": "other",
    "first_seen": "2026-05-27T16:25:34",
    "importance": 0.0
-  },
-  {
-   "title": "Up to 580tps! New Speed Record of Qwen3.5-397B-A17B on GPU for Agentic Workloads with TokenSpeed",
-   "url": "https://pytorch.org/blog/up-to-580tps-new-speed-record-of-qwen3-5-397b-a17b-on-gpu-for-agentic-workloads-with-tokenspeed",
-   "source": "rss:PyTorch Blog",
-   "published_date": "2026-05-27T15:39:42",
-   "summary": "TL;DR: The TokenSpeed inference engine achieved a record-breaking 580 tps running the Qwen3.5-397B-A17B model on GPUs. This extreme performance for agentic workloads is driven by systematic elimination of memory copies,...",
-   "tags": "inference,serving,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-05-27T15:39:42",
-   "importance": 0.6,
-   "why": "Eliminates memory copies to achieve high token throughput on large Mixture-of-Experts models during agentic workloads."
   }
  ]
 }
