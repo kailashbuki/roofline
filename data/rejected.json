@@ -1,5 +1,5 @@
 {
- "count": 460,
+ "count": 462,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -460,6 +460,8 @@
   "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
   "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning",
   "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses",
-  "https://www.latent.space/p/foundries-vs-navigators-lowering"
+  "https://www.latent.space/p/foundries-vs-navigators-lowering",
+  "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+  "https://research.google/blog/coherent-long-form-video-generation"
  ]
 }
