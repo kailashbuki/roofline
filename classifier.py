@@ -303,14 +303,26 @@ def _request_batch(items, api_key):
             response = requests.post(url, headers=headers, json=body, timeout=120)
 
             if response.status_code == 429:
-                # Free-tier 429s are usually the per-MINUTE limit, which clears by
-                # waiting. Treating the first one as terminal meant a single burst
-                # left the rest of the run keyword-scored and stored unrated.
+                # Two very different 429s wear the same status code. A per-MINUTE
+                # limit clears by waiting; a per-DAY limit does not clear until
+                # midnight Pacific, so sleeping through the backoff just wastes 75
+                # seconds of every run until the quota resets.
+                detail = response.text[:400]
+                daily = "per day" in detail.lower() or "perday" in detail.lower()
+
+                if daily:
+                    print("Gemini: DAILY quota exhausted — keyword scoring until it "
+                          "resets (midnight Pacific). Unrated rows will be retried "
+                          "automatically on a later run.")
+                    _state["disabled"] = True
+                    return [None] * len(items)
+
                 if attempt < MAX_ATTEMPTS:
                     wait = RATE_LIMIT_BACKOFF[attempt - 1]
-                    print(f"Gemini: rate limited, waiting {wait}s (attempt {attempt})")
+                    print(f"Gemini: per-minute limit, waiting {wait}s (attempt {attempt})")
                     time.sleep(wait)
                     continue
+
                 print("Gemini: still rate limited, keyword scoring the rest of this run")
                 _state["disabled"] = True
                 return [None] * len(items)
