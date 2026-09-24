@@ -8,6 +8,7 @@
 // homepage on github.io, hence the namespaced key.
 const READ_KEY = "roofline:read";
 const THEME_KEY = "roofline:theme";
+const ACCENT_KEY = "roofline:accent";
 // No per-row importance marker at all. Tried a printed score, then a "must read"
 // badge at two thresholds: each marked most of what was on screen, because the
 // sections SELECT for top rows, so any cut over the range fires on nearly every
@@ -463,6 +464,8 @@ function render() {
 
 const THEMES = ["auto", "light", "dark"];
 const THEME_ICON = { auto: "◐", light: "☀", dark: "☾" };
+// Surfaces stay slate either way; only the warm accent changes.
+const ACCENTS = ["turmeric", "orange"];
 
 function applyTheme(theme) {
   if (theme === "auto") {
@@ -476,6 +479,36 @@ function applyTheme(theme) {
     button.title = `Theme: ${theme} (click to change)`;
     button.setAttribute("aria-label", `Theme: ${theme}`);
   }
+}
+
+function applyAccent(accent) {
+  // turmeric is the default, so it needs no attribute.
+  if (accent === "turmeric") {
+    delete document.documentElement.dataset.accent;
+  } else {
+    document.documentElement.dataset.accent = accent;
+  }
+  const button = el("accent");
+  if (button) button.title = `Accent: ${accent} (click to change)`;
+}
+
+function currentAccent() {
+  return document.documentElement.dataset.accent || "turmeric";
+}
+
+function initAccent() {
+  let accent = "turmeric";
+  try {
+    const stored = localStorage.getItem(ACCENT_KEY);
+    if (ACCENTS.includes(stored)) accent = stored;
+  } catch { /* ignore */ }
+  applyAccent(accent);
+
+  el("accent").addEventListener("click", () => {
+    const next = ACCENTS[(ACCENTS.indexOf(currentAccent()) + 1) % ACCENTS.length];
+    try { localStorage.setItem(ACCENT_KEY, next); } catch { /* ignore */ }
+    applyAccent(next);
+  });
 }
 
 function initTheme() {
@@ -523,6 +556,7 @@ function syncUrl() {
 }
 
 initTheme();
+initAccent();
 applyUrlParams();
 
 visitMark = openSession();

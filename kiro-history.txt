@@ -907,3 +907,39 @@ wrong. Measure widened 860 -> 880px, because 16px text in an 860px column runs l
 
 Related spacing: item padding and the meta gap grew with the type, and the row
 hairline stayed - larger text without more air just makes a denser wall.
+
+## 2026-09-24 - Slate surfaces, turmeric or orange accent
+
+Replaced the neutral iOS greys with slate, pairing cool surfaces against a warm
+accent so the accent actually signifies something instead of competing with a grey
+that was already slightly warm.
+
+  dark   bg #12151c  card #1b1f29  border #2c3340
+         text #e9edf4 (15.6:1)  text-2 #b6c0ce (9.9:1)  muted #7e8897 (5.1:1)
+  light  bg #f1f3f7  card #ffffff  border #d2d8e2
+         text #161a21 (15.7:1)  text-2 #4a525e (7.1:1)  muted #6b7481 (4.3:1)
+
+Accent is selectable rather than chosen for you, since the two read quite
+differently on real content:
+  turmeric  #e8b23c dark (9.4:1) / #9a6b0c light (4.2:1)   default
+  orange    #fb8b3c dark (7.7:1) / #d2621a light (3.4:1)
+Turmeric holds up better on the light surface - orange drifts toward a near-white
+background, which is why its light step had to be darkened so far that it stops
+reading as orange.
+
+--accent-2 is now a cool low-chroma slate-blue (#7fa9cf / #3a6ea5) for source
+labels: they need to read as links without introducing a third hue against slate +
+warm. Chips moved from white-alpha to a slate-tinted alpha for the same reason.
+
+Two independent axes on <html>: data-theme (light/dark/auto) and data-accent
+(absent = turmeric). Six accent rules cover the 2x2, with the :where(:not(...))
+guard so an explicit stamp still beats prefers-color-scheme. The control is a
+circular swatch filled with var(--accent) - the swatch IS the affordance, so it
+needs no label.
+
+### A test-harness bug worth remembering
+The first four-way screenshot came out identical in all four cells. Cause: the tool
+shell is zsh, which does NOT word-split an unquoted variable, so `set -- $combo`
+left $1 as the whole "turmeric dark 2" string and every run loaded the same seed
+page. Verified the fix by md5-ing the four images rather than trusting my eyes -
+they now differ.

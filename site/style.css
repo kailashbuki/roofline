@@ -1,31 +1,22 @@
-/* Inter, latin subset, variable 400-700, self-hosted: no third-party request and
-   no render-blocking stylesheet from a font CDN. 48 KB.
-   Chosen over the system stack for a taller x-height and cleaner small sizes. */
-@font-face {
-  font-family: "Inter var";
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url("./inter-latin-var.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+/* Surfaces are slate in both modes. The accent is selectable — turmeric or
+   orange — because they read quite differently on real content and the choice is
+   a matter of taste, not correctness. Both clear 3:1 on both surfaces.
+   Two independent axes: data-theme (light/dark/auto) and data-accent. */
 :root {
-  --bg: #1c1c1e;
-  --card: #2c2c2e;
-  --card-hover: #3a3a3c;
-  --text: #f2f2f7;
-  --muted: #8e8e93;
-  /* Compute-bound amber for the brand, memory-bound blue as the second accent:
-     the two regimes the roofline model divides. */
-  --accent: #ff6b35;
-  --accent-2: #4aa3ff;
-  --border: #3a3a3c;
+  --bg: #12151c;
+  --card: #1b1f29;
+  --card-hover: #242935;
+  --border: #2c3340;
+  --text: #e9edf4;
   /* A third ink level. Two levels plus an opacity trick left the why-line and the
      meta-line within 1.6:1 of each other, so nothing led the eye. */
-  --text-2: #c9c9ce;
+  --text-2: #b6c0ce;
+  --muted: #7e8897;
+  /* Warm accent against cool slate: brand mark, NEW badge, lede bar, active tab.
+     The second accent stays cool and low-chroma so source labels read as links
+     without introducing a competing hue. */
+  --accent: #e8b23c;
+  --accent-2: #7fa9cf;
 
   /* Type scale, in one place. Reading-tool sizes: the old base was 15px with
      14.5px titles, which is UI-chrome sizing applied to a page you actually read.
@@ -44,34 +35,40 @@
   --fs-footer: 12.5px;
 }
 
-/* Light tokens apply from the OS setting, unless an explicit dark stamp wins,
-   and from an explicit light stamp. Declaring both scopes is what lets the
-   toggle beat prefers-color-scheme in either direction. */
+:root[data-accent="orange"] { --accent: #fb8b3c; }
+
+/* Light tokens apply from the OS setting unless an explicit dark stamp wins, and
+   from an explicit light stamp. Declaring both scopes is what lets the toggle beat
+   prefers-color-scheme in either direction. */
 @media (prefers-color-scheme: light) {
   :root:where(:not([data-theme="dark"])) {
-    --bg: #f2f2f7;
+    --bg: #f1f3f7;
     --card: #ffffff;
-    --card-hover: #eceaf0;
-    --text: #1c1c1e;
-    --muted: #6c6c70;
-    --border: #d8d8dc;
-    --accent: #eb6834;
-    --accent-2: #2a78d6;
-    --text-2: #4a4a4f;
+    --card-hover: #e6eaf1;
+    --border: #d2d8e2;
+    --text: #161a21;
+    --text-2: #4a525e;
+    --muted: #6b7481;
+    --accent: #9a6b0c;
+    --accent-2: #3a6ea5;
   }
+
+  :root[data-accent="orange"]:where(:not([data-theme="dark"])) { --accent: #d2621a; }
 }
 
 :root[data-theme="light"] {
-    --bg: #f2f2f7;
-    --card: #ffffff;
-    --card-hover: #eceaf0;
-    --text: #1c1c1e;
-    --muted: #6c6c70;
-    --border: #d8d8dc;
-    --accent: #eb6834;
-    --accent-2: #2a78d6;
-    --text-2: #4a4a4f;
+  --bg: #f1f3f7;
+  --card: #ffffff;
+  --card-hover: #e6eaf1;
+  --border: #d2d8e2;
+  --text: #161a21;
+  --text-2: #4a525e;
+  --muted: #6b7481;
+  --accent: #9a6b0c;
+  --accent-2: #3a6ea5;
 }
+
+:root[data-theme="light"][data-accent="orange"] { --accent: #d2621a; }
 
 * { box-sizing: border-box; }
 
@@ -365,7 +362,7 @@ footer {
 :root[data-theme="light"] .summarize:hover { background: rgba(0, 0, 0, 0.06); }
 
 .chip {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(127, 169, 207, 0.12);
   border-radius: 3px;
   padding: 1px 5px;
   font-size: var(--fs-chip);
@@ -375,10 +372,10 @@ footer {
 #stamp { color: var(--muted); }
 
 @media (prefers-color-scheme: light) {
-  :root:where(:not([data-theme="dark"])) .chip { background: rgba(0, 0, 0, 0.06); }
+  :root:where(:not([data-theme="dark"])) .chip { background: rgba(58, 110, 165, 0.1); }
 }
 
-:root[data-theme="light"] .chip { background: rgba(0, 0, 0, 0.06); }
+:root[data-theme="light"] .chip { background: rgba(58, 110, 165, 0.1); }
 
 /* Icon size, not a text size: deliberately not on the type scale. */
 .theme {
@@ -496,3 +493,21 @@ footer {
   font-weight: 600;
   letter-spacing: 0;
 }
+
+/* Accent picker: the swatch IS the control, so it needs no label. */
+.accent-swatch {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  margin-left: auto;
+  flex: none;
+}
+
+.accent-swatch:hover { border-color: var(--text-2); }
+
+/* The theme button no longer needs to push itself right — the swatch does. */
+.theme { margin-left: 0; }

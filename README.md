@@ -97,6 +97,15 @@ The type scale lives in CSS custom properties at the top of `site/style.css`
 (`--fs-title`, `--fs-why`, `--fs-meta`, …), so sizes can be tuned in one place.
 Icon sizes are deliberately left off that scale.
 
+### Theme
+
+Surfaces are **slate** in both light and dark. The warm accent is selectable —
+**turmeric** (default) or **orange** — via the swatch in the header, stored in
+`localStorage`. Two independent axes: `data-theme` (light/dark/auto) and
+`data-accent`. Every combination clears 3:1 on its surface; the cool low-chroma
+`--accent-2` carries source labels so they read as links without adding a third
+hue.
+
 ## Configuration
 
 `config.yaml` controls sources, feeds, keywords, and the minimum relevance score.
