@@ -943,3 +943,31 @@ shell is zsh, which does NOT word-split an unquoted variable, so `set -- $combo`
 left $1 as the whole "turmeric dark 2" string and every run loaded the same seed
 page. Verified the fix by md5-ing the four images rather than trusting my eyes -
 they now differ.
+
+## 2026-09-24 - "Workflow updated the articles, but did not classify them"
+
+Run log said it plainly:
+  Gemini: rate limited, keyword scoring for the rest of this run
+  Total: 100 new articles ... Gemini requests this run: 3
+A 429 on the THIRD request of that run. Self-inflicted: I triggered a dozen runs in
+an hour while iterating on the theme, each spending requests, on top of local
+reclassify runs. But it exposed two genuine defects.
+
+1. A 429 was TERMINAL for the run. One burst set _state["disabled"] and everything
+   after it fell to keyword scoring and was stored unrated. Free-tier 429s are
+   usually the per-minute limit, which clears by waiting - so it now backs off 25s
+   then 50s before giving up on the run. Also raised GEMINI_MIN_INTERVAL from 2s to
+   4s: batching means a run makes 2-5 requests, so spacing them costs seconds and
+   buys real headroom.
+
+2. Nothing ever retried an unrated row. Classification only runs on newly SEEN
+   urls, so a row that failed once stayed unrated for ever, and the only signal was
+   a notice on the page asking a human to run ./sync.sh. Every run now calls
+   retry_unrated() before dumping: it re-judges up to ROOFLINE_RETRY_LIMIT (200)
+   rows lacking importance, newest first. A transient failure now self-heals on the
+   next run instead of waiting to be noticed.
+   Rejections are recorded as 0.0 rather than None, or the same rows would queue
+   for retry on every run for ever.
+
+The page notice stays, but it should now only ever appear briefly between a failed
+run and the next one.

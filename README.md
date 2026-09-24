@@ -145,7 +145,8 @@ To preview without writing anything: `python reclassify.py --dry-run`.
 | `GEMINI_API_KEY` | — | Gemini API key. Absent ⇒ keyword scoring. |
 | `GEMINI_MODEL` | `gemini-3.5-flash-lite` | Model id. |
 | `GEMINI_API` | `generatecontent` | `generatecontent` or `interactions` (`/v1beta/interactions`). |
-| `GEMINI_MIN_INTERVAL` | `2.0` | Seconds between calls. Free-tier limits are per-project now; see aistudio.google.com/rate-limit. |
+| `GEMINI_MIN_INTERVAL` | `4.0` | Seconds between calls. Free-tier limits are per-project; see aistudio.google.com/rate-limit. |
+| `ROOFLINE_RETRY_LIMIT` | `200` | Rows re-judged per run to heal earlier failures. |
 | `GEMINI_MAX_CALLS` | `60` | Per-run ceiling on *requests*, not articles. |
 | `GEMINI_BATCH_SIZE` | `20` | Articles per request. |
 | `GEMINI_BASE_OUTPUT_TOKENS` | `2048` | Output budget, plus 120/article. Gemini 3 thinks by default and thought tokens count against it; too low truncates the JSON. |
@@ -227,7 +228,12 @@ Sending every candidate to a model is affordable because of three things:
    and returns one verdict each, keyed by an echoed id. A run that would need
    ~330 single calls needs ~17.
 2. **Dedup before classify.** URLs already in the store are never re-sent.
-3. **A rejection ledger.** `data/rejected.json` remembers what the model turned
+3. **Automatic retry.** Every run re-judges rows that still lack an `importance`,
+   newest first. Classification otherwise only runs on newly seen URLs, so a
+   rate-limited run would leave its articles unrated for ever. A 429 also backs off
+   (25s, then 50s) rather than disabling the model for the whole run — free-tier
+   429s are usually the per-minute limit.
+4. **A rejection ledger.** `data/rejected.json` remembers what the model turned
    down, so the ~90 off-topic stories in any HackerNews top-100 are judged once
    rather than three times a day forever. Only *model* rejections are recorded —
    a keyword-scored rejection is a guess made while the API was unavailable, and

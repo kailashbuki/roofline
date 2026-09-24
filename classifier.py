@@ -42,7 +42,7 @@ INTERACTIONS_URLS = {
 BATCH_SIZE = int(os.environ.get("GEMINI_BATCH_SIZE", "20"))
 # Batching keeps request counts low, so the throttle can be modest. Free-tier
 # limits are per-project (see aistudio.google.com/rate-limit).
-MIN_INTERVAL_SECONDS = float(os.environ.get("GEMINI_MIN_INTERVAL", "2.0"))
+MIN_INTERVAL_SECONDS = float(os.environ.get("GEMINI_MIN_INTERVAL", "4.0"))
 # Ceiling on REQUESTS (not articles) per run.
 MAX_CALLS_PER_RUN = int(os.environ.get("GEMINI_MAX_CALLS", "60"))
 # Gemini 3 thinks by default and thought tokens count against the output cap,
@@ -54,6 +54,8 @@ SUMMARY_CHARS = int(os.environ.get("GEMINI_SUMMARY_CHARS", "400"))
 
 RETRY_ON = (500, 502, 503, 504)
 MAX_ATTEMPTS = 3
+# Long enough to outlast a per-minute window, since that is the usual 429.
+RATE_LIMIT_BACKOFF = (25, 50)
 
 # Spans the whole stack this feed covers, from algorithms down to silicon.
 ALLOWED_TAGS = [
@@ -301,7 +303,15 @@ def _request_batch(items, api_key):
             response = requests.post(url, headers=headers, json=body, timeout=120)
 
             if response.status_code == 429:
-                print("Gemini: rate limited, keyword scoring for the rest of this run")
+                # Free-tier 429s are usually the per-MINUTE limit, which clears by
+                # waiting. Treating the first one as terminal meant a single burst
+                # left the rest of the run keyword-scored and stored unrated.
+                if attempt < MAX_ATTEMPTS:
+                    wait = RATE_LIMIT_BACKOFF[attempt - 1]
+                    print(f"Gemini: rate limited, waiting {wait}s (attempt {attempt})")
+                    time.sleep(wait)
+                    continue
+                print("Gemini: still rate limited, keyword scoring the rest of this run")
                 _state["disabled"] = True
                 return [None] * len(items)
 
