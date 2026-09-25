@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-25T10:02:14Z",
- "previous_generated_at": "2026-09-24T20:17:36Z",
+ "generated_at": "2026-09-25T15:45:24Z",
+ "previous_generated_at": "2026-09-25T10:02:14Z",
  "hot_days": 120,
- "count": 972,
- "total_collected": 995,
+ "count": 973,
+ "total_collected": 997,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Show HN: Agentic CUDA Kernel Optimizer",
+   "url": "https://github.com/bertaye/agentic-cuda-optimizer",
+   "source": "hackernews",
+   "published_date": "2026-09-25T10:32:58",
+   "summary": "29 points, 6 comments on HackerNews",
+   "tags": "optimization,systems,hardware",
+   "area": "inference-methods",
+   "first_seen": "2026-09-25T15:44:59",
+   "importance": 0.6,
+   "why": "Automates CUDA kernel optimization using agentic loops, reducing manual tuning overhead for custom operations."
+  },
   {
    "title": "Scaling Laws for Neural Language Models (first \"scaling laws\" paper from 2020)",
    "url": "https://arxiv.org/abs/2001.08361",
@@ -3911,6 +3923,18 @@
    "first_seen": "2026-09-19T00:00:00",
    "importance": 0.4,
    "why": "Introduces open educational foundation models with structured capability-based training mixtures for K-12 learning."
+  },
+  {
+   "title": "Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone",
+   "url": "https://arxiv.org/abs/2609.23087",
+   "source": "hf:papers",
+   "published_date": "2026-09-19T00:00:00",
+   "summary": "Modern Transformer design and compression both reduce to allocating capacity under a budget. The standard scalars for these decisions, #Params and #FLOPs, capture size and compute but not architectural structure: two architectures with identical parameter budgets but different depth-width, head, or FFN allocations receive identical scores yet behave differently. We propose Neural Spectral Capacity (NSC), a closed-form scalar grounded in the singular-value spectrum of each weight matrix. Under standard random initialization, the Marchenko-Pastur law renders NSC computable from the architectural specification alone, with no model instantiation, data, or gradients. Its layer-wise additive structure admits NSC-DP, an exact dynamic-programming solver returning the architecture globally maximizing NSC under resource constraints in seconds on a CPU -- a guarantee that black-box search over existing training-free proxies cannot provide. Empirically, NSC outperforms #Params, #FLOPs, and represe",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-09-25T15:44:27",
+   "importance": 0.8,
+   "why": "Replaces parameter counts with spectral analysis to evaluate architectural capacity prior to training, bypassing empirical scaling."
   },
   {
    "title": "Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World",
@@ -11543,18 +11567,6 @@
    "first_seen": "2026-05-29T00:00:00",
    "importance": 0.6,
    "why": "Optimizes end-to-end speech-to-text inference performance via full-path systems and kernel engineering."
-  },
-  {
-   "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture-of-Experts",
-   "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
-   "source": "hackernews",
-   "published_date": "2026-05-28T15:38:45",
-   "summary": "11 points, 3 comments on HackerNews",
-   "tags": "architecture,llm",
-   "area": "new-models",
-   "first_seen": "2026-05-28T15:38:45",
-   "importance": 0.5,
-   "why": "Presents an efficient mixture-of-experts model design optimized for resource-constrained edge devices."
   }
  ]
 }

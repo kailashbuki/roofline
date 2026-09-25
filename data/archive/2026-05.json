@@ -1,7 +1,19 @@
 {
  "month": "2026-05",
- "count": 23,
+ "count": 24,
  "articles": [
+  {
+   "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture-of-Experts",
+   "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+   "source": "hackernews",
+   "published_date": "2026-05-28T15:38:45",
+   "summary": "11 points, 3 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "first_seen": "2026-05-28T15:38:45",
+   "importance": 0.5,
+   "why": "Presents an efficient mixture-of-experts model design optimized for resource-constrained edge devices."
+  },
   {
    "title": "Finding Miscompiles for Fun, Not Profit",
    "url": "https://newsletter.semianalysis.com/p/finding-miscompiles-for-fun-not-profit",
