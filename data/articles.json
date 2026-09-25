@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-25T15:45:24Z",
- "previous_generated_at": "2026-09-25T10:02:14Z",
+ "generated_at": "2026-09-25T20:17:38Z",
+ "previous_generated_at": "2026-09-25T15:45:24Z",
  "hot_days": 120,
- "count": 973,
- "total_collected": 997,
+ "count": 975,
+ "total_collected": 999,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "The Chinese AI Infrastructure Boom: Introducing the SemiAnalysis China Datacenter Model",
+   "url": "https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-09-25T15:58:22",
+   "summary": "1,000+ facilities across 60+ operators mapped, built retail-first and flipped by AI, largest hyperscaler leases 1/5 national capacity, 100MW in 12 months, Eastern Data Western Compute",
+   "tags": "systems,hardware",
+   "area": "economics",
+   "first_seen": "2026-09-25T20:17:13",
+   "importance": 0.75,
+   "why": "Quantifies physical datacenter capacity and operator dynamics in China, mapping power constraints for AI scaling."
+  },
   {
    "title": "Show HN: Agentic CUDA Kernel Optimizer",
    "url": "https://github.com/bertaye/agentic-cuda-optimizer",
@@ -1805,6 +1817,18 @@
    "first_seen": "2026-09-24T09:43:12",
    "importance": 0.5,
    "why": "Introduces symmetric cross-attention mechanisms in multimodal diffusion to balance cross-modal correspondence across video and audio."
+  },
+  {
+   "title": "FLEET: From Logits Entropy to Enhanced Trajectories in Text Generation",
+   "url": "https://arxiv.org/abs/2609.27657",
+   "source": "hf:papers",
+   "published_date": "2026-09-23T00:00:00",
+   "summary": "Solutions based on large language models (LLMs) often rely on temperature sampling to improve accuracy and stability by aggregating multiple samples from the completion distribution. However, this memoryless approach is inherently suboptimal: because it lacks awareness of prior generations and their evaluations, it produces an increasing proportion of semantically duplicate answers as more samples are drawn, leading to diminishing returns. To address this limitation, we introduce FLEET, a novel method that integrates a memory mechanism into the generation process. FLEET represents each generation as a sparse trajectory through states whose entropy exceeds a predefined threshold and uses these trajectories to infer per-token utility scores that adjust the logits. Benchmark evaluations demonstrate that FLEET achieves the same accuracy as the repeated sampling baseline, with a 3x speedup, and substantially improves accuracy on complex coding tasks (LiveCodeBench Pass@32 increases from 59.",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-09-25T20:16:35",
+   "importance": 0.65,
+   "why": "Replaces memoryless sampling with entropy-guided trajectories to reduce semantic duplication in text generation."
   },
   {
    "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
