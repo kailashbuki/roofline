@@ -1,7 +1,30 @@
 {
  "month": "2026-05",
- "count": 21,
+ "count": 23,
  "articles": [
+  {
+   "title": "Finding Miscompiles for Fun, Not Profit",
+   "url": "https://newsletter.semianalysis.com/p/finding-miscompiles-for-fun-not-profit",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-05-28T00:22:41",
+   "summary": "Or: You don&#8217;t need access to Claude Mythos to spend $10,000 in an afternoon.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-05-28T00:22:41",
+   "importance": 0.0
+  },
+  {
+   "title": "NVIDIA Dynamo Snapshot: Fast Startup for Inference Workloads on Kubernetes",
+   "url": "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-27T23:09:52",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-Dynamo-Snapshot-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA Dynamo Snapshot\" width=\"768\" />The cold-start problem In production inference deployments, demand fluctuates over time, requiring inference replicas to scale elastically. However,...",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-05-27T23:09:52",
+   "importance": 0.5,
+   "why": "Implements fast snapshotting mechanisms to eliminate cold-start latency for containerized LLM serving."
+  },
   {
    "title": "NVIDIA Blackwell Sets STAC-AI Record for LLM Inference in Finance",
    "url": "https://developer.nvidia.com/blog/nvidia-blackwell-sets-stac-ai-record-for-llm-inference-in-finance",
