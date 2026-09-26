@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-25T20:17:38Z",
- "previous_generated_at": "2026-09-25T15:45:24Z",
+ "generated_at": "2026-09-26T09:43:19Z",
+ "previous_generated_at": "2026-09-25T20:17:38Z",
  "hot_days": 120,
- "count": 975,
- "total_collected": 999,
+ "count": 974,
+ "total_collected": 1000,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -777,6 +777,18 @@
    "first_seen": "2026-09-24T09:43:29",
    "importance": 0.8,
    "why": "Executes monolithic TPU mega-kernels to bypass framework overhead, achieving 700 tokens per second generation speeds."
+  },
+  {
+   "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
+   "url": "https://arxiv.org/abs/2609.29816",
+   "source": "hf:papers",
+   "published_date": "2026-09-24T00:00:00",
+   "summary": "Recent years have witnessed major progress in joint audio-video generation. Existing models still suffer from limited per-modality fidelity, insufficient text-modality alignment and weak cross-modal synchronization. While reinforcement-learning post-training offers a promising remedy, directly adapting it to joint audio-video generation is challenging. Heterogeneous multimodal rewards entangle learning signals and complicate credit assignment. Joint optimization of two modality towers is computationally expensive given their divergent dynamics. Moreover, synchronization evaluation difficulty depends on paired samples, preventing fair reward comparisons. We propose AV-GRPO, a modality-anchored online diffusion RL framework, and 5DAV, a decoupled, difficulty-controllable training dataset. AV-GRPO includes three key modules: (1) modality-anchored rollouts to disentangle learning signals and stabilize difficulty; (2) trajectory-locked frozen-tower optimization to reduce cost and reassign c",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-09-26T09:42:39",
+   "importance": 0.7,
+   "why": "AV-GRPO introduces a modality-anchored decoupling reinforcement learning method that resolves reward entanglement in joint audio-video generation models."
   },
   {
    "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
@@ -11567,30 +11579,6 @@
    "area": "other",
    "first_seen": "2026-05-29T16:00:00",
    "importance": 0.0
-  },
-  {
-   "title": "Run Step 3.7 Flash on NVIDIA GPUs with Enterprise-Ready Multimodal AI",
-   "url": "https://developer.nvidia.com/blog/run-step-3-7-flash-on-nvidia-gpus-with-enterprise-ready-multimodal-ai",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-05-29T00:07:11",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/StepFun-NVIDIA-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"StepFun-NVIDIA\" width=\"768\" />AI applications are moving beyond text generation to multimodal systems that can perceive, search, and reason across images, documents, video, and...",
-   "tags": "inference,multimodal",
-   "area": "inference-engines",
-   "first_seen": "2026-05-29T00:07:11",
-   "importance": 0.4,
-   "why": "Integrates enterprise multimodal model execution pipelines on GPU hardware."
-  },
-  {
-   "title": "How Together AI built the world’s fastest speech-to-text stack",
-   "url": "https://www.together.ai/blog/how-together-ai-built-the-worlds-fastest-speech-to-text-stack",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-05-29T00:00:00",
-   "summary": "Together AI built the fastest speech-to-text stack on Artificial Analysis by treating ASR as a full-path systems problem, not just a GPU inference problem.",
-   "tags": "inference,serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-05-29T00:00:00",
-   "importance": 0.6,
-   "why": "Optimizes end-to-end speech-to-text inference performance via full-path systems and kernel engineering."
   }
  ]
 }

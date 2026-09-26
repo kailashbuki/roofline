@@ -1,5 +1,5 @@
 {
- "count": 528,
+ "count": 532,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -528,6 +528,10 @@
   "https://arxiv.org/abs/2609.22319",
   "https://ollaya.dev/",
   "https://openai.com/index/proaction",
-  "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+  "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+  "https://arxiv.org/abs/2609.28603",
+  "https://arxiv.org/abs/2609.26793",
+  "https://doug.sh/posts/oh-my-pi-custom-models",
+  "https://www.latent.space/p/openrouter"
  ]
 }

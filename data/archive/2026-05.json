@@ -1,7 +1,31 @@
 {
  "month": "2026-05",
- "count": 24,
+ "count": 26,
  "articles": [
+  {
+   "title": "Run Step 3.7 Flash on NVIDIA GPUs with Enterprise-Ready Multimodal AI",
+   "url": "https://developer.nvidia.com/blog/run-step-3-7-flash-on-nvidia-gpus-with-enterprise-ready-multimodal-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-29T00:07:11",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/StepFun-NVIDIA-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"StepFun-NVIDIA\" width=\"768\" />AI applications are moving beyond text generation to multimodal systems that can perceive, search, and reason across images, documents, video, and...",
+   "tags": "inference,multimodal",
+   "area": "inference-engines",
+   "first_seen": "2026-05-29T00:07:11",
+   "importance": 0.4,
+   "why": "Integrates enterprise multimodal model execution pipelines on GPU hardware."
+  },
+  {
+   "title": "How Together AI built the world’s fastest speech-to-text stack",
+   "url": "https://www.together.ai/blog/how-together-ai-built-the-worlds-fastest-speech-to-text-stack",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-05-29T00:00:00",
+   "summary": "Together AI built the fastest speech-to-text stack on Artificial Analysis by treating ASR as a full-path systems problem, not just a GPU inference problem.",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-05-29T00:00:00",
+   "importance": 0.6,
+   "why": "Optimizes end-to-end speech-to-text inference performance via full-path systems and kernel engineering."
+  },
   {
    "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture-of-Experts",
    "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
