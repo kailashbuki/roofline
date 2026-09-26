@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T09:43:19Z",
- "previous_generated_at": "2026-09-25T20:17:38Z",
+ "generated_at": "2026-09-26T14:53:58Z",
+ "previous_generated_at": "2026-09-26T09:43:19Z",
  "hot_days": 120,
- "count": 974,
- "total_collected": 1000,
+ "count": 978,
+ "total_collected": 1004,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Intel Panther Lake Teardown",
+   "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-09-26T13:36:32",
+   "summary": "Looking inside Intel 18A and Intel&#8217;s Panther Lake. \nA free SemiAnalysis STEEL teardown.",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-09-26T14:53:41",
+   "importance": 0.4,
+   "why": "Exposes architectural layout of Intel 18A node, revealing early manufacturability metrics for next-gen accelerators."
+  },
+  {
+   "title": "Google's orbital AI data center test packs four TPUs and 1,000W of solar power",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/google-is-blasting-an-experimental-ai-data-center-into-orbit-first-satellite-will-feature-just-four-tensor-processing-units",
+   "source": "hackernews",
+   "published_date": "2026-09-26T12:47:38",
+   "summary": "3 points, 1 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-09-26T14:53:34",
+   "importance": 0.4,
+   "why": "Tests ultra-compact autonomous solar-powered edge inference nodes under strict thermal and power envelope constraints."
+  },
   {
    "title": "The Chinese AI Infrastructure Boom: Introducing the SemiAnalysis China Datacenter Model",
    "url": "https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom",
@@ -801,6 +825,18 @@
    "first_seen": "2026-09-25T10:01:04",
    "importance": 0.4,
    "why": "Sparse AutoEncoders reveal part-of-speech categories as structured groups of latents rather than individual features, aiding interpretability."
+  },
+  {
+   "title": "ViRDM: Taming Representation Distribution Matching for Few-Step Causal Video Generation",
+   "url": "https://arxiv.org/abs/2609.28923",
+   "source": "hf:papers",
+   "published_date": "2026-09-24T00:00:00",
+   "summary": "Few-step autoregressive (AR) video diffusion enables low-latency streaming generation, but existing post-training methods predominantly rely on Distribution Matching Distillation (DMD), requiring both a large pretrained teacher and an online critic to estimate distributional discrepancies through diffusion scores. In this work, we ask whether this resource-intensive teacher--critic stack can be eliminated by post-training only the generator against a precomputed target distribution. Drawing inspiration from representation distribution matching (RDM) for one-step image generation, we systematically study its transfer to few-step causal video generation and identify three key barriers: a memory-intractable gradient path, a distinct video optimization regime, and representation distributions that underconstrain temporal dynamics. We introduce ViRDM, a teacher- and critic-free video post-training recipe that addresses these barriers sequentially. By coupling RDM with stochastically truncat",
+   "tags": "inference,optimization,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-09-26T14:53:14",
+   "importance": 0.7,
+   "why": "Removes the online critic and teacher stack in few-step video diffusion via distribution matching."
   },
   {
    "title": "Runtime Dynamic Compression of Mixture of Experts [pdf]",
@@ -1900,6 +1936,18 @@
    "first_seen": "2026-09-24T06:21:36",
    "importance": 0.75,
    "why": "Deploys an 80B parameter Mixture-of-Experts architecture activating only 13B parameters on a filtered 20T-token corpus."
+  },
+  {
+   "title": "Uranus: Building the Next-Generation Simulation Infrastructure for Embodied AI",
+   "url": "https://arxiv.org/abs/2609.24815",
+   "source": "hf:papers",
+   "published_date": "2026-09-23T00:00:00",
+   "summary": "Scalable simulation is essential for robot data generation, policy training, evaluation, and safe iteration, yet real-world interaction is costly and conventional simulators require labor-intensive construction. We present Uranus, a data-driven robot simulator built around a joint-trajectory-conditioned autoregressive diffusion model. Uranus offers three key capabilities: (1) streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon; (2) low-latency generation, achieving 24 FPS after inference optimization; and (3) scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot embodiments and camera configurations. We conduct comprehensive quantitative and qualitative evaluations on both in-distribution and out-of-distribution data, providing an objective assessment of Uranus and ",
+   "tags": "architecture,multimodal,training",
+   "area": "architecture",
+   "first_seen": "2026-09-26T14:53:14",
+   "importance": 0.6,
+   "why": "Replaces conventional simulation with a joint-trajectory-conditioned autoregressive diffusion model for embodied AI."
   },
   {
    "title": "Better prompt caching for GPT-6",
