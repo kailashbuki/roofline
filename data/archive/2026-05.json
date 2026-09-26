@@ -1,7 +1,18 @@
 {
  "month": "2026-05",
- "count": 26,
+ "count": 27,
  "articles": [
+  {
+   "title": "How to Automate AI Model Documentation with the NVIDIA MCG Toolkit",
+   "url": "https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-05-29T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image3-8-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />As AI models grow in complexity and regulatory scrutiny intensifies under frameworks including&nbsp; California’s AB-2013 and the EU AI Act, software teams...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-05-29T16:00:00",
+   "importance": 0.0
+  },
   {
    "title": "Run Step 3.7 Flash on NVIDIA GPUs with Enterprise-Ready Multimodal AI",
    "url": "https://developer.nvidia.com/blog/run-step-3-7-flash-on-nvidia-gpus-with-enterprise-ready-multimodal-ai",
