@@ -1,7 +1,19 @@
 {
  "month": "2026-05",
- "count": 30,
+ "count": 31,
  "articles": [
+  {
+   "title": "AI demand absorbs wafer capacity, crushing budget PC segment",
+   "url": "https://www.trendforce.com/presscenter/news/20260529-13068.html",
+   "source": "hackernews",
+   "published_date": "2026-05-30T13:29:14",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-05-30T13:29:14",
+   "importance": 0.4,
+   "why": "Examines how massive AI chip demand strains semiconductor wafer foundry capacity."
+  },
   {
    "title": "DynoSim: Simulating the Pareto Frontier",
    "url": "https://developer.nvidia.com/blog/dynosim-simulating-the-pareto-frontier",
