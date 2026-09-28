@@ -1,5 +1,5 @@
 {
- "count": 595,
+ "count": 603,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -595,6 +595,14 @@
   "https://pressaudit.org/f/findings/underreported-in-the-us?view=article-bias-heatmap&timeRange=7d",
   "https://huggingface.co/blog/Hcompany/holo4",
   "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring",
-  "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell"
+  "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell",
+  "https://arxiv.org/abs/2609.26634",
+  "https://arxiv.org/abs/2609.26489",
+  "https://github.com/PragmaTwice/jeva.cpp",
+  "https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42",
+  "https://naive.ai/en/research",
+  "https://openai.com/index/lenfest-ai-collaborative-expansion",
+  "https://openai.com/form/codex-originals",
+  "https://openai.com/index/basis-tax-workbook-with-astra"
  ]
 }

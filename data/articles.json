@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T11:29:20Z",
- "previous_generated_at": "2026-09-27T19:58:38Z",
+ "generated_at": "2026-09-28T22:25:26Z",
+ "previous_generated_at": "2026-09-28T11:29:20Z",
  "hot_days": 120,
- "count": 1036,
- "total_collected": 1067,
+ "count": 1041,
+ "total_collected": 1072,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,54 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "How GLM5.3 Sparse Attention Affects HBM Memory Usage",
+   "url": "https://newsletter.semianalysis.com/p/sparse-savings-persistent-demand-inside-glm53",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-09-28T19:26:41",
+   "summary": "GLM-5.3, KV Cache Offloading, HiSparse, DeepSeek Sparse Attention, IndexShare, Single-rollout Asynchronous Optimization, Cybersecurity",
+   "tags": "inference,attention,optimization,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-09-28T22:25:08",
+   "importance": 0.75,
+   "why": "Combines KV cache offloading with sparse attention mechanisms to significantly lower HBM memory footprint during single-rollout inference."
+  },
+  {
+   "title": "An Internet for the KV Cache: Rethinking Classical Infrastructure Boundaries",
+   "url": "https://arxiv.org/abs/2608.01526",
+   "source": "hackernews",
+   "published_date": "2026-09-28T19:19:56",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-09-28T22:24:58",
+   "importance": 0.6,
+   "why": "Proposes network-level disaggregation of KV cache across classical infrastructure boundaries."
+  },
+  {
+   "title": "An Act of God, With Letterhead",
+   "url": "https://www.airealist.ai/p/an-act-of-god-with-letterhead",
+   "source": "airealist",
+   "published_date": "2026-09-28T16:04:13",
+   "summary": "Oracle reportedly called its power problem an act of God. Its annual report had already listed it.",
+   "tags": "systems,hardware",
+   "area": "economics",
+   "first_seen": "2026-09-28T22:25:25",
+   "importance": 0.35,
+   "why": "Highlights physical power constraints limiting datacenter expansion, impacting operational scalability."
+  },
+  {
+   "title": "I got 2.2x more tokens per second from llama.cpp on Intel Arc",
+   "url": "https://grigio.org/how-i-got-2-2x-more-tokens-per-second-from-llama-cpp-on-intel-arc",
+   "source": "hackernews",
+   "published_date": "2026-09-28T12:16:04",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-09-28T22:24:58",
+   "importance": 0.4,
+   "why": "Achieves 2.2x throughput gains on Intel Arc hardware via llama.cpp optimization."
+  },
   {
    "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
    "url": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency",
@@ -1509,6 +1557,18 @@
    "first_seen": "2026-09-24T09:43:29",
    "importance": 0.8,
    "why": "Executes monolithic TPU mega-kernels to bypass framework overhead, achieving 700 tokens per second generation speeds."
+  },
+  {
+   "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
+   "url": "https://arxiv.org/abs/2609.30192",
+   "source": "hf:papers",
+   "published_date": "2026-09-24T00:00:00",
+   "summary": "Long-horizon reasoning remains a central challenge for large language models (LLMs) under sparse-reward regimes. We argue that this brittleness arises from two biases induced by complex reasoning spaces: an exploration bias, where models are drawn toward locally plausible but structurally unstable branches, and a compounding bias, where small local deviations accumulate across depth and suppress rare rewards. We introduce Symbolic Closure Analysis (SCA) as a theoretical lens characterizing how branching structures and sparse rewards induce these biases in long-horizon reasoning with local admissibility, and as a design principle for structural priors in less formal reasoning tasks. Motivated by this analysis, we propose SAGE (Structural Admissibility-Guided Exploration), a unified framework that injects structural guidance to alleviate exploration bias and compounding bias in long-horizon reasoning. SAGE combines two complementary structural guidance: algebraic sparsification, which pr",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-09-28T22:24:41",
+   "importance": 0.75,
+   "why": "Introduces topological guidance to suppress exploration and compounding biases in sparse-reward long-horizon reasoning."
   },
   {
    "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
