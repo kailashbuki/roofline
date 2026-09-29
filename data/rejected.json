@@ -1,5 +1,5 @@
 {
- "count": 682,
+ "count": 695,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -682,6 +682,19 @@
   "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
   "https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b",
   "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
-  "https://www.latent.space/p/thariq"
+  "https://www.latent.space/p/thariq",
+  "https://arxiv.org/abs/2609.32630",
+  "https://arxiv.org/abs/2609.34479",
+  "https://arxiv.org/abs/2609.35718",
+  "https://arxiv.org/abs/2609.33148",
+  "https://github.com/motock/fagan",
+  "https://huggingface.co/blog/nvidia/kumo-tabular",
+  "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+  "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation",
+  "https://openai.com/index/devday-2026-recap",
+  "https://openai.com/index/introducing-dots",
+  "https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3",
+  "https://www.anthropic.com/research/your-thoughts-on-ai",
+  "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
  ]
 }

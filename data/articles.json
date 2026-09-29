@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-29T11:09:24Z",
- "previous_generated_at": "2026-09-28T22:25:26Z",
+ "generated_at": "2026-09-29T21:17:25Z",
+ "previous_generated_at": "2026-09-29T11:09:24Z",
  "hot_days": 120,
- "count": 1130,
- "total_collected": 1166,
+ "count": 1133,
+ "total_collected": 1171,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -24,6 +24,29 @@
  ],
  "articles": [
   {
+   "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
+   "url": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-09-29T19:10:51",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/llm-optimize-deploy-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-optimize-deploy\" width=\"768\" />Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT...",
+   "tags": "inference,serving,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-09-29T21:17:10",
+   "importance": 0.4,
+   "why": "Adopts parallel modular design patterns to accelerate tensor compiler pipeline integration and execution validation speed."
+  },
+  {
+   "title": "Qualcomm’s System Level Architecture in the Snapdragon X2 Elite",
+   "url": "https://chipsandcheese.com/p/qualcomms-system-level-architecture",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-09-29T16:07:30",
+   "summary": "Laptop chips have gotten very powerful in recent years, with increasing CPU core counts, more powerful iGPUs, and higher DRAM bandwidth to feed that compute.",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-09-29T21:17:13",
+   "importance": 0.0
+  },
+  {
    "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
    "source": "rss:Ahead of AI",
@@ -33,6 +56,18 @@
    "area": "other",
    "first_seen": "2026-09-29T11:09:18",
    "importance": 0.0
+  },
+  {
+   "title": "Introducing GPT-6.1 Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-09-29T10:00:00",
+   "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+   "tags": "llm,inference",
+   "area": "economics",
+   "first_seen": "2026-09-29T21:17:02",
+   "importance": 0.4,
+   "why": "Drops inference pricing to twenty percent of prior generations, expanding cost-constrained deployment feasibility."
   },
   {
    "title": "How GLM5.3 Sparse Attention Affects HBM Memory Usage",
@@ -863,6 +898,18 @@
    "why": "It replaces costly visual token pruning with an MLP-based state reconstruction to reduce multimodal overhead without losing context."
   },
   {
+   "title": "ColNanoVDR: Document-Free Query Distillation for Multi-Vector Visual Document Retrieval via Optimal Transport",
+   "url": "https://arxiv.org/abs/2609.34899",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Multi-vector retrievers built on vision-language models lead visual document retrieval (VDR), but they run a multi-billion-parameter query encoder on every search. Distilling this encoder into a small student that queries the teacher's existing index would remove the bottleneck. The standard recipe, however, matches the teacher's MaxSim scores and so requires encoding and caching every training page, which can reach terabytes of page tokens. NanoVDR avoids pages entirely by training on the teacher's query embeddings alone, but only for single-vector retrievers. We present ColNanoVDR, to our knowledge the first framework to bring this document-free distillation to multi-vector VDR. Its objective, OTW (Optimal Transport with Learned Weights), aligns the student's query tokens with the teacher's by entropic optimal transport, with a learned weight for each student token, and needs no correspondence between the two tokenizations. We prove that the resulting alignment cost bounds the MaxSim",
+   "tags": "inference,compression",
+   "area": "inference-methods",
+   "first_seen": "2026-09-29T21:16:33",
+   "importance": 0.6,
+   "why": "Eliminates multi-billion-parameter query encoding via optimal transport document-free query distillation."
+  },
+  {
    "title": "Draft-KV: Learning Useful Latent Communication Between Language Models",
    "url": "https://arxiv.org/abs/2609.34754",
    "source": "hf:papers",
@@ -1017,6 +1064,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.4,
    "why": "It verifies structural drawing correctness in scientific image generation tasks using multimodal reasoning verifiers."
+  },
+  {
+   "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+   "url": "https://arxiv.org/abs/2609.33325",
+   "source": "hf:papers",
+   "published_date": "2026-09-27T00:00:00",
+   "summary": "Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an image. Across this progression, visual computation has become increasingly adaptive to each input, yet the rules governing that adaptation remain largely prescribed by the trained backbone. We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image. Building on the self-referential construction of Nested Learning (NL), VisionHOPE realizes this co-evolution through five coupled memories that store content, generate key and value representations, and govern learning rate and retention. These memories evolve jointly as visual context accumulates along each scan. However",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-09-29T21:16:33",
+   "importance": 0.7,
+   "why": "Replaces static visual backbones with self-modifying test-time training layers for dynamic input adaptation."
   },
   {
    "title": "Structured Residual Connectivity Matters for Diffusion Transformers",
@@ -13427,30 +13486,6 @@
    "first_seen": "2026-06-01T22:00:00",
    "importance": 0.5,
    "why": "Explores clustered multi-node execution for long-context autonomous agents on specialized hardware."
-  },
-  {
-   "title": "How LinkedIn Uses PyTorch to Solve Extreme-Scale Optimization Problems",
-   "url": "https://pytorch.org/blog/how-linkedin-uses-pytorch-to-solve-extreme-scale-optimization-problems",
-   "source": "rss:PyTorch Blog",
-   "published_date": "2026-06-01T14:53:22",
-   "summary": "TL;DR: This case study demonstrates how LinkedIn re-architected its distributed linear programming solver, DuaLip, by developing a GPU-accelerated PyTorch version to handle extreme-scale optimization challenges like web applications. This transition...",
-   "tags": "training,systems,optimization",
-   "area": "training",
-   "first_seen": "2026-06-01T14:53:22",
-   "importance": 0.4,
-   "why": "Demonstrates GPU-accelerated linear programming via PyTorch for large-scale optimization workflows."
-  },
-  {
-   "title": "The Overbuild Put",
-   "url": "https://www.airealist.ai/p/the-overbuild-put",
-   "source": "airealist",
-   "published_date": "2026-06-01T11:51:41",
-   "summary": "Meta is the only hyperscaler without a cloud business. It just told shareholders it might need one &#8212; and that is the most revealing thing it has said about a buildout it can no longer obviously fill.",
-   "tags": "hardware,systems",
-   "area": "economics",
-   "first_seen": "2026-06-01T11:51:41",
-   "importance": 0.7,
-   "why": "Analyzes hyperscaler infrastructure overbuilding and capital expenditure risks for AI compute data centers."
   }
  ]
 }

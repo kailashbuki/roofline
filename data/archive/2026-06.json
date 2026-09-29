@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 5,
+ "count": 7,
  "articles": [
+  {
+   "title": "How LinkedIn Uses PyTorch to Solve Extreme-Scale Optimization Problems",
+   "url": "https://pytorch.org/blog/how-linkedin-uses-pytorch-to-solve-extreme-scale-optimization-problems",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-06-01T14:53:22",
+   "summary": "TL;DR: This case study demonstrates how LinkedIn re-architected its distributed linear programming solver, DuaLip, by developing a GPU-accelerated PyTorch version to handle extreme-scale optimization challenges like web applications. This transition...",
+   "tags": "training,systems,optimization",
+   "area": "training",
+   "first_seen": "2026-06-01T14:53:22",
+   "importance": 0.4,
+   "why": "Demonstrates GPU-accelerated linear programming via PyTorch for large-scale optimization workflows."
+  },
+  {
+   "title": "The Overbuild Put",
+   "url": "https://www.airealist.ai/p/the-overbuild-put",
+   "source": "airealist",
+   "published_date": "2026-06-01T11:51:41",
+   "summary": "Meta is the only hyperscaler without a cloud business. It just told shareholders it might need one &#8212; and that is the most revealing thing it has said about a buildout it can no longer obviously fill.",
+   "tags": "hardware,systems",
+   "area": "economics",
+   "first_seen": "2026-06-01T11:51:41",
+   "importance": 0.7,
+   "why": "Analyzes hyperscaler infrastructure overbuilding and capital expenditure risks for AI compute data centers."
+  },
   {
    "title": "How to Post-Train Autonomous Vehicle Models in Closed-Loop with NVIDIA Alpamayo",
    "url": "https://developer.nvidia.com/blog/how-to-post-train-autonomous-vehicle-models-in-closed-loop-with-nvidia-alpamayo",
