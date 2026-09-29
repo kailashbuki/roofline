@@ -1,0 +1,66 @@
+{
+ "month": "2026-06",
+ "count": 5,
+ "articles": [
+  {
+   "title": "How to Post-Train Autonomous Vehicle Models in Closed-Loop with NVIDIA Alpamayo",
+   "url": "https://developer.nvidia.com/blog/how-to-post-train-autonomous-vehicle-models-in-closed-loop-with-nvidia-alpamayo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-01T04:49:15",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/auto-nvidia-alpamayo-1-1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"auto-nvidia-alpamayo (1)\" width=\"600\" />Developing autonomous vehicle (AV) policies requires bridging an important gap between training and deployment. Vision-language-action (VLA) models that can...",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-06-01T04:49:15",
+   "importance": 0.5,
+   "why": "Bridges training and closed-loop deployment for vision-language-action models in autonomous vehicles."
+  },
+  {
+   "title": "Develop Physical AI Reasoning, World, and Action Models with NVIDIA Cosmos 3",
+   "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-01T04:43:58",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/Hammer-Robot.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Hammer-Robot\" width=\"600\" />Physical AI systems must understand the real world before they can act within it. Robots, autonomous vehicles, and smart spaces need to understand what's...",
+   "tags": "architecture,multimodal,llm",
+   "area": "new-models",
+   "first_seen": "2026-06-01T04:43:58",
+   "importance": 0.6,
+   "why": "Introduces physical world and action modeling architectures tailored for robotics and spatial intelligence."
+  },
+  {
+   "title": "Advancing AI Infrastructure for Agentic AI with NVIDIA DOCA In-Silicon Security",
+   "url": "https://developer.nvidia.com/blog/advancing-ai-infrastructure-for-agentic-ai-with-nvidia-doca-in-silicon-security",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-01T04:21:42",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/server-rack-data-center-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"server-rack-data-center\" width=\"768\" />The AI era is driving a new class of infrastructure: AI factories that transform data into intelligence for autonomous AI agents operating at unprecedented...",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-01T04:21:42",
+   "importance": 0.4,
+   "why": "Describes hardware-level security mechanisms integrated into data center infrastructure for AI agents."
+  },
+  {
+   "title": "NVIDIA Vera CPU Sets a New Standard for Agentic Workloads in AI Factories",
+   "url": "https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-01T03:59:15",
+   "summary": "<img alt=\"Vera CPU image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/Vera-CPU-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Vera-CPU\" width=\"768\" />Each wave of AI has created a new scaling law. Pretraining scaled intelligence through larger datasets, more parameters, and massively parallel GPU systems....",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-01T03:59:15",
+   "importance": 0.5,
+   "why": "Presents new CPU microarchitectures optimized for agentic workloads and multi-tenant AI factories."
+  },
+  {
+   "title": "NVIDIA DSX OS Delivers Open, Modular Software for Operating AI Factories at Scale",
+   "url": "https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-01T03:36:52",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/featured_image_16x9_1488x837_under2MB-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"featured_image_16x9_1488x837_under2MB\" width=\"768\" />AI is now essential infrastructure, powered by AI factories that generate intelligence in the form of tokens. As demand grows, these factories must scale...",
+   "tags": "serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-01T03:36:52",
+   "importance": 0.4,
+   "why": "Offers modular operating system software stack abstractions for managing scale-out AI factories."
+  }
+ ]
+}
