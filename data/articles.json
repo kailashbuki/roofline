@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T10:56:01Z",
- "previous_generated_at": "2026-09-29T21:17:25Z",
+ "generated_at": "2026-09-30T16:41:15Z",
+ "previous_generated_at": "2026-09-30T10:56:01Z",
  "hot_days": 120,
- "count": 1220,
- "total_collected": 1262,
+ "count": 1228,
+ "total_collected": 1274,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Ollama now supports Jev-like decision models all locally in 0.35",
+   "url": "https://ollama.com/library/nimble",
+   "source": "hackernews",
+   "published_date": "2026-09-30T13:53:05",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T16:40:28",
+   "importance": 0.4,
+   "why": "Integrates decision models directly into local execution runtimes via version 0.35 updates."
+  },
+  {
+   "title": "From Upstream Changes to Downstream Confidence: Inside Torch Spyre’s Integration with PyTorch CRCR",
+   "url": "https://pytorch.org/blog/from-upstream-changes-to-downstream-confidence-inside-torch-spyres-integration-with-pytorch-crcr",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-09-30T13:40:56",
+   "summary": "TL;DR PyTorch&#8217;s Cross-Repository CI Relay (CRCR) gives out-of-tree accelerators a clean, scalable way to plug into upstream CI &#8211; and it leaves each backend free to decide which of PyTorch&#8217;s...",
+   "tags": "systems,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T16:40:37",
+   "importance": 0.4,
+   "why": "Enables out-of-tree accelerators to integrate into PyTorch CI using cross-repository relay mechanisms."
+  },
+  {
+   "title": "Ollama now supports Jev-style decision models",
+   "url": "https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
+   "source": "hackernews",
+   "published_date": "2026-09-30T09:15:33",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T16:40:28",
+   "importance": 0.4,
+   "why": "Adds local support for specific decision models to run locally."
+  },
   {
    "title": "Compiling Triton kernels without the Triton compiler",
    "url": "https://arxiv.org/abs/2609.36800",
@@ -886,6 +922,18 @@
    "why": "Leverages anisotropic representation geometry in latent world models to improve planning accuracy."
   },
   {
+   "title": "Routing Should Pay for Itself: Sparse Supervision for Economical LLM Routing",
+   "url": "https://arxiv.org/abs/2609.37402",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Large language model (LLM) routing reduces serving cost by assigning each query to an appropriate model while preserving response quality. Learning such a router, however, often requires executing multiple candidate models on historical queries to collect query--model quality feedback, creating a nontrivial supervision cost before deployment. Existing work largely focuses on serving-time efficiency, overlooking whether the resulting savings are sufficient to recover this upfront expenditure. We further observe that routing quality often saturates well before all query--model feedback is collected, suggesting that dense supervision can be economically over-provisioned. We propose SaveRouter, a sparse-supervision routing framework that selectively acquires informative model feedback and shares capability information across related queries, while retaining query-level refinement for fine-grained routing. We evaluate routing by jointly accounting for supervision expenditure and subsequent ",
+   "tags": "serving,llm,optimization",
+   "area": "economics",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.6,
+   "why": "Applies sparse supervision to cut the high offline evaluation cost of training query routers for LLM model selection."
+  },
+  {
    "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
    "url": "https://arxiv.org/abs/2609.37372",
    "source": "hf:papers",
@@ -896,6 +944,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.4,
    "why": "Introduces a reasoning phase prior to scalar scoring in visual reward models to make evaluation criteria explicit per case."
+  },
+  {
+   "title": "Improved Distributional Diffusion Models",
+   "url": "https://arxiv.org/abs/2609.37147",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Distributional Diffusion Models (DDMs) replace the standard mean-prediction denoiser with a distributional denoiser trained via a scoring rule objective, learning a stochastic approximation to p(x_1 mid x_t) rather than its conditional mean. However, scaling DDMs to modern image-generation settings faces two obstacles: (i) multi-particle training incurs overhead that scales with the number of particles, (ii) DDMs use globally fixed scoring rule hyperparameters, forcing a single trade-off across sampling budgets. We mitigate these limitations by deferring particle expansion to late transformer layers, and the hyperparameter trade-off by introducing time-dependent scoring rule schedules informed by the dynamical regimes of~Biroli2024. Combined with a DiT-based latent setup, these changes make DDM training practical on class-conditional ImageNet-256^2, achieving 4.48 FID at 4 steps and 2.38 at 50 steps with DiT-XL/2, from a single model trained from scratch in one stage, without a teacher",
+   "tags": "training,architecture",
+   "area": "new-models",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.5,
+   "why": "Replaces mean-prediction with a scoring rule objective for distributional diffusion models, enabling stochastic multi-particle training scaling."
   },
   {
    "title": "Selecting The Most Informative Tokens in Natural Language Autoencoders",
@@ -944,6 +1004,30 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.7,
    "why": "Isolates and resolves specific critic failure modes to stabilize reinforcement learning for language models."
+  },
+  {
+   "title": "Scheduling Recursive Reasoning in Looped Transformers",
+   "url": "https://arxiv.org/abs/2609.36653",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Recurrent reasoning models have attracted growing attention for scaling test-time computation, typically by iteratively refining latent states with shared parameters. However, these models apply each learned update with a fixed unit scale, which can be conservative when updates make persistent progress and overly aggressive when they fluctuate, limiting the benefit of additional loops. To understand how the scale should vary along the trajectory, we first analyze the sensitivity of terminal loss to recurrent update scale. We show that its temporal average admits an exact decomposition into persistent-progress and centered-fluctuation contributions. Based on this, we introduce the Trajectory Adaptive Progress-Fluctuation Scheduler (TAPS), which tracks their balance across recurrent updates and adapts the step size online. Theoretically, we establish sufficient conditions under which TAPS reduces expected terminal loss and reaches a target quality in fewer recurrent loops. Empirically, w",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.65,
+   "why": "Replaces fixed-scale recurrent update steps with adaptive dynamic scheduling to optimize test-time compute allocation in looped transformers."
+  },
+  {
+   "title": "FocusVTC: Efficient and High-Performance Visual Text Compression with Adaptive Resolution",
+   "url": "https://arxiv.org/abs/2609.36651",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Long-context reasoning in large language models incurs substantial computation and memory costs. Visual text compression (VTC) reduces input length by rendering text as images, but fixed-resolution rendering creates a compression-performance trade-off: low DPI saves tokens at the expense of legibility, whereas high DPI spends tokens on irrelevant content. We introduce FocusVTC, which breaks this trade-off through adaptive resolution while preserving general multimodal capabilities. It combines compressed low-DPI global views with selective region enhancement, integrating enhanced views into ongoing reasoning. We construct 29.4K high-quality Reasoning-Evidence Localization (REL) chain-of-thought examples (REL-CoT) that link reasoning traces to page indices and bounding boxes. Multi-resolution REL supervised fine-tuning (REL-SFT) teaches the model to localize relevant regions, and Group Relative Policy Optimization learns when to enhance resolution and how to use the resulting observatio",
+   "tags": "inference,compression,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.55,
+   "why": "Renders text as images with adaptive resolution to dynamically trade off token count and legibility for long-context vision-language inputs."
   },
   {
    "title": "SAKI: Maximal-Coupling-Routed Teacher Supervision for On-Policy Distillation",
@@ -1738,6 +1822,18 @@
    "why": "Combines student-generated prefixes with autoregressive teacher continuations to mitigate sequential covariate shift in online distillation."
   },
   {
+   "title": "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion",
+   "url": "https://arxiv.org/abs/2609.36014",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Pixel-space diffusion Transformers (DiTs) directly operate on high-dimensional visual data, yet their hidden representations typically undergo uniform refinement across depth. Natural images, however, are inherently organized at different levels of granularity. Global structure can often be represented compactly, whereas local textures and fine details require richer representations. Motivated by this, we introduce heterogeneous refinement in pixel-space DiTs, assigning different feature groups distinct refinement budgets across depth. Consequently, an ordered feature specialization emerges: sparsely refined features predominantly encode global visual structure, whereas more frequently refined features increasingly specialize toward localized, high-frequency details. We refer to these two groups as persistent and active features, respectively. Building on this emergent specialization, we introduce Persistence Forcing (PerF), which explicitly exploits this persistent--active feature org",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.55,
+   "why": "Replaces uniform depthwise refinement with persistence forcing to exploit feature granularity differences in pixel-space diffusion transformers."
+  },
+  {
    "title": "ROSS: Relearning from Self-Generated Rollouts through Selective Supervision",
    "url": "https://arxiv.org/abs/2609.35954",
    "source": "hf:papers",
@@ -1906,6 +2002,18 @@
    "why": "Replaces sliding-window mechanisms in interactive video world models with a memory-efficient attention architecture for long-duration simulation."
   },
   {
+   "title": "PMOPD: Task Ordering, Cycling, and Parameter-Update Subspace Protection in Multi-Teacher On-Policy Distillation",
+   "url": "https://arxiv.org/abs/2609.34605",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Multi-teacher on-policy distillation (MOPD) has emerged as a popular post-training paradigm for integrating specialized capabilities in frontier language models. Existing OPD research has primarily focused on optimizing single-task distillation through objective design, distillation scope, and teacher signal construction, whereas MOPD must aggregate multiple capabilities in shared parameters and address the resulting capability seesaw, in which improving one domain suppresses capabilities acquired from another. Inspired by the distinctive update geometry of OPD, we find that parameter updates from different tasks rapidly concentrate in their respective low-dimensional subspaces during MOPD, providing a direct geometric basis for identifying and controlling cross-task interference. We therefore propose PMOPD (Projection-based Multi-Teacher On-Policy Distillation), which constructs subspace memories from the cumulative parameter displacements of different tasks and projects both gradient",
+   "tags": "training,post-training",
+   "area": "training",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.5,
+   "why": "Combines task scheduling, cyclical training, and subspace protection to merge multiple teacher policies without catastrophic forgetting during multi-teacher distillation."
+  },
+  {
    "title": "Precise Editing and Flexible Referencing for Interactable Worlds",
    "url": "https://arxiv.org/abs/2609.34470",
    "source": "hf:papers",
@@ -2014,6 +2122,18 @@
    "why": "It unifies symbolic score planning and audio generation using a mixture-of-transformers architecture to produce complete music."
   },
   {
+   "title": "AnyStep-WAM: Budget-Aligned Distillation and Adaptive Inference for World Action Models",
+   "url": "https://arxiv.org/abs/2609.33748",
+   "source": "hf:papers",
+   "published_date": "2026-09-27T00:00:00",
+   "summary": "World-action models (WAMs) couple predictive visual modeling with action generation, typically relying on iterative denoising with a fixed denoising steps. However, manipulation tasks contain actions chunks with varying sensitivity to generation errors: critical actions require precision, while less sensitive actions allow faster generation with fewer denoising steps. Here we introduce AnyStep World Action Model, a general framework for tunable-budget prediction and scene-dependent computation allocation. Our budget-aligned teacher-trajectory distillation trains interval-conditioned flow maps using explicit frozen-teacher transitions and shared low-rank adapters, supporting action generation from one-step prediction to multi-step refinement. Building on this capability, a lightweight risk-benefit scheduler predicts teacher-curvature-based difficulty and budget-specific student-teacher fidelity from a single one-step preview, selecting the smallest budget predicted to satisfy risk-adapt",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.6,
+   "why": "Dynamically scales denoising steps per action chunk based on error sensitivity to accelerate world-action model inference."
+  },
+  {
    "title": "Pruned CTC for Memory-Efficient Large-Vocabulary ASR Training",
    "url": "https://arxiv.org/abs/2609.33645",
    "source": "hf:papers",
@@ -2036,6 +2156,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.5,
    "why": "It constructs synthetic in-context learning data from perturbed public web documents to improve non-parametric adaptation."
+  },
+  {
+   "title": "Pretraining Transformers with Quantized Softmax in Attention",
+   "url": "https://arxiv.org/abs/2609.33591",
+   "source": "hf:papers",
+   "published_date": "2026-09-27T00:00:00",
+   "summary": "Low-precision Transformer systems increasingly quantize attention matrix multiplications, while softmax often remains at higher precision. During pretraining, an approximate softmax changes the gradients that train the model as well as its forward computation. We study this interaction with K-interval attention, which approximates the exponential using K+1 grid values. We vary per-row grid calibration, interpolation versus hard rounding, and the placement of a straight-through surrogate relative to normalization. We derive the corresponding backward rules, including calibration derivatives, and compare these choices in pretraining experiments matched on model, data, and optimizer. Detaching the row extrema leaves the forward computation unchanged but produces a delayed increase in validation loss. With hard rounding at K=4, min-max calibration and a pre-normalization surrogate incur a large loss gap; changing either choice substantially reduces it. At 124M parameters and 2.5B training ",
+   "tags": "architecture,quantization,attention,training",
+   "area": "architecture",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.7,
+   "why": "Integrates low-precision grid-calibrated exponential approximations into the attention softmax during pretraining, matching high-precision baseline convergence."
   },
   {
    "title": "TGRL: Temperature-Grouped Reinforcement Learning for Efficient Exploration in LLMs",
@@ -2300,6 +2432,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.7,
    "why": "It resolves probability discrepancies between training and inference engines in RLVR using calibrated importance sampling."
+  },
+  {
+   "title": "PrismQuant: Optimal Null-Space Rotations for Grouped Quantizers",
+   "url": "https://arxiv.org/abs/2609.32429",
+   "source": "hf:papers",
+   "published_date": "2026-09-26T00:00:00",
+   "summary": "Smaller activation outliers do not necessarily imply better low-bit quantization: their alignment with the quantizer matters. We introduce PrismQuant, a quantizer-aware rotation framework that aligns the leading activation eigenspace with the constant group subspace of asymmetric grouped INT4. The affine offsets represent the energy in this subspace without widening the range within the group. We formulate rotation design as a Ky Fan trace maximization and derive a closed-form solution that is provably optimal for this alignment objective. Compact Householder transformations and their compact-WY representation enable gradient-free construction and efficient application at both foldable and online sites. A predictive range law further connects unaligned activation energy and group size to quantization-relevant variation. Experiments on Llama, Qwen, and Mistral span dense models up to 70B parameters and a 30B mixture-of-experts model. Under W4A4KV4, PrismQuant sets the state of the art o",
+   "tags": "quantization,optimization,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T16:40:04",
+   "importance": 0.7,
+   "why": "Aligns the activation eigenspace with the constant group subspace via optimal null-space rotations to minimize asymmetric grouped INT4 quantization error."
   },
   {
    "title": "Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction",
@@ -14484,53 +14628,6 @@
    "first_seen": "2026-06-02T17:15:59",
    "importance": 0.6,
    "why": "Extends the Forward-Forward algorithm from classification to regression tasks using continuous target spaces."
-  },
-  {
-   "title": "Deploy Self-Evolving Agents for Faster, More Secure Research with a Hermes Agent and NVIDIA NemoClaw",
-   "url": "https://developer.nvidia.com/blog/deploy-self-evolving-agents-for-faster-more-secure-research-with-a-hermes-agent-and-nvidia-nemoclaw",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-02T16:00:00",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" />AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-02T16:00:00",
-   "importance": 0.0
-  },
-  {
-   "title": "Show HN: Piqc – GPU waste scanner for LLM inference clusters",
-   "url": "https://github.com/paralleliq/piqc",
-   "source": "hackernews",
-   "published_date": "2026-06-02T15:10:41",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "inference,serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-02T15:10:41",
-   "importance": 0.3,
-   "why": "A utility tool for detecting GPU resource waste in LLM inference clusters."
-  },
-  {
-   "title": "Show HN: We built an LLM inference engine in pure Python – no PyTorch, no Triton",
-   "url": "https://github.com/Zyora-Dev/zse/releases/tag/v2.0.0",
-   "source": "hackernews",
-   "published_date": "2026-06-02T14:34:48",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-06-02T14:34:48",
-   "importance": 0.6,
-   "why": "Pure Python inference engine implementation bypassing heavy C++ frameworks for lightweight execution."
-  },
-  {
-   "title": "Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-   "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-   "source": "hackernews",
-   "published_date": "2026-06-02T14:01:36",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "architecture,llm",
-   "area": "new-models",
-   "first_seen": "2026-06-02T14:01:36",
-   "importance": 0.4,
-   "why": "Releases a new 12B Mixture-of-Experts language model by JetBrains."
   }
  ]
 }

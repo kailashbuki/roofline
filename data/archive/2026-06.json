@@ -1,7 +1,54 @@
 {
  "month": "2026-06",
- "count": 11,
+ "count": 15,
  "articles": [
+  {
+   "title": "Deploy Self-Evolving Agents for Faster, More Secure Research with a Hermes Agent and NVIDIA NemoClaw",
+   "url": "https://developer.nvidia.com/blog/deploy-self-evolving-agents-for-faster-more-secure-research-with-a-hermes-agent-and-nvidia-nemoclaw",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-02T16:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" />AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-02T16:00:00",
+   "importance": 0.0
+  },
+  {
+   "title": "Show HN: Piqc – GPU waste scanner for LLM inference clusters",
+   "url": "https://github.com/paralleliq/piqc",
+   "source": "hackernews",
+   "published_date": "2026-06-02T15:10:41",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-02T15:10:41",
+   "importance": 0.3,
+   "why": "A utility tool for detecting GPU resource waste in LLM inference clusters."
+  },
+  {
+   "title": "Show HN: We built an LLM inference engine in pure Python – no PyTorch, no Triton",
+   "url": "https://github.com/Zyora-Dev/zse/releases/tag/v2.0.0",
+   "source": "hackernews",
+   "published_date": "2026-06-02T14:34:48",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-06-02T14:34:48",
+   "importance": 0.6,
+   "why": "Pure Python inference engine implementation bypassing heavy C++ frameworks for lightweight execution."
+  },
+  {
+   "title": "Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+   "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+   "source": "hackernews",
+   "published_date": "2026-06-02T14:01:36",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "first_seen": "2026-06-02T14:01:36",
+   "importance": 0.4,
+   "why": "Releases a new 12B Mixture-of-Experts language model by JetBrains."
+  },
   {
    "title": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
    "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
