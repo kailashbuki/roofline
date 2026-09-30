@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T16:41:15Z",
- "previous_generated_at": "2026-09-30T10:56:01Z",
+ "generated_at": "2026-09-30T21:13:54Z",
+ "previous_generated_at": "2026-09-30T16:41:15Z",
  "hot_days": 120,
- "count": 1228,
- "total_collected": 1274,
+ "count": 1230,
+ "total_collected": 1290,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+   "url": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-09-30T20:54:59",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/recsys-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"RecSys - Promo - Recsys Summit 2023 - 2912182\" width=\"768\" />Generative recommender (GR) systems are emerging as a powerful new direction for large-scale personalization. Instead of treating recommendation as a set of...",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T21:13:42",
+   "importance": 0.45,
+   "why": "Integrates HSTU generative recommenders into Dynamo-Triton to accelerate large-scale recommendation inference pipelines."
+  },
+  {
+   "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
+   "url": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-09-30T19:13:02",
+   "summary": "<img alt=\"Illustration of a data storage system connected by a glowing green path to rows of servers.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/AI-Storage-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Storage\" width=\"768\" />AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI...",
+   "tags": "systems,hardware",
+   "area": "silicon",
+   "first_seen": "2026-09-30T21:13:42",
+   "importance": 0.4,
+   "why": "Introduces cuObject and SCADA Server SDK to optimize data storage access bottlenecks for AI infrastructure."
+  },
+  {
+   "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+   "url": "https://github.com/magnitudedev/magnitude",
+   "source": "hackernews",
+   "published_date": "2026-09-30T17:37:40",
+   "summary": "94 points, 43 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T21:13:28",
+   "importance": 0.5,
+   "why": "Self-optimizes agent execution paths at inference time using dynamic routing."
+  },
   {
    "title": "Ollama now supports Jev-like decision models all locally in 0.35",
    "url": "https://ollama.com/library/nimble",
@@ -910,6 +946,18 @@
    "why": "It links agent memory evolution to a shared experience bank via two 2B models without updating host parameters."
   },
   {
+   "title": "WISE-ATTA: When to Ask for Labels in Budgeted Active Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2609.37687",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Active test-time adaptation (ATTA) improves robustness under distribution shift by updating a deployed model during inference while selectively querying supervision. However, most existing ATTA methods implicitly assume that supervision can be requested for every incoming test batch, which can incur substantial annotation cost over long test streams. In this work, we introduce budgeted ATTA in which labels are available for only a fraction of test batches. This formulation shifts the central challenge from deciding what to label within a batch to deciding when supervision should be applied over time. To address this challenge, we propose a budget-aware approach WISE-ATTA that allocates supervision over the test stream based on lightweight signals computed online, prioritizing periods where supervision is likely to be most useful. When a batch is selected for supervision, we further employ a drift-based sample selection criterion that targets samples exhibiting ongoing, unconverged adap",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.55,
+   "why": "Introduces budgeted active test-time adaptation to minimize online annotation queries during robust model updates under distribution shifts."
+  },
+  {
    "title": "Anisotropic Representations Improve Planning in JEPA World Models",
    "url": "https://arxiv.org/abs/2609.37441",
    "source": "hf:papers",
@@ -1030,6 +1078,18 @@
    "why": "Renders text as images with adaptive resolution to dynamically trade off token count and legibility for long-context vision-language inputs."
   },
   {
+   "title": "Act First, Reason Later: Accelerating On-Policy Distillation for Multi-Turn Agents via Reference-Conditioned Inverse Dynamics",
+   "url": "https://arxiv.org/abs/2609.36608",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "On-policy distillation (OPD) trains multi-turn language agents with dense teacher supervision on student-generated responses. However, standard think-then-act rollouts require lengthy reasoning before each short action, delaying environment transitions and experience collection. Generating actions directly reduces this delay but can degrade rollout quality. To address this, we propose ActFirst-OPD, an act-first, reason-later training framework that decouples environment interaction from full-response generation. The student infers and executes actions through reference-conditioned inverse dynamics using its current interaction context and a reference next observation, and switches to autonomous next-action prediction when the resulting transition deviates from the reference trajectory. From the collected interaction contexts, the student asynchronously generates full think-then-act responses for token-level teacher supervision. Experiments across 0.6B-, 1.7B-, and 4B-parameter Qwen3 st",
+   "tags": "inference,training,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.65,
+   "why": "Proposes reference-conditioned inverse dynamics to decouple slow reasoning from action rollouts, accelerating multi-turn agent on-policy distillation."
+  },
+  {
    "title": "SAKI: Maximal-Coupling-Routed Teacher Supervision for On-Policy Distillation",
    "url": "https://arxiv.org/abs/2609.36601",
    "source": "hf:papers",
@@ -1052,6 +1112,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.5,
    "why": "Demonstrates that discarding future video denoising in latent world action models retains test-time generalization while accelerating inference."
+  },
+  {
+   "title": "Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning",
+   "url": "https://arxiv.org/abs/2608.19669",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Latent reasoning has advanced multimodal reasoning through a two-stage training paradigm: (1) a helper image is encoded into latent tokens to teach visual chain-of-thought during a supervised fine-tuning (SFT) stage, and (2) these latent tokens are further refined with reward feedback during a reinforcement learning (RL) stage. In this paper, we identify two key limitations of this framework, one in each stage. First, the SFT stage typically relies on an off-the-shelf vision encoder to encode the helper image, yielding suboptimal latent representations that may not be well aligned with the downstream reasoning task. Second, existing RL methods treat the latent component only through deterministic regularization, which constrains policy drift but does not create alternative latent trajectories for exploration. To address these limitations, we propose Scaffolding Minds. Our approach learns a dedicated scaffolding encoder that provides an optimized target in latent space, and learns both ",
+   "tags": "multimodal,training,post-training",
+   "area": "new-models",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.6,
+   "why": "Optimizes latent visual target representations during SFT and RL to eliminate bottlenecks in multimodal reasoning chains."
   },
   {
    "title": "How GLM5.3 Sparse Attention Affects HBM Memory Usage",
@@ -1810,6 +1882,42 @@
    "why": "It introduces power management strategies to optimize datacenter utilization and reduce wasted capacity in AI factories."
   },
   {
+   "title": "StructRL: Online Structured Reinforcement Learning for Long-Horizon Vision-Language-Action Tasks",
+   "url": "https://arxiv.org/abs/2609.36352",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Vision-language-action (VLA) models perform well on shorter-horizon manipulation tasks but still struggle with long-horizon tasks that require multiple dependent manipulations from a single command. Online reinforcement learning (RL) can improve these policies through environment interaction, yet many existing methods provide reward only after the complete task succeeds. However, such terminal supervision is sparse and does not distinguish early failures from rollouts that make substantial partial progress. We propose StructRL, an online RL framework that constructs structured intermediate supervision from verifiable subtask completions. StructRL decomposes each task into verifiable subtasks, grants intermediate rewards only after the prerequisite subtasks have been completed, and scales each reward according to completion pace. Across RoboCasa365 and LIBERO-Long with GR00T-N1.5 and pi 0.5, StructRL consistently outperforms evaluated online RL baselines. These results show that verifia",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.65,
+   "why": "Applies online structured reinforcement learning with intermediate supervision signals to solve long-horizon vision-language-action manipulation tasks."
+  },
+  {
+   "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+   "url": "https://arxiv.org/abs/2609.36322",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Chunked KV-cache compression reduces the memory and attention costs of long-context inference by compressing windows of consecutive tokens into fewer cache entries at a fixed stride. Such compression also introduces a new positional coordinate: a token's phase, or its position relative to compression-window boundaries. We uncover a systematic asymmetry in models using such compression: the same information can be easy to retrieve at one phase and difficult at another. We call this periodic variation in retrieval performance phase sensitivity. In large open-weight models with such compression, long-context retrieval accuracy can differ by up to 40 percentage points across phases, revealing periodic weak spots that average benchmark scores can conceal.\n  To investigate this behavior, we pretrain a family of transformers from scratch across multiple KV-compression designs, reproducing phase sensitivity across the variants. Mechanistic analysis using causal interventions in these models re",
+   "tags": "inference,compression,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.6,
+   "why": "Uncovers positional phase sensitivity introduced by chunked KV-cache compression, exposing systematic accuracy asymmetries near window boundaries."
+  },
+  {
+   "title": "Fractional State Space Transition for Long Sequence Modeling",
+   "url": "https://arxiv.org/abs/2609.36314",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "State Space Models (SSMs) compress sequence history into a bounded recurrent state, making the resulting memory law a central architectural choice for long-context performance. Most modern SSMs rely on ODE-based dynamics that lead to exponential forgetting, limiting their ability to retain information over broad temporal ranges. We introduce FRAC, a selective SSM architecture derived from fractional dynamics that replaces this exponential decay with power-law long memory. To make fractional dynamics practical, FRAC approximates the heavy-tailed target kernel with a finite-state, log-spaced sum of exponential modes. This construction turns fractional memory into an efficient recurrent module with parallel training and prefill, while retaining bounded-state autoregressive decoding. Extensive experiments, including 1.3B-parameter language modeling, demonstrate that FRAC consistently improves long-context performance over state-of-the-art SSM baselines while staying competitive on short-co",
+   "tags": "architecture,attention",
+   "area": "architecture",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.65,
+   "why": "FRAC replaces standard ODE-based SSM dynamics with fractional state space transitions to mitigate exponential forgetting across long sequences."
+  },
+  {
    "title": "Learning from Teacher Continuations at Student States",
    "url": "https://arxiv.org/abs/2609.36246",
    "source": "hf:papers",
@@ -1820,6 +1928,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.5,
    "why": "Combines student-generated prefixes with autoregressive teacher continuations to mitigate sequential covariate shift in online distillation."
+  },
+  {
+   "title": "Principled Thoughts for Latent Recursive LLM Systems",
+   "url": "https://arxiv.org/abs/2609.36159",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Large language models can reason in continuous space instead of decoded text, by recurring on their own hidden states or by passing those states between agents, while training supervises only the Cross-Entropy (CE) of the final decoded answer and does not constrain the thought. Theoretical and empirical analyses establish and confirm four failures of CE-only training that lead to a lower probability of the correct answer such as collapsing thoughts across distinct questions and retaining irrelevant information. We introduce REST (REpresentation-Supervised Thoughts), a training objective that turns four properties of a valid thought representation (causality, minimality, separability, and stability) into differentiable losses added to CE. We instantiate it in latent single-agent and multi-agent systems, without architectural changes or added parameters at inference. Across 7 benchmarks spanning mathematics, science, medicine, and code generation, with the same training data, compute, an",
+   "tags": "architecture,training,llm",
+   "area": "architecture",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.7,
+   "why": "Identifies four mathematical failures of cross-entropy-only training in latent recursive LLM systems and constrains continuous internal thought states."
   },
   {
    "title": "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion",
@@ -1844,6 +1964,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.7,
    "why": "Reuses historical self-generated rollouts via selective supervision to mine forgotten behaviors without policy drift."
+  },
+  {
+   "title": "Same Bytes, Different Authority: Reserved-Token Representations in Chat-Template Prompt Injection",
+   "url": "https://arxiv.org/abs/2609.35932",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Prompt injection against LLM agents becomes much stronger when the injected instruction is wrapped in the model's own chat template. A forged template marker such as <|im_start|> can reach the model either as a single reserved control token or as a sequence of ordinary subword tokens. The two decode to exactly the same text, and because tokenization runs on the server, the defender rather than the attacker decides which one the model receives. We use this to measure how much of the injected instruction's authority comes from the reserved token's learned representation. Encoding the forged markers as subwords, with the text held fixed and a control for the extra tokens this adds, lowers attack success on the InjecAgent benchmark by 39 to 66 percentage points on three of four open-weight families, and the gap carries over to multi-turn agent tasks in AgentDojo. On Qwen3-8B the gap is 8 points, because without reserved ids the model still recognises the forged turn from its text by reason",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.65,
+   "why": "Demonstrates that chat-template prompt injection vulnerability depends critically on whether markers are tokenized as single reserved tokens or subwords."
   },
   {
    "title": "Improving Test-Time Scaling with Adaptive Looped Transformers",
@@ -1916,6 +2048,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.7,
    "why": "Separates basis transformation from structured truncation to achieve extreme visual token compression without breaking grounding."
+  },
+  {
+   "title": "Understanding On-Policy Distillation: A Mechanistic Interpretability Perspective via Sparse Crosscoders",
+   "url": "https://arxiv.org/abs/2609.35210",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "On-policy distillation (OPD) is a widely adopted post-training technique for LLM reasoning. It is commonly believed to transfer knowledge from a stronger teacher, yet what OPD actually distills into the student's internal representations remains unclear. We study this question with sparse crosscoders, which learn one feature dictionary shared by the student before and after OPD and the teacher. Standard crosscoder analyses, however, identify model-specific features but cannot tell how a model's use of its features changes, since all models are encoded into one set of feature activations. We therefore propose the swap readout, which reads each student checkpoint's feature activations on its own, measuring how training changes the student's use of each feature, even for checkpoints unseen by the crosscoder. Across three OPD settings, we find that OPD neither creates features nor passes on the teacher's own, and leaves the firing rates of over 98% of the student's frequently used features",
+   "tags": "post-training,training,llm",
+   "area": "training",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.7,
+   "why": "Uses sparse crosscoders to reveal the specific internal feature representations transferred into student models during on-policy distillation."
   },
   {
    "title": "RenderRank: Learning to Rerank Text with Compressed Visual Tokens",
@@ -2012,6 +2156,18 @@
    "first_seen": "2026-09-30T16:40:04",
    "importance": 0.5,
    "why": "Combines task scheduling, cyclical training, and subspace protection to merge multiple teacher policies without catastrophic forgetting during multi-teacher distillation."
+  },
+  {
+   "title": "Preference-Guided Adaptation for Open-Vocabulary Semantic Segmentation via Prompt Disagreement",
+   "url": "https://arxiv.org/abs/2609.34528",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Open-vocabulary semantic segmentation (OVSS) enables pixel-level prediction over arbitrary text-specified vocabularies and has shown strong generalization on common benchmarks. However, OVSS performance often degrades in specialized domains such as medical imaging, remote sensing, and industrial inspection, where dense pixel-level masks for adaptation are costly to obtain and require domain-specific expertise. We propose a preference-guided adaptation framework that replaces dense mask supervision with binary preferences. We observe that different prompt templates produce systematically different segmentations for the same image, a phenomenon we call prompt disagreement, and we repurpose it as a built-in source of preference supervision. Building on this, we mine localized preference queries from regions of high cross-template uncertainty, and adapt the OVSS model with Region-Localized Preference Optimization (RLPO) together with consistency regularization that stabilizes updates outsi",
+   "tags": "post-training,multimodal",
+   "area": "training",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.55,
+   "why": "Utilizes prompt disagreement and preference-guided adaptation to bypass costly dense pixel-level masks in specialized domain open-vocabulary segmentation."
   },
   {
    "title": "Precise Editing and Flexible Referencing for Interactable Worlds",
@@ -2156,6 +2312,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.5,
    "why": "It constructs synthetic in-context learning data from perturbed public web documents to improve non-parametric adaptation."
+  },
+  {
+   "title": "Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss",
+   "url": "https://arxiv.org/abs/2609.33620",
+   "source": "hf:papers",
+   "published_date": "2026-09-27T00:00:00",
+   "summary": "Modern language models are likely to be updated throughout their lifetime rather than trained once and frozen. Each update therefore participates in a recurring cycle: decide which experience to learn from, understand what that update changes, and remain capable of learning from what comes next. We show that these challenges are governed by the same evolving update--behavior interaction. We derive a token- and layer-wise decomposition of how learning from one token changes another prediction. By separating the softmax force, shared readout geometry, and residual connections, it exposes two interaction channels and yields a forward-computable approximation. Following this interaction through time reveals a unified picture of continual adaptation. Positive interaction identifies useful experience; negative interaction produces either concentrated collision or accumulated erosion; over longer horizons, updates reshape the shared geometry mediating future learning signals, reducing their t",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.65,
+   "why": "Derives a unified view of continual model updates connecting data attribution, catastrophic forgetting, and plasticity loss."
   },
   {
    "title": "Pretraining Transformers with Quantized Softmax in Attention",
@@ -2336,6 +2504,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.8,
    "why": "It replaces standard matrix multiplication with an associative algebra construction, achieving quadratic projection sparsity."
+  },
+  {
+   "title": "Scaling Properties of Same-Family On-Policy Distillation",
+   "url": "https://arxiv.org/abs/2609.32722",
+   "source": "hf:papers",
+   "published_date": "2026-09-26T00:00:00",
+   "summary": "*Reinforcement learning (RL)* can induce substantial reasoning capabilities in large language models (LLMs), but how much of this capability transfers across model scales, and how quickly, remains unclear. We study the scaling properties of *on-policy distillation (OPD)* across *weak-to-strong*, *same-base*, and *strong-to-weak* teacher--student setups. We find that early OPD training dynamics uniformly exhibit a regular *useful-transfer* regime, in which held-out accuracy (the *gold score*, G) rises approximately linearly in d=mathrm{KL(π_θVert π_{ref})}, the square root of token-level reverse KL divergence from the student initialization. In every observed weak-to-strong pair, the student's peak gold score exceeds its teacher's own, so a compact RL expert can transfer capability to a much larger student via OPD. To estimate OPD outcomes, we fit *power laws* for how G_{peak} and the slope of the useful-transfer regime scale with student and teacher parameter counts and with teacher go",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-09-30T21:13:06",
+   "importance": 0.7,
+   "why": "Quantifies scaling properties and early training dynamics of on-policy distillation across weak-to-strong and same-base teacher-student setups."
   },
   {
    "title": "MassAlloc Attention: Let Attention Allocate Its Own Compute",
@@ -2720,6 +2900,18 @@
    "first_seen": "2026-09-28T11:28:05",
    "importance": 0.6,
    "why": "Evaluates accuracy-energy trade-offs for small local models processing privacy-sensitive document pipelines."
+  },
+  {
+   "title": "Show HN: Llama.cpp fork with 2-4x multiGPU speed for MoE models bigger than VRAM",
+   "url": "https://github.com/neurall/llama.cpp",
+   "source": "hackernews",
+   "published_date": "2026-09-25T14:40:12",
+   "summary": "2 points, 3 comments on HackerNews",
+   "tags": "inference,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-09-30T21:13:28",
+   "importance": 0.55,
+   "why": "A custom Llama.cpp fork achieves multi-GPU acceleration for MoE models exceeding VRAM capacity."
   },
   {
    "title": "Benchmarking Attention for Tabular Foundation Models",
@@ -14464,170 +14656,6 @@
    "first_seen": "2026-06-03T05:36:09",
    "importance": 0.5,
    "why": "Explores ultra-fast inference performance claims enabled by new generation silicon architectures."
-  },
-  {
-   "title": "Build Personal AI Agents on Windows PCs with New Tools from Microsoft and NVIDIA",
-   "url": "https://developer.nvidia.com/blog/build-personal-ai-agents-on-windows-pcs-with-new-tools-from-microsoft-and-nvidia",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-02T19:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-hardware-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-hardware\" width=\"768\" />AI agents are changing how you interact with your PC. Creators, developers, and AI enthusiasts are already using these agents extensively to assist with...",
-   "tags": "inference,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-02T19:00:00",
-   "importance": 0.3,
-   "why": "Integration tools for deploying client-side personal AI agents on consumer PC hardware."
-  },
-  {
-   "title": "Yoctosecond imaging of the ground state of $^{129}$Xe at the Large Hadron Collider",
-   "url": "https://arxiv.org/abs/2606.03993",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:59:59",
-   "summary": "Imaging a quantum many-body system requires probes that resolve the coordinates of its constituents in sufficiently large event samples, allowing measurements of correlation functions [1-4]. High-energy nuclear collisions provide this opportunity on the nuclear scale [5], enabling features of colliding ions, such as their deformation, to be probed through particle correlation observables [6, 7]. However, a quantitative extraction of the correlation properties of nuclei from these measurements is still lacking. Here we show that this is possible for the nucleus $^{129}$Xe using Bayesian inferen",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-02T17:59:59",
-   "importance": 0.0
-  },
-  {
-   "title": "PixVOD: Pixel-Distributed Direct Visual Odometry and Depth Estimation",
-   "url": "https://arxiv.org/abs/2606.03989",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:59:22",
-   "summary": "Images composed of 2D pixel arrays are the standard input to computer vision algorithms, yet many underlying computations can be distributed across pixels. Transmitting raw, redundant, and noisy pixel data off the sensor remains inefficient, motivating a shift toward focal-plane sensor-processors that perform a significant part of the computation directly within each pixel. We envision pixels synthesizing higher-level signals locally, reducing downstream load, and providing richer inputs for higher-level vision tasks.\n  We propose a fully parallelizable form of visual odometry and depth estima",
-   "tags": "hardware,architecture",
-   "area": "silicon",
-   "first_seen": "2026-06-02T17:59:22",
-   "importance": 0.65,
-   "why": "It replaces off-sensor data transmission with in-pixel processing architectures for visual odometry."
-  },
-  {
-   "title": "Video-Mirai: Autoregressive Video Diffusion Models Need Foresight",
-   "url": "https://arxiv.org/abs/2606.03971",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:55:13",
-   "summary": "Causal video generators must predict from the past, but they need not learn only from it. In streaming autoregressive video diffusion, each emitted segment becomes a commitment that future segments must preserve. Standard training, however, only asks each causal state to explain the present. This creates what we call a representation-level planning gap: states that fit the current segment may discard identity, layout, and motion information needed for a consistent future. We introduce Video-Mirai, a training-only method that closes this gap without changing causal inference: the generator roll",
-   "tags": "architecture,training",
-   "area": "architecture",
-   "first_seen": "2026-06-02T17:55:13",
-   "importance": 0.65,
-   "why": "Introduces foresight training to mitigate representation-level planning gaps in streaming autoregressive video diffusion models."
-  },
-  {
-   "title": "AlignAtt4LLM: Fast AlignAtt for Decoder-Only LLMs at IWSLT 2026 Simultaneous Speech Translation Task",
-   "url": "https://arxiv.org/abs/2606.03967",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:52:18",
-   "summary": "We describe AlignAtt4LLM, an IWSLT 2026 simultaneous speech translation system for English to German, Italian, and Chinese. The system is a synchronous cascade: Qwen3-ASR with forced alignment produces an incrementally updated source transcript, and Gemma-4 E4B-it translates that prefix under an MT-side AlignAtt policy.\n  To our knowledge, this is the first application of AlignAtt to a decoder-only LLM, where the encoder-decoder cross-attention used by earlier AlignAtt systems is absent. We recover a usable policy by proposing (1) an explicit source span in the prompt, (2) offline selection of",
-   "tags": "inference,attention,llm",
-   "area": "inference-methods",
-   "first_seen": "2026-06-02T17:52:18",
-   "importance": 0.5,
-   "why": "Applies AlignAtt to decoder-only LLMs for synchronous simultaneous speech translation cascades."
-  },
-  {
-   "title": "Agentic Chain-of-Thought Steering for Efficient and Controllable LLM Reasoning",
-   "url": "https://arxiv.org/abs/2606.03965",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:51:30",
-   "summary": "Large language models improve final-answer accuracy through extended chain-of-thought reasoning, but often spend tokens inefficiently and offer little inference-time control. Existing efficient reasoning methods control thinking length by shortening, early-stopping, or compressing traces, leaving how the model thinks implicit. In this paper, we propose Agentic Chain-of-Thought Steering (ACTS), which formulates reasoning steering as a Markov decision process where a controller agent adaptively steers a frozen reasoner during inference. At each step, the controller observes the reasoning trace a",
-   "tags": "inference,optimization,llm",
-   "area": "inference-methods",
-   "first_seen": "2026-06-02T17:51:30",
-   "importance": 0.7,
-   "why": "Proposes Agentic Chain-of-Thought Steering to control reasoning traces and improve token efficiency during inference."
-  },
-  {
-   "title": "Self-Refining Agentic Reinforcement Learning for Vision-Conditioned UAV Navigation",
-   "url": "https://arxiv.org/abs/2606.03963",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:50:15",
-   "summary": "Deep reinforcement learning has shown strong potential for enabling autonomous robots to learn complex navigational tasks. However, its practical use still depends heavily on human designed reward functions and repeated manual fine tuning, which is time consuming and does not guarantee high success in the desired task. This paper presents AgenticRL, agent guided reinforcement learning framework that increases autonomy in reward design, policy refinement, and real world deployment for unmanned aerial vehicles (UAV) navigation tasks. AgenticRL uses a multimodal generative pre-trained tansformer ",
-   "tags": "training",
-   "area": "training",
-   "first_seen": "2026-06-02T17:50:15",
-   "importance": 0.55,
-   "why": "Presents AgenticRL, an agent-guided reinforcement learning framework to automate reward design for UAV navigation."
-  },
-  {
-   "title": "A Neural Estimation Framework for Aggregated Relational Data under Intractable Likelihoods",
-   "url": "https://arxiv.org/abs/2606.03961",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:49:58",
-   "summary": "Aggregated relational data (ARD) consists of survey responses to questions of the form ``how many people do you know who~$X$?'' and is widely used in survey statistics for indirect inference about populations and social networks. The dominant ARD inference target is hidden-population size estimation via the Network Scale-Up Method (NSUM), but ARD is also used for personal-network-size estimation, mixing-pattern recovery, and inference about latent network structure. Bayesian inference for ARD almost universally assumes that, conditional on a respondent's degree, the counts reported for differe",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-02T17:49:58",
-   "importance": 0.0
-  },
-  {
-   "title": "Introduction to stochastic gradient methods",
-   "url": "https://arxiv.org/abs/2606.03953",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:40:46",
-   "summary": "These lecture notes provide an introduction to first-order optimization methods with a particular emphasis on stochastic gradient methods. We begin with deterministic gradient based methods for unconstrained optimization and study their convergence under standard assumptions such as smoothness, convexity, strong convexity, and the Polyak-Lojasiewicz condition. We then turn to stochastic approximation and stochastic gradient descent, motivated by empirical and expected risk minimization in machine learning. The main focus is on convergence theory: we discuss almost sure convergence and converge",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-02T17:40:46",
-   "importance": 0.0
-  },
-  {
-   "title": "q0: Primitives for Hyper-Epoch Pretraining",
-   "url": "https://arxiv.org/abs/2606.03938",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:27:48",
-   "summary": "Multi-epoch training is becoming the standard now that compute is growing faster than the supply of high-quality text. But pretraining a single model saturates within a few passes, long before the compute budget is exhausted. We argue this calls for a conceptual shift from training a single model toward exploring a population of models and aggregating their predictions. We introduce hyper-epoch pretraining (q0), which turns a multi-epoch budget into a population of diverse models whose combined predictions reach a lower validation loss than a single refined model. q0 reduces to three core prim",
-   "tags": "training,optimization,llm",
-   "area": "training",
-   "first_seen": "2026-06-02T17:27:48",
-   "importance": 0.75,
-   "why": "Proposes hyper-epoch pretraining primitives to explore model populations and overcome single-model multi-epoch saturation."
-  },
-  {
-   "title": "Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection",
-   "url": "https://arxiv.org/abs/2606.03937",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:26:55",
-   "summary": "While token-level entropy is commonly recognized as effective for credit assignment in text-only reinforcement learning with verifiable rewards (RLVR), it remains unclear whether this mechanism still holds in visual reasoning. Our controlled study shows that this mechanism collapses in visual reasoning due to the omission of vision-sensitive tokens with naturally low entropy. Although existing multimodal RL methods increasingly acknowledge the importance of visual perception, they struggle to satisfy the inherent demand for interleaving precise perceptual grounding with semantic reasoning, eit",
-   "tags": "training,multimodal,llm",
-   "area": "training",
-   "first_seen": "2026-06-02T17:26:55",
-   "importance": 0.65,
-   "why": "Introduces vision-anchored token selection to fix reinforcement learning credit assignment failure in visual reasoning."
-  },
-  {
-   "title": "Spectral Handling and Estimation of AGN Parameters (SHEAP), The first AGN fitting GPU-based code",
-   "url": "https://arxiv.org/abs/2606.03934",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:25:53",
-   "summary": "In the coming years, the number of discovered active galactic nuclei (AGN) is expected to increase significantly due to upcoming spectroscopic surveys. This growth will challenge current analysis and modeling techniques, requiring scalable methods for large, heterogeneous datasets with diverse signal-to-noise ratios, spectral resolutions, and host-galaxy contamination. We present SHEAP (Spectral Handling and Estimation of AGN Parameters), a spectral-fitting framework designed to analyze large AGN samples efficiently while preserving physical interpretability, reproducibility, and robust uncert",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-02T17:25:53",
-   "importance": 0.0
-  },
-  {
-   "title": "Value-Aware Stochastic KV Cache Eviction for Reasoning Models",
-   "url": "https://arxiv.org/abs/2606.03928",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:16:33",
-   "summary": "Reasoning models improve accuracy through extended chains of thought, but their long outputs create a memory and compute bottleneck. KV cache eviction methods reduce this cost by evicting unimportant key-value pairs from the cache, yet they often yield worse accuracy than selection-based sparse attention alternatives, which keep the full KV cache. We identify key factors crucial to KV cache eviction accuracy. First, a small fraction of value states have abnormally large magnitudes, and evicting them causes catastrophic failure where models enter repetitive reasoning loops. Second, introducing ",
-   "tags": "inference,optimization,attention,llm",
-   "area": "inference-methods",
-   "first_seen": "2026-06-02T17:16:33",
-   "importance": 0.7,
-   "why": "Proposes value-aware stochastic KV cache eviction tailored specifically for long-output reasoning models."
-  },
-  {
-   "title": "FFR: Forward-Forward Learning for Regression",
-   "url": "https://arxiv.org/abs/2606.03927",
-   "source": "arxiv",
-   "published_date": "2026-06-02T17:15:59",
-   "summary": "The Forward-Forward (FF) algorithm offers a computationally efficient and biologically plausible alternative to backpropagation (BP) by training neural networks through purely local, layer-wise optimization. However, FF is inherently designed for classification via contrastive positive-negative sample pairs, and extending it to regression poses fundamental challenges: continuous target space lack natural \"opposites\" for contrastive learning, and the standard goodness function carries no information about target magnitude or ordering. We propose FFR (Forward-Forward for Regression), to our know",
-   "tags": "architecture,training",
-   "area": "training",
-   "first_seen": "2026-06-02T17:15:59",
-   "importance": 0.6,
-   "why": "Extends the Forward-Forward algorithm from classification to regression tasks using continuous target spaces."
   }
  ]
 }

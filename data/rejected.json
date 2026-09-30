@@ -1,5 +1,5 @@
 {
- "count": 771,
+ "count": 785,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -771,6 +771,20 @@
   "https://huggingface.co/blog/open-tts-leaderboard",
   "https://openai.com/index/helping-small-businesses-put-ai-to-work",
   "https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay",
-  "https://www.anthropic.com/research/what-work-can-robots-do"
+  "https://www.anthropic.com/research/what-work-can-robots-do",
+  "https://arxiv.org/abs/2609.34392",
+  "https://arxiv.org/abs/2609.36730",
+  "https://arxiv.org/abs/2609.34962",
+  "https://arxiv.org/abs/2609.34518",
+  "https://arxiv.org/abs/2609.35342",
+  "https://arxiv.org/abs/2609.35845",
+  "https://arxiv.org/abs/2609.35514",
+  "https://arxiv.org/abs/2609.31957",
+  "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+  "https://arxiv.org/abs/2603.15569",
+  "https://openreview.net/forum?id=HwCvaJOiCj",
+  "https://arxiv.org/abs/2406.07522",
+  "https://huggingface.co/AgentBull/bongard-mini",
+  "https://pytorch.org/blog/a-ray-focused-guide-to-pytorch-conference-north-america"
  ]
 }
