@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 31,
+ "count": 33,
  "articles": [
+  {
+   "title": "To Boldly Go: The Case for Space Datacenters",
+   "url": "https://newsletter.semianalysis.com/p/to-boldly-go-the-case-for-space-datacenters",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-03T13:07:46",
+   "summary": "Orbital Compute Model Launch",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-03T13:07:46",
+   "importance": 0.2,
+   "why": "This conceptual article examines the feasibility and architectural constraints of orbital space data centers."
+  },
+  {
+   "title": "Direct Preference Optimization Beyond Chatbots",
+   "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-06-03T12:55:11",
+   "summary": "",
+   "tags": "post-training,training,llm",
+   "area": "training",
+   "first_seen": "2026-06-03T12:55:11",
+   "importance": 0.5,
+   "why": "Discusses applications and extensions of Direct Preference Optimization outside conversational agents."
+  },
   {
    "title": "The Amendments Were Whispered",
    "url": "https://www.airealist.ai/p/the-amendments-were-whispered",

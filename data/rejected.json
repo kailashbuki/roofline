@@ -1,5 +1,5 @@
 {
- "count": 856,
+ "count": 884,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -856,6 +856,34 @@
   "https://vivekkairi.com/fine-tuning-stt-models-to-my-speech-part-2",
   "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages",
   "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
-  "https://www.latent.space/p/devday-2026"
+  "https://www.latent.space/p/devday-2026",
+  "https://arxiv.org/abs/2609.32720",
+  "https://arxiv.org/abs/2609.34274",
+  "https://arxiv.org/abs/2609.39154",
+  "https://arxiv.org/abs/2609.38349",
+  "https://arxiv.org/abs/2609.34736",
+  "https://arxiv.org/abs/2609.38716",
+  "https://arxiv.org/abs/2609.38653",
+  "https://arxiv.org/abs/2609.34276",
+  "https://arxiv.org/abs/2609.37539",
+  "https://arxiv.org/abs/2609.32600",
+  "https://arxiv.org/abs/2609.39166",
+  "https://arxiv.org/abs/2609.36931",
+  "https://arxiv.org/abs/2609.36308",
+  "https://arxiv.org/abs/2609.38822",
+  "https://arxiv.org/abs/2609.38807",
+  "https://arxiv.org/abs/2609.40048",
+  "https://arxiv.org/abs/2605.22493",
+  "https://arxiv.org/abs/2609.34970",
+  "https://github.com/sriti-ai/sriti-core",
+  "https://arxiv.org/abs/2404.08819",
+  "https://leloykun.github.io/ponder/blockmat-linear-attn",
+  "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web",
+  "https://openai.com/index/the-eternal-complement",
+  "https://openai.com/index/albertsons-reimagining-retail",
+  "https://openai.com/index/the-den-family-social",
+  "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills",
+  "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples",
+  "https://www.anthropic.com/research/claude-shaped-science"
  ]
 }

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T11:26:19Z",
- "previous_generated_at": "2026-09-30T21:13:54Z",
+ "generated_at": "2026-10-01T21:35:04Z",
+ "previous_generated_at": "2026-10-01T11:26:19Z",
  "hot_days": 120,
- "count": 1295,
- "total_collected": 1357,
+ "count": 1301,
+ "total_collected": 1365,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Clef: Open-source decision models, and new RL fine-tuning platform",
+   "url": "https://blog.cloudflare.com/clef-decision-models",
+   "source": "hackernews",
+   "published_date": "2026-10-01T16:18:57",
+   "summary": "348 points, 134 comments on HackerNews",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-01T21:34:34",
+   "importance": 0.5,
+   "why": "Releases open decision-making model weights paired with a dedicated reinforcement learning fine-tuning framework."
+  },
+  {
+   "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+   "url": "https://huggingface.co/blog/allenai/olmocore3",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-01T15:01:43",
+   "summary": "",
+   "tags": "training,systems,llm",
+   "area": "training",
+   "first_seen": "2026-10-01T21:34:37",
+   "importance": 0.75,
+   "why": "Provides fully open distributed training primitives specifically optimized for scaling mixture-of-experts models."
+  },
+  {
+   "title": "Why Memory Prices Are Crazy High: How HBM Memory Is Made [video]",
+   "url": "https://www.youtube.com/watch?v=p8UurM1wvvM",
+   "source": "hackernews",
+   "published_date": "2026-10-01T13:38:42",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-01T21:34:34",
+   "importance": 0.6,
+   "why": "Details the physical manufacturing bottlenecks and cleanroom constraints driving High Bandwidth Memory pricing."
+  },
   {
    "title": "HBM: High-Bandwidth Mistake",
    "url": "https://irrationalanalysis.substack.com/p/hbm-high-bandwidth-mistake",
@@ -1546,6 +1582,30 @@
    "why": "Drops inference pricing to twenty percent of prior generations, expanding cost-constrained deployment feasibility."
   },
   {
+   "title": "Tacit-TTS: From Autoregressive Decoding to Masked Prediction for Efficient Transcript-Free Voice Cloning",
+   "url": "https://arxiv.org/abs/2609.38658",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "TTS systems with autoregressive semantic modeling have demonstrated strong zero-shot voice cloning performance and rich expressive variation, but their sequential decoding incurs substantial latency. Non-autoregressive alternatives offer much faster generation, yet often rely on more restrictive reference conditioning, such as requiring transcripts of the reference speech during inference. We present Tacit-TTS, an efficient transcript-free zero-shot voice cloning system distilled from IndexTTS2. Our model replaces autoregressive text-to-semantic decoding with masked non-autoregressive generation, introduces training-free acoustic length estimation, and accelerates the flow-matching renderer through ReFlow distillation. Across two English and two Mandarin datasets, Tacit-TTS achieves competitive zero-shot quality while generating speech over 10x faster than IndexTTS2 for utterances longer than 5 seconds. Its transcript-free conditioning further supports cross-lingual and non-lexical ref",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-01T21:34:15",
+   "importance": 0.4,
+   "why": "Replaces autoregressive decoding with masked prediction to eliminate reference transcript dependencies in voice cloning."
+  },
+  {
+   "title": "LoopVL: Recurrent Visual Intelligence",
+   "url": "https://arxiv.org/abs/2609.38426",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "We introduce LoopVL to study whether Loop Transformers can be effectively extended to vision- language models. LoopVL combines Module-Loop and Model-Loop computation to iteratively update a unified vision-language state through shared modules. We train LoopVL from scratch through language pre-training, multimodal training, and post-training. LoopVL outperforms a range of similarly sized and larger non-recurrent models on multimodal understanding and visual reasoning benchmarks. We also observe Visual Aha Moments in LoopVL, characterized by pronounced shifts in visual attention across loops. LoopVL provides practical evidence for recurrent vision-language modeling and offers an intuitive perspective on how shared parameters can support deeper multimodal computation over continuously evolving visual-language states.",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-01T21:34:15",
+   "importance": 0.55,
+   "why": "Combines Module-Loop and Model-Loop shared computations to iteratively update a unified multimodal state."
+  },
+  {
    "title": "On the Off-Policy Teacher in On-Policy Distillation",
    "url": "https://arxiv.org/abs/2609.38360",
    "source": "hf:papers",
@@ -2926,6 +2986,30 @@
    "why": "Combines task scheduling, cyclical training, and subspace protection to merge multiple teacher policies without catastrophic forgetting during multi-teacher distillation."
   },
   {
+   "title": "The Low-Rank Structure of VLA Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2609.34599",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Reinforcement learning (RL) is increasingly used to post-train vision-language-action (VLA) models, yet how RL reshapes these policies remains poorly understood. We find that RL across widely used flow-based VLA models, including π_{0.5} and GR00T~N1.5/N1.6, on LIBERO, ManiSkill, MetaWorld, and CALVIN induces substantially lower-rank parameter updates that are highly concentrated in the action expert's Timestep Modules, a small and previously overlooked component. Through systematic module-replacement experiments, we further show that these modules capture a disproportionate share of the performance gains from RL. We then characterize what is encoded in these Timestep Modules. First, we show that RL specializes them to the discrete denoising timesteps used during rollouts, and that this discrete-timestep training underlies the low-rank updates. Second, we find that among their outputs, the shift vector changes most distinctly under RL, and through probing, we show that shift update dir",
+   "tags": "training,post-training",
+   "area": "training",
+   "first_seen": "2026-10-01T21:34:15",
+   "importance": 0.45,
+   "why": "Demonstrates that reinforcement learning restricts vision-language-action parameter updates to low-rank manifolds."
+  },
+  {
+   "title": "Rethinking Latent Visual Reasoning: Grounding Latent Reasoning in Visual Evidence",
+   "url": "https://arxiv.org/abs/2609.34563",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Latent visual reasoning (LVR) enables multimodal large language models (MLLMs) to perform intermediate computation in continuous latent tokens rather than expressing every reasoning step in words. However, unlike textual CoT, latent reasoning is not directly observable, making it difficult to supervise what latent tokens learn. In this work, we first conduct a thorough analysis of latent-token behavior and identify a latent evidence-credit gap: latent tokens respond only weakly to image perturbations that alter the correct answer. We hypothesize that this issue stems from the lack of explicit supervision during GRPO training. These findings suggest that a final-answer reward provides too little guidance on what visual evidence to preserve or how credit should be assigned across latent tokens. To bridge this gap, we propose ReaLVR, which brings visual-evidence supervision to the model's own free-running latent trajectories. ReaLVR contrasts correct and model-generated wrong answers to d",
+   "tags": "multimodal,architecture",
+   "area": "architecture",
+   "first_seen": "2026-10-01T21:34:15",
+   "importance": 0.45,
+   "why": "Supervises continuous latent tokens against direct visual evidence to ground non-verbal intermediate computations."
+  },
+  {
    "title": "Preference-Guided Adaptation for Open-Vocabulary Semantic Segmentation via Prompt Disagreement",
    "url": "https://arxiv.org/abs/2609.34528",
    "source": "hf:papers",
@@ -3440,6 +3524,18 @@
    "first_seen": "2026-10-01T11:25:01",
    "importance": 0.5,
    "why": "Uses pretrained model activations and classifiers to rapidly mine mathematical connections, accelerating theorem discovery."
+  },
+  {
+   "title": "Not Every Token Is Worth Distilling: Selective Supervision for Direct-OPD",
+   "url": "https://arxiv.org/abs/2609.29142",
+   "source": "hf:papers",
+   "published_date": "2026-09-26T00:00:00",
+   "summary": "Direct On-Policy Distillation (Direct-OPD) transfers reinforcement-learning-induced policy improvements from a small model to a larger student by using the token-level log-ratio between post-RL and pre-RL checkpoints as dense supervision on the student's own rollouts. This transfer rewards the policy shift at every state, yet the log-ratio measures only relative change: it can stay fixed even as the probability mass that both checkpoints assign to the student's candidate tokens vanishes. Through an exact construction, we show that the Direct-OPD reward and its update can remain unchanged while the Jensen-Shannon divergence (JSD) and both KL directions between the checkpoints vanish with this mass, and we note that a small JSD bounds how much the teacher's behavior changed. Motivated by this analysis, we propose Selective Supervision for Direct-OPD (S^2D-OPD), which ranks student-sampled states by their teacher-reference JSD and masks Direct-OPD supervision at low-divergence states, ret",
+   "tags": "post-training,training,llm",
+   "area": "training",
+   "first_seen": "2026-10-01T21:34:15",
+   "importance": 0.75,
+   "why": "Replaces full-sequence distillation with token-level log-ratio supervision, cutting student training overhead while preserving policy shifts."
   },
   {
    "title": "WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models",
@@ -15413,30 +15509,6 @@
    "first_seen": "2026-06-04T13:02:49",
    "importance": 0.6,
    "why": "Introduces a specialized model architecture optimized for efficient reasoning in long-running agent tasks."
-  },
-  {
-   "title": "To Boldly Go: The Case for Space Datacenters",
-   "url": "https://newsletter.semianalysis.com/p/to-boldly-go-the-case-for-space-datacenters",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-03T13:07:46",
-   "summary": "Orbital Compute Model Launch",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-06-03T13:07:46",
-   "importance": 0.2,
-   "why": "This conceptual article examines the feasibility and architectural constraints of orbital space data centers."
-  },
-  {
-   "title": "Direct Preference Optimization Beyond Chatbots",
-   "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-   "source": "rss:Hugging Face Blog",
-   "published_date": "2026-06-03T12:55:11",
-   "summary": "",
-   "tags": "post-training,training,llm",
-   "area": "training",
-   "first_seen": "2026-06-03T12:55:11",
-   "importance": 0.5,
-   "why": "Discusses applications and extensions of Direct Preference Optimization outside conversational agents."
   }
  ]
 }
