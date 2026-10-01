@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 29,
+ "count": 31,
  "articles": [
+  {
+   "title": "The Amendments Were Whispered",
+   "url": "https://www.airealist.ai/p/the-amendments-were-whispered",
+   "source": "airealist",
+   "published_date": "2026-06-03T06:38:57",
+   "summary": "A deputy in the president's own party admitted who wrote his amendments. The moat just confessed.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-03T06:38:57",
+   "importance": 0.0
+  },
+  {
+   "title": "With Nvidia Groq 3, the Era of AI Inference Is (Probably) Here (⌛ March 2026)",
+   "url": "https://spectrum.ieee.org/nvidia-groq-3",
+   "source": "hackernews",
+   "published_date": "2026-06-03T05:36:09",
+   "summary": "2 points, 4 comments on HackerNews",
+   "tags": "inference,hardware",
+   "area": "inference-methods",
+   "first_seen": "2026-06-03T05:36:09",
+   "importance": 0.5,
+   "why": "Explores ultra-fast inference performance claims enabled by new generation silicon architectures."
+  },
   {
    "title": "Build Personal AI Agents on Windows PCs with New Tools from Microsoft and NVIDIA",
    "url": "https://developer.nvidia.com/blog/build-personal-ai-agents-on-windows-pcs-with-new-tools-from-microsoft-and-nvidia",
