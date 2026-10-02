@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 33,
+ "count": 35,
  "articles": [
+  {
+   "title": "Show HN: I embedded 685M public texts in 32 minutes (on 8x A100, Rust, TensorRT)",
+   "url": "https://github.com/Artain-AI/ignite-ms",
+   "source": "hackernews",
+   "published_date": "2026-06-04T15:23:39",
+   "summary": "7 points, 0 comments on HackerNews",
+   "tags": "inference,optimization,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-04T15:23:39",
+   "importance": 0.4,
+   "why": "Presents a high-performance Rust implementation using TensorRT for rapid text embedding generation."
+  },
+  {
+   "title": "NVIDIA Nemotron 3 Ultra Powers Faster, More Efficient Reasoning for Long-Running Agents",
+   "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-04T13:02:49",
+   "summary": "<img alt=\"Illustration showing Nemtron 3 Ultra.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Nemotron-3-Ultra-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Ultra\" width=\"768\" />Single-turn chatbots are evolving into long-running agents that can reason, maintain context, use tools, and run efficiently across many turns to complete...",
+   "tags": "architecture,llm,inference",
+   "area": "new-models",
+   "first_seen": "2026-06-04T13:02:49",
+   "importance": 0.6,
+   "why": "Introduces a specialized model architecture optimized for efficient reasoning in long-running agent tasks."
+  },
   {
    "title": "To Boldly Go: The Case for Space Datacenters",
    "url": "https://newsletter.semianalysis.com/p/to-boldly-go-the-case-for-space-datacenters",

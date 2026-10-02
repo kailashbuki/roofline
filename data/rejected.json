@@ -1,5 +1,5 @@
 {
- "count": 952,
+ "count": 963,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -952,6 +952,17 @@
   "https://vercel.com/ai-gateway/models/laya",
   "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
   "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc",
-  "https://www.latent.space/p/rlm"
+  "https://www.latent.space/p/rlm",
+  "https://arxiv.org/abs/2606.10953",
+  "https://arxiv.org/abs/2609.33403",
+  "https://arxiv.org/abs/2609.34621",
+  "https://arxiv.org/abs/2610.02122",
+  "https://chromewebstore.google.com/detail/bloby/afmebijmdlfldmndinggmjdjmhjjhhcd",
+  "https://arxiv.org/abs/2411.04996",
+  "https://hacktoberfest.com/mission",
+  "https://huggingface.co/blog/allenai/astabrief",
+  "https://research.google/blog/toward-provably-private-learning-from-federated-data",
+  "https://openai.com/index/practical-guide-building-gpt-6",
+  "https://www.latent.space/p/airbnb"
  ]
 }

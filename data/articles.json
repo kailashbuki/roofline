@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T10:54:55Z",
- "previous_generated_at": "2026-10-01T21:35:04Z",
+ "generated_at": "2026-10-02T16:31:08Z",
+ "previous_generated_at": "2026-10-02T10:54:55Z",
  "hot_days": 120,
- "count": 1387,
- "total_collected": 1451,
+ "count": 1391,
+ "total_collected": 1457,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "New in Llama.cpp: Decision Models",
+   "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
+   "source": "hackernews",
+   "published_date": "2026-10-02T15:06:13",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-02T16:30:28",
+   "importance": 0.5,
+   "why": "Integrates decision models into llama.cpp, enabling local inference routing."
+  },
+  {
+   "title": "Pretraining on 50k Hours of Unlabeled Brain Data",
+   "url": "https://neuralink.com/updates/pretraining-on-50000-hours",
+   "source": "hackernews",
+   "published_date": "2026-10-02T11:03:28",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-10-02T16:30:28",
+   "importance": 0.7,
+   "why": "Pretrains a foundation model directly on raw electrophysiological time-series data, bypassing intermediate feature extraction to learn general neural representations."
+  },
   {
    "title": "Accelerate Frontier Model Inference",
    "url": "https://www.fractile.ai/",
@@ -802,6 +826,18 @@
    "first_seen": "2026-10-02T10:54:08",
    "importance": 0.69,
    "why": "It uses sliding-window slice latents to eliminate voxel token fragmentation and preserve topology in high-resolution 3D generation."
+  },
+  {
+   "title": "Decoding Looped Transformers Better for (Almost) Free",
+   "url": "https://arxiv.org/abs/2610.02185",
+   "source": "hf:papers",
+   "published_date": "2026-10-01T00:00:00",
+   "summary": "Looped Transformers achieve parameter efficiency by repeatedly executing a shared block across recurrent loops. Each loop yields an intermediate representation decodable for the same next token, yet standard decoding discards earlier states. Because earlier loops embody less computation, recurrence inherently supplies aligned weak-and-strong prediction pairs without auxiliary models or external training. We introduce LoopCD, a training-free contrastive decoding framework that guides token selection by contrasting the final prediction with an earlier recurrent pass, operating either in logit space with one extra output pass (LoopCD-Logits) or in hidden-state space with zero output overhead (LoopCD-Hidden). Across four looped Transformer families, LoopCD delivers substantial, consistent gains at full recurrent depth: LoopCD-Logits raises Ouro-2.6B-Thinking's AIME 2024 pass@1 from 61.88% to 73.33%, while LoopCD-Hidden lifts Huginn's HumanEval pass@1 from 22.56% to 31.71%. Crucially, these",
+   "tags": "architecture,inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-02T16:29:57",
+   "importance": 0.75,
+   "why": "Extracts multi-step weak-and-strong prediction pairs from internal looped transformer states without auxiliary models to improve decoding efficiency."
   },
   {
    "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
@@ -1764,6 +1800,18 @@
    "why": "Synthesizes multi-file workspaces anchored on dependency graphs to automatically generate training data for working agents."
   },
   {
+   "title": "Mitigating the Length-Scaling Tax with Online Distillation",
+   "url": "https://arxiv.org/abs/2609.38854",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Length scaling during reinforcement-learning (RL) post-training is often viewed as a sign of improved reasoning ability, especially on difficult problems, but may also make responses to already-solved problems unnecessarily verbose. We quantify this side effect as the length-scaling tax (LST): excess response length on already-solved queries without a commensurate accuracy gain. To mitigate LST, we propose Length Self-Distillation (LSD), which routes solved prompts to on-policy distillation and retains the original RL objective for unsolved prompts. LSD uses an exponential moving average of the online policy as its teacher, requiring no external model. We find that LSD achieves comparable or better performance than RL across multiple variants, while substantially curbing response-length growth on easy queries. LSD reduces LST from 19.0% to -3.7% on single-turn reasoning and from 31.4% to 13.7% on multi-turn agentic tasks, demonstrating that LSD effectively preserves concise response pa",
+   "tags": "post-training,training,llm",
+   "area": "training",
+   "first_seen": "2026-10-02T16:29:57",
+   "importance": 0.75,
+   "why": "Quantifies excess response length during reinforcement learning post-training and applies online distillation to reduce verbosity tax."
+  },
+  {
    "title": "Training LLM Judges from Language Feedback via Position-Selective Self-Distillation",
    "url": "https://arxiv.org/abs/2609.38792",
    "source": "hf:papers",
@@ -2566,6 +2614,18 @@
    "why": "Removes visual encoders for joint video-image understanding and generation via pixel-space modeling."
   },
   {
+   "title": "FlexRouter: Learning Complementary Model Sets for Flexible LLM Routing",
+   "url": "https://arxiv.org/abs/2609.38585",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Existing Large Language Model (LLM) routing methods score LLMs independently to select top-k models. However, this ignores model correlations and enforces a rigid computational budget. Consequently, routers often select redundant models that share failure modes, limiting the overall probability of success. To address this, we propose FlexRouter, a routing framework that explicitly models model complementarity. FlexRouter optimizes for answer coverage, maximizing the probability that at least one selected model yields a correct response. This objective aligns with practical inference pipelines where multiple candidate outputs are generated and a downstream verifier or user selects the final one. We formulate routing as a coverage-oriented subset selection problem and model the routing policy using Determinantal Point Processes (DPPs), which naturally capture both model competence and redundancy. To directly optimize coverage without requiring a ground-truth target subset, we introduce a",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-02T16:29:57",
+   "importance": 0.7,
+   "why": "Replaces independent model scoring with complementary model set routing to remove redundancy under flexible computational budgets."
+  },
+  {
    "title": "LoopVL: Recurrent Visual Intelligence",
    "url": "https://arxiv.org/abs/2609.38426",
    "source": "hf:papers",
@@ -2732,6 +2792,18 @@
    "first_seen": "2026-10-02T10:54:08",
    "importance": 0.63,
    "why": "It uses source-conditioned relay steering to mitigate cross-modal grounding hallucinations in audio-visual LLMs."
+  },
+  {
+   "title": "E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models",
+   "url": "https://arxiv.org/abs/2609.37533",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion's speed advantage over autoregressive decoding matters most. A recent line of work introduces a continuous Gaussian latent, trained as a variational autoencoder, to capture correlations across positions, but such approaches are prone to posterior collapse, where the latent is silently ignored. We propose Enhanced Mixture-of-Experts (E-MoE), which builds the reverse process as a mixture of factorized distributions over a discrete shared latent given by the expert-routing decisions of a Mixture-of-Experts (MoE) backbone, without increasing active parameters over the factorized baseline. Across synthetic multi-modal benchmarks, binarized MNIST, and LM1B, E-MoE improves few-step generation over factorized baselines.",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-02T16:29:57",
+   "importance": 0.7,
+   "why": "Introduces mixture-of-experts to non-factorized diffusion language models using continuous Gaussian latents to improve few-step sample quality."
   },
   {
    "title": "Anisotropic Representations Improve Planning in JEPA World Models",
@@ -16517,30 +16589,6 @@
    "first_seen": "2026-06-06T11:16:22",
    "importance": 0.2,
    "why": "This curated list compiles notable large language model research papers published between January and May."
-  },
-  {
-   "title": "Show HN: I embedded 685M public texts in 32 minutes (on 8x A100, Rust, TensorRT)",
-   "url": "https://github.com/Artain-AI/ignite-ms",
-   "source": "hackernews",
-   "published_date": "2026-06-04T15:23:39",
-   "summary": "7 points, 0 comments on HackerNews",
-   "tags": "inference,optimization,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-04T15:23:39",
-   "importance": 0.4,
-   "why": "Presents a high-performance Rust implementation using TensorRT for rapid text embedding generation."
-  },
-  {
-   "title": "NVIDIA Nemotron 3 Ultra Powers Faster, More Efficient Reasoning for Long-Running Agents",
-   "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-04T13:02:49",
-   "summary": "<img alt=\"Illustration showing Nemtron 3 Ultra.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Nemotron-3-Ultra-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Ultra\" width=\"768\" />Single-turn chatbots are evolving into long-running agents that can reason, maintain context, use tools, and run efficiently across many turns to complete...",
-   "tags": "architecture,llm,inference",
-   "area": "new-models",
-   "first_seen": "2026-06-04T13:02:49",
-   "importance": 0.6,
-   "why": "Introduces a specialized model architecture optimized for efficient reasoning in long-running agent tasks."
   }
  ]
 }
