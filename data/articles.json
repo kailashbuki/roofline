@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T16:31:08Z",
- "previous_generated_at": "2026-10-02T10:54:55Z",
+ "generated_at": "2026-10-02T21:11:07Z",
+ "previous_generated_at": "2026-10-02T16:31:08Z",
  "hot_days": 120,
- "count": 1391,
- "total_collected": 1457,
+ "count": 1399,
+ "total_collected": 1465,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Building a High-Performance and Portable vLLM Linear Backend with Helion",
+   "url": "https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-02T19:55:07",
+   "summary": "TL;DR We integrated Helion into vLLM’s linear backend to explore how an autotuned, high-level kernel DSL can improve LLM inference performance while reducing kernel implementation complexity. A single Helion general...",
+   "tags": "inference,serving,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-02T21:10:44",
+   "importance": 0.65,
+   "why": "Integrates Helion DSL into vLLM to simplify kernel implementation while maintaining high inference performance."
+  },
+  {
+   "title": "Rai: CPU-only LLM inference engine in pure Rust",
+   "url": "https://github.com/Classevelabs/rai",
+   "source": "hackernews",
+   "published_date": "2026-10-02T17:23:12",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-10-02T21:10:40",
+   "importance": 0.4,
+   "why": "Demonstrates CPU-only inference using pure Rust for constrained hardware deployments."
+  },
   {
    "title": "New in Llama.cpp: Decision Models",
    "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
@@ -1656,6 +1680,30 @@
    "why": "Bypasses intermediate compilation stacks to generate machine code directly from intermediate representations."
   },
   {
+   "title": "Video Generation Models: A Survey of Post-Training and Alignment",
+   "url": "https://arxiv.org/abs/2610.00812",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Video generation has rapidly progressed from short, low-quality clips to high-resolution, long-duration sequences with complex spatiotemporal dynamics. Despite strong generative priors learned through large-scale pretraining, pretrained video models often fail to reliably follow human intent, maintain temporal coherence, or satisfy physical and safety constraints. Compared with image and text generation, alignment in video generation presents unique challenges, including error accumulation over time, motion-appearance coupling, multi-objective trade-offs, and limited supervision for temporal properties. These challenges motivate systematic post-training strategies that adapt pretrained models without retraining them from scratch. In this survey, we present the first comprehensive review of post-training and alignment in video generation models. We frame post-training as a unifying framework and distinguish between implicit alignment and explicit alignment based on how alignment signals",
+   "tags": "training,post-training,multimodal",
+   "area": "training",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.4,
+   "why": "Surveys post-training and alignment techniques for video models, categorizing preference optimization and safety conditioning approaches."
+  },
+  {
+   "title": "SemanTok: Predictable Semantic Tokens for Efficient Autoregressive Video Generation",
+   "url": "https://arxiv.org/abs/2610.00686",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Recent video-based world models pair the scalability of autoregressive (AR) prediction with the visual quality of diffusion models. The choice of scene tokenizer is paramount for the optimal performance of each of these, both in terms of fidelity and semantics. Flexible-length, coarse-to-fine tokenizers yield exactly that: the first coarse tokens carry the clip's global semantics while later tokens further specify details. Existing flexible tokenizers only apply a representation-alignment (REPA) loss on early decoder hidden states, a target the decoder can partly meet from its noised input instead. We introduce SemanTok, a flexible video tokenizer that feeds frozen DINO features into its encoder and adds lightweight heads that reconstruct them from each retained token prefix alone. SemanTok achieves high semantic alignment and video fidelity at every AR model size: a 201M SemanTok AR model matches or beats a VideoFlexTok AR model 3.4times its size, and larger SemanTok AR models further",
+   "tags": "architecture,multimodal,inference",
+   "area": "architecture",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.6,
+   "why": "Employs predictable coarse-to-fine semantic tokenization to enable efficient autoregressive video generation with global semantic consistency."
+  },
+  {
    "title": "Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL",
    "url": "https://arxiv.org/abs/2610.00574",
    "source": "hf:papers",
@@ -2612,6 +2660,18 @@
    "first_seen": "2026-10-02T10:54:08",
    "importance": 0.6,
    "why": "Removes visual encoders for joint video-image understanding and generation via pixel-space modeling."
+  },
+  {
+   "title": "Prompt2Skill: Unsupervised Skill Optimization From Natural Language Instructions",
+   "url": "https://arxiv.org/abs/2609.38593",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Skills are external artifacts that Large Language Models (LLMs) consume at inference time to improve their performance on specialized domains by incorporating relevant procedural and domain knowledge. Expert-authored skills are expensive to produce, and the resulting artifacts are not optimized for the specific model that consumes them, whose failure modes can vary with version, scale and training. In addition, emerging tasks may fall outside the scope of existing skill libraries, creating a need to develop new skills before curated training data become available. Recent works have explored automated skill optimization through reflection, but they require a curated, in-distribution training set, which users might not always have. To address these limitations, we present Prompt2Skill, a framework that builds skills from natural-language task description alone. From the prompt, the system derives a task specification, discovers or synthesizes datasets, and refines the skill in a closed l",
+   "tags": "inference,llm,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.5,
+   "why": "Automates unsupervised skill optimization from natural language instructions to tailor inference-time tool use for specific LLM versions."
   },
   {
    "title": "FlexRouter: Learning Complementary Model Sets for Flexible LLM Routing",
@@ -3958,6 +4018,18 @@
    "why": "It frames LLMs as asynchronous agents handling concurrent inputs, departing from strict sequential execution loops."
   },
   {
+   "title": "On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics",
+   "url": "https://arxiv.org/abs/2609.35259",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the contribution of rollout policy difficult to isolate. We study the effect of rollout policy in a controlled strong-to-weak distillation setting, by independently varying rollout policy, token-level KL direction, and learning rate across the Llama3 and Qwen2.5 model families and reasoning tasks spanning scientific, medical, and arithmetic domains. Our analysis reveals a nuanced picture of distillation dynamics in which rollout policy does not necessarily play a central role. Instead, token-level KL direction more clearly shapes task performance and output coverage, while learning rate governs forgetting and update sparsity. Analysis of KL gradients and experiments along a continuous student-teacher rollout-policy spectrum expl",
+   "tags": "training,post-training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.6,
+   "why": "Isolates the effect of rollout policies in distillation, demonstrating how on-policy generation alters catastrophic forgetting during updates."
+  },
+  {
    "title": "Beyond Selection: Token Parameterization for Extreme Visual Token Compression",
    "url": "https://arxiv.org/abs/2609.35232",
    "source": "hf:papers",
@@ -4040,6 +4112,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.7,
    "why": "It analyzes latent communication interfaces between language models, revealing whether receivers utilize passed states."
+  },
+  {
+   "title": "Learning What to Recall: Adaptive Multi-Cue Episodic Memory for World Models",
+   "url": "https://arxiv.org/abs/2609.34677",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "World models predict future observations from current experience and actions, yet prediction can depend on observations seen far in the past. Episodic memory preserves past observations for later recall; however, as memory accumulates, it raises a fundamental question: which memories are useful for the current prediction, and which available retrieval cues should be trusted to find them? This is challenging because fixed criteria based on recency, pose overlap, or visual similarity can be unreliable across environments and queries. We propose Future-Aware Recall (FAR), a framework that learns episodic recall from future-aware predictive supervision and adaptive multi-cue scoring. During training, FAR measures predictive utility by the conditional log-likelihood of the realized future given recalled context, approximated by negative diffusion prediction loss, and uses it to train a retriever that remains future-blind at inference. The retriever learns cue-specific relevance and automati",
+   "tags": "architecture,attention,optimization",
+   "area": "architecture",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.6,
+   "why": "Introduces adaptive multi-cue episodic memory routing to selectively retrieve distant historical observations for world model predictions."
   },
   {
    "title": "Nereus: Adaptive Parallelism for LLM Post-Training",
@@ -4460,6 +4544,18 @@
    "first_seen": "2026-09-26T14:53:34",
    "importance": 0.4,
    "why": "Tests ultra-compact autonomous solar-powered edge inference nodes under strict thermal and power envelope constraints."
+  },
+  {
+   "title": "X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization",
+   "url": "https://arxiv.org/abs/2609.32993",
+   "source": "hf:papers",
+   "published_date": "2026-09-26T00:00:00",
+   "summary": "Multi-step agents are trained on flat action streams: SFT and RLVR weight every token uniformly and ignore the sub-procedures that recur across tasks, the hierarchy that lets humans plan top-down from reusable routines. This structure sits unused, and flat training uses each scarce trajectory less fully than its content allows. Recent agents do use that structure, but only as LLM-written skills in context, never in the weights, so their gains do not generalize beyond retrieval. We instead recover this hierarchy from the data itself and train on it, with no LLM calls. Following text tokenizers, which build a vocabulary by counting alone, we score action spans by reusability and merge canonicalized actions into a reusable eXperience tree (X-Tree). Each X-Tree node captures how a frequent and success-bearing skill is composed from sub-skills, guiding efficient generalization. We integrate X-Tree into three training settings: offline RL, with each node as a training instance; online RLVR, ",
+   "tags": "training,llm,optimization",
+   "area": "training",
+   "first_seen": "2026-10-02T21:10:21",
+   "importance": 0.7,
+   "why": "Replaces flat action streams with tokenized reusable experience graphs to improve multi-step agent planning efficiency."
   },
   {
    "title": "Allspark: Weak to Strong Transfer via Alternating Chain of Thought",

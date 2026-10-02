@@ -1,5 +1,5 @@
 {
- "count": 963,
+ "count": 972,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -963,6 +963,15 @@
   "https://huggingface.co/blog/allenai/astabrief",
   "https://research.google/blog/toward-provably-private-learning-from-federated-data",
   "https://openai.com/index/practical-guide-building-gpt-6",
-  "https://www.latent.space/p/airbnb"
+  "https://www.latent.space/p/airbnb",
+  "https://arxiv.org/abs/2609.32810",
+  "https://arxiv.org/abs/2610.02202",
+  "https://arxiv.org/abs/2609.34210",
+  "https://arxiv.org/abs/2609.36602",
+  "https://arxiv.org/abs/2610.01499",
+  "https://arxiv.org/abs/2610.00737",
+  "https://arxiv.org/abs/2403.01643",
+  "https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification",
+  "https://openai.com/index/chatham-financial"
  ]
 }
