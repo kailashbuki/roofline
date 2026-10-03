@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T21:11:07Z",
- "previous_generated_at": "2026-10-02T16:31:08Z",
+ "generated_at": "2026-10-03T10:13:36Z",
+ "previous_generated_at": "2026-10-02T21:11:07Z",
  "hot_days": 120,
- "count": 1399,
- "total_collected": 1465,
+ "count": 1406,
+ "total_collected": 1472,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -948,6 +948,18 @@
    "why": "It adapts retrieval-based speculative decoding to match coding agent output patterns, bypassing standard corpus discrepancies."
   },
   {
+   "title": "It Takes Workflows to Evolve Better Workflows",
+   "url": "https://arxiv.org/abs/2610.01026",
+   "source": "hf:papers",
+   "published_date": "2026-10-01T00:00:00",
+   "summary": "Tackling complex real-world tasks can exceed the capabilities of a single large language model (LLM), motivating the use of multi-agent workflows that coordinate specialized agents to work together on these tasks. Recent methods train LLMs to construct better workflows from execution outcomes, but they optimize only the workflow generator, while the other agents that build or execute each workflow remain fixed even though every outcome depends on all of them. However, extending training beyond the generator is challenging: the agents are coupled, and a workflow's outcome is a single sparse score that cannot tell which agent causes a failure. We propose FloWright, which leverages the workflow as a harness to optimize workflows. By introducing a hierarchical, structure-aware reward paradigm, FloWright enables one role to self-evolve and two or more roles to co-evolve, with no additional models, labels, or executions. Considering the limitation that workflows are commonly trained and eval",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.65,
+   "why": "Co-optimizes all agents within multi-agent workflows instead of updating only the workflow generator."
+  },
+  {
    "title": "Scaling and Distilling Text Embeddings for Better Diffusibility",
    "url": "https://arxiv.org/abs/2610.01016",
    "source": "hf:papers",
@@ -1738,6 +1750,18 @@
    "first_seen": "2026-10-02T10:54:08",
    "importance": 0.7,
    "why": "Replaces semantic alignment targets with dense-prediction foundation models to accelerate pixel diffusion transformer training."
+  },
+  {
+   "title": "JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces",
+   "url": "https://arxiv.org/abs/2610.00437",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "LLM agents generate intermediate reasoning and actions token by token, making extended interactions slow and computationally expensive. Jev-style models offer fast probabilistic predictions over finite fields, but require those fields to be specified in advance. This requirement limits autonomous task solving, where the available actions must be derived from natural language instructions and adapted through interaction. We introduce JevSpawn, a compositional policy that connects natural language task specifications to finite probabilistic exploration. Parallel action spawning is coupled with feedback driven branch selection, representation revision, and recovery from retained alternatives. Shared action structure and model prefixes reduce repeated generation and context computation without additional training. Evaluations on eight benchmark tasks against seven agent baselines and a TypeSafe Jev variant establish JevSpawn as a promising approach to structured agentic inference, with imp",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.7,
+   "why": "Composes action spaces dynamically for fast probabilistic predictions, removing pre-specified finite field limits."
   },
   {
    "title": "Multimodal Flow: Unified Flow Modeling of Language and Vision in Embedding Spaces",
@@ -3058,6 +3082,18 @@
    "why": "Combines KL-constrained rollouts with maximal coupling to allocate supervision, reducing student state mismatch in on-policy distillation."
   },
   {
+   "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+   "url": "https://arxiv.org/abs/2609.36585",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Pretrained transformers use little of their depth to follow references in context. Thirteen base models reliably follow only 1.4-3.6 lines, and extra pretrained loops add little. A task-trained rank-8 LoRA at one early layer extends this computation with all model weights frozen. Qwen3-8B improves from 15.5% to 99% exact accuracy on 24-line chains; a longer-trained LoRA reaches 50 lines. Ouro-1.4B reaches 60 lines after four loops and at least 160 after eight. The LoRA starts a relay: program lines pass on their chain identity through a short range of middle layers. Frozen heads read progressively further up the chain, and removing parent-line attention stops the relay. A frozen-model measurement locates the last useful intervention layer within tolerance in three of four held-out models. Task-specific LoRAs also improve MuSiQue. Default answers therefore understate the computation accessible through a tiny edit. Code and an interactive demo are available at https://lunamos.github.io/s",
+   "tags": "architecture,post-training,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.85,
+   "why": "A rank-8 LoRA at one early layer forces frozen transformers to extend in-context depth computation."
+  },
+  {
    "title": "The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation",
    "url": "https://arxiv.org/abs/2609.36484",
    "source": "hf:papers",
@@ -3070,6 +3106,18 @@
    "why": "It extrapolates implicit reward residuals directly in output space to overcome anisotropic attenuation from the language-model head."
   },
   {
+   "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
+   "url": "https://arxiv.org/abs/2609.36435",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "An assistant that serves the same user over a long horizon has to answer from what that user has revealed: which preferences still hold, which were revised, and which constraints apply now. Retaining that information is not the same as acting on it, and the two are usually optimized as if they were. Keeping the information as text makes the reader's input grow with the retained history, while compressing it into a fixed number of latent vectors bounds the interface but is typically trained to reconstruct text or imitate reference answers, both of which are scored on sequences the reader never produced. We present MemFold, which optimizes a fixed-budget soft memory by the behavior it supports. A query-conditioned textual memory is compressed into K continuous vectors that form the reader's memory interface, and the reader is then trained on its own rollouts under two complementary signals: group-relative rewards for task outcomes, and confidence-gated on-policy distillation in which a f",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.75,
+   "why": "Replaces text history with compact soft memory using on-policy optimization, bypassing growing context windows."
+  },
+  {
    "title": "What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling",
    "url": "https://arxiv.org/abs/2609.34981",
    "source": "hf:papers",
@@ -3080,6 +3128,18 @@
    "first_seen": "2026-09-30T10:55:15",
    "importance": 0.5,
    "why": "Demonstrates that discarding future video denoising in latent world action models retains test-time generalization while accelerating inference."
+  },
+  {
+   "title": "Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs",
+   "url": "https://arxiv.org/abs/2609.32259",
+   "source": "hf:papers",
+   "published_date": "2026-09-29T00:00:00",
+   "summary": "Recent multi-agent LLM systems increasingly combine heterogeneous models for specialized agent roles. However, text-based communication requires each receiver to prefill shared context already processed by the sender. Reusing the sender's key-value (KV) cache avoids this redundancy, but prefill-free transfer across model families must handle differences in tokenization, model depth, and KV representations. To address these issues, we propose HeteroFold, a prefill-free cross-family KV cache transfer method that keeps both the sender and receiver frozen. HeteroFold aligns model structures, maps the sender cache into the receiver space, and calibrates it to preserve receiver behavior. Across six transfer directions, HeteroFold achieves the best cache-transfer performance on all four long-context benchmarks and most short-context settings. It also matches text-based communication on the multi-agent benchmark. At 32K context length, Llama-3.1-8BrightarrowMinistral-3-14B transfer is 10.7time",
+   "tags": "inference,serving,systems,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.8,
+   "why": "Enables prefill-free KV cache transfer across heterogeneous model families by bridging dimensional and tokenization gaps."
   },
   {
    "title": "Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning",
@@ -3862,6 +3922,18 @@
    "why": "It introduces power management strategies to optimize datacenter utilization and reduce wasted capacity in AI factories."
   },
   {
+   "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+   "url": "https://arxiv.org/abs/2609.36388",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "An activation-steering coefficient sets intervention strength, but requesting a particular degree of persona expression requires a behavioral scale. We study persona dosing: controlling a language model through a trait description and a requested mean intensity. PersonaDose specializes a shared, description-conditioned FLAS controller on persona responses, then calibrates its flow time against measured trait expression. Training responses are not paired with requested target intensities. Across Llama-3.1-8B, Qwen3-8B, and Gemma-3-4B, PersonaDose raises core-trait expression at the Persona Vectors coherence floor of 75 by 33.2, 18.3, and 17.8 points over contrastive activation addition. Calibration-selected settings retain an expression advantage on held-out questions, although the coherence floor does not hold for every trait there. Across seven trained traits, calibrated requests yield mean targeting errors of 4.7-6.2 points over 14-22 calibration-reachable targets out of 28 per model",
+   "tags": "post-training,inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.6,
+   "why": "Calibrates activation-steering controllers against measured behavioral scale for graded persona expression control."
+  },
+  {
    "title": "StructRL: Online Structured Reinforcement Learning for Long-Horizon Vision-Language-Action Tasks",
    "url": "https://arxiv.org/abs/2609.36352",
    "source": "hf:papers",
@@ -3920,6 +3992,18 @@
    "first_seen": "2026-09-30T21:13:06",
    "importance": 0.7,
    "why": "Identifies four mathematical failures of cross-entropy-only training in latent recursive LLM systems and constrains continuous internal thought states."
+  },
+  {
+   "title": "When Does Correction Become Repair? Mechanistic Auditing of Internal Interventions in Tool-Using LLMs",
+   "url": "https://arxiv.org/abs/2609.36138",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Before invoking external tools, an agentic LLM must select among a K-way action space: executing a call, seeking clarification, answering directly, or declining. While internal activation steering can alter these pre-execution decisions, conventional aggregate metrics obscure where altered states land and what collateral damage they inflict. We present SAKIKO, an auditing framework that formalizes representation repair via directional error discovery, router-conditioned intervention, destination-resolved verification, and prospectively frozen statistical licensing. Across seven LLMs on When2Call and MetaTool, channel-keyed interventions induce direction-specific net gains in five models; across three sealed evaluations, none of 59 budget-matched random directions matches calibrated target gain. Crucially, destination auditing shows that behavioral movement does not equal repair: an intervention achieving +55 net gain corrupts over half of the baseline-correct decisions it touches, and ",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T10:12:55",
+   "importance": 0.5,
+   "why": "Formalizes a mechanistic auditing framework to measure collateral damage from internal tool-use activation steering."
   },
   {
    "title": "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion",
