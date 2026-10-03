@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T15:04:05Z",
- "previous_generated_at": "2026-10-03T10:13:36Z",
+ "generated_at": "2026-10-03T19:41:15Z",
+ "previous_generated_at": "2026-10-03T15:04:05Z",
  "hot_days": 120,
- "count": 1410,
- "total_collected": 1476,
+ "count": 1411,
+ "total_collected": 1477,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "The KV Cache Is the New Memory Wall",
+   "url": "https://jaehun.me/en/posts/paper-2609-30854v1",
+   "source": "hackernews",
+   "published_date": "2026-10-03T16:21:42",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,attention,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T19:40:51",
+   "importance": 0.5,
+   "why": "Analyzes how KV cache growth dictates inference memory bottlenecks."
+  },
   {
    "title": "Building a High-Performance and Portable vLLM Linear Backend with Helion",
    "url": "https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion",
