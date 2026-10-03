@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T10:13:36Z",
- "previous_generated_at": "2026-10-02T21:11:07Z",
+ "generated_at": "2026-10-03T15:04:05Z",
+ "previous_generated_at": "2026-10-03T10:13:36Z",
  "hot_days": 120,
- "count": 1406,
- "total_collected": 1472,
+ "count": 1410,
+ "total_collected": 1476,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -888,6 +888,18 @@
    "why": "It maps six modalities into a shared space using dense distillation while freezing all text-side parameters in a 0.9B model."
   },
   {
+   "title": "Latent-Foresight: End-to-End Learning Predictable Representations for Latent World Models",
+   "url": "https://arxiv.org/abs/2610.01942",
+   "source": "hf:papers",
+   "published_date": "2026-10-01T00:00:00",
+   "summary": "Predicting the future evolution of a scene is a fundamental capability for world modeling. Recent work has shown that operating in the feature space of Vision Foundation Models (VFMs) yields semantically rich representations that support diverse future scene understanding tasks. However, existing approaches rely on two-stage pipelines, where VFM features are first compressed using fixed dimensionality reduction (e.g., PCA) or independently trained autoencoders, and a separate predictor is trained on top of the resulting frozen latent space. This decoupling between representation learning and temporal prediction, as well as approaches that apply predictors directly on raw VFM features, provides no guarantee that the latent space is structured for predictable dynamics. In this work, we propose Latent-Foresight, an end-to-end framework that jointly learns a latent tokenizer and a flow-based generative dynamics model, explicitly shaping the representation to support temporal predictability",
+   "tags": "architecture,training,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-03T15:03:23",
+   "importance": 0.5,
+   "why": "Co-optimizes VFM feature compression and predictive dynamics end-to-end, removing multi-stage training bottlenecks in world models."
+  },
+  {
    "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
    "url": "https://arxiv.org/abs/2610.01939",
    "source": "hf:papers",
@@ -910,6 +922,18 @@
    "first_seen": "2026-10-02T10:54:08",
    "importance": 0.7,
    "why": "It introduces query-independent evidence recording via a proactive generation process for real-time streaming video LLMs."
+  },
+  {
+   "title": "Before It Fades: Reinforcing Temporal Representations at Inference Time in VideoLLMs",
+   "url": "https://arxiv.org/abs/2610.01595",
+   "source": "hf:papers",
+   "published_date": "2026-10-01T00:00:00",
+   "summary": "Video Large Language Models (VideoLLMs) receive frames in sequential order and interpret how visual content evolves along the temporal axis, yet temporal reasoning remains a persistent weakness across architectures. Reversing the frame order of a video, a transformation that should invert temporal answers, often leaves the final prediction unchanged. We investigate where this failure originates by defining the temporal divergence vector τ_l, the layer-wise representational difference induced by reversing temporal order. Tracking its magnitude across layers reveals a consistent temporal divergence profile where the divergence peaks at intermediate layers and progressively diminishes toward the output. We confirm this peak is specific to temporal reasoning and functionally critical for predictions, establishing that VideoLLMs acquire temporal information at intermediate layers but fail to maintain it to the output. This progressive fading motivates our method, Temporal Activation Injecti",
+   "tags": "inference,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T15:03:23",
+   "importance": 0.5,
+   "why": "Applies test-time temporal representation reinforcement in VideoLLMs, correcting sequence-order insensitivity without retraining."
   },
   {
    "title": "Sharpening Tax in Post-Training",
@@ -1906,6 +1930,18 @@
    "first_seen": "2026-10-01T11:25:01",
    "importance": 0.6,
    "why": "Applies on-policy self-distillation to unify generation and understanding for test-time self-correction feedback."
+  },
+  {
+   "title": "Honeycomb: Constant-Size Scene Memory Representation for Video World Models",
+   "url": "https://arxiv.org/abs/2609.37690",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Video world models require persistent scene memory to maintain consistency during long-horizon video generation. Existing spatial memories accumulate RGB observations or latent features, increasing storage requirements as generation proceeds. We introduce Honeycomb, a video world model built on HexMemory, our proposed low-rank representation for storing scene features in a fixed-size memory with a total of six spatial and spatiotemporal planes. A feed-forward writer maps each generated chunk into new plane features. As the spatial coverage or temporal range expands, we warp the previous planes while preserving their dimensions, then fuse them with the new features through confidence-weighted pooling and a learned residual correction. A reader retrieves latents from HexMemory to condition subsequent video generation. The writer processes only observations from the new chunk, avoiding per-scene optimization and repeated processing of the full history. Experiments on WorldScore and RealEs",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-03T15:03:23",
+   "importance": 0.6,
+   "why": "Introduces HexMemory, a fixed-size latent representation preventing memory bloat during long-horizon video world model generation."
   },
   {
    "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
@@ -4832,6 +4868,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.6,
    "why": "It bypasses sequential recurrent-block latency in looped models via a training-free self-speculative wavefront decoding approach."
+  },
+  {
+   "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
+   "url": "https://arxiv.org/abs/2609.22753",
+   "source": "hf:papers",
+   "published_date": "2026-09-26T00:00:00",
+   "summary": "Natural-language service requests can require a language-model decision before execution starts, consuming part of the request's latency budget. We integrate Jev's decision-oriented application programming interface (API) into edge service orchestration to reduce this overhead while retaining service completion. The integration extracts four to eight bounded intent fields and applies a shared validator, admission policy, and scheduler, accounting for decision waiting throughout the request timeline. We compare Jev, two self-hosted decision models, and three hosted large language models (LLMs) on 8,280 verified requests and on a live admission path with modeled execution and a real optical character recognition service. Across 33 test conditions, Jev reduces median decision latency by 22.7-64.5% relative to the fastest LLM. This latency barely moves with input size, contract width, or catalog size. On four-field contracts, Jev's API fees per correct decision are 59.7-80.9% lower at a co",
+   "tags": "inference,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-10-03T15:03:23",
+   "importance": 0.4,
+   "why": "Replaces LLMs with structured APIs for intent extraction, cutting edge orchestration latency via deterministic classification."
   },
   {
    "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
