@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T19:41:15Z",
- "previous_generated_at": "2026-10-03T15:04:05Z",
+ "generated_at": "2026-10-04T10:55:53Z",
+ "previous_generated_at": "2026-10-03T19:41:15Z",
  "hot_days": 120,
- "count": 1411,
- "total_collected": 1477,
+ "count": 1412,
+ "total_collected": 1478,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "The Rise of Overfit Inference Engines",
+   "url": "https://carteakey.dev/blog/local-inference/the-rise-of-overfit-inference-engines",
+   "source": "hackernews",
+   "published_date": "2026-10-03T19:18:41",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-04T10:55:26",
+   "importance": 0.45,
+   "why": "Analyzes the operational tradeoffs of heavily specialized, overfit kernel dispatch strategies in serving frameworks."
+  },
   {
    "title": "The KV Cache Is the New Memory Wall",
    "url": "https://jaehun.me/en/posts/paper-2609-30854v1",

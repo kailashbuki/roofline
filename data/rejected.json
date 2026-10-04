@@ -1,5 +1,5 @@
 {
- "count": 981,
+ "count": 982,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -981,6 +981,7 @@
   "https://www.latent.space/p/ainews-not-much-happened-today-cee",
   "https://arxiv.org/abs/2610.01017",
   "https://arxiv.org/abs/2610.00360",
-  "https://arxiv.org/abs/2610.00314"
+  "https://arxiv.org/abs/2610.00314",
+  "https://huggingface.co/blog/microsoft/thinkingbox"
  ]
 }
