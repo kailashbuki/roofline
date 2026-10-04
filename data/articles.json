@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T10:55:53Z",
- "previous_generated_at": "2026-10-03T19:41:15Z",
+ "generated_at": "2026-10-04T15:40:54Z",
+ "previous_generated_at": "2026-10-04T10:55:53Z",
  "hot_days": 120,
  "count": 1412,
- "total_collected": 1478,
+ "total_collected": 1479,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Eight Changes to Transformer Attention, and What Each Costs",
+   "url": "https://www.airealist.ai/p/eight-changes-to-transformer-attention",
+   "source": "airealist",
+   "published_date": "2026-10-04T13:35:36",
+   "summary": "The newest open models from Alibaba, Moonshot, DeepSeek and Z.AI no longer read every earlier token. Eight designs, what each costs, and what to test.",
+   "tags": "architecture,attention,optimization,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-04T15:40:53",
+   "importance": 0.8,
+   "why": "Compares eight sparse attention mechanisms across open models, quantifying exact trade-offs in computational cost."
+  },
   {
    "title": "The Rise of Overfit Inference Engines",
    "url": "https://carteakey.dev/blog/local-inference/the-rise-of-overfit-inference-engines",
@@ -16829,18 +16841,6 @@
    "first_seen": "2026-06-07T09:49:42",
    "importance": 0.45,
    "why": "Frames agentic memory management as a strategic pruning problem rather than passive storage."
-  },
-  {
-   "title": "LLM Research Papers: The 2026 List (January to May)",
-   "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
-   "source": "rss:Ahead of AI",
-   "published_date": "2026-06-06T11:16:22",
-   "summary": "A curated roundup of notable LLM research papers that came out this year",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-06-06T11:16:22",
-   "importance": 0.2,
-   "why": "This curated list compiles notable large language model research papers published between January and May."
   }
  ]
 }

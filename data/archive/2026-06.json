@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 35,
+ "count": 36,
  "articles": [
+  {
+   "title": "LLM Research Papers: The 2026 List (January to May)",
+   "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-06-06T11:16:22",
+   "summary": "A curated roundup of notable LLM research papers that came out this year",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-06-06T11:16:22",
+   "importance": 0.2,
+   "why": "This curated list compiles notable large language model research papers published between January and May."
+  },
   {
    "title": "Show HN: I embedded 685M public texts in 32 minutes (on 8x A100, Rust, TensorRT)",
    "url": "https://github.com/Artain-AI/ignite-ms",
