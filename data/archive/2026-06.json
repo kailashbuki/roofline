@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 36,
+ "count": 38,
  "articles": [
+  {
+   "title": "ESMFold 2 has the highest throughput on Tenstorrent AI processors",
+   "url": "https://twitter.com/moritzthuening/status/2063382385845244281",
+   "source": "hackernews",
+   "published_date": "2026-06-07T10:33:54",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-06-07T10:33:54",
+   "importance": 0.4,
+   "why": "Reports benchmark throughput results for protein folding models on Tenstorrent AI processors."
+  },
+  {
+   "title": "Show HN: YourMemory, agentic memory is a pruning problem, not a hoarding problem",
+   "url": "https://yourmemoryai.vercel.app/",
+   "source": "hackernews",
+   "published_date": "2026-06-07T09:49:42",
+   "summary": "19 points, 3 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-06-07T09:49:42",
+   "importance": 0.45,
+   "why": "Frames agentic memory management as a strategic pruning problem rather than passive storage."
+  },
   {
    "title": "LLM Research Papers: The 2026 List (January to May)",
    "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
