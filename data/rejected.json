@@ -1,5 +1,5 @@
 {
- "count": 1042,
+ "count": 1056,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1042,6 +1042,20 @@
   "https://arxiv.org/abs/2609.39963",
   "https://arxiv.org/abs/2610.02788",
   "https://arxiv.org/abs/2610.03632",
-  "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+  "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+  "https://arxiv.org/abs/2610.03710",
+  "https://arxiv.org/abs/2610.03715",
+  "https://arxiv.org/abs/2609.30467",
+  "https://arxiv.org/abs/2610.01780",
+  "https://arxiv.org/abs/2609.39820",
+  "https://arxiv.org/abs/2610.03240",
+  "https://www.ft.com/content/93ee425d-9ac7-4543-8cc9-fef2e0670787",
+  "https://huggingface.co/interfaze-ai/interfaze-1-lite",
+  "https://huggingface.co/blog/rl-environments",
+  "https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape",
+  "https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group",
+  "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle",
+  "https://openai.com/index/eu-text-provenance",
+  "https://openai.com/index/wayfair"
  ]
 }
