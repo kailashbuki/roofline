@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T11:50:08Z",
- "previous_generated_at": "2026-10-05T23:04:46Z",
+ "generated_at": "2026-10-06T21:28:03Z",
+ "previous_generated_at": "2026-10-06T11:50:08Z",
  "hot_days": 120,
- "count": 1584,
- "total_collected": 1653,
+ "count": 1591,
+ "total_collected": 1662,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -24,6 +24,65 @@
  ],
  "articles": [
   {
+   "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+   "url": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-06T19:07:02",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image9-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image9\" width=\"768\" />GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the...",
+   "tags": "systems,hardware,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-06T21:27:41",
+   "importance": 0.6,
+   "why": "Enables GPU-initiated networking via GPUNetIO, removing host CPU overhead for distributed data movement."
+  },
+  {
+   "title": "TechInsights reverse engineering analysis of AWS Trainium2 in progress",
+   "url": "https://www.microprocessorreport.com/p/techinsights-reverse-engineering-aws-trainium2",
+   "source": "hackernews",
+   "published_date": "2026-10-06T18:50:20",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-10-06T21:27:20",
+   "importance": 0.4,
+   "why": "Examines die layout and microarchitecture features of AWS Trainium2 via physical delayering analysis."
+  },
+  {
+   "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+   "url": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-06T16:13:47",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image1-5-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,...",
+   "tags": "systems,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-10-06T21:27:41",
+   "importance": 0.4,
+   "why": "Provides an open configuration standard to synchronize Kubernetes components for cluster stability."
+  },
+  {
+   "title": "Control How Your GPU Shares Work with Green Contexts",
+   "url": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-06T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image1-3-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator...",
+   "tags": "systems,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-06T21:27:41",
+   "importance": 0.5,
+   "why": "Uses Green Contexts for hardware-level work partitioning to isolate latency-sensitive operators within processes."
+  },
+  {
+   "title": "The Cyber Risk Discourse is Broken",
+   "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-06T14:22:41",
+   "summary": "Open-weights, ideology, and acknowledging trade-offs.",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-06T21:27:45",
+   "importance": 0.0
+  },
+  {
    "title": "Kolibri Is Large Enough",
    "url": "https://www.airealist.ai/p/kolibri-is-large-enough",
    "source": "airealist",
@@ -34,6 +93,17 @@
    "first_seen": "2026-10-06T11:50:07",
    "importance": 0.35,
    "why": "Achieves competitive training costs under tight budget constraints using cross-border distillation methods."
+  },
+  {
+   "title": "Expanding our enterprise inference capacity with IBM Cloud and NVIDIA",
+   "url": "https://www.together.ai/blog/expanding-our-enterprise-inference-capacity-with-ibm-cloud-and-nvidia",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Enterprises can now run open models at production scale on a dedicated B300 inference cluster, built by Together AI, IBM Cloud, and NVIDIA",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-10-06T21:27:35",
+   "importance": 0.0
   },
   {
    "title": "NVIDIA’s Olympus Core: Pushing Server Single Threaded Performance Boundaries",
@@ -897,6 +967,18 @@
    "why": "Exploits intermediate denoising steps in masked diffusion language models for closed-loop activation steering and targeted bias injection."
   },
   {
+   "title": "Learning to Learn a Language",
+   "url": "https://arxiv.org/abs/2610.05879",
+   "source": "hf:papers",
+   "published_date": "2026-10-05T00:00:00",
+   "summary": "We present the Prior-Fitted Language Model (PFLM), a 300M-parameter byte-level transformer pretrained only on samples from a synthetic non-linguistic prior. Given a prefix of real text, it learns to predict the language in context with frozen weights, having never seen a word of any real language. Every training sequence is generated by a recurrent structural causal model drawn fresh from a distribution over such models. The model never sees the same language twice during training, so the only way to predict the continuation is to infer the language from the prefix. Samples from this prior share the statistical signatures of natural text: Zipfian frequencies, slow entropy-rate convergence, and long-range dependence. On Wikipedia in six languages, bits per byte fall from the uniform eight to between 0.9 and 2.4 at one million bytes of context. Given numerals instead of text, PFLM learns to count, to compare magnitudes, and to add approximately. It predicts deterministic sequences like R",
+   "tags": "training,architecture",
+   "area": "training",
+   "first_seen": "2026-10-06T21:27:03",
+   "importance": 0.85,
+   "why": "It pretrains a byte-level transformer exclusively on synthetic causal models, enabling zero-shot language learning in context."
+  },
+  {
    "title": "When to Switch: Reliable Action-Chunk Extension for Vision-Language-Action Models",
    "url": "https://arxiv.org/abs/2610.05719",
    "source": "hf:papers",
@@ -931,6 +1013,18 @@
    "first_seen": "2026-10-04T15:40:53",
    "importance": 0.8,
    "why": "Compares eight sparse attention mechanisms across open models, quantifying exact trade-offs in computational cost."
+  },
+  {
+   "title": "LiFT: Loop Flow Transformers",
+   "url": "https://arxiv.org/abs/2610.05538",
+   "source": "hf:papers",
+   "published_date": "2026-10-04T00:00:00",
+   "summary": "We introduce Loop Flow Transformers (LiFT), a family of looped generative models that scales computation by repeatedly applying a shared Diffusion Transformer (DiT) core, with only light changes to the standard architecture. Rather than asking every recurrent step for the final prediction, LiFT trains each step with a single regression target: a point on a straight path from the model's initial estimate to the flow-matching target. Because we index these targets by a continuous depth coordinate, a trained model can loop far beyond its training depth with no retraining, early exits, or other modifications. In our experiments, these longer rollouts improve generation, so inference computation can grow without adding parameters. On ImageNet at 256x256, LiFT-L/2 achieves an FID 3.34 points lower than our dense DiT-XL/2 baseline while using approximately 60% fewer parameters, 32% fewer training FLOPs, and 52% fewer inference FLOPs.",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-10-06T21:27:03",
+   "importance": 0.8,
+   "why": "It applies a shared DiT core iteratively with a straight-path regression target to scale computation."
   },
   {
    "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
@@ -1867,6 +1961,18 @@
    "first_seen": "2026-10-06T11:49:21",
    "importance": 0.75,
    "why": "Quantifies text reconstruction vulnerabilities from split-learning gradient exchanges, demonstrating privacy leakage bounds in distributed language model training."
+  },
+  {
+   "title": "Periscope: Extending Frozen Language Models Beyond Their Context Window",
+   "url": "https://arxiv.org/abs/2610.04047",
+   "source": "hf:papers",
+   "published_date": "2026-10-02T00:00:00",
+   "summary": "A language model reads long text in one quadratic forward pass, stops at the context window, and loses accuracy with length before reaching it. We ask whether the read can be factorized when deciding over a finite set: which document is relevant, which option is supported, which passage is the evidence. Periscope, a training-free inference method, arranges the N chunks of a text on a K{times}K grid with K{=}lceilNrceil and asks a frozen model the same question about K local spans of consecutive chunks and K strided spans that sample the whole text, reading the log-odds of every answer at one token. Each answer takes its best local and strided score, and scoring every chunk by its two spans gives an evidence map at no further cost, whose peak is the chunk behind the answer. Every probe is about sc tokens for a text of s tokens and chunk size c, so a window of W tokens reaches W^{2}/c tokens at s^{1.5} cost. The map replaces the long read. On LongBench v2, reading only the K chunks the m",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-06T21:27:03",
+   "importance": 0.75,
+   "why": "It factorizes long text reads onto a grid layout without retraining, bypassing quadratic context limitations during inference."
   },
   {
    "title": "Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery",
@@ -18879,29 +18985,6 @@
    "first_seen": "2026-06-09T12:15:56",
    "importance": 0.6,
    "why": "Analyzes day-zero inference performance and trace data across diverse modern AI accelerators."
-  },
-  {
-   "title": "Train Models Faster with JAX and MaxText Using NVFP4 on NVIDIA Blackwell",
-   "url": "https://developer.nvidia.com/blog/train-models-faster-with-jax-and-maxtext-using-nvfp4-on-nvidia-blackwell",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-08T18:18:06",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Pretrain-Faster-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Pretrain-Faster\" width=\"768\" />Pre-training frontier LLMs comes down to throughput. When training spans trillions of tokens across thousands of accelerators, every percentage point of step...",
-   "tags": "training,hardware,optimization",
-   "area": "training",
-   "first_seen": "2026-06-08T18:18:06",
-   "importance": 0.6,
-   "why": "Showcases pre-training speedups using NVFP4 precision format on NVIDIA Blackwell hardware."
-  },
-  {
-   "title": "Unitree's Impossible Trajectory Is Still Overlooked",
-   "url": "https://newsletter.semianalysis.com/p/chinas-unitree-will-dominate-global",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-08T16:35:36",
-   "summary": "The Fastest Iteration Cycle In Next-Gen Robotics Should See Unprecedented Acceleration",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-08T16:35:36",
-   "importance": 0.0
   }
  ]
 }

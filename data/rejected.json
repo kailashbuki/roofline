@@ -1,5 +1,5 @@
 {
- "count": 1115,
+ "count": 1128,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1115,6 +1115,19 @@
   "https://arxiv.org/abs/2610.02229",
   "https://github.com/Dao-AILab/flash-attention/blob/main/assets/fa4_paper.pdf",
   "https://huggingface.co/blog/tiiuae/falcon-emirati",
-  "https://www.latent.space/p/ainews-reflection-beam-501b-a23b"
+  "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+  "https://arxiv.org/abs/2610.05750",
+  "https://arxiv.org/abs/2610.02331",
+  "https://arxiv.org/abs/2609.36691",
+  "https://arxiv.org/abs/2609.36684",
+  "https://arxiv.org/abs/2610.02320",
+  "https://arxiv.org/abs/2610.04292",
+  "https://arxiv.org/abs/2605.21318",
+  "https://www.cnbc.com/2026/10/05/nvidia-groq-deal-stockholder-lawsuit.html",
+  "https://www.provos.org/p/defenders-need-models-they-control",
+  "https://www.wsj.com/tech/ai/mistral-to-release-new-ai-model-to-better-compete-with-u-s-rivals-3f7c8a3d",
+  "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health",
+  "https://openai.com/index/advancing-computer-use-with-ironclad",
+  "https://openai.com/index/atlassian-partnership"
  ]
 }

@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 38,
+ "count": 40,
  "articles": [
+  {
+   "title": "Train Models Faster with JAX and MaxText Using NVFP4 on NVIDIA Blackwell",
+   "url": "https://developer.nvidia.com/blog/train-models-faster-with-jax-and-maxtext-using-nvfp4-on-nvidia-blackwell",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-08T18:18:06",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Pretrain-Faster-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Pretrain-Faster\" width=\"768\" />Pre-training frontier LLMs comes down to throughput. When training spans trillions of tokens across thousands of accelerators, every percentage point of step...",
+   "tags": "training,hardware,optimization",
+   "area": "training",
+   "first_seen": "2026-06-08T18:18:06",
+   "importance": 0.6,
+   "why": "Showcases pre-training speedups using NVFP4 precision format on NVIDIA Blackwell hardware."
+  },
+  {
+   "title": "Unitree's Impossible Trajectory Is Still Overlooked",
+   "url": "https://newsletter.semianalysis.com/p/chinas-unitree-will-dominate-global",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-08T16:35:36",
+   "summary": "The Fastest Iteration Cycle In Next-Gen Robotics Should See Unprecedented Acceleration",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-08T16:35:36",
+   "importance": 0.0
+  },
   {
    "title": "ESMFold 2 has the highest throughput on Tenstorrent AI processors",
    "url": "https://twitter.com/moritzthuening/status/2063382385845244281",
