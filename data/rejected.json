@@ -1,5 +1,5 @@
 {
- "count": 1307,
+ "count": 1321,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1307,6 +1307,20 @@
   "https://arxiv.org/abs/2610.09243",
   "https://arxiv.org/abs/2610.07384",
   "https://www.liquid.ai/blog/d1-open",
-  "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+  "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+  "https://arxiv.org/abs/2610.09484",
+  "https://arxiv.org/abs/2610.07862",
+  "https://arxiv.org/abs/2610.09127",
+  "https://arxiv.org/abs/2610.03799",
+  "https://arxiv.org/abs/2610.08244",
+  "https://huggingface.co/blog/tiiuae/falcon-asr",
+  "https://openai.com/index/oracle",
+  "https://openai.com/index/pollo-ai",
+  "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+  "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models",
+  "https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup",
+  "https://www.latent.space/p/periodic",
+  "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+  "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source"
  ]
 }

@@ -1,7 +1,43 @@
 {
  "month": "2026-06",
- "count": 63,
+ "count": 66,
  "articles": [
+  {
+   "title": "Portable vLLM Model Inference Kernels in Helion",
+   "url": "https://pytorch.org/blog/portable-vllm-model-inference-kernels-in-helion",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-06-10T17:00:13",
+   "summary": "TL;DR Helion kernels were integrated into vLLM for FP8 inference using Qwen3 models and evaluated across NVIDIA H100 and B200 GPUs. The experiments show that Helion provides a productive PyTorch-native...",
+   "tags": "inference,optimization,quantization",
+   "area": "inference-engines",
+   "first_seen": "2026-06-10T17:00:13",
+   "importance": 0.4,
+   "why": "Integrating portable PyTorch-native kernels into vLLM streamlines FP8 inference execution across modern GPUs."
+  },
+  {
+   "title": "Run DiffusionGemma on NVIDIA for Developer-Ready, High-Throughput Text Generation",
+   "url": "https://developer.nvidia.com/blog/run-diffusiongemma-on-nvidia-for-developer-ready-high-throughput-text-generation",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-10T16:16:30",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Text-Model-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Text-Model\" width=\"768\" />Developers building real-time AI—such as chat assistants, copilots, and agentic workflows—are often constrained by token-by-token generation speed. This...",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-06-10T16:16:30",
+   "importance": 0.3,
+   "why": "Demonstrates high-throughput deployment of diffusion models on Nvidia hardware."
+  },
+  {
+   "title": "Designing Production-Ready Battery Energy Storage Systems for AI Factories",
+   "url": "https://developer.nvidia.com/blog/designing-production-ready-battery-energy-storage-systems-for-ai-factories",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-10T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image2-6-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI factories are changing what data-center infrastructure must do. Unlike traditional data centers, AI factories are built to manufacture intelligence at scale....",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-10T15:00:00",
+   "importance": 0.3,
+   "why": "This hardware guide details battery energy storage architectures for high-density AI data centers."
+  },
   {
    "title": "Building trust in enterprise AI: Together AI earns ISO 27001:2022 certification",
    "url": "https://www.together.ai/blog/iso-27001-2022-certification",

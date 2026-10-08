@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T11:49:18Z",
- "previous_generated_at": "2026-10-07T21:48:11Z",
+ "generated_at": "2026-10-08T21:51:22Z",
+ "previous_generated_at": "2026-10-08T11:49:18Z",
  "hot_days": 120,
- "count": 1718,
- "total_collected": 1812,
+ "count": 1722,
+ "total_collected": 1819,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,53 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Session-Aware Agentic Inference with NVIDIA Dynamo",
+   "url": "https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-08T18:13:46",
+   "summary": "<p>TL;DR Agentic workloads change the traffic an inference server sees. Unlike single-turn chat, an agent session can involve a large initial prefill, repeated model calls, and subagents running in parallel,...</p>\n<p>The post <a href=\"https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/\">Session-Aware Agentic Inference with NVIDIA Dynamo</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-10-08T21:50:38",
+   "importance": 0.75,
+   "why": "Introduces session-aware routing to handle multi-turn agentic prefill and parallel subagent execution overhead."
+  },
+  {
+   "title": "Beijing Will Not Pace the Frontier: China’s Speed-First AI Safety Regime",
+   "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-10-08T17:46:05",
+   "summary": "AI safety is on fire.",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-10-08T21:51:01",
+   "importance": 0.0
+  },
+  {
+   "title": "The AI Model Distillation Paradox",
+   "url": "https://www.lawfaremedia.org/article/the-ai-model-distillation-paradox",
+   "source": "hackernews",
+   "published_date": "2026-10-08T17:21:44",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "post-training,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-08T21:50:23",
+   "importance": 0.4,
+   "why": "Analyzes trade-offs between student model performance degradation and training compute amortization."
+  },
+  {
+   "title": "Building Spyre as a Native PyTorch Device",
+   "url": "https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-08T12:45:49",
+   "summary": "<p>TL;DR Spyre becomes a native PyTorch device by connecting PyTorch&#8217;s existing device, allocator, stream, and compiler abstractions through torch-spyre to the Spyre runtime and firmware. PrivateUse1 gives Spyre a real...</p>\n<p>The post <a href=\"https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/\">Building Spyre as a Native PyTorch Device</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-08T21:50:38",
+   "importance": 0.7,
+   "why": "Integrates custom hardware into PyTorch via PrivateUse1, bridging native compiler and runtime abstractions."
+  },
   {
    "title": "Java vLLM-like framework claim 90% perfomance of llamacpp inference on Nvidia HW",
    "url": "https://www.reddit.com/r/Vllm/comments/1x0lppn/java_vllmlike_framwork_claims_90_of_perfomance_of",
@@ -744,6 +791,18 @@
    "why": "Enables client-side LLM execution via WebGPU integration in Llama.cpp."
   },
   {
+   "title": "EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory",
+   "url": "https://arxiv.org/abs/2610.10533",
+   "source": "hf:papers",
+   "published_date": "2026-10-07T00:00:00",
+   "summary": "Conditional memory architectures such as DeepSeek Engram use input n-grams to look up learned embeddings, expanding the capacity of large language models (LLMs) with limited additional computation. Beyond model scaling, this architecture has demonstrated the potential to decouple factual knowledge storage from general-purpose computation, offering a promising route to updating factual knowledge while keeping the Transformer backbone fixed. Realizing this potential is challenging because different expressions of a fact may activate different n-gram embeddings, while updating shared embeddings can unintentionally change the model's predictions about other facts. We propose EngramEdit for decoupled knowledge updates through conditional memory. EngramEdit first computes target memory representations that make the model predict the updated fact across multiple expressions. It then jointly updates the shared n-gram embeddings to match these targets across expressions and edits, penalizing up",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-08T21:50:08",
+   "importance": 0.6,
+   "why": "Decouples factual knowledge storage from base weights using n-gram conditional memory lookups for targeted updates."
+  },
+  {
    "title": "GRACE: Generation-aware latent compression for efficient video generation",
    "url": "https://arxiv.org/abs/2610.10524",
    "source": "hf:papers",
@@ -802,6 +861,18 @@
    "first_seen": "2026-10-08T11:48:21",
    "importance": 0.5,
    "why": "Introduces amortized agentic policy discovery for personalized multi-objective test-time scaling across cost and latency."
+  },
+  {
+   "title": "Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion Training, Conversion and Fine-Tuning",
+   "url": "https://arxiv.org/abs/2610.09450",
+   "source": "hf:papers",
+   "published_date": "2026-10-07T00:00:00",
+   "summary": "Pixel-space diffusion models avoid the lossy VAE of latent models, which suggests an advantage on downstream tasks where fine-grained detail matters. We test this claim along both routes to a pixel-space backbone. We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a 256to512to1024 curriculum, after first ablating the prediction target and representation alignment at 256^2 to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space. We fine-tune both families for monocular depth estimation and for image restoration/super-resolution. We find no significant improvement from using a pixel-space generative prior. Fine-tuned for depth with one matched direct-regression recipe, Iris-3B is level with the latent FLUX.2 Klein and the converted pixel FLUX.2 Klein falls behind it, and on 4times DIV2K restoration neither pixel model beats a latent FLUX.2 Klein fine-tune, the converted one trailing it slightly.",
+   "tags": "architecture,training,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-10-08T21:50:08",
+   "importance": 0.5,
+   "why": "Pretrains a 3B pixel-space diffusion transformer via a progressive curriculum, bypassing VAE bottlenecks."
   },
   {
    "title": "Modernizing Table Batched Embeddings with FBTriton",
@@ -4505,6 +4576,18 @@
    "first_seen": "2026-10-05T23:03:46",
    "importance": 0.4,
    "why": "Converts retrieval-oriented biomedical sentence encoders into single-forward-pass calibrated decision models."
+  },
+  {
+   "title": "Inherit-MAS: Test-Time Evolution of Multi-Agent Systems through Workflow and Execution Inheritance",
+   "url": "https://arxiv.org/abs/2610.02396",
+   "source": "hf:papers",
+   "published_date": "2026-10-01T00:00:00",
+   "summary": "Multi-agent systems (MAS) built from large language models coordinate specialized agents to tackle complex tasks, but effective workflows are difficult to design in advance. Test-time evolution refines workflows using execution feedback, yet broad revisions can disturb useful components, while re-executing unchanged requests can incur redundant computation. Inspired by the interplay of inheritance and selection in biological evolution, we introduce Inherit-MAS, which makes inheritance explicit at the workflow and execution levels. A meta-model first synthesizes a workflow of worker agents with declared roles, communication inputs, and tool permissions, and a separately prompted judge scores each executed candidate and diagnoses its deficiencies. In ordinary refinement rounds, workflow inheritance starts from the latest completed candidate, may discard removable nodes judged unhelpful, and applies a validated edit to address the diagnosed deficiency. When the new candidate executes, exe",
+   "tags": "inference,systems,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-08T21:50:08",
+   "importance": 0.4,
+   "why": "Introduces execution-level inheritance to selectively mutate multi-agent workflows during test time, avoiding redundant computation."
   },
   {
    "title": "Octrees as an Explicit 3D Language",
@@ -20478,42 +20561,6 @@
    "first_seen": "2026-06-11T06:44:01",
    "importance": 0.5,
    "why": "Discrete-event simulation enables accurate modeling of modern LLM serving architectures and scheduling strategies."
-  },
-  {
-   "title": "Portable vLLM Model Inference Kernels in Helion",
-   "url": "https://pytorch.org/blog/portable-vllm-model-inference-kernels-in-helion",
-   "source": "rss:PyTorch Blog",
-   "published_date": "2026-06-10T17:00:13",
-   "summary": "TL;DR Helion kernels were integrated into vLLM for FP8 inference using Qwen3 models and evaluated across NVIDIA H100 and B200 GPUs. The experiments show that Helion provides a productive PyTorch-native...",
-   "tags": "inference,optimization,quantization",
-   "area": "inference-engines",
-   "first_seen": "2026-06-10T17:00:13",
-   "importance": 0.4,
-   "why": "Integrating portable PyTorch-native kernels into vLLM streamlines FP8 inference execution across modern GPUs."
-  },
-  {
-   "title": "Run DiffusionGemma on NVIDIA for Developer-Ready, High-Throughput Text Generation",
-   "url": "https://developer.nvidia.com/blog/run-diffusiongemma-on-nvidia-for-developer-ready-high-throughput-text-generation",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-10T16:16:30",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Text-Model-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Text-Model\" width=\"768\" />Developers building real-time AI—such as chat assistants, copilots, and agentic workflows—are often constrained by token-by-token generation speed. This...",
-   "tags": "inference,serving",
-   "area": "inference-engines",
-   "first_seen": "2026-06-10T16:16:30",
-   "importance": 0.3,
-   "why": "Demonstrates high-throughput deployment of diffusion models on Nvidia hardware."
-  },
-  {
-   "title": "Designing Production-Ready Battery Energy Storage Systems for AI Factories",
-   "url": "https://developer.nvidia.com/blog/designing-production-ready-battery-energy-storage-systems-for-ai-factories",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-10T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/image2-6-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI factories are changing what data-center infrastructure must do. Unlike traditional data centers, AI factories are built to manufacture intelligence at scale....",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-06-10T15:00:00",
-   "importance": 0.3,
-   "why": "This hardware guide details battery energy storage architectures for high-density AI data centers."
   }
  ]
 }
