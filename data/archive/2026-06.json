@@ -1,7 +1,18 @@
 {
  "month": "2026-06",
- "count": 62,
+ "count": 63,
  "articles": [
+  {
+   "title": "Building trust in enterprise AI: Together AI earns ISO 27001:2022 certification",
+   "url": "https://www.together.ai/blog/iso-27001-2022-certification",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-06-10T00:00:00",
+   "summary": "Together AI has earned ISO 27001:2022 certification, validating our commitment to enterprise-grade security for production AI workloads.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-10T00:00:00",
+   "importance": 0.0
+  },
   {
    "title": "AutoMegaKernel: Compiling a LLM into a single CUDA kernel",
    "url": "https://arxiv.org/abs/2606.09682",
