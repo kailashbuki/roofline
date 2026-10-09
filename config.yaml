@@ -118,6 +118,10 @@ sources:
         filter: false
       - name: "Latent Space"
         url: "https://www.latent.space/feed"
+      # Personal blog on build systems, compilers, and dev tooling; only
+      # occasionally on-topic, so left to the classifier.
+      - name: "jyn.dev"
+        url: "https://jyn.dev/atom.xml"
 
 # Relevance. min_score applies to the classifier's score, not keyword matching.
 # The keyword lists are the fallback used only when Gemini is unavailable.
