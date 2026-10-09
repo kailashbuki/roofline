@@ -1,7 +1,43 @@
 {
  "month": "2026-06",
- "count": 66,
+ "count": 69,
  "articles": [
+  {
+   "title": "Nvidia Won the Cloud. Now It Wants the Laptop.",
+   "url": "https://www.airealist.ai/p/nvidia-won-the-cloud-now-it-wants",
+   "source": "airealist",
+   "published_date": "2026-06-11T11:26:51",
+   "summary": "Nvidia&#8217;s new laptop chip trails Apple where it counts and it was built to win anyway.",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-11T11:26:51",
+   "importance": 0.4,
+   "why": "Nvidia targets the client PC market with a custom laptop processor competing with Apple."
+  },
+  {
+   "title": "IBM's Spyre AI Accelerator Deep Dive – By Gavin Bonshor",
+   "url": "https://morethanmoore.substack.com/p/ibms-spyre-ai-accelerator-deep-dive",
+   "source": "hackernews",
+   "published_date": "2026-06-11T08:38:32",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-06-11T08:38:32",
+   "importance": 0.3,
+   "why": "Detailed breakdown of IBM's custom AI accelerator architecture for inference workloads."
+  },
+  {
+   "title": "Frontier: A Discrete-Event Simulator for Modern LLM Serving",
+   "url": "https://github.com/NetX-lab/Frontier",
+   "source": "hackernews",
+   "published_date": "2026-06-11T06:44:01",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-06-11T06:44:01",
+   "importance": 0.5,
+   "why": "Discrete-event simulation enables accurate modeling of modern LLM serving architectures and scheduling strategies."
+  },
   {
    "title": "Portable vLLM Model Inference Kernels in Helion",
    "url": "https://pytorch.org/blog/portable-vllm-model-inference-kernels-in-helion",
