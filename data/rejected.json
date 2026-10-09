@@ -1,5 +1,5 @@
 {
- "count": 1423,
+ "count": 1434,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1423,6 +1423,17 @@
   "https://jyn.dev/brownouts-reveal-system-boundaries",
   "https://jyn.dev/the-terminal-of-the-future",
   "https://jyn.dev/build-system-tradeoffs",
-  "https://jyn.dev/the-core-of-rust"
+  "https://jyn.dev/the-core-of-rust",
+  "https://arxiv.org/abs/2610.10549",
+  "https://arxiv.org/abs/2610.08927",
+  "https://arxiv.org/abs/2610.11566",
+  "https://arxiv.org/abs/2610.12399",
+  "https://arxiv.org/abs/2610.12452",
+  "https://arxiv.org/abs/2610.12360",
+  "https://arxiv.org/abs/2610.12369",
+  "https://arxiv.org/abs/2609.30541",
+  "https://technode.com/2026/10/09/ecosia-switches-from-mistral-to-open-weight-ai-models-including-qwen-glm-and-kimi",
+  "https://huggingface.co/blog/allenai/impactful-scheduling",
+  "https://openai.com/index/asana-browser-agent"
  ]
 }

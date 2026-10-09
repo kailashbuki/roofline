@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 69,
+ "count": 71,
  "articles": [
+  {
+   "title": "One-Click Multi-Tenant Security with  NVIDIA Quantum InfiniBand",
+   "url": "https://developer.nvidia.com/blog/one-click-multi-tenant-security-with-nvidia-quantum-infiniband",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-11T19:52:37",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ethernet-tech-blog-networking-software-kv-1920x1080-5338100-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ethernet-tech-blog-networking-software-kv-1920x1080-5338100\" width=\"768\" />NVIDIA Quantum InfiniBand now offers intent-based security profiles in Unified Fabric Manager (UFM) that enable multi-tenant fabric security in a single...",
+   "tags": "systems,hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-11T19:52:37",
+   "importance": 0.3,
+   "why": "Introduces intent-based networking features for InfiniBand hardware to streamline multi-tenant cluster security."
+  },
+  {
+   "title": "Intel Should Raise Capital",
+   "url": "https://newsletter.semianalysis.com/p/intel-should-raise-capital",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-11T14:50:55",
+   "summary": "Intel's woes are behind them. The heavy spending is ahead of them. Why an equity issuance in a hot equity market could make Intel so much better sooner.",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-11T14:50:55",
+   "importance": 0.6,
+   "why": "Examines foundry capital expenditure cycles and equity issuance requirements to fund advanced semiconductor manufacturing."
+  },
   {
    "title": "Nvidia Won the Cloud. Now It Wants the Laptop.",
    "url": "https://www.airealist.ai/p/nvidia-won-the-cloud-now-it-wants",
