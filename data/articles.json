@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T10:58:03Z",
- "previous_generated_at": "2026-10-09T21:29:46Z",
+ "generated_at": "2026-10-10T16:09:42Z",
+ "previous_generated_at": "2026-10-10T10:58:03Z",
  "hot_days": 120,
  "count": 1784,
- "total_collected": 1888,
+ "total_collected": 1889,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Impactful Scheduling for GPU Clusters",
+   "url": "https://allenai.org/blog/impactful-scheduling",
+   "source": "hackernews",
+   "published_date": "2026-10-10T13:06:53",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "serving,systems,optimization",
+   "area": "silicon",
+   "first_seen": "2026-10-10T16:09:13",
+   "importance": 0.7,
+   "why": "Formulates job scheduling algorithms explicitly minimizing tail latency under volatile large-scale cluster workloads."
+  },
   {
    "title": "VibeSys Builds a Qwen3.5-397B Engine on MI300A, 2.3× Tuned SGLang",
    "url": "https://syfi.cs.washington.edu/blog/2026-10-08-qwen35-mi300a",
@@ -21291,18 +21303,6 @@
    "first_seen": "2026-06-12T17:10:58",
    "importance": 0.4,
    "why": "Proposes a data-driven sparse design rule for affine robust optimization uncertainty sets."
-  },
-  {
-   "title": "Deploy Long-Context Reasoning and Agentic Workflows with MiniMax M3 on NVIDIA Accelerated Infrastructure",
-   "url": "https://developer.nvidia.com/blog/deploy-long-context-reasoning-and-agentic-workflows-with-minimax-m3-on-nvidia-accelerated-infrastructure",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-12T14:43:17",
-   "summary": "<img alt=\"Decorative object.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/MM-Release-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"MM-Release\" width=\"768\" />As enterprise AI adoption scales, developers are increasingly forced to stitch together fragmented pipelines—separate models for text, vision, and...",
-   "tags": "inference,serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-12T14:43:17",
-   "importance": 0.4,
-   "why": "Deploying long-context reasoning models on accelerated enterprise infrastructure."
   }
  ]
 }
