@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 71,
+ "count": 73,
  "articles": [
+  {
+   "title": "Cash Flow Lends. Valuation Doesn’t.",
+   "url": "https://www.airealist.ai/p/cash-flow-lends-valuation-doesnt",
+   "source": "airealist",
+   "published_date": "2026-06-12T07:09:24",
+   "summary": "Three borrowers, three answers, seventy-two hours. The AI debt boom did not slow down last week. It got priced.",
+   "tags": "hardware",
+   "area": "economics",
+   "first_seen": "2026-06-12T07:09:24",
+   "importance": 0.7,
+   "why": "Analyzes the capital structure and financing mechanisms driving AI infrastructure debt and spending."
+  },
+  {
+   "title": "Mixture-of-Experts (Moe), Explained: Why \"Active Parameters\" Decide What Runs",
+   "url": "https://vettedconsumer.com/mixture-of-experts-moe-explained-why-active-parameters-decide-what-runs-on-your-machine",
+   "source": "hackernews",
+   "published_date": "2026-06-11T23:26:36",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-06-11T23:26:36",
+   "importance": 0.3,
+   "why": "Examines how active parameter routing in Mixture-of-Experts dictates efficient execution and compute dynamics."
+  },
   {
    "title": "One-Click Multi-Tenant Security with  NVIDIA Quantum InfiniBand",
    "url": "https://developer.nvidia.com/blog/one-click-multi-tenant-security-with-nvidia-quantum-infiniband",

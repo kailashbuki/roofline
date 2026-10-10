@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T21:29:46Z",
- "previous_generated_at": "2026-10-09T11:41:37Z",
+ "generated_at": "2026-10-10T10:58:03Z",
+ "previous_generated_at": "2026-10-09T21:29:46Z",
  "hot_days": 120,
- "count": 1782,
- "total_collected": 1884,
+ "count": 1784,
+ "total_collected": 1888,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,41 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "VibeSys Builds a Qwen3.5-397B Engine on MI300A, 2.3× Tuned SGLang",
+   "url": "https://syfi.cs.washington.edu/blog/2026-10-08-qwen35-mi300a",
+   "source": "hackernews",
+   "published_date": "2026-10-10T06:51:34",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,hardware,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-10-10T10:57:33",
+   "importance": 0.5,
+   "why": "Demonstrates 2.3x speedups over SGLang by targeting AMD MI300A architecture specifically."
+  },
+  {
+   "title": "Local LLM Inference at Scale with vLLM",
+   "url": "https://data4sci.substack.com/p/local-llm-inference-at-scale-with",
+   "source": "hackernews",
+   "published_date": "2026-10-09T23:00:25",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-10T10:57:33",
+   "importance": 0.4,
+   "why": "Explores scaling vLLM deployments for local hardware configurations, enabling higher request concurrency."
+  },
+  {
+   "title": "I expect rapid progress but not towards general superintelligence",
+   "url": "https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-09T21:33:47",
+   "summary": "I&#8217;ve often been surprised when I hear from top researchers in industry that they think AI will be better than them at their job in a few years, and I didn&#8217;t really know why I doubted it.",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-10T10:57:49",
+   "importance": 0.0
+  },
   {
    "title": "Kisoku 1.6B: LLM trained solo from scratch on a TPU grant, matches Llama 3.2 1B",
    "url": "https://github.com/0arch-io/kisoku",
@@ -2310,6 +2345,18 @@
    "first_seen": "2026-10-08T11:48:21",
    "importance": 0.8,
    "why": "It splits Transformer layers between a parallel causal encoder and a recurrent decoder to update state at every token without fixed depth limits."
+  },
+  {
+   "title": "SpecFold: Folding Multi-Branch Redundancy for Faster Speculative Decoding in Diffusion Language Models",
+   "url": "https://arxiv.org/abs/2610.04875",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Diffusion large language models (DLLMs) generate text through iterative block denoising, and multi-branch speculative decoding accelerates this process by verifying a main branch together with multiple draft branches in a single forward pass. While prior DLLM acceleration methods primarily exploit temporal redundancy across denoising steps, we identify a complementary redundancy axis within each speculative verification step: multi-branch computational redundancy. During speculative verification, draft branches inherit most tokens from their parents while unmasking a small set of additional positions, causing large portions of hidden states to remain highly similar across branches. We propose SpecFold, an algorithm-system co-design that exploits this multi-branch redundancy to reduce the cost of multi-branch speculative verification. Algorithmically, SpecFold performs token-level residual gating and selectively reuses parent computation through folded attention and FFN while preserving",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-10T10:57:15",
+   "importance": 0.75,
+   "why": "Exploits spatial multi-branch redundancy within diffusion steps to accelerate speculative decoding passes."
   },
   {
    "title": "NVIDIA’s Olympus Core: Pushing Server Single Threaded Performance Boundaries",
@@ -21256,30 +21303,6 @@
    "first_seen": "2026-06-12T14:43:17",
    "importance": 0.4,
    "why": "Deploying long-context reasoning models on accelerated enterprise infrastructure."
-  },
-  {
-   "title": "Cash Flow Lends. Valuation Doesn’t.",
-   "url": "https://www.airealist.ai/p/cash-flow-lends-valuation-doesnt",
-   "source": "airealist",
-   "published_date": "2026-06-12T07:09:24",
-   "summary": "Three borrowers, three answers, seventy-two hours. The AI debt boom did not slow down last week. It got priced.",
-   "tags": "hardware",
-   "area": "economics",
-   "first_seen": "2026-06-12T07:09:24",
-   "importance": 0.7,
-   "why": "Analyzes the capital structure and financing mechanisms driving AI infrastructure debt and spending."
-  },
-  {
-   "title": "Mixture-of-Experts (Moe), Explained: Why \"Active Parameters\" Decide What Runs",
-   "url": "https://vettedconsumer.com/mixture-of-experts-moe-explained-why-active-parameters-decide-what-runs-on-your-machine",
-   "source": "hackernews",
-   "published_date": "2026-06-11T23:26:36",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "architecture,llm",
-   "area": "architecture",
-   "first_seen": "2026-06-11T23:26:36",
-   "importance": 0.3,
-   "why": "Examines how active parameter routing in Mixture-of-Experts dictates efficient execution and compute dynamics."
   }
  ]
 }
