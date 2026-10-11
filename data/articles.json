@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T20:28:56Z",
- "previous_generated_at": "2026-10-10T16:09:42Z",
+ "generated_at": "2026-10-11T11:14:40Z",
+ "previous_generated_at": "2026-10-10T20:28:56Z",
  "hot_days": 120,
- "count": 1773,
- "total_collected": 1890,
+ "count": 1782,
+ "total_collected": 1900,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -765,6 +765,18 @@
    "why": "Ports vLLM primitives to Java to enable Java-based serving with near-llama.cpp throughput on NVIDIA hardware."
   },
   {
+   "title": "Predicting Cable Dynamics with Physical Attention Bias",
+   "url": "https://arxiv.org/abs/2610.11975",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "Learned simulators for deformable linear objects (DLOs) such as cables have to predict the motion of cables they were not trained on and stay stable over long rollouts. Most of their error occurs where the cable touches itself or the floor. Attention over all pairs of cable segments can represent contact between parts of the cable that are far apart along its length, but attention has no notion of geometry. A cable has two pairwise distances, which agree only while it is straight: the arc-length distance along the cable, which governs elastic forces, and the Euclidean distance in space, which governs contact. We add a physical attention bias, an additive term on the attention logits with a learned rate, and ask which distance it should use. We compare no bias, each distance alone, and both distances on disjoint sets of heads, keeping the rest of the model and the training protocol fixed. A physical bias improves prediction on unseen cables. The gain is largest when attention is the onl",
+   "tags": "architecture,attention",
+   "area": "architecture",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.4,
+   "why": "Physical attention bias models cable self-contact without all-pairs complexity."
+  },
+  {
    "title": "Scaling to Tens of Thousands of Test-Time Iterations with Loop-Native Attention Residuals",
    "url": "https://arxiv.org/abs/2610.11570",
    "source": "hf:papers",
@@ -811,6 +823,30 @@
    "first_seen": "2026-10-09T11:40:31",
    "importance": 0.6,
    "why": "Adapts vision token compression specifically for hybrid models incorporating linear attention mechanisms."
+  },
+  {
+   "title": "The Lattice of Transition Laws",
+   "url": "https://arxiv.org/abs/2610.11216",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "Diffusion and autoregression (AR) have long been seen as different categories of generative models, with diffusion specialising in continuous fields and AR specialising in discrete tokens. Recent work seeks to combine the advantages of the two models, and each hybrid fixes its decoding schedule by design. In this paper, we ask whether the performance of decoding schedules of one model can be predicted before decoding at a fixed number of steps. We describe diffusion, AR, and models in between as paths on one corruption lattice, and define the cost of a schedule as the dependence its parallel steps discard. The cost shows that the fewest steps of a zero-cost schedule are set by the geometry of the data, in the same way for tokens and for continuous fields. In particular, for data that are Markov on a graph and dependent along its paths, the fewest steps equal the graph's treedepth, which is logarithmic in the length of a sequence and linear in the side length of a grid. With fewer steps",
+   "tags": "architecture,inference",
+   "area": "architecture",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.5,
+   "why": "Unifying diffusion and autoregression via joint transition law schedules allows cross-model decoding prediction."
+  },
+  {
+   "title": "MARGIN: Runtime Confidence Calibration for Multi-Agent Foundation Model Coordination",
+   "url": "https://arxiv.org/abs/2605.22949",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "When a coordinator compares answers from heterogeneous foundation models, self-reported confidence may have different meanings across responders and changing workloads. This paper presents MARGIN (Multi-Agent Runtime Grading via Incremental Normalisation), a runtime calibration method that learns model-specific confidence corrections from observed answer outcomes without retraining the models or requiring a held-out calibration set. MARGIN tracks recent accuracy and stated confidence within confidence bands, uses their ratio to correct reported confidence, and blends sparse-band corrections toward a model-level estimate. The corrected scores weight candidate answers in a collective decision. Evaluation covers code generation, question answering, and mathematics, using an 18-model pool and a nine-model subset for distribution-shift experiments. On BigCodeBench, model-mean confidence is negatively related to accuracy; among correct/incorrect response pairs, choosing the more confident re",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.5,
+   "why": "Incremental normalisation calibrates runtime confidence across heterogeneous foundation models without retraining."
   },
   {
    "title": "Decoupling Exploration from Optimization in RLVR",
@@ -1605,6 +1641,18 @@
    "why": "Introduces amortized agentic policy discovery for personalized multi-objective test-time scaling across cost and latency."
   },
   {
+   "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+   "url": "https://arxiv.org/abs/2610.09639",
+   "source": "hf:papers",
+   "published_date": "2026-10-07T00:00:00",
+   "summary": "On-policy distillation (OPD) strengthens language-model reasoning, yet whether students acquire new factual knowledge or compositional skill for multi-step reasoning remains unknown. We separate these capabilities using a controlled synthetic framework that measures the student's initial capabilities and independently controls the teacher's additional facts, compositional skill, or both. Across four models from three families, reverse-KL OPD reliably transfers compositional skill across unseen reasoning structures, but transfers minimal factual knowledge. Decoupling the distillation recipe reveals the source of this asymmetry: replacing reverse KL with forward KL restores factual transfer, whereas student rollouts specifically improve the execution of multi-step reasoning. Experiments on recent factual QA and competition mathematics show a similar asymmetry under reverse-KL OPD, yielding notable reasoning gains without factual memory expansion. Together, these results demonstrate that ",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.6,
+   "why": "Synthetic control frameworks prove on-policy distillation teaches compositional skills rather than raw facts."
+  },
+  {
    "title": "DSReg: Provably Recovering Individual World Latents without Reconstruction",
    "url": "https://arxiv.org/abs/2610.09457",
    "source": "hf:papers",
@@ -2263,6 +2311,30 @@
    "importance": 0.0
   },
   {
+   "title": "Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI",
+   "url": "https://arxiv.org/abs/2610.09146",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Large language models (LLMs) and vision-language models (VLMs) are usually frozen after deployment, so they do not learn from the cases they solve. This is especially concerning in medicine, where new clinical evidence, updated guidelines, and new therapies can change established practice. Fine-tuning can update the model, but it requires access to model weights and additional training. Parameter-free methods avoid training, but they may overfit a fixed validation set, lack reliable domain knowledge, or lose visual details by saving experience only as text. To address these limitations, we present a model-agnostic framework that allows frozen LLMs and VLMs to learn from deployment experience through three forms of external expertise: a Skill that guides reasoning and tool use, a Knowledge Memory that stores reliable facts supported by earlier cases or trusted external evidence, and a Multimodal Knowledge Base that keeps visual examples and guides the model to relate each retrieved case",
+   "tags": "training,post-training",
+   "area": "training",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.4,
+   "why": "Model-agnostic parameter updates bypass weight fine-tuning for medical VLM adaptation."
+  },
+  {
+   "title": "EDiS: Edge Disjoint Subgraph Sparsification Framework for Graph Neural Networks",
+   "url": "https://arxiv.org/abs/2610.09059",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Sparse GNN training reduces computation, but deciding which edges to keep can be costly. Reusing one sparse graph is cheap, but locks training to a fixed topology, while varying it across epochs can require repeated sampling or recomputation. We introduce EDiS (Edge-Disjoint Subgraph sparsification framework), which separates one-time structural extraction from per-epoch graph composition. EDiS decomposes the graph once into cacheable edge-disjoint subgraphs, then recombines them into graphs with edge-budget constraints across epochs and retention ratios without re-extracting structure. Our default construction uses feature-based scores and successive maximum score covering forests, while the same composition mechanism also supports alternative edge selection rules. We provide a combinatorial analysis of the per-epoch sampler, the composition step that draws a training graph from the cached decomposition. We show that, under the default covering-forest selector, the stored decompositio",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.5,
+   "why": "Edge-disjoint subgraph sparsification separates structural extraction from epoch composition to accelerate GNN training."
+  },
+  {
    "title": "On KL-Regularized Policy Optimization",
    "url": "https://arxiv.org/abs/2610.08963",
    "source": "hf:papers",
@@ -2273,6 +2345,30 @@
    "first_seen": "2026-10-08T11:48:21",
    "importance": 0.8,
    "why": "It characterizes and resolves policy optimization instability caused by distribution mismatch between stale sampler rollouts and trainer inference engines."
+  },
+  {
+   "title": "SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation",
+   "url": "https://arxiv.org/abs/2610.08941",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Language-guided panoramic video generation benefits various downstream applications, such as interactive 3D scene exploration, virtual reality experiences, and embodied agent training. Existing panoramic generators follow predefined trajectories, and interactive world models act through low-level actions in perspective views. We propose SPW-Nav, a streaming panoramic world model that understands movement instructions and streams one minute of 2K 360-degree video in real time from a single panorama. SPW-Nav interprets each instruction in the previously generated panorama as camera motion. Spherical rotation decoupling applies rotation exactly on the sphere, pose-aligned conditioning keeps translation inputs bounded over long streams, and a multi-term memory with a few-step generator continues the scene as instructions change. We also build SPW-NavSet, panoramic videos with camera trajectories and verified instructions. Driven by language, SPW-Nav outperforms prior panoramic generators i",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.5,
+   "why": "Streaming panoramic world model generates interactive visual environments for embodied navigation."
+  },
+  {
+   "title": "CARE: Certifying Acceleration for Vision-Language-Action Inference",
+   "url": "https://arxiv.org/abs/2610.08917",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "While vision-language-action (VLA) models have advanced rapidly, running them at every control step remains expensive. Prior work accelerates VLA inference using techniques like action chunking and visual-token pruning, typically evaluating based on latency and average task success. However, acceleration may discard information and break tasks the original policy would solve, a risk hidden by average metrics. Measuring these failures is challenging because action deviations compound over closed-loop trajectories, meaning task failure is only observable across full episodes. We therefore define an acceleration-induced failure via paired rollouts from identical initial conditions, tracking when the reference succeeds but the accelerated policy fails. To manage this, we introduce CARE, an approach for certified accelerator selection. CARE uses paired rollouts on a calibration set to provide finite-sample guarantees that acceleration-induced failure risk stays below a user-specified budget",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.5,
+   "why": "Certifying VLA acceleration guarantees task success bounds under action chunking and pruning."
   },
   {
    "title": "On-Policy Distillation with Negative-Policy Rollouts",
@@ -4550,6 +4646,18 @@
    "first_seen": "2026-10-07T11:32:28",
    "importance": 0.8,
    "why": "It uses joint-marginal distribution matching for few-step video generation to eliminate autoregressive rollout drift."
+  },
+  {
+   "title": "Investigating the Role of Reasoning-Language Alignment in Monolingual Retrieval-Augmented Generation",
+   "url": "https://arxiv.org/abs/2610.03136",
+   "source": "hf:papers",
+   "published_date": "2026-10-02T00:00:00",
+   "summary": "Reasoning traces improve large language models (LLMs), but current models are trained to reason mostly in English. It has been shown that forcing a model to reason in another language degrades accuracy, even when the reasoning language matches the language of the prompt -- but only for a setting where the model reasons over a short prompt. Here, we ask whether the same holds for retrieval-augmented generation (RAG), where the model must read and integrate a large amount of retrieved evidence in the target language. To study this, we build a fully monolingual German RAG question-answering testbed over the fictional world of the tabletop role-playing game The Dark Eye, a domain that is richly documented in German but too niche for the model to answer from memory, so that it has to rely on retrieval. Varying the forced reasoning language of an agentic RAG system on this testbed, we find that aligning the reasoning language with the language of the query and the retrieved documents helps. ",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.4,
+   "why": "Cross-lingual reasoning alignment impacts RAG retrieval accuracy."
   },
   {
    "title": "In-Distribution Forcing for Long Video Generation at Test Time",
@@ -9144,6 +9252,18 @@
    "first_seen": "2026-09-29T11:08:38",
    "importance": 0.4,
    "why": "It streams explicit editing instructions into generative video models to enable precise localized world modifications."
+  },
+  {
+   "title": "Learning to Steer, Steering to See: Unveiling the Geometry of RLVR in Large Language Models via Trainable Vectors",
+   "url": "https://arxiv.org/abs/2609.34344",
+   "source": "hf:papers",
+   "published_date": "2026-09-28T00:00:00",
+   "summary": "Reinforcement learning (RL) has become a key paradigm for enhancing the reasoning of large language models, yet the high dimensionality of parameter updates makes its training dynamics hard to analyze. We study reinforcement learning with verifiable rewards (RLVR) and use vector steering to identify a low-dimensional effective manifold in activation space associated with RL-induced gains. We uncover two geometric properties. (1) Effective Manifold Capacity: the capacity needed to reproduce RL gains can be very small but is not infinitely compressible; at extremely low capacity, intervention dimensionality and input-dependent expressiveness become key constraints, and this requirement varies with injection depth. (2) Control Manifold Separation: effective control directions lie mainly in the low-variance complement of the activation principal subspace. Within a task and base model, the learned geometry stays largely consistent across training configurations, and across tasks geometric a",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-11T11:13:56",
+   "importance": 0.6,
+   "why": "Vector steering isolates low-dimensional manifolds in activation space to analyze RLVR dynamics."
   },
   {
    "title": "Knowing When Thinking Is Not Enough: Teaching Small Reasoning Models to Reason Beyond Their Parametric Knowledge",
@@ -21163,18 +21283,6 @@
    "first_seen": "2026-06-14T12:58:14",
    "importance": 0.4,
    "why": "Demonstrates high local throughput using multi-token prediction and consumer hardware, showing serving optimization viability."
-  },
-  {
-   "title": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
-   "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-12T21:12:40",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-agent-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-agent\" width=\"768\" />AI agents have fundamentally changed the complexity of inference workloads. Until now, the industry has struggled to define a standard for measuring how...",
-   "tags": "inference,benchmarks,llm",
-   "area": "inference-methods",
-   "first_seen": "2026-06-12T21:12:40",
-   "importance": 0.3,
-   "why": "Benchmarking agentic coding performance highlights emerging evaluation methodologies for complex multi-turn LLM inference."
   }
  ]
 }

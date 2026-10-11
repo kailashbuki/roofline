@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 86,
+ "count": 87,
  "articles": [
+  {
+   "title": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
+   "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-12T21:12:40",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-agent-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-agent\" width=\"768\" />AI agents have fundamentally changed the complexity of inference workloads. Until now, the industry has struggled to define a standard for measuring how...",
+   "tags": "inference,benchmarks,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-06-12T21:12:40",
+   "importance": 0.3,
+   "why": "Benchmarking agentic coding performance highlights emerging evaluation methodologies for complex multi-turn LLM inference."
+  },
   {
    "title": "RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space",
    "url": "https://arxiv.org/abs/2606.14700",

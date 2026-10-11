@@ -1,5 +1,5 @@
 {
- "count": 1444,
+ "count": 1453,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1444,6 +1444,15 @@
   "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b",
   "https://www.latent.space/p/biohub-deepmind",
   "https://www.anthropic.com/research/investigating-unintended-model-actions",
-  "https://www.latent.space/p/standard-bots"
+  "https://www.latent.space/p/standard-bots",
+  "https://arxiv.org/abs/2609.38527",
+  "https://arxiv.org/abs/2610.09280",
+  "https://arxiv.org/abs/2610.11169",
+  "https://arxiv.org/abs/2610.08585",
+  "https://arxiv.org/abs/2610.10355",
+  "https://arxiv.org/abs/2609.31507",
+  "https://arxiv.org/abs/2610.02959",
+  "https://franciscocarloserra.github.io/hf-top-models",
+  "https://www.latent.space/p/nyc2026"
  ]
 }
