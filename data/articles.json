@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T12:49:16Z",
- "previous_generated_at": "2026-10-11T20:49:22Z",
+ "generated_at": "2026-10-12T23:31:51Z",
+ "previous_generated_at": "2026-10-12T12:49:16Z",
  "hot_days": 120,
- "count": 1849,
- "total_collected": 1967,
+ "count": 1855,
+ "total_collected": 1975,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+   "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+   "source": "hackernews",
+   "published_date": "2026-10-12T21:35:35",
+   "summary": "3 points, 1 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-10-12T23:31:25",
+   "importance": 0.65,
+   "why": "Pairs Intel D270 accelerators with 480 GB of LPDDR5X memory to target large model inference footprints."
+  },
+  {
+   "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+   "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-12T16:00:54",
+   "summary": "<img alt=\"A cube assembled from smaller dark blocks, with glowing cyan, pink, yellow, and green sections against a black background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/cube-black-background-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cube-black-background\" width=\"768\" />Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are...",
+   "tags": "architecture,inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-12T23:31:36",
+   "importance": 0.75,
+   "why": "Reconfigures state storage mechanics in hybrid models to reduce decoding latency during autoregressive generation."
+  },
   {
    "title": "Using KV cache as embeddings",
    "url": "https://breadbowl.ai/blog/breadbowl-embed",
@@ -1485,6 +1509,18 @@
    "why": "Introduces a recurrent harness to manage online distribution shifts in long-context language model agents without extra validation data."
   },
   {
+   "title": "One Model to Loop Them All: Elastic Latent Recurrence for Language Models",
+   "url": "https://arxiv.org/abs/2610.12582",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "A latent recurrent language model applies a shared block of layers repeatedly, so one checkpoint can trade inference compute for accuracy by changing the loop count. At one loop, however, such models typically fall well short of a non-recurrent model of the same size, a one-loop tax that makes a separate non-recurrent model the better choice whenever latency matters. We present Elastic Latent Recurrence (ELR), a recipe for training looped language models without this tax. At one loop, an ELR model costs the same to serve as a non-recurrent model of the same size and, trained on the same data, reaches similar accuracy. Each additional loop then buys more accuracy for more inference compute. Three choices make this work: a gated state update with a learned step size, loop counts mixed within each optimizer update, and conditioning each pass on its loop index and budget. The first two preserve one-loop accuracy, and the third lowers loss at every additional loop. Mixed depths can be intro",
+   "tags": "architecture,inference,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-12T23:30:36",
+   "importance": 0.7,
+   "why": "Removes the one-loop accuracy tax in latent recurrent models, enabling dynamic compute-accuracy tradeoffs without checkpoint switching."
+  },
+  {
    "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
    "url": "https://arxiv.org/abs/2610.12572",
    "source": "hf:papers",
@@ -2313,6 +2349,18 @@
    "why": "Enables client-side LLM execution via WebGPU integration in Llama.cpp."
   },
   {
+   "title": "Less from More: Reinforcing Sparse Video Reasoning from Dense References",
+   "url": "https://arxiv.org/abs/2610.10893",
+   "source": "hf:papers",
+   "published_date": "2026-10-07T00:00:00",
+   "summary": "Video-language models commonly assume that more temporal observations lead to more reliable reasoning. We question this assumption and argue that the key challenge is not merely processing more video frames efficiently, but learning to reason reliably under limited temporal evidence. We propose SAVER, a dense-to-sparse post-training framework that uses dense video views as training-time references for sparse-frame inference. During reinforcement post-training, paired dense and sparse views are optimized with grounding rewards and a reliability-gated reference reward, encouraging sparse view predictions to preserve task-relevant temporal evidence. Notably, SAVER is trained only on 1,250 randomly sampled temporal grounding examples, without using any video question answering annotations. Across three temporal grounding benchmarks and six video question-answering benchmarks, SAVER consistently improves performance across frame budgets. In particular, SAVER can match or surpass dense-frame",
+   "tags": "training,multimodal,optimization",
+   "area": "training",
+   "first_seen": "2026-10-12T23:30:36",
+   "importance": 0.7,
+   "why": "Uses dense video views as training-time references to reinforce sparse temporal reasoning under limited observations."
+  },
+  {
    "title": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
    "url": "https://arxiv.org/abs/2610.10845",
    "source": "hf:papers",
@@ -3054,6 +3102,18 @@
    "first_seen": "2026-10-06T11:50:07",
    "importance": 0.35,
    "why": "Achieves competitive training costs under tight budget constraints using cross-border distillation methods."
+  },
+  {
+   "title": "VeloGB10 – A GB10-specific inference engine",
+   "url": "https://github.com/sf-stav/veloGB10",
+   "source": "hackernews",
+   "published_date": "2026-10-06T02:40:38",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "inference,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-12T23:31:25",
+   "importance": 0.65,
+   "why": "Implements a dedicated GB10 inference engine optimized specifically for that architecture."
   },
   {
    "title": "Expanding our enterprise inference capacity with IBM Cloud and NVIDIA",
@@ -4108,6 +4168,18 @@
    "why": "Uses on-policy context distillation to internalize agent harness memory and refinement capabilities directly into diffusion model weights."
   },
   {
+   "title": "Distributionally Robust Mixture-of-Experts Training",
+   "url": "https://arxiv.org/abs/2610.07207",
+   "source": "hf:papers",
+   "published_date": "2026-10-05T00:00:00",
+   "summary": "Mixture-of-Experts (MoE) transformers scale capacity by activating only a few experts per token, but this sparsity creates a hidden reliability problem: when routing is imperfect, load-balanced models may send tokens to experts that are insufficiently trained for the assigned inputs. We propose Distributionally Robust MoE Training (DRMoET), a drop-in objective that treats layer-wise experts as endogenous robustness groups and optimizes high-loss routing outcomes rather than merely equalizing traffic. DRMoET updates a per-layer expert distribution by an entropy-regularized softmax rule on EMA-smoothed, activation-weighted expert losses, strengthening plausible non-top routing paths while preserving standard MoE computation. Under the FLAME-MoE recipe at 746M-total and 10.3B-total scales, DRMoET improves downstream averages over both standard FLAME-MoE and auxiliary-loss-free balancing. At 10.3B total parameters and 67B training tokens, DRMoET improves the seven-task average from 0.6625 ",
+   "tags": "training,architecture,llm",
+   "area": "training",
+   "first_seen": "2026-10-12T23:30:36",
+   "importance": 0.65,
+   "why": "Treats layer-wise experts as an adversarial distribution to prevent routing failures under imperfect expert load-balancing."
+  },
+  {
    "title": "SoloQ: Calibration-Free Quantization for Diffusion Language Models",
    "url": "https://arxiv.org/abs/2610.07121",
    "source": "hf:papers",
@@ -4250,6 +4322,18 @@
    "first_seen": "2026-10-06T11:49:21",
    "importance": 0.75,
    "why": "Enables reliable action-chunk extension in vision-language-action policies to eliminate stop-and-go robotic execution pauses."
+  },
+  {
+   "title": "The Life Cycle of a Massive Activation: Stochastic Birth, Weight-Decay-Driven Growth, and Competitive Consolidation",
+   "url": "https://arxiv.org/abs/2610.00423",
+   "source": "hf:papers",
+   "published_date": "2026-10-05T00:00:00",
+   "summary": "Massive activations, residual-stream coordinates with magnitudes far larger than typical activations, are associated with attention sinks in transformers, but how their scale is regulated during training remains incompletely understood. Combining training-trajectory analyses and controlled interventions, we trace their emergence, growth, and consolidation. Sink-carrying channels vary across random seeds but stabilize early within each run. Over longer training, surrounding channels erode and the sink concentrates onto a few redundant carriers. Across ablations, gradient attenuation follows the sink token's collective root-mean-square magnitude rather than any single channel, making collective scale central to understanding their effects. Our central result is that weight decay causally controls the turnover of global activation scale. In controlled continuations, removing decay near the peak allows this scale to keep rising, whereas retaining it produces decline even at constant learni",
+   "tags": "training,architecture,attention",
+   "area": "training",
+   "first_seen": "2026-10-12T23:30:36",
+   "importance": 0.6,
+   "why": "Traces stochastic birth and weight-decay-driven growth of massive activations to explain residual-stream coordinate regulation during training."
   },
   {
    "title": "DeCoPrune: Efficient KV-Cache Pruning for Autoregressive Video Diffusion via Denoising Consistency",
@@ -7562,6 +7646,18 @@
    "first_seen": "2026-10-03T15:03:23",
    "importance": 0.6,
    "why": "Introduces HexMemory, a fixed-size latent representation preventing memory bloat during long-horizon video world model generation."
+  },
+  {
+   "title": "QuantMLA: Function-Aligned Dual-Path Quantization for Low-Bit MLA KV Caching",
+   "url": "https://arxiv.org/abs/2609.36760",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Multi-Head Latent Attention (MLA) enables expressive multi-head attention with compact caches for its content and decoupled RoPE paths, yet cache memory still scales linearly with context length and batch size. In this work, we establish a systematic model of MLA's dual-path quantization errors, characterizing their distinct effects on attention-output distortion and explaining the pronounced amplification of RoPE-path errors. Guided by this analysis, we introduce QuantMLA, a function-aligned framework for low-bit dual-path quantization. We derive path-specific transformation spaces that preserve full-precision computation while remaining fully fusible into model parameters offline, eliminating online transformation overhead. Within these spaces, QuantMLA learns path-specific transformations with function-aligned objectives: attention-output reconstruction captures the content path's coupled matching and aggregation errors, while positional QK reconstruction preserves the RoPE-induced ",
+   "tags": "quantization,inference,attention,compression",
+   "area": "inference-methods",
+   "first_seen": "2026-10-12T23:30:36",
+   "importance": 0.75,
+   "why": "Models dual-path quantization errors in MLA to compress KV caches at low bitwidths without attention-output distortion."
   },
   {
    "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
@@ -22063,30 +22159,6 @@
    "first_seen": "2026-06-15T12:00:00",
    "importance": 0.5,
    "why": "Combines pretrained vision-language representations with action policies for robotics applications."
-  },
-  {
-   "title": "Is SMIC N+3’s Metal Pitch Smaller than Intel 18A’s?",
-   "url": "https://newsletter.semianalysis.com/p/steel-smic-n3-teardown",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-14T19:14:21",
-   "summary": "SMIC N+3 Node Deep Dive vs TSMC N6, TechInsights Private Equity Sale, SemiAnalysis Teardown Engineering & Evaluation Lab, HiSilicon Kirin 9030, Process Technology, Pattering, Cell Architecture",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-06-14T19:14:21",
-   "importance": 0.6,
-   "why": "Semiconductor analysis comparing advanced node metal pitches and manufacturing processes."
-  },
-  {
-   "title": "Qwen 3.6 93B with MTP on 2×RTX 3090 NVLink=187 tokens/SEC,LLM lost bleat-a-thon",
-   "url": "https://github.com/Augmented-Reality-Virtual-Reality-AR-VR/P...",
-   "source": "hackernews",
-   "published_date": "2026-06-14T12:58:14",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "inference,serving,llm",
-   "area": "inference-engines",
-   "first_seen": "2026-06-14T12:58:14",
-   "importance": 0.4,
-   "why": "Demonstrates high local throughput using multi-token prediction and consumer hardware, showing serving optimization viability."
   }
  ]
 }

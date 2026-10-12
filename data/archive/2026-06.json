@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 87,
+ "count": 89,
  "articles": [
+  {
+   "title": "Is SMIC N+3’s Metal Pitch Smaller than Intel 18A’s?",
+   "url": "https://newsletter.semianalysis.com/p/steel-smic-n3-teardown",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-14T19:14:21",
+   "summary": "SMIC N+3 Node Deep Dive vs TSMC N6, TechInsights Private Equity Sale, SemiAnalysis Teardown Engineering & Evaluation Lab, HiSilicon Kirin 9030, Process Technology, Pattering, Cell Architecture",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-14T19:14:21",
+   "importance": 0.6,
+   "why": "Semiconductor analysis comparing advanced node metal pitches and manufacturing processes."
+  },
+  {
+   "title": "Qwen 3.6 93B with MTP on 2×RTX 3090 NVLink=187 tokens/SEC,LLM lost bleat-a-thon",
+   "url": "https://github.com/Augmented-Reality-Virtual-Reality-AR-VR/P...",
+   "source": "hackernews",
+   "published_date": "2026-06-14T12:58:14",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,serving,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-06-14T12:58:14",
+   "importance": 0.4,
+   "why": "Demonstrates high local throughput using multi-token prediction and consumer hardware, showing serving optimization viability."
+  },
   {
    "title": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
    "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark",
