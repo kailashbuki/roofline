@@ -1,5 +1,5 @@
 {
- "count": 1531,
+ "count": 1542,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1531,6 +1531,17 @@
   "https://theinference.org/article/altman-s-17-words-lifted-cerebras-9-the-lockup-calendar-set-the-price",
   "https://subq.ai/introducing-subq-snap",
   "https://www.latent.space/p/claude-dynamic-workflows",
-  "https://www.anthropic.com/research/self-replicating-ai"
+  "https://www.anthropic.com/research/self-replicating-ai",
+  "https://arxiv.org/abs/2609.36616",
+  "https://arxiv.org/abs/2610.09326",
+  "https://arxiv.org/abs/2610.13166",
+  "https://arxiv.org/abs/2610.03308",
+  "https://arxiv.org/abs/2610.09396",
+  "https://arxiv.org/abs/2609.33304",
+  "https://arxiv.org/abs/2610.13832",
+  "https://arxiv.org/abs/2609.35965",
+  "https://arxiv.org/abs/2610.12453",
+  "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+  "https://www.anthropic.com/research/distillation-defenses"
  ]
 }

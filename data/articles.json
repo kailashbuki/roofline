@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T23:31:51Z",
- "previous_generated_at": "2026-10-12T12:49:16Z",
+ "generated_at": "2026-10-13T12:32:35Z",
+ "previous_generated_at": "2026-10-12T23:31:51Z",
  "hot_days": 120,
- "count": 1855,
- "total_collected": 1975,
+ "count": 1861,
+ "total_collected": 1983,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "MDMA: An open source federated LLM inference engine",
+   "url": "https://github.com/seuros/mdma",
+   "source": "hackernews",
+   "published_date": "2026-10-13T11:59:30",
+   "summary": "2 points, 2 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-10-13T12:31:05",
+   "importance": 0.5,
+   "why": "Provides an open-source framework for distributed federated LLM inference across disparate hardware nodes."
+  },
+  {
+   "title": "SonicBoom – llama.cpp's own kernels, 14% faster decode via a graph compiler",
+   "url": "https://github.com/hardenedlinux/sonicboom",
+   "source": "hackernews",
+   "published_date": "2026-10-13T09:40:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-13T12:31:05",
+   "importance": 0.55,
+   "why": "Replaces third-party dependencies with custom graph-compiled kernels, achieving a 14 percent decode speedup."
+  },
+  {
+   "title": "Underdog Saluki 27B: A 7.89 GB quantization focused on tool calling",
+   "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+   "source": "hackernews",
+   "published_date": "2026-10-13T06:53:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "quantization,post-training,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-13T12:31:05",
+   "importance": 0.45,
+   "why": "Delivers a sub-8GB footprint quantization targeting improved tool-calling execution efficiency."
+  },
   {
    "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
    "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
@@ -850,6 +886,18 @@
    "why": "Analyzes activation wave geometry across hidden layers to dynamically select optimal subsets for speculative decoding."
   },
   {
+   "title": "Learning More by Training Less: Uncertainty-Guided Progressive Contraction for Efficient Reasoning Post-Training",
+   "url": "https://arxiv.org/abs/2610.12933",
+   "source": "hf:papers",
+   "published_date": "2026-10-09T00:00:00",
+   "summary": "Large language models have achieved remarkable advances in complex reasoning. However, scaling reasoning post-training with ever-larger corpora can substantially increase training cost without proportional performance gains. In this study, we therefore ask: how far can reasoning supervision be compressed without sacrificing capability? To this end, we propose an uncertainty-guided progressive contraction framework that concentrates supervision and optimization on the reasoning trajectories most valuable for learning. Specifically, rather than treating a teacher-generated chain-of-thought (CoT) as a single realized path, we construct uncertainty-profiled reasoning supervision by building Monte Carlo reasoning trees around intermediate reasoning states to expose process-level uncertainty. This uncertainty first contracts the original corpus into a compact teacher-informed pool. A second, learner-aware contraction then performs online routing during SFT, concentrating optimization accordi",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-13T12:29:18",
+   "importance": 0.7,
+   "why": "It uses uncertainty-guided progressive contraction to compress reasoning supervision during post-training, reducing compute overhead."
+  },
+  {
    "title": "A Self-Pruning Transformer: Extreme KV-Cache Compression w/Universal Attention",
    "url": "https://arxiv.org/abs/2610.09051",
    "source": "hackernews",
@@ -1545,6 +1593,18 @@
    "why": "Combines deep diffusion-based draft generation with parallel contextual correction to accelerate speculative decoding."
   },
   {
+   "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
+   "url": "https://arxiv.org/abs/2610.12307",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "Most image generation models rely on uniform tokenization, allocating the exact same computational budget to equally-sized image patches. This static paradigm cannot adapt to different resource constraints at inference time, and yields suboptimal quality-cost tradeoff by devoting the same effort to both plain backgrounds and intricate details. We propose BudgetPix, an adaptive tokenization framework that dynamically allocates compute based on visual complexity and spatial layout, enabling flexible computational budgeting at inference time. BudgetPix comprises three key components: (1) an adaptive encoder that maps a fixed-size image to a variable-length token sequence using an entropy-guided quadtree alongside a multi-scale patch embedder; (2) a scale-aware decoder reconstructs fixed-resolution images from multi-scale token sets; and (3) a flexible training and sampling schedule that enables pixel-space denoisers to operate across variable token counts. BudgetPix seamlessly integrates ",
+   "tags": "architecture,inference,optimization",
+   "area": "architecture",
+   "first_seen": "2026-10-13T12:29:18",
+   "importance": 0.7,
+   "why": "It implements compute-adaptive tokenization for pixel-space diffusion to dynamically allocate compute based on image patch complexity."
+  },
+  {
    "title": "Predicting Cable Dynamics with Physical Attention Bias",
    "url": "https://arxiv.org/abs/2610.11975",
    "source": "hf:papers",
@@ -1555,6 +1615,18 @@
    "first_seen": "2026-10-11T11:13:56",
    "importance": 0.4,
    "why": "Physical attention bias models cable self-contact without all-pairs complexity."
+  },
+  {
+   "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+   "url": "https://arxiv.org/abs/2610.11765",
+   "source": "hf:papers",
+   "published_date": "2026-10-08T00:00:00",
+   "summary": "Large Language Models (LLMs) increasingly ship with explicit \"thinking modes\", yet their counterpart, \"no-thinking\", has received far less attention. We study LLMs' no-thinking behavior along two axes. a. How to measure no-thinking? Prior work typically defines no-thinking through proxies such as a disabled thinking mode or the absence of long traces. These proxies are unreliable: disabled thinking modes may still emit reasoning, while long traces may contain filler rather than genuine inference. We instead normalize each response into a pre-answer trace and final answer, and evaluate it at three levels: (i) Empty-Thinking Rate for strict answer-only compliance; (ii) instruction-aware Question-Pre-answer Relevance for similarity between the question and pre-answer trace; and (iii) LLM-as-judge Explicit Inference Rate for visible explicit inference. Together, these metrics distinguish answer-only output, relevant but non-inferential text, and explicit inference. b. How does no-thinking ",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-13T12:29:18",
+   "importance": 0.6,
+   "why": "It measures and analyzes LLM thinking inertia when explicitly instructed not to generate long reasoning traces."
   },
   {
    "title": "Scaling to Tens of Thousands of Test-Time Iterations with Loop-Native Attention Residuals",
@@ -7478,6 +7550,30 @@
    "first_seen": "2026-10-01T11:25:01",
    "importance": 0.7,
    "why": "Surveys attention mechanisms addressing quadratic prefill costs and growing KV cache overheads across context lengths."
+  },
+  {
+   "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+   "url": "https://arxiv.org/abs/2609.39601",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. ",
+   "tags": "multimodal,hardware",
+   "area": "new-models",
+   "first_seen": "2026-10-13T12:29:18",
+   "importance": 0.6,
+   "why": "It introduces a 4B grounding foundation model designed with visual primitives for closed-loop physical control applications."
+  },
+  {
+   "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
+   "url": "https://arxiv.org/abs/2609.39600",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model that reconciles fast parallel decoding with precise localization through blockwise denoising. Training combines grounding pretraining from public datasets and dedicated data engines, direct AR-to-diffusion conversion with joint AR and diffusion objectives, supervised fine-tuning, and GRPO-based reinforcement post-training. Across 30 grounding benchmarks, our autoregressive variant, GroundAnything-",
+   "tags": "inference,optimization,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-10-13T12:29:18",
+   "importance": 0.65,
+   "why": "It replaces sequential autoregressive visual grounding with parallel decoding to remove causal order latency bottlenecks."
   },
   {
    "title": "Can Computation from Earlier Problems Help LLMs Solve New Ones?",
@@ -22136,29 +22232,6 @@
    "first_seen": "2026-06-15T16:45:41",
    "importance": 0.4,
    "why": "Advanced fusion kernels improve MoE training throughput on hardware accelerators."
-  },
-  {
-   "title": "Anthropic's Model Got Pulled. The Dangerous Ones Didn't.",
-   "url": "https://www.airealist.ai/p/anthropics-model-got-pulled-the-dangerous",
-   "source": "airealist",
-   "published_date": "2026-06-15T12:20:10",
-   "summary": "A US export order pulled Anthropic&#8217;s best model from every customer on earth in one evening. The thousands of models built to refuse nothing stayed online.",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-15T12:20:10",
-   "importance": 0.0
-  },
-  {
-   "title": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
-   "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-15T12:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"WAM_Blog_Post_Header\" width=\"768\" />Quick glossary for readers new to VLA/WAM terminology VLA Vision-Language-Action model: a robot policy that starts from a pretrained VLM backbone and adapts it...",
-   "tags": "multimodal,architecture",
-   "area": "new-models",
-   "first_seen": "2026-06-15T12:00:00",
-   "importance": 0.5,
-   "why": "Combines pretrained vision-language representations with action policies for robotics applications."
   }
  ]
 }

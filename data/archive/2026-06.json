@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 89,
+ "count": 91,
  "articles": [
+  {
+   "title": "Anthropic's Model Got Pulled. The Dangerous Ones Didn't.",
+   "url": "https://www.airealist.ai/p/anthropics-model-got-pulled-the-dangerous",
+   "source": "airealist",
+   "published_date": "2026-06-15T12:20:10",
+   "summary": "A US export order pulled Anthropic&#8217;s best model from every customer on earth in one evening. The thousands of models built to refuse nothing stayed online.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-15T12:20:10",
+   "importance": 0.0
+  },
+  {
+   "title": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
+   "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-15T12:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"WAM_Blog_Post_Header\" width=\"768\" />Quick glossary for readers new to VLA/WAM terminology VLA Vision-Language-Action model: a robot policy that starts from a pretrained VLM backbone and adapts it...",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-06-15T12:00:00",
+   "importance": 0.5,
+   "why": "Combines pretrained vision-language representations with action policies for robotics applications."
+  },
   {
    "title": "Is SMIC N+3’s Metal Pitch Smaller than Intel 18A’s?",
    "url": "https://newsletter.semianalysis.com/p/steel-smic-n3-teardown",
