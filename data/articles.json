@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T12:32:35Z",
- "previous_generated_at": "2026-10-12T23:31:51Z",
+ "generated_at": "2026-10-13T21:45:09Z",
+ "previous_generated_at": "2026-10-13T12:32:35Z",
  "hot_days": 120,
- "count": 1861,
- "total_collected": 1983,
+ "count": 1862,
+ "total_collected": 1988,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "How to Rewrite Apache Spark UDFs for GPU Acceleration with AI Agents",
+   "url": "https://developer.nvidia.com/blog/rewrite-apache-spark-udfs-gpu-acceleration-ai-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-13T21:33:21",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image2-5-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />Enterprise applications have become increasingly demanding. Agentic AI has compounded the need for vast amounts of enterprise data with frequent, complex...",
+   "tags": "systems,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-13T21:44:54",
+   "importance": 0.4,
+   "why": "Demonstrates automated conversion of Spark UDFs for hardware-accelerated execution."
+  },
+  {
+   "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+   "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-13T14:19:40",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/run-ai-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"run-ai\" width=\"768\" />Today, NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to...",
+   "tags": "systems,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-10-13T21:44:54",
+   "importance": 0.5,
+   "why": "Open-sourcing Run:ai enables broader cluster orchestration optimization for infrastructure operators."
+  },
+  {
+   "title": "Extending Inductor for the IBM Spyre Accelerator",
+   "url": "https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-13T12:45:30",
+   "summary": "<p>TL;DR The PyTorch-based software stack for IBM&#8217;s Spyre accelerator recently moved its torch.compile backend from sendnn, a separate compilation stack built entirely from scratch, to backend=inductor, an open-source backend built...</p>\n<p>The post <a href=\"https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/\">Extending Inductor for the IBM Spyre Accelerator</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "inference,systems,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-13T21:44:42",
+   "importance": 0.4,
+   "why": "Moving IBM Spyre to torch.compile backend enables native PyTorch integration and lowers compiler maintenance overhead."
+  },
   {
    "title": "MDMA: An open source federated LLM inference engine",
    "url": "https://github.com/seuros/mdma",
@@ -5692,6 +5728,18 @@
    "why": "Focused views improve atomic-fact recall during knowledge editing in unstructured parameter spaces without full retraining."
   },
   {
+   "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
+   "url": "https://arxiv.org/abs/2610.02740",
+   "source": "hf:papers",
+   "published_date": "2026-10-02T00:00:00",
+   "summary": "Reinforcement learning for long-horizon agents relies on purely retrospective training signals: credit is assigned only after observing environmental consequences, leaving the agent's belief at action time invisible to the gradient. We introduce Prospective Hindsight (PH), a self-calibrating training principle that augments any retrospective base method with a signal derived from the gap between the agent's prospective prediction (before feedback) and the retrospective evaluation (after feedback). This per-rollout surprise identifies samples where the agent's self-model is most inaccurate and amplifies their gradient contribution through a stop-gradient surprise-weighted advantage. Since the prospective predictor shares parameters with the policy, the two co-evolve, progressively shifting focus to the agent's remaining blind spots. We connect this principle to a privileged-information gap and show that minimizing the surprise residual provides a descent pathway on the agent's miscalibr",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-13T21:44:19",
+   "importance": 0.75,
+   "why": "Augments retrospective credit assignment with prediction-reality gap signals, improving long-horizon agent training efficiency."
+  },
+  {
    "title": "Optimizing Jagged Flash Attention with TLX: The Road Toward SOTA FA4 on Blackwell",
    "url": "https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell",
    "source": "rss:PyTorch Blog",
@@ -7418,6 +7466,18 @@
    "first_seen": "2026-10-02T21:10:21",
    "importance": 0.4,
    "why": "Surveys post-training and alignment techniques for video models, categorizing preference optimization and safety conditioning approaches."
+  },
+  {
+   "title": "Initialization Improves LLM-Driven Discovery",
+   "url": "https://arxiv.org/abs/2610.00707",
+   "source": "hf:papers",
+   "published_date": "2026-09-30T00:00:00",
+   "summary": "Large Language Models (LLMs) have been used for novel discovery of algorithms, theorems, drugs, and other tasks through the use of harnesses that prompt an LLM to iteratively optimize an objective. In this work, we study the relationship between the population of previous iterates and eventual discovery success. We generalize past work on harness design to develop a suite of 12 harnesses called 'Modular' and characterize their performance across 5 diverse discovery tasks, finding that discovery success is brittle and sensitive to harness design. We uncover mode collapse, characterized by a dramatic drop in the diversity of iterates, as a common failure mode. We find that popular state-of-the-art harnesses and diversity-inducing harness interventions, which aim to prolong this collapse, yield inconsistent gains. Our results instead uncover that the performance of early discoveries is predictive of eventual success. We therefore propose a universally applicable intervention that performs",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-13T21:44:19",
+   "importance": 0.65,
+   "why": "Generalizes iterative LLM discovery harnesses across twelve variants to analyze population initialization effects on optimization success."
   },
   {
    "title": "SemanTok: Predictable Semantic Tokens for Efficient Autoregressive Video Generation",
@@ -22184,54 +22244,6 @@
    "first_seen": "2026-06-15T22:09:05",
    "importance": 0.4,
    "why": "Corporate acquisition discussions impact the competitive landscape of AI accelerator hardware vendors."
-  },
-  {
-   "title": "Compiling Strassen-Like Matrix Multiplication Algorithms to Fast CUDA Kernels",
-   "url": "https://dl.acm.org/doi/10.1145/3808267",
-   "source": "hackernews",
-   "published_date": "2026-06-15T18:58:12",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "optimization,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-06-15T18:58:12",
-   "importance": 0.7,
-   "why": "Compiles Strassen-like matrix multiplication algorithms into highly optimized CUDA kernels for speedups."
-  },
-  {
-   "title": "Fine-Tuning Biological Foundation Models with LoRA Using NVIDIA BioNeMo Recipes",
-   "url": "https://developer.nvidia.com/blog/fine-tuning-biological-foundation-models-with-lora-using-nvidia-bionemo-recipes",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-15T18:07:31",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/biology-foundation-model-training-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"biology-foundation-model-training\" width=\"768\" />Foundation models are reshaping computational biology. Pretrained on massive corpora of protein or genomic sequences, models such as ESM2 (a protein language...",
-   "tags": "post-training,training",
-   "area": "training",
-   "first_seen": "2026-06-15T18:07:31",
-   "importance": 0.3,
-   "why": "Demonstrates parameter-efficient fine-tuning workflows specifically adapted for biological foundation models."
-  },
-  {
-   "title": "Why long context eats your VRAM: the KV cache explained",
-   "url": "https://vettedconsumer.com/the-kv-cache-explained-why-long-context-eats-your-vram-and-how-to-fit-more",
-   "source": "hackernews",
-   "published_date": "2026-06-15T17:56:17",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "inference,serving",
-   "area": "architecture",
-   "first_seen": "2026-06-15T17:56:17",
-   "importance": 0.4,
-   "why": "Educational breakdown explaining KV cache mechanics and memory consumption in long contexts."
-  },
-  {
-   "title": "Boosting MoE Training Throughput with Advanced Fusion Kernels",
-   "url": "https://developer.nvidia.com/blog/boosting-moe-training-throughput-with-advanced-fusion-kernels",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-15T16:45:41",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image6-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image6\" width=\"768\" />Mixture-of-experts (MoE) models have quickly become a foundational component of modern, large-scale AI systems. They are widely adopted because they enable...",
-   "tags": "hardware,training,optimization,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-15T16:45:41",
-   "importance": 0.4,
-   "why": "Advanced fusion kernels improve MoE training throughput on hardware accelerators."
   }
  ]
 }

@@ -1,7 +1,55 @@
 {
  "month": "2026-06",
- "count": 91,
+ "count": 95,
  "articles": [
+  {
+   "title": "Compiling Strassen-Like Matrix Multiplication Algorithms to Fast CUDA Kernels",
+   "url": "https://dl.acm.org/doi/10.1145/3808267",
+   "source": "hackernews",
+   "published_date": "2026-06-15T18:58:12",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "optimization,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-06-15T18:58:12",
+   "importance": 0.7,
+   "why": "Compiles Strassen-like matrix multiplication algorithms into highly optimized CUDA kernels for speedups."
+  },
+  {
+   "title": "Fine-Tuning Biological Foundation Models with LoRA Using NVIDIA BioNeMo Recipes",
+   "url": "https://developer.nvidia.com/blog/fine-tuning-biological-foundation-models-with-lora-using-nvidia-bionemo-recipes",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-15T18:07:31",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/biology-foundation-model-training-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"biology-foundation-model-training\" width=\"768\" />Foundation models are reshaping computational biology. Pretrained on massive corpora of protein or genomic sequences, models such as ESM2 (a protein language...",
+   "tags": "post-training,training",
+   "area": "training",
+   "first_seen": "2026-06-15T18:07:31",
+   "importance": 0.3,
+   "why": "Demonstrates parameter-efficient fine-tuning workflows specifically adapted for biological foundation models."
+  },
+  {
+   "title": "Why long context eats your VRAM: the KV cache explained",
+   "url": "https://vettedconsumer.com/the-kv-cache-explained-why-long-context-eats-your-vram-and-how-to-fit-more",
+   "source": "hackernews",
+   "published_date": "2026-06-15T17:56:17",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "architecture",
+   "first_seen": "2026-06-15T17:56:17",
+   "importance": 0.4,
+   "why": "Educational breakdown explaining KV cache mechanics and memory consumption in long contexts."
+  },
+  {
+   "title": "Boosting MoE Training Throughput with Advanced Fusion Kernels",
+   "url": "https://developer.nvidia.com/blog/boosting-moe-training-throughput-with-advanced-fusion-kernels",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-15T16:45:41",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image6-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image6\" width=\"768\" />Mixture-of-experts (MoE) models have quickly become a foundational component of modern, large-scale AI systems. They are widely adopted because they enable...",
+   "tags": "hardware,training,optimization,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-15T16:45:41",
+   "importance": 0.4,
+   "why": "Advanced fusion kernels improve MoE training throughput on hardware accelerators."
+  },
   {
    "title": "Anthropic's Model Got Pulled. The Dangerous Ones Didn't.",
    "url": "https://www.airealist.ai/p/anthropics-model-got-pulled-the-dangerous",

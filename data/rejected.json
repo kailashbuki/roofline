@@ -1,5 +1,5 @@
 {
- "count": 1542,
+ "count": 1546,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1542,6 +1542,10 @@
   "https://arxiv.org/abs/2609.35965",
   "https://arxiv.org/abs/2610.12453",
   "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
-  "https://www.anthropic.com/research/distillation-defenses"
+  "https://www.anthropic.com/research/distillation-defenses",
+  "https://arxiv.org/abs/2610.12998",
+  "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+  "https://openai.com/index/higgsfield-longer-videos-voice",
+  "https://www.anthropic.com/engineering/redesigning-source-control"
  ]
 }
