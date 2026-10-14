@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 95,
+ "count": 96,
  "articles": [
+  {
+   "title": "Qualcomm in Talks to Purchase Tenstorrent",
+   "url": "https://www.reuters.com/technology/qualcomm-talks-buy-tenstorrent-information-reports-2026-06-15",
+   "source": "hackernews",
+   "published_date": "2026-06-15T22:09:05",
+   "summary": "9 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-15T22:09:05",
+   "importance": 0.4,
+   "why": "Corporate acquisition discussions impact the competitive landscape of AI accelerator hardware vendors."
+  },
   {
    "title": "Compiling Strassen-Like Matrix Multiplication Algorithms to Fast CUDA Kernels",
    "url": "https://dl.acm.org/doi/10.1145/3808267",
