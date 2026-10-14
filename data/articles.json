@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T09:57:09Z",
- "previous_generated_at": "2026-10-13T21:45:09Z",
+ "generated_at": "2026-10-14T15:43:37Z",
+ "previous_generated_at": "2026-10-14T09:57:09Z",
  "hot_days": 120,
- "count": 1947,
- "total_collected": 2074,
+ "count": 1963,
+ "total_collected": 2092,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Show HN: T0: We trained a 256M SOTA open-weights time-series forecasting model",
+   "url": "https://github.com/theforecastingcompany/tfc-t0",
+   "source": "hackernews",
+   "published_date": "2026-10-14T14:51:04",
+   "summary": "10 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "first_seen": "2026-10-14T15:43:03",
+   "importance": 0.4,
+   "why": "Introduces a compact time-series architecture achieving state-of-the-art results with only 256M parameters."
+  },
+  {
+   "title": "Does quantization hurt coding agents? Deep-dive with actual numbers",
+   "url": "https://aistack.imec-int.com/blog/quantization",
+   "source": "hackernews",
+   "published_date": "2026-10-14T14:28:00",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "quantization,inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-14T15:43:03",
+   "importance": 0.5,
+   "why": "Quantifies the degradation of coding agent performance across various low-precision formats."
+  },
   {
    "title": "AutoQuant KV: Automatic Mixed-Precision KV Cache Quantization",
    "url": "https://nvidia.github.io/Model-Optimizer/announcements/autoquant-kv.html",
@@ -744,6 +768,18 @@
    "why": "Generates complete large-scale 3D scene meshes from unposed RGB images by combining coarse geometric priors with surface completion."
   },
   {
+   "title": "GreenWAM: A World Foundation Model for Robotics",
+   "url": "https://arxiv.org/abs/2610.18774",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "A robot needs a world model that predicts how its actions will change the scene and a policy that chooses those actions. Models are usually built and evaluated for only one of these roles, and every robot records its actions in its own format. We ask whether one robot world model can serve both roles across different bodies, and what makes this work. We present GreenWAM, a world foundation model for robotics, together with the recipe that produces it: (1) a shared anatomical action space that describes 20 robot families, from bimanual arms to dexterous humanoids, in common joint coordinates; (2) joint training on these families in visual, action-conditioned and world-action modes; and (3) policies that split an action expert off the generator. As a world model, GreenWAM attains top-tier trajectory, depth and 3D accuracy on WorldArena 1.0, ahead of every world-action model and video generator in our comparison. As a policy, it scores among the top entries of the RoboTwin 2.0 leaderboard",
+   "tags": "architecture,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-10-14T15:42:45",
+   "importance": 0.4,
+   "why": "Introduces a cross-embodiment robotics world foundation model serving dual prediction and policy roles."
+  },
+  {
    "title": "Jeva: System One Models from First Principles",
    "url": "https://arxiv.org/abs/2610.18773",
    "source": "hf:papers",
@@ -910,6 +946,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.65,
    "why": "Replaces quadratic fully-connected communication with hierarchical communication in multi-player interactive world models."
+  },
+  {
+   "title": "AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding",
+   "url": "https://arxiv.org/abs/2610.16985",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "Vision-language-action (VLA) models show strong potential for end-to-end autonomous driving by leveraging world knowledge and understanding to excel in long-tail scenarios. However, current VLAs have two limitations: 1) Degeneration into vision-action (VA) models. For low latency, regression/flow-based methods directly generate actions but underuse VLM understanding, causing unsafe, unexplainable actions. 2) Autoregressive high latency. Autoregressive methods sequentially generate chain-of-thought (CoT) and action tokens, fully leveraging VLM understanding, but high latency hinders deployment. To enable low-latency deployment while using CoT to assist action generation, we propose AUGUstus, an Autonomous-driving VLA model with Unified Generation and Understanding. We unify diffusion-based action generation and autoregressive CoT understanding in one model, where understanding only serves generation. Joint CoT supervision preserves VLM spatial understanding in shared representation for ",
+   "tags": "architecture,multimodal,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-14T15:42:45",
+   "importance": 0.4,
+   "why": "Combines unified generation and understanding for low-latency VLA autonomous driving."
   },
   {
    "title": "TPPO: Tracking-Value PPO For Language Model Reasoning",
@@ -1892,6 +1940,18 @@
    "first_seen": "2026-10-13T12:29:18",
    "importance": 0.7,
    "why": "It uses uncertainty-guided progressive contraction to compress reasoning supervision during post-training, reducing compute overhead."
+  },
+  {
+   "title": "APEX: Asynchronous Prefix Denoising for Extreme Compression",
+   "url": "https://arxiv.org/abs/2610.12843",
+   "source": "hf:papers",
+   "published_date": "2026-10-09T00:00:00",
+   "summary": "Fewer latent tokens promise cheaper diffusion. Yet aggressive latent compression creates a reconstruction-generation dilemma: adding channels improves reconstruction but makes generation harder. We introduce APEX, short for Asynchronous Prefix denoising for EXtreme compression, which pairs a hierarchical latent space with asynchronous denoising over channel groups. Our autoencoder orders channel prefixes from structure to detail, while one shared denoiser generates them at staggered local times without adding tokens. On ImageNet-512, APEX outperforms existing methods at every evaluated channel count under 64x and 128x compression. At matched training and guided sampling compute, it also outperforms a 256-token model at every evaluated budget, with larger gains at lower compute. Code is available at https://daviddinkevich.github.io/APEX.",
+   "tags": "inference,compression,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-14T15:42:45",
+   "importance": 0.6,
+   "why": "Uses asynchronous prefix denoising over hierarchical channel groups to resolve the diffusion reconstruction-generation dilemma."
   },
   {
    "title": "A Self-Pruning Transformer: Extreme KV-Cache Compression w/Universal Attention",
@@ -19955,6 +20015,18 @@
    "why": "High-bandwidth memory advancements dictate hardware constraints for modern LLM scaling."
   },
   {
+   "title": "Run Massive-Scale UMAP in Minutes Using Multiple GPUs—Without Losing Accuracy",
+   "url": "https://developer.nvidia.com/blog/run-massive-scale-umap-in-minutes-using-multiple-gpus-without-losing-accuracy",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-18T16:48:08",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/agentic-ai-visual-data-processing-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-visual-data-processing\" width=\"768\" />Uniform Manifold Approximation and Projection (UMAP) is a dimensionality reduction technique widely used for visualization and feature extraction. Applications...",
+   "tags": "systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Multi-GPU distributed UMAP acceleration scales data preprocessing pipelines without sacrificing projection accuracy."
+  },
+  {
    "title": "GGUF Quantization Compared: Q4_K_M vs. IQ4_XS vs. IQ4_NL",
    "url": "https://kaitchup.substack.com/p/choosing-a-gguf-model-k-quants-i",
    "source": "hackernews",
@@ -19989,6 +20061,18 @@
    "first_seen": "2026-08-17T20:49:05",
    "importance": 0.5,
    "why": "Custom kernel optimizations for Blackwell FP4 formats accelerate low-precision execution."
+  },
+  {
+   "title": "Developing Nemotron 3.5 Lightning NVFP4 with QAD Using NVIDIA Model Optimizer",
+   "url": "https://developer.nvidia.com/blog/developing-nemotron-3-5-lightning-nvfp4-with-qad-using-nvidia-model-optimizer",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-17T18:12:48",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/qad-nvfp4-model-optimization-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"qad-nvfp4-model-optimization\" width=\"768\" />Teams customize their models to hit their targets for latency, speed, memory, and compute. With the open NVIDIA Nemotron family of models, developers can find...",
+   "tags": "quantization,post-training,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.5,
+   "why": "Applying NVFP4 quantization via QAD optimizes model memory footprints for high-throughput deployment targets."
   },
   {
    "title": "Show HN: UL-SMF – Open-source linear-complexity ~300x KV-cache compression",
@@ -20242,6 +20326,18 @@
    "why": "Demonstrates a minimal coding agent implementation directly interfacing with llama.cpp."
   },
   {
+   "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+   "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-12T18:23:13",
+   "summary": "<img alt=\"Decorative object.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Qwen-Open-Source-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Qwen-Open-Source\" width=\"768\" />Alibaba released the open weights for&nbsp;Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open...",
+   "tags": "llm,serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.5,
+   "why": "Serving a 2.4-trillion-parameter model with configurable reasoning on NVL72 hardware pushes massive-scale inference limits."
+  },
+  {
    "title": "I wrote an AI textbook — how long until AI can do it better?",
    "url": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
    "source": "rss:Interconnects",
@@ -20337,6 +20433,30 @@
    "why": "Benchmarks and setup guides for running optimized local inference on Apple Silicon."
   },
   {
+   "title": "NVIDIA Nemotron 3.5 Lightning Delivers Fast, Accurate Specialized Task Execution for Long-Running Agents",
+   "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-11T13:01:07",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/agentic-ai-nemotron-3.5-lightning-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-nemotron-3.5-lightning\" width=\"768\" />Long-running AI agents spend most of their time on high-volume execution: tool calls, result validation, and subagent delegation. Using a frontier reasoning...",
+   "tags": "inference,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Specialized execution paths optimize high-volume tool calls and result validation to accelerate agentic workloads."
+  },
+  {
+   "title": "Route AI Agent Workloads Across Models with NVIDIA NeMo Switchyard",
+   "url": "https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-11T13:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-AI-Switchyard-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-AI-Switchyard\" width=\"768\" />Building an AI agent does not end with choosing a single model. Each model has its own strengths, weaknesses, and cost profile, which can shift from one...",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Dynamic request routing across heterogeneous models balances latency and capability constraints for complex agents."
+  },
+  {
    "title": "Optimizing an NVFP4 Blockscaled GEMM on RTX Pro 6000 Blackwell GPU (SM120)",
    "url": "https://research.colfax-intl.com/optimizing-an-nvfp4-blockscaled-gemm-on-rtx-pro-6000-blackwell-gpu-sm120",
    "source": "hackernews",
@@ -20347,6 +20467,18 @@
    "first_seen": "2026-08-10T19:11:55",
    "importance": 0.6,
    "why": "Details low-level implementation of NVFP4 blockscaled matrix multiplication on Blackwell GPUs."
+  },
+  {
+   "title": "Run Local Agentic AI Workflows with Meta’s Muse Glimmer on NVIDIA",
+   "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-10T13:27:19",
+   "summary": "<img alt=\"Open model launch image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Open-Model-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Open-Model\" width=\"768\" />Meta returns to the open source ecosystem with the release of Muse Glimmer,&nbsp;a 30B open-weight dense model with a 120K+ context window built for local AI...",
+   "tags": "llm,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Releasing dense open-weight models with large context windows expands local agent execution capabilities."
   },
   {
    "title": "5 useful things you'll learn in my new post-training textbook (shipping now!)",
@@ -20670,6 +20802,30 @@
    "importance": 0.0
   },
   {
+   "title": "Beyond VLAs: How World Action Models Reshape Robot Manipulation",
+   "url": "https://developer.nvidia.com/blog/beyond-vlas-how-world-action-models-reshape-robot-manipulation",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-04T16:00:00",
+   "summary": "<img alt=\"A GIF of a robot following directions” with a description of the actual robot, task, objects, and motion shown.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/Cosmos-World-Models-Robot.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Cosmos-World-Models-Robot\" width=\"600\" />A central challenge in robotics is building policies that generalize beyond the demonstrations they’re trained on. A policy that succeeds in a training scene...",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.5,
+   "why": "World action models replace traditional vision-language-action architectures to improve multi-step robot manipulation."
+  },
+  {
+   "title": "Generate Trajectories, Reasoning Traces, and Auto-Labels with NVIDIA Alpamayo 2 Super",
+   "url": "https://developer.nvidia.com/blog/generate-trajectories-reasoning-traces-and-auto-labels-with-nvidia-alpamayo-2-super",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-04T15:00:00",
+   "summary": "<img alt=\"A GIF showing autonomous driving.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Alpamayo-2-Super-Traffic.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Alpamayo-2-Super-Traffic\" width=\"600\" />Autonomous vehicle (AV) development often relies on separate models for trajectory generation, high-level intent prediction, scene understanding, and data...",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Unified multimodal architectures combine trajectory generation and reasoning traces into a single autonomous driving framework."
+  },
+  {
    "title": "I built an LLM debugger for fine-tuning failures",
    "url": "https://github.com/gradian-ai/gradian",
    "source": "hackernews",
@@ -20704,6 +20860,30 @@
    "first_seen": "2026-08-03T19:42:30",
    "importance": 0.6,
    "why": "Combines compressed memory, cross-depth attention, and latent routing to alter inference efficiency."
+  },
+  {
+   "title": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
+   "url": "https://developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-03T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image3-16-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />Storage is an active part of every agentic AI workflow. As agents retrieve enterprise knowledge, access persistent memory, reuse key-value (KV) cache data,...",
+   "tags": "systems,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Accelerated cryptographic and compression primitives reduce latency for KV cache retrieval and persistent agent memory."
+  },
+  {
+   "title": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
+   "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-08-03T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/kai-scheduler-representation-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"kai-scheduler-representation\" width=\"768\" />Running a dedicated Kubernetes cluster per team often results in more isolation than an organization requires. While one cluster can be successfully shared...",
+   "tags": "systems,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Multi-tenant GPU scheduling via isolated Kubernetes clusters improves resource utilization without cross-tenant interference."
   },
   {
    "title": "Introducing our Artifacts Hub and Adoption Dashboard",
@@ -20799,6 +20979,18 @@
    "first_seen": "2026-08-01T00:00:00",
    "importance": 0.4,
    "why": "Guides developers through benchmarks and API integration for the open 3T-class Kimi K3 model."
+  },
+  {
+   "title": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference",
+   "url": "https://developer.nvidia.com/blog/co-designing-ai-model-attention-for-fast-interactive-long-context-inference",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-31T22:16:17",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/llm-optimize-deploy-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-optimize-deploy\" width=\"768\" />As agentic and long-context workloads become common, the context lengths increase and attention consumes a larger share of inference time (Figure 1). Because...",
+   "tags": "architecture,attention,inference",
+   "area": "architecture",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.6,
+   "why": "Co-designing attention mechanisms with hardware execution targets mitigates memory bandwidth bottlenecks in long-context inference."
   },
   {
    "title": "Kioxia CM10 Is Its First PCIe 6.0 Enterprise SSD, Aimed at Nvidia CMX KV Cache",
@@ -20897,6 +21089,18 @@
    "why": "Practical guidelines for managing autoscaling metrics and mitigating cold starts in LLM serving."
   },
   {
+   "title": "Run High-Performance Core Math at Scale with NVIDIA nvmath-python",
+   "url": "https://developer.nvidia.com/blog/run-high-performance-core-math-at-scale-with-nvidia-nvmath-python",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-30T22:43:04",
+   "summary": "<img alt=\"Decorative math image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/11/Solving-Math-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Solving-Math\" width=\"768\" />NVIDIA nvmath-python is a library designed to bridge the gap between the Python scientific community and NVIDIA CUDA-X math libraries. It gives Python users...",
+   "tags": "optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Python-native math bindings expose low-level CUDA-X routines to scientific workloads with minimal overhead."
+  },
+  {
    "title": "Characterizing Warp Divergence from Pascal to Blackwell",
    "url": "https://arxiv.org/abs/2607.23402",
    "source": "hackernews",
@@ -20907,6 +21111,18 @@
    "first_seen": "2026-07-30T18:56:00",
    "importance": 0.5,
    "why": "Characterizes GPU warp divergence trends across generational architectures from Pascal to Blackwell."
+  },
+  {
+   "title": "NVIDIA Exemplar Cloud: Lessons for Unlocking Full Performance on AI Infrastructure",
+   "url": "https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-30T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image6-6-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image6\" width=\"768\" />Two AI computing clusters built from identical NVIDIA H100, GB200 NVL72, or GB300 NVL72 systems can deliver materially different training throughput. We...",
+   "tags": "training,systems,hardware",
+   "area": "training",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.5,
+   "why": "Analyzing cluster-level configuration discrepancies identifies hidden bottlenecks impacting distributed training throughput."
   },
   {
    "title": "Scaling Laws: The Law Behind Every LLM",
@@ -23240,30 +23456,6 @@
    "first_seen": "2026-06-16T16:00:00",
    "importance": 0.5,
    "why": "Covers methodologies for optimizing transformer architectures to enable stable low-precision training runs."
-  },
-  {
-   "title": "NVIDIA Blackwell Tops MLPerf Training 6.0 with Industry-Leading Scale and Performance",
-   "url": "https://developer.nvidia.com/blog/nvidia-blackwell-tops-mlperf-training-6-0-with-industry-leading-scale-and-performance",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-16T15:11:13",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-7-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />NVIDIA delivered a clean sweep in MLPerf Training v6.0, the latest edition of industry-standard AI training benchmarks developed by the MLCommons consortium....",
-   "tags": "hardware,training",
-   "area": "silicon",
-   "first_seen": "2026-06-16T15:11:13",
-   "importance": 0.5,
-   "why": "Benchmark results for Blackwell hardware demonstrate state-of-the-art training scale and performance metrics."
-  },
-  {
-   "title": "How to Scale Your Model – A Systems View of LLMs on TPUs (2025)",
-   "url": "https://jax-ml.github.io/scaling-book",
-   "source": "hackernews",
-   "published_date": "2026-06-16T13:14:26",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "systems,hardware,inference",
-   "area": "inference-engines",
-   "first_seen": "2026-06-16T13:14:26",
-   "importance": 0.6,
-   "why": "Provides systems-level perspectives on large language model scaling and execution bottlenecks on Google TPUs."
   }
  ]
 }

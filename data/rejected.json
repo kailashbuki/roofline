@@ -1,5 +1,5 @@
 {
- "count": 1617,
+ "count": 1634,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1617,6 +1617,23 @@
   "https://hive.technology/lab-notes/fine-tune-decision-models",
   "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
   "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
-  "https://www.latent.space/p/dyna"
+  "https://www.latent.space/p/dyna",
+  "https://arxiv.org/abs/2610.14158",
+  "https://arxiv.org/abs/2610.14766",
+  "https://arxiv.org/abs/2610.15035",
+  "https://arxiv.org/abs/2610.13989",
+  "https://arxiv.org/abs/2610.13416",
+  "https://arxiv.org/abs/2610.15327",
+  "https://arxiv.org/abs/2610.10808",
+  "https://huggingface.co/fishaudio/drama-3",
+  "https://whenitships.com/",
+  "https://openai.com/index/third-moment-research",
+  "https://developer.nvidia.com/blog/how-ai-coding-agents-can-unlock-materials-simulation-with-nvidia-alchemi-toolkit",
+  "https://developer.nvidia.com/blog/how-to-choose-full-stack-observability-for-nvidia-ai-factories",
+  "https://developer.nvidia.com/blog/nvidia-jetpack-7-2-1-adds-agentic-video-skills-and-t3000-emulation",
+  "https://developer.nvidia.com/blog/nvidia-video-codec-sdk-13-1-zero-copy-transcode-av1-b-frames-and-frame-accurate-seek",
+  "https://developer.nvidia.com/blog/four-ways-to-deploy-more-secure-ai-agents",
+  "https://developer.nvidia.com/blog/how-to-self-host-a-validated-ai-coding-assistant-with-nvidia-nemo-guardrails",
+  "https://developer.nvidia.com/blog/developing-healthcare-robotics-with-gpu-native-medical-physics-simulation"
  ]
 }

@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 96,
+ "count": 98,
  "articles": [
+  {
+   "title": "NVIDIA Blackwell Tops MLPerf Training 6.0 with Industry-Leading Scale and Performance",
+   "url": "https://developer.nvidia.com/blog/nvidia-blackwell-tops-mlperf-training-6-0-with-industry-leading-scale-and-performance",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-16T15:11:13",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-7-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />NVIDIA delivered a clean sweep in MLPerf Training v6.0, the latest edition of industry-standard AI training benchmarks developed by the MLCommons consortium....",
+   "tags": "hardware,training",
+   "area": "silicon",
+   "first_seen": "2026-06-16T15:11:13",
+   "importance": 0.5,
+   "why": "Benchmark results for Blackwell hardware demonstrate state-of-the-art training scale and performance metrics."
+  },
+  {
+   "title": "How to Scale Your Model – A Systems View of LLMs on TPUs (2025)",
+   "url": "https://jax-ml.github.io/scaling-book",
+   "source": "hackernews",
+   "published_date": "2026-06-16T13:14:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-06-16T13:14:26",
+   "importance": 0.6,
+   "why": "Provides systems-level perspectives on large language model scaling and execution bottlenecks on Google TPUs."
+  },
   {
    "title": "Qualcomm in Talks to Purchase Tenstorrent",
    "url": "https://www.reuters.com/technology/qualcomm-talks-buy-tenstorrent-information-reports-2026-06-15",
