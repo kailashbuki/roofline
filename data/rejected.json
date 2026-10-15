@@ -1,5 +1,5 @@
 {
- "count": 1733,
+ "count": 1737,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1733,6 +1733,10 @@
   "https://huggingface.co/blog/flux-3",
   "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
   "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning",
-  "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+  "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+  "https://arxiv.org/abs/2610.13623",
+  "https://arxiv.org/abs/2610.19128",
+  "https://research.meta.ai/blog/muse-spark-open",
+  "https://huggingface.co/blog/meta-muse-spark-open"
  ]
 }

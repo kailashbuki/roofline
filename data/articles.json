@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T15:31:59Z",
- "previous_generated_at": "2026-10-15T09:39:10Z",
+ "generated_at": "2026-10-15T20:11:49Z",
+ "previous_generated_at": "2026-10-15T15:31:59Z",
  "hot_days": 120,
- "count": 2031,
- "total_collected": 2173,
+ "count": 2037,
+ "total_collected": 2179,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "ASML Is Building a Hybrid Bonding Tool!",
+   "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-10-15T19:27:20",
+   "summary": "ASML is building a hybrid bonding tool! The company has not announced anything yet, but its patent filings, a news report and its own roadmap all suggest so.",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-15T20:11:25",
+   "importance": 0.6,
+   "why": "Patent filings reveal ASML developing hybrid bonding tools, potentially easing 3D packaging bottlenecks for advanced AI accelerators."
+  },
+  {
+   "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+   "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-15T18:00:01",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/open-model-unbox-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"open-model-unbox\" width=\"768\" />Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+   "tags": "llm,architecture,hardware,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-10-15T20:11:34",
+   "importance": 0.7,
+   "why": "Introduces an 816B MoE model with a 1M token context optimized for coding workloads on GB300 hardware."
+  },
+  {
+   "title": "Muse Spark Is Now an Open-Weights Model",
+   "url": "https://pytorch.org/blog/muse-spark-open",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-15T17:55:52",
+   "summary": "<p>Today, Meta is releasing the weights for Muse Spark Open, the most capable US open-weights model to date. It’s available today on Hugging Face under the Muse Model License. Muse...</p>\n<p>The post <a href=\"https://pytorch.org/blog/muse-spark-open/\">Muse Spark Is Now an Open-Weights Model</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "llm,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-10-15T20:11:19",
+   "importance": 0.4,
+   "why": "Meta releases open-weights model weights on Hugging Face, enabling broader community access and deployment."
+  },
   {
    "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
    "url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus",
@@ -44,6 +80,17 @@
    "tags": "",
    "area": "other",
    "first_seen": "2026-10-15T15:31:58",
+   "importance": 0.0
+  },
+  {
+   "title": "Meta Muse Spark Open is live on Together AI",
+   "url": "https://www.together.ai/blog/meta-muse-spark-open",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "Meta Muse Spark Open, Meta's open-weight model for agentic coding, is live on Together AI with a 1M-token context window on serverless and dedicated infrastructure.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-10-15T20:11:30",
    "importance": 0.0
   },
   {
@@ -1583,6 +1630,18 @@
    "why": "Enforces null-awareness and permutation invariance in first-principles system one models to match decision problem structures."
   },
   {
+   "title": "PreciseCoder: Faithful and Generalizable Debugging Beyond Unit-Test Rewards",
+   "url": "https://arxiv.org/abs/2610.18755",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "PreciseCoder improves code repair by rewarding precise, localized edits rather than only unit-test passage, reducing unnecessary changes and improving generalization across model sizes.\n\nKeywords: reinforcement learning, unit-test reward, debugging, hallucinate bugs, PreciseCoder, semantically verified localized edits, edit lines, repository-level program repair, reasoning trace, edit precision",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-15T20:10:55",
+   "importance": 0.5,
+   "why": "Replaces sparse unit-test rewards with localized edit verification to improve code repair performance."
+  },
+  {
    "title": "VideoJev: System One Model for Video Understanding and Interaction",
    "url": "https://arxiv.org/abs/2610.18615",
    "source": "hf:papers",
@@ -1953,6 +2012,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.6,
    "why": "Combines reinforcement learning with verifiable rewards and on-policy self-distillation for skill-policy co-evolution in long-horizon agentic tasks."
+  },
+  {
+   "title": "History Replays Itself: Unleashing Long-Context Capability in Linear Attention",
+   "url": "https://arxiv.org/abs/2610.15715",
+   "source": "hf:papers",
+   "published_date": "2026-10-11T00:00:00",
+   "summary": "NoteBank augments linear attention models with a sparse episodic memory that stores selected text and replays it through native computation, greatly improving long-context retrieval without extra training or significant overhead.\n\nKeywords: linear attention, recurrent state, NoteBank, sparse episodic memory, Gated DeltaNet, RULER, Mamba-2, LongBench, MemoryAgentBench",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-15T20:10:55",
+   "importance": 0.6,
+   "why": "Augments linear attention with sparse episodic memory to bypass training-free long-context limitations."
   },
   {
    "title": "Apertus 1.5: From Open Text Models to Open Multimodal Reasoners",
