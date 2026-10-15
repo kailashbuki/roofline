@@ -1,7 +1,53 @@
 {
  "month": "2026-06",
- "count": 107,
+ "count": 111,
  "articles": [
+  {
+   "title": "Qwen and Fable: An open-weights agentic coding model. 35B Mixture-of-Experts",
+   "url": "https://huggingface.co/lordx64/Qwable-v1",
+   "source": "hackernews",
+   "published_date": "2026-06-17T09:16:27",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-06-17T09:16:27",
+   "importance": 0.5,
+   "why": "An open-weights agentic coding Mixture-of-Experts model provides practitioners with a new tool for software generation tasks."
+  },
+  {
+   "title": "Kimi K2.7 Code vs Claude Fable 5: Landing pages that cost 94% less",
+   "url": "https://www.together.ai/blog/kimi-k2-7-code-vs-claude-fable-5",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-06-17T00:00:00",
+   "summary": "We generated 12 landing pages with Kimi K2.7 Code and Claude Fable 5. Kimi cost 94% less and scored within a few points on every page. Here's what actually moved the needle.",
+   "tags": "llm,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-06-17T00:00:00",
+   "importance": 0.3,
+   "why": "Practical cost-performance comparison of codegen models highlights economic trade-offs in code generation workflows."
+  },
+  {
+   "title": "Building AI Agents for AR Glasses and XR Devices with NVIDIA XR AI",
+   "url": "https://developer.nvidia.com/blog/building-ai-agents-for-ar-glasses-and-xr-devices-with-nvidia-xr-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-16T22:30:00",
+   "summary": "<img alt=\"An image of a scientist using XR glasses.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AR-Glasses-e1781633499339-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AR-Glasses\" width=\"768\" />Developers building for AR glasses and wearable devices face an infrastructure gap. The hardware is ready, but creating AI experiences requires integrating live...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-16T22:30:00",
+   "importance": 0.0
+  },
+  {
+   "title": "Build Your Own Transaction Foundation Model for Financial Intelligence",
+   "url": "https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-16T20:30:08",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Every swipe, transfer, and payment on a modern financial network encodes a pattern of human behavior. Transaction data is one of the richest signals an...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-16T20:30:08",
+   "importance": 0.0
+  },
   {
    "title": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
    "url": "https://arxiv.org/abs/2606.18247",
