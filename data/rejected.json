@@ -1,5 +1,5 @@
 {
- "count": 1714,
+ "count": 1733,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1714,6 +1714,25 @@
   "https://github.com/cobanov/PS5LM",
   "https://openai.com/index/block-ai-powered-security",
   "https://www.latent.space/p/crossing-the-threshold",
-  "https://www.latent.space/p/lab-in-the-loop-at-compute-speed"
+  "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
+  "https://arxiv.org/abs/2610.19420",
+  "https://arxiv.org/abs/2610.14020",
+  "https://arxiv.org/abs/2610.19422",
+  "https://arxiv.org/abs/2610.05230",
+  "https://arxiv.org/abs/2610.17016",
+  "https://arxiv.org/abs/2610.19726",
+  "https://arxiv.org/abs/2610.16338",
+  "https://arxiv.org/abs/2610.10787",
+  "https://arxiv.org/abs/2610.14096",
+  "https://arxiv.org/abs/2610.09055",
+  "https://arxiv.org/abs/2610.20524",
+  "https://arxiv.org/abs/2610.19138",
+  "https://arxiv.org/abs/2610.15425",
+  "https://arxiv.org/abs/2610.19118",
+  "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+  "https://huggingface.co/blog/flux-3",
+  "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+  "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning",
+  "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
  ]
 }

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T09:39:10Z",
- "previous_generated_at": "2026-10-14T20:29:59Z",
+ "generated_at": "2026-10-15T15:31:59Z",
+ "previous_generated_at": "2026-10-15T09:39:10Z",
  "hot_days": 120,
- "count": 2017,
- "total_collected": 2159,
+ "count": 2031,
+ "total_collected": 2173,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,29 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
+   "url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-15T14:40:35",
+   "summary": "<p>TL;DR Deploying PyTorch models on microcontrollers has historically required converting to other framework formats, maintaining separate toolchains, and debugging cross-framework numerical mismatches. ExecuTorch eliminates this conversion step entirely. The Cortex-M...</p>\n<p>The post <a href=\"https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus/\">Bringing ExecuTorch to Arm Cortex-M CPUs</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "inference,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-15T15:31:17",
+   "importance": 0.4,
+   "why": "Enables direct PyTorch model execution on microcontrollers without format conversion, simplifying edge deployment."
+  },
+  {
+   "title": "Ticking Boxes, Shipping Models",
+   "url": "https://www.airealist.ai/p/ticking-boxes-shipping-models",
+   "source": "airealist",
+   "published_date": "2026-10-15T11:44:03",
+   "summary": "Doctolib ticks the health-data compliance boxes with US clouds and models. For now, its public promises say more than its documents show.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-10-15T15:31:58",
+   "importance": 0.0
+  },
   {
    "title": "Your Transformer Is Secretly Elastic",
    "url": "https://arxiv.org/abs/2610.20588",
@@ -706,6 +729,42 @@
    "first_seen": "2026-10-14T09:56:43",
    "importance": 0.7,
    "why": "Automates mixed-precision assignment for key-value caches, reducing memory footprints without manual layer tuning."
+  },
+  {
+   "title": "Share the Symbol, Not the Vector: Training-Free Fact Communication Across Language Models",
+   "url": "https://arxiv.org/abs/2610.19696",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T07:19:43",
+   "summary": "SYNC enables heterogeneous language models to share selective object facts via word indices and receiver-local hidden-state directions without fine-tuning or translators.\n\nKeywords: multi-agent systems, internal model states, SYNC, Symbol-Indexed Neural Communication, word-indexed interface, hidden states, word directions, selective use, task-free probe, multi-token symbols",
+   "tags": "inference,systems,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.7,
+   "why": "Enables training-free fact sharing across heterogeneous models via word indices and receiver-local hidden states."
+  },
+  {
+   "title": "Glance Forcing: Making Bidirectional Diffusion Autoregressive at a Glance",
+   "url": "https://arxiv.org/abs/2610.20220",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Glance Forcing improves video generation efficiency by splitting denoising into specialized experts guided by stage-specific objectives, reducing training costs while improving quality.\n\nKeywords: autoregressive generation, video world models, bidirectional diffusion model, Probability Flow ODE, PF-ODE, trajectory geometry, Glance Forcing, few-step distillation, distribution matching, VBench",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.7,
+   "why": "Splits video denoising into stage-specific expert objectives to reduce training costs while improving distribution matching."
+  },
+  {
+   "title": "StreamErase: Towards Ultra-Fast Streaming Video Erasing",
+   "url": "https://arxiv.org/abs/2610.20137",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "StreamErase enables real-time, streaming video object removal with sub-second latency by transferring erasing capabilities from a bidirectional model to an efficient unidirectional streaming generator using sliding-window causal attention with attention sinks.\n\nKeywords: text-to-video model, bidirectional foundation model, unidirectional streaming eraser, sliding-window causal attention, attention sinks, KV cache rolling, self-rollout, streaming generation",
+   "tags": "inference,attention,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.6,
+   "why": "Transfers bidirectional video erasing to unidirectional streaming using sliding-window causal attention with attention sinks."
   },
   {
    "title": "ActionOPD: Distilling Decisions, Not Tokens",
@@ -1416,6 +1475,18 @@
    "why": "Replaces third-party dependencies with custom graph-compiled kernels, achieving a 14 percent decode speedup."
   },
   {
+   "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+   "url": "https://arxiv.org/abs/2610.17893",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T07:46:48",
+   "summary": "CoSIR trains LLM agents to collaborate by rewarding information sharing and usage via surprisal reduction, improving multi-agent performance on unseen tasks.\n\nKeywords: large language model agents, multi-agent systems, CoSIR, surprisal-based information rewards, Bayesian evaluator, self-play, post-training",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.7,
+   "why": "Applies surprisal-based information rewards during post-training to optimize multi-agent collaboration and communication."
+  },
+  {
    "title": "Underdog Saluki 27B: A 7.89 GB quantization focused on tool calling",
    "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
    "source": "hackernews",
@@ -1438,6 +1509,18 @@
    "first_seen": "2026-10-15T09:38:20",
    "importance": 0.4,
    "why": "Combines distillation with reinforcement learning on a new GUI grounding dataset to improve interface action mapping."
+  },
+  {
+   "title": "Joint Subspace Sparse Attention for Efficient Long-Context Decoding",
+   "url": "https://arxiv.org/abs/2610.19026",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "Joint Subspace Sparse Attention improves long-context decoding by learning a shared low-dimensional query-key subspace for accurate token selection and using a gather-free kernel, achieving near-full accuracy with substantially higher throughput.\n\nKeywords: Joint Subspace Sparse Attention, sparse attention, KV-cache, token-level selection, query-key subspace, grouped-query attention, indexed-attention kernel, Multi-head Latent Attention, sliding-window/global attention",
+   "tags": "inference,attention,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.8,
+   "why": "Learns a shared low-dimensional query-key subspace with a gather-free kernel to enable efficient sparse long-context decoding."
   },
   {
    "title": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
@@ -1584,6 +1667,30 @@
    "why": "Selects memory modalities dynamically instead of using fixed representations to improve past interaction retrieval for GUI agents."
   },
   {
+   "title": "Diff Diffusion: Predicting Edit Paths with Diffusion Models for Efficient Code Editing",
+   "url": "https://arxiv.org/abs/2610.17831",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "Diff Diffusion is a diffusion-based language model framework that predicts structured code edits to enable fast, accurate, low-latency modifications in AI-assisted development environments.\n\nKeywords: diffusion large language models, edit prediction, Diff Diffusion, structured edit operations, multi-stage training, parallel decoding, autoregressive baselines",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.65,
+   "why": "Replaces autoregressive decoding with parallel diffusion-based edit path generation to reduce code editing latency."
+  },
+  {
+   "title": "Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders",
+   "url": "https://arxiv.org/abs/2610.17771",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "ReMaRk improves reinforcement learning for recommendation by scoring generated lists against all valid replies jointly, reducing training cost while matching or exceeding prior performance.\n\nKeywords: Rank-GRPO, ReMaRk, reinforcement learning, LLM recommender, ProtoQA, reward modeling, multi-answer RL",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.6,
+   "why": "Scores lists against all valid replies jointly in GRPO to reduce recommender training costs."
+  },
+  {
    "title": "DeltaTTG: Training Multi-Turn Agents with a Token-to-Go Progress Meter",
    "url": "https://arxiv.org/abs/2610.17666",
    "source": "hf:papers",
@@ -1668,6 +1775,30 @@
    "why": "Decouples runtime generation throughput from learned temporal rates to enable rate-adaptive interactive video rollouts."
   },
   {
+   "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+   "url": "https://arxiv.org/abs/2610.17309",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "StartLux-Decision introduces efficient and adaptive decision models using single-pass prediction and confidence-guided reasoning, trained via a three-stage pipeline with RLCD² reinforcement learning, and evaluates them on Decision Index and the DecisionPivot benchmark.\n\nKeywords: bidirectional attention, cross-attention, reasoning supervision, reinforcement learning, RLCD², proper scoring rules, decision probability, reasoning traces, DecisionPivot, contrast pairs, vLLM, llama.cpp, MLX",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.6,
+   "why": "Introduces RLCD2 reinforcement learning with single-pass confidence-guided reasoning for calibrated deliberative decisions."
+  },
+  {
+   "title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
+   "url": "https://arxiv.org/abs/2610.17246",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "LLM-to-Flow Distillation aligns scientific generators with high-level discovery goals by using a frozen LLM to build adaptive curricula and distill preferences via DPO, enabling control over peptide and small-molecule design.\n\nKeywords: LLM-to-Flow Distillation, flow-based generators, diffusion-based generators, DPO, preference distillation, out-of-distribution adaptation, therapeutic peptides, small-molecule structure design",
+   "tags": "training,post-training",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.6,
+   "why": "Uses frozen LLM preference distillation via DPO to control generative diffusion and flow models for scientific design."
+  },
+  {
    "title": "AReA: Adaptive Receptive-Field Attention for Efficient High-Resolution Diffusion Transformers",
    "url": "https://arxiv.org/abs/2610.17227",
    "source": "hf:papers",
@@ -1690,6 +1821,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.65,
    "why": "Replaces quadratic fully-connected communication with hierarchical communication in multi-player interactive world models."
+  },
+  {
+   "title": "Rethinking LLM-Guided Visual Question Answering: Does Deeper Knowledge Integration Really Help?",
+   "url": "https://arxiv.org/abs/2610.17079",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "Shallow late fusion of LLM-generated reasoning guidance outperforms deep attention injection in knowledge-based VQA under limited data, highlighting that integration depth should align with the training regime.\n\nKeywords: Visual Question Answering, Large Language Models, ViT, FLAN-T5, late fusion, attention-matrix injection, cross-attention, OK-VQA",
+   "tags": "architecture,attention,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.5,
+   "why": "Demonstrates that shallow late fusion outperforms deep attention injection for knowledge-based VQA under limited data."
   },
   {
    "title": "AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding",
@@ -2638,6 +2781,18 @@
    "why": "Unifies geometry fixing with diffusion priors to enforce 4D consistency without degrading fine visual textures."
   },
   {
+   "title": "The Thinking Leakage in Reinforcement Learning for LLMs",
+   "url": "https://arxiv.org/abs/2610.14270",
+   "source": "hf:papers",
+   "published_date": "2026-10-09T00:00:00",
+   "summary": "Reinforcement learning gains in hybrid reasoning models' NO-THINK mode largely stem from reactivating existing THINK-mode reasoning rather than learning new capabilities.\n\nKeywords: hybrid reasoning models, Qwen3, THINK mode, NO-THINK mode, reinforcement learning, GRPO, thinking leakage, activation subspace, attention heads",
+   "tags": "training,attention,llm",
+   "area": "training",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.7,
+   "why": "Uncovers that RL gains in hybrid models reactivate existing think modes via attention subspaces rather than learning new capabilities."
+  },
+  {
    "title": "Latent World Action Model for GUI Agents",
    "url": "https://arxiv.org/abs/2610.14228",
    "source": "hf:papers",
@@ -2648,6 +2803,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.55,
    "why": "Replaces pixel-space reconstruction with latent world action models to lower computational overhead in graphical user interface agents."
+  },
+  {
+   "title": "Jag: Direct Box Prediction for Efficient Visual Grounding",
+   "url": "https://arxiv.org/abs/2610.13239",
+   "source": "hf:papers",
+   "published_date": "2026-10-09T00:00:00",
+   "summary": "Jag adapts a compact pretrained multimodal model to predict bounding boxes directly via a regression head, improving grounding accuracy and reducing inference latency.\n\nKeywords: visual grounding, autoregressive multimodal models, continuous box prediction, regression head, geometric supervision, multimodal representations, direct prediction",
+   "tags": "architecture,inference,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-15T15:30:40",
+   "importance": 0.6,
+   "why": "Replaces autoregressive box generation with a direct regression head in a compact multimodal model to cut latency."
   },
   {
    "title": "Rethinking Relative Policy Differences Transfer of On-Policy Distillation",
