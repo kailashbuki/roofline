@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T09:33:30Z",
- "previous_generated_at": "2026-10-15T20:11:49Z",
+ "generated_at": "2026-10-16T15:16:21Z",
+ "previous_generated_at": "2026-10-16T09:33:30Z",
  "hot_days": 120,
- "count": 2116,
- "total_collected": 2258,
+ "count": 2118,
+ "total_collected": 2261,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Nvidia RTX Pro 4500 Blackwell Server: L40S Throughput at 165W in a Single Slot",
+   "url": "https://www.storagereview.com/review/nvidia-rtx-pro-4500-blackwell-server-edition-review",
+   "source": "hackernews",
+   "published_date": "2026-10-16T13:41:11",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-16T15:14:33",
+   "importance": 0.6,
+   "why": "Delivers L40S throughput at 165W in single-slot form factor, improving datacenter power density."
+  },
   {
    "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
    "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
@@ -2590,6 +2602,18 @@
    "why": "Deploys a 35B mixture-of-experts model activating only 3B parameters per token for efficient high-fidelity speech generation."
   },
   {
+   "title": "Virtual Head Attention",
+   "url": "https://arxiv.org/abs/2610.17959",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "Virtual Head Attention improves long-context model efficiency by reducing KV cache and compute while preserving quality through lightweight linear query and output transformations.\n\nKeywords: Virtual Head Attention, GQA, KV cache, attention mechanisms, long-context large language models, Q Premix, Linear Postmix, low-rank residual, Tensor Core, MoE",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-16T15:13:49",
+   "importance": 0.75,
+   "why": "Applies lightweight linear transformations to compress KV cache size, lowering memory footprint for long-context generation."
+  },
+  {
    "title": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
    "url": "https://arxiv.org/abs/2610.17953",
    "source": "hf:papers",
@@ -2612,6 +2636,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.5,
    "why": "Selects memory modalities dynamically instead of using fixed representations to improve past interaction retrieval for GUI agents."
+  },
+  {
+   "title": "FlashMask-3: Efficient and Expressive Mask-Aware Distributed Attention",
+   "url": "https://arxiv.org/abs/2610.17901",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "FlashMask-3 accelerates long-context attention via a Hopper-optimized sparse-mask kernel and distributed context-parallel extensions that eliminate mask-communication overhead and improve training throughput.\n\nKeywords: FlashMask-3, structured attention masks, context parallelism, column-wise sparse mask, FlashAttention-3, TMA/WGMMA, HCC-IPO, compute-communication overlap, MoE",
+   "tags": "attention,systems,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-10-16T15:13:49",
+   "importance": 0.8,
+   "why": "Introduces a Hopper-optimized sparse kernel eliminating mask communication overhead in distributed context parallelism."
   },
   {
    "title": "Diff Diffusion: Predicting Edit Paths with Diffusion Models for Efficient Code Editing",
@@ -25283,17 +25319,6 @@
    "first_seen": "2026-06-18T15:54:24",
    "importance": 0.3,
    "why": "Analyzing real estate and utility filings provides a quantitative sanity check on compute hardware expansion forecasts."
-  },
-  {
-   "title": "Independent or Current",
-   "url": "https://www.airealist.ai/p/independent-or-current",
-   "source": "airealist",
-   "published_date": "2026-06-18T11:01:42",
-   "summary": "Europe built the most ambitious AI enforcer in the world. It still has to ask the labs how to grade them.",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-18T11:01:42",
-   "importance": 0.0
   }
  ]
 }

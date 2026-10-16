@@ -1,5 +1,5 @@
 {
- "count": 1807,
+ "count": 1810,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1807,6 +1807,9 @@
   "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
   "https://openai.com/index/introducing-the-rosalind-academic-plan",
   "https://openai.com/index/sullivan-cromwell",
-  "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+  "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+  "https://arxiv.org/abs/2610.22352",
+  "https://arxiv.org/abs/2610.22350",
+  "https://huggingface.co/blog/reflection-beam"
  ]
 }

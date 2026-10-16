@@ -1,7 +1,18 @@
 {
  "month": "2026-06",
- "count": 111,
+ "count": 112,
  "articles": [
+  {
+   "title": "Independent or Current",
+   "url": "https://www.airealist.ai/p/independent-or-current",
+   "source": "airealist",
+   "published_date": "2026-06-18T11:01:42",
+   "summary": "Europe built the most ambitious AI enforcer in the world. It still has to ask the labs how to grade them.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-18T11:01:42",
+   "importance": 0.0
+  },
   {
    "title": "Qwen and Fable: An open-weights agentic coding model. 35B Mixture-of-Experts",
    "url": "https://huggingface.co/lordx64/Qwable-v1",
