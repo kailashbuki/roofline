@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 112,
+ "count": 114,
  "articles": [
+  {
+   "title": "From Minutes to Seconds: LLM-Guided Autotuning for Helion Kernels",
+   "url": "https://pytorch.org/blog/from-minutes-to-seconds-llm-guided-autotuning-for-helion-kernels",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-06-18T16:08:53",
+   "summary": "TL;DR Helion, PyTorch’s domain-specific language (DSL) for performance portable machine learning kernels, heavily relies on autotuning for performance. Currently Helion searches utilize the Likelihood-Free Bayesian Optimization (LFBO) to find the...",
+   "tags": "optimization,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-18T16:08:53",
+   "importance": 0.5,
+   "why": "Uses LLM guidance to drastically accelerate kernel autotuning time for PyTorch's Helion DSL."
+  },
+  {
+   "title": "Stop Saying Half of 2026 US Datacenter Capacity Is Canceled",
+   "url": "https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-18T15:54:24",
+   "summary": "Don't Believe The Vibecoded Estimates, Go Through Every Individual Filing Instead",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-18T15:54:24",
+   "importance": 0.3,
+   "why": "Analyzing real estate and utility filings provides a quantitative sanity check on compute hardware expansion forecasts."
+  },
   {
    "title": "Independent or Current",
    "url": "https://www.airealist.ai/p/independent-or-current",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T15:16:21Z",
- "previous_generated_at": "2026-10-16T09:33:30Z",
+ "generated_at": "2026-10-16T19:52:06Z",
+ "previous_generated_at": "2026-10-16T15:16:21Z",
  "hot_days": 120,
- "count": 2118,
- "total_collected": 2261,
+ "count": 2121,
+ "total_collected": 2266,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
+   "url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-16T16:30:46",
+   "summary": "<p>Why Zephon? The data that a model sees during training is one of the most powerful levers we have for influencing how well it performs. Much of the day-to-day work...</p>\n<p>The post <a href=\"https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/\">Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-10-16T19:50:39",
+   "importance": 0.5,
+   "why": "Zephon adds elastically deterministic data loading to TorchTitan, ensuring reproducible training states despite node failures."
+  },
   {
    "title": "Nvidia RTX Pro 4500 Blackwell Server: L40S Throughput at 165W in a Single Slot",
    "url": "https://www.storagereview.com/review/nvidia-rtx-pro-4500-blackwell-server-edition-review",
@@ -824,6 +836,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.6,
    "why": "Replaces autoregressive VLM decoders with a single-pass coarse-to-fine classification framework, accelerating spatial reasoning speed."
+  },
+  {
+   "title": "MMSearch-OPD: Easy Made Hard, Hard Made Learnable for Long-Horizon Multimodal Search Agents",
+   "url": "https://arxiv.org/abs/2610.22240",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "MMSearch-OPD improves long-horizon multimodal search by refining reasoning data and jointly training with reinforcement learning and on-policy distillation.\n\nKeywords: multimodal deep search, reasoning chains, cross-modal evidence, reinforcement learning, on-policy distillation, behavior penalties, token-level teacher guidance, exponentially decaying distillation coefficient",
+   "tags": "training,multimodal,llm",
+   "area": "training",
+   "first_seen": "2026-10-16T19:50:04",
+   "importance": 0.7,
+   "why": "Combines reinforcement learning with decaying on-policy distillation on refined cross-modal chains for search agents."
   },
   {
    "title": "Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling",
@@ -1630,6 +1654,18 @@
    "why": "Enables training-free fact sharing across heterogeneous models via word indices and receiver-local hidden states."
   },
   {
+   "title": "PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference",
+   "url": "https://arxiv.org/abs/2610.19605",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T05:29:08",
+   "summary": "PN-Mix improves low-bit KV cache quantization by identifying salient RoPE channel pairs via query-key norms, achieving strong accuracy at lower bit rates.\n\nKeywords: KV cache quantization, mixed-precision quantization, RoPE, attention logit perturbation, channel-pair saliency, prefill stage, decoder-only LLMs",
+   "tags": "inference,quantization,attention",
+   "area": "inference-methods",
+   "first_seen": "2026-10-16T19:50:04",
+   "importance": 0.7,
+   "why": "Uses query-key norms to locate salient RoPE channel pairs, enabling mixed-precision KV cache quantization for long outputs."
+  },
+  {
    "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
    "url": "https://arxiv.org/abs/2610.20939",
    "source": "hf:papers",
@@ -1712,6 +1748,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.6,
    "why": "Introduces self-conditioning in flow matching to exceed constant-depth limits and enable deeper reasoning."
+  },
+  {
+   "title": "SERO: Learning from Executable Oracle Continuations for Long-Horizon Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.19397",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "SERO improves long-horizon agentic reinforcement learning by training on executable oracle continuations from real policy states, weighted by policy compatibility, without inference-time overhead.\n\nKeywords: on-policy distillation, agentic RL, oracle continuations, policy-reachability weighting, executable rollouts, ALFWorld, WebShop",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-16T19:50:04",
+   "importance": 0.7,
+   "why": "Weights executable oracle continuations by policy compatibility to stabilize long-horizon agentic reinforcement learning."
   },
   {
    "title": "G^3VLA: Geometric Inductive Bias for Vision-Language-Action Models",
@@ -2672,6 +2720,18 @@
    "first_seen": "2026-10-15T15:30:40",
    "importance": 0.6,
    "why": "Scores lists against all valid replies jointly in GRPO to reduce recommender training costs."
+  },
+  {
+   "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
+   "url": "https://arxiv.org/abs/2610.17697",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "LeanPRM uses the Lean proof assistant to automatically generate step-level correctness labels for natural-language mathematical proofs, enabling scalable training of learned verifiers without human annotation.\n\nKeywords: LeanPRM, Lean proof assistant, step-level labels, natural-language proofs, formal proofs, learned verifier, PRM800K, best-of-N selection, IMO-level problems",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-16T19:50:04",
+   "importance": 0.75,
+   "why": "Automates step-level math verification using Lean to bypass human annotation bottlenecks during verifier training."
   },
   {
    "title": "Cowork-Gym: Synthesizing Interactive Work Environments at Scale",
@@ -25295,30 +25355,6 @@
    "area": "other",
    "first_seen": "2026-06-19T13:02:47",
    "importance": 0.0
-  },
-  {
-   "title": "From Minutes to Seconds: LLM-Guided Autotuning for Helion Kernels",
-   "url": "https://pytorch.org/blog/from-minutes-to-seconds-llm-guided-autotuning-for-helion-kernels",
-   "source": "rss:PyTorch Blog",
-   "published_date": "2026-06-18T16:08:53",
-   "summary": "TL;DR Helion, PyTorch’s domain-specific language (DSL) for performance portable machine learning kernels, heavily relies on autotuning for performance. Currently Helion searches utilize the Likelihood-Free Bayesian Optimization (LFBO) to find the...",
-   "tags": "optimization,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-18T16:08:53",
-   "importance": 0.5,
-   "why": "Uses LLM guidance to drastically accelerate kernel autotuning time for PyTorch's Helion DSL."
-  },
-  {
-   "title": "Stop Saying Half of 2026 US Datacenter Capacity Is Canceled",
-   "url": "https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-18T15:54:24",
-   "summary": "Don't Believe The Vibecoded Estimates, Go Through Every Individual Filing Instead",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-06-18T15:54:24",
-   "importance": 0.3,
-   "why": "Analyzing real estate and utility filings provides a quantitative sanity check on compute hardware expansion forecasts."
   }
  ]
 }

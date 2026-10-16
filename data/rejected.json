@@ -1,5 +1,5 @@
 {
- "count": 1810,
+ "count": 1820,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1810,6 +1810,16 @@
   "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
   "https://arxiv.org/abs/2610.22352",
   "https://arxiv.org/abs/2610.22350",
-  "https://huggingface.co/blog/reflection-beam"
+  "https://huggingface.co/blog/reflection-beam",
+  "https://www.promptarmor.com/resources/open-weight-susceptibility",
+  "https://reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai",
+  "https://www.ft.com/content/e0a1295c-4492-4fdd-aaf5-55678a9ef9bf",
+  "https://restofworld.org/2026/china-open-weight-models",
+  "https://reflection.ai/blog/beam-is-available",
+  "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
+  "https://openai.com/index/stack-overflow-chatgpt-plugin",
+  "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark",
+  "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+  "https://www.anthropic.com/research/ecdsa-curve-origins"
  ]
 }
