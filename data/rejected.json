@@ -1,5 +1,5 @@
 {
- "count": 1836,
+ "count": 1837,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1836,6 +1836,7 @@
   "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
   "https://www.anthropic.com/research/ai-expectations-gap",
   "https://www.anthropic.com/research/employment-at-anthropic",
-  "https://www.anthropic.com/research/expectations-for-the-future"
+  "https://www.anthropic.com/research/expectations-for-the-future",
+  "https://huggingface.co/collections/mistralai/timestral"
  ]
 }

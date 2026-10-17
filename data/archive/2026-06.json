@@ -1,7 +1,18 @@
 {
  "month": "2026-06",
- "count": 114,
+ "count": 115,
  "articles": [
+  {
+   "title": "Banning Open Source AI Would Be A Mistake",
+   "url": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
+   "source": "rss:Interconnects",
+   "published_date": "2026-06-19T13:02:47",
+   "summary": "This post was originally an op-ed co-authored with Kevin Xu of Interconnected for a general, non-technical audience.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-19T13:02:47",
+   "importance": 0.0
+  },
   {
    "title": "From Minutes to Seconds: LLM-Guided Autotuning for Helion Kernels",
    "url": "https://pytorch.org/blog/from-minutes-to-seconds-llm-guided-autotuning-for-helion-kernels",
