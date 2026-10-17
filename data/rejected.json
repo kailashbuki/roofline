@@ -1,5 +1,5 @@
 {
- "count": 1820,
+ "count": 1836,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1820,6 +1820,22 @@
   "https://openai.com/index/stack-overflow-chatgpt-plugin",
   "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark",
   "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-  "https://www.anthropic.com/research/ecdsa-curve-origins"
+  "https://www.anthropic.com/research/ecdsa-curve-origins",
+  "https://arxiv.org/abs/2610.21185",
+  "https://arxiv.org/abs/2610.15924",
+  "https://arxiv.org/abs/2610.16397",
+  "https://arxiv.org/abs/2610.06829",
+  "https://arxiv.org/abs/2610.22319",
+  "https://arxiv.org/abs/2610.19725",
+  "https://arxiv.org/abs/2610.14216",
+  "https://arxiv.org/abs/2610.19361",
+  "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16",
+  "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
+  "https://openai.com/index/itau-generative-ai",
+  "https://openai.com/index/benefit-street-partners",
+  "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+  "https://www.anthropic.com/research/ai-expectations-gap",
+  "https://www.anthropic.com/research/employment-at-anthropic",
+  "https://www.anthropic.com/research/expectations-for-the-future"
  ]
 }

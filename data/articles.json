@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T19:52:06Z",
- "previous_generated_at": "2026-10-16T15:16:21Z",
+ "generated_at": "2026-10-17T09:02:27Z",
+ "previous_generated_at": "2026-10-16T19:52:06Z",
  "hot_days": 120,
- "count": 2121,
- "total_collected": 2266,
+ "count": 2131,
+ "total_collected": 2276,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -778,6 +778,18 @@
    "importance": 0.0
   },
   {
+   "title": "Gen4P: Video Generators are 4D Perceivers",
+   "url": "https://arxiv.org/abs/2610.22371",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "Gen4P repurposes a pretrained video generator into a feed-forward 4D perceiver that predicts geometry and motion from monocular video via on-demand cross-attention decoding and frozen depth priors.\n\nKeywords: 4D geometry, 4D motion, monocular video, video generator, feed-forward 4D perceiver, denoising, video latents, cross-attention decoder, continuous-time queries, video-depth LoRA, geometry prior, 3D point tracking, camera pose estimation",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.5,
+   "why": "Repurposes video generator latents via cross-attention decoders into feed-forward 4D geometry perceivers."
+  },
+  {
    "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
    "url": "https://arxiv.org/abs/2610.22347",
    "source": "hf:papers",
@@ -824,6 +836,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.6,
    "why": "Introduces stochastic attention routing inside diffusion generators to align with reward signals while preserving deterministic samplers."
+  },
+  {
+   "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+   "url": "https://arxiv.org/abs/2610.22280",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "LEASH is a training-free framework that uses latent uncertainty to escalate from a weak to a strong computer-use agent only when needed and monitors the strong agent afterward, reducing cost while maintaining high success.\n\nKeywords: weak-to-strong escalation, latent uncertainty, hidden states, shadow observer, computer-use agents, OSWorld",
+   "tags": "inference,systems,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.4,
+   "why": "Uses latent hidden states for dynamic weak-to-strong agent escalation, avoiding heavy model calls on easy tasks."
   },
   {
    "title": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
@@ -932,6 +956,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.5,
    "why": "Adds explicit physical state transition supervision to vision-language-action models without increasing inference cost."
+  },
+  {
+   "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+   "url": "https://arxiv.org/abs/2610.21261",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "Sparse autoencoder features are partially compositional but require interaction terms for accurate behavioral predictions and steering.\n\nKeywords: sparse autoencoders, SAE Additivity Residuals, interaction order, coalition ordering, sum preserving random rotations, pairwise modeling, steering, compositionality",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.5,
+   "why": "Introduces pairwise SAE interaction terms to resolve compositional blind spots in internal model representations."
   },
   {
    "title": "Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
@@ -1678,6 +1714,18 @@
    "why": "Unifies GUI agent evaluation and online RL training across platforms with verifiable rewards, enabling a 9B model state-of-the-art."
   },
   {
+   "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
+   "url": "https://arxiv.org/abs/2610.20828",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "CoTranslator translates reverse reasoning traces to match verified forward reasoning distributions, enabling efficient and transferable reasoning distillation for student models.\n\nKeywords: chain-of-thought, reasoning distillation, forward CoT generation, rejection sampling, reverse CoT generation, CoTranslator, post-hoc rationalization, semantic suppression",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.5,
+   "why": "Translates reverse reasoning traces into forward distributions to improve reasoning distillation efficiency."
+  },
+  {
    "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
    "url": "https://arxiv.org/abs/2610.20818",
    "source": "hf:papers",
@@ -1688,6 +1736,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.75,
    "why": "Combines multi-codebook discrete visual tokens with a diffusion language backbone to unify 4D generation and understanding."
+  },
+  {
+   "title": "Lluna: Collaborative Unimodal Models for Missing-Modality Inference",
+   "url": "https://arxiv.org/abs/2610.20526",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Lluna improves multimodal predictions under missing inputs by combining private unimodal predictions with graph-based residual collaboration and progressive consistency training.\n\nKeywords: multimodal prediction, unimodal models, collaborative representations, graph-based collaboration, Progressive Collaboration Consistency, Lluna",
+   "tags": "multimodal,architecture",
+   "area": "architecture",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.4,
+   "why": "Combines private unimodal predictions using graph residual collaboration to handle missing multimodal inputs."
   },
   {
    "title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views",
@@ -1724,6 +1784,18 @@
    "first_seen": "2026-10-15T15:30:40",
    "importance": 0.6,
    "why": "Transfers bidirectional video erasing to unidirectional streaming using sliding-window causal attention with attention sinks."
+  },
+  {
+   "title": "RepForcing: Representation-Space Initialization for Autoregressive Video Distillation",
+   "url": "https://arxiv.org/abs/2610.20111",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Representation Forcing improves few-step video generation by using feature-space supervision instead of trajectory regression, boosting quality metrics over causal ODE baselines.\n\nKeywords: video diffusion models, autoregressive generators, distribution matching distillation, ODE initialization, Representation Forcing, teacher forcing, video diffusion transformer, asymmetric DMD",
+   "tags": "training,compression",
+   "area": "training",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.5,
+   "why": "Replaces trajectory regression with feature-space distribution matching supervision to accelerate few-step video generation."
   },
   {
    "title": "ActionOPD: Distilling Decisions, Not Tokens",
@@ -2482,6 +2554,18 @@
    "why": "Delivers a sub-8GB footprint quantization targeting improved tool-calling execution efficiency."
   },
   {
+   "title": "Copy-Paste Language Models",
+   "url": "https://arxiv.org/abs/2610.19247",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "Copy-Paste Language Models enhance in-context copying by adding a lightweight head that improves training efficiency, downstream performance, and long-context retrieval with minimal overhead.\n\nKeywords: Transformers, LLMs, Copy-Paste Language Models, language modeling head, long-context, retrieval, gradient bottleneck",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.6,
+   "why": "Adds a dedicated copying head to remove transformer gradient bottlenecks, boosting long-context retrieval efficiency."
+  },
+  {
    "title": "Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming",
    "url": "https://arxiv.org/abs/2610.19121",
    "source": "hf:papers",
@@ -2636,6 +2720,18 @@
    "first_seen": "2026-10-15T09:38:20",
    "importance": 0.5,
    "why": "Uses pixel-space grouped image generation to refine scene text without VAE stroke loss."
+  },
+  {
+   "title": "H-DDCM: Hadamard Codebooks for Fast Generative Image and Video Compression",
+   "url": "https://arxiv.org/abs/2610.18125",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "H-DDCM replaces dense Gaussian codebooks with implicit randomized Hadamard dictionaries and table-free lexicographic coding to enable scalable, efficient generative image and video compression using diffusion and flow models.\n\nKeywords: diffusion models, flow models, generative priors, codebook-based compression, Turbo-DDCM, Gaussian codebooks, Hadamard dictionaries, Walsh-Hadamard transform, lexicographic coding, autoregressive video flow model, KV-cache, streaming compression",
+   "tags": "compression,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.6,
+   "why": "Replaces dense codebooks with implicit Hadamard dictionaries to accelerate generative video compression."
   },
   {
    "title": "Fish Audio Drama 3 Technical Report",
@@ -2818,6 +2914,18 @@
    "why": "Pairs Intel D270 accelerators with 480 GB of LPDDR5X memory to target large model inference footprints."
   },
   {
+   "title": "The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow",
+   "url": "https://arxiv.org/abs/2610.17301",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T18:53:33",
+   "summary": "Residual-stream forecasting detects unauthorized agent actions and false reports before they occur, enabling low-cost gating that reduces violations and prompt-injection attacks without harming task completion.\n\nKeywords: residual stream, linear readout, AUROC, chain-of-thought monitors, retroactive permission laundering, CAPE-Bench, tau^2-bench, AgentDojo, prompt injection, steering",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.6,
+   "why": "Uses linear readouts on internal residual streams to intercept unauthorized agent actions before execution."
+  },
+  {
    "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
    "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding",
    "source": "rss:NVIDIA Developer Blog",
@@ -2996,6 +3104,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.8,
    "why": "Achieves constant-memory frame packing for long videos, bypassing linear sequence growth to eliminate memory bottlenecks during VLM inference."
+  },
+  {
+   "title": "Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR",
+   "url": "https://arxiv.org/abs/2610.16105",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "EDEN improves reinforcement learning with verifiable rewards by injecting anchored embedding noise into rollout conditioning to increase diversity and strengthen group-relative advantage signals without altering inference.\n\nKeywords: RLVR, GRPO, group-relative advantage, anchored input perturbations, embedding-space directional exploration, rollout conditioning, Gaussian noise, downweighted advantages",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-17T09:01:19",
+   "importance": 0.5,
+   "why": "Applies anchored embedding-space noise during rollouts to boost GRPO exploration signals without modifying inference overhead."
   },
   {
    "title": "VEDJE: Video-Efficient Discriminative Joint Encoder for Scalable Video-Text Retrieval",
