@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T14:04:52Z",
- "previous_generated_at": "2026-10-17T09:02:27Z",
+ "generated_at": "2026-10-17T19:03:15Z",
+ "previous_generated_at": "2026-10-17T14:04:52Z",
  "hot_days": 120,
  "count": 2130,
- "total_collected": 2276,
+ "total_collected": 2277,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,17 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Meta shakes up the frontiers, open and closed",
+   "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-17T14:06:54",
+   "summary": "US open weights are back!",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-17T19:03:00",
+   "importance": 0.0
+  },
   {
    "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
    "url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon",
@@ -25452,18 +25463,6 @@
    "first_seen": "2026-06-19T20:25:14",
    "importance": 0.4,
    "why": "Explores advanced speculative decoding techniques like DFlash and Spec V2 for low-latency serving."
-  },
-  {
-   "title": "The noisy neighbor problem: serving LLMs",
-   "url": "https://cohere.com/blog/serving-fairness",
-   "source": "hackernews",
-   "published_date": "2026-06-19T16:46:58",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-19T16:46:58",
-   "importance": 0.3,
-   "why": "Analyzes interference and resource contention issues when sharing clusters for multi-tenant LLM serving."
   }
  ]
 }
