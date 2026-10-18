@@ -1,5 +1,5 @@
 {
- "count": 1840,
+ "count": 1841,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1840,6 +1840,7 @@
   "https://huggingface.co/collections/mistralai/timestral",
   "https://arxiv.org/abs/2610.14232",
   "https://huggingface.co/Remek/basal-omni-1.0-ultra",
-  "https://github.com/openaccountants/openaccountants"
+  "https://github.com/openaccountants/openaccountants",
+  "https://basal.si5.pl/en"
  ]
 }

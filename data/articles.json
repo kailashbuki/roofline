@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T14:20:23Z",
- "previous_generated_at": "2026-10-18T09:20:55Z",
+ "generated_at": "2026-10-18T19:14:52Z",
+ "previous_generated_at": "2026-10-18T14:20:23Z",
  "hot_days": 120,
- "count": 2132,
- "total_collected": 2280,
+ "count": 2133,
+ "total_collected": 2281,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers",
+   "url": "https://arxiv.org/abs/2610.21500",
+   "source": "hackernews",
+   "published_date": "2026-10-18T14:23:22",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-10-18T19:14:27",
+   "importance": 0.7,
+   "why": "Analyzes remote KV cache scaling bottlenecks to mitigate memory bandwidth saturation during large inferences."
+  },
   {
    "title": "Hyper Optimizing Kimi K3 in vLLM",
    "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
