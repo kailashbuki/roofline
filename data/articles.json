@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T09:20:55Z",
- "previous_generated_at": "2026-10-17T19:03:15Z",
+ "generated_at": "2026-10-18T14:20:23Z",
+ "previous_generated_at": "2026-10-18T09:20:55Z",
  "hot_days": 120,
- "count": 2131,
- "total_collected": 2279,
+ "count": 2132,
+ "total_collected": 2280,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Hyper Optimizing Kimi K3 in vLLM",
+   "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+   "source": "hackernews",
+   "published_date": "2026-10-18T13:08:50",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-18T14:19:56",
+   "importance": 0.4,
+   "why": "Custom vLLM optimizations tailored for Kimi K3 improve serving throughput."
+  },
   {
    "title": "Meta shakes up the frontiers, open and closed",
    "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
