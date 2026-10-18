@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T19:03:15Z",
- "previous_generated_at": "2026-10-17T14:04:52Z",
+ "generated_at": "2026-10-18T09:20:55Z",
+ "previous_generated_at": "2026-10-17T19:03:15Z",
  "hot_days": 120,
- "count": 2130,
- "total_collected": 2277,
+ "count": 2131,
+ "total_collected": 2279,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -1713,6 +1713,18 @@
    "why": "Uses query-key norms to locate salient RoPE channel pairs, enabling mixed-precision KV cache quantization for long outputs."
   },
   {
+   "title": "Learning to Read Out: Unembedding Dynamics in Language Model Pretraining",
+   "url": "https://arxiv.org/abs/2610.21025",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Hidden states encode task information before the readout expresses it, so behavioral timelines reflect readout learning rather than model acquisition, and faster readout training closes this gap earlier.\n\nKeywords: parameter-trajectory crosscoding, sparse dictionary, unembedding matrix, readout, hidden states, linear probes, Pythia, pretraining, WordNet",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-18T09:20:12",
+   "importance": 0.65,
+   "why": "Parameter trajectory crosscoding reveals behavioral timelines reflect readout learning speed rather than core model acquisition during pretraining."
+  },
+  {
    "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
    "url": "https://arxiv.org/abs/2610.20939",
    "source": "hf:papers",
@@ -3199,6 +3211,18 @@
    "first_seen": "2026-10-15T09:38:20",
    "importance": 0.6,
    "why": "Extends fully open multimodal models with 4T training tokens, offering a public infrastructure alternative."
+  },
+  {
+   "title": "ANTE: Anticipate, Then Execute -- Learning Internal World Models for Coding Agents from Verified Beliefs",
+   "url": "https://arxiv.org/abs/2610.15368",
+   "source": "hf:papers",
+   "published_date": "2026-10-11T00:00:00",
+   "summary": "ANTE is a reinforcement learning framework that uses pre-action predictions verified by execution to provide per-step credit and improve coding agent decisions, significantly boosting benchmark performance.\n\nKeywords: large language models, software engineering agents, containerized environment, code world models, reinforcement learning, ANTE, Belief-Anchored Policy Optimization, BAPO, ANTE-TTO, test-time optimization, Qwen3-32B, SWE-bench Verified, GRPO, world model",
+   "tags": "training,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-18T09:20:12",
+   "importance": 0.7,
+   "why": "Belief-Anchored Policy Optimization uses execution-verified pre-action predictions to provide granular per-step credit for coding agents."
   },
   {
    "title": "Using KV cache as embeddings",
@@ -25451,18 +25475,6 @@
    "first_seen": "2026-06-21T10:06:48",
    "importance": 0.7,
    "why": "Softmax-free sparse tile-skip kernels achieve significant VRAM savings for long-context."
-  },
-  {
-   "title": "The next generation of speculative decoding: DFlash and Spec V2",
-   "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
-   "source": "hackernews",
-   "published_date": "2026-06-19T20:25:14",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-06-19T20:25:14",
-   "importance": 0.4,
-   "why": "Explores advanced speculative decoding techniques like DFlash and Spec V2 for low-latency serving."
   }
  ]
 }

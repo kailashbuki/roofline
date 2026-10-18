@@ -1,5 +1,5 @@
 {
- "count": 1837,
+ "count": 1838,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1837,6 +1837,7 @@
   "https://www.anthropic.com/research/ai-expectations-gap",
   "https://www.anthropic.com/research/employment-at-anthropic",
   "https://www.anthropic.com/research/expectations-for-the-future",
-  "https://huggingface.co/collections/mistralai/timestral"
+  "https://huggingface.co/collections/mistralai/timestral",
+  "https://arxiv.org/abs/2610.14232"
  ]
 }

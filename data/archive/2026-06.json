@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 116,
+ "count": 117,
  "articles": [
+  {
+   "title": "The next generation of speculative decoding: DFlash and Spec V2",
+   "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
+   "source": "hackernews",
+   "published_date": "2026-06-19T20:25:14",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-06-19T20:25:14",
+   "importance": 0.4,
+   "why": "Explores advanced speculative decoding techniques like DFlash and Spec V2 for low-latency serving."
+  },
   {
    "title": "The noisy neighbor problem: serving LLMs",
    "url": "https://cohere.com/blog/serving-fairness",
