@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T10:32:43Z",
- "previous_generated_at": "2026-10-18T19:14:52Z",
+ "generated_at": "2026-10-19T17:21:19Z",
+ "previous_generated_at": "2026-10-19T10:32:43Z",
  "hot_days": 120,
- "count": 2212,
- "total_collected": 2361,
+ "count": 2217,
+ "total_collected": 2366,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,54 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+   "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-19T17:00:00",
+   "summary": "<img alt=\"Decorative math image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/11/Solving-Math-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Solving-Math\" width=\"768\" />NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to...",
+   "tags": "architecture,inference,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-19T17:21:02",
+   "importance": 0.65,
+   "why": "Introduces CUDA Tile DSL to write high-performance Mamba-2 forward kernels, improving state space model execution speeds on GPUs."
+  },
+  {
+   "title": "One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ",
+   "url": "https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-19T15:45:05",
+   "summary": "<p>With Helion’s release last year, it aimed at enabling developers to write GPU kernels in PyTorch-native Python and let its powerful autotuner do the work that used to require hand-written...</p>\n<p>The post <a href=\"https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/\">One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "systems,optimization,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-10-19T17:20:51",
+   "importance": 0.65,
+   "why": "Integrates two-layer compilation to automate GPU kernel tuning directly inside PyTorch via CompileIQ."
+  },
+  {
+   "title": "Tenstorrent raises $1.5B Series E at $6.2B valuation",
+   "url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+   "source": "hackernews",
+   "published_date": "2026-10-19T14:56:56",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-10-19T17:20:46",
+   "importance": 0.4,
+   "why": "Details capital injection rounds for alternative accelerator silicon startups."
+  },
+  {
+   "title": "TorchNeuron: Native PyTorch Back End for AWS Trainium",
+   "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium",
+   "source": "hackernews",
+   "published_date": "2026-10-19T14:21:14",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,training,inference",
+   "area": "silicon",
+   "first_seen": "2026-10-19T17:20:46",
+   "importance": 0.5,
+   "why": "Integrates custom accelerator runtimes directly into the PyTorch dispatcher to reduce host-side overhead."
+  },
   {
    "title": "Datacenters 2027: The Year of Acceleration, +50GW in a Single Year",
    "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
@@ -7466,6 +7514,18 @@
    "area": "other",
    "first_seen": "2026-10-06T21:27:35",
    "importance": 0.0
+  },
+  {
+   "title": "Consistent Distribution Matching for Data-Free Diffusion Distillation",
+   "url": "https://arxiv.org/abs/2610.09221",
+   "source": "hf:papers",
+   "published_date": "2026-10-06T00:00:00",
+   "summary": "Consistent Distribution Matching accelerates diffusion and flow models via simulation-free, data-free distillation that unifies generation and score estimation, achieving strong one-step and few-step results.\n\nKeywords: flow models, diffusion models, numerical integration, distillation, student model, teacher dynamics, Consistent Distribution Matching, simulation-free distillation, data-free distillation, score estimation, Wasserstein convergence, flow-map pushforwards, FID, NFE",
+   "tags": "post-training,compression,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-19T17:20:26",
+   "importance": 0.8,
+   "why": "Unifies score estimation and generation in a simulation-free distillation to accelerate diffusion models into single-step outputs."
   },
   {
    "title": "Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI",
