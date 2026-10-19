@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 117,
+ "count": 118,
  "articles": [
+  {
+   "title": "Softmax-free ~354M: tile-skip kernels for long-context VRAM savings (sparse)",
+   "url": "https://huggingface.co/Tripstoph/RRT-Foundation",
+   "source": "hackernews",
+   "published_date": "2026-06-21T10:06:48",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "architecture",
+   "first_seen": "2026-06-21T10:06:48",
+   "importance": 0.7,
+   "why": "Softmax-free sparse tile-skip kernels achieve significant VRAM savings for long-context."
+  },
   {
    "title": "The next generation of speculative decoding: DFlash and Spec V2",
    "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
