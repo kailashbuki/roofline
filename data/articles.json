@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T09:50:15Z",
- "previous_generated_at": "2026-10-19T17:21:19Z",
+ "generated_at": "2026-10-20T15:36:49Z",
+ "previous_generated_at": "2026-10-20T09:50:15Z",
  "hot_days": 120,
- "count": 2284,
- "total_collected": 2434,
+ "count": 2293,
+ "total_collected": 2448,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-20T15:19:48",
+   "summary": "",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:35:25",
+   "importance": 0.65,
+   "why": "Replaces standard context with learned memory architectures, enabling frontier-level task performance using smaller models."
+  },
+  {
+   "title": "TorchTPU is now open source: Run native PyTorch on TPUs",
+   "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+   "source": "hackernews",
+   "published_date": "2026-10-20T13:12:47",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-20T15:34:55",
+   "importance": 0.6,
+   "why": "Enables native PyTorch execution stack directly on Google TPU hardware without custom wrappers."
+  },
+  {
+   "title": "Amazon opens its AWS Trainium AI chips to every PyTorch developer",
+   "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+   "source": "hackernews",
+   "published_date": "2026-10-20T10:38:07",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,training",
+   "area": "silicon",
+   "first_seen": "2026-10-20T15:34:55",
+   "importance": 0.5,
+   "why": "Opens AWS Trainium accelerator access to general PyTorch developers via standard APIs."
+  },
   {
    "title": "DeepSeek just open-sourced its inference engine",
    "url": "https://github.com/deepseek-ai/DeepInfer",
@@ -46,6 +82,30 @@
    "first_seen": "2026-10-20T09:49:44",
    "importance": 0.6,
    "why": "Details IP-licensable accelerator design featuring 384GB memory capacity targeting large MoE models."
+  },
+  {
+   "title": "MPS in PyTorch 2.15",
+   "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "",
+   "tags": "hardware,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-10-20T15:35:25",
+   "importance": 0.45,
+   "why": "Introduces updated Metal Performance Shaders backend integration, improving tensor operation throughput on Apple GPU hardware."
+  },
+  {
+   "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "",
+   "tags": "hardware,inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-20T15:35:25",
+   "importance": 0.4,
+   "why": "Summarizes deployment constraints and latency benchmarks for running localized models on Apple silicon hardware over twelve months."
   },
   {
    "title": "Nvidia Vera’s System Architecture: Pushing Bandwidth",
@@ -732,6 +792,18 @@
    "why": "Integrates persistent multimodal memory and heterogeneous tool interfaces to improve visual agent reasoning workflows."
   },
   {
+   "title": "Competing Learning in Hybrid Architectures",
+   "url": "https://arxiv.org/abs/2610.26830",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "Hybrid language models suffer from competing learning between recurrence and attention layers, and a staged training procedure improves retrieval and overall performance.\n\nKeywords: hybrid architectures, linear-time recurrence, softmax attention, recurrence layers, Competing Learning, layer attribution analysis, staged training, retrieval-related tasks",
+   "tags": "architecture,training,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.55,
+   "why": "Mitigates interference between recurrence and attention layers in hybrid architectures using a staged training protocol."
+  },
+  {
    "title": "State World Models: Execute the Rules, Generate the Pixels",
    "url": "https://arxiv.org/abs/2610.26811",
    "source": "hf:papers",
@@ -744,6 +816,18 @@
    "why": "Separates state updates from frozen video rendering to decouple rule execution from pixel generation in world models."
   },
   {
+   "title": "Remembering Has a Price: Learning Memory Worth under Resource Constraints",
+   "url": "https://arxiv.org/abs/2610.26453",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "TokenWorth is a lightweight online memory framework that learns which past experiences are worth retaining and reusing under tight resource constraints, improving lifelong agent success while reducing token usage.\n\nKeywords: lifelong-memory, TokenWorth, query-dependent memory worth, sparse execution feedback, bounded memory management, LifelongAgentBench",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.5,
+   "why": "Dynamically filters retained experiences online under strict token budgets to bound memory consumption."
+  },
+  {
    "title": "RoAR-VAE: Improving Latent Diffusability through Robust Prediction",
    "url": "https://arxiv.org/abs/2610.26216",
    "source": "hf:papers",
@@ -754,6 +838,30 @@
    "first_seen": "2026-10-20T09:49:28",
    "importance": 0.4,
    "why": "Enforces robust semantic prediction on corrupted latents to resolve the trade-off between visual reconstruction fidelity and diffusion learnability."
+  },
+  {
+   "title": "Vision-Language-Delta-Action: Learning Compact Deltas as Actionable Transition Interfaces for Robotic Manipulation",
+   "url": "https://arxiv.org/abs/2610.25874",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "VLDA reformulates robotic control as compact transition modeling via a Delta variable that bridges vision-language understanding and action generation, improving long-horizon consistency and generalization.\n\nKeywords: vision-language-action, world-action models, Vision-Language-Delta-Action, Delta variable, Local Transition Filter, Global Transition Anchor, Delta-Driven Action Refinement, LoongForge",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.45,
+   "why": "Formulates robotic control through a compact delta variable bridging vision-language understanding and action generation."
+  },
+  {
+   "title": "ActionRoPE: action as coordinates for spatially consistent control in planar-camera game world models",
+   "url": "https://arxiv.org/abs/2610.25861",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "ActionRoPE encodes action-driven camera motion into world-coordinate rotary positions for consistent spatial control, paired with coordinate-conditioned noise scheduling to stabilize observed regions before generating new content.\n\nKeywords: ActionRoPE, rotary positions, world coordinates, Coordinate-Conditioned Noise Scheduling, token-wise denoising, revisit drift",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.4,
+   "why": "Encodes action-driven motion into world-coordinate rotary positions to stabilize spatial control."
   },
   {
    "title": "Learning from Fleet Experience: A Collective Learning Paradigm for Robots",
@@ -861,6 +969,30 @@
    "area": "training",
    "first_seen": "2026-10-17T19:03:00",
    "importance": 0.0
+  },
+  {
+   "title": "UniAVC: Unified Audio-Video Creation via Progressive Training and Asymmetric Scheduling",
+   "url": "https://arxiv.org/abs/2610.24791",
+   "source": "hf:papers",
+   "published_date": "2026-10-17T00:00:00",
+   "summary": "UniAVC trains separate audio and video branches on abundant unimodal data before aligning them with scarce paired data, using independent noise schedules and asymmetric supervision to enable joint synthesis, cross-modal generation, and instruction-guided editing.\n\nKeywords: cross-modal generation, noise schedule, denoising, modality-decoupled schedulers, asymmetric workflows, unimodal dataset, paired data, instruction-guided editing, self-refinement",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.45,
+   "why": "Uses decoupled noise schedulers and asymmetric supervision on unimodal data to align cross-modal creation."
+  },
+  {
+   "title": "ECHO: Efficient Causal Self-Recursion Beyond Auxiliary Multi-Token Prediction",
+   "url": "https://arxiv.org/abs/2610.24766",
+   "source": "hf:papers",
+   "published_date": "2026-10-17T00:00:00",
+   "summary": "ECHO integrates multi-horizon prediction into the backbone via self-recursion and dynamic depth sampling, improving pretraining efficiency and inference drafting without auxiliary modules.\n\nKeywords: Multi-token prediction, Efficient Causal Self-Recursion, Dynamic Depth Sampling, autoregressive objective, draft-target alignment",
+   "tags": "architecture,inference,optimization",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.7,
+   "why": "Replaces auxiliary prediction heads with backbone self-recursion and dynamic depth sampling for efficient pretraining."
   },
   {
    "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
@@ -1641,6 +1773,18 @@
    "first_seen": "2026-10-16T09:31:57",
    "importance": 0.7,
    "why": "Releases a 2.8 trillion token corpus to establish low-resource Indic pretraining baselines."
+  },
+  {
+   "title": "A Conditional No-Hair Theorem for Transformers: How Language Models Forget Their Prompt",
+   "url": "https://arxiv.org/abs/2610.24133",
+   "source": "hf:papers",
+   "published_date": "2026-10-16T00:00:00",
+   "summary": "Autoregressive transformers retain prompt influence via a power-law decay driven by attention dilution and relay mechanisms, with trained models forgetting faster than untrained ones.\n\nKeywords: autoregressive transformer, hidden states, power law decay, attention, pre-LN softmax transformers, conditional no-hair theorem, relay mechanism, logit bias",
+   "tags": "architecture,attention,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.65,
+   "why": "Proves prompt retention decays via a power-law driven by attention dilution and relay mechanisms."
   },
   {
    "title": "Persistent Planar Memory for Video World Models",
@@ -4591,6 +4735,18 @@
    "first_seen": "2026-10-15T15:30:40",
    "importance": 0.65,
    "why": "Replaces autoregressive decoding with parallel diffusion-based edit path generation to reduce code editing latency."
+  },
+  {
+   "title": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+   "url": "https://arxiv.org/abs/2610.17816",
+   "source": "hf:papers",
+   "published_date": "2026-10-13T00:00:00",
+   "summary": "EC2-Bench evaluates edge-cloud collaboration for long-horizon LLM agents, revealing trade-offs among performance, resource use, and privacy, and showing that stronger edge models favor more edge-controlled collaboration.\n\nKeywords: edge-cloud collaboration, LLM agents, long-horizon execution, EC2-Bench, cloud-invocation decision-making, instruction following",
+   "tags": "serving,systems,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.45,
+   "why": "Evaluates edge-cloud execution trade-offs to optimize resource allocation for distributed LLM agent tasks."
   },
   {
    "title": "Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders",
@@ -7636,6 +7792,18 @@
    "first_seen": "2026-10-11T11:13:56",
    "importance": 0.6,
    "why": "Synthetic control frameworks prove on-policy distillation teaches compositional skills rather than raw facts."
+  },
+  {
+   "title": "Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models",
+   "url": "https://arxiv.org/abs/2610.09496",
+   "source": "hf:papers",
+   "published_date": "2026-10-07T00:00:00",
+   "summary": "Researchers identify state hallucination in vision-language-action models and propose sparse feature unlearning to reduce failure behaviors while preserving manipulation skills.\n\nKeywords: sparse autoencoders, sparse features, state hallucination, vision-language-action models, SOUL, policy unlearning",
+   "tags": "post-training,multimodal,optimization",
+   "area": "training",
+   "first_seen": "2026-10-20T15:34:11",
+   "importance": 0.45,
+   "why": "Applies sparse feature unlearning via autoencoders to eliminate state hallucinations in vision-language-action models."
   },
   {
    "title": "DSReg: Provably Recovering Individual World Latents without Reconstruction",
@@ -27253,65 +27421,6 @@
    "first_seen": "2026-06-22T16:00:00",
    "importance": 0.3,
    "why": "Provides modern C++ abstractions for CUDA development, simplifying high-performance systems programming."
-  },
-  {
-   "title": "Show HN: Export YOLO/RF-DETR Models to ONNX, TensorRT, CoreML – 100% Local",
-   "url": "https://github.com/amanharshx/vision-export-studio",
-   "source": "hackernews",
-   "published_date": "2026-06-22T15:15:25",
-   "summary": "5 points, 0 comments on HackerNews",
-   "tags": "inference,compression",
-   "area": "inference-methods",
-   "first_seen": "2026-06-22T15:15:25",
-   "importance": 0.2,
-   "why": "Local conversion tool for exporting computer vision models to standard deployment runtimes."
-  },
-  {
-   "title": "Enable Real-Time AI for High-Speed Data Acquisition with DAQIRI",
-   "url": "https://developer.nvidia.com/blog/enable-real-time-ai-for-high-speed-data-acquisition-with-daqiri",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-22T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />When AlphaFold2 revolutionized drug discovery in 2020, its success relied entirely on the roughly 170,000 protein structures collected by scientists since 1971...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-22T15:00:00",
-   "importance": 0.0
-  },
-  {
-   "title": "GLM-5.2 is the step change for open agents",
-   "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
-   "source": "rss:Interconnects",
-   "published_date": "2026-06-22T14:52:45",
-   "summary": "A capability threshold I've been carefully monitoring.",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-06-22T14:52:45",
-   "importance": 0.4,
-   "why": "Releases an open weights model targeting agentic capabilities and step-change capability increases."
-  },
-  {
-   "title": "Groq Raises Another $650M",
-   "url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
-   "source": "hackernews",
-   "published_date": "2026-06-22T14:43:39",
-   "summary": "17 points, 6 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-06-22T14:43:39",
-   "importance": 0.3,
-   "why": "Venture funding announcements provide context on industry capitalization for custom AI hardware accelerators."
-  },
-  {
-   "title": "Inside NVIDIA Halos for Robotics: A Full-Stack Functional Safety System for Physical AI",
-   "url": "https://developer.nvidia.com/blog/inside-nvidia-halos-for-robotics-a-full-stack-functional-safety-system-for-physical-ai",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-22T13:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/humanoid-robot-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"humanoid-robot\" width=\"768\" />Physical AI—robots working autonomously alongside people in factories, warehouses, hospitals, and homes—is arriving faster than most expected. Traditional...",
-   "tags": "systems",
-   "area": "architecture",
-   "first_seen": "2026-06-22T13:00:00",
-   "importance": 0.2,
-   "why": "Outlines safety and functional requirements for embodied physical AI systems."
   }
  ]
 }

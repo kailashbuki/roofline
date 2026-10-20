@@ -1,5 +1,5 @@
 {
- "count": 1989,
+ "count": 1993,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1989,6 +1989,10 @@
   "https://github.com/EliotAndres/iphone-use-app",
   "https://huggingface.co/blog/hf-torchneuron",
   "https://openai.com/index/low-resource-programming-languages",
-  "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+  "https://www.latent.space/p/ainews-not-much-happened-today-f09",
+  "https://arxiv.org/abs/2610.19439",
+  "https://arxiv.org/abs/2610.25060",
+  "https://arxiv.org/abs/2610.23470",
+  "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
  ]
 }
