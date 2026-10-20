@@ -1,5 +1,5 @@
 {
- "count": 1993,
+ "count": 2006,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -1993,6 +1993,19 @@
   "https://arxiv.org/abs/2610.19439",
   "https://arxiv.org/abs/2610.25060",
   "https://arxiv.org/abs/2610.23470",
-  "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+  "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+  "https://arxiv.org/abs/2610.19005",
+  "https://arxiv.org/abs/2610.19264",
+  "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+  "https://huggingface.co/blog/allenai/fairstress",
+  "https://pytorch.org/blog/pytorch-foundation-welcomes-nine-new-members-as-momentum-builds-around-open-source-ai-center-of-gravity",
+  "https://pytorch.org/blog/nebius-joins-the-pytorch-foundation-as-a-platinum-member",
+  "https://pytorch.org/blog/nscale-joins-the-pytorch-foundation-as-a-platinum-member",
+  "https://openai.com/index/ted-taylor-restaurant",
+  "https://openai.com/index/openai-to-acquire-orchestra-bio",
+  "https://www.latent.space/p/sfcompute2",
+  "https://www.anthropic.com/research/natural-language-autoencoders",
+  "https://www.anthropic.com/research/emotion-concepts-function",
+  "https://www.anthropic.com/research/project-vend-2"
  ]
 }

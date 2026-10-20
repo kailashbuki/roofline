@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T15:36:49Z",
- "previous_generated_at": "2026-10-20T09:50:15Z",
+ "generated_at": "2026-10-20T20:19:13Z",
+ "previous_generated_at": "2026-10-20T15:36:49Z",
  "hot_days": 120,
- "count": 2293,
- "total_collected": 2448,
+ "count": 2300,
+ "total_collected": 2457,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,53 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China",
+   "url": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-20T17:04:21",
+   "summary": "Western open models strike back",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-20T20:18:42",
+   "importance": 0.0
+  },
+  {
+   "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+   "url": "https://github.com/google-pytorch/torch_tpu",
+   "source": "hackernews",
+   "published_date": "2026-10-20T16:40:24",
+   "summary": "168 points, 45 comments on HackerNews",
+   "tags": "hardware,systems,training",
+   "area": "silicon",
+   "first_seen": "2026-10-20T20:18:16",
+   "importance": 0.75,
+   "why": "Replaces proprietary abstraction layers with a native PyTorch backend for Google accelerators, streamlining compilation."
+  },
+  {
+   "title": "Introducing TorchTPU",
+   "url": "https://pytorch.org/blog/introducing-torchtpu",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-20T16:02:30",
+   "summary": "<p>TL;DR TorchTPU is an open source collaboration between Google and Meta that introduces a native and principled PyTorch backend for Google TPUs. It enables seamless out-of-the-box model execution and TPU...</p>\n<p>The post <a href=\"https://pytorch.org/blog/introducing-torchtpu/\">Introducing TorchTPU</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-20T20:18:26",
+   "importance": 0.65,
+   "why": "Provides native PyTorch execution backend for Google TPUs, eliminating custom integration layers."
+  },
+  {
+   "title": "From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre",
+   "url": "https://pytorch.org/blog/from-ktir-to-spyrecode-an-mlir-dataflow-backend-for-ibm-spyre",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-20T16:00:15",
+   "summary": "<p>TL;DR Torch-spyre’s Inductor decides how each kernel’s work is divided across Spyre’s cores and manages tensor residency between on-chip scratchpad and off-chip memory, and the backend compiler turns those decisions...</p>\n<p>The post <a href=\"https://pytorch.org/blog/from-ktir-to-spyrecode-an-mlir-dataflow-backend-for-ibm-spyre/\">From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "systems,hardware,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-20T20:18:26",
+   "importance": 0.7,
+   "why": "Introduces an MLIR dataflow compiler backend managing tensor residency for IBM Spyre."
+  },
   {
    "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
@@ -94,6 +141,18 @@
    "first_seen": "2026-10-20T15:35:25",
    "importance": 0.45,
    "why": "Introduces updated Metal Performance Shaders backend integration, improving tensor operation throughput on Apple GPU hardware."
+  },
+  {
+   "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-20T20:18:22",
+   "importance": 0.6,
+   "why": "Integrating native TPU support into libraries removes accelerator bottlenecks for alternative hardware backends."
   },
   {
    "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
@@ -840,6 +899,18 @@
    "why": "Enforces robust semantic prediction on corrupted latents to resolve the trade-off between visual reconstruction fidelity and diffusion learnability."
   },
   {
+   "title": "Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation",
+   "url": "https://arxiv.org/abs/2610.25964",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "Evaluation readout choices for vision-language models on the POPE benchmark cause large F1 shifts, revealing that unreported token lookup protocols and quantization confound reported hallucination-mitigation gains.\n\nKeywords: POPE benchmark, LLaVA-1.5-7B, F1 score, logit readout, token IDs, SentencePiece, inference-time corrections, vision-language models, tokenizer families, NF4 quantization",
+   "tags": "inference,quantization,benchmarks,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-10-20T20:17:55",
+   "importance": 0.6,
+   "why": "Unreported tokenizer readouts distort VLM hallucination metrics, reversing published benchmark gains."
+  },
+  {
    "title": "Vision-Language-Delta-Action: Learning Compact Deltas as Actionable Transition Interfaces for Robotic Manipulation",
    "url": "https://arxiv.org/abs/2610.25874",
    "source": "hf:papers",
@@ -910,6 +981,18 @@
    "first_seen": "2026-10-18T14:19:56",
    "importance": 0.4,
    "why": "Custom vLLM optimizations tailored for Kimi K3 improve serving throughput."
+  },
+  {
+   "title": "StopLoss: Teaching Agents to Predict Failure and Stop Early",
+   "url": "https://arxiv.org/abs/2610.25525",
+   "source": "hf:papers",
+   "published_date": "2026-10-18T00:00:00",
+   "summary": "StopLoss is a lightweight external monitor that predicts coding-agent failures from recent tool steps to abort doomed runs early, reducing compute costs while preserving successful outcomes.\n\nKeywords: StopLoss, failure recognition, verifier outcomes, outcome supervision, fine-tuned language model, early stopping, SWE-bench",
+   "tags": "inference,systems,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-20T20:17:55",
+   "importance": 0.6,
+   "why": "External monitors prune doomed agent trajectories mid-run, saving wasted generation compute."
   },
   {
    "title": "MT Forcing: Towards Stable and Consistent Multi-Turn Image Editing with Autoregressive Diffusion",
@@ -2563,6 +2646,18 @@
    "area": "other",
    "first_seen": "2026-10-15T20:11:30",
    "importance": 0.0
+  },
+  {
+   "title": "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation",
+   "url": "https://arxiv.org/abs/2610.22512",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "On-policy self-distillation with privileged information improves multi-turn agent performance depending on content and source, and KL-based metrics better predict training gains than direct utility estimates.\n\nKeywords: on-policy self-distillation, privileged information, multi-turn agentic, KL-based metrics, reverse KL, error-step KL contrast, GRPO",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-20T20:17:55",
+   "importance": 0.5,
+   "why": "Reverse KL metrics predict self-distillation gains better, avoiding wasted training compute."
   },
   {
    "title": "Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards",
@@ -5071,6 +5166,18 @@
    "first_seen": "2026-10-17T09:01:19",
    "importance": 0.5,
    "why": "Applies anchored embedding-space noise during rollouts to boost GRPO exploration signals without modifying inference overhead."
+  },
+  {
+   "title": "Heterogeneous Agentic Coevolution",
+   "url": "https://arxiv.org/abs/2610.16078",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "HACE is a framework that jointly evolves specialized foundation models and LLM agents through reciprocal learning and evolutionary optimization of their interaction harness, improving performance across recommendation, protein prediction, and materials discovery.\n\nKeywords: self-improving LLM agents, specialized foundation models, Heterogeneous Agentic CoEvolution, supervised learning, on-policy reinforced self-training, evolutionary search, interaction harness, recommendation systems, protein function prediction, crystal stability prediction",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-20T20:17:55",
+   "importance": 0.5,
+   "why": "Reciprocal coevolution of models and interaction harnesses boosts multi-domain performance."
   },
   {
    "title": "VEDJE: Video-Efficient Discriminative Joint Encoder for Scalable Video-Text Retrieval",
@@ -27397,30 +27504,6 @@
    "first_seen": "2026-06-23T00:00:00",
    "importance": 0.5,
    "why": "Introduces a benchmark evaluating LLM capabilities in writing high-performance multi-GPU CUDA kernels."
-  },
-  {
-   "title": "Adaptive speculative decoding: picking draft lengths at runtime",
-   "url": "https://fergusfinn.com/blog/adaptive-speculation",
-   "source": "hackernews",
-   "published_date": "2026-06-22T19:15:24",
-   "summary": "5 points, 0 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-06-22T19:15:24",
-   "importance": 0.3,
-   "why": "Presents adaptive draft length selection at runtime to improve speculative decoding efficiency."
-  },
-  {
-   "title": "CCCL Runtime: A Modern C++ Runtime for CUDA",
-   "url": "https://developer.nvidia.com/blog/cccl-runtime-a-modern-c-runtime-for-cuda",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-22T16:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/featured-image-JB-616-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"featured image JB 6:16\" width=\"768\" />The NVIDIA CUDA Core Compute Libraries (CCCL) provides delightful and efficient abstractions for CUDA developers in C++ and Python. It features: Parallel...",
-   "tags": "systems,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-06-22T16:00:00",
-   "importance": 0.3,
-   "why": "Provides modern C++ abstractions for CUDA development, simplifying high-performance systems programming."
   }
  ]
 }
