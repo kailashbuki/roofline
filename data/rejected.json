@@ -1,5 +1,5 @@
 {
- "count": 2093,
+ "count": 2099,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2093,6 +2093,12 @@
   "https://openai.com/index/building-chatgpt-ad-stack",
   "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search",
   "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime",
-  "https://www.latent.space/p/claude-mods"
+  "https://www.latent.space/p/claude-mods",
+  "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1",
+  "https://mirendil.com/news/pretraining-at-scale-without-a-pretraining-team",
+  "https://huggingface.co/blog/nvidia/kumo-relational",
+  "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound",
+  "https://openai.com/index/att-legal",
+  "https://openai.com/index/empowering-cyber-defenders"
  ]
 }

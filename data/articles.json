@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T15:51:30Z",
- "previous_generated_at": "2026-10-21T09:51:36Z",
+ "generated_at": "2026-10-21T20:28:18Z",
+ "previous_generated_at": "2026-10-21T15:51:30Z",
  "hot_days": 120,
- "count": 2378,
- "total_collected": 2541,
+ "count": 2388,
+ "total_collected": 2552,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,90 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "TorchTitan Update: New SOTA Models, Performance at Scale, TitanRL",
+   "url": "https://pytorch.org/blog/torchtitan-update-new-sota-models-performance-at-scale-titanrl",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-21T19:45:44",
+   "summary": "<p>TorchTitan is a PyTorch-native platform for rapid experimentation and large-scale pre- and post-training of generative AI models. It is designed as a minimal, clean-room implementation of PyTorch-native techniques, with flexible...</p>\n<p>The post <a href=\"https://pytorch.org/blog/torchtitan-update-new-sota-models-performance-at-scale-titanrl/\">TorchTitan Update: New SOTA Models, Performance at Scale, TitanRL</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "training,post-training,systems,llm",
+   "area": "training",
+   "first_seen": "2026-10-21T20:27:47",
+   "importance": 0.5,
+   "why": "Introduces a PyTorch-native platform for large-scale model pre- and post-training experimentation."
+  },
+  {
+   "title": "LLM-D 1.0 Takes Open-Source Kubernetes AI Inference into Production",
+   "url": "https://techstrong.ai/ai-infrastructure/llm-d-1-0-takes-open-source-kubernetes-ai-inference-into-production",
+   "source": "hackernews",
+   "published_date": "2026-10-21T19:31:37",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "new-models",
+   "first_seen": "2026-10-21T20:27:39",
+   "importance": 0.5,
+   "why": "Deploys open-source container orchestration primitives tailored for dynamic LLM inference autoscaling on Kubernetes."
+  },
+  {
+   "title": "Accelerating PyTorch on AMD GPUs with FlyDSL",
+   "url": "https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-10-21T17:45:40",
+   "summary": "<p>PyTorch users on AMD MI350-series GPUs can now use FlyDSL through existing operator APIs for dense and grouped GEMM, fused multi-head attention (FMHA/Attention), MXFP8/MXFP4 scaled GEMM, RMSNorm, and TopK, without...</p>\n<p>The post <a href=\"https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/\">Accelerating PyTorch on AMD GPUs with FlyDSL</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "hardware,optimization,attention",
+   "area": "silicon",
+   "first_seen": "2026-10-21T20:27:47",
+   "importance": 0.4,
+   "why": "Enables native AMD MI350 GPU acceleration via FlyDSL for fused attention and scaled GEMM."
+  },
+  {
+   "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-21T17:35:36",
+   "summary": "",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-21T20:27:43",
+   "importance": 0.7,
+   "why": "Custom vocabulary specialization reduces token generation overhead to achieve a 77% inference cost reduction."
+  },
+  {
+   "title": "The Huawei-DeepSeek Symbiosis",
+   "url": "https://newsletter.semianalysis.com/p/huawei-deepseek",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-10-21T17:34:38",
+   "summary": "Huawei Ascend 950PR Deep dive & &#181;benchmarks, DSv4.1 Flash Analysis, DeepSeek support for Ascend",
+   "tags": "hardware,inference,optimization",
+   "area": "silicon",
+   "first_seen": "2026-10-21T20:27:59",
+   "importance": 0.65,
+   "why": "Details Ascend 950PR microbenchmarks and DeepSeek v4.1 Flash optimizations, enabling non-Nvidia hardware integration."
+  },
+  {
+   "title": "A new Speculative decoding drafter for vLLM and SGLang called EAGLE-4",
+   "url": "https://github.com/eagle-hq/EAGLE-4",
+   "source": "hackernews",
+   "published_date": "2026-10-21T16:57:34",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-10-21T20:27:39",
+   "importance": 0.5,
+   "why": "Integrates EAGLE-4 into mainstream inference engines, accelerating draft token generation for speculative decoding."
+  },
+  {
+   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+   "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-21T16:04:43",
+   "summary": "",
+   "tags": "hardware,systems,inference",
+   "area": "silicon",
+   "first_seen": "2026-10-21T20:27:43",
+   "importance": 0.6,
+   "why": "System-level profiling on AWS Trainium hardware enables performance bottleneck identification for custom accelerators."
+  },
   {
    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
@@ -959,6 +1043,30 @@
    "why": "It frames multimodal reranking as a single-pass choice prompt, eliminating specialized reranking heads in vision models."
   },
   {
+   "title": "Self-Credit: Credit Assignment for Long-Horizon Agentic RL via Intra-group Rescaling",
+   "url": "https://arxiv.org/abs/2610.28388",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "LLM agents are commonly trained with RLVR, but the sparse nature of typical RLVR rewards makes credit assignment challenging, especially for long-horizon tasks. We propose Self-Credit, an end-to-end agentic RL method that creates dense supervision signals from sparse outcome rewards using self-generated credit assignment via intra-group rescaling. Self-Credit builds on group-based RL with three components. First, during its rollouts, the policy model generates summaries with citations to earlier turns containing critical evidence, which serve as self-generated credit. Second, we refine this model-generated credit with intra-group rescaling, which compares cited actions across successful and failed rollouts for the same prompt. This approach uses group-level agreement and disagreement to remove undeserved credit and further emphasize credit assigned to critical actions. Third, advantage reweighting uses the rescaled credit weights to update the advantages of the cited turns. On BrowseCo",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-21T20:27:20",
+   "importance": 0.75,
+   "why": "Intra-group rescaling converts sparse outcome rewards into dense supervision signals to solve long-horizon credit assignment."
+  },
+  {
+   "title": "Training the Whole Agent, Not Just the Model",
+   "url": "https://arxiv.org/abs/2610.28069",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "HarnessAdapt-RL jointly trains a coding policy and adapts its evaluation harness via mechanism-level skills and evolving tools, improving benchmark pass rates over fixed-harness reinforcement learning.\n\nKeywords: HarnessAdapt-RL, reinforcement learning, mechanism-level skills, cross-task interaction problems, evolving tools and hooks, pass rate, trainable rate, GRPO, SWE-bench",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-21T20:27:20",
+   "importance": 0.7,
+   "why": "Jointly optimizing policy and evaluation harness via evolving tools bypasses fixed-harness bottlenecks in coding agents."
+  },
+  {
    "title": "PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking",
    "url": "https://arxiv.org/abs/2610.27628",
    "source": "hf:papers",
@@ -1665,6 +1773,18 @@
    "first_seen": "2026-10-20T09:49:58",
    "importance": 0.2,
    "why": "Provides hosted infrastructure for custom SFT and RL loops on open LLMs."
+  },
+  {
+   "title": "On the Limits of Scale: Inverse Scaling in Vision-Language Models",
+   "url": "https://arxiv.org/abs/2610.27360",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "Vision-language models show inverse scaling on specific subtasks, where larger versions underperform smaller ones in areas like spatial reasoning and STEM questions, indicating that model choice should be task-specific.\n\nKeywords: vision-language models, inverse scaling, multimodal benchmarks, per-question pairwise analysis, multi-image spatial reasoning, visual perception, STEM knowledge, diagram understanding",
+   "tags": "multimodal,benchmarks",
+   "area": "architecture",
+   "first_seen": "2026-10-21T20:27:20",
+   "importance": 0.65,
+   "why": "Empirical identification of inverse scaling in specific visual reasoning subtasks challenges naive parameter scaling assumptions."
   },
   {
    "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
@@ -2828,6 +2948,18 @@
    "first_seen": "2026-10-19T10:31:59",
    "importance": 0.74,
    "why": "Uses compact plane primitives as persistent 3D memory to generate metric-consistent long videos."
+  },
+  {
+   "title": "On the Tip of the Tongue: First-Token Cueing as a Behavioral Probe of Recall Failures in LLMs",
+   "url": "https://arxiv.org/abs/2610.23400",
+   "source": "hf:papers",
+   "published_date": "2026-10-16T00:00:00",
+   "summary": "Many factual errors in large language models stem from failing to generate the correct first token of an answer, and providing that token allows the model to complete and recognize the correct response.\n\nKeywords: First-Token Cueing, first-token recall failures, closed-book errors, multi-token answers, inference-time methods, encoded knowledge",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-21T20:27:20",
+   "importance": 0.6,
+   "why": "Injecting first-token cues reveals encoded facts previously trapped by initial generation dropouts during decoding."
   },
   {
    "title": "MOSS-Image Technical Report",
@@ -28431,18 +28563,6 @@
    "first_seen": "2026-06-24T05:24:36",
    "importance": 0.2,
    "why": "Discusses energy efficiency in LLM serving without introducing core architectural or algorithmic breakthroughs."
-  },
-  {
-   "title": "Maximize AI Factory Energy Efficiency Through Full-Stack Inference and Training Optimizations",
-   "url": "https://developer.nvidia.com/blog/maximize-ai-factory-energy-efficiency-through-full-stack-inference-and-training-optimizations",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-23T16:30:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/ai-factory-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-factory\" width=\"768\" />Power can account for 40% of the operating expenses (OpEx) to run an AI factory. Each watt can be spent on overhead, data ingestion, training, or generating...",
-   "tags": "serving,hardware,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-06-23T16:30:00",
-   "importance": 0.2,
-   "why": "Explores full-stack optimizations to reduce data center power overhead, primarily corporate engineering content."
   }
  ]
 }
