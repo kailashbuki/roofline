@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 126,
+ "count": 128,
  "articles": [
+  {
+   "title": "How Telcos Build Autonomous Networks with Agentic AI",
+   "url": "https://developer.nvidia.com/blog/how-telcos-build-autonomous-networks-with-agentic-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-23T06:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/telco-tech-blog-tm-forum-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"telco-tech-blog-tm-forum-1920x1080\" width=\"768\" />Telecom operators are adopting AI across network operations, customer care, and back-office workflows, but most are still early in the journey to autonomy. In...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-23T06:00:00",
+   "importance": 0.0
+  },
+  {
+   "title": "ParallelKernelBench: Frontier LLMs can't write fast multi-GPU kernels (yet)",
+   "url": "https://www.together.ai/blog/parallelkernelbench",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-06-23T00:00:00",
+   "summary": "ParallelKernelBench tests whether LLMs can write fast multi-GPU CUDA kernels across 87 real workloads. The best model solves under a third, but a few generated kernels beat any public implementation.",
+   "tags": "benchmarks,systems,training",
+   "area": "training",
+   "first_seen": "2026-06-23T00:00:00",
+   "importance": 0.5,
+   "why": "Introduces a benchmark evaluating LLM capabilities in writing high-performance multi-GPU CUDA kernels."
+  },
   {
    "title": "Adaptive speculative decoding: picking draft lengths at runtime",
    "url": "https://fergusfinn.com/blog/adaptive-speculation",
