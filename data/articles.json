@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T09:51:36Z",
- "previous_generated_at": "2026-10-20T20:19:13Z",
+ "generated_at": "2026-10-21T15:51:30Z",
+ "previous_generated_at": "2026-10-21T09:51:36Z",
  "hot_days": 120,
- "count": 2374,
- "total_collected": 2533,
+ "count": 2378,
+ "total_collected": 2541,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-10-21T14:58:18",
+   "summary": "",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-10-21T15:50:49",
+   "importance": 0.4,
+   "why": "Introduces end-to-end speech processing combining transcription, translation, and attribution into a single optimized model architecture."
+  },
+  {
+   "title": "Nvidia Releases Flare, a Blackwell LLM Inference",
+   "url": "https://news.ycombinator.com/item?id=50179088",
+   "source": "hackernews",
+   "published_date": "2026-10-21T11:26:15",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,hardware,serving",
+   "area": "silicon",
+   "first_seen": "2026-10-21T15:50:37",
+   "importance": 0.6,
+   "why": "Leverages Blackwell architecture features for hardware-accelerated inference execution."
+  },
+  {
+   "title": "Private and OpenAI-Comp. Inference Engine for Nvidia Linux and Apple Silicon",
+   "url": "https://github.com/tara-vision/taraengine",
+   "source": "hackernews",
+   "published_date": "2026-10-21T10:52:28",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,hardware,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-10-21T15:50:37",
+   "importance": 0.4,
+   "why": "Cross-platform inference engine supporting both Nvidia and Apple Silicon hardware targets."
+  },
   {
    "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
    "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod",
@@ -1631,6 +1667,18 @@
    "why": "Provides hosted infrastructure for custom SFT and RL loops on open LLMs."
   },
   {
+   "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
+   "url": "https://arxiv.org/abs/2610.27190",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "Modern language models are increasingly asked to handle several tasks within a single prompt. Doing so requires solving each task correctly while integrating the resulting answers into a coherent response. In this paper, we identify a fundamental limitation in this process, where models make substantially more errors when tasks are composed, even when they can solve every constituent task reliably in isolation. This degradation cannot be fully explained by the accumulation of independent errors. Across both open-weight models and the frontier model Claude Opus 5, our findings instead point to an implicit thinking budget underlying this effect. In particular, under composition, models use substantially fewer tokens per task than in isolation, even when the full sequence remains well within the context window. Tasks that require longer solution traces in isolation are consequently more fragile under composition, i.e., models make more errors on prompts containing these tasks. In isolatio",
+   "tags": "llm,benchmarks",
+   "area": "new-models",
+   "first_seen": "2026-10-21T15:50:13",
+   "importance": 0.6,
+   "why": "Identifies implicit budgeting limits in models, showing error rates surge when multiple tasks are composed within a prompt."
+  },
+  {
    "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
    "url": "https://arxiv.org/abs/2610.26860",
    "source": "hf:papers",
@@ -1641,6 +1689,18 @@
    "first_seen": "2026-10-20T09:49:28",
    "importance": 0.5,
    "why": "Integrates persistent multimodal memory and heterogeneous tool interfaces to improve visual agent reasoning workflows."
+  },
+  {
+   "title": "SpecKCast: Spectral Kalman Forecasting for Diffusion Acceleration",
+   "url": "https://arxiv.org/abs/2610.26837",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "SpecKCast forecasts diffusion transformer outputs in the frequency domain using per-band Kalman filters and adaptive step scheduling to accelerate inference with minimal memory overhead.\n\nKeywords: Diffusion Transformers, feature caching, forecasting, 2D discrete cosine transform, Kalman filter, noise schedule, frequency domain",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-21T15:50:13",
+   "importance": 0.7,
+   "why": "Applies per-band Kalman filtering in the frequency domain via discrete cosine transforms to accelerate diffusion transformer inference."
   },
   {
    "title": "Competing Learning in Hybrid Architectures",
@@ -1952,6 +2012,18 @@
    "first_seen": "2026-10-21T09:50:46",
    "importance": 0.4,
    "why": "Introduces unified IR and layered generation to evaluate and optimize LLM kernels on edge backends."
+  },
+  {
+   "title": "Muse Glimmer 30B: An On-Device Agentic Model",
+   "url": "https://arxiv.org/abs/2610.24628",
+   "source": "hf:papers",
+   "published_date": "2026-10-17T00:00:00",
+   "summary": "Muse Glimmer is a 30B-parameter open-source causal language model with a perception encoder that performs multi-step reasoning and tool use locally on consumer hardware via 4-bit quantization.\n\nKeywords: causal language model, perception encoder, multi-step reasoning, tool use, failure recovery, quantized, 4-bit precision, single-GPU inference, agentic benchmarks",
+   "tags": "inference,quantization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-21T15:50:13",
+   "importance": 0.6,
+   "why": "Combines a perception encoder and 4-bit quantization to enable single-GPU local execution of multi-step reasoning models."
   },
   {
    "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
@@ -4712,6 +4784,18 @@
    "why": "Uses a jointly trained topology predictor to plan global cross-layer connections and reduce Transformer perplexity."
   },
   {
+   "title": "WinARDet: Compressed Window Auto-Regression for Long-Horizon Vision-Language Grounding",
+   "url": "https://arxiv.org/abs/2610.19419",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Compressed Window Auto-Regression partitions long answer sequences into windows with restricted autoregression and compressed latent history to prevent attention takeover and box repetition in dense vision-language grounding.\n\nKeywords: autoregressive coordinate generation, attention sinks, Compressed Window Auto-Regression, latent tokens, cross-window dependencies, RSDense, WinARDet, parallel box decoding, polygon generation",
+   "tags": "inference,attention,compression",
+   "area": "inference-methods",
+   "first_seen": "2026-10-21T15:50:13",
+   "importance": 0.6,
+   "why": "Partitions long answer sequences into restricted windows with compressed latent history to prevent attention takeover during grounding."
+  },
+  {
    "title": "SERO: Learning from Executable Oracle Continuations for Long-Horizon Agentic Reinforcement Learning",
    "url": "https://arxiv.org/abs/2610.19397",
    "source": "hf:papers",
@@ -6018,6 +6102,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.8,
    "why": "Derives a spectral-driven adaptive-rank optimizer specifically tailored to the distinct optimization geometry induced by RLVR."
+  },
+  {
+   "title": "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents",
+   "url": "https://arxiv.org/abs/2610.16523",
+   "source": "hf:papers",
+   "published_date": "2026-10-12T00:00:00",
+   "summary": "EAU is a meta-agent framework that co-evolves the user simulator, environment, and reinforcement learning setup alongside the policy to improve multi-turn LLM agent training.\n\nKeywords: LLM agents, multi-turn RL, user simulator, environment dynamics, reward design, meta-agent, co-evolution, symbolic representation, reinforcement learning",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-21T15:50:13",
+   "importance": 0.5,
+   "why": "Co-evolves user simulators and environments with policy training via symbolic representations, improving multi-turn agent policy robustness."
   },
   {
    "title": "HexaBee-4B: Six-Language Translation with Multilingual Answering and Bidirectional Supervision",
@@ -28347,52 +28443,6 @@
    "first_seen": "2026-06-23T16:30:00",
    "importance": 0.2,
    "why": "Explores full-stack optimizations to reduce data center power overhead, primarily corporate engineering content."
-  },
-  {
-   "title": "Boost Inference Performance up to 15x on NVIDIA Blackwell Using DFlash Speculative Decoding",
-   "url": "https://developer.nvidia.com/blog/boost-inference-performance-up-to-15x-on-nvidia-blackwell-using-dflash-speculative-decoding",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-23T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/cuda-python-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cuda-python\" width=\"768\" />As AI systems move from single-turn interactions to coordinated multiagent workflows, low-latency inference becomes increasingly important. Autoregressive LLMs...",
-   "tags": "inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-06-23T15:00:00",
-   "importance": 0.4,
-   "why": "Applies DFlash speculative decoding on Blackwell chips to accelerate multiagent workflows significantly."
-  },
-  {
-   "title": "China’s CXMT Is Set to Challenge DRAM Incumbents",
-   "url": "https://newsletter.semianalysis.com/p/chinas-cxmt-is-set-to-challenge-dram",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-23T14:51:53",
-   "summary": "CXMT IPO, SKHynix, Micron, Samsung Competition, Process Node Deficit, China HBM, Wafer Adds, Memory LTAs",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-06-23T14:51:53",
-   "importance": 0.3,
-   "why": "Covers commercial DRAM market shifts and competitor dynamics relevant to hardware memory supply."
-  },
-  {
-   "title": "Build an AI Scientist for Life Science Discovery with NVIDIA BioNeMo Agent Toolkit",
-   "url": "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-23T13:30:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/hc-bonemo-agent-toolkit-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hc-bonemo-agent-toolkit-1920x1080\" width=\"768\" />AI scientists are emerging as a new interface for scientific computing. These agents can read papers, write code, generate hypotheses, call APIs, inspect files,...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-23T13:30:00",
-   "importance": 0.0
-  },
-  {
-   "title": "Man who built Groq handed its tech to Nvidia, now his old company raised $650M",
-   "url": "https://www.techsentiments.com/article/2026/06/22/the-man-who-built-groq-handed-its-technology-to-nvidia-now-his-old-company-7ed9",
-   "source": "hackernews",
-   "published_date": "2026-06-23T12:01:01",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-23T12:01:01",
-   "importance": 0.0
   }
  ]
 }

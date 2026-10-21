@@ -1,7 +1,53 @@
 {
  "month": "2026-06",
- "count": 128,
+ "count": 132,
  "articles": [
+  {
+   "title": "Boost Inference Performance up to 15x on NVIDIA Blackwell Using DFlash Speculative Decoding",
+   "url": "https://developer.nvidia.com/blog/boost-inference-performance-up-to-15x-on-nvidia-blackwell-using-dflash-speculative-decoding",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-23T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/cuda-python-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cuda-python\" width=\"768\" />As AI systems move from single-turn interactions to coordinated multiagent workflows, low-latency inference becomes increasingly important. Autoregressive LLMs...",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-06-23T15:00:00",
+   "importance": 0.4,
+   "why": "Applies DFlash speculative decoding on Blackwell chips to accelerate multiagent workflows significantly."
+  },
+  {
+   "title": "China’s CXMT Is Set to Challenge DRAM Incumbents",
+   "url": "https://newsletter.semianalysis.com/p/chinas-cxmt-is-set-to-challenge-dram",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-23T14:51:53",
+   "summary": "CXMT IPO, SKHynix, Micron, Samsung Competition, Process Node Deficit, China HBM, Wafer Adds, Memory LTAs",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-06-23T14:51:53",
+   "importance": 0.3,
+   "why": "Covers commercial DRAM market shifts and competitor dynamics relevant to hardware memory supply."
+  },
+  {
+   "title": "Build an AI Scientist for Life Science Discovery with NVIDIA BioNeMo Agent Toolkit",
+   "url": "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-23T13:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/hc-bonemo-agent-toolkit-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hc-bonemo-agent-toolkit-1920x1080\" width=\"768\" />AI scientists are emerging as a new interface for scientific computing. These agents can read papers, write code, generate hypotheses, call APIs, inspect files,...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-23T13:30:00",
+   "importance": 0.0
+  },
+  {
+   "title": "Man who built Groq handed its tech to Nvidia, now his old company raised $650M",
+   "url": "https://www.techsentiments.com/article/2026/06/22/the-man-who-built-groq-handed-its-technology-to-nvidia-now-his-old-company-7ed9",
+   "source": "hackernews",
+   "published_date": "2026-06-23T12:01:01",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-23T12:01:01",
+   "importance": 0.0
+  },
   {
    "title": "How Telcos Build Autonomous Networks with Agentic AI",
    "url": "https://developer.nvidia.com/blog/how-telcos-build-autonomous-networks-with-agentic-ai",
