@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T09:52:01Z",
- "previous_generated_at": "2026-10-21T20:28:18Z",
+ "generated_at": "2026-10-22T15:50:24Z",
+ "previous_generated_at": "2026-10-22T09:52:01Z",
  "hot_days": 120,
- "count": 2451,
- "total_collected": 2617,
+ "count": 2452,
+ "total_collected": 2618,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -1773,6 +1773,18 @@
    "first_seen": "2026-10-21T20:27:20",
    "importance": 0.7,
    "why": "Jointly optimizing policy and evaluation harness via evolving tools bypasses fixed-harness bottlenecks in coding agents."
+  },
+  {
+   "title": "From RL Papers to Framework Code: Inclusion and Review in Seven Open-Source Training Frameworks",
+   "url": "https://arxiv.org/abs/2610.28027",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "Most proposed reinforcement learning training methods for language models are not adopted by open-source frameworks, with adoption rates remaining low despite growing publication volumes.\n\nKeywords: reinforcement learning, language models, RL post-training, open-source frameworks, training frameworks, policies, loss coefficients, clip, mask, weight, open-weight models",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-22T15:48:45",
+   "importance": 0.4,
+   "why": "Quantifies the gap between academic RL post-training proposals and open-source framework adoption reality."
   },
   {
    "title": "PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking",
