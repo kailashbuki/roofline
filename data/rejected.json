@@ -1,5 +1,5 @@
 {
- "count": 2181,
+ "count": 2191,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2181,6 +2181,16 @@
   "https://arxiv.org/abs/2610.09861",
   "https://arxiv.org/abs/2610.30090",
   "https://openai.com/index/forward-deployed-engineering-means",
-  "https://www.latent.space/p/moshi"
+  "https://www.latent.space/p/moshi",
+  "https://arxiv.org/abs/2610.28679",
+  "https://arxiv.org/abs/2610.24771",
+  "https://github.com/yuhezhang-ai/triton-augment",
+  "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+  "https://pytorch.org/blog/meet-the-2026-pytorch-foundation-ambassadors",
+  "https://openai.com/index/decisions-api",
+  "https://openai.com/index/uber-chatgpt-work-rollout",
+  "https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage",
+  "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes",
+  "https://www.latent.space/p/modal-d"
  ]
 }
