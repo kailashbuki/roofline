@@ -1,7 +1,31 @@
 {
  "month": "2026-06",
- "count": 133,
+ "count": 135,
  "articles": [
+  {
+   "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+   "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-06-24T06:00:00",
+   "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+   "tags": "hardware,inference,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-24T06:00:00",
+   "importance": 0.8,
+   "why": "Custom ASIC chip architecture co-designed specifically for high-efficiency LLM inference scaling."
+  },
+  {
+   "title": "VoltanaLLM: Energy-Efficient LLM Serving",
+   "url": "https://supercomputing-system-ai-lab.github.io/projects/voltana",
+   "source": "hackernews",
+   "published_date": "2026-06-24T05:24:36",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "serving,inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-06-24T05:24:36",
+   "importance": 0.2,
+   "why": "Discusses energy efficiency in LLM serving without introducing core architectural or algorithmic breakthroughs."
+  },
   {
    "title": "Maximize AI Factory Energy Efficiency Through Full-Stack Inference and Training Optimizations",
    "url": "https://developer.nvidia.com/blog/maximize-ai-factory-energy-efficiency-through-full-stack-inference-and-training-optimizations",
