@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T15:40:24Z",
- "previous_generated_at": "2026-10-23T09:46:36Z",
+ "generated_at": "2026-10-23T20:13:03Z",
+ "previous_generated_at": "2026-10-23T15:40:24Z",
  "hot_days": 120,
- "count": 2526,
- "total_collected": 2697,
+ "count": 2527,
+ "total_collected": 2702,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,54 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Amazon’s Trainium Takes a Strike at the Training King",
+   "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-10-23T19:06:44",
+   "summary": "Trainium Best for Inference? But now good for Training too, Native Trainium PyTorch, High Quality CI, TorchTitan, GPU Impossible Profiler",
+   "tags": "hardware,training,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-23T20:12:43",
+   "importance": 0.6,
+   "why": "Integrates native PyTorch and TorchTitan support for Amazon Trainium, expanding accelerator viability for large model training."
+  },
+  {
+   "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
+   "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-23T17:27:52",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/desktop-computer-overlay-light-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"desktop-computer-overlay-light\" width=\"768\" />The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and...",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-23T20:12:49",
+   "importance": 0.4,
+   "why": "Automated multi-route performance tuning removes manual compiler search overhead in TensorRT deployments."
+  },
+  {
+   "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+   "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-23T17:27:35",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/desktop-computer-overlay-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"desktop-computer-overlay\" width=\"768\" />Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For...",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-23T20:12:49",
+   "importance": 0.4,
+   "why": "Global performance tuning expands compilation search spaces beyond single build routes for GPU operators."
+  },
+  {
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-10-23T17:00:00",
+   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+   "tags": "serving,systems,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-23T20:12:39",
+   "importance": 0.4,
+   "why": "Introduces global caching and multi-tenancy in Habitat to achieve 12x faster read performance."
+  },
   {
    "title": "Tenstorrent Releases Open Source Beta of the Open Chiplet Atlas (OCA) Harness",
    "url": "https://tenstorrent.com/en/newsroom/tenstorrent-releases-open-source-beta-of-the-oca-harness",
@@ -4664,6 +4712,18 @@
    "first_seen": "2026-10-19T10:31:59",
    "importance": 0.7,
    "why": "Isolates recurrence axes into a prelude-recurrent block-coda sandwich topology to improve reasoning and context extraction."
+  },
+  {
+   "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
+   "url": "https://arxiv.org/abs/2610.22951",
+   "source": "hf:papers",
+   "published_date": "2026-10-16T00:00:00",
+   "summary": "MambaAct replaces the transformer action expert in flow-matching VLA policies with a compact Mamba-based expert and a context compressor to cut inference latency while improving robotic manipulation success.\n\nKeywords: vision-language-action models, flow-matching, Mamba, action expert, cross-attention, context compressor, denoising latency",
+   "tags": "architecture,inference,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-23T20:12:11",
+   "importance": 0.75,
+   "why": "Replacing transformer layers with a Mamba-based expert and context compressor reduces VLA inference latency."
   },
   {
    "title": "Self-Evolving Coding Agents via Harness-Policy Optimization",
@@ -30171,53 +30231,6 @@
    "tags": "",
    "area": "other",
    "first_seen": "2026-06-25T22:25:51",
-   "importance": 0.0
-  },
-  {
-   "title": "US Grid Constraints: Towards 40GW+ of Behind-The-Meter Datacenter by 2028?",
-   "url": "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-25T19:48:39",
-   "summary": "Why the Grid Can't Keep Up, and Why that Drives Behind-The-Meter 50%+ of DCs/Year By 2028",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-06-25T19:48:39",
-   "importance": 0.4,
-   "why": "Analyzing grid constraints highlights physical bottlenecks affecting the scaling limits of large datacenter compute clusters."
-  },
-  {
-   "title": "HRM-Text: Efficient Pretraining Beyond Scaling",
-   "url": "https://arxiv.org/abs/2605.20613",
-   "source": "hackernews",
-   "published_date": "2026-06-25T17:47:14",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "architecture,training",
-   "area": "training",
-   "first_seen": "2026-06-25T17:47:14",
-   "importance": 0.6,
-   "why": "Proposes alternative pretraining formulations that bypass standard compute-scaling limits."
-  },
-  {
-   "title": "Scaling AI Inference Across Multiple GPUs Using NVIDIA TensorRT with Multi-Device Inference Support",
-   "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-25T16:43:48",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Inference-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Inference\" width=\"768\" />Generative AI workloads are rapidly outgrowing the memory and compute budget of single GPUs. For inference developers building media generation pipelines, the...",
-   "tags": "inference,serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-25T16:43:48",
-   "importance": 0.5,
-   "why": "Enables multi-GPU tensor parallelism and scaling for inference workloads exceeding single-device memory."
-  },
-  {
-   "title": "Q&amp;A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE",
-   "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-25T16:38:18",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-14-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />AI companions in games have long been constrained by fixed dialogue. PUBG Ally is a different kind of system. Built by KRAFTON for PUBG: BATTLEGROUNDS, this AI...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-25T16:38:18",
    "importance": 0.0
   }
  ]

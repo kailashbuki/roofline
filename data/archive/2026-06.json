@@ -1,7 +1,54 @@
 {
  "month": "2026-06",
- "count": 140,
+ "count": 144,
  "articles": [
+  {
+   "title": "US Grid Constraints: Towards 40GW+ of Behind-The-Meter Datacenter by 2028?",
+   "url": "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-06-25T19:48:39",
+   "summary": "Why the Grid Can't Keep Up, and Why that Drives Behind-The-Meter 50%+ of DCs/Year By 2028",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-25T19:48:39",
+   "importance": 0.4,
+   "why": "Analyzing grid constraints highlights physical bottlenecks affecting the scaling limits of large datacenter compute clusters."
+  },
+  {
+   "title": "HRM-Text: Efficient Pretraining Beyond Scaling",
+   "url": "https://arxiv.org/abs/2605.20613",
+   "source": "hackernews",
+   "published_date": "2026-06-25T17:47:14",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "training",
+   "first_seen": "2026-06-25T17:47:14",
+   "importance": 0.6,
+   "why": "Proposes alternative pretraining formulations that bypass standard compute-scaling limits."
+  },
+  {
+   "title": "Scaling AI Inference Across Multiple GPUs Using NVIDIA TensorRT with Multi-Device Inference Support",
+   "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-25T16:43:48",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Inference-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Inference\" width=\"768\" />Generative AI workloads are rapidly outgrowing the memory and compute budget of single GPUs. For inference developers building media generation pipelines, the...",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-06-25T16:43:48",
+   "importance": 0.5,
+   "why": "Enables multi-GPU tensor parallelism and scaling for inference workloads exceeding single-device memory."
+  },
+  {
+   "title": "Q&amp;A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE",
+   "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-25T16:38:18",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/image1-14-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />AI companions in games have long been constrained by fixed dialogue. PUBG Ally is a different kind of system. Built by KRAFTON for PUBG: BATTLEGROUNDS, this AI...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-25T16:38:18",
+   "importance": 0.0
+  },
   {
    "title": "TokenSpeed-Kernel: Portable APIs and High-Performance Kernels for Multi-Silicon LLM Inference",
    "url": "https://pytorch.org/blog/lightseek-tokenspeed-kernel",
