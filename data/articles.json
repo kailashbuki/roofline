@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T09:46:36Z",
- "previous_generated_at": "2026-10-22T20:27:16Z",
+ "generated_at": "2026-10-23T15:40:24Z",
+ "previous_generated_at": "2026-10-23T09:46:36Z",
  "hot_days": 120,
  "count": 2526,
- "total_collected": 2696,
+ "total_collected": 2697,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Tenstorrent Releases Open Source Beta of the Open Chiplet Atlas (OCA) Harness",
+   "url": "https://tenstorrent.com/en/newsroom/tenstorrent-releases-open-source-beta-of-the-oca-harness",
+   "source": "hackernews",
+   "published_date": "2026-10-23T13:13:33",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-23T15:39:38",
+   "importance": 0.55,
+   "why": "Provides an open-source chiplet interconnect design framework for custom hardware development."
+  },
   {
    "title": "HyperCache – Distributed KV-cache quantization and relative RoPE reuse",
    "url": "https://github.com/SamGanYX/HyperCache",
@@ -30207,18 +30219,6 @@
    "area": "other",
    "first_seen": "2026-06-25T16:38:18",
    "importance": 0.0
-  },
-  {
-   "title": "TokenSpeed-Kernel: Portable APIs and High-Performance Kernels for Multi-Silicon LLM Inference",
-   "url": "https://pytorch.org/blog/lightseek-tokenspeed-kernel",
-   "source": "rss:PyTorch Blog",
-   "published_date": "2026-06-25T14:48:06",
-   "summary": "TL;DR The TokenSpeed-kernel is a standalone, open-source subsystem designed to solve backend complexity in LLM inference. It introduces a clean, layered API and registry system that decouples the high-level runtime...",
-   "tags": "inference,hardware,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-06-25T14:48:06",
-   "importance": 0.6,
-   "why": "Introduces portable API abstractions and high-performance kernels to decouple LLM runtimes across diverse silicon."
   }
  ]
 }

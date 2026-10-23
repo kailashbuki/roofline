@@ -1,5 +1,5 @@
 {
- "count": 2271,
+ "count": 2278,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2271,6 +2271,13 @@
   "https://latent.space/p/ainews-meta-muse-wonder-and-wonder",
   "https://latent.space/p/claude-dynamic-workflows",
   "https://latent.space/p/nyc2026",
-  "https://latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+  "https://latent.space/p/ainews-typesafejev-at-100m-arr-75b",
+  "https://arxiv.org/abs/2610.30753",
+  "https://arxiv.org/abs/2610.31372",
+  "https://arxiv.org/abs/2610.30340",
+  "https://huggingface.co/blog/torch-neuronx-model-support",
+  "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation",
+  "https://latent.space/p/ai-is-getting-good-at-math",
+  "https://latent.space/p/ainews-black-october"
  ]
 }
