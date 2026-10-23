@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 138,
+ "count": 139,
  "articles": [
+  {
+   "title": "FPGA-based CNN acceleration using pattern-aware pruning [pdf]",
+   "url": "https://inria.hal.science/hal-04689673/document",
+   "source": "hackernews",
+   "published_date": "2026-06-25T00:16:29",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,compression",
+   "area": "inference-methods",
+   "first_seen": "2026-06-25T00:16:29",
+   "importance": 0.4,
+   "why": "Applies pattern-aware pruning to improve CNN hardware acceleration efficiency on FPGAs."
+  },
   {
    "title": "France national supercomputer shuts down GPU/CPU clusters due to heatwave",
    "url": "https://twitter.com/nurikolan/status/2069853428310794412",
