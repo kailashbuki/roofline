@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T20:13:03Z",
- "previous_generated_at": "2026-10-23T15:40:24Z",
+ "generated_at": "2026-10-24T09:19:20Z",
+ "previous_generated_at": "2026-10-23T20:13:03Z",
  "hot_days": 120,
  "count": 2527,
- "total_collected": 2702,
+ "total_collected": 2703,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -3393,6 +3393,18 @@
    "first_seen": "2026-10-20T09:49:20",
    "importance": 0.75,
    "why": "It frames subword BPE merge selection as a model selection problem to optimize vocabulary size against memory costs."
+  },
+  {
+   "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
+   "url": "https://arxiv.org/abs/2610.25835",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T05:47:58",
+   "summary": "Diffusion language models spend more computation on novel, rare, or incorrect outputs, and decoding speed can improve inference efficiency and reliability.\n\nKeywords: diffusion language models, forward passes, token generation, open-ended writing, DiffusionGemma, multilingual generation, tokenized languages, decoding speed, majority voting",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-24T09:18:37",
+   "importance": 0.6,
+   "why": "Dynamic compute allocation based on output novelty alters inference latency profiles for diffusion architectures."
   },
   {
    "title": "Datacenters 2027: The Year of Acceleration, +50GW in a Single Year",
@@ -30221,17 +30233,6 @@
    "first_seen": "2026-06-26T16:00:35",
    "importance": 0.5,
    "why": "Demonstrates sub-byte NVFP4 quantization checkpoints to manage memory bandwidth for long context windows."
-  },
-  {
-   "title": "Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor Heaps",
-   "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-25T22:25:51",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/descriptor-heap-cube.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"descriptor-heap-cube\" width=\"600\" />Shaders are GPU programs that process visual data—such as rays, pixels, geometry, and textures—to produce specific rendering effects. Shaders find necessary...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-25T22:25:51",
-   "importance": 0.0
   }
  ]
 }

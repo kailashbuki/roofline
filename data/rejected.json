@@ -1,5 +1,5 @@
 {
- "count": 2283,
+ "count": 2287,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2283,6 +2283,10 @@
   "https://arxiv.org/abs/2610.27148",
   "https://huggingface.co/blog/allenai/litpivot",
   "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening",
-  "https://openai.com/index/securing-our-frontier-model-training-environment"
+  "https://openai.com/index/securing-our-frontier-model-training-environment",
+  "https://arxiv.org/abs/2610.22722",
+  "https://arxiv.org/abs/2610.31651",
+  "https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks",
+  "https://latent.space/p/ainews-kimi-31"
  ]
 }

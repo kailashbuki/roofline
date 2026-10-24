@@ -1,7 +1,18 @@
 {
  "month": "2026-06",
- "count": 144,
+ "count": 145,
  "articles": [
+  {
+   "title": "Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor Heaps",
+   "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-25T22:25:51",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/descriptor-heap-cube.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"descriptor-heap-cube\" width=\"600\" />Shaders are GPU programs that process visual data—such as rays, pixels, geometry, and textures—to produce specific rendering effects. Shaders find necessary...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-25T22:25:51",
+   "importance": 0.0
+  },
   {
    "title": "US Grid Constraints: Towards 40GW+ of Behind-The-Meter Datacenter by 2028?",
    "url": "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
