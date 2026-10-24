@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 145,
+ "count": 147,
  "articles": [
+  {
+   "title": "Deploy a Production-Ready NVIDIA AI-Q Blueprint on Oracle Cloud Infrastructure",
+   "url": "https://developer.nvidia.com/blog/deploy-a-production-ready-nvidia-ai-q-blueprint-on-oracle-cloud-infrastructure",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-26T19:00:45",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/genai-press-project-aiq-3503101-1920x1080-1-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-press-project-aiq-3503101-1920x1080\" width=\"768\" />AI agents have changed a lot in the last two years. The first could only answer one question at a time. Then came multi-turn chat, where the model could keep...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-26T19:00:45",
+   "importance": 0.0
+  },
+  {
+   "title": "Creating the NVIDIA Nemotron 3 Ultra NVFP4 Checkpoint with NVIDIA Model Optimizer",
+   "url": "https://developer.nvidia.com/blog/creating-the-nvidia-nemotron-3-ultra-nvfp4-checkpoint-with-nvidia-model-optimizer",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-26T16:00:35",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Model-Optimizer-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Model-Optimizer\" width=\"768\" />As context windows grow longer, moving large model weights efficiently becomes critical to performance. A common way to address this is quantization, an...",
+   "tags": "quantization,compression,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-06-26T16:00:35",
+   "importance": 0.5,
+   "why": "Demonstrates sub-byte NVFP4 quantization checkpoints to manage memory bandwidth for long context windows."
+  },
   {
    "title": "Streamlining Resource Binding with End-to-End Support for Vulkan Descriptor Heaps",
    "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps",
