@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T14:51:10Z",
- "previous_generated_at": "2026-10-25T09:35:59Z",
+ "generated_at": "2026-10-25T19:28:02Z",
+ "previous_generated_at": "2026-10-25T14:51:10Z",
  "hot_days": 120,
- "count": 2532,
- "total_collected": 2712,
+ "count": 2533,
+ "total_collected": 2713,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Show HN: Benchmarking DSpark speculative decoding on a consumer GPU",
+   "url": "https://github.com/juraj-jumic/dspark-local-bench",
+   "source": "hackernews",
+   "published_date": "2026-10-25T17:07:06",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-25T19:27:36",
+   "importance": 0.5,
+   "why": "Benchmarks speculative decoding on consumer hardware to evaluate latency deltas for smaller local setups."
+  },
   {
    "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
    "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
