@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T09:35:59Z",
- "previous_generated_at": "2026-10-24T19:16:08Z",
+ "generated_at": "2026-10-25T14:51:10Z",
+ "previous_generated_at": "2026-10-25T09:35:59Z",
  "hot_days": 120,
  "count": 2532,
- "total_collected": 2711,
+ "total_collected": 2712,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,17 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+   "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-25T11:49:00",
+   "summary": "#20",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-25T14:50:57",
+   "importance": 0.0
+  },
   {
    "title": "Exploring Apple's On-Device Model: Twenty Billion Parameters in Flash",
    "url": "https://www.airealist.ai/p/exploring-apple-on-device-model",
@@ -30281,17 +30292,6 @@
    "tags": "",
    "area": "other",
    "first_seen": "2026-06-28T14:56:19",
-   "importance": 0.0
-  },
-  {
-   "title": "Using Local Coding Agents",
-   "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
-   "source": "rss:Ahead of AI",
-   "published_date": "2026-06-27T11:21:58",
-   "summary": "Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-27T11:21:58",
    "importance": 0.0
   }
  ]

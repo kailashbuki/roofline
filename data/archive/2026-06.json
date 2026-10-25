@@ -1,7 +1,18 @@
 {
  "month": "2026-06",
- "count": 148,
+ "count": 149,
  "articles": [
+  {
+   "title": "Using Local Coding Agents",
+   "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-06-27T11:21:58",
+   "summary": "Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-27T11:21:58",
+   "importance": 0.0
+  },
   {
    "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
    "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
