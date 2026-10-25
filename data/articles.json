@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T19:16:08Z",
- "previous_generated_at": "2026-10-24T14:16:25Z",
+ "generated_at": "2026-10-25T09:35:59Z",
+ "previous_generated_at": "2026-10-24T19:16:08Z",
  "hot_days": 120,
- "count": 2527,
- "total_collected": 2705,
+ "count": 2532,
+ "total_collected": 2711,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Exploring Apple's On-Device Model: Twenty Billion Parameters in Flash",
+   "url": "https://www.airealist.ai/p/exploring-apple-on-device-model",
+   "source": "airealist",
+   "published_date": "2026-10-25T08:17:22",
+   "summary": "Apple Intelligence's 20-billion-parameter model lives in flash and wakes a few experts per prompt. Your Mac gains memory and battery, not math.",
+   "tags": "inference,compression,hardware,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-25T09:35:58",
+   "importance": 0.8,
+   "why": "Streams weights from flash storage via sparsity to run a 20B model on constrained local memory."
+  },
+  {
+   "title": "“Performance” Oryon: Qualcomm’s Little Core",
+   "url": "https://chipsandcheese.com/p/performance-oryon-qualcomms-little",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-10-24T23:13:33",
+   "summary": "Qualcomm&#8217;s Snapdragon X2 Elite uses a hybrid core setup, breaking away from the all-big-core strategy that the company previously used with in-house core designs.",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-25T09:35:45",
+   "importance": 0.4,
+   "why": "Adopting a hybrid core architecture shifts power-performance trade-offs for on-device AI accelerators."
+  },
   {
    "title": "BeNice Closing the Inference-Memory Gap of Looped Models with KV-Sharing",
    "url": "https://sandyresearch.github.io/benice",
@@ -801,6 +825,18 @@
    "first_seen": "2026-10-23T09:45:39",
    "importance": 0.5,
    "why": "Demonstrates that reasoning pause tokens originate from pre-training distribution rather than reinforcement learning."
+  },
+  {
+   "title": "Skeleton-Grounded Latent Action Model for Robot World Models",
+   "url": "https://arxiv.org/abs/2610.31474",
+   "source": "hf:papers",
+   "published_date": "2026-10-22T00:00:00",
+   "summary": "SkeLAM decomposes latent actions into skeleton-guided kinematic and residual components to improve controllable robot world modeling and motion transfer.\n\nKeywords: latent action models, skeleton-guided latent action model, kinematic component, cross-modal swap reconstruction, branch dropout, adapter, world-model fine-tuning",
+   "tags": "architecture,training",
+   "area": "architecture",
+   "first_seen": "2026-10-25T09:35:13",
+   "importance": 0.6,
+   "why": "It decouples latent actions into skeleton-guided kinematic and residual components to improve robot world model training and control."
   },
   {
    "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
@@ -2542,6 +2578,18 @@
    "why": "Summarizes deployment constraints and latency benchmarks for running localized models on Apple silicon hardware over twelve months."
   },
   {
+   "title": "HyperDrone: Simulation-to-Reality Transfer at Millions of Frames per Second",
+   "url": "https://arxiv.org/abs/2610.28950",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "HyperDrone is a GPU-accelerated quadrotor simulator using a ray-tracing engine to render high-fidelity observations at high speed, enabling vision-based policy training and real-world transfer.\n\nKeywords: HyperDrone, HyperLux, ray-tracing engine, OptiX, Vulkan, Metal, WebGPU, multirotor dynamics, RGB, depth, semantic segmentation, instance segmentation, surface normals, optical flow, PBR, vision-based yaw-control",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-10-25T09:35:13",
+   "importance": 0.7,
+   "why": "It introduces a GPU-accelerated ray-tracing simulator reaching millions of frames per second to accelerate robot policy training."
+  },
+  {
    "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
    "url": "https://arxiv.org/abs/2610.28940",
    "source": "hf:papers",
@@ -3538,6 +3586,18 @@
    "why": "Applies per-band Kalman filtering in the frequency domain via discrete cosine transforms to accelerate diffusion transformer inference."
   },
   {
+   "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+   "url": "https://arxiv.org/abs/2610.26836",
+   "source": "hf:papers",
+   "published_date": "2026-10-19T00:00:00",
+   "summary": "Agent harnesses that retrieve long simulator outputs from files rather than including them in context cause GPT models to substitute their own approximations for authoritative results, reducing accuracy despite correct underlying computations.\n\nKeywords: LLM agents, tool outputs, context window, retrieval, evidence substitution, PHREEQC, geochemistry simulator, agent harnesses",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-25T09:35:13",
+   "importance": 0.65,
+   "why": "It analyzes how file-based tool output retrieval causes LLM context substitution errors, highlighting context management constraints in inference."
+  },
+  {
    "title": "Competing Learning in Hybrid Architectures",
    "url": "https://arxiv.org/abs/2610.26830",
    "source": "hf:papers",
@@ -3788,6 +3848,18 @@
    "first_seen": "2026-10-20T09:49:28",
    "importance": 0.4,
    "why": "Combines single-turn distribution matching distillation with teacher-forcing guidance to stabilize multi-turn autoregressive diffusion image editing."
+  },
+  {
+   "title": "TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models",
+   "url": "https://arxiv.org/abs/2610.25376",
+   "source": "hf:papers",
+   "published_date": "2026-10-18T00:00:00",
+   "summary": "TILDE distills embodied foundation model capabilities into robot policies via on-policy teacher supervision and autonomous recovery data collection, improving real-world task performance without large-scale action pretraining.\n\nKeywords: Embodied Foundation Models, TILDE, on-policy distillation, AutoDAgger, recovery trajectories, cross-architecture distillation",
+   "tags": "training,compression",
+   "area": "training",
+   "first_seen": "2026-10-25T09:35:13",
+   "importance": 0.65,
+   "why": "It replaces large-scale action pretraining with on-policy teacher-in-the-loop distillation to transfer embodied foundation model capabilities into smaller policies."
   },
   {
    "title": "Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models",
@@ -30221,18 +30293,6 @@
    "area": "other",
    "first_seen": "2026-06-27T11:21:58",
    "importance": 0.0
-  },
-  {
-   "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-   "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-   "source": "hackernews",
-   "published_date": "2026-06-27T09:18:52",
-   "summary": "797 points, 361 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-06-27T09:18:52",
-   "importance": 0.6,
-   "why": "Applies speculative decoding techniques to significantly accelerate large language model inference."
   }
  ]
 }

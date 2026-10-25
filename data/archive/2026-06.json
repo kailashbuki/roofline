@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 147,
+ "count": 148,
  "articles": [
+  {
+   "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+   "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+   "source": "hackernews",
+   "published_date": "2026-06-27T09:18:52",
+   "summary": "797 points, 361 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-06-27T09:18:52",
+   "importance": 0.6,
+   "why": "Applies speculative decoding techniques to significantly accelerate large language model inference."
+  },
   {
    "title": "Deploy a Production-Ready NVIDIA AI-Q Blueprint on Oracle Cloud Infrastructure",
    "url": "https://developer.nvidia.com/blog/deploy-a-production-ready-nvidia-ai-q-blueprint-on-oracle-cloud-infrastructure",
