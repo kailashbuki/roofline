@@ -1,7 +1,29 @@
 {
  "month": "2026-06",
- "count": 149,
+ "count": 151,
  "articles": [
+  {
+   "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
+   "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
+   "source": "rss:Interconnects",
+   "published_date": "2026-06-28T17:03:07",
+   "summary": "An assessment of the open ecosystem and the motivations behind releasing models",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-28T17:03:07",
+   "importance": 0.0
+  },
+  {
+   "title": "Too Dangerous for You, Free for Everyone",
+   "url": "https://www.airealist.ai/p/too-dangerous-for-you-free-for-everyone",
+   "source": "airealist",
+   "published_date": "2026-06-28T14:56:19",
+   "summary": "America locked up its best models. Europe regulates a frontier it can&#8217;t build. China gives its best to the world and is winning.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-28T14:56:19",
+   "importance": 0.0
+  },
   {
    "title": "Using Local Coding Agents",
    "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",

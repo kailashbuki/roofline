@@ -1,5 +1,5 @@
 {
- "count": 2359,
+ "count": 2365,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2359,6 +2359,12 @@
   "https://arxiv.org/abs/2610.31569",
   "https://arxiv.org/abs/2610.30932",
   "https://arxiv.org/abs/2610.31734",
-  "https://piszczek.pl/blog/rtx-pro-4000-blackwell-sff-120w-qwen-benchmark"
+  "https://piszczek.pl/blog/rtx-pro-4000-blackwell-sff-120w-qwen-benchmark",
+  "https://www.upbound.io/blog/drinking-our-own-champagne-part-5-what-does-it-take-to-grow-a-self-hosted-coding-model-from-pilot-to-team",
+  "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+  "https://manhattan.institute/article/an-american-answer-to-chinas-open-ai-models-a-safe-harbor-for-open-weights",
+  "https://medium.com/@hadilbenabdallah/top-5-open-source-llm-gateways-41d6c9ec7438",
+  "https://news.ycombinator.com/item?id=50245732",
+  "https://openai.com/index/fanatics-streamline-fan-experience"
  ]
 }

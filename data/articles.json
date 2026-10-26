@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T10:47:40Z",
- "previous_generated_at": "2026-10-25T19:28:02Z",
+ "generated_at": "2026-10-26T17:10:28Z",
+ "previous_generated_at": "2026-10-26T10:47:40Z",
  "hot_days": 120,
- "count": 2587,
- "total_collected": 2767,
+ "count": 2589,
+ "total_collected": 2771,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,54 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+   "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-26T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/MinervaKV-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"MinervaKV\" width=\"768\" />AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet...",
+   "tags": "hardware,systems,optimization",
+   "area": "silicon",
+   "first_seen": "2026-10-26T17:10:01",
+   "importance": 0.6,
+   "why": "Telemetry ingestion pipeline optimizes massive GPU cluster yield, mitigating hardware failure losses during massive AI training runs."
+  },
+  {
+   "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+   "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-26T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/7_resized-768x431.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"7_resized\" width=\"768\" />Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
+   "tags": "serving,systems,training",
+   "area": "inference-engines",
+   "first_seen": "2026-10-26T17:10:01",
+   "importance": 0.5,
+   "why": "Automates failure recovery in Kubernetes orchestration, reducing downtime for multi-thousand GPU training clusters."
+  },
+  {
+   "title": "Fixing Tool-Call Accuracy in vLLM",
+   "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+   "source": "hackernews",
+   "published_date": "2026-10-26T12:59:48",
+   "summary": "108 points, 60 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-26T17:09:06",
+   "importance": 0.4,
+   "why": "Patches parser logic to improve structured output compliance during inference execution."
+  },
+  {
+   "title": "Ollama adds local text-to-speech, 100x faster than real time on Apple Silicon",
+   "url": "https://ollama.com/blog/speech-models",
+   "source": "hackernews",
+   "published_date": "2026-10-26T09:34:16",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-26T17:09:06",
+   "importance": 0.4,
+   "why": "Optimizes audio generation routines for unified memory hardware architectures."
+  },
   {
    "title": "Blackwell Brings NUMA Back, Inside One GPU",
    "url": "https://vincentzed.com/writing/blackwell-numa",
@@ -30931,28 +30979,6 @@
    "first_seen": "2026-06-28T22:32:04",
    "importance": 0.6,
    "why": "Comprehensive overview of techniques for transferring knowledge from black-box LLMs."
-  },
-  {
-   "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
-   "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-   "source": "rss:Interconnects",
-   "published_date": "2026-06-28T17:03:07",
-   "summary": "An assessment of the open ecosystem and the motivations behind releasing models",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-28T17:03:07",
-   "importance": 0.0
-  },
-  {
-   "title": "Too Dangerous for You, Free for Everyone",
-   "url": "https://www.airealist.ai/p/too-dangerous-for-you-free-for-everyone",
-   "source": "airealist",
-   "published_date": "2026-06-28T14:56:19",
-   "summary": "America locked up its best models. Europe regulates a frontier it can&#8217;t build. China gives its best to the world and is winning.",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-28T14:56:19",
-   "importance": 0.0
   }
  ]
 }
