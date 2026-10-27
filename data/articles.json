@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T16:15:51Z",
- "previous_generated_at": "2026-10-27T10:14:32Z",
+ "generated_at": "2026-10-27T21:08:35Z",
+ "previous_generated_at": "2026-10-27T16:15:51Z",
  "hot_days": 120,
- "count": 2658,
- "total_collected": 2845,
+ "count": 2665,
+ "total_collected": 2852,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,66 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+   "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-27T20:50:39",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/CUDAMemoryKV-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDAMemoryKV\" width=\"768\" />Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads...",
+   "tags": "serving,systems,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-10-27T21:08:18",
+   "importance": 0.65,
+   "why": "Enforces strict memory isolation in Kubernetes using CUDA 13.4, preventing OOM crashes during container consolidation."
+  },
+  {
+   "title": "Cerebras and Oracle Team Up to Bring Cerebras AI Inference to OCI",
+   "url": "https://www.cerebras.ai/press-release/cerebras-and-oracle-team-up-to-bring-cerebras-ai-inference-to-oracle-cloud-inf-3389429",
+   "source": "hackernews",
+   "published_date": "2026-10-27T16:24:10",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,inference,serving",
+   "area": "silicon",
+   "first_seen": "2026-10-27T21:07:58",
+   "importance": 0.5,
+   "why": "Integrates wafer-scale processors into standard cloud infrastructure for ultra-low latency prompt processing."
+  },
+  {
+   "title": "Oracle Brings Google TPUs to Oracle Cloud Infrastructure",
+   "url": "https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27",
+   "source": "hackernews",
+   "published_date": "2026-10-27T16:21:08",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-27T21:07:58",
+   "importance": 0.4,
+   "why": "Expands commercial cloud availability of specialized ASIC hardware for large-scale cluster deployments."
+  },
+  {
+   "title": "Two RTX 5090 hosts sharing a KV cache over Ethernet",
+   "url": "https://viiwork.pulu.app/blog/kv-share-two-5090-hosts",
+   "source": "hackernews",
+   "published_date": "2026-10-27T16:09:50",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-10-27T21:07:58",
+   "importance": 0.4,
+   "why": "Enables distributed KV cache sharing across consumer nodes over standard Ethernet links."
+  },
+  {
+   "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
+   "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-10-27T00:00:00",
+   "summary": "Together GPU Clusters auto repair detects GPU, host and fabric faults, picks the lightest fix, and lets you decide per fault and per Xid code which repairs run automatically. Here is how it works.",
+   "tags": "systems,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-10-27T21:08:14",
+   "importance": 0.6,
+   "why": "Automates hardware failure recovery using targeted Xid code remediation, reducing cluster downtime during large-scale distributed runs."
+  },
   {
    "title": "Flint is an open-weight mixture-of-experts model from Recursive",
    "url": "https://openrouter.ai/recursive/flint-v1.0:free",
@@ -780,6 +840,18 @@
    "why": "It introduces a new model variant optimized for agentic computer use interactions."
   },
   {
+   "title": "Constrained Decoding: Harmful or Beneficial? Revisiting Its Impact on LLM Performance",
+   "url": "https://arxiv.org/abs/2610.35328",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Constrained decoding does not inherently harm reasoning; its effects depend on constraint type, with validity and reasoning constraints often improving reliability and accuracy by removing invalid paths.\n\nKeywords: constrained decoding, Large Language Models, format constraints, validity constraints, reasoning constraints, causal ablations, decoder-level masking",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-10-27T21:07:42",
+   "importance": 0.6,
+   "why": "Demonstrates decoder-level masking constraints can improve reasoning reliability without inherent performance degradation."
+  },
+  {
    "title": "Show HN: Benchmarking DSpark speculative decoding on a consumer GPU",
    "url": "https://github.com/juraj-jumic/dspark-local-bench",
    "source": "hackernews",
@@ -813,6 +885,18 @@
    "first_seen": "2026-10-25T09:35:58",
    "importance": 0.8,
    "why": "Streams weights from flash storage via sparsity to run a 20B model on constrained local memory."
+  },
+  {
+   "title": "Beyond Benchmarks: Can Small Open-Weight Models Get Real Coding Work Done?",
+   "url": "https://arxiv.org/abs/2610.34241",
+   "source": "hf:papers",
+   "published_date": "2026-10-25T00:00:00",
+   "summary": "Empirical studies of open-weight coding agents reveal that verified code success depends on serving setup, protocol design, and hidden behavioral checks rather than text coherence alone.\n\nKeywords: vLLM, SGLang, llama.cpp, MLX, tool-call formatting, context behavior, cache reuse, cold-prefix requests, quantized Qwen3-Coder, Nemotron Cascade 2, artifact validation, behavioral checks",
+   "tags": "serving,inference,quantization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-27T21:07:42",
+   "importance": 0.5,
+   "why": "Quantifies how serving setup and cache reuse dictate verified code success in open-weight models."
   },
   {
    "title": "“Performance” Oryon: Qualcomm’s Little Core",
