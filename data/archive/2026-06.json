@@ -1,7 +1,43 @@
 {
  "month": "2026-06",
- "count": 151,
+ "count": 154,
  "articles": [
+  {
+   "title": "Breaking the Tokenizer Barrier: On-Policy Distillation Across Model Families",
+   "url": "https://arxiv.org/abs/2606.09456",
+   "source": "hackernews",
+   "published_date": "2026-06-29T03:37:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "post-training,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-06-29T03:37:59",
+   "importance": 0.7,
+   "why": "Enables on-policy distillation across different model families, bypassing tokenizer mismatch barriers."
+  },
+  {
+   "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
+   "url": "https://www.phantafield.com/whitepaper",
+   "source": "hackernews",
+   "published_date": "2026-06-29T01:23:38",
+   "summary": "32 points, 36 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-29T01:23:38",
+   "importance": 0.7,
+   "why": "A monolithic-3D AI ASIC design eliminating HBM via massive on-die DRAM capacity."
+  },
+  {
+   "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
+   "url": "https://arxiv.org/abs/2401.07013",
+   "source": "hackernews",
+   "published_date": "2026-06-28T22:32:04",
+   "summary": "123 points, 23 comments on HackerNews",
+   "tags": "post-training,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-06-28T22:32:04",
+   "importance": 0.6,
+   "why": "Comprehensive overview of techniques for transferring knowledge from black-box LLMs."
+  },
   {
    "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
    "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
