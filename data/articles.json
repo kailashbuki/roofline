@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T10:14:32Z",
- "previous_generated_at": "2026-10-26T17:10:28Z",
+ "generated_at": "2026-10-27T16:15:51Z",
+ "previous_generated_at": "2026-10-27T10:14:32Z",
  "hot_days": 120,
- "count": 2656,
- "total_collected": 2841,
+ "count": 2658,
+ "total_collected": 2845,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Flint is an open-weight mixture-of-experts model from Recursive",
+   "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+   "source": "hackernews",
+   "published_date": "2026-10-26T23:55:13",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-27T16:13:48",
+   "importance": 0.4,
+   "why": "Routing sparse activation paths through open-weight mixture-of-experts alters per-token FLOPs without changing parameter counts."
+  },
   {
    "title": "Optimizing Streaming Speech Recognition on Arm® Edge Devices with ExecuTorch",
    "url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch",
@@ -2278,6 +2290,18 @@
    "why": "Jointly alters diffusion effort and acceptance criteria to navigate the inference speed-quality tradeoff in speculative decoding."
   },
   {
+   "title": "Nested Sparsity for Scalable Pretraining and Continual Learning",
+   "url": "https://arxiv.org/abs/2610.31818",
+   "source": "hf:papers",
+   "published_date": "2026-10-22T00:00:00",
+   "summary": "Nestor introduces nested sparsity in attention to improve conditional computation over standard mixture-of-experts transformers, enhancing pretraining, long-context adaptation, and continual learning.\n\nKeywords: Mixture-of-experts, MoE transformers, conditional computation, attention operator, nested sparsity, Nestor, continual pretraining",
+   "tags": "architecture,training,llm",
+   "area": "architecture",
+   "first_seen": "2026-10-27T16:13:13",
+   "importance": 0.7,
+   "why": "It introduces nested sparsity within attention operators to advance conditional computation beyond standard mixture-of-experts architectures."
+  },
+  {
    "title": "Does LeWorldModel Preserve Local Action Geometry?",
    "url": "https://arxiv.org/abs/2610.31716",
    "source": "hf:papers",
@@ -3164,6 +3188,18 @@
    "first_seen": "2026-10-22T20:26:17",
    "importance": 0.55,
    "why": "Learns continuous latent reasoning tokens to model partner states during multi-agent coordination."
+  },
+  {
+   "title": "CausalAlign: Causal Alignment of Video Generation Models for Consistent Ego-Motion",
+   "url": "https://arxiv.org/abs/2610.29915",
+   "source": "hf:papers",
+   "published_date": "2026-10-21T00:00:00",
+   "summary": "CausalAlign improves long-horizon camera ego-motion consistency in diffusion video generators by aligning internal representations to 3D dynamics via delta-token space.\n\nKeywords: diffusion-based video generation models, camera ego-motion, linear probes, causal interventions, denoising, delta-token space, 3D foundation model, geometric consistency, world action models",
+   "tags": "architecture,multimodal,optimization",
+   "area": "architecture",
+   "first_seen": "2026-10-27T16:13:13",
+   "importance": 0.6,
+   "why": "It aligns internal representations to 3D dynamics via a delta-token space, improving ego-motion consistency in diffusion video generation."
   },
   {
    "title": "Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding",
@@ -4279,6 +4315,18 @@
    "first_seen": "2026-10-23T09:45:39",
    "importance": 0.6,
    "why": "Replaces layer-specific experts with cross-layer shared meta-experts to cut parameter redundancy in MoE models."
+  },
+  {
+   "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
+   "url": "https://arxiv.org/abs/2610.27528",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "DeCert evaluates and improves generative reward model rationales by assessing justification validity and verdict consistency without reference explanations, yielding stronger preference supervision.\n\nKeywords: generative reward models, GenRMs, preference judgments, rationales, DeCert, verdict consistency, certificate quality, rationale preference pairs, positional bias",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-27T16:13:13",
+   "importance": 0.5,
+   "why": "It evaluates generative reward model rationales using decision certificate supervision to enhance preference training fidelity."
   },
   {
    "title": "Ask to Distill: Learning to Synthesize Data for On-Policy Distillation",
@@ -31760,29 +31808,6 @@
    "first_seen": "2026-06-30T00:00:00",
    "importance": 0.4,
    "why": "Conference announcement listing multiple research papers across the full AI stack."
-  },
-  {
-   "title": "How to Govern Autonomous Agents in Enterprise AI Factories",
-   "url": "https://developer.nvidia.com/blog/how-to-govern-autonomous-agents-in-enterprise-ai-factories",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-29T15:50:13",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Factory-Secure-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Factory-Secure\" width=\"768\" />AI agents are quickly moving beyond chat. They inspect code, run tests, read documents, search knowledge bases, query internal systems, and operate for hours on...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-06-29T15:50:13",
-   "importance": 0.0
-  },
-  {
-   "title": "What happens when you run a CUDA kernel?",
-   "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel",
-   "source": "hackernews",
-   "published_date": "2026-06-29T13:11:08",
-   "summary": "294 points, 32 comments on HackerNews",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-06-29T13:11:08",
-   "importance": 0.4,
-   "why": "Deep dive into low-level CUDA execution mechanics on GPU hardware."
   }
  ]
 }

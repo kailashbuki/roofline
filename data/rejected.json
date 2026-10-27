@@ -1,5 +1,5 @@
 {
- "count": 2444,
+ "count": 2457,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2444,6 +2444,19 @@
   "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
   "https://openai.com/index/chatgpt-expanding-world-of-work",
   "https://openai.com/index/openai-cut-incident-investigation",
-  "https://latent.space/p/ainews-anthropic-s1"
+  "https://latent.space/p/ainews-anthropic-s1",
+  "https://arxiv.org/abs/2610.33718",
+  "https://arxiv.org/abs/2610.33024",
+  "https://arxiv.org/abs/2610.21561",
+  "https://arxiv.org/abs/2610.34654",
+  "https://arxiv.org/abs/2610.33608",
+  "https://arxiv.org/abs/2610.29139",
+  "https://arxiv.org/abs/2610.28655",
+  "https://arxiv.org/abs/2610.14253",
+  "https://huggingface.co/blog/allenai/novelty-bench",
+  "https://openai.com/index/anima",
+  "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+  "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark",
+  "https://latent.space/p/offline-coding"
  ]
 }

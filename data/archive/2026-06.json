@@ -1,7 +1,30 @@
 {
  "month": "2026-06",
- "count": 154,
+ "count": 156,
  "articles": [
+  {
+   "title": "How to Govern Autonomous Agents in Enterprise AI Factories",
+   "url": "https://developer.nvidia.com/blog/how-to-govern-autonomous-agents-in-enterprise-ai-factories",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-29T15:50:13",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Factory-Secure-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"AI-Factory-Secure\" width=\"768\" />AI agents are quickly moving beyond chat. They inspect code, run tests, read documents, search knowledge bases, query internal systems, and operate for hours on...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-06-29T15:50:13",
+   "importance": 0.0
+  },
+  {
+   "title": "What happens when you run a CUDA kernel?",
+   "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel",
+   "source": "hackernews",
+   "published_date": "2026-06-29T13:11:08",
+   "summary": "294 points, 32 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-06-29T13:11:08",
+   "importance": 0.4,
+   "why": "Deep dive into low-level CUDA execution mechanics on GPU hardware."
+  },
   {
    "title": "Breaking the Tokenizer Barrier: On-Policy Distillation Across Model Families",
    "url": "https://arxiv.org/abs/2606.09456",
