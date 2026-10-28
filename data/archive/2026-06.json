@@ -1,7 +1,19 @@
 {
  "month": "2026-06",
- "count": 159,
+ "count": 160,
  "articles": [
+  {
+   "title": "Optimizing a Neural Reconstruction Pipeline Using NVIDIA Nsight Developer Tools",
+   "url": "https://developer.nvidia.com/blog/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-developer-tools",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-06-30T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/av-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"av\" width=\"768\" />NVIDIA Omniverse NuRec is a neural reconstruction pipeline for building high-fidelity 3D representations of real-world environments from multisensor data such...",
+   "tags": "optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-06-30T16:00:00",
+   "importance": 0.5,
+   "why": "Demonstrates performance profiling and optimization of a neural 3D reconstruction pipeline using developer tools."
+  },
   {
    "title": "The Models That Learned Physics",
    "url": "https://www.airealist.ai/p/the-models-that-learned-physics",

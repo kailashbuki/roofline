@@ -1,5 +1,5 @@
 {
- "count": 2533,
+ "count": 2536,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2533,6 +2533,9 @@
   "https://tenstorrent.com/en/newsroom/tenstorrent-and-smallestai-partner-to-bring-production-grade-voice-ai-on-prem",
   "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
   "https://openai.com/index/retell-ai",
-  "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure"
+  "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure",
+  "https://arxiv.org/abs/2610.34724",
+  "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+  "https://openai.com/index/legora"
  ]
 }
