@@ -1,7 +1,43 @@
 {
  "month": "2026-06",
- "count": 156,
+ "count": 159,
  "articles": [
+  {
+   "title": "The Models That Learned Physics",
+   "url": "https://www.airealist.ai/p/the-models-that-learned-physics",
+   "source": "airealist",
+   "published_date": "2026-06-30T09:27:03",
+   "summary": "Generative AI isn&#8217;t just chatbots and code. The transformer architecture has quietly generalized far past language, and the next domain it&#8217;s reaching is the physical world.",
+   "tags": "architecture,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-06-30T09:27:03",
+   "importance": 0.5,
+   "why": "Transformers are generalizing to physical world modeling, expanding beyond traditional NLP and code domains."
+  },
+  {
+   "title": "Gemma 4 on Cerebras - The Fastest Inference Is Now Multimodal",
+   "url": "https://www.cerebras.ai/blog/gemma-4-on-cerebras-the-fastest-inference-is-now-multimodal",
+   "source": "hackernews",
+   "published_date": "2026-06-30T08:04:53",
+   "summary": "",
+   "tags": "inference,serving,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-06-30T08:04:53",
+   "importance": 0.4,
+   "why": "Optimizes multimodal model serving on specialized hardware accelerators for speedups."
+  },
+  {
+   "title": "Together AI at ICML 2026: frontier research across the full stack",
+   "url": "https://www.together.ai/blog/icml-2026",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-06-30T00:00:00",
+   "summary": "Nine papers at ICML 2026 across the full stack. The research that becomes the Together platform. Find us at booth B714 in Seoul.",
+   "tags": "architecture,training,inference",
+   "area": "architecture",
+   "first_seen": "2026-06-30T00:00:00",
+   "importance": 0.4,
+   "why": "Conference announcement listing multiple research papers across the full AI stack."
+  },
   {
    "title": "How to Govern Autonomous Agents in Enterprise AI Factories",
    "url": "https://developer.nvidia.com/blog/how-to-govern-autonomous-agents-in-enterprise-ai-factories",
