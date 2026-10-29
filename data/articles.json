@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-28T17:09:11Z",
- "previous_generated_at": "2026-10-28T11:00:26Z",
+ "generated_at": "2026-10-29T11:20:26Z",
+ "previous_generated_at": "2026-10-28T17:09:11Z",
  "hot_days": 120,
- "count": 2750,
- "total_collected": 2941,
+ "count": 2755,
+ "total_collected": 2950,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -24,6 +24,42 @@
  ],
  "articles": [
   {
+   "title": "GeForce vs Workstation GPUs: NVIDIA's Half Rate, Priced",
+   "url": "https://www.airealist.ai/p/nvidia-geforce-half-rate",
+   "source": "airealist",
+   "published_date": "2026-10-28T22:48:29",
+   "summary": "NVIDIA sells one chip at two training speeds, and the unlocks prove it's a setting. Even capped, GeForce wins per dollar to buy.",
+   "tags": "hardware,training",
+   "area": "economics",
+   "first_seen": "2026-10-29T11:20:25",
+   "importance": 0.35,
+   "why": "Demonstrates arbitrary hardware performance segmentation affecting hardware acquisition costs for training."
+  },
+  {
+   "title": "Micron plans to use wafer bonding and High-NA EUV for next-gen DRAM",
+   "url": "https://www.tomshardware.com/pc-components/dram/micron-plans-to-use-wafer-bonding-and-high-na-euv-for-next-gen-dram-company-also-developing-vertical-high-bandwidth-memory-and-vertical-edge-inference-memory-integrated-directly-on-top-of-processors",
+   "source": "hackernews",
+   "published_date": "2026-10-28T21:30:37",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-10-29T11:19:06",
+   "importance": 0.6,
+   "why": "Adopts hybrid wafer bonding to stack peripheral logic directly under high-density DRAM arrays."
+  },
+  {
+   "title": "DeepSeek-v4.1-Flash: Pushing the Limits of KV Cache Compression",
+   "url": "https://arxiv.org/abs/2609.19969",
+   "source": "hackernews",
+   "published_date": "2026-10-28T19:00:25",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "inference,compression,attention",
+   "area": "inference-methods",
+   "first_seen": "2026-10-29T11:19:06",
+   "importance": 0.65,
+   "why": "Explores extreme KV cache compression limits to reduce memory bandwidth bottlenecks during generation."
+  },
+  {
    "title": "Artificial Analysis v5 and the benchmarker's dilemma",
    "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
    "source": "rss:Interconnects",
@@ -33,6 +69,18 @@
    "area": "training",
    "first_seen": "2026-10-28T17:08:18",
    "importance": 0.0
+  },
+  {
+   "title": "SiFive positions RISC-V as the control layer for AI accelerators",
+   "url": "https://www.jonpeddie.com/news/sifive-makes-the-case-for-risc-v-as-the-control-layer-for-custom-ai-accelerators",
+   "source": "hackernews",
+   "published_date": "2026-10-28T10:09:47",
+   "summary": "2 points, 2 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-10-29T11:19:06",
+   "importance": 0.4,
+   "why": "Proposes using embedded RISC-V cores for deterministic task scheduling across multi-die accelerators."
   },
   {
    "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
@@ -1643,6 +1691,30 @@
    "why": "Reveals shared causal control mechanisms enabling zero-shot transfer across text and image generation."
   },
   {
+   "title": "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models",
+   "url": "https://arxiv.org/abs/2610.36192",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Wiener-informed Decoding accelerates pixel-space velocity model training and improves image generation by integrating statistical predictions into decoder computation without altering native blocks.\n\nKeywords: velocity fields, Wiener estimates, second-order image statistics, Wiener-informed Decoding, coefficient interfaces, pixel-space velocity objective, PixelDiT, FID, statistical denoisers",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-10-29T11:18:51",
+   "importance": 0.6,
+   "why": "Integrating statistical Wiener predictions into decoders accelerates pixel-space velocity model training."
+  },
+  {
+   "title": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
+   "url": "https://arxiv.org/abs/2610.36082",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Fin-SD improves local multi-step financial reasoning by using self-generated error critiques and truncated correct prefixes for on-policy distillation without external teachers.\n\nKeywords: on-policy distillation, self-distillation, reverse KL, multi-step reasoning, hindsight self-distillation, error critique, hint-conditioned teacher, open-weight models",
+   "tags": "post-training,llm",
+   "area": "training",
+   "first_seen": "2026-10-29T11:18:51",
+   "importance": 0.6,
+   "why": "On-policy distillation using truncated correct prefixes enhances multi-step financial reasoning without external teachers."
+  },
+  {
    "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
    "url": "https://arxiv.org/abs/2610.36068",
    "source": "hf:papers",
@@ -1679,6 +1751,18 @@
    "why": "Selective high-resolution matching restricted to uncertain memory candidates drastically reduces GPU memory consumption in video matting."
   },
   {
+   "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
+   "url": "https://arxiv.org/abs/2610.35684",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "OmniShowcase improves subject-to-video generation by using geometry-driven training data and surface-normal conditioning to maintain 3D consistency across novel viewpoints.\n\nKeywords: subject-to-video, surface-normal maps, geometry-conditioning, 3D consistency, data synthesis pipeline, camera trajectories",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-10-29T11:18:51",
+   "importance": 0.5,
+   "why": "Surface-normal conditioning preserves 3D consistency in subject-to-video generation."
+  },
+  {
    "title": "Constrained Decoding: Harmful or Beneficial? Revisiting Its Impact on LLM Performance",
    "url": "https://arxiv.org/abs/2610.35328",
    "source": "hf:papers",
@@ -1701,6 +1785,18 @@
    "first_seen": "2026-10-28T17:06:29",
    "importance": 0.75,
    "why": "Aligns credit assignment at the turn scale, overcoming long-horizon agent training bottlenecks."
+  },
+  {
+   "title": "What Outcome RL Buys: Finishing, Reliability, Rarely Reach",
+   "url": "https://arxiv.org/abs/2610.34894",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Reinforcement learning improves pass@1 mainly by finishing answers faster and increasing reliability rather than acquiring new problem-solving knowledge, with minimal reach gains under fixed token budgets.\n\nKeywords: outcome RL, pass@1, pass@k, token budget, finishing, reliability, reach, physics, math, reinforcement learning",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-29T11:18:51",
+   "importance": 0.7,
+   "why": "Demonstrates outcome RL primarily improves reliability and execution speed over knowledge acquisition."
   },
   {
    "title": "ThinkBit: Search Codewords, Recalibrate Scales, Select by Reasoning",
@@ -2611,6 +2707,18 @@
    "first_seen": "2026-10-27T10:13:43",
    "importance": 0.6,
    "why": "Uses a frozen whole-body controller coupled with a compact target-predicting planner trained via single-GPU reinforcement learning."
+  },
+  {
+   "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+   "url": "https://arxiv.org/abs/2610.32749",
+   "source": "hf:papers",
+   "published_date": "2026-10-23T00:00:00",
+   "summary": "Falcon is a lightweight causal audio-visual target speaker extraction method that achieves high quality with drastically reduced parameters and latency, supported by the realistic RealSSA benchmark.\n\nKeywords: audio-visual target speaker extraction, causal AVTSE, RealSSA, Falcon, multi-scale time-frequency separation, encoder-space speaker contrastive loss, near-field leakage suppression",
+   "tags": "architecture,inference",
+   "area": "architecture",
+   "first_seen": "2026-10-29T11:18:51",
+   "importance": 0.4,
+   "why": "Causal multi-scale separation reduces parameters and latency in streaming audio-visual extraction."
   },
   {
    "title": "Principia: Test-Time Hypotheses to Principle Construction for Scientific Discovery",
@@ -32864,53 +32972,6 @@
    "first_seen": "2026-07-01T17:04:02",
    "importance": 0.6,
    "why": "Explores reinforcement learning techniques tailored for training agentic AI models."
-  },
-  {
-   "title": "1M Context: Making Long-Horizon Tasks Stable and Practical",
-   "url": "https://docs.z.ai/guides/llm/glm-5.2",
-   "source": "hackernews",
-   "published_date": "2026-07-01T03:32:30",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "inference,llm",
-   "area": "architecture",
-   "first_seen": "2026-07-01T03:32:30",
-   "importance": 0.6,
-   "why": "Techniques for stabilizing long-horizon tasks at 1M context lengths."
-  },
-  {
-   "title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
-   "url": "https://www.together.ai/blog/announcing-our-series-c",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-01T00:00:00",
-   "summary": "We raised $800M to accelerate the shift to open-source AI. Here's why the economics of closed models don't scale, and what we're building next.",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-01T00:00:00",
-   "importance": 0.0
-  },
-  {
-   "title": "TokenBudgeting: Our Conversations with Enterprises on Token Spend",
-   "url": "https://newsletter.semianalysis.com/p/tokenbudgeting-our-conversations",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-06-30T18:32:39",
-   "summary": "Was Widespread TokenMaxxing Ever Really Here?",
-   "tags": "llm",
-   "area": "economics",
-   "first_seen": "2026-06-30T18:32:39",
-   "importance": 0.3,
-   "why": "Discusses enterprise token expenditure shifts and capacity planning realities."
-  },
-  {
-   "title": "Designing GPU-Accelerated Query Engines with NVIDIA GQE",
-   "url": "https://developer.nvidia.com/blog/designing-gpu-accelerated-query-engines-with-nvidia-gqe",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-06-30T17:36:43",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/GQE-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"GQE\" width=\"768\" />GPU-accelerated query engines are often constrained by memory and I/O bandwidth. NVIDIA hardware advances—including high bandwidth memory (HBM), NVIDIA...",
-   "tags": "inference,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-06-30T17:36:43",
-   "importance": 0.6,
-   "why": "Describes GPU-accelerated query engines optimized for hardware memory and I/O bandwidth limits."
   }
  ]
 }

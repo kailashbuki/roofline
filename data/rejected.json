@@ -1,5 +1,5 @@
 {
- "count": 2536,
+ "count": 2544,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2536,6 +2536,14 @@
   "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure",
   "https://arxiv.org/abs/2610.34724",
   "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-  "https://openai.com/index/legora"
+  "https://openai.com/index/legora",
+  "https://arxiv.org/abs/2610.31924",
+  "https://arxiv.org/abs/2610.26185",
+  "https://arxiv.org/abs/2610.31566",
+  "https://pytorch.org/blog/pytorch-2-15-release-blog",
+  "https://openai.com/index/openai-servicenow-partnership-expansion",
+  "https://openai.com/index/the-future-of-the-firm",
+  "https://latent.space/p/ainews-gemini-4-carbon",
+  "https://latent.space/p/supabase"
  ]
 }

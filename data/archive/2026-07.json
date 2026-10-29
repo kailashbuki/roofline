@@ -1,0 +1,29 @@
+{
+ "month": "2026-07",
+ "count": 2,
+ "articles": [
+  {
+   "title": "1M Context: Making Long-Horizon Tasks Stable and Practical",
+   "url": "https://docs.z.ai/guides/llm/glm-5.2",
+   "source": "hackernews",
+   "published_date": "2026-07-01T03:32:30",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,llm",
+   "area": "architecture",
+   "first_seen": "2026-07-01T03:32:30",
+   "importance": 0.6,
+   "why": "Techniques for stabilizing long-horizon tasks at 1M context lengths."
+  },
+  {
+   "title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
+   "url": "https://www.together.ai/blog/announcing-our-series-c",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-01T00:00:00",
+   "summary": "We raised $800M to accelerate the shift to open-source AI. Here's why the economics of closed models don't scale, and what we're building next.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-01T00:00:00",
+   "importance": 0.0
+  }
+ ]
+}
