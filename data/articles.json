@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29T11:20:26Z",
- "previous_generated_at": "2026-10-28T17:09:11Z",
+ "generated_at": "2026-10-29T21:33:50Z",
+ "previous_generated_at": "2026-10-29T11:20:26Z",
  "hot_days": 120,
- "count": 2755,
- "total_collected": 2950,
+ "count": 2762,
+ "total_collected": 2958,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Serving Prefill and Decode for Agentic AI (On Tenstorrent Blackhole)",
+   "url": "https://tenstorrent.com/en/developers/blog/serving-prefill-and-decode-for-agentic-ai",
+   "source": "hackernews",
+   "published_date": "2026-10-29T15:52:42",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "serving,hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-10-29T21:33:19",
+   "importance": 0.5,
+   "why": "Adapts prefill-decode disaggregation for novel RISC-V spatial accelerator architectures."
+  },
+  {
+   "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+   "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+   "source": "hackernews",
+   "published_date": "2026-10-29T15:45:05",
+   "summary": "104 points, 18 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "silicon",
+   "first_seen": "2026-10-29T21:33:19",
+   "importance": 0.7,
+   "why": "Revises rack-level thermal and power scheduling to reclaim stranded GPU cluster capacity."
+  },
+  {
+   "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+   "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-29T15:00:00",
+   "summary": "<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/mlip-tensor-core-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Tensor Core computation for machine learning interatomic potentials\" width=\"768\" />Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These...",
+   "tags": "hardware,optimization,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-10-29T21:33:35",
+   "importance": 0.6,
+   "why": "It maps atomistic simulation workloads onto Tensor Cores to accelerate machine learning interatomic potentials."
+  },
   {
    "title": "GeForce vs Workstation GPUs: NVIDIA's Half Rate, Priced",
    "url": "https://www.airealist.ai/p/nvidia-geforce-half-rate",
@@ -1785,6 +1821,18 @@
    "first_seen": "2026-10-28T17:06:29",
    "importance": 0.75,
    "why": "Aligns credit assignment at the turn scale, overcoming long-horizon agent training bottlenecks."
+  },
+  {
+   "title": "PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds",
+   "url": "https://arxiv.org/abs/2610.34921",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Physevolve trains vision-language models in causal physical reasoning by using a physics engine to validate self-generated executable worlds and counterfactual simulations, improving performance on dynamics benchmarks without human data.\n\nKeywords: vision-language models, physical reasoning, counterfactual, self-evolving, physics engine, GRPO, executable world programs, causal physical reasoning, PhysBench, ContPhy",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-10-29T21:33:04",
+   "importance": 0.65,
+   "why": "Uses external physics engines for verifier-grounded self-evolution, training vision models on counterfactual simulations without human data."
   },
   {
    "title": "What Outcome RL Buys: Finishing, Reliability, Rarely Reach",
@@ -4329,6 +4377,18 @@
    "why": "Replaces standard inter-frame GOP structures with dependency-decoupled sparse decoding to eliminate video decode bottlenecks during AI training data sampling."
   },
   {
+   "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+   "url": "https://arxiv.org/abs/2610.30435",
+   "source": "hf:papers",
+   "published_date": "2026-10-21T00:00:00",
+   "summary": "Self-Assessment Reinforcement Learning trains search agents to recognize missing information and improve search efficiency without extra inference-time assessment.\n\nKeywords: Self-Assessment Reinforcement Learning, SARL, search-state awareness, dual reward design, multi-hop reasoning, deep research, reinforcement learning",
+   "tags": "training,inference,llm",
+   "area": "training",
+   "first_seen": "2026-10-29T21:33:04",
+   "importance": 0.65,
+   "why": "Trains search agents via reinforcement learning to recognize missing knowledge internally, removing extra inference-time assessment overhead."
+  },
+  {
    "title": "Self-Distilling Future Video Representations for World Action Models",
    "url": "https://arxiv.org/abs/2610.30320",
    "source": "hf:papers",
@@ -4399,6 +4459,18 @@
    "first_seen": "2026-10-27T16:13:13",
    "importance": 0.6,
    "why": "It aligns internal representations to 3D dynamics via a delta-token space, improving ego-motion consistency in diffusion video generation."
+  },
+  {
+   "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
+   "url": "https://arxiv.org/abs/2610.29702",
+   "source": "hf:papers",
+   "published_date": "2026-10-21T00:00:00",
+   "summary": "CausGround extracts reusable action preconditions and effects from interaction experience to improve embodied planning and reasoning across diverse environments without model retraining.\n\nKeywords: multimodal large language models, causal interaction grounding, action preconditions, action effects, factorized world-state representation, backward reasoning, forward reasoning, high-level planning, embodied planning",
+   "tags": "multimodal,llm",
+   "area": "new-models",
+   "first_seen": "2026-10-29T21:33:04",
+   "importance": 0.6,
+   "why": "Extracts causal preconditions from interaction to improve embodied planning without retraining, building factorized world-state representations."
   },
   {
    "title": "Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding",
@@ -8381,6 +8453,18 @@
    "importance": 0.0
   },
   {
+   "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+   "url": "https://arxiv.org/abs/2610.22684",
+   "source": "hf:papers",
+   "published_date": "2026-10-15T00:00:00",
+   "summary": "AlphaBet uses agentic reinforcement learning to train a single LLM policy to search, reason, and report forecast probabilities across multiple dates, reducing Brier scores by improving both evidence acquisition and probability reporting.\n\nKeywords: agentic reinforcement learning, Group Relative Policy Optimization, proper scoring rule, Brier score, multi-date training, evidence acquisition, probability reporting",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-10-29T21:33:04",
+   "importance": 0.6,
+   "why": "Applies reinforcement learning to event forecasting agents across multiple dates, optimizing evidence acquisition to reduce Brier scores."
+  },
+  {
    "title": "Exploring The Empirical Privacy Landscape of Synthetic Data",
    "url": "https://arxiv.org/abs/2610.22659",
    "source": "hf:papers",
@@ -9471,6 +9555,18 @@
    "first_seen": "2026-10-16T09:31:29",
    "importance": 0.5,
    "why": "Unifies GUI agent evaluation and online RL training across platforms with verifiable rewards, enabling a 9B model state-of-the-art."
+  },
+  {
+   "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
+   "url": "https://arxiv.org/abs/2610.20832",
+   "source": "hf:papers",
+   "published_date": "2026-10-14T00:00:00",
+   "summary": "Large language models learn adaptive information gathering by training reasoning with information-gain rewards, improving experimental design efficiency and generalizing across tasks.\n\nKeywords: sequential Bayesian experimental design, information-gain rewards, amortization, generative model, expected information gain, multi-step objectives, Twenty Questions, Medi-Q",
+   "tags": "training,llm,optimization",
+   "area": "training",
+   "first_seen": "2026-10-29T21:33:04",
+   "importance": 0.65,
+   "why": "Optimizes sequential information gathering in LLMs using information-gain rewards, improving adaptive multi-step reasoning efficiency."
   },
   {
    "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
@@ -32960,18 +33056,6 @@
    "first_seen": "2026-07-02T17:25:38",
    "importance": 0.7,
    "why": "Surveys advanced packaging, custom HBM, microfluidic cooling, and photonic interconnect roadmaps."
-  },
-  {
-   "title": "Mastering Agentic Techniques: AI Agent Reinforcement Learning",
-   "url": "https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-reinforcement-learning",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-01T17:04:02",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Reinforcement learning (RL) is central to aligning language models, from reinforcement learning with human feedback (RLHF) within AI assistants to newer...",
-   "tags": "training,post-training",
-   "area": "training",
-   "first_seen": "2026-07-01T17:04:02",
-   "importance": 0.6,
-   "why": "Explores reinforcement learning techniques tailored for training agentic AI models."
   }
  ]
 }

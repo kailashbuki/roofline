@@ -1,5 +1,5 @@
 {
- "count": 2544,
+ "count": 2554,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2544,6 +2544,16 @@
   "https://openai.com/index/openai-servicenow-partnership-expansion",
   "https://openai.com/index/the-future-of-the-firm",
   "https://latent.space/p/ainews-gemini-4-carbon",
-  "https://latent.space/p/supabase"
+  "https://latent.space/p/supabase",
+  "https://arxiv.org/abs/2610.22507",
+  "https://arxiv.org/abs/2610.30161",
+  "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+  "https://huggingface.co/blog/announcing-project-protostar",
+  "https://huggingface.co/blog/mistral-large4",
+  "https://huggingface.co/blog/anydecisionmodel",
+  "https://openai.com/index/updated-model-spec",
+  "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+  "https://openai.com/index/ropes-gray-ai-diligence",
+  "https://latent.space/p/elorian"
  ]
 }

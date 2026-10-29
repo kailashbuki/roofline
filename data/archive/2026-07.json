@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 2,
+ "count": 3,
  "articles": [
+  {
+   "title": "Mastering Agentic Techniques: AI Agent Reinforcement Learning",
+   "url": "https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-reinforcement-learning",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-01T17:04:02",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Reinforcement learning (RL) is central to aligning language models, from reinforcement learning with human feedback (RLHF) within AI assistants to newer...",
+   "tags": "training,post-training",
+   "area": "training",
+   "first_seen": "2026-07-01T17:04:02",
+   "importance": 0.6,
+   "why": "Explores reinforcement learning techniques tailored for training agentic AI models."
+  },
   {
    "title": "1M Context: Making Long-Horizon Tasks Stable and Practical",
    "url": "https://docs.z.ai/guides/llm/glm-5.2",
