@@ -1,5 +1,5 @@
 {
- "count": 2609,
+ "count": 2621,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2609,6 +2609,18 @@
   "https://jacquesmattheij.com/local-inference-with-large-language-models",
   "https://www.reuters.com/world/china/mistral-ceo-says-new-ai-model-beats-chinese-ones-some-areas-2026-10-06",
   "https://epoch.ai/publications/open-weight-models-patch-gap",
-  "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference"
+  "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference",
+  "https://arxiv.org/abs/2610.23656",
+  "https://arxiv.org/abs/2610.39287",
+  "https://arxiv.org/abs/2610.39264",
+  "https://arxiv.org/abs/2610.33645",
+  "https://github.com/spinfinc/spinf-serve",
+  "https://twitter.com/sundarpichai/status/2116214866444943853",
+  "https://huggingface.co/blog/nvidia/nemotron-halloween",
+  "https://openai.com/index/helping-websites-express-ai-training-preferences",
+  "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+  "https://openai.com/index/credit-saison",
+  "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+  "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw"
  ]
 }

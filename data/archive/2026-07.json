@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 3,
+ "count": 4,
  "articles": [
+  {
+   "title": "EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More",
+   "url": "https://newsletter.semianalysis.com/p/ectc2026",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-02T17:25:38",
+   "summary": "ECTC 2026 Roundup, Intel, TSMC, SK Hynix, Samsung, Micron, Marvell, Lightmatter, Microsoft",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-02T17:25:38",
+   "importance": 0.7,
+   "why": "Surveys advanced packaging, custom HBM, microfluidic cooling, and photonic interconnect roadmaps."
+  },
   {
    "title": "Mastering Agentic Techniques: AI Agent Reinforcement Learning",
    "url": "https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-reinforcement-learning",

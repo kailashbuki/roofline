@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-30T11:12:41Z",
- "previous_generated_at": "2026-10-29T21:33:50Z",
+ "generated_at": "2026-10-30T21:23:52Z",
+ "previous_generated_at": "2026-10-30T11:12:41Z",
  "hot_days": 120,
- "count": 2833,
- "total_collected": 3029,
+ "count": 2839,
+ "total_collected": 3036,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,29 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Was I wrong about open models & cyber risks?",
+   "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+   "source": "rss:Interconnects",
+   "published_date": "2026-10-30T17:36:56",
+   "summary": "Last week coined the term &#8220;Black October&#8220; after an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, signified the moment when the cyber risks of AI models started to materialize.",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-10-30T21:23:38",
+   "importance": 0.0
+  },
+  {
+   "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
+   "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-30T15:01:36",
+   "summary": "<img alt=\"Data center server racks with network cables connecting rack-mounted equipment.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/inline-image-1-e1793140900880-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"\" width=\"768\" />NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path...",
+   "tags": "systems,hardware,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-30T21:23:34",
+   "importance": 0.5,
+   "why": "It details configuration procedures for bypassing CPU bounce buffers via direct GPU-to-storage DMA channels."
+  },
   {
    "title": "Elucidating the Design Space of LM Data Attribution",
    "url": "https://arxiv.org/abs/2610.40655",
@@ -852,6 +875,30 @@
    "why": "It incorporates explicit moment constraints into distribution matching distillation to achieve fast text-to-image rendering with fewer evaluations."
   },
   {
+   "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+   "url": "https://arxiv.org/abs/2610.39302",
+   "source": "hf:papers",
+   "published_date": "2026-10-29T00:00:00",
+   "summary": "Joint-embedding predictive architectures trained on aligned multi-modal observations converge to shared representations with far greater efficiency than next-token prediction, demonstrating that positive view design—not scale alone—drives cross-modal alignment.\n\nKeywords: Platonic Representation Hypothesis, Joint-Embedding Predictive Architectures, JEPAs, positive pairs, good views, next-token prediction, scaling law of alignment, DINOv2, CLIP, text JEPA",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-30T21:22:57",
+   "importance": 0.75,
+   "why": "Demonstrates JEPAs achieve shared representations faster than next-token prediction via explicit view design instead of scale."
+  },
+  {
+   "title": "Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities",
+   "url": "https://arxiv.org/abs/2610.39301",
+   "source": "hf:papers",
+   "published_date": "2026-10-29T00:00:00",
+   "summary": "Youtu-Parsing-Omni is a unified multi-modal parser that encodes documents, images, audio, and video into structured spatiotemporal records using shared weights and cross-modal fusion, achieving state-of-the-art results across parsing benchmarks through a self-evolving on-policy distillation procedure.\n\nKeywords: omni-modal parser, shared weights, cross-modal fusion, temporal alignment, self-evolving post-training, on-policy distillation, token-level targets",
+   "tags": "multimodal,compression",
+   "area": "new-models",
+   "first_seen": "2026-10-30T21:22:57",
+   "importance": 0.6,
+   "why": "Unifies diverse modalities into a single encoder-decoder using an on-policy self-distillation procedure to improve parsing efficiency."
+  },
+  {
    "title": "GeForce vs Workstation GPUs: NVIDIA's Half Rate, Priced",
    "url": "https://www.airealist.ai/p/nvidia-geforce-half-rate",
    "source": "airealist",
@@ -933,6 +980,18 @@
    "first_seen": "2026-10-30T11:11:56",
    "importance": 0.5,
    "why": "It trains a compact policy to coordinate video editing tools and optimize token consumption during long-form video generation workflows."
+  },
+  {
+   "title": "Multi-Token Prediction Done Right",
+   "url": "https://arxiv.org/abs/2610.38331",
+   "source": "hf:papers",
+   "published_date": "2026-10-28T00:00:00",
+   "summary": "Soft-MTP removes a noisy gradient residual from multi-token prediction via a straight-through KL recovery trick, improving perplexity, speculative decoding, and reasoning without added cost.\n\nKeywords: Multi-Token Prediction, speculative decoding, cross-entropy gradient, KL self-distillation, straight-through gradient routing, Soft-MTP, next-token prediction",
+   "tags": "inference,llm,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-30T21:22:57",
+   "importance": 0.8,
+   "why": "Removes multi-token prediction gradient noise using a KL recovery trick, accelerating speculative decoding without compute overhead."
   },
   {
    "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
@@ -2567,6 +2626,18 @@
    "why": "Integrating statistical Wiener predictions into decoders accelerates pixel-space velocity model training."
   },
   {
+   "title": "Instruction Capacity: Behavior and Degradation of Language Models under Controlled Load",
+   "url": "https://arxiv.org/abs/2610.36095",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "Researchers developed a statistical instrument using atomic replacement rules to measure language model instruction capacity with quantified uncertainty, finding GPT-4o mini holds about 37-38 rules at 95% accuracy.\n\nKeywords: instruction capacity, Bernoulli trial, replacement density, load factors, instruction load, statistical model, reference answer, atomic instruction",
+   "tags": "llm,benchmarks",
+   "area": "new-models",
+   "first_seen": "2026-10-30T21:22:57",
+   "importance": 0.65,
+   "why": "Quantifies instruction degradation limits using atomic replacement rules, establishing exact capacity thresholds for LLMs."
+  },
+  {
    "title": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
    "url": "https://arxiv.org/abs/2610.36082",
    "source": "hf:papers",
@@ -3655,6 +3726,18 @@
    "first_seen": "2026-10-27T10:13:43",
    "importance": 0.7,
    "why": "Achieves global linear convergence on variational inequalities without monotonicity by utilizing a fixed-point fiber bundle."
+  },
+  {
+   "title": "OmniSpectra: A Unified Foundation Model for Universal Spectra Representation Learning",
+   "url": "https://arxiv.org/abs/2601.15351",
+   "source": "hf:papers",
+   "published_date": "2026-10-23T00:00:00",
+   "summary": "OmniSpectra is a wavelength-native spectral foundation model that uses continuous coordinates and physics-grounded decoders to learn cross-instrument representations without destructive resampling, achieving high performance with far fewer parameters.\n\nKeywords: masked autoencoder, continuous-coordinate, rotary position embeddings, Fourier decoder, anti-aliasing, cosmological redshift, cross-instrument representation learning, spectral representation learning",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-10-30T21:22:57",
+   "importance": 0.7,
+   "why": "Replaces destructive resampling with continuous-coordinate rotary embeddings and physics decoders for cross-instrument spectral data."
   },
   {
    "title": "Cerebras Deploys Trillion-Parameter AI Models",
@@ -33896,18 +33979,6 @@
    "area": "other",
    "first_seen": "2026-07-02T21:25:42",
    "importance": 0.0
-  },
-  {
-   "title": "EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More",
-   "url": "https://newsletter.semianalysis.com/p/ectc2026",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-07-02T17:25:38",
-   "summary": "ECTC 2026 Roundup, Intel, TSMC, SK Hynix, Samsung, Micron, Marvell, Lightmatter, Microsoft",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-02T17:25:38",
-   "importance": 0.7,
-   "why": "Surveys advanced packaging, custom HBM, microfluidic cooling, and photonic interconnect roadmaps."
   }
  ]
 }
