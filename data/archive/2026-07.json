@@ -1,7 +1,30 @@
 {
  "month": "2026-07",
- "count": 4,
+ "count": 6,
  "articles": [
+  {
+   "title": "Meta Compute: Everyone Wants To Be A Neocloud",
+   "url": "https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-02T22:18:08",
+   "summary": "Zuck Takes Plan B? SpaceX 2.0, Bedrock 2.0, MSL Isn't Giving Up, Scaling RecSys by 10x... ClusterMAX ranking coming soon?",
+   "tags": "hardware",
+   "area": "economics",
+   "first_seen": "2026-07-02T22:18:08",
+   "importance": 0.3,
+   "why": "Surveys emerging infrastructure scaling plans across major cloud providers."
+  },
+  {
+   "title": "Hardware-Rooted AI Security That Won’t Slow You Down",
+   "url": "https://developer.nvidia.com/blog/hardware-rooted-ai-security-that-wont-slow-you-down",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-02T21:25:42",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/02/cybersecurity-ai-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cybersecurity-ai-featured\" width=\"768\" />AI has transformed how organizations operate, driving unprecedented levels of productivity and innovation. However, AI adoption can be impeded by concerns...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-02T21:25:42",
+   "importance": 0.0
+  },
   {
    "title": "EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More",
    "url": "https://newsletter.semianalysis.com/p/ectc2026",

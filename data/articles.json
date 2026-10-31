@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-30T21:23:52Z",
- "previous_generated_at": "2026-10-30T11:12:41Z",
+ "generated_at": "2026-10-31T10:44:58Z",
+ "previous_generated_at": "2026-10-30T21:23:52Z",
  "hot_days": 120,
- "count": 2839,
- "total_collected": 3036,
+ "count": 2841,
+ "total_collected": 3040,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+   "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-10-30T21:35:31",
+   "summary": "<img alt=\"Glowing green AI network illustration in front of server racks.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/inline-image-1-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"\" width=\"768\" />Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference...",
+   "tags": "serving,systems,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-10-31T10:44:43",
+   "importance": 0.4,
+   "why": "Provides repeatable Kubernetes runtime deployment for NVIDIA Dynamo, streamlining scalable infrastructure setup for model inference."
+  },
+  {
+   "title": "Show HN: Optimized CUDA forced alignment kernels. 10x – 1000x faster",
+   "url": "https://github.com/brthor/fast-forced-aligner",
+   "source": "hackernews",
+   "published_date": "2026-10-30T21:06:35",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-10-31T10:44:30",
+   "importance": 0.5,
+   "why": "Custom CUDA alignment kernels eliminate memory overhead, achieving orders-of-magnitude speedups over naive implementations."
+  },
   {
    "title": "Was I wrong about open models & cyber risks?",
    "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
@@ -2889,6 +2913,18 @@
    "why": "Quantifies how serving setup and cache reuse dictate verified code success in open-weight models."
   },
   {
+   "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+   "url": "https://arxiv.org/abs/2610.34186",
+   "source": "hf:papers",
+   "published_date": "2026-10-25T00:00:00",
+   "summary": "HuGe pre-trains vision-language-action models on egocentric human and robot data with pseudo-proprioception and visual adaptation to enable whole-body humanoid control.\n\nKeywords: Vision-Language-Action models, VLAs, latent motion tokens, whole-body controller, pseudo-proprioceptive states, egocentric pre-training, humanoid adaptation, re-rendering",
+   "tags": "multimodal,training,architecture",
+   "area": "new-models",
+   "first_seen": "2026-10-31T10:44:12",
+   "importance": 0.6,
+   "why": "Scales VLA pre-training using pseudo-proprioception and egocentric data for humanoid control."
+  },
+  {
    "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
    "url": "https://arxiv.org/abs/2610.34073",
    "source": "hf:papers",
@@ -2899,6 +2935,18 @@
    "first_seen": "2026-10-28T10:59:41",
    "importance": 0.5,
    "why": "Quantifies the computational overhead of dedicated memory systems relative to naive RAG, establishing a net value evaluation framework."
+  },
+  {
+   "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
+   "url": "https://arxiv.org/abs/2609.05881",
+   "source": "hf:papers",
+   "published_date": "2026-10-25T00:00:00",
+   "summary": "Quantized small language model files in public registries can be non-functional due to uncalibrated quantization recipes, and screening plus calibration is recommended before release.\n\nKeywords: quantized large language models, GGUF, llama.cpp, Ollama, Hugging Face, HumanEval+, low-bit quantization, importance matrix, Qwen2.5-Coder, tensor",
+   "tags": "quantization,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-10-31T10:44:12",
+   "importance": 0.5,
+   "why": "Introduces systematic screening to catch broken GGUF quantization artifacts in registries."
   },
   {
    "title": "“Performance” Oryon: Qualcomm’s Little Core",
@@ -33956,29 +34004,6 @@
    "first_seen": "2026-07-03T21:06:11",
    "importance": 0.5,
    "why": "Presents a lightweight LLM inference server written in Zig specifically for Apple Silicon."
-  },
-  {
-   "title": "Meta Compute: Everyone Wants To Be A Neocloud",
-   "url": "https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-07-02T22:18:08",
-   "summary": "Zuck Takes Plan B? SpaceX 2.0, Bedrock 2.0, MSL Isn't Giving Up, Scaling RecSys by 10x... ClusterMAX ranking coming soon?",
-   "tags": "hardware",
-   "area": "economics",
-   "first_seen": "2026-07-02T22:18:08",
-   "importance": 0.3,
-   "why": "Surveys emerging infrastructure scaling plans across major cloud providers."
-  },
-  {
-   "title": "Hardware-Rooted AI Security That Won’t Slow You Down",
-   "url": "https://developer.nvidia.com/blog/hardware-rooted-ai-security-that-wont-slow-you-down",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-02T21:25:42",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/02/cybersecurity-ai-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cybersecurity-ai-featured\" width=\"768\" />AI has transformed how organizations operate, driving unprecedented levels of productivity and innovation. However, AI adoption can be impeded by concerns...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-02T21:25:42",
-   "importance": 0.0
   }
  ]
 }

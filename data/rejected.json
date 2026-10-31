@@ -1,5 +1,5 @@
 {
- "count": 2621,
+ "count": 2626,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2621,6 +2621,11 @@
   "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
   "https://openai.com/index/credit-saison",
   "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
-  "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw"
+  "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
+  "https://arxiv.org/abs/2610.34298",
+  "https://arxiv.org/abs/2610.33245",
+  "https://arxiv.org/abs/2610.29003",
+  "https://openai.com/index/fair-use-benefits-everyone",
+  "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c"
  ]
 }
