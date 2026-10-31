@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-31T15:58:03Z",
- "previous_generated_at": "2026-10-31T10:44:58Z",
+ "generated_at": "2026-10-31T20:24:31Z",
+ "previous_generated_at": "2026-10-31T15:58:03Z",
  "hot_days": 120,
- "count": 2841,
- "total_collected": 3040,
+ "count": 2843,
+ "total_collected": 3042,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "GAAC: Lossless KV Cache Compression for Faster LLM Inference",
+   "url": "https://arxiv.org/abs/2610.38210",
+   "source": "hackernews",
+   "published_date": "2026-10-31T15:34:12",
+   "summary": "2 points, 2 comments on HackerNews",
+   "tags": "inference,compression,attention",
+   "area": "inference-methods",
+   "first_seen": "2026-10-31T20:24:03",
+   "importance": 0.65,
+   "why": "It compresses the KV cache losslessly to accelerate autoregressive text generation."
+  },
   {
    "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
    "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
@@ -1016,6 +1028,18 @@
    "first_seen": "2026-10-30T21:22:57",
    "importance": 0.8,
    "why": "Removes multi-token prediction gradient noise using a KL recovery trick, accelerating speculative decoding without compute overhead."
+  },
+  {
+   "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
+   "url": "https://arxiv.org/abs/2610.38174",
+   "source": "hf:papers",
+   "published_date": "2026-10-28T00:00:00",
+   "summary": "EasyProver is a Lean proving system using recursive agents and asynchronous search that solves nearly all Putnam and IMO benchmark problems, while Aegis generates harder verification tasks from competitive programming to benchmark provers and support reinforcement learning.\n\nKeywords: reinforcement learning",
+   "tags": "training,optimization,llm",
+   "area": "training",
+   "first_seen": "2026-10-31T20:23:49",
+   "importance": 0.75,
+   "why": "Employs recursive agents and asynchronous search in Lean to solve complex Putnam and IMO verification tasks."
   },
   {
    "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
