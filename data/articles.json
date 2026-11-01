@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-01T11:42:18Z",
- "previous_generated_at": "2026-10-31T20:24:31Z",
+ "generated_at": "2026-11-01T20:58:26Z",
+ "previous_generated_at": "2026-11-01T11:42:18Z",
  "hot_days": 120,
- "count": 2840,
- "total_collected": 3042,
+ "count": 2842,
+ "total_collected": 3045,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Heretic 2.0 Released: Training-free language model modification",
+   "url": "https://news.ycombinator.com/item?id=50328567",
+   "source": "hackernews",
+   "published_date": "2026-11-01T19:01:42",
+   "summary": "6 points, 0 comments on HackerNews",
+   "tags": "post-training,inference,optimization",
+   "area": "new-models",
+   "first_seen": "2026-11-01T20:57:57",
+   "importance": 0.6,
+   "why": "Manipulates internal weight activation vectors post-hoc to steer generation without fine-tuning or gradient steps."
+  },
+  {
+   "title": "The Datacenter Backlash Goes Bipartisan: Next Week's Midterms and the 2028 Buildout",
+   "url": "https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-11-01T18:40:45",
+   "summary": "2027 is largely locked in. 2028 is less secure: a prolonged Texas permit freeze is now the biggest single risk to the US buildout, and both parties are running on tighter rules",
+   "tags": "systems,hardware",
+   "area": "economics",
+   "first_seen": "2026-11-01T20:58:04",
+   "importance": 0.5,
+   "why": "Permit freezes and bipartisan resistance threaten the physical capacity scaling required for future datacenter buildouts."
+  },
+  {
+   "title": "Mistral Large 4 Weights: The Score Comes With the Harness",
+   "url": "https://www.airealist.ai/p/mistral-large-4-weights-score-comes-with-harness",
+   "source": "airealist",
+   "published_date": "2026-11-01T13:55:21",
+   "summary": "Mistral Large 4's weights landed October 29th, 2026. Its Terminal-Bench 41 comes from Mistral's own coding agent; in a generic agent it scores 25.",
+   "tags": "llm,benchmarks",
+   "area": "new-models",
+   "first_seen": "2026-11-01T20:58:24",
+   "importance": 0.4,
+   "why": "Releasing open-weight model weights reveals a 40 percent benchmark drop when decoupled from specific coding harness agents."
+  },
   {
    "title": "GAAC: Lossless KV Cache Compression for Faster LLM Inference",
    "url": "https://arxiv.org/abs/2610.38210",
@@ -33980,18 +34016,6 @@
    "area": "other",
    "first_seen": "2026-07-05T15:29:00",
    "importance": 0.0
-  },
-  {
-   "title": "AMD pivots from HBM to LPDDR5X for new Versal Gen 2 memory on package chips",
-   "url": "https://www.servethehome.com/amd-pivots-from-hbm-to-lpddr5x-for-new-versal-premium-gen-2-memory-on-package-chips",
-   "source": "hackernews",
-   "published_date": "2026-07-04T19:11:02",
-   "summary": "6 points, 4 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-04T19:11:02",
-   "importance": 0.5,
-   "why": "Details AMD's memory architecture pivot from HBM to LPDDR5X for Versal chips."
   }
  ]
 }

@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 9,
+ "count": 10,
  "articles": [
+  {
+   "title": "AMD pivots from HBM to LPDDR5X for new Versal Gen 2 memory on package chips",
+   "url": "https://www.servethehome.com/amd-pivots-from-hbm-to-lpddr5x-for-new-versal-premium-gen-2-memory-on-package-chips",
+   "source": "hackernews",
+   "published_date": "2026-07-04T19:11:02",
+   "summary": "6 points, 4 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-04T19:11:02",
+   "importance": 0.5,
+   "why": "Details AMD's memory architecture pivot from HBM to LPDDR5X for Versal chips."
+  },
   {
    "title": "The Backstop Has a Name Now - part 1",
    "url": "https://www.airealist.ai/p/the-backstop-has-a-name-now-part",
