@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-31T20:24:31Z",
- "previous_generated_at": "2026-10-31T15:58:03Z",
+ "generated_at": "2026-11-01T11:42:18Z",
+ "previous_generated_at": "2026-10-31T20:24:31Z",
  "hot_days": 120,
- "count": 2843,
+ "count": 2840,
  "total_collected": 3042,
  "sources": [
   "airealist",
@@ -33992,42 +33992,6 @@
    "first_seen": "2026-07-04T19:11:02",
    "importance": 0.5,
    "why": "Details AMD's memory architecture pivot from HBM to LPDDR5X for Versal chips."
-  },
-  {
-   "title": "The Backstop Has a Name Now - part 1",
-   "url": "https://www.airealist.ai/p/the-backstop-has-a-name-now-part",
-   "source": "airealist",
-   "published_date": "2026-07-04T06:09:31",
-   "summary": "Nvidia is handing back tens of billions to shareholders. Now it&#8217;s offering to finance the customers who can&#8217;t afford its chips.",
-   "tags": "hardware",
-   "area": "economics",
-   "first_seen": "2026-07-04T06:09:31",
-   "importance": 0.35,
-   "why": "Analyzes manufacturer-led customer financing mechanisms bypassing traditional capital markets."
-  },
-  {
-   "title": "EdgeBench: Unveiling Scaling Laws of Learning from Real-World Environments [pdf]",
-   "url": "https://edge-bench.org/paper.pdf",
-   "source": "hackernews",
-   "published_date": "2026-07-04T01:02:57",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "training,benchmarks",
-   "area": "training",
-   "first_seen": "2026-07-04T01:02:57",
-   "importance": 0.5,
-   "why": "Quantifies empirical scaling behaviors for agents learning directly from physical environment interactions."
-  },
-  {
-   "title": "Show HN: Mlx-serve – LLM inference server for Apple Silicon, written in Zig",
-   "url": "https://mlxserve.com/",
-   "source": "hackernews",
-   "published_date": "2026-07-03T21:06:11",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "inference,serving",
-   "area": "inference-engines",
-   "first_seen": "2026-07-03T21:06:11",
-   "importance": 0.5,
-   "why": "Presents a lightweight LLM inference server written in Zig specifically for Apple Silicon."
   }
  ]
 }
