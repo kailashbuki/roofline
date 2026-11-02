@@ -1,5 +1,5 @@
 {
- "count": 2689,
+ "count": 2701,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2689,6 +2689,18 @@
   "https://github.com/NVIDIA/spark-local-inference",
   "https://twitter.com/wallstengine/status/2115933466361753652",
   "https://pbb.sh/research/Agentic-Backdoor",
-  "https://www.anthropic.com/research/agents-judgment-calls"
+  "https://www.anthropic.com/research/agents-judgment-calls",
+  "https://arxiv.org/abs/2610.36384",
+  "https://arxiv.org/abs/2610.37919",
+  "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
+  "https://pytorch.org/blog/announcing-the-special-interest-group-sig-for-ray-on-accelerators",
+  "https://openai.com/index/lifeval",
+  "https://openai.com/index/qodo-codex-plugin",
+  "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
+  "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
+  "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
+  "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
+  "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora",
+  "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora"
  ]
 }

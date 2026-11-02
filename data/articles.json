@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-02T13:09:20Z",
- "previous_generated_at": "2026-11-01T20:58:26Z",
+ "generated_at": "2026-11-02T23:48:22Z",
+ "previous_generated_at": "2026-11-02T13:09:20Z",
  "hot_days": 120,
- "count": 2915,
- "total_collected": 3118,
+ "count": 2921,
+ "total_collected": 3126,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,42 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Accelerating Attention for Ultra-Long Context",
+   "url": "https://prefrontal.ai/news/lsa",
+   "source": "hackernews",
+   "published_date": "2026-11-02T19:31:19",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,attention,compression",
+   "area": "architecture",
+   "first_seen": "2026-11-02T23:47:49",
+   "importance": 0.6,
+   "why": "Approximates full-context softmax calculations via state-space memory compression to reduce memory footprints."
+  },
+  {
+   "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+   "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-02T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/cosmos-framework-tech-blog-600x338-5784057.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cosmos-framework-tech-blog-600x338-5784057\" width=\"600\" />Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into...",
+   "tags": "multimodal,architecture",
+   "area": "new-models",
+   "first_seen": "2026-11-02T23:48:06",
+   "importance": 0.4,
+   "why": "Introduces generative physical simulation architectures combining video tokenization with action-conditioned world modeling for robotics."
+  },
+  {
+   "title": "Introducing the Grid Protectors Program",
+   "url": "https://openai.com/index/grid-protectors-program",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-11-02T15:00:00",
+   "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+   "tags": "systems,hardware",
+   "area": "economics",
+   "first_seen": "2026-11-02T23:47:56",
+   "importance": 0.75,
+   "why": "OpenAI partners with utilities to manage compute campus electrical loads and grid capacity constraints."
+  },
   {
    "title": "Documenting an undocumented chip: the TensorCore of TPU v5e",
    "url": "https://gherkinlabs.com/v5e-tensorcore-instructions",
@@ -1582,6 +1618,18 @@
    "why": "Instantiates five distinct self-conceptions into open-weight models to study how weight references alter model behavior and checkpoint deletion impact."
   },
   {
+   "title": "VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step",
+   "url": "https://arxiv.org/abs/2610.40727",
+   "source": "hf:papers",
+   "published_date": "2026-10-29T10:16:03",
+   "summary": "A fine-tuned causal target-speaker extraction model achieves near-commercial speech recognition accuracy on real recordings with low CPU usage and latency.\n\nKeywords: causal target-speaker extraction, REAL-TSE, VoxLock, WER, 8-bit model, algorithmic latency",
+   "tags": "inference,quantization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-02T23:47:33",
+   "importance": 0.5,
+   "why": "Removes the speaker enrollment step via causal target-speaker extraction using an 8-bit quantized low-latency model."
+  },
+  {
    "title": "Implicit Bias of (Stochastic) Gradient Descent on Deep Linear Diagonal Networks",
    "url": "https://arxiv.org/abs/2610.39717",
    "source": "arxiv",
@@ -2661,6 +2709,18 @@
    "why": "Automates hardware failure recovery using targeted Xid code remediation, reducing cluster downtime during large-scale distributed runs."
   },
   {
+   "title": "Think Twice: The Metis-1.6 Technical Report",
+   "url": "https://arxiv.org/abs/2610.37903",
+   "source": "hf:papers",
+   "published_date": "2026-10-27T00:00:00",
+   "summary": "Metis-1.6 introduces small, efficient mixture-of-experts language models trained with limited data that achieve competitive math performance and Pareto-optimal efficiency despite training errors and architectural issues.\n\nKeywords: mixture-of-experts, Mamba-2, attention, context extension, supervised fine-tuning, AIME, MoRE, Mixture of Recursive Experts, group-mean normalization",
+   "tags": "architecture,llm,attention",
+   "area": "architecture",
+   "first_seen": "2026-11-02T23:47:33",
+   "importance": 0.6,
+   "why": "Combines Mamba-2 and mixture-of-experts architectures with group-mean normalization to achieve Pareto-optimal efficiency."
+  },
+  {
    "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
    "url": "https://arxiv.org/abs/2610.37666",
    "source": "hf:papers",
@@ -2683,6 +2743,18 @@
    "first_seen": "2026-10-28T10:59:41",
    "importance": 0.6,
    "why": "Parallel codebooks on complementary feature views eliminate traditional quantization error, allowing discrete visual tokens to match continuous multimodal representations."
+  },
+  {
+   "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
+   "url": "https://arxiv.org/abs/2610.37626",
+   "source": "hf:papers",
+   "published_date": "2026-10-27T00:00:00",
+   "summary": "A hybrid paradigm combining autoregressive pretraining for semantics and diffusion post-training for rendering achieves efficient, high-quality text-to-image generation with favorable scaling laws.\n\nKeywords: autoregressive pretraining, diffusion post-training, semantic tokenizer, language supervision, compute-optimal scaling laws, text-to-image model, GenEval, DPG-Bench",
+   "tags": "architecture,training,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-11-02T23:47:33",
+   "importance": 0.7,
+   "why": "Replaces pure diffusion generation with autoregressive semantic pretraining followed by diffusion post-training under compute-optimal scaling laws."
   },
   {
    "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
@@ -2779,6 +2851,18 @@
    "first_seen": "2026-10-28T10:59:41",
    "importance": 0.72,
    "why": "Combines discrete diffusion language models with cross-paradigm on-policy distillation for unified vision."
+  },
+  {
+   "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+   "url": "https://arxiv.org/abs/2509.05512",
+   "source": "hf:papers",
+   "published_date": "2026-10-27T00:00:00",
+   "summary": "QUAN is a quaternion-based deep learning framework that approximates quaternion convolution with real-valued operations to achieve rotation-equivariant image classification and object detection with improved efficiency.\n\nKeywords: quaternion algebra, rotation equivariant, quaternion convolution, Hamilton product decomposition, Independent Quaternion Batch Normalization, spatial attention, quaternion neural networks, Convolutional Neural Networks",
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-02T23:47:33",
+   "importance": 0.5,
+   "why": "Approximates heavy quaternion convolutions via real-valued Hamilton product decompositions to lower computational overhead."
   },
   {
    "title": "Flint is an open-weight mixture-of-experts model from Recursive",
@@ -3607,6 +3691,18 @@
    "first_seen": "2026-10-28T10:59:41",
    "importance": 0.6,
    "why": "Adaptive geometric verification combined with multi-scale depth codecs improves spatial reasoning without scaling parameter counts."
+  },
+  {
+   "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
+   "url": "https://arxiv.org/abs/2610.35850",
+   "source": "hf:papers",
+   "published_date": "2026-10-26T00:00:00",
+   "summary": "OSWAM enables real-time, high-quality action generation in autonomous driving and embodied control by initializing diffusion with structured imagination tokens and distilling future-conditioned privileged information into a single denoising step.\n\nKeywords: direct-policy World Action Models, diffusion, denoising steps, imagination tokens, privileged information distillation, future conditioning, OSWAM",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-02T23:47:33",
+   "importance": 0.7,
+   "why": "Distills future-conditioned privileged information into a single diffusion step using structured imagination tokens for real-time control."
   },
   {
    "title": "MatAnyone-E: Sparse Memory Propagation for Efficient High-Resolution Video Matting",
@@ -34867,29 +34963,6 @@
    "tags": "",
    "area": "other",
    "first_seen": "2026-07-06T06:03:45",
-   "importance": 0.0
-  },
-  {
-   "title": "AKM-CLR – pre-inference governance for vLLM-style LLM serving",
-   "url": "https://github.com/irenee28/akm-clr-governance-layer",
-   "source": "hackernews",
-   "published_date": "2026-07-05T21:58:11",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,serving",
-   "area": "inference-engines",
-   "first_seen": "2026-07-05T21:58:11",
-   "importance": 0.6,
-   "why": "Proposes pre-inference governance mechanisms for vLLM-style serving engines."
-  },
-  {
-   "title": "Lean Software Scaling Laws",
-   "url": "https://gwern.net/lean-scaling",
-   "source": "hackernews",
-   "published_date": "2026-07-05T15:29:00",
-   "summary": "28 points, 0 comments on HackerNews",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-05T15:29:00",
    "importance": 0.0
   }
  ]

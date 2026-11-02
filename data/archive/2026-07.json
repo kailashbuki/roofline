@@ -1,7 +1,30 @@
 {
  "month": "2026-07",
- "count": 10,
+ "count": 12,
  "articles": [
+  {
+   "title": "AKM-CLR – pre-inference governance for vLLM-style LLM serving",
+   "url": "https://github.com/irenee28/akm-clr-governance-layer",
+   "source": "hackernews",
+   "published_date": "2026-07-05T21:58:11",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-07-05T21:58:11",
+   "importance": 0.6,
+   "why": "Proposes pre-inference governance mechanisms for vLLM-style serving engines."
+  },
+  {
+   "title": "Lean Software Scaling Laws",
+   "url": "https://gwern.net/lean-scaling",
+   "source": "hackernews",
+   "published_date": "2026-07-05T15:29:00",
+   "summary": "28 points, 0 comments on HackerNews",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-05T15:29:00",
+   "importance": 0.0
+  },
   {
    "title": "AMD pivots from HBM to LPDDR5X for new Versal Gen 2 memory on package chips",
    "url": "https://www.servethehome.com/amd-pivots-from-hbm-to-lpddr5x-for-new-versal-premium-gen-2-memory-on-package-chips",
