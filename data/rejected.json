@@ -1,5 +1,5 @@
 {
- "count": 2768,
+ "count": 2786,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2768,6 +2768,24 @@
   "https://openai.com/index/scaling-git-at-openai",
   "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
   "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-  "https://openai.com/index/dan-driscoll-joins-openai"
+  "https://openai.com/index/dan-driscoll-joins-openai",
+  "https://arxiv.org/abs/2611.03424",
+  "https://arxiv.org/abs/2611.03097",
+  "https://arxiv.org/abs/2610.38623",
+  "https://arxiv.org/abs/2610.35219",
+  "https://arxiv.org/abs/2610.39639",
+  "https://arxiv.org/abs/2611.02332",
+  "https://arxiv.org/abs/2611.01460",
+  "https://arxiv.org/abs/2611.03219",
+  "https://arxiv.org/abs/2611.02928",
+  "https://arxiv.org/abs/2610.40488",
+  "https://superlinked.com/",
+  "https://huggingface.co/blog/allenai/statebench",
+  "https://huggingface.co/blog/ibm-research/palette-deck-building",
+  "https://huggingface.co/blog/cwe-bench",
+  "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+  "https://openai.com/index/cisco-cyber",
+  "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+  "https://openai.com/ads/customers/evernote"
  ]
 }

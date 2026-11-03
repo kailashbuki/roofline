@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-03T12:39:18Z",
- "previous_generated_at": "2026-11-02T23:48:22Z",
+ "generated_at": "2026-11-03T22:14:13Z",
+ "previous_generated_at": "2026-11-03T12:39:18Z",
  "hot_days": 120,
- "count": 2983,
- "total_collected": 3191,
+ "count": 2987,
+ "total_collected": 3199,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,41 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Revolut swaps Claude for GLM open-weight model, cutting AI coding bill by 90%",
+   "url": "https://dealroom.co/news/169124-revolut-swaps-claude-code-for-a-chinese-open-weight-model-cutting-its-ai",
+   "source": "hackernews",
+   "published_date": "2026-11-03T20:57:15",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-11-03T22:12:43",
+   "importance": 0.5,
+   "why": "Documents a 90% cost reduction by migrating production workloads to open-weight models."
+  },
+  {
+   "title": "Elon Is Doing It Again: SpaceX Will Be The World’s Biggest AI Cloud",
+   "url": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-11-03T20:44:53",
+   "summary": "Making 13GW in 1.5 Years A Reality, Repurposing Rocket Ship Campuses, A Datacenter at TeraFab?",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-11-03T22:13:32",
+   "importance": 0.0
+  },
+  {
+   "title": "Revolut Cuts A.I. Coding Costs 90% with a Chinese Open-Weight Model",
+   "url": "https://www.trendingtopics.eu/revolut-glm-open-weight-coding-costs",
+   "source": "hackernews",
+   "published_date": "2026-11-03T17:03:36",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-11-03T22:12:43",
+   "importance": 0.5,
+   "why": "Reports enterprise inference cost reduction achieved through open-weight model substitution."
+  },
   {
    "title": "Progress on provable inference for large language models",
    "url": "https://www.anthropic.com/research/provable-inference",
@@ -753,6 +788,18 @@
    "first_seen": "2026-11-03T12:38:29",
    "importance": 0.4,
    "why": "It tests frozen representations to prove latent errors track surface motion over true physical surprise."
+  },
+  {
+   "title": "Order-Only On-Policy Distillation",
+   "url": "https://arxiv.org/abs/2611.02112",
+   "source": "hf:papers",
+   "published_date": "2026-11-01T00:00:00",
+   "summary": "Order-only on-policy distillation trains students to match teacher token rankings rather than probabilities, improving reasoning performance without temperature tuning.\n\nKeywords: on-policy distillation, token probabilities, teacher temperature, Order-Only On-Policy Distillation, ranking losses, ordinal supervision",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-11-03T22:12:29",
+   "importance": 0.65,
+   "why": "Replaces probability matching with ordinal token rankings during on-policy distillation, avoiding temperature tuning while boosting reasoning."
   },
   {
    "title": "NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale",
@@ -2683,6 +2730,18 @@
    "first_seen": "2026-11-02T13:08:33",
    "importance": 0.7,
    "why": "Contrasts reasoning models with quantized variants to generate self-distillation signals without privileged data."
+  },
+  {
+   "title": "On-Policy Self-Distillation with Teacher Evolution",
+   "url": "https://arxiv.org/abs/2610.38637",
+   "source": "hf:papers",
+   "published_date": "2026-10-28T00:00:00",
+   "summary": "Teacher-Evolution Self-Distillation improves on-policy self-distillation by continuously enhancing self-teaching reliability through reward-guided teacher optimization and adaptive down-weighting of unreliable samples.\n\nKeywords: On-Policy Self-Distillation, self-teacher, privileged context, reward sparsity, sequence-level post-training, Teacher-Evolution Self-Distillation, rollouts, environmental feedback, teacher-oriented optimization, adaptive student-oriented optimization",
+   "tags": "training,post-training,llm",
+   "area": "training",
+   "first_seen": "2026-11-03T22:12:29",
+   "importance": 0.6,
+   "why": "Optimizes on-policy self-distillation via reward-guided teacher optimization and adaptive down-weighting of unreliable rollout samples."
   },
   {
    "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
@@ -5477,6 +5536,18 @@
    "first_seen": "2026-10-27T10:13:43",
    "importance": 0.6,
    "why": "Uses a frozen whole-body controller coupled with a compact target-predicting planner trained via single-GPU reinforcement learning."
+  },
+  {
+   "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+   "url": "https://arxiv.org/abs/2610.32878",
+   "source": "hf:papers",
+   "published_date": "2026-10-23T00:00:00",
+   "summary": "Layer-wise error modeling and token-wise Fisher statistics improve low-rank SVD compression of large language models by refining rank allocation and decomposition quality.\n\nKeywords: low-rank SVD, LLM compression, layer-wise error modeling, KFAC-SVD, Fisher-based estimators, rank collapse, ILP formulation, token-wise statistics",
+   "tags": "compression,quantization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-03T22:12:29",
+   "importance": 0.55,
+   "why": "Combines layer-wise error models with token-wise Fisher statistics to resolve rank collapse in SVD-based LLM compression."
   },
   {
    "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
@@ -8332,6 +8403,18 @@
    "first_seen": "2026-11-03T12:38:29",
    "importance": 0.5,
    "why": "It formalizes transition-consistent recovery using model-based action replay to fix computer-use agent errors."
+  },
+  {
+   "title": "ProVe: Proposer-Verifier Decoding",
+   "url": "https://arxiv.org/abs/2610.27815",
+   "source": "hf:papers",
+   "published_date": "2026-10-20T00:00:00",
+   "summary": "ProVe reverses speculative decoding roles by fine-tuning a large model to propose token blocks and verifying them with a smaller or identical model, achieving faster autoregressive generation with adjustable speed-accuracy tradeoffs.\n\nKeywords: speculative decoding, autoregressive language models, proposer, verifier, ProVe, block proposal, greedy AR decoding, throughput",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-03T22:12:29",
+   "importance": 0.7,
+   "why": "Reverses speculative decoding by fine-tuning large models to propose blocks verified by smaller models, accelerating generation."
   },
   {
    "title": "RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting",
@@ -13957,6 +14040,18 @@
    "first_seen": "2026-10-14T09:56:25",
    "importance": 0.65,
    "why": "Applies dense utility rewards within reinforcement learning to improve long-context reasoning capabilities in large language models."
+  },
+  {
+   "title": "SIMIT: Self-Improving Vision-Language Models via Imagination at Test-Time",
+   "url": "https://arxiv.org/abs/2611.00053",
+   "source": "hf:papers",
+   "published_date": "2026-10-11T00:00:00",
+   "summary": "SIMIT is a test-time framework that lets vision-language models generate their own practice data to improve answers on unlabeled queries without external annotations.\n\nKeywords: vision-language model, self-improvement, multimodal, image generation, in-context learning, fine-tuning, verification, adaptive budgeting",
+   "tags": "inference,multimodal,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-03T22:12:29",
+   "importance": 0.6,
+   "why": "Applies test-time self-generated practice data and adaptive budgeting to improve vision-language model answers without annotations."
   },
   {
    "title": "Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping",
@@ -35661,54 +35756,6 @@
    "first_seen": "2026-07-07T00:17:46",
    "importance": 0.5,
    "why": "A novel compression technique specifically targets efficient deployment of large Mixture-of-Experts models."
-  },
-  {
-   "title": "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity: Capital, Offtake and Datacenters",
-   "url": "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-07-06T21:53:44",
-   "summary": "Over 7T AI debt by 2029, There can be no Neoclouds without the Trinity. Nvidia's Backstop Economics Explained. AI Debt Needs Quantified. Nvidia's Objective is to Broaden Compute Access, Develop AI Financing, Grow Neoclouds.",
-   "tags": "hardware,systems",
-   "area": "economics",
-   "first_seen": "2026-07-06T21:53:44",
-   "importance": 0.7,
-   "why": "Details debt-backed project financing models and off-take agreements sustaining multi-gigawatt datacenter expansion."
-  },
-  {
-   "title": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
-   "url": "https://developer.nvidia.com/blog/enhancing-goodput-in-large-scale-llm-training-with-nonuniform-tensor-parallelism",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-06T21:44:23",
-   "summary": "<img alt=\"Deocrative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/ai-data-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-data\" width=\"768\" />Training LLMs at massive scale brings unique infrastructure challenges, especially as jobs span thousands of GPUs and run for extended periods. The longer these...",
-   "tags": "training,systems",
-   "area": "training",
-   "first_seen": "2026-07-06T21:44:23",
-   "importance": 0.7,
-   "why": "Introduces nonuniform tensor parallelism to improve training goodput across massive GPU clusters."
-  },
-  {
-   "title": "Pruning RAG context down to what the answer actually needs",
-   "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
-   "source": "hackernews",
-   "published_date": "2026-07-06T19:28:24",
-   "summary": "146 points, 40 comments on HackerNews",
-   "tags": "inference,optimization,llm",
-   "area": "inference-methods",
-   "first_seen": "2026-07-06T19:28:24",
-   "importance": 0.6,
-   "why": "Improves RAG efficiency by dynamically pruning irrelevant context prior to LLM generation."
-  },
-  {
-   "title": "Huawei's next smartphone chip taps new scaling law for performance boost: paper",
-   "url": "https://www.scmp.com/tech/article/3359592/huaweis-next-smartphone-chip-taps-new-scaling-law-performance-boost-paper",
-   "source": "hackernews",
-   "published_date": "2026-07-06T13:15:20",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware,optimization",
-   "area": "silicon",
-   "first_seen": "2026-07-06T13:15:20",
-   "importance": 0.6,
-   "why": "Introduces empirical scaling relationships for alternative mobile accelerator architectures."
   }
  ]
 }

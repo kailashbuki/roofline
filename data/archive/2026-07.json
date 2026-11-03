@@ -1,7 +1,55 @@
 {
  "month": "2026-07",
- "count": 15,
+ "count": 19,
  "articles": [
+  {
+   "title": "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity: Capital, Offtake and Datacenters",
+   "url": "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-06T21:53:44",
+   "summary": "Over 7T AI debt by 2029, There can be no Neoclouds without the Trinity. Nvidia's Backstop Economics Explained. AI Debt Needs Quantified. Nvidia's Objective is to Broaden Compute Access, Develop AI Financing, Grow Neoclouds.",
+   "tags": "hardware,systems",
+   "area": "economics",
+   "first_seen": "2026-07-06T21:53:44",
+   "importance": 0.7,
+   "why": "Details debt-backed project financing models and off-take agreements sustaining multi-gigawatt datacenter expansion."
+  },
+  {
+   "title": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
+   "url": "https://developer.nvidia.com/blog/enhancing-goodput-in-large-scale-llm-training-with-nonuniform-tensor-parallelism",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-06T21:44:23",
+   "summary": "<img alt=\"Deocrative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/ai-data-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-data\" width=\"768\" />Training LLMs at massive scale brings unique infrastructure challenges, especially as jobs span thousands of GPUs and run for extended periods. The longer these...",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-07-06T21:44:23",
+   "importance": 0.7,
+   "why": "Introduces nonuniform tensor parallelism to improve training goodput across massive GPU clusters."
+  },
+  {
+   "title": "Pruning RAG context down to what the answer actually needs",
+   "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+   "source": "hackernews",
+   "published_date": "2026-07-06T19:28:24",
+   "summary": "146 points, 40 comments on HackerNews",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-07-06T19:28:24",
+   "importance": 0.6,
+   "why": "Improves RAG efficiency by dynamically pruning irrelevant context prior to LLM generation."
+  },
+  {
+   "title": "Huawei's next smartphone chip taps new scaling law for performance boost: paper",
+   "url": "https://www.scmp.com/tech/article/3359592/huaweis-next-smartphone-chip-taps-new-scaling-law-performance-boost-paper",
+   "source": "hackernews",
+   "published_date": "2026-07-06T13:15:20",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,optimization",
+   "area": "silicon",
+   "first_seen": "2026-07-06T13:15:20",
+   "importance": 0.6,
+   "why": "Introduces empirical scaling relationships for alternative mobile accelerator architectures."
+  },
   {
    "title": "The Backstop Has a Name Now - part 2",
    "url": "https://www.airealist.ai/p/the-backstop-has-a-name-now-part-11d",
