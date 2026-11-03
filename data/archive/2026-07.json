@@ -1,7 +1,42 @@
 {
  "month": "2026-07",
- "count": 12,
+ "count": 15,
  "articles": [
+  {
+   "title": "The Backstop Has a Name Now - part 2",
+   "url": "https://www.airealist.ai/p/the-backstop-has-a-name-now-part-11d",
+   "source": "airealist",
+   "published_date": "2026-07-06T09:05:17",
+   "summary": "How Nvidia finances a cloud tells you what it thinks the cloud is worth. CoreWeave and Nebius got equity. Sharon AI got a revenue-share.",
+   "tags": "hardware",
+   "area": "economics",
+   "first_seen": "2026-07-06T09:05:17",
+   "importance": 0.35,
+   "why": "Examines vendor-backed cloud financing structures affecting capital allocation and hardware accessibility across operators."
+  },
+  {
+   "title": "EdgeBench: Unveiling scaling laws of (AI) learning from real-world environments",
+   "url": "https://github.com/ByteDance-Seed/EdgeBench",
+   "source": "hackernews",
+   "published_date": "2026-07-06T06:31:39",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,benchmarks",
+   "area": "training",
+   "first_seen": "2026-07-06T06:31:39",
+   "importance": 0.5,
+   "why": "Analyzes scaling laws specifically for learning agents embedded in real-world environments."
+  },
+  {
+   "title": "China's ByteDance discovers new scaling law that could sustain AI boom",
+   "url": "https://www.scmp.com/tech/big-tech/article/3359373/chinas-bytedance-discovers-new-scaling-law-could-sustain-ai-boom",
+   "source": "hackernews",
+   "published_date": "2026-07-06T06:03:45",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-06T06:03:45",
+   "importance": 0.0
+  },
   {
    "title": "AKM-CLR – pre-inference governance for vLLM-style LLM serving",
    "url": "https://github.com/irenee28/akm-clr-governance-layer",
