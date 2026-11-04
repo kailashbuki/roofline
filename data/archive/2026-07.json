@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 19,
+ "count": 20,
  "articles": [
+  {
+   "title": "PuzzleMoE: Efficient Compression of Large Mixture-of-Experts Models",
+   "url": "https://supercomputing-system-ai-lab.github.io/projects/puzzlemoe",
+   "source": "hackernews",
+   "published_date": "2026-07-07T00:17:46",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "compression,quantization,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-07-07T00:17:46",
+   "importance": 0.5,
+   "why": "A novel compression technique specifically targets efficient deployment of large Mixture-of-Experts models."
+  },
   {
    "title": "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity: Capital, Offtake and Datacenters",
    "url": "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
