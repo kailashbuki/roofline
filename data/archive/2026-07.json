@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 24,
+ "count": 26,
  "articles": [
+  {
+   "title": "Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peak",
+   "url": "https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-08T06:04:28",
+   "summary": "Anthropic&#8217;s Opportunity is Theirs to Lose",
+   "tags": "llm",
+   "area": "economics",
+   "first_seen": "2026-07-08T06:04:28",
+   "importance": 0.4,
+   "why": "Provides raw financial metrics on inference revenue scaling and commercial unit economics."
+  },
+  {
+   "title": "Open, convenient and predictable: Introducing Provisioned Throughput",
+   "url": "https://www.together.ai/blog/provisioned-throughput",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-08T00:00:00",
+   "summary": "Provisioned Throughput gives you reserved inference capacity for frontier open models like MiniMax M3 and GLM-5.2. Token-based pricing, a 99% uptime SLA, and up to 90% lower cost than proprietary APIs. No GPU-hour math, no infrastructure to manage.",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-07-08T00:00:00",
+   "importance": 0.2,
+   "why": "Provides reserved inference capacity and cloud infrastructure pricing structures."
+  },
   {
    "title": "Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T",
    "url": "https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t",

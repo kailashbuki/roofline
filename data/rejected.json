@@ -1,5 +1,5 @@
 {
- "count": 2869,
+ "count": 2872,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2869,6 +2869,9 @@
   "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
   "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues",
   "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
-  "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai"
+  "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai",
+  "https://huggingface.co/blog/phonon-tts",
+  "https://latent.space/p/ainews-it-s-swapping-season",
+  "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
  ]
 }
