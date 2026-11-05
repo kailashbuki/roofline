@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 26,
+ "count": 28,
  "articles": [
+  {
+   "title": "Running Low-Latency Analytical Workloads with GPU-Accelerated Presto on NVIDIA GB200 NVL72",
+   "url": "https://developer.nvidia.com/blog/running-low-latency-analytical-workloads-with-gpu-accelerated-presto-on-nvidia-gb200-nvl72",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-08T16:05:25",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/person-desk-three-computers-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"person-desk-three-computers\" width=\"768\" />Presto is an open source, distributed SQL engine for running fast, interactive queries on very large datasets. On NVIDIA GPUs, Presto delivers peak performance...",
+   "tags": "hardware,inference,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-07-08T16:05:25",
+   "importance": 0.3,
+   "why": "Demonstrates SQL engine acceleration using GB200 NVL72 hardware topology."
+  },
+  {
+   "title": "Create a LangChain Deep Agents Harness Profile for NVIDIA Nemotron 3 Ultra to Improve Performance",
+   "url": "https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-08T15:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/agentic-ai-visual-langchain-corp-blog-5431623-alt4-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-visual-langchain-corp-blog-5431623-alt4\" width=\"768\" />Agentic systems often face a trade-off between accuracy and cost. The highest-performing proprietary frontier models and harnesses provide top accuracy but are...",
+   "tags": "inference,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-07-08T15:00:00",
+   "importance": 0.3,
+   "why": "A specialized agent profile improves performance and accuracy trade-offs in agentic systems."
+  },
   {
    "title": "Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peak",
    "url": "https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the",
