@@ -1,7 +1,79 @@
 {
  "month": "2026-07",
- "count": 28,
+ "count": 34,
  "articles": [
+  {
+   "title": "Modular Pretraining Enables Access Control",
+   "url": "https://alignment.anthropic.com/2026/modular-pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-09T19:46:09",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,training",
+   "area": "training",
+   "first_seen": "2026-07-09T19:46:09",
+   "importance": 0.6,
+   "why": "Modular pretraining structure enables granular access control over model capabilities and components."
+  },
+  {
+   "title": "Synthetic Data Generation for Financial AI Research with NVIDIA NeMo",
+   "url": "https://developer.nvidia.com/blog/synthetic-data-generation-for-financial-ai-research-with-nvidia-nemo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-09T19:40:37",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/featured-image-16x9.jpg-768x432.jpeg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"featured-image-16x9.jpg\" width=\"768\" />Fine-tuning LLMs for financial natural language processing (NLP) is constrained by limited, imbalanced data. Real-world financial news overrepresents earnings...",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-07-09T19:40:37",
+   "importance": 0.2,
+   "why": "Outlines synthetic data generation workflows for financial domain fine-tuning."
+  },
+  {
+   "title": "The Future of Meta Superintelligence: A 1 Year Progress Update",
+   "url": "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-09T19:16:14",
+   "summary": "A top tier RL environment startup spawns out of thin air, the most aggressive compute ramp we've ever seen, 2000km+ scale-across, and some advice for Google DeepMind",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-07-09T19:16:14",
+   "importance": 0.4,
+   "why": "Details large-scale distributed training infrastructure scaling past 2000km distances."
+  },
+  {
+   "title": "A Practical Guide to GPU-Initiated Communication for Molecular Dynamics at Scale",
+   "url": "https://developer.nvidia.com/blog/a-practical-guide-to-gpu-initiated-communication-for-molecular-dynamics-at-scale",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-09T17:15:04",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/04/biomolecule-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"biomolecule\" width=\"768\" />Molecular dynamics (MD) simulations are among the most demanding workloads in computational science. Using them, researchers can observe atomic behavior in...",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-09T17:15:04",
+   "importance": 0.3,
+   "why": "Demonstrates GPU-initiated communication techniques for scaling molecular dynamics."
+  },
+  {
+   "title": "Show HN: TensorRT-LLM running natively on Windows (no WSL)",
+   "url": "https://baremetalrt.ai/app?mode=1gpu",
+   "source": "hackernews",
+   "published_date": "2026-07-09T14:18:27",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-07-09T14:18:27",
+   "importance": 0.3,
+   "why": "Native Windows support for TensorRT-LLM broadens deployment environments without WSL overhead."
+  },
+  {
+   "title": "Chinese hackers reverse engineer NVIDIA GPU to work on a custom PCB with NVLink",
+   "url": "https://old.reddit.com/r/LocalLLaMA/comments/1ucokod/chinese_hackers_latest_masterpiece_with_nvidia",
+   "source": "hackernews",
+   "published_date": "2026-07-09T14:13:20",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-09T14:13:20",
+   "importance": 0.5,
+   "why": "Reverse engineering NVIDIA hardware for custom PCB integration demonstrates advanced hardware hacking."
+  },
   {
    "title": "Running Low-Latency Analytical Workloads with GPU-Accelerated Presto on NVIDIA GB200 NVL72",
    "url": "https://developer.nvidia.com/blog/running-low-latency-analytical-workloads-with-gpu-accelerated-presto-on-nvidia-gb200-nvl72",

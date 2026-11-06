@@ -1,5 +1,5 @@
 {
- "count": 2959,
+ "count": 2967,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2959,6 +2959,14 @@
   "https://openai.com/index/merge-builds-with-openai",
   "https://openai.com/ads/customers/flipsnack",
   "https://openai.com/index/franklin-templeton",
-  "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory"
+  "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
+  "https://arxiv.org/abs/2611.08237",
+  "https://arxiv.org/abs/2610.36544",
+  "https://arxiv.org/abs/2611.03806",
+  "https://www.youtube.com/watch?v=bn82CJfeYko",
+  "https://huggingface.co/blog/allenai/toyblocks",
+  "https://openai.com/index/partnering-with-hacktron",
+  "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+  "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich"
  ]
 }
