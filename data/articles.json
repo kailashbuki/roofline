@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-06T21:57:22Z",
- "previous_generated_at": "2026-11-06T12:44:45Z",
+ "generated_at": "2026-11-07T11:32:25Z",
+ "previous_generated_at": "2026-11-06T21:57:22Z",
  "hot_days": 120,
- "count": 3212,
- "total_collected": 3439,
+ "count": 3216,
+ "total_collected": 3443,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Z2RAM – HBM replacement, no capacitor, mass manufacturable at 300nm",
+   "url": "https://www.nagarelabs.ai/",
+   "source": "hackernews",
+   "published_date": "2026-11-07T02:11:39",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-11-07T11:31:57",
+   "importance": 0.8,
+   "why": "Proposes capacitor-free DRAM cells built at legacy nodes to bypass high-bandwidth memory silicon fabrication bottlenecks."
+  },
   {
    "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
    "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
@@ -789,6 +801,30 @@
    "first_seen": "2026-11-06T12:43:42",
    "importance": 0.75,
    "why": "Direct-product space equivariant layers match the operator block structure of electronic Hamiltonians."
+  },
+  {
+   "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+   "url": "https://arxiv.org/abs/2611.07613",
+   "source": "hf:papers",
+   "published_date": "2026-11-05T07:56:01",
+   "summary": "A token pruning and merging mechanism and a waveform-preserving augmentation improve a full-waveform LiDAR Transformer to real-time speed and higher accuracy with better generalization.\n\nKeywords: Full-waveform LiDAR (FWL), Transformer, token pruning and merging, FWL-ToPM, FWLAug, waveform-preserving data augmentation, regularization, Time-of-Flight waveform, frustum geometry, out-of-distribution generalization, Ghost-FWL benchmark, real-time FWL Transformer, intensity distributions, multi-path echoes, weak signals",
+   "tags": "inference,optimization,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-11-07T11:31:25",
+   "importance": 0.6,
+   "why": "Intensity-guided token pruning and merging achieves real-time throughput for full-waveform LiDAR Transformers."
+  },
+  {
+   "title": "Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens",
+   "url": "https://arxiv.org/abs/2611.07298",
+   "source": "hf:papers",
+   "published_date": "2026-11-05T01:30:28",
+   "summary": "Prepending trainable [DUMP] tokens during embedding model training reduces residual token-level signals and improves retrieval representations without changing architecture, pooling, or loss.\n\nKeywords: embedding models, fixed-size vector representations, attention sink behavior, trainable [DUMP] tokens, contrastive retrieval objective, trainable prefix positions, encoder embedding models, decoder embedding models, token-level activation, attention patterns, low-information tokens, retrieval representations, long-context benchmarks",
+   "tags": "architecture,training,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-07T11:31:25",
+   "importance": 0.65,
+   "why": "Trainable prefix tokens absorb residual token signals to improve dense retrieval representations without architectural modifications."
   },
   {
    "title": "The anatomy of language model inference and reinforcement learning",
@@ -2700,6 +2736,18 @@
    "first_seen": "2026-11-05T22:34:01",
    "importance": 0.6,
    "why": "Bridges cross-embodiment skill transfer using geometry-anchored alignment and a decoupled-decoder tokenizer on unpaired human demonstrations."
+  },
+  {
+   "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+   "url": "https://arxiv.org/abs/2611.04386",
+   "source": "hf:papers",
+   "published_date": "2026-11-03T00:00:00",
+   "summary": "StepX-OPD jointly trains a text-to-image diffusion model to acquire capabilities and few-step sampling simultaneously, outperforming sequential approaches while reducing training cost.\n\nKeywords: text-to-image diffusion model, multi-teacher on-policy distillation, step distillation, rollout KL weights, velocity regression, low-noise, capability integration, Flow-OPD, SD3.5-Medium, FLUX.1-dev",
+   "tags": "training,post-training,compression",
+   "area": "training",
+   "first_seen": "2026-11-07T11:31:25",
+   "importance": 0.75,
+   "why": "Joint multi-teacher on-policy distillation enables simultaneous capability acquisition and few-step sampling, bypassing sequential bottlenecks."
   },
   {
    "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",

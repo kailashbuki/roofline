@@ -1,5 +1,5 @@
 {
- "count": 2967,
+ "count": 2971,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2967,6 +2967,10 @@
   "https://huggingface.co/blog/allenai/toyblocks",
   "https://openai.com/index/partnering-with-hacktron",
   "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-  "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich"
+  "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich",
+  "https://arxiv.org/abs/2610.37739",
+  "https://arxiv.org/abs/2609.37820",
+  "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
+  "https://latent.space/p/ainews-anthropic-ipo-whither-now"
  ]
 }
