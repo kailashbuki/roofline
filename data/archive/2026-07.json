@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 39,
+ "count": 40,
  "articles": [
+  {
+   "title": "Show HN: Reame – a CPU inference server that gets faster as it runs",
+   "url": "https://github.com/swellweb/reame",
+   "source": "hackernews",
+   "published_date": "2026-07-11T16:27:44",
+   "summary": "59 points, 19 comments on HackerNews",
+   "tags": "inference,serving,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-11T16:27:44",
+   "importance": 0.4,
+   "why": "A CPU-based inference server dynamically optimizing runtime performance for efficiency."
+  },
   {
    "title": "Reducing High-Bandwidth Memory Bottlenecks in JAX-Based LLM Training with Host Offloading",
    "url": "https://developer.nvidia.com/blog/reducing-high-bandwidth-memory-bottlenecks-in-jax-based-llm-training-with-host-offloading",

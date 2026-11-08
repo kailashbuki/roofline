@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-08T11:43:14Z",
- "previous_generated_at": "2026-11-07T20:41:10Z",
+ "generated_at": "2026-11-08T20:58:19Z",
+ "previous_generated_at": "2026-11-08T11:43:14Z",
  "hot_days": 120,
  "count": 3216,
- "total_collected": 3448,
+ "total_collected": 3449,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -4533,6 +4533,18 @@
    "first_seen": "2026-11-03T12:38:29",
    "importance": 0.5,
    "why": "It distills recursively self-improved agent harnesses into compact student models with reduced compute requirements."
+  },
+  {
+   "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
+   "url": "https://arxiv.org/abs/2611.00352",
+   "source": "hf:papers",
+   "published_date": "2026-10-30T00:00:00",
+   "summary": "Hidden-state reuse across factual questions partially transfers relation-specific answer shifts in small language models, with effectiveness depending on format, cohort, and source relation alignment.\n\nKeywords: hidden-state reuse, direct reuse, log-probability shift, entity-replacement, relation-selective error, Qwen, Llama, Gemma-2, chat format, BOS token",
+   "tags": "inference,llm,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-08T20:57:36",
+   "importance": 0.4,
+   "why": "Reusing internal hidden states across prompts transfers factual answers, reducing compute overhead for structured relation queries."
   },
   {
    "title": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
@@ -38471,18 +38483,6 @@
    "first_seen": "2026-07-12T01:08:17",
    "importance": 0.3,
    "why": "Proposes evaluation benchmarks and methodologies for testing general-purpose robotic foundation models in physical environments."
-  },
-  {
-   "title": "Show HN: Reame – a CPU inference server that gets faster as it runs",
-   "url": "https://github.com/swellweb/reame",
-   "source": "hackernews",
-   "published_date": "2026-07-11T16:27:44",
-   "summary": "59 points, 19 comments on HackerNews",
-   "tags": "inference,serving,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-07-11T16:27:44",
-   "importance": 0.4,
-   "why": "A CPU-based inference server dynamically optimizing runtime performance for efficiency."
   }
  ]
 }
