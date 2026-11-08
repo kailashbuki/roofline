@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-07T20:41:10Z",
- "previous_generated_at": "2026-11-07T11:32:25Z",
+ "generated_at": "2026-11-08T11:43:14Z",
+ "previous_generated_at": "2026-11-07T20:41:10Z",
  "hot_days": 120,
- "count": 3214,
- "total_collected": 3446,
+ "count": 3216,
+ "total_collected": 3448,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU",
+   "url": "https://github.com/AmSach/maple",
+   "source": "hackernews",
+   "published_date": "2026-11-08T03:48:04",
+   "summary": "11 points, 5 comments on HackerNews",
+   "tags": "quantization,compression,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-11-08T11:42:48",
+   "importance": 0.6,
+   "why": "Sub-2-bit quantization schemes combined with extreme MoE pruning enable high throughput on edge hardware."
+  },
+  {
+   "title": "TPS on Kimi K3 with TPU Megakernels",
+   "url": "https://inferact.ai/news/tpu-megakernels",
+   "source": "hackernews",
+   "published_date": "2026-11-07T20:40:07",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,inference,optimization",
+   "area": "silicon",
+   "first_seen": "2026-11-08T11:42:48",
+   "importance": 0.6,
+   "why": "Fusing disparate operator kernels into single TPU execution graphs eliminates memory roundtrips."
+  },
   {
    "title": "We Visited China’s Stargate in Inner Mongolia",
    "url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",

@@ -1,5 +1,5 @@
 {
- "count": 2972,
+ "count": 2975,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -2972,6 +2972,9 @@
   "https://arxiv.org/abs/2609.37820",
   "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
   "https://latent.space/p/ainews-anthropic-ipo-whither-now",
-  "https://phys.org/news/2026-11-air-holes-silicon-wafers-flat.html"
+  "https://phys.org/news/2026-11-air-holes-silicon-wafers-flat.html",
+  "https://arxiv.org/abs/2611.06498",
+  "https://arxiv.org/abs/2610.34074",
+  "https://arxiv.org/abs/2611.08369"
  ]
 }
