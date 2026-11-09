@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 40,
+ "count": 42,
  "articles": [
+  {
+   "title": "RTX 5070 Ti throttles at 107C; Blackwell hotspot sensor readable via MODS tool",
+   "url": "https://www.tomshardware.com/pc-components/gpus/hotspot-temperature-sensor-on-nvidias-blackwell-gaming-gpus-is-still-accessible-if-you-have-access-to-nvidias-internal-mods-tool-nvidia-rtx-5070-ti-caught-throttling-at-107-c-over-poor-tim-application",
+   "source": "hackernews",
+   "published_date": "2026-07-12T01:21:42",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-12T01:21:42",
+   "importance": 0.2,
+   "why": "Hardware telemetry and thermal throttling analysis for consumer and data center GPUs."
+  },
+  {
+   "title": "How to Evaluate General-Purpose Robot Policies for Real-World Deployment",
+   "url": "https://developer.nvidia.com/blog/how-to-evaluate-general-purpose-robot-policies-for-real-world-deployment",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-12T01:08:17",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/robot_grid_2k_3x_16s_600x338.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"robot_grid_2k_3x_16s_600x338\" width=\"600\" />Robotics foundation models have made remarkable progress. Today's best systems can follow natural language instructions to pick, place, sort, and manipulate a...",
+   "tags": "benchmarks,multimodal",
+   "area": "training",
+   "first_seen": "2026-07-12T01:08:17",
+   "importance": 0.3,
+   "why": "Proposes evaluation benchmarks and methodologies for testing general-purpose robotic foundation models in physical environments."
+  },
   {
    "title": "Show HN: Reame – a CPU inference server that gets faster as it runs",
    "url": "https://github.com/swellweb/reame",
