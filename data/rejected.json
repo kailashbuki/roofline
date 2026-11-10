@@ -1,5 +1,5 @@
 {
- "count": 3125,
+ "count": 3139,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3125,6 +3125,20 @@
   "https://github.com/san-digital/tokspur",
   "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
   "https://openai.com/index/closing-ai-guidance-gap-education",
-  "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins"
+  "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins",
+  "https://arxiv.org/abs/2611.10592",
+  "https://arxiv.org/abs/2610.37570",
+  "https://arxiv.org/abs/2611.01112",
+  "https://arxiv.org/abs/2611.10304",
+  "https://arxiv.org/abs/2611.08935",
+  "https://docs.modelplane.ai/guides/inference-guide",
+  "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+  "https://huggingface.co/blog/hub-gcp-marketplace",
+  "https://huggingface.co/blog/decision",
+  "https://openai.com/index/introducing-businesses-chatgpt",
+  "https://openai.com/index/ai-effect-on-freelance-work",
+  "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine",
+  "https://latent.space/p/resend",
+  "https://latent.space/p/naiveai"
  ]
 }

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-10T13:17:50Z",
- "previous_generated_at": "2026-11-10T00:33:52Z",
+ "generated_at": "2026-11-10T22:10:03Z",
+ "previous_generated_at": "2026-11-10T13:17:50Z",
  "hot_days": 120,
  "count": 3319,
- "total_collected": 3557,
+ "total_collected": 3566,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,65 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "AMD’s Zen 6 Family: Feeding the Beast",
+   "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-11-10T17:00:10",
+   "summary": "Hello you fine Internet folks,",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-11-10T22:09:45",
+   "importance": 0.0
+  },
+  {
+   "title": "Optimizing Muse Spark Open on TPU v7 with SGLang-TorchTPU",
+   "url": "https://pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-11-10T16:45:24",
+   "summary": "<p>TL;DR We serve Meta&#8217;s Muse Spark Open, an 816B-parameter mixture-of-experts model, on a single TPU v7 host of four chips, with SGLang running on the TorchTPU PyTorch backend. At the...</p>\n<p>The post <a href=\"https://pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu/\">Optimizing Muse Spark Open on TPU v7 with SGLang-TorchTPU</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "serving,hardware,llm,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-11-10T22:09:23",
+   "importance": 0.75,
+   "why": "Serves an 816B MoE model on a single four-chip TPU v7 host using SGLang-TorchTPU."
+  },
+  {
+   "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+   "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-10T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/auto-alpamayo-2-edge-tech-blog-promo-600x338_r2-1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"auto-alpamayo-2-edge-tech-blog-promo-600x338_r2 (1)\" width=\"600\" />Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide...",
+   "tags": "inference,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-11-10T22:09:43",
+   "importance": 0.4,
+   "why": "Deploys reasoning models on vehicle edge hardware under strict latency bounds."
+  },
+  {
+   "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+   "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-10T15:00:00",
+   "summary": "<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NGC - Promo - Day 0 Nemotron Tech Blog Image - 3326282\" width=\"768\" />NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference...",
+   "tags": "hardware,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-11-10T22:09:43",
+   "importance": 0.6,
+   "why": "Implements fast GPU state checkpointing to accelerate workload migration."
+  },
+  {
+   "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+   "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-10T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per...",
+   "tags": "serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-11-10T22:09:43",
+   "importance": 0.5,
+   "why": "Adapts Kubernetes scheduling for idle-heavy agent workloads at scale."
+  },
   {
    "title": "Serving open-weight models at scale with vLLM",
    "url": "https://ngrok.com/blog/vllm",
@@ -564,6 +623,18 @@
    "why": "Combines reinforcement learning with multi-teacher distillation to align agentic observations, improving visual tool use accuracy."
   },
   {
+   "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
+   "url": "https://arxiv.org/abs/2611.12870",
+   "source": "hf:papers",
+   "published_date": "2026-11-09T00:00:00",
+   "summary": "World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating language-video alignment acquired through video pretraining as an established foundation. However, introducing action learning may impair this alignment. Principled guidance on data and supervision design for maintaining language-video alignment during action learning remains limited. To investigate this, we curate a pool of approximately 47,000 hours of general videos, egocentric videos, UMI demonstrations, and robot demonstrations. Building on this, we systematically study how language-video supervision, language-video-action supervision, and the joint use of these two forms affect WAM performance. In particular, we examine how language annotation quality affects pretrained language-video capabilities, and how action supervision from UMI and robot demonstrations extends these capabilities to language-video-action ",
+   "tags": "multimodal,training",
+   "area": "new-models",
+   "first_seen": "2026-11-10T22:08:48",
+   "importance": 0.6,
+   "why": "It introduces cross-modal alignment mechanisms to preserve language-video foundation during action learning in world action models."
+  },
+  {
    "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
    "url": "https://arxiv.org/abs/2611.12806",
    "source": "hf:papers",
@@ -574,6 +645,30 @@
    "first_seen": "2026-11-10T13:16:52",
    "importance": 0.6,
    "why": "Learns unified tactile token representations from heterogeneous sensors, providing plug-and-play sensory inputs for diffusion policies."
+  },
+  {
+   "title": "Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization",
+   "url": "https://arxiv.org/abs/2611.11890",
+   "source": "hf:papers",
+   "published_date": "2026-11-09T00:00:00",
+   "summary": "Two visual focusing losses align a Vision Transformer's multi-head attention with image regions, producing specialized spatial attention heads and improving dense prediction such as zero-shot segmentation without labels.\n\nKeywords: self-supervised learning, Vision Transformer, DINO, visual focusing loss functions, multi-head attention mechanism, spatial attention head specialization, attention heads, dense prediction tasks, zero-shot image segmentation",
+   "tags": "architecture,attention",
+   "area": "architecture",
+   "first_seen": "2026-11-10T22:08:48",
+   "importance": 0.6,
+   "why": "It applies two visual focusing losses to force spatial attention head specialization, improving zero-shot segmentation."
+  },
+  {
+   "title": "InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure",
+   "url": "https://arxiv.org/abs/2611.11558",
+   "source": "hf:papers",
+   "published_date": "2026-11-08T18:59:37",
+   "summary": "While Recursive Self-Improvement (RSI) accelerates isolated algorithm and kernel synthesis, distributed LLM training depends on tightly coupled launch settings, operator kernels, and communication schedules, where single edits often hit out-of-memory (OOM) boundaries, compiler conflicts, measurement jitter, or silent numerical drift. We present InfraRSI, the agentic harness that turns open-ended human commands into verified training optimizations via a five-stage workflow: init locks editable scope and a fixed task contract over workload, loss, and timing invariants to prevent reward hacking, doctor profiles baseline phases and calibrates cluster noise, run co-optimizes launch knobs and code patches before re-verifying top candidates against the baseline and logging findings to a cross-hardware experience bank, and report and apply audit source paths, track failed-trial costs, and commit promoted changes. Rather than stepping greedily from a single incumbent, InfraRSI initializes from ",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-11-10T22:08:48",
+   "importance": 0.7,
+   "why": "It uses recursive self-improvement agentic harnesses to safely optimize distributed training launch settings without OOM failures."
   },
   {
    "title": "Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU",
@@ -658,6 +753,18 @@
    "first_seen": "2026-11-10T13:16:52",
    "importance": 0.5,
    "why": "Employs joint hierarchical flow matching to generate high-fidelity voxels while maintaining lightweight structures."
+  },
+  {
+   "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+   "url": "https://arxiv.org/abs/2611.10404",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T02:29:54",
+   "summary": "Frontier agentic LLMs trained with verifiable rewards in reinforcement learning environments can learn to reward hack by recovering answers rather than solving tasks, and this behavior persists on unseen hard problems even in hardened settings.\n\nKeywords: frontier agentic LLMs, reinforcement learning, verifiable rewards, reward hacking, RL environments, agent traces",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-11-10T22:08:48",
+   "importance": 0.7,
+   "why": "It demonstrates how frontier coding LLMs trained with verifiable RL rewards exploit reward hacking by recovering answers."
   },
   {
    "title": "Z2RAM – HBM replacement, no capacitor, mass manufacturable at 300nm",
@@ -39612,113 +39719,6 @@
    "first_seen": "2026-07-14T16:00:00",
    "importance": 0.3,
    "why": "Automates autoresearch workflows using RL agent skills and NeMo for machine learning experiments."
-  },
-  {
-   "title": "NVIDIA Ising Decoding Cuts Color Code Logical Error Rates by Over 300x",
-   "url": "https://developer.nvidia.com/blog/nvidia-ising-decoding-cuts-color-code-logical-error-rates-by-over-300x",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-13T19:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />Useful quantum computers will require fault tolerant logical operations. Researchers are actively exploring many different quantum error correction (QEC) codes...",
-   "tags": "hardware,optimization",
-   "area": "silicon",
-   "first_seen": "2026-07-13T19:00:00",
-   "importance": 0.7,
-   "why": "Applies Ising decoding via hardware acceleration to dramatically cut quantum error correction error rates."
-  },
-  {
-   "title": "Optimal Parameter-Free First-Order Methods for Convex Optimization with Unknown Growth and Smoothness",
-   "url": "https://arxiv.org/abs/2607.11878",
-   "source": "arxiv",
-   "published_date": "2026-07-13T17:57:45",
-   "summary": "We study deterministic first-order minimization of a convex function without prior knowledge of the objective's growth, smoothness regime, or associated parameters. We develop anytime, parameter-free bundle-level methods that adapt simultaneously to these unknown properties and attain best-known oracle complexities. For nonsmooth Lipschitz objectives satisfying quadratic growth, the proposed bundle-level W-certificate method (BLW) achieves the optimal complexity without requiring the growth modulus or target accuracy as input. We then introduce an accelerated variant, A-BLW. Without knowing th",
-   "tags": "training,optimization",
-   "area": "training",
-   "first_seen": "2026-07-13T17:57:45",
-   "importance": 0.6,
-   "why": "Derives parameter-free bundle-level optimization methods adapting to unknown smoothness and growth regimes."
-  },
-  {
-   "title": "Cycle-World: Mitigating Error Accumulation in Long-term Video World Models via Reverse-Prediction Cycle Consistency",
-   "url": "https://arxiv.org/abs/2607.11836",
-   "source": "arxiv",
-   "published_date": "2026-07-13T17:27:13",
-   "summary": "Autoregressive diffusion models have enabled high-quality video generation, yet their sequential nature inherently suffers from error accumulation. In long-horizon video synthesis, minor prediction deviations compound over time, inevitably leading to unconstrained generative drift, structural collapse, and severe visual degradation. To address this, we propose Cycle-World, a novel framework designed for stable and temporally consistent long-video generation. Our approach tackles error drift by enforcing strict temporal reversibility across both the training and inference phases. Theoretically,",
-   "tags": "architecture,multimodal",
-   "area": "architecture",
-   "first_seen": "2026-07-13T17:27:13",
-   "importance": 0.6,
-   "why": "Mitigates error accumulation in autoregressive video models via reverse-prediction cycle consistency."
-  },
-  {
-   "title": "Sparse Robust Optimal Control in Continuous-Time: A Computationally Viable Approach",
-   "url": "https://arxiv.org/abs/2607.11827",
-   "source": "arxiv",
-   "published_date": "2026-07-13T17:18:41",
-   "summary": "This article presents a novel, numerically viable algorithm for solving sparse robust optimal control problems in continuous time. We consider a constrained linear noisy system governed by an ordinary differential equation (ODE), with an $L^1$-type objective function in line with the sparse optimal control literature. The resulting optimal control problem is shown to admit a semi-infinite programming (SIP) formulation. Building upon this insight, we develop a new framework that enables the computation of exact solutions -- to our knowledge, the first such achievement in the context of sparse o",
-   "tags": "optimization,systems",
-   "area": "inference-methods",
-   "first_seen": "2026-07-13T17:18:41",
-   "importance": 0.6,
-   "why": "Presents a numerically viable algorithm for continuous-time sparse robust optimal control via semi-infinite programming."
-  },
-  {
-   "title": "Transformer-Guided Swarm Intelligence for Frugal Neural Architecture Search",
-   "url": "https://arxiv.org/abs/2607.11826",
-   "source": "arxiv",
-   "published_date": "2026-07-13T17:18:24",
-   "summary": "Neural Architecture Search (NAS) has automated the design of deep learning models but traditionally requires massive computational resources, often measured in thousands of GPU-days. In this paper, we propose a frugal and memetic NAS framework designed to democratize architecture design on consumer-grade hardware. Our approach combines the global macro-search capabilities of an autoregressive Transformer controller, trained via Reinforcement Learning (RL), with the local micro-exploitation of an Artificial Bee Colony (ABC) algorithm. To prevent premature convergence during the RL phase, we int",
-   "tags": "architecture,optimization",
-   "area": "architecture",
-   "first_seen": "2026-07-13T17:18:24",
-   "importance": 0.5,
-   "why": "Proposes a frugal, transformer-guided swarm intelligence framework for efficient neural architecture search."
-  },
-  {
-   "title": "Representing the Non-dominated Set of Multi-objective Network Problems by Supported Non-dominated Points",
-   "url": "https://arxiv.org/abs/2607.11821",
-   "source": "arxiv",
-   "published_date": "2026-07-13T17:15:27",
-   "summary": "In multi-objective combinatorial optimization, unsupported non-dominated points typically outnumber supported points and are often significantly more challenging to compute. Recent studies show that extreme supported non-dominated points provide high-quality representations of the non-dominated set for certain binary problems. We demonstrate that this observation does not generalize to capacitated network optimization problems: representation quality decreases with increasing arc capacities, whereas supported non-dominated points consistently provide high-quality representations with respect t",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-13T17:15:27",
-   "importance": 0.0
-  },
-  {
-   "title": "Optimizing MiniMax M3 Sparse Attention on Nvidia Blackwell",
-   "url": "https://fireworks.ai/blog/kernel-optimization-for-minimax-m3-on-nvidia-blackwell",
-   "source": "hackernews",
-   "published_date": "2026-07-13T15:34:10",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "inference,attention,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-07-13T15:34:10",
-   "importance": 0.4,
-   "why": "Optimizes sparse attention mechanisms specifically for NVIDIA Blackwell hardware architectures."
-  },
-  {
-   "title": "Apple's rumored M7 Ultra targets 1.5TB and Blackwell-class AI performance",
-   "url": "https://www.tomshardware.com/tech-industry/semiconductors/apples-rumored-m7-ultra-targets-1-5tb-of-memory-and-blackwell-class-ai",
-   "source": "hackernews",
-   "published_date": "2026-07-13T15:32:19",
-   "summary": "26 points, 31 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-13T15:32:19",
-   "importance": 0.4,
-   "why": "Rumored high-end Apple silicon targeting extreme memory capacity and competitive AI performance."
-  },
-  {
-   "title": "Extreme Event Likelihoods with Guided Generative Models",
-   "url": "https://developer.nvidia.com/blog/extreme-event-likelihoods-with-guided-generative-models",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-13T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"600\" />Across science, engineering, and finance, many of the most important risks come from low-likelihood, high-impact events. Estimating the probability of these...",
-   "tags": "training",
-   "area": "training",
-   "first_seen": "2026-07-13T15:00:00",
-   "importance": 0.4,
-   "why": "Uses guided generative models to accurately estimate low-likelihood, high-impact extreme events."
   }
  ]
 }
