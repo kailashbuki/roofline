@@ -1,5 +1,5 @@
 {
- "count": 3041,
+ "count": 3053,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3041,6 +3041,18 @@
   "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
   "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
   "https://latent.space/p/cs146s",
-  "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco"
+  "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco",
+  "https://arxiv.org/abs/2611.08175",
+  "https://arxiv.org/abs/2611.02775",
+  "https://arxiv.org/abs/2611.09113",
+  "https://arxiv.org/abs/2611.01362",
+  "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+  "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer",
+  "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+  "https://openai.com/index/control-room",
+  "https://openai.com/index/coderabbit-codex-daybreak",
+  "https://openai.com/index/kuken",
+  "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5",
+  "https://latent.space/p/handshake"
  ]
 }

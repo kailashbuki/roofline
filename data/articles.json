@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-09T13:39:37Z",
- "previous_generated_at": "2026-11-08T20:58:19Z",
+ "generated_at": "2026-11-10T00:33:52Z",
+ "previous_generated_at": "2026-11-09T13:39:37Z",
  "hot_days": 120,
- "count": 3269,
- "total_collected": 3504,
+ "count": 3270,
+ "total_collected": 3508,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Infineon marks innovation milestone with 300mm power silicon carbide wafer",
+   "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
+   "source": "hackernews",
+   "published_date": "2026-11-09T18:25:01",
+   "summary": "94 points, 58 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-11-10T00:33:18",
+   "importance": 0.6,
+   "why": "Expands silicon carbide wafer diameters to 300mm, directly impacting power delivery hardware economics for AI datacenters."
+  },
   {
    "title": "Pay per pre-configured GPU hour or per token for open-source LLM inference?",
    "url": "https://news.ycombinator.com/item?id=50420874",
@@ -706,6 +718,18 @@
    "first_seen": "2026-11-09T13:38:51",
    "importance": 0.62,
    "why": "Trains a code-driven video generation agent using execution and video feedback loops for motion control."
+  },
+  {
+   "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+   "url": "https://arxiv.org/abs/2611.09891",
+   "source": "hf:papers",
+   "published_date": "2026-11-06T00:00:00",
+   "summary": "Reasoning caches built from LLM traces can efficiently apply previously derived solutions to new problem instances with robustness and much lower invocation cost than source models.\n\nKeywords: large language models, agentic reasoning caching, CPU-executable agentic reasoning caches (ARCs), LLM reasoning traces, frontier LLMs, input perturbations, continually trainable",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-10T00:33:01",
+   "importance": 0.6,
+   "why": "Caching LLM reasoning traces on CPU reduces invocation cost for repeated problem instances."
   },
   {
    "title": "VibeSys on Trainium: Agents Build/Tune Qwen3.8 Serving Engines on AWS Trainium2",
@@ -1484,6 +1508,18 @@
    "area": "inference-methods",
    "first_seen": "2026-11-05T13:02:52",
    "importance": 0.0
+  },
+  {
+   "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
+   "url": "https://arxiv.org/abs/2611.08647",
+   "source": "hf:papers",
+   "published_date": "2026-11-05T00:00:00",
+   "summary": "Intra-weight injection lets one model change another model's behaviour by editing its weights directly, without gradients. Such edits can range from altering lexical associations to enforcing output formats or updating factual knowledge. Despite growing interest in these approaches, there has been no systematic way to evaluate how well models perform them. We introduce IWIBench, which measures a large editor model's ability to modify the weights of a smaller target model (typically Gemma 3 4B IT) to achieve one of ten classical text-editing objectives while preserving its other capabilities. Editors are limited to four tools for reading and writing weights, with bounded tensor access and a fixed budget for generating and inspecting rollouts. A validator applies each proposed patch in a clean environment and compares the edited model against the unmodified target. Evaluating frontier closed- and open-weight models reveals sharply diverging capabilities, both across models and across tas",
+   "tags": "post-training,benchmarks,llm",
+   "area": "training",
+   "first_seen": "2026-11-10T00:33:01",
+   "importance": 0.5,
+   "why": "This benchmark evaluates gradient-free direct weight editing between models."
   },
   {
    "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
@@ -3288,6 +3324,18 @@
    "first_seen": "2026-11-04T12:48:25",
    "importance": 0.7,
    "why": "Trains looped transformer recurrent trajectories across intermediate depths as a candidate set by minimizing depth-wise prediction loss."
+  },
+  {
+   "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
+   "url": "https://arxiv.org/abs/2611.04434",
+   "source": "hf:papers",
+   "published_date": "2026-11-03T07:25:42",
+   "summary": "A language model with a low-rank adapter and bounded external memory can be certified exact for arbitrary-length arithmetic by checking finitely many views, and it performs multiple exact arithmetic procedures on a laptop browser.\n\nKeywords: language models, low-rank adapter, forward pass, external working memory, bounded view, Sketchpad, Qwen3.5-0.8B, multiplicative gate, base model, numerical perturbation, certified model",
+   "tags": "architecture,multimodal,llm",
+   "area": "architecture",
+   "first_seen": "2026-11-10T00:33:01",
+   "importance": 0.7,
+   "why": "Combining a small vision-language model with external bounded memory achieves certified exact arbitrary-length arithmetic."
   },
   {
    "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
@@ -39083,42 +39131,6 @@
    "first_seen": "2026-07-13T15:00:00",
    "importance": 0.4,
    "why": "Uses guided generative models to accurately estimate low-likelihood, high-impact extreme events."
-  },
-  {
-   "title": "Performant C/CUDA inference engine for Qwen 3.6 35B on RTX 5090 / Blackwell",
-   "url": "https://github.com/ambud/q36",
-   "source": "hackernews",
-   "published_date": "2026-07-13T00:13:20",
-   "summary": "6 points, 1 comments on HackerNews",
-   "tags": "inference,serving,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-07-13T00:13:20",
-   "importance": 0.4,
-   "why": "Implements a performant C/CUDA inference engine tailored for large open-weights models on consumer hardware."
-  },
-  {
-   "title": "Flash-MSA: Accelerating Million-Token Training with Sparse Attention Kernels",
-   "url": "https://nanduruganesh.github.io/flash-msa",
-   "source": "hackernews",
-   "published_date": "2026-07-12T20:46:43",
-   "summary": "41 points, 5 comments on HackerNews",
-   "tags": "architecture,training,attention,optimization",
-   "area": "architecture",
-   "first_seen": "2026-07-12T20:46:43",
-   "importance": 0.7,
-   "why": "Accelerates million-token training pipelines using novel sparse attention kernels."
-  },
-  {
-   "title": "6 months to live for open models",
-   "url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
-   "source": "rss:Interconnects",
-   "published_date": "2026-07-12T16:47:42",
-   "summary": "The most serious test to date of open source AI&#8217;s viability is happening right now.",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-07-12T16:47:42",
-   "importance": 0.2,
-   "why": "Discusses the commercial and structural viability of open-source AI models."
   }
  ]
 }

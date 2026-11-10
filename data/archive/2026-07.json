@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 42,
+ "count": 45,
  "articles": [
+  {
+   "title": "Performant C/CUDA inference engine for Qwen 3.6 35B on RTX 5090 / Blackwell",
+   "url": "https://github.com/ambud/q36",
+   "source": "hackernews",
+   "published_date": "2026-07-13T00:13:20",
+   "summary": "6 points, 1 comments on HackerNews",
+   "tags": "inference,serving,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-07-13T00:13:20",
+   "importance": 0.4,
+   "why": "Implements a performant C/CUDA inference engine tailored for large open-weights models on consumer hardware."
+  },
+  {
+   "title": "Flash-MSA: Accelerating Million-Token Training with Sparse Attention Kernels",
+   "url": "https://nanduruganesh.github.io/flash-msa",
+   "source": "hackernews",
+   "published_date": "2026-07-12T20:46:43",
+   "summary": "41 points, 5 comments on HackerNews",
+   "tags": "architecture,training,attention,optimization",
+   "area": "architecture",
+   "first_seen": "2026-07-12T20:46:43",
+   "importance": 0.7,
+   "why": "Accelerates million-token training pipelines using novel sparse attention kernels."
+  },
+  {
+   "title": "6 months to live for open models",
+   "url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+   "source": "rss:Interconnects",
+   "published_date": "2026-07-12T16:47:42",
+   "summary": "The most serious test to date of open source AI&#8217;s viability is happening right now.",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-07-12T16:47:42",
+   "importance": 0.2,
+   "why": "Discusses the commercial and structural viability of open-source AI models."
+  },
   {
    "title": "RTX 5070 Ti throttles at 107C; Blackwell hotspot sensor readable via MODS tool",
    "url": "https://www.tomshardware.com/pc-components/gpus/hotspot-temperature-sensor-on-nvidias-blackwell-gaming-gpus-is-still-accessible-if-you-have-access-to-nvidias-internal-mods-tool-nvidia-rtx-5070-ti-caught-throttling-at-107-c-over-poor-tim-application",
