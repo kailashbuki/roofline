@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-11T12:28:53Z",
- "previous_generated_at": "2026-11-10T22:10:03Z",
+ "generated_at": "2026-11-11T23:19:42Z",
+ "previous_generated_at": "2026-11-11T12:28:53Z",
  "hot_days": 120,
- "count": 3371,
- "total_collected": 3618,
+ "count": 3374,
+ "total_collected": 3626,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,40 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+   "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-11-11T22:22:57",
+   "summary": "Hello you fine Internet folks,",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-11-11T23:19:18",
+   "importance": 0.0
+  },
+  {
+   "title": "Mistral Large 4: Where Did the 41 Go?",
+   "url": "https://www.airealist.ai/p/mistral-large-4-terminal-bench-41-removed",
+   "source": "airealist",
+   "published_date": "2026-11-11T14:33:12",
+   "summary": "Artificial Analysis removed the run behind Mistral's headline coding score. Mistral's release page, model card, and technical report still cite it.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-11-11T23:19:41",
+   "importance": 0.0
+  },
+  {
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-11-11T00:00:00",
+   "summary": "",
+   "tags": "training,optimization,llm",
+   "area": "training",
+   "first_seen": "2026-11-11T23:18:39",
+   "importance": 0.5,
+   "why": "Integrates pooling awareness directly into training to improve multi-vector embedding retrieval accuracy."
+  },
   {
    "title": "Show HN: Warmctl – Fast cold starts for vLLM inference",
    "url": "https://github.com/TensorRails/warmctl",
@@ -693,6 +727,18 @@
    "first_seen": "2026-11-11T12:27:37",
    "importance": 0.6,
    "why": "Establishes benchmarks and self-improving agents for autonomous RTL and synthesis optimization in hardware design."
+  },
+  {
+   "title": "EVAThink: Evidence Sufficiency-Guided Training for Adaptive Thinking in Video Understanding",
+   "url": "https://arxiv.org/abs/2611.13907",
+   "source": "hf:papers",
+   "published_date": "2026-11-10T00:00:00",
+   "summary": "EVAThink trains vision-language models to adaptively choose between direct answering and reasoning based on whether sampled video frames provide sufficient evidence, improving video understanding under fixed frame budgets.\n\nKeywords: vision-language models (VLMs), video understanding, frame budget, evidence sufficiency-guided training, adaptive thinking, Recoverable Evidence Gap Mining, evidence-dense video views, evidence-sparse video views, direct-answer accuracy, explicit reasoning, response-mode selection, Evidence-Guided Two-Stage Reinforcement Learning, stage-specific rewards, evidence-based mode preferences, response efficiency, first-token advantage regularization, mode collapse",
+   "tags": "training,multimodal,optimization",
+   "area": "training",
+   "first_seen": "2026-11-11T23:18:13",
+   "importance": 0.65,
+   "why": "Trains vision-language models to dynamically switch between direct answering and reasoning based on evidence sufficiency under frame budgets."
   },
   {
    "title": "Are Dense Rewards Worth Their Tokens in GRPO?",
@@ -1391,6 +1437,30 @@
    "why": "Proposes capacitor-free DRAM cells built at legacy nodes to bypass high-bandwidth memory silicon fabrication bottlenecks."
   },
   {
+   "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+   "url": "https://arxiv.org/abs/2611.10866",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T00:00:00",
+   "summary": "How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modification, matches full fine-tuning (FFT) at scale across three LLM post-training regimes: reinforcement learning with verifiable rewards, supervised fine-tuning, and on-policy distillation. Our method, Deletion Tuning, learns a binary mask over the gate projection of transformer blocks. Two practical advantages follow: the trained mask is hundreds to thousands of times smaller than the corresponding FFT checkpoint, and Deletion Tuning forgets far less, which addresses a central challenge in continual learning. Under reinforcement learning, its prior-task accuracy stays near the base level while FFT, LoRA, and random sparse fine-tuning lose up to 5.4 points. To understand why masking alone suffices, we analyze the geometry of the learned weight changes under reinforcement learning using stable rank, spectrum drift",
+   "tags": "training,post-training,optimization",
+   "area": "training",
+   "first_seen": "2026-11-11T23:18:13",
+   "importance": 0.85,
+   "why": "Demonstrates that zeroing under 0.05% of weights matches full fine-tuning performance across RL, SFT, and distillation."
+  },
+  {
+   "title": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
+   "url": "https://arxiv.org/abs/2611.10649",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T00:00:00",
+   "summary": "MACaQ is an MXFP4 W4A4 post-training quantization method that quantizes each linear layer independently using online activation transforms and Hessian-aware refinement, reducing cost while preserving accuracy across language and diffusion models.\n\nKeywords: weight-activation quantization, post-training quantization, MXFP4, W4A4, per-channel scale, block-Hadamard transform, activation transforms, inverse transforms, linear layer, cross-layer dependencies, streaming implementation, round-to-nearest quantization, Flip-Refinement, Hessian-aware coordinate-descent, FP4 codes, perplexity, Qwen3-32B, vLLM, DuQuant++, MR-GPTQ, Llama-3-8B, image diffusion model, layer-local design",
+   "tags": "quantization,inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-11T23:18:13",
+   "importance": 0.7,
+   "why": "Applies per-layer online activation transforms and Hessian-aware refinement to achieve MXFP4 W4A4 quantization for language and diffusion models."
+  },
+  {
    "title": "onóna: Twin Embeddings with Tied Unembeddings",
    "url": "https://arxiv.org/abs/2611.10556",
    "source": "hf:papers",
@@ -1401,6 +1471,18 @@
    "first_seen": "2026-11-11T12:27:41",
    "importance": 0.55,
    "why": "Replaces standard weight tying with a two-table input-output parameterization to improve Transformer expressiveness and perplexity."
+  },
+  {
+   "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
+   "url": "https://arxiv.org/abs/2611.10486",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T00:00:00",
+   "summary": "Diffusion language models (DLMs) generate text through iterative denoising, where decisions about which tokens to commit or remask strongly affect output quality. Existing certainty-aware strategies rely on instantaneous confidence or entropy, but these local signals can be misleading on difficult reasoning problems. We formulate DLM test-time scaling as adaptive allocation of both inference compute and decoding strategies. Our two-stage approach uses a fast base sampler to solve easy questions, then applies frequency-aware remasking to the remaining hard questions. This strategy tracks how often each token's prediction changes across denoising steps and preferentially commits frequently changing tokens, encouraging samples to explore alternative reasoning paths rather than collapse onto the model's preferred trajectory. Experiments with LLaDA-8B-Instruct and Dream-7B-Instruct show consistent improvements over a strong adaptive allocation baseline, with absolute accuracy gains of up to",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-11T23:18:13",
+   "importance": 0.75,
+   "why": "Replaces local instantaneous certainty metrics with frequency-aware remasking to dynamically allocate compute during diffusion language model generation."
   },
   {
    "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
@@ -3853,6 +3935,18 @@
    "first_seen": "2026-11-04T22:26:39",
    "importance": 0.75,
    "why": "Polymorphic frameworks continuously adapt execution parameters to changing hardware and traffic states."
+  },
+  {
+   "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+   "url": "https://arxiv.org/abs/2611.10015",
+   "source": "hf:papers",
+   "published_date": "2026-11-04T00:00:00",
+   "summary": "Micius-Flash is a 27B-parameter multimodal reasoning model trained with a knowledge-tree data pipeline and multi-teacher on-policy distillation, achieving strong hardware and semiconductor agent benchmark results and supporting tool-integrated engineering workflows.\n\nKeywords: native multimodal input, deep reasoning, 256K-token context window, knowledge-tree-driven data flywheel, data synthesis, quality validation, hard-example augmentation, expert models, semiconductor multimodal understanding, agentic experts, Multi-Teacher On-Policy Distillation, on-policy distillation, unified model, tool execution feedback, multi-step planning, iterative verification",
+   "tags": "training,multimodal,llm",
+   "area": "new-models",
+   "first_seen": "2026-11-11T23:18:13",
+   "importance": 0.6,
+   "why": "Utilizes a knowledge-tree data pipeline and multi-teacher distillation to train a 27B multimodal reasoning model for engineering tasks."
   },
   {
    "title": "Decode Before You Hear: Speculative Listening for Chunk-Interleaved Full-Duplex Speech Language Models",
@@ -40283,66 +40377,6 @@
    "first_seen": "2026-07-15T00:00:00",
    "importance": 0.4,
    "why": "Improves large-scale GPU cluster reliability with passive health checks and automated node repair."
-  },
-  {
-   "title": "Lessons From the Leaderboard: What 5,000+ Kagglers Taught Us About Improving AI Reasoning",
-   "url": "https://developer.nvidia.com/blog/lessons-from-the-leaderboard-what-5000-kagglers-taught-us-about-improving-ai-reasoning",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-14T18:20:32",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />The NVIDIA Nemotron Model Reasoning Challenge invited the Kaggle community to explore a focused question: What techniques can improve reasoning accuracy when...",
-   "tags": "training,llm",
-   "area": "training",
-   "first_seen": "2026-07-14T18:20:32",
-   "importance": 0.3,
-   "why": "Explores community-driven techniques for enhancing reasoning accuracy in LLMs."
-  },
-  {
-   "title": "TPU and GPU Clusters: The Anatomy of Collective Communication",
-   "url": "https://www.aleksagordic.com/blog/collective-operations",
-   "source": "hackernews",
-   "published_date": "2026-07-14T17:08:02",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "systems,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-07-14T17:08:02",
-   "importance": 0.2,
-   "why": "Overview of collective communication primitives across TPU and GPU clusters."
-  },
-  {
-   "title": "DFSX Peak DF1000 High-performance AI accelerator card based on 3D near-memory",
-   "url": "https://www.dfsx.com/products/ai-accelerator/df1000",
-   "source": "hackernews",
-   "published_date": "2026-07-14T17:06:56",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-14T17:06:56",
-   "importance": 0.3,
-   "why": "Introduces a high-performance AI accelerator card leveraging 3D near-memory architecture."
-  },
-  {
-   "title": "Post-Train NVIDIA Cosmos 3 in One Day Using Agent Skills",
-   "url": "https://developer.nvidia.com/blog/post-train-nvidia-cosmos-3-in-one-day-using-agent-skills",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-14T16:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-tao-cosmos-traffic-intersection-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-tao-cosmos-traffic-intersection\" width=\"768\" />What if autonomous coding AI agents could push your vision reasoning models above 90% accuracy with almost no manual effort? When adapting vision reasoning...",
-   "tags": "post-training,training,multimodal",
-   "area": "training",
-   "first_seen": "2026-07-14T16:00:00",
-   "importance": 0.3,
-   "why": "Demonstrates rapid post-training workflows using agent skills for vision reasoning models."
-  },
-  {
-   "title": "How to Run an Autoresearch Workflow with RL Agent Skills and NVIDIA NeMo",
-   "url": "https://developer.nvidia.com/blog/how-to-run-an-autoresearch-workflow-with-rl-agent-skills-and-nvidia-nemo",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-14T16:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/agentic-ai-rl-gym-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-rl-gym\" width=\"768\" />Coding AI agents are becoming practical operators for long-running machine learning (ML) workflows. They can inspect repositories, set up runtimes, resolve...",
-   "tags": "training,optimization",
-   "area": "training",
-   "first_seen": "2026-07-14T16:00:00",
-   "importance": 0.3,
-   "why": "Automates autoresearch workflows using RL agent skills and NeMo for machine learning experiments."
   }
  ]
 }

@@ -1,7 +1,67 @@
 {
  "month": "2026-07",
- "count": 54,
+ "count": 59,
  "articles": [
+  {
+   "title": "Lessons From the Leaderboard: What 5,000+ Kagglers Taught Us About Improving AI Reasoning",
+   "url": "https://developer.nvidia.com/blog/lessons-from-the-leaderboard-what-5000-kagglers-taught-us-about-improving-ai-reasoning",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-14T18:20:32",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />The NVIDIA Nemotron Model Reasoning Challenge invited the Kaggle community to explore a focused question: What techniques can improve reasoning accuracy when...",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-07-14T18:20:32",
+   "importance": 0.3,
+   "why": "Explores community-driven techniques for enhancing reasoning accuracy in LLMs."
+  },
+  {
+   "title": "TPU and GPU Clusters: The Anatomy of Collective Communication",
+   "url": "https://www.aleksagordic.com/blog/collective-operations",
+   "source": "hackernews",
+   "published_date": "2026-07-14T17:08:02",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "systems,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-07-14T17:08:02",
+   "importance": 0.2,
+   "why": "Overview of collective communication primitives across TPU and GPU clusters."
+  },
+  {
+   "title": "DFSX Peak DF1000 High-performance AI accelerator card based on 3D near-memory",
+   "url": "https://www.dfsx.com/products/ai-accelerator/df1000",
+   "source": "hackernews",
+   "published_date": "2026-07-14T17:06:56",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-14T17:06:56",
+   "importance": 0.3,
+   "why": "Introduces a high-performance AI accelerator card leveraging 3D near-memory architecture."
+  },
+  {
+   "title": "Post-Train NVIDIA Cosmos 3 in One Day Using Agent Skills",
+   "url": "https://developer.nvidia.com/blog/post-train-nvidia-cosmos-3-in-one-day-using-agent-skills",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-14T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-tao-cosmos-traffic-intersection-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-tao-cosmos-traffic-intersection\" width=\"768\" />What if autonomous coding AI agents could push your vision reasoning models above 90% accuracy with almost no manual effort? When adapting vision reasoning...",
+   "tags": "post-training,training,multimodal",
+   "area": "training",
+   "first_seen": "2026-07-14T16:00:00",
+   "importance": 0.3,
+   "why": "Demonstrates rapid post-training workflows using agent skills for vision reasoning models."
+  },
+  {
+   "title": "How to Run an Autoresearch Workflow with RL Agent Skills and NVIDIA NeMo",
+   "url": "https://developer.nvidia.com/blog/how-to-run-an-autoresearch-workflow-with-rl-agent-skills-and-nvidia-nemo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-14T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/agentic-ai-rl-gym-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-rl-gym\" width=\"768\" />Coding AI agents are becoming practical operators for long-running machine learning (ML) workflows. They can inspect repositories, set up runtimes, resolve...",
+   "tags": "training,optimization",
+   "area": "training",
+   "first_seen": "2026-07-14T16:00:00",
+   "importance": 0.3,
+   "why": "Automates autoresearch workflows using RL agent skills and NeMo for machine learning experiments."
+  },
   {
    "title": "NVIDIA Ising Decoding Cuts Color Code Logical Error Rates by Over 300x",
    "url": "https://developer.nvidia.com/blog/nvidia-ising-decoding-cuts-color-code-logical-error-rates-by-over-300x",

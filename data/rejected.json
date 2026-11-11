@@ -1,5 +1,5 @@
 {
- "count": 3212,
+ "count": 3222,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3212,6 +3212,16 @@
   "https://openai.com/index/cogent-security",
   "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate",
   "https://latent.space/p/codex-work",
-  "https://jyn.dev/ms-bashkansky-please-do-not-build-the-torment-nexus"
+  "https://jyn.dev/ms-bashkansky-please-do-not-build-the-torment-nexus",
+  "https://arxiv.org/abs/2611.12177",
+  "https://arxiv.org/abs/2611.14115",
+  "https://arxiv.org/abs/2611.13576",
+  "https://arxiv.org/abs/2610.40754",
+  "https://arxiv.org/abs/2611.01527",
+  "https://arxiv.org/abs/2611.13885",
+  "https://www.youtube.com/watch?v=saXrLnzWTD0",
+  "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching",
+  "https://openai.com/index/jiostar-vijay-seshadri",
+  "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory"
  ]
 }
