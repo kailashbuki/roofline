@@ -1,7 +1,66 @@
 {
  "month": "2026-07",
- "count": 63,
+ "count": 68,
  "articles": [
+  {
+   "title": "Develop Lightweight USD Runtimes Faster with AI Agents",
+   "url": "https://developer.nvidia.com/blog/develop-lightweight-usd-runtimes-faster-with-ai-agents",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-15T21:57:23",
+   "summary": "<img alt=\"A Gif in a warehouse.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nanousd.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nanousd\" width=\"600\" />OpenUSD is an open, extensible framework that provides a common scene description language for physical AI. It enables teams to bring CAD data, simulation...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-15T21:57:23",
+   "importance": 0.0
+  },
+  {
+   "title": "What If the Harness Comes Before Pretraining? A Data Flywheel Perspective",
+   "url": "https://hanchenli.github.io/blog/posts/harness_pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-15T18:18:02",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,benchmarks",
+   "area": "training",
+   "first_seen": "2026-07-15T18:18:02",
+   "importance": 0.5,
+   "why": "Examines data flywheel mechanics where evaluation harnesses precede foundational pretraining phases."
+  },
+  {
+   "title": "Towards demystifying the creativity of diffusion models",
+   "url": "https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-07-15T18:06:00",
+   "summary": "Algorithms & Theory",
+   "tags": "architecture",
+   "area": "architecture",
+   "first_seen": "2026-07-15T18:06:00",
+   "importance": 0.5,
+   "why": "Theoretical analysis of generative diffusion model creativity and latent spaces."
+  },
+  {
+   "title": "Building Faster Cryptography with Carryless Multiplication in NVIDIA CUDA 13.3",
+   "url": "https://developer.nvidia.com/blog/building-faster-cryptography-with-carryless-multiplication-in-nvidia-cuda-13-3",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-15T17:37:12",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/CUDA-Tile-Flash-Attention-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDA-Tile-Flash-Attention\" width=\"768\" />For over fifteen years, x86 CPUs have shipped with a dedicated hardware instruction for carryless multiplication. It’s a small but stubborn primitive that...",
+   "tags": "optimization,hardware",
+   "area": "inference-methods",
+   "first_seen": "2026-07-15T17:37:12",
+   "importance": 0.4,
+   "why": "Low-level CUDA optimization primitives for cryptographic and acceleration math routines."
+  },
+  {
+   "title": "Show HN: Fast NF4 dequantization Triton kernel (1.41x faster than bitsandbytes)",
+   "url": "https://github.com/Griffith-7/nf4-triton-kernel",
+   "source": "hackernews",
+   "published_date": "2026-07-15T13:41:55",
+   "summary": "5 points, 1 comments on HackerNews",
+   "tags": "quantization,optimization,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-07-15T13:41:55",
+   "importance": 0.6,
+   "why": "Custom Triton kernel achieves substantial speedups for NF4 dequantization over standard frameworks."
+  },
   {
    "title": "Porting nanochat to a TPU: what carries over from PyTorch, and what breaks",
    "url": "https://github.com/tucan9389/nanochat-jax/discussions/1",
