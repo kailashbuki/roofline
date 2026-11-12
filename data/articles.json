@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-11T23:19:42Z",
- "previous_generated_at": "2026-11-11T12:28:53Z",
+ "generated_at": "2026-11-12T13:33:54Z",
+ "previous_generated_at": "2026-11-11T23:19:42Z",
  "hot_days": 120,
- "count": 3374,
- "total_collected": 3626,
+ "count": 3376,
+ "total_collected": 3632,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Training a 1T-Parameter MoE on EU public infrastructure with PyTorch and TorchTitan",
+   "url": "https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan",
+   "source": "rss:PyTorch Blog",
+   "published_date": "2026-11-12T12:00:19",
+   "summary": "<p>TL;DR Scaling pretraining for a ~1-trillion-parameter Mixture-of-Experts (MoE) model on shared, public infrastructure was previously considered unfeasible due to unique architectural and interconnect bottlenecks. However, by leveraging the fine-grained flexibility...</p>\n<p>The post <a href=\"https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/\">Training a 1T-Parameter MoE on EU public infrastructure with PyTorch and TorchTitan</a> appeared first on <a href=\"https://pytorch.org\">PyTorch</a>.</p>",
+   "tags": "training,systems,architecture",
+   "area": "training",
+   "first_seen": "2026-11-12T13:32:57",
+   "importance": 0.75,
+   "why": "Demonstrates large-scale MoE pretraining on non-dedicated public infrastructure using TorchTitan, overcoming severe interconnect bottlenecks."
+  },
   {
    "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
    "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
@@ -751,6 +763,18 @@
    "first_seen": "2026-11-11T12:27:41",
    "importance": 0.45,
    "why": "Proves dense process rewards underperform standard GRPO at matched compute while prompt selection yields minor gains."
+  },
+  {
+   "title": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+   "url": "https://arxiv.org/abs/2611.13410",
+   "source": "hf:papers",
+   "published_date": "2026-11-10T00:00:00",
+   "summary": "Low-bit quantized LLM agents can recover much of their task success through closed-loop guidance from a full-precision teacher, followed by unassisted student training on corrected and reference turns.\n\nKeywords: low-bit quantization, LLM agents, quantization-aware distillation, full-precision teacher, student model, rollouts, environment transitions, full-precision references, closed-loop teacher steering, behavioral corrections, unassisted inference, W4A16, BF16, agentic benchmarks, τ^2-Bench, QeRL",
+   "tags": "quantization,post-training,inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-12T13:32:18",
+   "importance": 0.6,
+   "why": "Closed-loop teacher steering recovers task success in low-bit quantized LLM agents using corrected student rollouts."
   },
   {
    "title": "Triton for MTIA: Bridging the Programming Model Gaps for Custom AI Accelerators",
@@ -1485,6 +1509,18 @@
    "why": "Replaces local instantaneous certainty metrics with frequency-aware remasking to dynamically allocate compute during diffusion language model generation."
   },
   {
+   "title": "Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents",
+   "url": "https://arxiv.org/abs/2608.22237",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T00:00:00",
+   "summary": "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusable reading control layer that governs content admission without modifying the agent model. Its Read Intent Protocol tracks evolving needs and source coverage; Adaptive Reader Backends select how evidence is located and exposed; and the Budgeted Read Gate bounds cumulative raw exposure per episode with faithful full-view fallback. A unified Reader interface supports interchangeable evidence acquisition across heterogeneous resources. Across six models, including Claude Opus 5, and five scenarios, SparseRead reduces total tokens by up to 92.9% and wall time by up to 89.0%, preserving or improving task quality in 97% settings. On Web deep-search tasks, it reduces tokens by 31.0--43.0% and task c",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-12T13:32:18",
+   "importance": 0.5,
+   "why": "SparseRead implements a content admission control layer to reduce token consumption and latency for web-facing agents."
+  },
+  {
    "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
    "url": "https://arxiv.org/abs/2611.09872",
    "source": "arxiv",
@@ -2073,6 +2109,18 @@
    "why": "It provides a unified latency-aware early-exit runtime managing heterogeneous CNN and Transformer workloads on resource-constrained edge hardware."
   },
   {
+   "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
+   "url": "https://arxiv.org/abs/2611.10193",
+   "source": "hf:papers",
+   "published_date": "2026-11-06T00:00:00",
+   "summary": "PISA and PISA-E use prompt-adaptive capability estimation to route prompts or select cost-aware ensembles, improving cost-performance trade-offs across LLM routing benchmarks.\n\nKeywords: large language models (LLMs), prompt-adaptive routing, cost-aware single-model router, ensemble routing, soft cluster memberships, model-specific predictors, ensemble composition, ensemble cardinality, cost-quality preference, ensemble-success surrogate, candidate selection, in-distribution (ID), out-of-distribution (OOD), macro-average cost-performance hypervolume, single-model routers, ensemble approaches, inference cost",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-12T13:32:18",
+   "importance": 0.5,
+   "why": "Prompt-adaptive capability estimation routes prompts and composes cost-aware ensembles to improve LLM inference economics."
+  },
+  {
    "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
    "url": "https://arxiv.org/abs/2611.09894",
    "source": "hf:papers",
@@ -2095,6 +2143,18 @@
    "first_seen": "2026-11-10T00:33:01",
    "importance": 0.6,
    "why": "Caching LLM reasoning traces on CPU reduces invocation cost for repeated problem instances."
+  },
+  {
+   "title": "RidgeFill: Training-Free Late-Layer Cache Fill for Faster Prefill",
+   "url": "https://arxiv.org/abs/2611.09709",
+   "source": "hf:papers",
+   "published_date": "2026-11-06T00:00:00",
+   "summary": "RidgeFill shortens prefill by not computing most of a model's upper layers for the prompt. The lower layers run exactly up to a split; from the split layer's state a per-layer map predicts every later layer's input, and each late layer writes its cache from that prediction. The design follows YOCO and DeepSeek-V4.1-Flash, where the projection is trained into the model. RidgeFill retrofits it onto models that were never trained for it: the map is a ridge regression fitted once in closed form from one pass over calibration text, the layer's own projections run unchanged, and a chosen set of rows, the last few thousand tokens, and every decoding step run the full model. Nothing is trained and no token is dropped.\n  Most of the work was in measurement, finding a repeatable methodology. Loss averaged over all tokens hides RidgeFill's error. Needle retrieval in the filled region, loss on tokens that depend on distant context, and splice tests that swap filled keys or values for exact ones sh",
+   "tags": "inference,optimization,architecture",
+   "area": "inference-methods",
+   "first_seen": "2026-11-12T13:32:18",
+   "importance": 0.7,
+   "why": "RidgeFill uses per-layer maps to predict and fill upper-layer caches during the prefill phase without retraining."
   },
   {
    "title": "Toward the Era of Agentic Embodied Intelligence",
@@ -7638,6 +7698,18 @@
    "first_seen": "2026-11-02T13:08:33",
    "importance": 0.5,
    "why": "Generates verified tests and uses review agents to train coding models on long-horizon synthesis."
+  },
+  {
+   "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.39671",
+   "source": "hf:papers",
+   "published_date": "2026-10-29T00:00:00",
+   "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled context. We study self-learning -- autonomously retrieving, studying, and applying knowledge from long-form reference materials on the fly. To investigate this capability, we formulate a textbook-based mathematical problem-solving task. LLMs must navigate textbook exposition, learn and apply relevant principles, and construct proofs for exercises, with reference solutions withheld. We introduce a BookNavigator interface to support this human-inspired study process and incentivize self-learning through reinforcement learning (RL) with fine-grained rewards. Experiments show that our method improves performance across in-domain and out-of-domain textbooks and subjects, raisi",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-11-12T13:32:18",
+   "importance": 0.5,
+   "why": "Reinforcement learning incentivizes LLMs to autonomously acquire and apply knowledge rather than relying on static context."
   },
   {
    "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
@@ -40329,54 +40401,6 @@
    "first_seen": "2026-07-15T13:41:55",
    "importance": 0.6,
    "why": "Custom Triton kernel achieves substantial speedups for NF4 dequantization over standard frameworks."
-  },
-  {
-   "title": "Porting nanochat to a TPU: what carries over from PyTorch, and what breaks",
-   "url": "https://github.com/tucan9389/nanochat-jax/discussions/1",
-   "source": "hackernews",
-   "published_date": "2026-07-15T08:18:25",
-   "summary": "54 points, 12 comments on HackerNews",
-   "tags": "training,systems",
-   "area": "training",
-   "first_seen": "2026-07-15T08:18:25",
-   "importance": 0.5,
-   "why": "Details technical friction points and framework portability issues when moving workloads to TPUs."
-  },
-  {
-   "title": "Nobody knows what a used GPU cluster is worth",
-   "url": "https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster",
-   "source": "hackernews",
-   "published_date": "2026-07-15T06:50:49",
-   "summary": "279 points, 264 comments on HackerNews",
-   "tags": "hardware",
-   "area": "economics",
-   "first_seen": "2026-07-15T06:50:49",
-   "importance": 0.6,
-   "why": "Quantifies secondary market depreciation and valuation dynamics for aging accelerator hardware fleets."
-  },
-  {
-   "title": "Together AI brings Thinking Machines Lab’s new model Inkling on day 0",
-   "url": "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-15T00:00:00",
-   "summary": "",
-   "tags": "llm,serving",
-   "area": "new-models",
-   "first_seen": "2026-07-15T00:00:00",
-   "importance": 0.4,
-   "why": "Day-0 cloud provider integration for new foundation models."
-  },
-  {
-   "title": "New in Together GPU Clusters: Reliability and control for production GPU clusters",
-   "url": "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-15T00:00:00",
-   "summary": "See how Together AI is improving production GPU clusters with passive health checks, node repair, stronger Slurm reliability, OIDC, and startup scripts.",
-   "tags": "serving,systems,hardware",
-   "area": "inference-engines",
-   "first_seen": "2026-07-15T00:00:00",
-   "importance": 0.4,
-   "why": "Improves large-scale GPU cluster reliability with passive health checks and automated node repair."
   }
  ]
 }
