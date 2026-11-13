@@ -1,7 +1,55 @@
 {
  "month": "2026-07",
- "count": 68,
+ "count": 72,
  "articles": [
+  {
+   "title": "The Path to AGI Runs Through HBM",
+   "url": "https://stateofthefuture.substack.com/p/the-path-to-agi-runs-through-hbm",
+   "source": "hackernews",
+   "published_date": "2026-07-16T12:38:50",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-16T12:38:50",
+   "importance": 0.4,
+   "why": "Highlights memory bandwidth bottlenecks as the primary scaling constraint for future AGI hardware."
+  },
+  {
+   "title": "Fusing a 27B ternary LLM's whole decode step into one CUDA kernel",
+   "url": "https://twitter.com/Akashi203/status/2077552491567157733",
+   "source": "hackernews",
+   "published_date": "2026-07-16T00:39:18",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "quantization,inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-07-16T00:39:18",
+   "importance": 0.7,
+   "why": "Kernel-level fusion for ternary quantization optimizes memory bandwidth for high-speed LLM decoding."
+  },
+  {
+   "title": "What does 99.9% uptime mean for inference?",
+   "url": "https://www.together.ai/blog/99-9-uptime-for-inference",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-16T00:00:00",
+   "summary": "Reliability numbers are easy to publish. We break down what 99%, 99.9%, and 99.99% uptime actually require, the failure domains each tier has to survive, and the questions to ask any inference provider before you commit.",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-07-16T00:00:00",
+   "importance": 0.4,
+   "why": "Outlines rigorous architectural requirements for achieving high-availability LLM inference uptime."
+  },
+  {
+   "title": "Build a Multi-Camera 3D Tracking Application with NVIDIA DeepStream 9.1 Skills",
+   "url": "https://developer.nvidia.com/blog/build-a-multi-camera-3d-tracking-application-with-nvidia-deepstream-9-1-skills",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-15T23:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/deepstream-featured.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"deepstream-featured\" width=\"600\" />Developers building video analytics applications across large spaces must track the same object as it moves between camera views. Single-camera 2D tracking...",
+   "tags": "inference,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-07-15T23:00:00",
+   "importance": 0.2,
+   "why": "Details multi-camera object tracking algorithms using DeepStream pipelines for real-time edge computer vision systems."
+  },
   {
    "title": "Develop Lightweight USD Runtimes Faster with AI Agents",
    "url": "https://developer.nvidia.com/blog/develop-lightweight-usd-runtimes-faster-with-ai-agents",
