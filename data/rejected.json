@@ -1,5 +1,5 @@
 {
- "count": 3292,
+ "count": 3310,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3292,6 +3292,24 @@
   "https://openai.com/business/customer-stories/amplitude",
   "https://openai.com/business/customer-stories/gondola",
   "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia",
-  "https://latent.space/p/artcraft"
+  "https://latent.space/p/artcraft",
+  "https://arxiv.org/abs/2611.09567",
+  "https://arxiv.org/abs/2611.16009",
+  "https://arxiv.org/abs/2607.13920",
+  "https://arxiv.org/abs/2611.12872",
+  "https://arxiv.org/abs/2610.41453",
+  "https://arxiv.org/abs/2611.00428",
+  "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+  "https://homebrewserver.club/lm-studio-vs-ollama.html",
+  "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+  "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+  "https://huggingface.co/blog/allenai/xybench",
+  "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature",
+  "https://openai.com/index/introducing-chatgpt-wallet",
+  "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
+  "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
+  "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
+  "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+  "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter"
  ]
 }

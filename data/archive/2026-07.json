@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 72,
+ "count": 75,
  "articles": [
+  {
+   "title": "Roboflow Serverless Inference: A Thousand Models on a Shared GPU Fleet",
+   "url": "https://blog.roboflow.com/serverless-inference-a-thousand-models-on-a-shared-gpu-fleet",
+   "source": "hackernews",
+   "published_date": "2026-07-16T21:36:20",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-07-16T21:36:20",
+   "importance": 0.4,
+   "why": "Examines multi-tenant serverless sharing architectures for high-throughput computer vision inference."
+  },
+  {
+   "title": "Integrating Context-Aware Video AI Agents Into Enterprise Workflows",
+   "url": "https://developer.nvidia.com/blog/integrating-context-aware-video-ai-agents-into-enterprise-workflows",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-16T16:03:35",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-metropolis-nemoclaw-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-metropolis-nemoclaw\" width=\"768\" />A video analytics AI agent that can perceive, reason, and act based on massive amounts of video footage must be integrated with existing workflows and...",
+   "tags": "inference,serving,multimodal",
+   "area": "inference-engines",
+   "first_seen": "2026-07-16T16:03:35",
+   "importance": 0.2,
+   "why": "Explains integration patterns for streaming multimodal video AI pipelines into enterprise architectures using specialized frameworks."
+  },
+  {
+   "title": "Scaling Agentic AI Factories Through Extreme Co-Design with NVIDIA BlueField",
+   "url": "https://developer.nvidia.com/blog/scaling-agentic-ai-factories-through-extreme-co-design-with-nvidia-bluefield",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-16T16:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/Bluefield-4-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Bluefield-4\" width=\"768\" />Agentic AI changes the infrastructure pattern for AI factories. One request can trigger many model calls, tool calls, memory lookups, policy checks, storage...",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-16T16:00:00",
+   "importance": 0.5,
+   "why": "Hardware-software co-design using network accelerators to scale agentic AI workloads."
+  },
   {
    "title": "The Path to AGI Runs Through HBM",
    "url": "https://stateofthefuture.substack.com/p/the-path-to-agi-runs-through-hbm",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-13T12:53:04Z",
- "previous_generated_at": "2026-11-12T22:36:27Z",
+ "generated_at": "2026-11-13T22:24:36Z",
+ "previous_generated_at": "2026-11-13T12:53:04Z",
  "hot_days": 120,
- "count": 3444,
- "total_collected": 3709,
+ "count": 3443,
+ "total_collected": 3711,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Jensen Huang Admitted He Was Facing an \"Avalanche\" of Excess Wafers and Memory",
+   "url": "https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis",
+   "source": "hackernews",
+   "published_date": "2026-11-13T13:08:48",
+   "summary": "68 points, 77 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-11-13T22:23:57",
+   "importance": 0.7,
+   "why": "Quantifies supply chain inventory shifts between wafer production and high-bandwidth memory capacity."
+  },
   {
    "title": "llama.cpp v1.0",
    "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
@@ -872,6 +884,18 @@
    "area": "silicon",
    "first_seen": "2026-11-11T23:19:18",
    "importance": 0.0
+  },
+  {
+   "title": "Pipeline Parallelism is here: 8x faster than Apple's WWDC26 fine-tuning",
+   "url": "https://nuketorch.ai/blog/pipeline-parallelism-is-here",
+   "source": "hackernews",
+   "published_date": "2026-11-11T19:50:22",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "post-training,systems",
+   "area": "training",
+   "first_seen": "2026-11-13T22:23:57",
+   "importance": 0.65,
+   "why": "Implements pipeline parallel execution strategies for on-device memory constrained fine-tuning."
   },
   {
    "title": "Mistral Large 4: Where Did the 41 Go?",
@@ -41181,42 +41205,6 @@
    "area": "other",
    "first_seen": "2026-07-16T22:59:09",
    "importance": 0.0
-  },
-  {
-   "title": "Roboflow Serverless Inference: A Thousand Models on a Shared GPU Fleet",
-   "url": "https://blog.roboflow.com/serverless-inference-a-thousand-models-on-a-shared-gpu-fleet",
-   "source": "hackernews",
-   "published_date": "2026-07-16T21:36:20",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "serving,inference",
-   "area": "inference-engines",
-   "first_seen": "2026-07-16T21:36:20",
-   "importance": 0.4,
-   "why": "Examines multi-tenant serverless sharing architectures for high-throughput computer vision inference."
-  },
-  {
-   "title": "Integrating Context-Aware Video AI Agents Into Enterprise Workflows",
-   "url": "https://developer.nvidia.com/blog/integrating-context-aware-video-ai-agents-into-enterprise-workflows",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-16T16:03:35",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-metropolis-nemoclaw-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-metropolis-nemoclaw\" width=\"768\" />A video analytics AI agent that can perceive, reason, and act based on massive amounts of video footage must be integrated with existing workflows and...",
-   "tags": "inference,serving,multimodal",
-   "area": "inference-engines",
-   "first_seen": "2026-07-16T16:03:35",
-   "importance": 0.2,
-   "why": "Explains integration patterns for streaming multimodal video AI pipelines into enterprise architectures using specialized frameworks."
-  },
-  {
-   "title": "Scaling Agentic AI Factories Through Extreme Co-Design with NVIDIA BlueField",
-   "url": "https://developer.nvidia.com/blog/scaling-agentic-ai-factories-through-extreme-co-design-with-nvidia-bluefield",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-16T16:00:00",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/Bluefield-4-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Bluefield-4\" width=\"768\" />Agentic AI changes the infrastructure pattern for AI factories. One request can trigger many model calls, tool calls, memory lookups, policy checks, storage...",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-07-16T16:00:00",
-   "importance": 0.5,
-   "why": "Hardware-software co-design using network accelerators to scale agentic AI workloads."
   }
  ]
 }
