@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 77,
+ "count": 78,
  "articles": [
+  {
+   "title": "In-House LLM Serving at Netflix",
+   "url": "https://netflixtechblog.medium.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",
+   "source": "hackernews",
+   "published_date": "2026-07-17T18:07:06",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-07-17T18:07:06",
+   "importance": 0.3,
+   "why": "Covers enterprise production serving practices for large language models."
+  },
   {
    "title": "Kimi K3 and the Checkpoint Gap",
    "url": "https://www.airealist.ai/p/kimi-k3-and-the-checkpoint-gap",

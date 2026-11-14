@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-14T11:57:09Z",
- "previous_generated_at": "2026-11-13T22:24:36Z",
+ "generated_at": "2026-11-14T21:08:00Z",
+ "previous_generated_at": "2026-11-14T11:57:09Z",
  "hot_days": 120,
- "count": 3443,
- "total_collected": 3713,
+ "count": 3446,
+ "total_collected": 3717,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,29 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Llama.cpp v1.0 on an RTX 3090: up to 55% faster with speculative decoding",
+   "url": "https://homebrewserver.club/llama-cpp-v1.html",
+   "source": "hackernews",
+   "published_date": "2026-11-14T16:30:57",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,quantization",
+   "area": "inference-engines",
+   "first_seen": "2026-11-14T21:07:31",
+   "importance": 0.4,
+   "why": "Integrates draft-model speculation into consumer inference runtimes to accelerate local token generation."
+  },
+  {
+   "title": "Open-source AI without Jensen",
+   "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+   "source": "rss:Interconnects",
+   "published_date": "2026-11-14T12:23:15",
+   "summary": "A decapitation. It&#8217;s time to rebuild.",
+   "tags": "",
+   "area": "training",
+   "first_seen": "2026-11-14T21:07:47",
+   "importance": 0.0
+  },
   {
    "title": "Jensen Huang Admitted He Was Facing an \"Avalanche\" of Excess Wafers and Memory",
    "url": "https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis",
@@ -863,6 +886,18 @@
    "why": "Demonstrates that poor actors can effectively train agents when used strictly as trajectory-level judges."
   },
   {
+   "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+   "url": "https://arxiv.org/abs/2611.16961",
+   "source": "hf:papers",
+   "published_date": "2026-11-12T00:00:00",
+   "summary": "A hybrid decision model routes between implicit single-forward-pass answering and full autoregressive reasoning via a self-routing block trained with calibrated decision policy optimization, reducing token and latency costs while preserving accuracy.\n\nKeywords: adaptive-reasoning, explicit reasoning, implicit thinking, zero-or-T thinking, hybrid decision model, frozen backbone, self-routing block, value of thinking, autoregressive reasoning, forward pass, Calibrated Decision Policy Optimisation, reinforcement learning, episode-level returns, per-decision label, episodic agentic tasks, slow mode, fast mode",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-14T21:07:13",
+   "importance": 0.8,
+   "why": "Introduces a self-routing block to dynamically choose between single-pass and autoregressive reasoning, lowering serving latency and compute cost."
+  },
+  {
    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
    "url": "https://arxiv.org/abs/2611.16517",
    "source": "hf:papers",
@@ -873,6 +908,18 @@
    "first_seen": "2026-11-13T12:52:20",
    "importance": 0.6,
    "why": "Combines full attention with GatedDeltaNet linear attention in a mixture-of-experts transformer backbone."
+  },
+  {
+   "title": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+   "url": "https://arxiv.org/abs/2611.16409",
+   "source": "hf:papers",
+   "published_date": "2026-11-12T00:00:00",
+   "summary": "Language-model agents trained with reinforcement learning can improve by learning to create and curate experience artifacts that help future rollouts, not just by optimizing actions from scalar rewards.\n\nKeywords: Large Language Models, Reinforcement Learning, scalar rewards, agentic tasks, agent harness, reflection, compaction, rollouts, gradient updates, Agentic Context Engineering, experience-handoff artifacts, task-local playbooks, action generator, insight reflector, playbook curator, fixed scaffold, agentic benchmarks",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-11-14T21:07:13",
+   "importance": 0.75,
+   "why": "Replaces standard scalar reward tuning with experience artifact curation, enabling recursive self-improvement in LLM agents."
   },
   {
    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
@@ -41194,18 +41241,6 @@
    "first_seen": "2026-07-18T11:16:09",
    "importance": 0.6,
    "why": "Explores methodologies for controlling and scaling test-time compute in reasoning LLMs."
-  },
-  {
-   "title": "In-House LLM Serving at Netflix",
-   "url": "https://netflixtechblog.medium.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",
-   "source": "hackernews",
-   "published_date": "2026-07-17T18:07:06",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "serving,inference",
-   "area": "inference-engines",
-   "first_seen": "2026-07-17T18:07:06",
-   "importance": 0.3,
-   "why": "Covers enterprise production serving practices for large language models."
   }
  ]
 }
