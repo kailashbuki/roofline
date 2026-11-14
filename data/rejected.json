@@ -1,5 +1,5 @@
 {
- "count": 3310,
+ "count": 3314,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3310,6 +3310,10 @@
   "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
   "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
   "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
-  "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter"
+  "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
+  "https://arxiv.org/abs/2611.17190",
+  "https://unsloth.ai/docs/models/qwen3.8",
+  "https://openai.com/business/customer-stories/shield",
+  "https://latent.space/p/ainews-the-no-ai-slop-manifesto"
  ]
 }

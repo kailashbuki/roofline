@@ -1,7 +1,30 @@
 {
  "month": "2026-07",
- "count": 75,
+ "count": 77,
  "articles": [
+  {
+   "title": "Kimi K3 and the Checkpoint Gap",
+   "url": "https://www.airealist.ai/p/kimi-k3-and-the-checkpoint-gap",
+   "source": "airealist",
+   "published_date": "2026-07-17T06:44:11",
+   "summary": "How to read a Chinese frontier launch in the eleven days before the weights ship",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-07-17T06:44:11",
+   "importance": 0.4,
+   "why": "Analyzes release timing and checkpoint availability of frontier Chinese models."
+  },
+  {
+   "title": "Q&amp;A: How Capcom Brought Path Tracing to RE ENGINE Across PRAGMATA and Resident Evil Requiem",
+   "url": "https://developer.nvidia.com/blog/qa-how-capcom-brought-path-tracing-to-re-engine-across-pragmata-and-resident-evil-requiem",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-16T22:59:09",
+   "summary": "<img alt=\"Path-Tracing\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"600\" />Capcom's RE ENGINE team set out to bring path tracing into two shipping titles at once, Resident Evil Requiem and PRAGMATA, each with a different visual...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-16T22:59:09",
+   "importance": 0.0
+  },
   {
    "title": "Roboflow Serverless Inference: A Thousand Models on a Shared GPU Fleet",
    "url": "https://blog.roboflow.com/serverless-inference-a-thousand-models-on-a-shared-gpu-fleet",

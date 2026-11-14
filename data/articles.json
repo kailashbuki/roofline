@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-13T22:24:36Z",
- "previous_generated_at": "2026-11-13T12:53:04Z",
+ "generated_at": "2026-11-14T11:57:09Z",
+ "previous_generated_at": "2026-11-13T22:24:36Z",
  "hot_days": 120,
  "count": 3443,
- "total_collected": 3711,
+ "total_collected": 3713,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -825,6 +825,18 @@
    "first_seen": "2026-11-13T12:52:16",
    "importance": 0.7,
    "why": "This decouples sharded communication data layouts from optimizer state structures to improve training memory and runtime efficiency."
+  },
+  {
+   "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+   "url": "https://arxiv.org/abs/2611.17336",
+   "source": "hf:papers",
+   "published_date": "2026-11-12T00:00:00",
+   "summary": "Frontier video generation models work in a VAE latent space that compresses video in both space and time. This compression made training tractable, but now limits high-resolution, controllable, and interactive generation -- doubling resolution quadruples token count, conditions apply to groups of frames rather than individual ones, and each response must wait for the rest of its multi-frame block. We present PixVid, a simple yet effective method that lifts a pretrained latent video model to directly generate every frame in pixel space. PixVid keeps the diffusion transformer and replaces the VAE decoder with a convolutional head that renders its outputs into pixels. We find that predicting clean video rather than velocity, together with a larger noise shift, is key to quality. Finetuned from Wan2.1-14B, PixVid is competitive with the latent baseline within sim 1.3M training clips. Working framewise in pixels, it generates at 2times higher resolution with the same per-frame token count, ",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-11-14T11:56:20",
+   "importance": 0.6,
+   "why": "Lifts latent video diffusion models directly into pixel space to eliminate VAE compression bottlenecks during high-resolution generation."
   },
   {
    "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
@@ -2430,6 +2442,18 @@
    "first_seen": "2026-11-11T23:18:13",
    "importance": 0.75,
    "why": "Replaces local instantaneous certainty metrics with frequency-aware remasking to dynamically allocate compute during diffusion language model generation."
+  },
+  {
+   "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+   "url": "https://arxiv.org/abs/2611.10439",
+   "source": "hf:papers",
+   "published_date": "2026-11-07T00:00:00",
+   "summary": "MixUA distills lessons from independent user-agent trajectories and assigns them to appropriate scopes to balance cross-user and cross-agent learning with privacy, evaluated by CrossLearnBench.\n\nKeywords: self-evolving agents, group-evolving agents, base LLM, memory system, user-agent trajectories, lessons, user-agent pair, global scope, CrossLearnBench, mixed-user-agent benchmark, privacy probes, forbidden scope, global memory, co-evolve",
+   "tags": "llm,systems",
+   "area": "architecture",
+   "first_seen": "2026-11-14T11:56:20",
+   "importance": 0.4,
+   "why": "Introduces a multi-granularity memory extraction framework to balance cross-agent learning while protecting user privacy."
   },
   {
    "title": "Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents",
@@ -41182,29 +41206,6 @@
    "first_seen": "2026-07-17T18:07:06",
    "importance": 0.3,
    "why": "Covers enterprise production serving practices for large language models."
-  },
-  {
-   "title": "Kimi K3 and the Checkpoint Gap",
-   "url": "https://www.airealist.ai/p/kimi-k3-and-the-checkpoint-gap",
-   "source": "airealist",
-   "published_date": "2026-07-17T06:44:11",
-   "summary": "How to read a Chinese frontier launch in the eleven days before the weights ship",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-07-17T06:44:11",
-   "importance": 0.4,
-   "why": "Analyzes release timing and checkpoint availability of frontier Chinese models."
-  },
-  {
-   "title": "Q&amp;A: How Capcom Brought Path Tracing to RE ENGINE Across PRAGMATA and Resident Evil Requiem",
-   "url": "https://developer.nvidia.com/blog/qa-how-capcom-brought-path-tracing-to-re-engine-across-pragmata-and-resident-evil-requiem",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-16T22:59:09",
-   "summary": "<img alt=\"Path-Tracing\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"600\" />Capcom's RE ENGINE team set out to bring path tracing into two shipping titles at once, Resident Evil Requiem and PRAGMATA, each with a different visual...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-16T22:59:09",
-   "importance": 0.0
   }
  ]
 }
