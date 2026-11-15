@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 78,
+ "count": 79,
  "articles": [
+  {
+   "title": "Controlling Reasoning Effort in LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-07-18T11:16:09",
+   "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes",
+   "tags": "llm,inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-07-18T11:16:09",
+   "importance": 0.6,
+   "why": "Explores methodologies for controlling and scaling test-time compute in reasoning LLMs."
+  },
   {
    "title": "In-House LLM Serving at Netflix",
    "url": "https://netflixtechblog.medium.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",

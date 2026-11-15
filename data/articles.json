@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-14T21:08:00Z",
- "previous_generated_at": "2026-11-14T11:57:09Z",
+ "generated_at": "2026-11-15T12:33:10Z",
+ "previous_generated_at": "2026-11-14T21:08:00Z",
  "hot_days": 120,
- "count": 3446,
- "total_collected": 3717,
+ "count": 3448,
+ "total_collected": 3720,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,29 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "source": "rss:Ahead of AI",
+   "published_date": "2026-11-15T12:10:37",
+   "summary": "The Methods Behind How LLMs Represent Token Positions",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-11-15T12:33:03",
+   "importance": 0.0
+  },
+  {
+   "title": "Flattening Every Memory Peak in Long-Context Mixture-of-Experts Training",
+   "url": "https://arxiv.org/abs/2609.14306",
+   "source": "hackernews",
+   "published_date": "2026-11-15T04:02:46",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,systems,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-15T12:32:45",
+   "importance": 0.6,
+   "why": "Re-ordering activation checkpointing across expert boundaries eliminates memory peaks during long-context MoE training."
+  },
   {
    "title": "Llama.cpp v1.0 on an RTX 3090: up to 55% faster with speculative decoding",
    "url": "https://homebrewserver.club/llama-cpp-v1.html",
@@ -920,6 +943,18 @@
    "first_seen": "2026-11-14T21:07:13",
    "importance": 0.75,
    "why": "Replaces standard scalar reward tuning with experience artifact curation, enabling recursive self-improvement in LLM agents."
+  },
+  {
+   "title": "From Large Language Models to Efficient System One Models via Adaptive Computation",
+   "url": "https://arxiv.org/abs/2611.16321",
+   "source": "hf:papers",
+   "published_date": "2026-11-12T00:00:00",
+   "summary": "Transferring LLMs into System One decision models typically replaces the language modeling head with a decision head while retaining the full backbone, making every decision pay for all layers. Yet it remains unclear how much depth such decisions require. We find that decision information is concentrated in intermediate layers, with early layers building essential features and the final six layers removable without loss, while independently trained smaller models largely mimic the full model rather than developing specialized decision capabilities. These findings suggest that efficiency requires not simply smaller backbones, but shared computation across different depths. Building on this, we propose , which jointly trains a full model with prefix sub-models that share its final layers and decision head through self-distillation. A lightweight gate reads the hidden state at each exit to determine whether additional computation is needed, allowing one model to operate at multiple layers",
+   "tags": "architecture,inference,optimization,llm",
+   "area": "architecture",
+   "first_seen": "2026-11-15T12:31:00",
+   "importance": 0.75,
+   "why": "Demonstrates decision information concentrates in intermediate layers, enabling efficient early-exit pruning for System One models."
   },
   {
    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
@@ -41229,18 +41264,6 @@
    "first_seen": "2026-07-19T00:39:52",
    "importance": 0.3,
    "why": "Modifying hardware constraints for enterprise GPUs to unlock compute."
-  },
-  {
-   "title": "Controlling Reasoning Effort in LLMs",
-   "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
-   "source": "rss:Ahead of AI",
-   "published_date": "2026-07-18T11:16:09",
-   "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes",
-   "tags": "llm,inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-07-18T11:16:09",
-   "importance": 0.6,
-   "why": "Explores methodologies for controlling and scaling test-time compute in reasoning LLMs."
   }
  ]
 }
