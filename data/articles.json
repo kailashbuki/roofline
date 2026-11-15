@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-15T12:33:10Z",
- "previous_generated_at": "2026-11-14T21:08:00Z",
+ "generated_at": "2026-11-15T21:29:27Z",
+ "previous_generated_at": "2026-11-15T12:33:10Z",
  "hot_days": 120,
- "count": 3448,
- "total_collected": 3720,
+ "count": 3449,
+ "total_collected": 3721,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -33,6 +33,18 @@
    "area": "other",
    "first_seen": "2026-11-15T12:33:03",
    "importance": 0.0
+  },
+  {
+   "title": "IBM Spyre AI Accelerator Card (75W PCIe Card with 128GB of LPDDR5)",
+   "url": "https://www.ibm.com/docs/en/systems-hardware/zsystems/9175-ME1?topic=introduction-spyre-accelerator",
+   "source": "hackernews",
+   "published_date": "2026-11-15T06:13:17",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-11-15T21:29:01",
+   "importance": 0.5,
+   "why": "Integrates high-capacity LPDDR5 memory onto a low-power PCIe accelerator card for edge inference."
   },
   {
    "title": "Flattening Every Memory Peak in Long-Context Mixture-of-Experts Training",
