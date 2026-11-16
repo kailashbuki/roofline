@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 79,
+ "count": 80,
  "articles": [
+  {
+   "title": "Cmpunlocker – Unlock Full GA100 Compute and 64GB HBM2e on the Nvidia CMP 170HX",
+   "url": "https://github.com/amoghmunikote/cmpunlocker",
+   "source": "hackernews",
+   "published_date": "2026-07-19T00:39:52",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-19T00:39:52",
+   "importance": 0.3,
+   "why": "Modifying hardware constraints for enterprise GPUs to unlock compute."
+  },
   {
    "title": "Controlling Reasoning Effort in LLMs",
    "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
