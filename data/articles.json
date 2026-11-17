@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-16T13:23:54Z",
- "previous_generated_at": "2026-11-15T21:29:27Z",
+ "generated_at": "2026-11-17T00:41:05Z",
+ "previous_generated_at": "2026-11-16T13:23:54Z",
  "hot_days": 120,
- "count": 3507,
- "total_collected": 3780,
+ "count": 3514,
+ "total_collected": 3790,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,88 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Talking Venice with Mahesh Subramony at AMD In-Depth",
+   "url": "https://chipsandcheese.com/p/talking-venice-with-mahesh-subramony",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-11-16T20:32:28",
+   "summary": "Hello you fine Internet folks,",
+   "tags": "",
+   "area": "silicon",
+   "first_seen": "2026-11-17T00:40:46",
+   "importance": 0.0
+  },
+  {
+   "title": "Google TPU and GPU performance: MLPerf v6.1 results",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus",
+   "source": "hackernews",
+   "published_date": "2026-11-16T17:08:43",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,benchmarks",
+   "area": "silicon",
+   "first_seen": "2026-11-17T00:39:56",
+   "importance": 0.5,
+   "why": "Benchmarks raw training and inference throughput across competing accelerator architectures."
+  },
+  {
+   "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
+   "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-16T16:00:00",
+   "summary": "<img alt=\"Two rows of black data center racks with gold-colored server components against a black background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/mlperf-endpoints-vera-rubin-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"mlperf-endpoints-vera-rubin-featured\" width=\"768\" />Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...",
+   "tags": "hardware,inference,serving",
+   "area": "silicon",
+   "first_seen": "2026-11-17T00:40:43",
+   "importance": 0.6,
+   "why": "It benchmarks next-generation hardware architecture on agentic inference workloads to establish performance baselines."
+  },
+  {
+   "title": "NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1",
+   "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-16T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/techblog_featured2_1520x855-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"techblog_featured2_1520x855\" width=\"768\" />As AI agents tackle increasingly complex workflows, reducing time-to-train is critical for rapidly iterating on both models and the agents they power. MLPerf...",
+   "tags": "hardware,training,systems",
+   "area": "silicon",
+   "first_seen": "2026-11-17T00:40:43",
+   "importance": 0.6,
+   "why": "It measures generational training speedups using Vera Rubin systems against Blackwell Ultra accelerators."
+  },
+  {
+   "title": "Last year we built megakernels. This year we deleted them: The road to Together Compiler",
+   "url": "https://www.together.ai/blog/road-to-together-compiler",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "Together Compiler uses AI agents to rewrite and fuse the GPU kernels in a model’s forward pass. It beats hand-written megakernels by 28% on B200 (2,118 vs 1,649 tokens/s on Llama 3.2 1B). This is how we got from one to the other.",
+   "tags": "inference,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-11-17T00:40:36",
+   "importance": 0.85,
+   "why": "Replaces hand-written megakernels with agent-generated fused kernels, raising throughput to 2118 tokens/second on B200."
+  },
+  {
+   "title": "Making open models work for long-horizon agentic workloads",
+   "url": "https://www.together.ai/blog/making-open-models-work-for-long-horizon-agentic-workloads",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "Every agent turn resends the full session. Together AI and Ollama break down how to protect the prefix cache, from the harness to the GPU.",
+   "tags": "inference,serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-11-17T00:40:36",
+   "importance": 0.7,
+   "why": "Optimizes prefix cache preservation across long-horizon agent loops to avoid redundant session recomputation."
+  },
+  {
+   "title": "How we make Together AI easy for coding agents to use",
+   "url": "https://www.together.ai/blog/how-we-do-agent-evals-at-together-ai",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "We built agent evals to test how effective coding agents are at using Together AI. Small fixes to our docs, skills, and API errors lifted task completion rate from 75% to 97%.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-11-17T00:40:36",
+   "importance": 0.0
+  },
   {
    "title": "Understanding Positional Embeddings in Modern LLMs",
    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
@@ -752,6 +834,18 @@
    "first_seen": "2026-11-16T13:23:04",
    "importance": 0.76,
    "why": "Extracts motion dynamics from frozen predictive video encoders via counterfactual supervision to improve video-language models."
+  },
+  {
+   "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+   "url": "https://arxiv.org/abs/2611.17780",
+   "source": "hf:papers",
+   "published_date": "2026-11-13T00:00:00",
+   "summary": "Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 queries a day costs over $70,000 a year at list price. To what extent can local hardware already owned by an organization offload this burden without compromising the agent's accuracy? We present LuthorSQL, a non-autoregressive 7B text-to-SQL model that serves as a rapid System 1 gate for a slower LLM agent (System 2), escalating queries only when uncertain. LuthorSQL makes a single forward pass to predict slot scores over a bounded grammar for query plans, compiles and runs up to 32 candidate plans, and chooses an answer using a trained validator. On its own, LuthorSQL reaches 68.03% execution accuracy on BIRD's hidden test set at 0.84 s per question on a single GPU, maintains its accuracy in 9 GB with 8-bit quantized ",
+   "tags": "inference,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T00:39:36",
+   "importance": 0.6,
+   "why": "Replaces expensive cloud API calls with a local one-pass text-to-SQL model, reducing operational costs."
   },
   {
    "title": "Unbundling Multimodal Vision Encoding",
@@ -1521,6 +1615,18 @@
    "why": "This decouples sharded communication data layouts from optimizer state structures to improve training memory and runtime efficiency."
   },
   {
+   "title": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
+   "url": "https://leapquant.github.io/",
+   "source": "hackernews",
+   "published_date": "2026-11-12T06:44:04",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "quantization,attention,inference",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T00:39:56",
+   "importance": 0.7,
+   "why": "Introduces recurrent state quantization to linear attention models."
+  },
+  {
    "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
    "url": "https://arxiv.org/abs/2611.17336",
    "source": "hf:papers",
@@ -1543,6 +1649,18 @@
    "first_seen": "2026-11-13T12:52:20",
    "importance": 0.6,
    "why": "Bakes cross-view attention into an MLP during test time, trading inference compute for memory efficiency."
+  },
+  {
+   "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
+   "url": "https://arxiv.org/abs/2611.17194",
+   "source": "hf:papers",
+   "published_date": "2026-11-12T00:00:00",
+   "summary": "Endpoint Distribution Matching Distillation trains a shared fake model only on final student outputs and adds precise teacher supervision to better align few-step diffusion students with teacher distributions for 4-step generation.\n\nKeywords: distribution matching distillation, diffusion models, few-step students, fake score model, teacher predictions, multi-step distillation, denoising steps, intermediate distributions, Endpoint Distribution Matching Distillation, eDMD, shared fake model, final outputs, distribution matching term, teacher supervision, precise teacher, single-step guided predictions, multi-step trajectories, final noise interval, calibrated query density, 4-step generation",
+   "tags": "post-training,compression,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T00:39:36",
+   "importance": 0.7,
+   "why": "Uses Endpoint Distribution Matching to distill diffusion models into four steps with teacher supervision."
   },
   {
    "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
@@ -41936,42 +42054,6 @@
    "first_seen": "2026-07-20T04:24:48",
    "importance": 0.5,
    "why": "Provides standardized performance benchmarks for various parameter-efficient fine-tuning speedups."
-  },
-  {
-   "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
-   "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-20T00:00:00",
-   "summary": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs.",
-   "tags": "hardware,systems",
-   "area": "economics",
-   "first_seen": "2026-07-20T00:00:00",
-   "importance": 0.3,
-   "why": "Examines GPU cluster allocation mechanisms bypassing traditional enterprise compute procurement contracts."
-  },
-  {
-   "title": "Petals: Collaborative Inference and Fine-Tuning of Large Models",
-   "url": "https://arxiv.org/abs/2209.01188",
-   "source": "hackernews",
-   "published_date": "2026-07-19T15:37:21",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,serving,systems",
-   "area": "training",
-   "first_seen": "2026-07-19T15:37:21",
-   "importance": 0.6,
-   "why": "Enables distributed execution of massive models across consumer-grade heterogeneous hardware."
-  },
-  {
-   "title": "Qwen 3.8: Soon Is Not a Date",
-   "url": "https://www.airealist.ai/p/qwen-38-soon-is-not-a-date",
-   "source": "airealist",
-   "published_date": "2026-07-19T15:33:40",
-   "summary": "Alibaba answers Moonshot's dated gap with an undated one",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-07-19T15:33:40",
-   "importance": 0.4,
-   "why": "Discusses upcoming foundation model releases and release strategies."
   }
  ]
 }

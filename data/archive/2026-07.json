@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 80,
+ "count": 83,
  "articles": [
+  {
+   "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
+   "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-20T00:00:00",
+   "summary": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs.",
+   "tags": "hardware,systems",
+   "area": "economics",
+   "first_seen": "2026-07-20T00:00:00",
+   "importance": 0.3,
+   "why": "Examines GPU cluster allocation mechanisms bypassing traditional enterprise compute procurement contracts."
+  },
+  {
+   "title": "Petals: Collaborative Inference and Fine-Tuning of Large Models",
+   "url": "https://arxiv.org/abs/2209.01188",
+   "source": "hackernews",
+   "published_date": "2026-07-19T15:37:21",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,serving,systems",
+   "area": "training",
+   "first_seen": "2026-07-19T15:37:21",
+   "importance": 0.6,
+   "why": "Enables distributed execution of massive models across consumer-grade heterogeneous hardware."
+  },
+  {
+   "title": "Qwen 3.8: Soon Is Not a Date",
+   "url": "https://www.airealist.ai/p/qwen-38-soon-is-not-a-date",
+   "source": "airealist",
+   "published_date": "2026-07-19T15:33:40",
+   "summary": "Alibaba answers Moonshot's dated gap with an undated one",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-07-19T15:33:40",
+   "importance": 0.4,
+   "why": "Discusses upcoming foundation model releases and release strategies."
+  },
   {
    "title": "Cmpunlocker – Unlock Full GA100 Compute and 64GB HBM2e on the Nvidia CMP 170HX",
    "url": "https://github.com/amoghmunikote/cmpunlocker",

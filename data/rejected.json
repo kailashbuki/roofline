@@ -1,5 +1,5 @@
 {
- "count": 3388,
+ "count": 3410,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3388,6 +3388,28 @@
   "https://openai.com/index/lvmh-media-division-partnership",
   "https://openai.com/index/the-kings-trust-and-openai",
   "https://openai.com/index/step-toward-defining-the-standard-model",
-  "https://openai.com/index/our-new-blog-for-science"
+  "https://openai.com/index/our-new-blog-for-science",
+  "https://arxiv.org/abs/2611.14487",
+  "https://arxiv.org/abs/2611.15640",
+  "https://arxiv.org/abs/2610.41354",
+  "https://arxiv.org/abs/2611.17440",
+  "https://arxiv.org/abs/2611.17878",
+  "https://arxiv.org/abs/2611.14505",
+  "https://www.intel.com/content/www/us/en/newsroom/news/data-center/why-intel-gpu-d270-belongs-in-the-hpc-conversation.html",
+  "https://github.com/meshapplied/goethe",
+  "https://huggingface.co/blog/openrouter",
+  "https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models",
+  "https://pytorch.org/blog/2026-pytorch-foundation-contributor-awards",
+  "https://pytorch.org/blog/pytorch-ambassador-community-highlights-november-2026",
+  "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+  "https://openai.com/index/strengthening-online-child-safety",
+  "https://openai.com/index/science-at-the-frontier",
+  "https://openai.com/index/our-first-phase-of-embedded-assessments",
+  "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+  "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+  "https://openai.com/business/customer-stories/holiday-extras-dots",
+  "https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential",
+  "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain",
+  "https://latent.space/p/bfl"
  ]
 }
