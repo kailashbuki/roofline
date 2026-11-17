@@ -1,7 +1,30 @@
 {
  "month": "2026-07",
- "count": 83,
+ "count": 85,
  "articles": [
+  {
+   "title": "Show HN: A fast, free AI text humanizer powered by Groq Llama 3.3",
+   "url": "https://zlvox.com/tools/ai-humanizer",
+   "source": "hackernews",
+   "published_date": "2026-07-20T05:05:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-20T05:05:26",
+   "importance": 0.0
+  },
+  {
+   "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
+   "url": "https://github.com/Saivineeth147/lora-speedrun",
+   "source": "hackernews",
+   "published_date": "2026-07-20T04:24:48",
+   "summary": "145 points, 29 comments on HackerNews",
+   "tags": "post-training,benchmarks,optimization",
+   "area": "training",
+   "first_seen": "2026-07-20T04:24:48",
+   "importance": 0.5,
+   "why": "Provides standardized performance benchmarks for various parameter-efficient fine-tuning speedups."
+  },
   {
    "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
    "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
