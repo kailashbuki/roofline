@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-17T14:12:22Z",
- "previous_generated_at": "2026-11-17T00:41:05Z",
+ "generated_at": "2026-11-17T23:47:11Z",
+ "previous_generated_at": "2026-11-17T14:12:22Z",
  "hot_days": 120,
- "count": 3576,
- "total_collected": 3854,
+ "count": 3584,
+ "total_collected": 3865,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+   "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-17T17:30:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/llm-optimize-deploy-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"llm-optimize-deploy\" width=\"768\" />Agentic workloads, long documents, and large codebases are pushing context lengths from tens of thousands of tokens to hundreds of thousands. At those lengths,...",
+   "tags": "inference,attention,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T23:46:32",
+   "importance": 0.75,
+   "why": "Co-designing sparse attention mechanisms reduces memory bandwidth bottlenecks during long-context generation."
+  },
+  {
+   "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+   "url": "https://github.com/RunanywhereAI/trnrt",
+   "source": "hackernews",
+   "published_date": "2026-11-17T16:01:04",
+   "summary": "41 points, 5 comments on HackerNews",
+   "tags": "inference,serving,hardware,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-11-17T23:46:07",
+   "importance": 0.65,
+   "why": "Bridges AWS Trainium hardware to open-source serving infrastructure."
+  },
   {
    "title": "16TB of DDR5, 576 GB of HBM3E and 57.6 Tbps of bandwidth",
    "url": "https://twitter.com/FinnStockinger/status/2122331139574575257",
@@ -57,6 +81,18 @@
    "area": "silicon",
    "first_seen": "2026-11-17T00:40:46",
    "importance": 0.0
+  },
+  {
+   "title": "Latent Lattice Language Models",
+   "url": "https://arxiv.org/abs/2611.21608",
+   "source": "arxiv",
+   "published_date": "2026-11-16T18:59:38",
+   "summary": "Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, while richer residual connections improve information flow across layers. We instead increase computational capacity: the number of active computational states a model maintains. We introduce the Lattice of Latents, a set of per-layer horizontal latent streams that run recurrently along time, alongside the vertical residual stream that flows through depth. Like hyper-connections, mHC, and attention or value residuals, the Lattice enhances the residual stream, but rather than adding or rerouting residual pathways through depth, it provides companion computational states that persist across tokens. Unlike hybrid Transformer-SSM architectures, whose recurrent states primarily serve as internal memory for sequence mixing, these latents directly condition the vertical stream's attention, KV-cache writes, MLP computation, and decoding. On Transformers trained on 20B FineWeb-Ed",
+   "tags": "architecture,llm,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.75,
+   "why": "Scaling active computational states via per-layer horizontal recurrent latent streams increases capacity beyond deeper loops."
   },
   {
    "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
@@ -137,6 +173,18 @@
    "area": "other",
    "first_seen": "2026-11-17T14:10:25",
    "importance": 0.0
+  },
+  {
+   "title": "Generative Data Augmentation Without External Data: An Empirical and Theoretical Study on Deep Networks",
+   "url": "https://arxiv.org/abs/2611.21467",
+   "source": "arxiv",
+   "published_date": "2026-11-16T17:47:45",
+   "summary": "Generative data augmentation adds samples from generative models to a classifier's training set. Many influential studies use generators pre-trained on large external datasets, and so mix the value of synthetic data with knowledge transferred through pretraining. We study the case without external data, where each generator learns only from the classifier's own training set, and ask when and why adding generated samples to that training set raises or lowers the classifier's test accuracy. We train classifiers with four backbones on six datasets, two of them medical, adding samples from four generators. We bound the excess risk of a classifier trained with synthetic data, that is, how far its population risk can lie above the minimum risk within its hypothesis class. The bound charges synthetic data for the total variation distance between the real and generated distributions and credits synthetic data for a larger training set. The gain from adding synthetic data, the fall in populatio",
+   "tags": "training",
+   "area": "training",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.6,
+   "why": "Training generative data augmentation models exclusively from the classifier's own dataset isolates and quantifies synthetic data utility."
   },
   {
    "title": "Balanced Twin Weight Factorization for Efficient MLLMs",
@@ -663,6 +711,18 @@
    "importance": 0.0
   },
   {
+   "title": "EDITORS Know Your Style! Editing LoRA Subspaces for Stylistic Attribution and Imitation",
+   "url": "https://arxiv.org/abs/2611.20846",
+   "source": "arxiv",
+   "published_date": "2026-11-16T10:22:39",
+   "summary": "Disentangling writing style from semantic content is a fundamental challenge in literary text modeling. Style-content entanglement causes models to rely on semantic content for authorship attribution (AA) tasks and memorize author-specific content for style imitation (SI) tasks. We propose EDITORS (EditingLoRA Subspaces), a diagnose-then-deflate framework that adapts pretrained large language models and prioritizes stylistic features, making it effective for both AA and SI tasks. EDITORS first trains a diagnostic LoRA adapter using style-neutral statements derived from the training corpus to identify a content-oriented subspace. It then trains the final style adapter under activation-space deflation that projects input activations away from the identified content-oriented directions. We empirically demonstrate that EDITORS is effective. On three AA benchmarks spanning literature, social media, and news, EDITORS achieves state-of-the-art accuracy, outperforming the strongest existing ba",
+   "tags": "post-training,llm",
+   "area": "training",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.65,
+   "why": "Deflating specific LoRA subspaces via a diagnose-then-deflate framework disentangles stylistic authorship attribution from semantic content."
+  },
+  {
    "title": "Network-Native DNN Architecture Synthesis for Distributed Inference",
    "url": "https://arxiv.org/abs/2611.20824",
    "source": "arxiv",
@@ -673,6 +733,18 @@
    "first_seen": "2026-11-17T14:10:25",
    "importance": 0.6,
    "why": "It synthesizes network-native DNN architectures tailored to specific physical distributed topologies to eliminate communication bottlenecks."
+  },
+  {
+   "title": "Surprise-Gated Memory for Live Speaker Diarization",
+   "url": "https://arxiv.org/abs/2611.20819",
+   "source": "arxiv",
+   "published_date": "2026-11-16T10:03:56",
+   "summary": "We transpose the Surprise-Gated Memory recipe, a frozen encoder plus a calibrated novelty signal that gates a one-shot episodic store consolidated by periodic replay, from continual visual learning to live speaker diarization. The moment-to-moment question a streaming diarizer must answer, whether an arriving voice belongs to an already-heard speaker or a new one, is a known-versus-novel decision, exactly the decision the surprise gate is built for. On a frozen fine-tuned DiariZen backbone, our online system SGM-Diar recovers 4.8 of the 9.2 diarization-error points separating a naive online baseline from the offline oracle on AMI-SDM (52%) and 1.9 of 2.3 points on VoxConverse (82%), in the end-of-meeting revisable mode, with calibration frozen on development data and transferred cross-domain without adjustment. These are single-seed runs on three AMI meetings and five VoxConverse sessions, so the ordering of conditions rather than the absolute rates is the result. Beyond error rate, we",
+   "tags": "inference,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.6,
+   "why": "Transposing surprise-gated novelty signals with a one-shot episodic store enables streaming live speaker diarization."
   },
   {
    "title": "Tight PAC-Bayes Generalisation Guarantees for Large Language Model Judges",
@@ -710,6 +782,18 @@
    "why": "Nemotron 3.5 Bolt E4B 4GB post-trains Gemma-4 to maximize conversational intelligence and tool use per gigabyte of memory."
   },
   {
+   "title": "UNITE: Consolidating Embodied VLM Specialists via Shared-Anchor One-Bit Factorization",
+   "url": "https://arxiv.org/abs/2611.20767",
+   "source": "arxiv",
+   "published_date": "2026-11-16T09:19:30",
+   "summary": "Embodied capabilities such as visual grounding, spatial reasoning, navigation, and driving understanding are often developed in separate vision-language specialists fine-tuned from a common pretrained model.Deploying the specialists separately multiplies storage, whereas merging them into one dense model forces conflicting task updates to share parameters and loses part of each specialist's expertise.We introduce UNITE, a framework that consolidates such specialists into a compact shared-backbone mixture of experts. UNITE keeps the feed-forward block of each specialist as a routable expert and represents the expert bank through a shared-anchor one-bit factorization: a shared floating-point anchor plus expert-specific, row-scaled binary deviations.The anchor is optimized jointly with the scales and signs through closed-form alternating updates, using only source weights and no calibration data.Router adaptation then adjusts token-level expert selection with the backbone and experts froz",
+   "tags": "compression,multimodal,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.7,
+   "why": "Shared-anchor one-bit factorization compresses and consolidates multiple specialized embodied VLMs into a single deployment unit."
+  },
+  {
    "title": "STA: A Split Temporal Adversary Method for Evaluating Robustness of Multimodal RL-based Driving Policies",
    "url": "https://arxiv.org/abs/2611.20765",
    "source": "arxiv",
@@ -731,6 +815,18 @@
    "first_seen": "2026-11-17T14:10:25",
    "importance": 0.7,
    "why": "Instant weight-space consolidation replaces external text retrieval memories by directly evolving model weights across interactions."
+  },
+  {
+   "title": "GPRM: Global Perspective Process Reward Model",
+   "url": "https://arxiv.org/abs/2611.20755",
+   "source": "arxiv",
+   "published_date": "2026-11-16T09:03:27",
+   "summary": "Process Reward Models (PRMs) are widely used for step-level evaluation of multi-step reasoning in large language models, but existing methods are often limited by weak historical dependency modeling and insufficient global awareness. They typically fail to leverage prior step evaluations for coherent judgment and lack visibility into subsequent reasoning, leading to suboptimal assessment of intermediate steps. To address this issue, we propose the Global Perspective Process Reward Model (GPRM), which jointly models the problem, previous reasoning steps and their evaluations, the current step, and future steps to enable history-aware and globally informed process evaluation. We further introduce a structured evaluation framework along four dimensions---look back, look ahead, self-check, and goal alignment---to assess prior consistency, future plausibility, step validity, and task alignment. Based on this framework, we construct datasets for supervised fine-tuning (SFT) and reinforcement",
+   "tags": "llm,training",
+   "area": "new-models",
+   "first_seen": "2026-11-17T23:45:32",
+   "importance": 0.68,
+   "why": "Global perspective process reward models incorporate historical dependency and subsequent reasoning visibility for step evaluation."
   },
   {
    "title": "Last year we built megakernels. This year we deleted them: The road to Together Compiler",
@@ -883,6 +979,17 @@
    "first_seen": "2026-11-17T14:10:41",
    "importance": 0.7,
    "why": "Constructs draft trees from multi-token suffix and shallow-loop predictions for verified speculative decoding in looped transformers."
+  },
+  {
+   "title": "Continuation-Guided LLM Evolution of Program Policies and Goal Compilers in Craftax",
+   "url": "https://arxiv.org/abs/2611.19537",
+   "source": "hf:papers",
+   "published_date": "2026-11-14T00:00:00",
+   "summary": "A framework uses coding agents and a feedback cascade to synthesize code-based policies that achieve long-horizon success and can be factored into a reusable goal compiler for zero-shot transfer to new tasks.\n\nKeywords: coding agents, code-based policies, simulator feedback, zero inference model calls, long-horizon tasks, feedback cascade, episode returns, hierarchical goals, belief updates, Craftax, partially observed environment, procedurally generated environment, environment interpreter, rule program, goal compiler, structured tasks, zero-shot transfer, inference-time LLM calls, continuation-scored feedback, editable program",
+   "tags": "inference,llm",
+   "area": "other",
+   "first_seen": "2026-11-17T23:45:44",
+   "importance": 0.0
   },
   {
    "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
@@ -1579,6 +1686,18 @@
    "first_seen": "2026-11-17T00:39:36",
    "importance": 0.6,
    "why": "Replaces expensive cloud API calls with a local one-pass text-to-SQL model, reducing operational costs."
+  },
+  {
+   "title": "More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs",
+   "url": "https://arxiv.org/abs/2611.17610",
+   "source": "hf:papers",
+   "published_date": "2026-11-13T00:00:00",
+   "summary": "Evaluations of multi-agent language models often compare communicating architectures against a single greedy pass. This practice confounds coordination with sample multiplicity and inference compute. We synthesize nine primary empirical evaluations comprising 516 unique multi-agent configurations organized along a resource vector R with six dimensions and a baseline ladder with four categories. Against baselines with a single pass (Category A), multi-agent accuracy differences are negative overall and near zero when omitting the largest contributing study. When evaluated against baselines matched on sample count (Category B) or resource budget (Category C), multi-agent systems average -0.042 in accuracy, and multilevel random effects modeling on the log odds scale remains negative across sensitivity checks. Multi-agent accuracy equals or falls below the baseline in 74% of these comparable contrasts, and study means are nonpositive in almost all evaluated studies. Across studies reporti",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-17T23:45:44",
+   "importance": 0.7,
+   "why": "Systematic decomposition isolates multi-agent coordination benefits from raw test-time compute scaling across 516 configurations."
   },
   {
    "title": "Unbundling Multimodal Vision Encoding",
@@ -4743,6 +4862,18 @@
    "first_seen": "2026-11-10T13:16:52",
    "importance": 0.6,
    "why": "Introduces learned correction codes and motion-aware history in vision-language-action policies to improve physical robot control."
+  },
+  {
+   "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+   "url": "https://arxiv.org/abs/2611.08977",
+   "source": "hf:papers",
+   "published_date": "2026-11-06T00:00:00",
+   "summary": "Energy-Based Reasoners guide looped latent reasoning by learning an energy function whose gradient refines states and signals when to stop, with exploration-based training improving performance and efficiency.\n\nKeywords: inductive bias, recurrent block, looped models, effective depth, multi-step reasoning, latent space, energy function, latent reasoning states, gradient descent, Energy-Based Reasoners, exploration-based training, energy landscape, algorithmic reasoning benchmarks, recurrent reasoning models, inference compute, training compute, multi-solution benchmarks, single-sample accuracy, energy-based models",
+   "tags": "architecture,inference,llm",
+   "area": "architecture",
+   "first_seen": "2026-11-17T23:45:44",
+   "importance": 0.8,
+   "why": "Replaces fixed-depth loops with gradient-based energy minimization, adding dynamic stopping criteria to latent reasoning states."
   },
   {
    "title": "VibeSys on Trainium: Agents Build/Tune Qwen3.8 Serving Engines on AWS Trainium2",
@@ -42752,41 +42883,6 @@
    "first_seen": "2026-07-21T02:32:10",
    "importance": 0.4,
    "why": "Bridges distributed orchestration frameworks with custom accelerator hardware."
-  },
-  {
-   "title": "Kimi K3: The open-weights escalation",
-   "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
-   "source": "rss:Interconnects",
-   "published_date": "2026-07-20T15:48:28",
-   "summary": "The global implications on the AI ecosystem.",
-   "tags": "llm",
-   "area": "new-models",
-   "first_seen": "2026-07-20T15:48:28",
-   "importance": 0.4,
-   "why": "Analyzes the competitive dynamics of open-weights frontier model releases."
-  },
-  {
-   "title": "NVIDIA NVLink: The Scale-Up Network for AI Factories",
-   "url": "https://developer.nvidia.com/blog/nvidia-nvlink-the-scale-up-network-for-ai-factories",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-20T15:46:28",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvlinkimage1_16x9-768x432.jpeg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvlinkimage1_16x9\" width=\"768\" />The demand for AI continues to accelerate. Workloads are getting larger, models are becoming more complex, and there is mounting pressure to deploy AI compute...",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-07-20T15:46:28",
-   "importance": 0.5,
-   "why": "Explains scale-up network topologies required for massive AI training clusters."
-  },
-  {
-   "title": "Integrate NVIDIA Omniverse RTX Sensor Simulation Into Existing Apps",
-   "url": "https://developer.nvidia.com/blog/integrate-nvidia-omniverse-rtx-sensor-simulation-into-existing-apps",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-20T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-omniverse-rtx-sensor-ximulation.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-omniverse-rtx-sensor-ximulation\" width=\"600\" />Developers building 3D, design, simulation, robotics, and industrial digital twin applications need ways to bring physical AI capabilities into the tools and...",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-07-20T15:00:00",
-   "importance": 0.0
   }
  ]
 }

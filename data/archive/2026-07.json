@@ -1,7 +1,42 @@
 {
  "month": "2026-07",
- "count": 85,
+ "count": 88,
  "articles": [
+  {
+   "title": "Kimi K3: The open-weights escalation",
+   "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+   "source": "rss:Interconnects",
+   "published_date": "2026-07-20T15:48:28",
+   "summary": "The global implications on the AI ecosystem.",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-07-20T15:48:28",
+   "importance": 0.4,
+   "why": "Analyzes the competitive dynamics of open-weights frontier model releases."
+  },
+  {
+   "title": "NVIDIA NVLink: The Scale-Up Network for AI Factories",
+   "url": "https://developer.nvidia.com/blog/nvidia-nvlink-the-scale-up-network-for-ai-factories",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-20T15:46:28",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvlinkimage1_16x9-768x432.jpeg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvlinkimage1_16x9\" width=\"768\" />The demand for AI continues to accelerate. Workloads are getting larger, models are becoming more complex, and there is mounting pressure to deploy AI compute...",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-20T15:46:28",
+   "importance": 0.5,
+   "why": "Explains scale-up network topologies required for massive AI training clusters."
+  },
+  {
+   "title": "Integrate NVIDIA Omniverse RTX Sensor Simulation Into Existing Apps",
+   "url": "https://developer.nvidia.com/blog/integrate-nvidia-omniverse-rtx-sensor-simulation-into-existing-apps",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-20T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-omniverse-rtx-sensor-ximulation.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-omniverse-rtx-sensor-ximulation\" width=\"600\" />Developers building 3D, design, simulation, robotics, and industrial digital twin applications need ways to bring physical AI capabilities into the tools and...",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-20T15:00:00",
+   "importance": 0.0
+  },
   {
    "title": "Show HN: A fast, free AI text humanizer powered by Groq Llama 3.3",
    "url": "https://zlvox.com/tools/ai-humanizer",
