@@ -1,7 +1,55 @@
 {
  "month": "2026-07",
- "count": 90,
+ "count": 94,
  "articles": [
+  {
+   "title": "Google just bet its inference future on a chip built for one model",
+   "url": "https://thenewstack.io/google-frozen-gemini-chip",
+   "source": "hackernews",
+   "published_date": "2026-07-21T18:27:23",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-21T18:27:23",
+   "importance": 0.6,
+   "why": "Examines strategic shifts in custom silicon development tied to specific model architectures."
+  },
+  {
+   "title": "Setting a World Record for MoE Pre-Training on NVIDIA GB300 NVL72",
+   "url": "https://developer.nvidia.com/blog/setting-a-world-record-for-moe-pre-training-on-nvidia-gb300-nvl72",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-21T15:00:00",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/World-Record-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"World-Record\" width=\"768\" />Frontier model pre-training has converged on mixture of experts (MoE), which is fundamentally changing what limits large-scale AI training. As compute per token...",
+   "tags": "training,hardware",
+   "area": "training",
+   "first_seen": "2026-07-21T15:00:00",
+   "importance": 0.6,
+   "why": "Highlights scaling milestones for mixture-of-experts pre-training on new hardware."
+  },
+  {
+   "title": "NVIDIA Vera CPU: Olympus Cores Built for Maximum Single-Thread Performance in Agentic AI",
+   "url": "https://developer.nvidia.com/blog/inside-nvidia-vera-cpu-olympus-cores-built-for-maximum-single-threaded-performance-in-agentic-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-21T15:00:00",
+   "summary": "<img alt=\"Vera CPU image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/Vera-CPU-e1783372749296-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Vera-CPU\" width=\"768\" />Agentic AI shifts more of the critical execution path onto the CPU. Agents operate in sandboxes to execute code, invoke tools, retrieve context, interact with...",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-21T15:00:00",
+   "importance": 0.6,
+   "why": "Details CPU design choices tailored for agentic execution paths and sandboxed tool use."
+  },
+  {
+   "title": "Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI",
+   "url": "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-21T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-rubin-gpu-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-rubin-gpu\" width=\"768\" />What began as discrete AI model training and human-facing chat interfaces has evolved into always-on AI factories dedicated to producing intelligence at scale....",
+   "tags": "hardware,llm",
+   "area": "silicon",
+   "first_seen": "2026-07-21T15:00:00",
+   "importance": 0.7,
+   "why": "Outlines architectural changes in Rubin GPUs designed for agentic AI factories."
+  },
   {
    "title": "Microsoft Taps AMD for at Scale AI CPU and GPU Clusters",
    "url": "https://www.nextplatform.com/cloud/2026/07/20/microsoft-taps-amd-for-at-scale-ai-cpu-and-gpu-clusters/5275161",

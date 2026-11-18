@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-18T13:43:24Z",
- "previous_generated_at": "2026-11-17T23:47:11Z",
+ "generated_at": "2026-11-18T23:16:54Z",
+ "previous_generated_at": "2026-11-18T13:43:24Z",
  "hot_days": 120,
- "count": 3671,
- "total_collected": 3954,
+ "count": 3675,
+ "total_collected": 3962,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -24,6 +24,54 @@
  ],
  "articles": [
   {
+   "title": "Why your fine-tuning job takes longer than the FLOPs say",
+   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-11-18T18:53:43",
+   "summary": "",
+   "tags": "training,systems",
+   "area": "training",
+   "first_seen": "2026-11-18T23:16:23",
+   "importance": 0.4,
+   "why": "Analyzes memory bottlenecks and data loading overheads that explain training slowdowns beyond raw FLOP counts."
+  },
+  {
+   "title": "Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos",
+   "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-18T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/cosmos-gif.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cosmos-gif\" width=\"600\" />World model accuracy starts with high-quality, diverse training datasets. Yet capturing rare defects, nighttime incidents, and other challenging scenarios is...",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-11-18T23:16:37",
+   "importance": 0.5,
+   "why": "Generates synthetic physical AI training datasets via prompting, accelerating world model development pipelines."
+  },
+  {
+   "title": "Cerebras Readies CS-5 Systems for 2027 Launch as It Bags Another Hyperscaler",
+   "url": "https://www.nextplatform.com/compute/2026/11/14/cerebras-readies-cs-5-systems-for-2027-launch-as-it-bags-another-hyperscaler/5309932",
+   "source": "hackernews",
+   "published_date": "2026-11-18T16:04:21",
+   "summary": "7 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-11-18T23:16:20",
+   "importance": 0.65,
+   "why": "Outlines wafer-scale hardware roadmap milestones for upcoming generations."
+  },
+  {
+   "title": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
+   "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-18T15:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image4-10-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Training a next-generation machine learning interatomic potential (MLIP) requires ground truth: tens to hundreds of millions of density functional theory (DFT)...",
+   "tags": "hardware,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-18T23:16:37",
+   "importance": 0.6,
+   "why": "Applies k-point batching and mixed precision to DFT workloads, mitigating memory and compute bottlenecks on GPUs."
+  },
+  {
    "title": "Murmur: Efficient Long-Context ASR Inference with Hierarchical Chunking",
    "url": "https://syfi.cs.washington.edu/blog/2026-11-13-murmur",
    "source": "hackernews",
@@ -31,7 +79,9 @@
    "summary": "4 points, 0 comments on HackerNews",
    "tags": "inference",
    "area": "architecture",
-   "first_seen": "2026-11-18T13:41:58"
+   "first_seen": "2026-11-18T13:41:58",
+   "importance": 0.65,
+   "why": "Introduces hierarchical chunking to reduce KV cache memory overhead in long-context ASR streaming inference."
   },
   {
    "title": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch",
@@ -41,7 +91,9 @@
    "summary": "2 points, 0 comments on HackerNews",
    "tags": "inference,hardware",
    "area": "silicon",
-   "first_seen": "2026-11-18T13:41:58"
+   "first_seen": "2026-11-18T13:41:58",
+   "importance": 0.7,
+   "why": "Eliminates train-inference numerical mismatch via bitwise-zero error bounds, enabling stable on-policy RL scaling on TPUs."
   },
   {
    "title": "Cerebras Disaggregated Inference",
@@ -51,7 +103,33 @@
    "summary": "92 points, 24 comments on HackerNews",
    "tags": "inference",
    "area": "silicon",
-   "first_seen": "2026-11-18T13:41:58"
+   "first_seen": "2026-11-18T13:41:58",
+   "importance": 0.75,
+   "why": "Decouples memory bandwidth and compute stages across wafer-scale hardware to improve throughput for large LLM serving."
+  },
+  {
+   "title": "Advancing chip design with OpenAI models",
+   "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+   "source": "rss:OpenAI Blog",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+   "tags": "hardware,optimization",
+   "area": "silicon",
+   "first_seen": "2026-11-18T23:16:29",
+   "importance": 0.75,
+   "why": "Applies optimized LLMs directly to physical chip layout and RISC-V core design generation."
+  },
+  {
+   "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+   "url": "https://huggingface.co/blog/moe-expert-streaming",
+   "source": "rss:Hugging Face Blog",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "",
+   "tags": "inference,serving,compression",
+   "area": "inference-engines",
+   "first_seen": "2026-11-18T23:16:23",
+   "importance": 0.6,
+   "why": "Demonstrates extreme memory footprint reduction to run massive mixture-of-experts models on consumer hardware."
   },
   {
    "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
@@ -60,8 +138,10 @@
    "published_date": "2026-11-17T18:59:37",
    "summary": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a \"frozen\" version of the pre-trained model serves as a noisy teacher that the fine-tun",
    "tags": "llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "training",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.6,
+   "why": "Applies temperature matching during fine-tuning to mitigate catastrophic forgetting when SFT data scale is constrained."
   },
   {
    "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
@@ -70,8 +150,10 @@
    "published_date": "2026-11-17T18:59:27",
    "summary": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent up",
    "tags": "inference,optimization,attention,multimodal,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "inference-methods",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.68,
+   "why": "Replaces standard KV caching with linear recurrent layers to bound latency in long-window video-language models."
   },
   {
    "title": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
@@ -81,7 +163,8 @@
    "summary": "In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications, all or some of the constraints are hard constraints that represent imperative requirements. Consequently, any desirable approximate solution must (nearly) satisfy these constraints. Motivated by this, we focus on computing an $ε$-$surely\\ feasible\\ stochastic\\ optimal$ ($ε$-SFSO) solution, in which the constraint violation is deterministically bounded by $ε$, and the expected optimality gap is at most $ε$. While a recently proposed stochastic variance-reduced first-order pena",
    "tags": "optimization",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
@@ -90,8 +173,10 @@
    "published_date": "2026-11-17T18:57:10",
    "summary": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a comp",
    "tags": "optimization,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "training",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.55,
+   "why": "Examines autonomous self-improvement loops where LLM agents direct their own optimization given raw primitives."
   },
   {
    "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
@@ -101,7 +186,8 @@
    "summary": "Human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that AI could use to assist drivers, but ground-truth labels for human cognitive state levels are costly to obtain at scale. We propose a multimodal masked-diffusion autoencoder, ID-MAE, that adds a self-supervised objective to impairment prediction: alongside predicting the impairment label as a masked token, it reconstructs masked gaze and trajectory. To probe the effects of different modalities and types of impairments on model inference, we introduce DIVERT, a driving-",
    "tags": "inference,multimodal",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
@@ -111,7 +197,8 @@
    "summary": "Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 signal-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to",
    "tags": "quantization,hardware,llm",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
@@ -120,8 +207,10 @@
    "published_date": "2026-11-17T18:38:27",
    "summary": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regular",
    "tags": "inference,attention,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "architecture",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.72,
+   "why": "Encodes explicit Kolmogorov complexity-inspired structure-residual inductive biases into the next-token prediction objective."
   },
   {
    "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
@@ -131,7 +220,8 @@
    "summary": "Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed.\n  We present WoRD (Waypoint Recognition with Dif",
    "tags": "inference",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models",
@@ -140,8 +230,10 @@
    "published_date": "2026-11-17T18:24:58",
    "summary": "Preference optimization (PO) is the standard way to reduce object hallucination in large vision-language models. We find that four public PO checkpoints of LLaVA-1.5-7B also lower object coverage. They name fewer object categories, and their lower hallucination rates bring no significant gain in set-level object F1 on CHAIR. We therefore ask how much of the PO gain the base model can reproduce by stopping earlier. A positive end-of-sequence (EOS) logit bias lets the base model reach the recall of each PO model, and this early stopping alone reproduces 58 to 86 percent of the CHAIRi gain of thr",
    "tags": "optimization,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "training",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.6,
+   "why": "Demonstrates that preference optimization checkpoints inadvertently degrade object coverage while reducing hallucination rates."
   },
   {
    "title": "Attribution Through the Decoder: Prediction-Space Explanations for Structured Outputs",
@@ -150,8 +242,10 @@
    "published_date": "2026-11-17T18:13:50",
    "summary": "Networks that predict angles, gaze directions, and rotations do not output these quantities directly: they emit raw coordinates that a fixed decoder, such as normalization, maps to the final prediction. Attribution methods are usually applied to the raw coordinates, so they can credit inputs for changes the decoder discards, such as rescaling a vector when only its direction matters. The resulting explanation can highlight inputs that have no effect on the prediction. We instead attribute through the decoder differential, which for normalization decoders reduces to a scaled tangent projection.",
    "tags": "hardware",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "architecture",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.65,
+   "why": "Pushes attribution back through decoder normalization layers to prevent false credit assignment in structured output models."
   },
   {
    "title": "TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity",
@@ -160,8 +254,10 @@
    "published_date": "2026-11-17T18:08:53",
    "summary": "Recent advances in text-to-image generation have substantially improved image quality, particularly through diffusion-based methods that require multiple inference steps. In contrast, Sphere Encoder offers an efficient generative framework capable of producing images with fewer forward steps. However, extending it to free-form text is nontrivial, because its class-conditioned design lacks cross-modal alignment. To address this challenge, we propose TextSphere, an efficient text-to-image generative framework that extends Sphere Encoder with language conditioning and cross-modal alignment. We in",
    "tags": "inference",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "architecture",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.62,
+   "why": "Extends hyperspherical alignment to free-form text inputs for single-step generative image models."
   },
   {
    "title": "Learning Stratified Policies for Inference-Time Objectives",
@@ -170,8 +266,10 @@
    "published_date": "2026-11-17T18:06:12",
    "summary": "Inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility. However, many existing approaches obtain these samples by repeatedly sampling from a single policy. In this work, we study if the sample budget at inference time can instead be allocated across a population of policies. We introduce stratified policies, where each of $k$ learned policies contributes one response to a $k$-sample inference-time objective. We realize this policy population using separate LoRA adapters on a shared language model backbone ",
    "tags": "inference,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "inference-methods",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.7,
+   "why": "Allocates inference-time compute budgets across diverse model populations rather than uniform single-policy sampling."
   },
   {
    "title": "Correcting Flows with Marginal Matching",
@@ -179,9 +277,11 @@
    "source": "arxiv",
    "published_date": "2026-11-17T17:53:38",
    "summary": "Flow matching models, ODE-based generative models, generate samples by gradually morphing a simple source distribution into a target distribution. However, these models still face challenges in optimally balancing computational efficiency with generation fidelity. While predictor-corrector schemes have been proven to help address this issue in diffusion models effectively, their application to flow matching models remains under-explored. In this work we present a novel training-based predictor-corrector framework for flow matching, which exploits the fact that the ODE can be easily reversed. O",
-   "tags": "",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "tags": "architecture,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.66,
+   "why": "Adapts predictor-corrector schemes via marginal matching to balance generation fidelity in flow-based generative models."
   },
   {
    "title": "A Neural Envelope Method for Rapid Gradient-based Optimum Takeoff Trajectory Design",
@@ -191,7 +291,8 @@
    "summary": "Urban air mobility arises to mitigate ground traffic congestion. Multidisciplinary analysis and optimization (MDAO) has been introduced to reduce the energy consumption, thereby expanding aircraft performance. Surrogate-based MDAO lowers the cost of optimization, but multimodality disrupts global optimum search for both simulation-based and surrogate-based optimizations. Convex envelopes convert multimodal spaces into unimodal spaces, permitting efficient convex optimization; however, convexifying a design space may produce infeasible \"optimal\" designs due to complex design constraints. To add",
    "tags": "optimization,multimodal",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
@@ -200,8 +301,10 @@
    "published_date": "2026-11-17T17:43:28",
    "summary": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable gradient signal. Nevertheless, existing HA-GRPO me",
    "tags": "inference,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "training",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.78,
+   "why": "Applies activation steering to bypass zero-reward zero-gradient bottlenecks during RL reasoning capability expansion."
   },
   {
    "title": "Auditing a Learned Simulator for Legged Robots: The Robotic World Model on ANYmal D",
@@ -211,7 +314,8 @@
    "summary": "A legged robot can learn to walk inside a learned simulator: a neural network that predicts the robot's next state and is run forward on its own predictions. They are usually trained and checked one step ahead, although a policy uses them for a hundred steps or more. We audit one published system end to end, without a GPU: the dynamics model of the Robotic World Model (RWM) for the ANYmal D quadruped, and the uncertainty estimate of its follow-up, RWM-U. We rebuilt the model to match the released code's outputs, losses and gradients exactly, measured 101 trained simulators, 200 compressed copi",
    "tags": "compression,hardware",
    "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.0
   },
   {
    "title": "Large-scale Neuron Community Discovery Reveals Neuron-Sparse Behaviors in Language Models",
@@ -220,8 +324,10 @@
    "published_date": "2026-11-17T17:33:20",
    "summary": "What reusable units of computation can we discover within a language model's neurons? Prior work has shown that individual forward passes can often be sparsified post-hoc to small groups of neurons, but it has been unclear whether these groups form coherent computational entities reused across inputs. We introduce neuron community discovery, an unsupervised method for finding neuron groups that recur across prompts and are causally necessary and sufficient, within the layers they span, for common computations. The method combines gradient-based attribution, a graph connecting neurons that are ",
    "tags": "hardware,llm",
-   "area": "other",
-   "first_seen": "2026-11-18T13:41:15"
+   "area": "architecture",
+   "first_seen": "2026-11-18T13:41:15",
+   "importance": 0.74,
+   "why": "Introduces an unsupervised discovery algorithm to identify reusable sparse neuron computational communities in language models."
   },
   {
    "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
@@ -1673,6 +1779,18 @@
    "area": "other",
    "first_seen": "2026-11-17T00:40:36",
    "importance": 0.0
+  },
+  {
+   "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+   "url": "https://arxiv.org/abs/2611.21925",
+   "source": "hf:papers",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "A lightweight feature-encoding method with rejection memory and architectural enhancements enables faster large language model inference by improving speculative-diffusion draft verification.\n\nKeywords: speculative-diffusion decoding, parallel drafter model, draft tokens, target model, parallel verification, parallel draft architectures, DFlash, DSpark, feature encoding, residual mixing, memory-less, Mixture-of-Features Attention (MoFA), rejection memory, 2-tap causal convolutions, prefix-only cross-attention, non-uniform target layer selection, DNeo, DFlash-2, LLM inference, hidden states, cross-attention, causal convolutions, feature-space, encoding projections",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-18T23:16:02",
+   "importance": 0.65,
+   "why": "Adds rejection memory and residual mixing to speculative diffusion, raising draft model verification efficiency."
   },
   {
    "title": "Regularized Score Centering",
@@ -3634,6 +3752,18 @@
    "first_seen": "2026-11-13T12:52:20",
    "importance": 0.4,
    "why": "Releases an open replication recipe for converting image generators into multi-task perception models."
+  },
+  {
+   "title": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
+   "url": "https://arxiv.org/abs/2611.15671",
+   "source": "hf:papers",
+   "published_date": "2026-11-11T00:00:00",
+   "summary": "A quantized model is usually judged by comparing it with its BF16 original, but that comparison changes more than the weights. It often changes the serving engine, it always runs on a different server instance, it may change how requests are batched, and on some stacks the library selects a different kernel depending only on which packages import. We measure each of these sources on the same 2,400 public decisions for two of Cloudflare's decision models, Clef-flash (9B) and Clef (27B), on an NVIDIA GB10, and state every quantization effect as the excess over them. Sources that are not quantization move between 0 and 0.92% of decisions. llama.cpp restarts are bit-identical on every record for both models. vLLM restarts flip 0, 5 and 20 decisions at BF16, FP8 and NVFP4 on Clef-flash and 4, 0 and 22 on Clef; a third instance of Clef's quantized builds (exploratory) leaves FP8 at 0 and puts NVFP4 at 4 to 22, depending on which two instances are compared. An engine change at BF16 flips 6 to",
+   "tags": "quantization,inference,systems,benchmarks",
+   "area": "inference-engines",
+   "first_seen": "2026-11-18T23:16:02",
+   "importance": 0.7,
+   "why": "Quantifies hidden confounding variables in quantization benchmarking, isolating engine and kernel drift from weight effects."
   },
   {
    "title": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
@@ -43838,54 +43968,6 @@
    "area": "other",
    "first_seen": "2026-07-22T02:41:34",
    "importance": 0.0
-  },
-  {
-   "title": "Google just bet its inference future on a chip built for one model",
-   "url": "https://thenewstack.io/google-frozen-gemini-chip",
-   "source": "hackernews",
-   "published_date": "2026-07-21T18:27:23",
-   "summary": "5 points, 0 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-21T18:27:23",
-   "importance": 0.6,
-   "why": "Examines strategic shifts in custom silicon development tied to specific model architectures."
-  },
-  {
-   "title": "Setting a World Record for MoE Pre-Training on NVIDIA GB300 NVL72",
-   "url": "https://developer.nvidia.com/blog/setting-a-world-record-for-moe-pre-training-on-nvidia-gb300-nvl72",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-21T15:00:00",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/World-Record-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"World-Record\" width=\"768\" />Frontier model pre-training has converged on mixture of experts (MoE), which is fundamentally changing what limits large-scale AI training. As compute per token...",
-   "tags": "training,hardware",
-   "area": "training",
-   "first_seen": "2026-07-21T15:00:00",
-   "importance": 0.6,
-   "why": "Highlights scaling milestones for mixture-of-experts pre-training on new hardware."
-  },
-  {
-   "title": "NVIDIA Vera CPU: Olympus Cores Built for Maximum Single-Thread Performance in Agentic AI",
-   "url": "https://developer.nvidia.com/blog/inside-nvidia-vera-cpu-olympus-cores-built-for-maximum-single-threaded-performance-in-agentic-ai",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-21T15:00:00",
-   "summary": "<img alt=\"Vera CPU image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/Vera-CPU-e1783372749296-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Vera-CPU\" width=\"768\" />Agentic AI shifts more of the critical execution path onto the CPU. Agents operate in sandboxes to execute code, invoke tools, retrieve context, interact with...",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-21T15:00:00",
-   "importance": 0.6,
-   "why": "Details CPU design choices tailored for agentic execution paths and sandboxed tool use."
-  },
-  {
-   "title": "Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI",
-   "url": "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-21T15:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/nvidia-rubin-gpu-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-rubin-gpu\" width=\"768\" />What began as discrete AI model training and human-facing chat interfaces has evolved into always-on AI factories dedicated to producing intelligence at scale....",
-   "tags": "hardware,llm",
-   "area": "silicon",
-   "first_seen": "2026-07-21T15:00:00",
-   "importance": 0.7,
-   "why": "Outlines architectural changes in Rubin GPUs designed for agentic AI factories."
   }
  ]
 }
