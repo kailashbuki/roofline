@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 88,
+ "count": 90,
  "articles": [
+  {
+   "title": "Microsoft Taps AMD for at Scale AI CPU and GPU Clusters",
+   "url": "https://www.nextplatform.com/cloud/2026/07/20/microsoft-taps-amd-for-at-scale-ai-cpu-and-gpu-clusters/5275161",
+   "source": "hackernews",
+   "published_date": "2026-07-21T08:32:38",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-21T08:32:38",
+   "importance": 0.4,
+   "why": "Expands hyperscale hardware diversity by deploying AMD clusters."
+  },
+  {
+   "title": "Run Ray on TPU, Part 1: The foundations",
+   "url": "https://developers.googleblog.com/run-ray-on-tpu-part-1-the-foundations",
+   "source": "hackernews",
+   "published_date": "2026-07-21T02:32:10",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "systems,training",
+   "area": "training",
+   "first_seen": "2026-07-21T02:32:10",
+   "importance": 0.4,
+   "why": "Bridges distributed orchestration frameworks with custom accelerator hardware."
+  },
   {
    "title": "Kimi K3: The open-weights escalation",
    "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
