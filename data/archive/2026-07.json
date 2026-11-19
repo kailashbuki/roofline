@@ -1,7 +1,54 @@
 {
  "month": "2026-07",
- "count": 94,
+ "count": 98,
  "articles": [
+  {
+   "title": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+   "url": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+   "source": "rss:Interconnects",
+   "published_date": "2026-07-22T14:09:04",
+   "summary": "A podcast with Florian Brand.",
+   "tags": "llm,compression",
+   "area": "new-models",
+   "first_seen": "2026-07-22T14:09:04",
+   "importance": 0.3,
+   "why": "Recaps recent open weights releases and distillation trends."
+  },
+  {
+   "title": "Nvidia Vera Rubin NVL72 measured to have 10x TPS per megawatt than Blackwell",
+   "url": "https://twitter.com/nvidia/status/2079601314234032474",
+   "source": "hackernews",
+   "published_date": "2026-07-22T10:10:21",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-07-22T10:10:21",
+   "importance": 0.7,
+   "why": "Benchmarks show Rubin NVL72 delivering massive token-per-megawatt efficiency gains over Blackwell."
+  },
+  {
+   "title": "Nvidia Vera Rubin NVL72 on CoreWeave 10x More Tokens per Megawatt Than Blackwell",
+   "url": "https://www.coreweave.com/blog/nvidia-vera-rubin-nvl72-on-coreweave-10x-more-tokens-per-megawatt-than-blackwell",
+   "source": "hackernews",
+   "published_date": "2026-07-22T06:19:28",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-07-22T06:19:28",
+   "importance": 0.7,
+   "why": "Validates 10x energy efficiency gains for inference workloads on upcoming rack architecture."
+  },
+  {
+   "title": "Meta’s Infrastructure Team Needs A Culture Reset",
+   "url": "https://newsletter.semianalysis.com/p/metas-infrastructure-team-needs-a",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-22T02:41:34",
+   "summary": "Meta Infrastructure has become bloated, with middle managers expending resources on over-engineered technology solutions that lose sight of broader organizational needs.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-22T02:41:34",
+   "importance": 0.0
+  },
   {
    "title": "Google just bet its inference future on a chip built for one model",
    "url": "https://thenewstack.io/google-frozen-gemini-chip",
