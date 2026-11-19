@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-19T14:11:29Z",
- "previous_generated_at": "2026-11-18T23:16:54Z",
+ "generated_at": "2026-11-19T23:25:02Z",
+ "previous_generated_at": "2026-11-19T14:11:29Z",
  "hot_days": 120,
- "count": 3743,
- "total_collected": 4034,
+ "count": 3745,
+ "total_collected": 4040,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,30 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
+   "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-19T20:28:13",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-17-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />Reinforcement learning (RL) uses rewards to train models to solve problems and complete tasks more successfully. Inference drives this process. Workers generate...",
+   "tags": "training,inference,systems,optimization",
+   "area": "training",
+   "first_seen": "2026-11-19T23:24:48",
+   "importance": 0.65,
+   "why": "Eliminates rollout bottlenecks via GPU-native inference pipelines, accelerating reinforcement learning training loops."
+  },
+  {
+   "title": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+   "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-11-19T17:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/electron-energy-loss-spectroscopy-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"electron-energy-loss-spectroscopy\" width=\"768\" />In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating...",
+   "tags": "inference,systems,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-11-19T23:24:48",
+   "importance": 0.45,
+   "why": "Couples sensor data acquisition directly to GPU memory spaces, enabling low-latency real-time inference for scientific instruments."
+  },
   {
    "title": "Towards Universal Data-Efficient Pretraining",
    "url": "https://qlabs.sh/research/applications",
@@ -45,6 +69,18 @@
    "first_seen": "2026-11-19T14:10:24",
    "importance": 0.5,
    "why": "Analyzes disaggregated serving mechanics to isolate memory and compute bottlenecks in large model pipelines."
+  },
+  {
+   "title": "Introducing Together Storage Accelerator: fast, free data caching for your GPU cluster",
+   "url": "https://www.together.ai/blog/introducing-together-storage-accelerator",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-19T00:00:00",
+   "summary": "Together Storage Accelerator is a distributed caching layer for Together GPU Clusters: about 20x faster warm reads, one origin fetch per cluster, no application changes, and it's included free.",
+   "tags": "serving,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-11-19T23:24:43",
+   "importance": 0.4,
+   "why": "Provides distributed data caching via a cluster layer to achieve faster warm reads."
   },
   {
    "title": "Why your fine-tuning job takes longer than the FLOPs say",
@@ -863,6 +899,18 @@
    "why": "Repurposes frozen VLM weights to perform direct image generation and dense prediction in a single feedforward pass."
   },
   {
+   "title": "DrawScore: Evaluating Generated CAD Models against Engineering Drawings",
+   "url": "https://arxiv.org/abs/2611.24681",
+   "source": "hf:papers",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "A new metric for automatic CAD generation evaluates models through engineering-drawing projections with a saturating penalty along curves, exposing small local errors that volume- or surface-based metrics miss and enabling use as a reinforcement learning reward or test-time verifier.\n\nKeywords: reinforcement learning reward, test-time verifier, reward model",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-11-19T23:24:12",
+   "importance": 0.5,
+   "why": "Replaces volume metrics with projection-based CAD evaluation using curve penalties to serve as a test-time verifier."
+  },
+  {
    "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
    "url": "https://arxiv.org/abs/2611.24654",
    "source": "hf:papers",
@@ -875,6 +923,18 @@
    "why": "Restricts parameter updates to a low-curvature subspace to prevent catastrophic forgetting during continual fine-tuning."
   },
   {
+   "title": "IDEA: Intent-Dominance Evidence Audit for Inference-Time Backdoor Detection in GUI Agents",
+   "url": "https://arxiv.org/abs/2611.24102",
+   "source": "hf:papers",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "A step-level inference-time audit detects visual-trigger backdoors in open-weight GUI agents by comparing instruction- and region-induced shifts in decision state against clean-step conformal baselines, localizing triggers with controlled false positives.\n\nKeywords: open-weight GUI agents, backdoored agent, visual trigger, sample-level detectors, image classifiers, CLIP-style encoders, step-level backdoor detection, decision state, intent-evidence dominance inversion, Intent-Dominance Evidence Audit, Intent Counterfactual Probing, Region Causal Audit, gated conformal score, clean manifold, finite-sample false-positive guarantee, Qwen2.5-VL-3B, attack families, trigger region localization",
+   "tags": "inference,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-11-19T23:24:12",
+   "importance": 0.5,
+   "why": "Detects visual backdoors in GUI agents via step-level decision-state shifts against conformal baselines during inference."
+  },
+  {
    "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
    "url": "https://arxiv.org/abs/2611.23824",
    "source": "hf:papers",
@@ -885,6 +945,18 @@
    "first_seen": "2026-11-19T14:09:49",
    "importance": 0.6,
    "why": "Uses evidence-based credit assignment to solve reward collapse during reinforcement learning of retrieval-augmented LLMs."
+  },
+  {
+   "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
+   "url": "https://arxiv.org/abs/2611.23751",
+   "source": "hf:papers",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "AnyS1 converts procedural skills into shared decision points, trains a small calibrated pointer model to resolve routine choices, and falls back to a large model when uncertain, reducing cost and latency while preserving reliability.\n\nKeywords: autonomous LLM agents, dual-system agents, System-1 model, System-2 model, procedural skills, decision points, Any-DP, calibrated 4B pointer System-1, label smoothing, forward pass, calibrated threshold, zero-shot threshold transfer",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-19T23:24:12",
+   "importance": 0.6,
+   "why": "Routes routine agent decisions to a small 4B pointer model and escalates to large models, cutting latency."
   },
   {
    "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
@@ -44736,54 +44808,6 @@
    "first_seen": "2026-07-23T00:47:48",
    "importance": 0.8,
    "why": "Analyzes Rubin architecture LUT tensor cores and inference TCO improvements over Blackwell."
-  },
-  {
-   "title": "New Inference Server for DGX Spark: large model C4:55-90 tok/s no spec decode",
-   "url": "https://news.ycombinator.com/item?id=49014048",
-   "source": "hackernews",
-   "published_date": "2026-07-22T21:59:39",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "inference,serving",
-   "area": "inference-engines",
-   "first_seen": "2026-07-22T21:59:39",
-   "importance": 0.4,
-   "why": "Introduces a new server achieving high token throughput without speculative decoding."
-  },
-  {
-   "title": "SymptomAI: Towards a conversational AI agent for everyday symptom assessment",
-   "url": "https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment",
-   "source": "rss:Google AI Blog",
-   "published_date": "2026-07-22T21:32:00",
-   "summary": "General Science",
-   "tags": "llm,multimodal",
-   "area": "new-models",
-   "first_seen": "2026-07-22T21:32:00",
-   "importance": 0.4,
-   "why": "Proposes a conversational agent framework tailored specifically for everyday medical symptom assessment."
-  },
-  {
-   "title": "Make Long-Running NVIDIA TensorRT Engine Builds Observable and Cancelable in Python or C++",
-   "url": "https://developer.nvidia.com/blog/make-long-running-nvidia-tensorrt-engine-builds-observable-and-cancelable-in-python-or-c",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-22T16:35:04",
-   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring\" width=\"768\" />A TensorRT engine build can take seconds to many minutes. Large strongly typed models, deep tactic search, and a cold timing cache on a brand-new GPU SKU can...",
-   "tags": "inference,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-07-22T16:35:04",
-   "importance": 0.3,
-   "why": "Adds cancellation and observability to TensorRT engine builds for better workflow management."
-  },
-  {
-   "title": "When is NVLink worth it?",
-   "url": "https://platform-fools.com/posts/2026-04-27-nvlink",
-   "source": "hackernews",
-   "published_date": "2026-07-22T14:18:11",
-   "summary": "61 points, 9 comments on HackerNews",
-   "tags": "hardware,systems",
-   "area": "silicon",
-   "first_seen": "2026-07-22T14:18:11",
-   "importance": 0.3,
-   "why": "Discusses economic and performance trade-offs of deploying high-speed interconnects."
   }
  ]
 }

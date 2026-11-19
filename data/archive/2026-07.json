@@ -1,7 +1,55 @@
 {
  "month": "2026-07",
- "count": 98,
+ "count": 102,
  "articles": [
+  {
+   "title": "New Inference Server for DGX Spark: large model C4:55-90 tok/s no spec decode",
+   "url": "https://news.ycombinator.com/item?id=49014048",
+   "source": "hackernews",
+   "published_date": "2026-07-22T21:59:39",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-07-22T21:59:39",
+   "importance": 0.4,
+   "why": "Introduces a new server achieving high token throughput without speculative decoding."
+  },
+  {
+   "title": "SymptomAI: Towards a conversational AI agent for everyday symptom assessment",
+   "url": "https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment",
+   "source": "rss:Google AI Blog",
+   "published_date": "2026-07-22T21:32:00",
+   "summary": "General Science",
+   "tags": "llm,multimodal",
+   "area": "new-models",
+   "first_seen": "2026-07-22T21:32:00",
+   "importance": 0.4,
+   "why": "Proposes a conversational agent framework tailored specifically for everyday medical symptom assessment."
+  },
+  {
+   "title": "Make Long-Running NVIDIA TensorRT Engine Builds Observable and Cancelable in Python or C++",
+   "url": "https://developer.nvidia.com/blog/make-long-running-nvidia-tensorrt-engine-builds-observable-and-cancelable-in-python-or-c",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-22T16:35:04",
+   "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring\" width=\"768\" />A TensorRT engine build can take seconds to many minutes. Large strongly typed models, deep tactic search, and a cold timing cache on a brand-new GPU SKU can...",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-22T16:35:04",
+   "importance": 0.3,
+   "why": "Adds cancellation and observability to TensorRT engine builds for better workflow management."
+  },
+  {
+   "title": "When is NVLink worth it?",
+   "url": "https://platform-fools.com/posts/2026-04-27-nvlink",
+   "source": "hackernews",
+   "published_date": "2026-07-22T14:18:11",
+   "summary": "61 points, 9 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-22T14:18:11",
+   "importance": 0.3,
+   "why": "Discusses economic and performance trade-offs of deploying high-speed interconnects."
+  },
   {
    "title": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
    "url": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",

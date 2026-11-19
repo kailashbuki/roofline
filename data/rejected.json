@@ -1,5 +1,5 @@
 {
- "count": 3599,
+ "count": 3609,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3599,6 +3599,16 @@
   "https://arxiv.org/abs/2611.21421",
   "https://openai.com/index/research-acceleration-jagged-frontier",
   "https://openai.com/business/customer-stories/sumitomo-life",
-  "https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender"
+  "https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender",
+  "https://arxiv.org/abs/2611.23779",
+  "https://arxiv.org/abs/2611.22382",
+  "https://arxiv.org/abs/2611.21553",
+  "https://arxiv.org/abs/2611.24362",
+  "https://arxiv.org/abs/2611.22790",
+  "https://arxiv.org/abs/2611.22033",
+  "https://junctionboxai.com/",
+  "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer",
+  "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+  "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents"
  ]
 }
