@@ -1,7 +1,30 @@
 {
  "month": "2026-07",
- "count": 102,
+ "count": 104,
  "articles": [
+  {
+   "title": "The Model Is a Checkpoint",
+   "url": "https://www.airealist.ai/p/the-model-is-a-checkpoint",
+   "source": "airealist",
+   "published_date": "2026-07-23T11:06:52",
+   "summary": "Washington spent last week letting it be known it might ban Chinese AI models, so this week, everyone is an open-models expert.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-23T11:06:52",
+   "importance": 0.0
+  },
+  {
+   "title": "Vera Rubin NVL72 vs GB200 NVL72? Inference TCO & Architecture Analysis",
+   "url": "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-vs-gb200-nvl72-inference",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-23T00:47:48",
+   "summary": "3 bit Rubin LUT Based Tensor Core, SM140 Feynman, Rack Scale, Perf Per MegaWatt, Perf Per Dollar, Software Improvements, Public Rubin Software, PyTorch, vLLM, OpenAI Triton",
+   "tags": "hardware,inference,quantization",
+   "area": "silicon",
+   "first_seen": "2026-07-23T00:47:48",
+   "importance": 0.8,
+   "why": "Analyzes Rubin architecture LUT tensor cores and inference TCO improvements over Blackwell."
+  },
   {
    "title": "New Inference Server for DGX Spark: large model C4:55-90 tok/s no spec decode",
    "url": "https://news.ycombinator.com/item?id=49014048",
