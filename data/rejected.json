@@ -1,5 +1,5 @@
 {
- "count": 3675,
+ "count": 3687,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3675,6 +3675,18 @@
   "https://openai.com/business/learn/codex-security-plugin-demo",
   "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
   "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t",
-  "https://latent.space/p/linear-scaling"
+  "https://latent.space/p/linear-scaling",
+  "https://arxiv.org/abs/2611.25567",
+  "https://arxiv.org/abs/2611.25179",
+  "https://arxiv.org/abs/2611.26248",
+  "https://arxiv.org/abs/2611.26298",
+  "https://www.youtube.com/watch?v=Qosbf1ojXlY",
+  "https://teamorouter.com/blogs/gestalt-ai-model",
+  "https://huggingface.co/blog/inkling2mini",
+  "https://openai.com/index/combatting-adversarial-distillation",
+  "https://openai.com/business/customer-stories/hebbia",
+  "https://openai.com/index/introducing-medchembench",
+  "https://latent.space/p/formal-verification",
+  "https://www.anthropic.com/research/claude-black-hole-physics"
  ]
 }

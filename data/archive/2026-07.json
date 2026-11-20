@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 104,
+ "count": 106,
  "articles": [
+  {
+   "title": "AMD’s Instinct MI455X: Aiming for the Sun",
+   "url": "https://chipsandcheese.com/p/amds-instinct-mi455x-aiming-for-the",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-07-23T17:37:10",
+   "summary": "Editor&#8217;s Note (7/25/2026): The article has been edited with more information about the L2 behavior along with the bandwidth of the die to die interface.",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-23T17:37:10",
+   "importance": 0.5,
+   "why": "Analyzes die-to-die interconnect bandwidth and cache hierarchies in future accelerator designs."
+  },
+  {
+   "title": "Show HN: Flow Matching model inference in C",
+   "url": "https://github.com/ecrasevvv/c-fm/tree/master",
+   "source": "hackernews",
+   "published_date": "2026-07-23T17:01:28",
+   "summary": "5 points, 2 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-23T17:01:28",
+   "importance": 0.5,
+   "why": "Provides lightweight C implementations for efficient flow matching model inference."
+  },
   {
    "title": "The Model Is a Checkpoint",
    "url": "https://www.airealist.ai/p/the-model-is-a-checkpoint",

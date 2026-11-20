@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-20T13:52:19Z",
- "previous_generated_at": "2026-11-19T23:25:02Z",
+ "generated_at": "2026-11-20T22:58:32Z",
+ "previous_generated_at": "2026-11-20T13:52:19Z",
  "hot_days": 120,
- "count": 3810,
- "total_collected": 4107,
+ "count": 3815,
+ "total_collected": 4114,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -45,6 +45,17 @@
    "first_seen": "2026-11-20T13:51:41",
    "importance": 0.6,
    "why": "It introduces latent factorization to push down precision limits while retaining accuracy."
+  },
+  {
+   "title": "Qwen3 TTS is now available on Together AI",
+   "url": "https://www.together.ai/blog/qwen3-tts",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-20T00:00:00",
+   "summary": "Qwen3 TTS is now available on Together AI. Keep one voice across your product, change its tone with a plain-language instruction and move it between 10 languages, with first audio in as little as 97ms.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-11-20T22:58:15",
+   "importance": 0.0
   },
   {
    "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
@@ -825,6 +836,18 @@
    "why": "Tilted mean constraints match diffusion posteriors directly, enabling high-quality few-step generation without auxiliary networks."
   },
   {
+   "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
+   "url": "https://arxiv.org/abs/2611.26511",
+   "source": "hf:papers",
+   "published_date": "2026-11-19T00:00:00",
+   "summary": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share the same premise: geometry is first compressed into a latent space and only then modeled by the generator. We take a different route and propose Direct3D-V3, a latent-free diffusion transformer (DiT) framework that discards the VAE altogether and operates in the native voxel domain, directly modeling raw SDF voxel grids during both training and sampling. To make this direct voxel formulation geometrically reliable, we introduce an implicit manifold regularization over neighboring voxels to suppress non-watertight surfaces, and convert predicted SDF grids into meshes via Marching Cubes so that rendered normal losses can supervise the model directly from its predicted SDF. To",
+   "tags": "architecture,multimodal",
+   "area": "architecture",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.7,
+   "why": "Removes latent compression entirely by applying diffusion transformers directly in native voxel domains."
+  },
+  {
    "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
    "url": "https://arxiv.org/abs/2611.25980",
    "source": "hf:papers",
@@ -835,6 +858,18 @@
    "first_seen": "2026-11-20T13:51:25",
    "importance": 0.6,
    "why": "A new auxiliary training objective matches visual responses to action noise, improving world model rollouts."
+  },
+  {
+   "title": "Suppressing the Shortcut Hidden Behind the Gains of VideoLLM Fine-Tuning",
+   "url": "https://arxiv.org/abs/2611.25776",
+   "source": "hf:papers",
+   "published_date": "2026-11-19T00:00:00",
+   "summary": "VETO suppresses shortcut learning in VideoLLMs by projecting supervised fine-tuning updates onto the orthogonal complement of the text-only activation subspace, improving out-of-distribution video reasoning.\n\nKeywords: supervised fine-tuning, SFT, Video Large Language Models, VideoLLMs, shortcut learning, training distribution, distribution shift, fine-tuning update, activations, base model, backbone, orthogonal projection, orthogonal complement, subspace, VETO, Video-Evidence Training via Orthogonal projection",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.6,
+   "why": "Projects SFT updates onto text activation orthogonal complements to eliminate shortcut learning in video models."
   },
   {
    "title": "Why your fine-tuning job takes longer than the FLOPs say",
@@ -1711,6 +1746,18 @@
    "first_seen": "2026-11-19T23:24:12",
    "importance": 0.5,
    "why": "Detects visual backdoors in GUI agents via step-level decision-state shifts against conformal baselines during inference."
+  },
+  {
+   "title": "NarrowSpec: Draft Hidden Width Need Not Match the Target in Speculative Decoding",
+   "url": "https://arxiv.org/abs/2611.23835",
+   "source": "hf:papers",
+   "published_date": "2026-11-18T00:00:00",
+   "summary": "Speculative decoding is widely used to speed up generation in large language models (LLMs), with a small draft model proposing tokens that one forward pass of the target model verifies. Draft models that read the target's hidden states, such as DFlash and EAGLE-3, typically inherit the target's hidden width. We show that the draft's whole residual stream can run at half or a quarter of that width while largely preserving acceptance. For DFlash, which borrows the target's vocabulary projection, the trained output adapter folds into it, giving one narrower projection with logits unchanged up to floating-point rounding. We test two drafter families, DFlash and EAGLE-3, on two targets, Qwen3-8B (NVFP4) and GPT-OSS-20B (MXFP4), in SGLang on a B200 and a DGX Spark (GB10). At batch size 1 and temperature 0, narrowing the draft to half or a quarter width speeds up end-to-end decoding by 1.06-1.12x on B200 and 1.13-1.44x on GB10. The speedup holds at larger batch sizes. From batch 32 to the lar",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.7,
+   "why": "Reduces draft model hidden width to half or a quarter of the target model without sacrificing speculative decoding speedups."
   },
   {
    "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
@@ -3470,6 +3517,18 @@
    "why": "Adds rejection memory and residual mixing to speculative diffusion, raising draft model verification efficiency."
   },
   {
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
+   "source": "hf:papers",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "Language models are trained once, frozen and deployed: improving one again takes another training run, and a prompt, a scaffold or extra computation at inference is gone once the task ends. A frontier model has been shown to edit the weights of a much smaller one. We ask whether a model can rewrite its own weights to make itself better, and find that it can, by its own reasoning, with no gradients and no training; we call this self-rewriting. Given its weights, graded answers and the ability to run itself, a 27B model diagnoses its failure and edits the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on 490 problems it never saw, in a test fixed in advance, and another session's edit also makes it significantly better. It keeps getting better: it submits an edit only when its own tests support it, each edit replacing the last, and over its first eight such sessions its accuracy only rises. Unlike test-time scaling, the gain persists in its weights",
+   "tags": "architecture,llm,optimization",
+   "area": "architecture",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.8,
+   "why": "Enables non-gradient, self-directed weight modification at inference, bypassing traditional retraining cycles."
+  },
+  {
    "title": "Regularized Score Centering",
    "url": "https://arxiv.org/abs/2611.21791",
    "source": "hf:papers",
@@ -3539,6 +3598,18 @@
    "first_seen": "2026-11-18T13:41:33",
    "importance": 0.6,
    "why": "Closes the loop on contact forces beneath API-only frozen multimodal models for robotic control."
+  },
+  {
+   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+   "url": "https://arxiv.org/abs/2611.21053",
+   "source": "hf:papers",
+   "published_date": "2026-11-16T00:00:00",
+   "summary": "A local System 1 agent framework compiles tool schemas and requests into multiple-choice questions answered by a one-pass decision model, enabling accurate biomedical tool calls without text generation or invented content.\n\nKeywords: agentic artificial intelligence, large language models (LLMs), local LLMs, cloud LLMs, tool calls, hallucination, System 1 agents, deterministic compiler, tool schema, multiple-choice questions, one-pass decision model, LLM-agent settings",
+   "tags": "inference,optimization,llm",
+   "area": "inference-methods",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.6,
+   "why": "Compiles tool schemas into multiple-choice queries for one-pass decision models, eliminating text generation overhead."
   },
   {
    "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
@@ -3728,6 +3799,18 @@
    "area": "other",
    "first_seen": "2026-11-17T23:45:44",
    "importance": 0.0
+  },
+  {
+   "title": "Do Probing and Steering Favor the Same Directions Within and Across Language Models?",
+   "url": "https://arxiv.org/abs/2611.19499",
+   "source": "hf:papers",
+   "published_date": "2026-11-14T00:00:00",
+   "summary": "The best direction for probing a concept in a language model's hidden state is not the best direction for steering the model toward that concept, with implications for transfer and abstention.\n\nKeywords: language model hidden state, probe directions, steering, probing, additive steering, covariance-adjusted discriminant, mean difference, instruction-tuned models, layer sweep, rotation-based steering operator, linear map, neutral text, above-chance probing performance, steering effect, truthfulness, sentiment, PopQA, abstention, uncertain errors, confident errors",
+   "tags": "llm",
+   "area": "new-models",
+   "first_seen": "2026-11-20T22:57:50",
+   "importance": 0.5,
+   "why": "Proves optimal probing directions diverge from steering directions, altering mechanistic interpretability methodology."
   },
   {
    "title": "Agentic On-Policy Distillation Implicitly Reshapes LLMs' ReAct Patterns",
@@ -45563,30 +45646,6 @@
    "first_seen": "2026-07-24T00:00:00",
    "importance": 0.5,
    "why": "Compares cost-efficiency metrics across proprietary reasoning engines for coding tasks."
-  },
-  {
-   "title": "AMD’s Instinct MI455X: Aiming for the Sun",
-   "url": "https://chipsandcheese.com/p/amds-instinct-mi455x-aiming-for-the",
-   "source": "rss:Chips and Cheese",
-   "published_date": "2026-07-23T17:37:10",
-   "summary": "Editor&#8217;s Note (7/25/2026): The article has been edited with more information about the L2 behavior along with the bandwidth of the die to die interface.",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-23T17:37:10",
-   "importance": 0.5,
-   "why": "Analyzes die-to-die interconnect bandwidth and cache hierarchies in future accelerator designs."
-  },
-  {
-   "title": "Show HN: Flow Matching model inference in C",
-   "url": "https://github.com/ecrasevvv/c-fm/tree/master",
-   "source": "hackernews",
-   "published_date": "2026-07-23T17:01:28",
-   "summary": "5 points, 2 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-07-23T17:01:28",
-   "importance": 0.5,
-   "why": "Provides lightweight C implementations for efficient flow matching model inference."
   }
  ]
 }
