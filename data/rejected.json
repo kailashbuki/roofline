@@ -1,5 +1,5 @@
 {
- "count": 3687,
+ "count": 3693,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3687,6 +3687,12 @@
   "https://openai.com/business/customer-stories/hebbia",
   "https://openai.com/index/introducing-medchembench",
   "https://latent.space/p/formal-verification",
-  "https://www.anthropic.com/research/claude-black-hole-physics"
+  "https://www.anthropic.com/research/claude-black-hole-physics",
+  "https://arxiv.org/abs/2611.26239",
+  "https://arxiv.org/abs/2611.25604",
+  "https://arxiv.org/abs/2611.23236",
+  "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html",
+  "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+  "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently"
  ]
 }

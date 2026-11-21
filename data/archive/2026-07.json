@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 106,
+ "count": 109,
  "articles": [
+  {
+   "title": "Leaky Language Models: Stealing Architecture and Inference Optimizations",
+   "url": "https://arxiv.org/abs/2607.20723",
+   "source": "hackernews",
+   "published_date": "2026-07-24T07:07:06",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,systems",
+   "area": "inference-methods",
+   "first_seen": "2026-07-24T07:07:06",
+   "importance": 0.5,
+   "why": "Investigates side-channel extraction vulnerabilities targeting proprietary model optimizations."
+  },
+  {
+   "title": "AMD and Cerebras join forces against Nvidia's Groq LPUs",
+   "url": "https://www.theregister.com/systems/2026/07/23/amd-and-cerebras-join-forces-against-nvidias-groq-lpus/5277817",
+   "source": "hackernews",
+   "published_date": "2026-07-24T05:14:02",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-24T05:14:02",
+   "importance": 0.4,
+   "why": "Examines hardware vendor positioning and competitive hardware stacks."
+  },
+  {
+   "title": "",
+   "url": "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-24T00:00:00",
+   "summary": "We ran 452 DeepSWE rollouts on Kimi K3 and Claude Fable 5. Fable leads pass@1 by 1.4 points; Kimi K3 wins pass@4 and delivers 2.8x the solves per dollar.",
+   "tags": "llm,benchmarks",
+   "area": "inference-methods",
+   "first_seen": "2026-07-24T00:00:00",
+   "importance": 0.5,
+   "why": "Compares cost-efficiency metrics across proprietary reasoning engines for coding tasks."
+  },
   {
    "title": "AMD’s Instinct MI455X: Aiming for the Sun",
    "url": "https://chipsandcheese.com/p/amds-instinct-mi455x-aiming-for-the",

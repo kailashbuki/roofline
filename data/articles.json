@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-20T22:58:32Z",
- "previous_generated_at": "2026-11-20T13:52:19Z",
+ "generated_at": "2026-11-21T13:15:35Z",
+ "previous_generated_at": "2026-11-20T22:58:32Z",
  "hot_days": 120,
- "count": 3815,
- "total_collected": 4114,
+ "count": 3813,
+ "total_collected": 4115,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -4579,6 +4579,18 @@
    "first_seen": "2026-11-17T23:45:44",
    "importance": 0.7,
    "why": "Systematic decomposition isolates multi-agent coordination benefits from raw test-time compute scaling across 516 configurations."
+  },
+  {
+   "title": "Choosing Quantized Code LLMs by File Size and Energy per Solved Task",
+   "url": "https://arxiv.org/abs/2611.17605",
+   "source": "hf:papers",
+   "published_date": "2026-11-13T00:00:00",
+   "summary": "A developer running a code assistant on a laptop downloads one model file, and local inference moves the energy of every request onto that machine. A common rule says a larger model at lower precision tends to beat a smaller one at higher precision. We ran 24 GGUF files of Qwen2.5-Coder at four sizes on a fanless MacBook Air M2 and priced each in energy per solved task on 542 EvalPlus tasks. The result is a selection guide indexed by Ollama's listed file size, with an evidence label on each pick. At 1 and 2 GB it picks the q4_K_M files of the 1.5B and 3B models, both on the correctness and energy frontier under every accounting. At 3 GB as listed, the larger-model rule picks 7B-q2_K, the only measured 7B file that fits, and there it does not pay. That file brings no significant gain in solves over the 2 GB pick, 3B-q4_K_M, and the 90% CI limits any 3B-q4_K_M deficit to 2.4 points. Yet 7B-q2_K needs 2.03 times the energy per solved task on CPU, GPU and memory rails, or 1.66 to 1.81 time",
+   "tags": "quantization,inference,hardware",
+   "area": "economics",
+   "first_seen": "2026-11-21T13:14:41",
+   "importance": 0.5,
+   "why": "Quantifies energy per solved task across GGUF quantization levels on edge hardware, guiding local model selection tradeoffs."
   },
   {
    "title": "Unbundling Multimodal Vision Encoding",
@@ -45610,42 +45622,6 @@
    "first_seen": "2026-07-24T15:14:12",
    "importance": 0.6,
    "why": "Combines imagination models with video pretraining to improve sample efficiency in dynamic environments."
-  },
-  {
-   "title": "Leaky Language Models: Stealing Architecture and Inference Optimizations",
-   "url": "https://arxiv.org/abs/2607.20723",
-   "source": "hackernews",
-   "published_date": "2026-07-24T07:07:06",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "inference,systems",
-   "area": "inference-methods",
-   "first_seen": "2026-07-24T07:07:06",
-   "importance": 0.5,
-   "why": "Investigates side-channel extraction vulnerabilities targeting proprietary model optimizations."
-  },
-  {
-   "title": "AMD and Cerebras join forces against Nvidia's Groq LPUs",
-   "url": "https://www.theregister.com/systems/2026/07/23/amd-and-cerebras-join-forces-against-nvidias-groq-lpus/5277817",
-   "source": "hackernews",
-   "published_date": "2026-07-24T05:14:02",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-24T05:14:02",
-   "importance": 0.4,
-   "why": "Examines hardware vendor positioning and competitive hardware stacks."
-  },
-  {
-   "title": "",
-   "url": "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-24T00:00:00",
-   "summary": "We ran 452 DeepSWE rollouts on Kimi K3 and Claude Fable 5. Fable leads pass@1 by 1.4 points; Kimi K3 wins pass@4 and delivers 2.8x the solves per dollar.",
-   "tags": "llm,benchmarks",
-   "area": "inference-methods",
-   "first_seen": "2026-07-24T00:00:00",
-   "importance": 0.5,
-   "why": "Compares cost-efficiency metrics across proprietary reasoning engines for coding tasks."
   }
  ]
 }
