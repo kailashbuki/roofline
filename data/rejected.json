@@ -1,5 +1,5 @@
 {
- "count": 3693,
+ "count": 3697,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3693,6 +3693,10 @@
   "https://arxiv.org/abs/2611.23236",
   "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html",
   "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
-  "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently"
+  "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently",
+  "https://arxiv.org/abs/2611.25200",
+  "https://arxiv.org/abs/2611.00911",
+  "https://www.far.ai/research/prefill-level-jailbreak-a-black-box-risk-analysis-of-large-language-models",
+  "https://andrewxhill.com/from-clip-to-bioclip-2"
  ]
 }

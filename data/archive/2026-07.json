@@ -1,7 +1,42 @@
 {
  "month": "2026-07",
- "count": 109,
+ "count": 112,
  "articles": [
+  {
+   "title": "AMD and Cerebras Launch AI Inference Solution",
+   "url": "https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference",
+   "source": "hackernews",
+   "published_date": "2026-07-24T20:44:05",
+   "summary": "28 points, 9 comments on HackerNews",
+   "tags": "hardware,serving",
+   "area": "silicon",
+   "first_seen": "2026-07-24T20:44:05",
+   "importance": 0.5,
+   "why": "Combines wafer-scale processors with standard accelerators for specialized inference pipelines."
+  },
+  {
+   "title": "Ask HN: Why call it \"inference\" instead of just \"model hosting\"?",
+   "url": "https://news.ycombinator.com/item?id=49038752",
+   "source": "hackernews",
+   "published_date": "2026-07-24T17:15:27",
+   "summary": "6 points, 10 comments on HackerNews",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-07-24T17:15:27",
+   "importance": 0.0
+  },
+  {
+   "title": "Scaling Video Pretraining with Imagination Models",
+   "url": "https://www.inductionlabs.com/news/scaling-video-pretraining",
+   "source": "hackernews",
+   "published_date": "2026-07-24T15:14:12",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "training,multimodal",
+   "area": "training",
+   "first_seen": "2026-07-24T15:14:12",
+   "importance": 0.6,
+   "why": "Combines imagination models with video pretraining to improve sample efficiency in dynamic environments."
+  },
   {
    "title": "Leaky Language Models: Stealing Architecture and Inference Optimizations",
    "url": "https://arxiv.org/abs/2607.20723",
