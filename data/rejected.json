@@ -1,5 +1,5 @@
 {
- "count": 3697,
+ "count": 3702,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3697,6 +3697,11 @@
   "https://arxiv.org/abs/2611.25200",
   "https://arxiv.org/abs/2611.00911",
   "https://www.far.ai/research/prefill-level-jailbreak-a-black-box-risk-analysis-of-large-language-models",
-  "https://andrewxhill.com/from-clip-to-bioclip-2"
+  "https://andrewxhill.com/from-clip-to-bioclip-2",
+  "https://arxiv.org/abs/2611.26624",
+  "https://github.com/johnsonshi/a100-inference-hillclimb",
+  "https://twitter.com/johnsonshi86/status/2124250717963932121",
+  "https://casrai.org/news/house-committees-cursor-chinese-open-weight-ai-models-report-2026",
+  "https://jyn.dev/unpublished-blog-posts"
  ]
 }

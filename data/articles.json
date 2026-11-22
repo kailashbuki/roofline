@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-21T22:03:18Z",
- "previous_generated_at": "2026-11-21T13:15:35Z",
+ "generated_at": "2026-11-22T13:06:36Z",
+ "previous_generated_at": "2026-11-21T22:03:18Z",
  "hot_days": 120,
- "count": 3813,
- "total_collected": 4118,
+ "count": 3812,
+ "total_collected": 4120,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -34,6 +34,17 @@
    "first_seen": "2026-11-21T22:02:52",
    "importance": 0.8,
    "why": "Replaces uniform quantization with compiler-guided allocation, dropping KL divergence twelvefold at equal bitrates."
+  },
+  {
+   "title": "Security event: Prompt leakage for requests in June and July of 2026",
+   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-11-21T00:00:00",
+   "summary": "We are notifying customers about a security incident involving a subset of prompts submitted to Together AI’s serverless inference service in June and July 2026.",
+   "tags": "",
+   "area": "other",
+   "first_seen": "2026-11-22T13:06:06",
+   "importance": 0.0
   },
   {
    "title": "Qwen4 Max is live on Together AI",
@@ -870,6 +881,18 @@
    "first_seen": "2026-11-20T22:57:50",
    "importance": 0.7,
    "why": "Removes latent compression entirely by applying diffusion transformers directly in native voxel domains."
+  },
+  {
+   "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
+   "url": "https://arxiv.org/abs/2611.26211",
+   "source": "hf:papers",
+   "published_date": "2026-11-19T00:00:00",
+   "summary": "SpecWM is a training-free inference framework for streaming video world models that verifies draft chunks using the target model's latent velocity field and applies reusable corrections via threshold-based accept/refine/reject decisions to improve visual quality, control, and speed.\n\nKeywords: video world models, interactive generation, speculative methods, draft generation, selective target regeneration, decoded frames, external scorer, latent velocity field, draft chunks, reusable correction, one-step refinement, three-step refinement, transition-aware refinement, streaming world models, training-free inference framework, Accept/Refine/Reject thresholds, camera following, trajectory consistency, multi-turn rollouts, WBench Navigation, NavScore, LongSpecBench, Hy-Nomas, backbones, denoising budgets, quality-speed-control trade-off",
+   "tags": "inference,optimization,multimodal",
+   "area": "inference-methods",
+   "first_seen": "2026-11-22T13:05:26",
+   "importance": 0.65,
+   "why": "Applies latent velocity field verification to streaming video generation, enabling training-free quality refinement."
   },
   {
    "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
@@ -45587,42 +45610,6 @@
    "first_seen": "2026-07-25T20:03:58",
    "importance": 0.4,
    "why": "Details high-speed interconnect topologies for scalable GPU cluster training."
-  },
-  {
-   "title": "TurboPrefill: 3.27× Prefill Speedup in Llama.cpp",
-   "url": "https://devpost.com/software/turboprefill",
-   "source": "hackernews",
-   "published_date": "2026-07-25T07:32:37",
-   "summary": "2 points, 1 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-07-25T07:32:37",
-   "importance": 0.5,
-   "why": "Accelerates prompt processing phases within local execution runtimes."
-  },
-  {
-   "title": "Instella-Moe: An Open Mixture-of-Experts Language Model",
-   "url": "https://rocm.blogs.amd.com/artificial-intelligence/instella-moe/README.html",
-   "source": "hackernews",
-   "published_date": "2026-07-25T07:31:48",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "architecture,llm",
-   "area": "new-models",
-   "first_seen": "2026-07-25T07:31:48",
-   "importance": 0.4,
-   "why": "Releases open mixture-of-experts model weights with architectural documentation."
-  },
-  {
-   "title": "Speculative Decoding: The Free Speed Toggle Your Local LLM Is Probably Not Using",
-   "url": "https://vettedconsumer.com/speculative-decoding-explained-the-free-speed-toggle-your-local-llm-is-probably-not-using",
-   "source": "hackernews",
-   "published_date": "2026-07-25T03:28:44",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "inference,optimization",
-   "area": "inference-methods",
-   "first_seen": "2026-07-25T03:28:44",
-   "importance": 0.3,
-   "why": "Explains draft-verification mechanisms to improve generation throughput."
   }
  ]
 }

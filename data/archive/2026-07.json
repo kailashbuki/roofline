@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 112,
+ "count": 115,
  "articles": [
+  {
+   "title": "TurboPrefill: 3.27× Prefill Speedup in Llama.cpp",
+   "url": "https://devpost.com/software/turboprefill",
+   "source": "hackernews",
+   "published_date": "2026-07-25T07:32:37",
+   "summary": "2 points, 1 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-25T07:32:37",
+   "importance": 0.5,
+   "why": "Accelerates prompt processing phases within local execution runtimes."
+  },
+  {
+   "title": "Instella-Moe: An Open Mixture-of-Experts Language Model",
+   "url": "https://rocm.blogs.amd.com/artificial-intelligence/instella-moe/README.html",
+   "source": "hackernews",
+   "published_date": "2026-07-25T07:31:48",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "first_seen": "2026-07-25T07:31:48",
+   "importance": 0.4,
+   "why": "Releases open mixture-of-experts model weights with architectural documentation."
+  },
+  {
+   "title": "Speculative Decoding: The Free Speed Toggle Your Local LLM Is Probably Not Using",
+   "url": "https://vettedconsumer.com/speculative-decoding-explained-the-free-speed-toggle-your-local-llm-is-probably-not-using",
+   "source": "hackernews",
+   "published_date": "2026-07-25T03:28:44",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-07-25T03:28:44",
+   "importance": 0.3,
+   "why": "Explains draft-verification mechanisms to improve generation throughput."
+  },
   {
    "title": "AMD and Cerebras Launch AI Inference Solution",
    "url": "https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference",
