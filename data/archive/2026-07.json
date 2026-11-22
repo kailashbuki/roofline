@@ -1,7 +1,19 @@
 {
  "month": "2026-07",
- "count": 115,
+ "count": 116,
  "articles": [
+  {
+   "title": "NVLink, NVSwitch, and All That",
+   "url": "https://blog.doubleword.ai/nvlink-scale-up",
+   "source": "hackernews",
+   "published_date": "2026-07-25T20:03:58",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-25T20:03:58",
+   "importance": 0.4,
+   "why": "Details high-speed interconnect topologies for scalable GPU cluster training."
+  },
   {
    "title": "TurboPrefill: 3.27× Prefill Speedup in Llama.cpp",
    "url": "https://devpost.com/software/turboprefill",

@@ -1,5 +1,5 @@
 {
- "count": 3702,
+ "count": 3705,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3702,6 +3702,9 @@
   "https://github.com/johnsonshi/a100-inference-hillclimb",
   "https://twitter.com/johnsonshi86/status/2124250717963932121",
   "https://casrai.org/news/house-committees-cursor-chinese-open-weight-ai-models-report-2026",
-  "https://jyn.dev/unpublished-blog-posts"
+  "https://jyn.dev/unpublished-blog-posts",
+  "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+  "https://github.com/thoufeeque22/zeroburn",
+  "https://openai.com/index/perplexity-and-intelligence"
  ]
 }
