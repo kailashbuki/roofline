@@ -1,5 +1,5 @@
 {
- "count": 3705,
+ "count": 3714,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3705,6 +3705,15 @@
   "https://jyn.dev/unpublished-blog-posts",
   "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
   "https://github.com/thoufeeque22/zeroburn",
-  "https://openai.com/index/perplexity-and-intelligence"
+  "https://openai.com/index/perplexity-and-intelligence",
+  "https://arxiv.org/abs/2611.27572",
+  "https://arxiv.org/abs/2611.27560",
+  "https://arxiv.org/abs/2611.27529",
+  "https://arxiv.org/abs/2611.27521",
+  "https://arxiv.org/abs/2611.27496",
+  "https://arxiv.org/abs/2611.27494",
+  "https://arxiv.org/abs/2611.27487",
+  "https://arxiv.org/abs/2611.27473",
+  "https://huggingface.co/blog/agentic-evals"
  ]
 }
