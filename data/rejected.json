@@ -1,5 +1,5 @@
 {
- "count": 3804,
+ "count": 3814,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3804,6 +3804,16 @@
   "https://openai.com/business/customer-stories/clay-plugins-openai",
   "https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers",
   "https://developer.nvidia.com/blog/prepare-market-data-for-forecasting-with-nvidia-megatron-core",
-  "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools"
+  "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools",
+  "https://arxiv.org/abs/2611.32525",
+  "https://arxiv.org/abs/2611.32520",
+  "https://arxiv.org/abs/2611.32517",
+  "https://arxiv.org/abs/2611.32509",
+  "https://arxiv.org/abs/2611.32496",
+  "https://arxiv.org/abs/2611.32471",
+  "https://arxiv.org/abs/2611.32446",
+  "https://arxiv.org/abs/2611.32406",
+  "https://arxiv.org/abs/2611.32402",
+  "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
  ]
 }

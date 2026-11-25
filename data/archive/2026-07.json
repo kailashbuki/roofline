@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 121,
+ "count": 124,
  "articles": [
+  {
+   "title": "Adaptive speculative decoding on a $300 GPU",
+   "url": "https://github.com/Gogo27Gallet/Fronde",
+   "source": "hackernews",
+   "published_date": "2026-07-28T13:01:43",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-methods",
+   "first_seen": "2026-07-28T13:01:43",
+   "importance": 0.4,
+   "why": "Demonstrates consumer hardware speculative decoding for efficient local inference."
+  },
+  {
+   "title": "What Is Flash Attention?",
+   "url": "https://modal.com/blog/flash-attention-article",
+   "source": "hackernews",
+   "published_date": "2026-07-28T11:44:59",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "attention,optimization",
+   "area": "architecture",
+   "first_seen": "2026-07-28T11:44:59",
+   "importance": 0.3,
+   "why": "Provides an educational overview of FlashAttention primitives for memory-efficient transformers."
+  },
+  {
+   "title": "Self Hosting LLMs with Llama.cpp",
+   "url": "https://data4sci.substack.com/p/self-hosting-llms-with-llamacpp",
+   "source": "hackernews",
+   "published_date": "2026-07-28T11:02:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "serving,inference",
+   "area": "inference-engines",
+   "first_seen": "2026-07-28T11:02:26",
+   "importance": 0.3,
+   "why": "Explores practical self-hosting workflows using local CPU and GPU runtimes."
+  },
   {
    "title": "Kimi K3 Running on AMD MI350X with SGLang",
    "url": "https://twitter.com/__tinygrad__/status/2081837010705420480",
