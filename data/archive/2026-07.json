@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 118,
+ "count": 121,
  "articles": [
+  {
+   "title": "Kimi K3 Running on AMD MI350X with SGLang",
+   "url": "https://twitter.com/__tinygrad__/status/2081837010705420480",
+   "source": "hackernews",
+   "published_date": "2026-07-27T22:14:17",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "serving,hardware",
+   "area": "inference-engines",
+   "first_seen": "2026-07-27T22:14:17",
+   "importance": 0.4,
+   "why": "Showcases high-performance serving configurations for large models on AMD accelerators."
+  },
+  {
+   "title": "HBM Is the Ugly Baby: What Now? – By Vikram Sekar",
+   "url": "https://www.viksnewsletter.com/p/hbm-is-the-ugly-baby-what-now",
+   "source": "hackernews",
+   "published_date": "2026-07-27T21:32:03",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "hardware,systems",
+   "area": "silicon",
+   "first_seen": "2026-07-27T21:32:03",
+   "importance": 0.5,
+   "why": "Analyzes memory bottlenecks and alternative packaging strategies beyond traditional HBM."
+  },
+  {
+   "title": "AMD Advancing AI 2026: Talking CDNA5 with AMD’s Alan Smith",
+   "url": "https://chipsandcheese.com/p/amd-advancing-ai-2026-talking-cdna5",
+   "source": "rss:Chips and Cheese",
+   "published_date": "2026-07-27T19:43:53",
+   "summary": "Hello you fine Internet folks,",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-27T19:43:53",
+   "importance": 0.4,
+   "why": "Outlines architectural roadmap updates for next-generation CDNA accelerators."
+  },
   {
    "title": "Show HN: Cuts Long Horizon Inference Costs by 50% via external KV Cache Offload",
    "url": "https://github.com/openlake-project/openlake",
