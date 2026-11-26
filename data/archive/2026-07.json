@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 124,
+ "count": 127,
  "articles": [
+  {
+   "title": "Together AI announces strategic partnership with Moonshot AI to natively serve Kimi models",
+   "url": "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-29T00:00:00",
+   "summary": "Together AI partners with Moonshot AI to natively serve Kimi models, starting with the 2.8T parameter Kimi K3, with day zero access and post-training.",
+   "tags": "serving,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-07-29T00:00:00",
+   "importance": 0.3,
+   "why": "Partnership announcement enabling native hosting and serving for massive open models."
+  },
+  {
+   "title": "ThunderAgent: 2x Faster Agentic Inference for Synthetic Data Generation at Scale",
+   "url": "https://www.together.ai/blog/thunderagent",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-29T00:00:00",
+   "summary": "ThunderAgent is a program-aware scheduler for agentic inference. By treating each agent workflow as a schedulable program, it eliminates KV cache thrashing to deliver more than 2x single-node throughput and near-linear multi-node scaling.",
+   "tags": "inference,serving,systems,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-29T00:00:00",
+   "importance": 0.7,
+   "why": "Program-aware scheduler for agentic inference eliminates KV cache thrashing to double single-node throughput."
+  },
+  {
+   "title": "",
+   "url": "https://www.together.ai/blog/configuring-dedicated-model-inference",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-29T00:00:00",
+   "summary": "The three-part resource model behind Together AI Dedicated Model Inference—endpoints, deployments, configs—and how capacity-aware routing ties them together.",
+   "tags": "serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-07-29T00:00:00",
+   "importance": 0.4,
+   "why": "Details capacity-aware routing and resource models for dedicated cloud LLM inference endpoints."
+  },
   {
    "title": "Adaptive speculative decoding on a $300 GPU",
    "url": "https://github.com/Gogo27Gallet/Fronde",
