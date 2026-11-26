@@ -1,7 +1,31 @@
 {
  "month": "2026-07",
- "count": 127,
+ "count": 129,
  "articles": [
+  {
+   "title": "Amazon Priced the Frontier and Declined It",
+   "url": "https://www.airealist.ai/p/amazon-priced-the-frontier-and-declined",
+   "source": "airealist",
+   "published_date": "2026-07-29T12:01:08",
+   "summary": "On 30 June, AWS published two announcements pointing in opposite directions. In July, it closed its AGI Lab. All three were the same decision.",
+   "tags": "hardware,systems",
+   "area": "economics",
+   "first_seen": "2026-07-29T12:01:08",
+   "importance": 0.6,
+   "why": "Examines strategic frontier pricing decisions and internal structural shifts regarding compute scaling limits."
+  },
+  {
+   "title": "Show HN: I run 30B 22tok/s, 109tok/s not novel,6GB/16GB RAM overcoming llama.cpp",
+   "url": "https://github.com/FedericoTs/quantprobe",
+   "source": "hackernews",
+   "published_date": "2026-07-29T03:47:58",
+   "summary": "5 points, 0 comments on HackerNews",
+   "tags": "inference,optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-07-29T03:47:58",
+   "importance": 0.5,
+   "why": "Optimizations overcoming memory constraints to boost token generation rates on consumer hardware."
+  },
   {
    "title": "Together AI announces strategic partnership with Moonshot AI to natively serve Kimi models",
    "url": "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models",
