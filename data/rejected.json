@@ -1,5 +1,5 @@
 {
- "count": 3905,
+ "count": 3910,
  "urls": [
   "https://arxiv.org/abs/2609.26783",
   "https://arxiv.org/abs/2609.26707",
@@ -3905,6 +3905,11 @@
   "https://arxiv.org/abs/2611.34924",
   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
   "https://huggingface.co/blog/training-swarms",
-  "https://pytorch.org/blog/explore-the-pytorch-day-china-2026-schedule"
+  "https://pytorch.org/blog/explore-the-pytorch-day-china-2026-schedule",
+  "https://arxiv.org/abs/2611.34331",
+  "https://arxiv.org/abs/2611.30017",
+  "https://devnull.land/amd-specific-llama-cpp",
+  "https://tensward.com/blog/huge-pages-llama-cpp",
+  "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai"
  ]
 }

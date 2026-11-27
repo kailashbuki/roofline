@@ -1,7 +1,43 @@
 {
  "month": "2026-07",
- "count": 129,
+ "count": 132,
  "articles": [
+  {
+   "title": "The Wild Wild West Of LEGO Datacenters",
+   "url": "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters",
+   "source": "rss:SemiAnalysis",
+   "published_date": "2026-07-29T22:09:56",
+   "summary": "The Labor Problem and Modularization to the Rescue",
+   "tags": "systems,hardware",
+   "area": "economics",
+   "first_seen": "2026-07-29T22:09:56",
+   "importance": 0.5,
+   "why": "Analyzes labor constraints and modular prefabrication techniques to accelerate datacenter capacity deployment."
+  },
+  {
+   "title": "China's Moonshot AI reportedly used Nvidia Blackwell chips for training Kimi K3",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-moonshot-ai-reportedly-used-nvidia-blackwell-chips-for-training-kimi-k3-company-circumvented-both-u-s-export-and-chinese-import-controls-to-acquire-compute",
+   "source": "hackernews",
+   "published_date": "2026-07-29T20:05:14",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "training,hardware",
+   "area": "training",
+   "first_seen": "2026-07-29T20:05:14",
+   "importance": 0.3,
+   "why": "Reports hardware usage details regarding the training run of a major open model."
+  },
+  {
+   "title": "AntGroup releases Ling 3.0 Flash MoE model",
+   "url": "https://twitter.com/AntLingAGI/status/2080351022028095681",
+   "source": "hackernews",
+   "published_date": "2026-07-29T18:30:42",
+   "summary": "4 points, 0 comments on HackerNews",
+   "tags": "architecture,llm",
+   "area": "new-models",
+   "first_seen": "2026-07-29T18:30:42",
+   "importance": 0.4,
+   "why": "New MoE model release offers architectural insights into efficient routing for Flash variants."
+  },
   {
    "title": "Amazon Priced the Frontier and Declined It",
    "url": "https://www.airealist.ai/p/amazon-priced-the-frontier-and-declined",

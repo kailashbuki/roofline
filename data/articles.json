@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26T14:45:41Z",
- "previous_generated_at": "2026-11-26T00:52:32Z",
+ "generated_at": "2026-11-27T00:57:26Z",
+ "previous_generated_at": "2026-11-26T14:45:41Z",
  "hot_days": 120,
- "count": 4247,
- "total_collected": 4569,
+ "count": 4248,
+ "total_collected": 4573,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,18 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "A bare-metal OS running Qwen3-0.6B 54% faster than llama.cpp",
+   "url": "https://twitter.com/superalesha/status/2125682626056839259",
+   "source": "hackernews",
+   "published_date": "2026-11-26T16:30:44",
+   "summary": "3 points, 0 comments on HackerNews",
+   "tags": "inference,systems,llm",
+   "area": "inference-engines",
+   "first_seen": "2026-11-27T00:56:59",
+   "importance": 0.5,
+   "why": "Bypassing standard OS kernels achieves a 54% speedup for running small models."
+  },
   {
    "title": "US chip curbs, distillation crackdown threaten Chinese AI model development",
    "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26",
@@ -884,6 +896,18 @@
    "why": "Asynchronous agentic memory allows real-time autoregressive video generators to maintain consistency during live streaming without full script pre-planning."
   },
   {
+   "title": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
+   "url": "https://arxiv.org/abs/2611.34363",
+   "source": "hf:papers",
+   "published_date": "2026-11-25T00:00:00",
+   "summary": "A counterfactual-database reward for reinforcement learning text-to-SQL agents reduces full payment to buggy queries and reward hacks, though training with its mean form did not improve in-domain accuracy in a controlled GRPO comparison.\n\nKeywords: reinforcement learning, text-to-SQL agents, counterfactual-database reward, strict form, mean form, reward hacks, GRPO, rollouts, in-domain accuracy, family-blind generator",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-11-27T00:56:45",
+   "importance": 0.5,
+   "why": "Replaces standard text-to-SQL reward functions with counterfactual execution, preventing reward hacking during reinforcement learning."
+  },
+  {
    "title": "FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images",
    "url": "https://arxiv.org/abs/2611.34128",
    "source": "hf:papers",
@@ -918,6 +942,18 @@
    "first_seen": "2026-11-26T14:44:35",
    "importance": 0.7,
    "why": "Multi-scale key routing and per-query readout eliminate spatial redundancy in attention layers for faster high-resolution image restoration."
+  },
+  {
+   "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
+   "url": "https://arxiv.org/abs/2611.30460",
+   "source": "hf:papers",
+   "published_date": "2026-11-25T00:00:00",
+   "summary": "A controlled benchmark directly evaluates contrastive corrections in multimodal large language models to better understand and mitigate object hallucination beyond final task scores.\n\nKeywords: contrastive decoding, object hallucination, multimodal large language models, token distributions, token scores, generative benchmarks, discriminative benchmarks, candidate filtering, generation trajectories, response biases, contrastive adjustments, CONCOR, Contrastive Correction Evaluation, Contrastive Grounding Margin, directional consistency, contrastive corrections, contrast strength, hallucination mitigation",
+   "tags": "inference,multimodal,benchmarks",
+   "area": "inference-methods",
+   "first_seen": "2026-11-27T00:56:45",
+   "importance": 0.4,
+   "why": "Evaluates token-level contrastive decoding methods specifically to isolate and mitigate object hallucinations in multimodal models."
   },
   {
    "title": "ExecuTorch-TensorRT: PyTorch Robot Policies at NVIDIA TensorRT Speed",
@@ -1883,6 +1919,18 @@
    "first_seen": "2026-11-24T03:11:01",
    "importance": 0.6,
    "why": "Embeds recurrent latent state loops into base transformers to perform iterative multi-step planning prior to output."
+  },
+  {
+   "title": "Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models",
+   "url": "https://arxiv.org/abs/2611.33307",
+   "source": "hf:papers",
+   "published_date": "2026-11-24T00:00:00",
+   "summary": "Decision models are language models fine-tuned to return a probability for each option of a typed query, which routers and guardrails threshold directly. They are built on multilingual bases but ranked almost entirely in English. We evaluate 25 top-ranked open-weight decision models on 17 tasks in 14 languages, comparing each language with English on parallel items. Every model loses accuracy in every language, from about 2 points in high-resource languages to 8 in Tamil, while confidence falls only half as much: a threshold set for 95\\% accuracy in English yields 90% in Tamil. The size of the loss is set by the language and the base model rather than by leaderboard rank. In 81 controlled fine-tuning runs, task skill learned in English transfers to other languages and a few thousand target-language items narrow large losses, but neither more data nor full-parameter tuning closes them. Finally, the same test items are answered more accurately in all 23 benchmark--language pairs we compa",
+   "tags": "benchmarks,llm",
+   "area": "new-models",
+   "first_seen": "2026-11-27T00:56:45",
+   "importance": 0.4,
+   "why": "Quantifies multilingual calibration degradation across 25 open-weight decision models using parallel evaluation items."
   },
   {
    "title": "GRAPE-Bench: When Vision Degrades, Does Video Reasoning Hold?",
@@ -50704,42 +50752,6 @@
    "first_seen": "2026-07-30T15:32:26",
    "importance": 0.2,
    "why": "Basic overview of foundational LLM scaling laws."
-  },
-  {
-   "title": "The Wild Wild West Of LEGO Datacenters",
-   "url": "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters",
-   "source": "rss:SemiAnalysis",
-   "published_date": "2026-07-29T22:09:56",
-   "summary": "The Labor Problem and Modularization to the Rescue",
-   "tags": "systems,hardware",
-   "area": "economics",
-   "first_seen": "2026-07-29T22:09:56",
-   "importance": 0.5,
-   "why": "Analyzes labor constraints and modular prefabrication techniques to accelerate datacenter capacity deployment."
-  },
-  {
-   "title": "China's Moonshot AI reportedly used Nvidia Blackwell chips for training Kimi K3",
-   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-moonshot-ai-reportedly-used-nvidia-blackwell-chips-for-training-kimi-k3-company-circumvented-both-u-s-export-and-chinese-import-controls-to-acquire-compute",
-   "source": "hackernews",
-   "published_date": "2026-07-29T20:05:14",
-   "summary": "3 points, 0 comments on HackerNews",
-   "tags": "training,hardware",
-   "area": "training",
-   "first_seen": "2026-07-29T20:05:14",
-   "importance": 0.3,
-   "why": "Reports hardware usage details regarding the training run of a major open model."
-  },
-  {
-   "title": "AntGroup releases Ling 3.0 Flash MoE model",
-   "url": "https://twitter.com/AntLingAGI/status/2080351022028095681",
-   "source": "hackernews",
-   "published_date": "2026-07-29T18:30:42",
-   "summary": "4 points, 0 comments on HackerNews",
-   "tags": "architecture,llm",
-   "area": "new-models",
-   "first_seen": "2026-07-29T18:30:42",
-   "importance": 0.4,
-   "why": "New MoE model release offers architectural insights into efficient routing for Flash variants."
   }
  ]
 }
