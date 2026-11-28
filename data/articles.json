@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27T14:43:49Z",
- "previous_generated_at": "2026-11-27T00:57:26Z",
+ "generated_at": "2026-11-28T00:22:53Z",
+ "previous_generated_at": "2026-11-27T14:43:49Z",
  "hot_days": 120,
- "count": 4256,
- "total_collected": 4581,
+ "count": 4255,
+ "total_collected": 4585,
  "sources": [
   "airealist",
   "anthropic:research",
@@ -23,6 +23,54 @@
   "rss:Together.ai Blog"
  ],
  "articles": [
+  {
+   "title": "AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive",
+   "url": "https://newsletter.semianalysis.com/p/trainium3-inferencex",
+   "source": "hackernews",
+   "published_date": "2026-11-27T21:02:13",
+   "summary": "3 points, 1 comments on HackerNews",
+   "tags": "hardware,inference",
+   "area": "silicon",
+   "first_seen": "2026-11-28T00:22:25",
+   "importance": 0.6,
+   "why": "Details custom tensor processor matrix multiplication unit layouts and on-chip memory hierarchy updates."
+  },
+  {
+   "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
+   "url": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10",
+   "source": "hackernews",
+   "published_date": "2026-11-27T18:59:55",
+   "summary": "28 points, 8 comments on HackerNews",
+   "tags": "inference,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-11-28T00:22:25",
+   "importance": 0.4,
+   "why": "Achieves high token generation speed on Blackwell hardware using vLLM."
+  },
+  {
+   "title": "Sandboxed AI models talk via GPU rounding errors on shared vLLM servers",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/sandboxed-ai-models-secretly-talk-via-gpu-rounding-errors-on-shared-vllm-servers-with-no-network-or-shared-files-colluding-watchdog-let-all-354-attacks-slip-through",
+   "source": "hackernews",
+   "published_date": "2026-11-27T18:40:22",
+   "summary": "3 points, 1 comments on HackerNews",
+   "tags": "inference,systems,serving",
+   "area": "inference-engines",
+   "first_seen": "2026-11-28T00:22:25",
+   "importance": 0.6,
+   "why": "Demonstrates a side-channel covert attack vector exploiting GPU floating-point non-determinism across isolated tenants."
+  },
+  {
+   "title": "AWS Trainium2 cut training cost by 50% compared to Nvidia H200",
+   "url": "https://twitter.com/martinmaritsch/status/2126195898795573437",
+   "source": "hackernews",
+   "published_date": "2026-11-27T18:35:07",
+   "summary": "10 points, 0 comments on HackerNews",
+   "tags": "hardware,training",
+   "area": "silicon",
+   "first_seen": "2026-11-28T00:22:25",
+   "importance": 0.5,
+   "why": "Quantifies cluster-level training expenditure reductions via accelerator interconnect scaling efficiency."
+  },
   {
    "title": "Carpool – cut LLM costs by batching tasks and compiling repeated calls into code",
    "url": "https://github.com/nmayp/carpool",
@@ -50788,66 +50836,6 @@
    "first_seen": "2026-07-31T01:39:23",
    "importance": 0.4,
    "why": "Details novel CPU tile microarchitecture configurations for specialized matrix multiply units."
-  },
-  {
-   "title": "",
-   "url": "https://www.together.ai/blog/autoscaling-endpoints-for-llm-inference",
-   "source": "rss:Together.ai Blog",
-   "published_date": "2026-07-31T00:00:00",
-   "summary": "GPU utilization can read healthy while your queue backs up, and a new replica takes minutes to warm. Here's how to pick autoscaling metrics, tune scale-up/down windows, and budget for cold starts on dedicated inference.",
-   "tags": "serving,systems",
-   "area": "inference-engines",
-   "first_seen": "2026-07-31T00:00:00",
-   "importance": 0.4,
-   "why": "Practical guidelines for managing autoscaling metrics and mitigating cold starts in LLM serving."
-  },
-  {
-   "title": "Run High-Performance Core Math at Scale with NVIDIA nvmath-python",
-   "url": "https://developer.nvidia.com/blog/run-high-performance-core-math-at-scale-with-nvidia-nvmath-python",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-30T22:43:04",
-   "summary": "<img alt=\"Decorative math image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/11/Solving-Math-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Solving-Math\" width=\"768\" />NVIDIA nvmath-python is a library designed to bridge the gap between the Python scientific community and NVIDIA CUDA-X math libraries. It gives Python users...",
-   "tags": "optimization",
-   "area": "inference-engines",
-   "first_seen": "2026-10-14T15:43:22",
-   "importance": 0.4,
-   "why": "Python-native math bindings expose low-level CUDA-X routines to scientific workloads with minimal overhead."
-  },
-  {
-   "title": "Characterizing Warp Divergence from Pascal to Blackwell",
-   "url": "https://arxiv.org/abs/2607.23402",
-   "source": "hackernews",
-   "published_date": "2026-07-30T18:56:00",
-   "summary": "27 points, 1 comments on HackerNews",
-   "tags": "hardware",
-   "area": "silicon",
-   "first_seen": "2026-07-30T18:56:00",
-   "importance": 0.5,
-   "why": "Characterizes GPU warp divergence trends across generational architectures from Pascal to Blackwell."
-  },
-  {
-   "title": "NVIDIA Exemplar Cloud: Lessons for Unlocking Full Performance on AI Infrastructure",
-   "url": "https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure",
-   "source": "rss:NVIDIA Developer Blog",
-   "published_date": "2026-07-30T16:00:00",
-   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image6-6-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image6\" width=\"768\" />Two AI computing clusters built from identical NVIDIA H100, GB200 NVL72, or GB300 NVL72 systems can deliver materially different training throughput. We...",
-   "tags": "training,systems,hardware",
-   "area": "training",
-   "first_seen": "2026-10-14T15:43:22",
-   "importance": 0.5,
-   "why": "Analyzing cluster-level configuration discrepancies identifies hidden bottlenecks impacting distributed training throughput."
-  },
-  {
-   "title": "Scaling Laws: The Law Behind Every LLM",
-   "url": "https://aidoses.substack.com/p/scaling-laws-the-law-behind-every",
-   "source": "hackernews",
-   "published_date": "2026-07-30T15:32:26",
-   "summary": "2 points, 0 comments on HackerNews",
-   "tags": "training,llm",
-   "area": "training",
-   "first_seen": "2026-07-30T15:32:26",
-   "importance": 0.2,
-   "why": "Basic overview of foundational LLM scaling laws."
   }
  ]
 }

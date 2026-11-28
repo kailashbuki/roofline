@@ -1,7 +1,67 @@
 {
  "month": "2026-07",
- "count": 132,
+ "count": 137,
  "articles": [
+  {
+   "title": "",
+   "url": "https://www.together.ai/blog/autoscaling-endpoints-for-llm-inference",
+   "source": "rss:Together.ai Blog",
+   "published_date": "2026-07-31T00:00:00",
+   "summary": "GPU utilization can read healthy while your queue backs up, and a new replica takes minutes to warm. Here's how to pick autoscaling metrics, tune scale-up/down windows, and budget for cold starts on dedicated inference.",
+   "tags": "serving,systems",
+   "area": "inference-engines",
+   "first_seen": "2026-07-31T00:00:00",
+   "importance": 0.4,
+   "why": "Practical guidelines for managing autoscaling metrics and mitigating cold starts in LLM serving."
+  },
+  {
+   "title": "Run High-Performance Core Math at Scale with NVIDIA nvmath-python",
+   "url": "https://developer.nvidia.com/blog/run-high-performance-core-math-at-scale-with-nvidia-nvmath-python",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-30T22:43:04",
+   "summary": "<img alt=\"Decorative math image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/11/Solving-Math-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Solving-Math\" width=\"768\" />NVIDIA nvmath-python is a library designed to bridge the gap between the Python scientific community and NVIDIA CUDA-X math libraries. It gives Python users...",
+   "tags": "optimization",
+   "area": "inference-engines",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.4,
+   "why": "Python-native math bindings expose low-level CUDA-X routines to scientific workloads with minimal overhead."
+  },
+  {
+   "title": "Characterizing Warp Divergence from Pascal to Blackwell",
+   "url": "https://arxiv.org/abs/2607.23402",
+   "source": "hackernews",
+   "published_date": "2026-07-30T18:56:00",
+   "summary": "27 points, 1 comments on HackerNews",
+   "tags": "hardware",
+   "area": "silicon",
+   "first_seen": "2026-07-30T18:56:00",
+   "importance": 0.5,
+   "why": "Characterizes GPU warp divergence trends across generational architectures from Pascal to Blackwell."
+  },
+  {
+   "title": "NVIDIA Exemplar Cloud: Lessons for Unlocking Full Performance on AI Infrastructure",
+   "url": "https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure",
+   "source": "rss:NVIDIA Developer Blog",
+   "published_date": "2026-07-30T16:00:00",
+   "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image6-6-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image6\" width=\"768\" />Two AI computing clusters built from identical NVIDIA H100, GB200 NVL72, or GB300 NVL72 systems can deliver materially different training throughput. We...",
+   "tags": "training,systems,hardware",
+   "area": "training",
+   "first_seen": "2026-10-14T15:43:22",
+   "importance": 0.5,
+   "why": "Analyzing cluster-level configuration discrepancies identifies hidden bottlenecks impacting distributed training throughput."
+  },
+  {
+   "title": "Scaling Laws: The Law Behind Every LLM",
+   "url": "https://aidoses.substack.com/p/scaling-laws-the-law-behind-every",
+   "source": "hackernews",
+   "published_date": "2026-07-30T15:32:26",
+   "summary": "2 points, 0 comments on HackerNews",
+   "tags": "training,llm",
+   "area": "training",
+   "first_seen": "2026-07-30T15:32:26",
+   "importance": 0.2,
+   "why": "Basic overview of foundational LLM scaling laws."
+  },
   {
    "title": "The Wild Wild West Of LEGO Datacenters",
    "url": "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters",
